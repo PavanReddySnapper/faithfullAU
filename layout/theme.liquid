@@ -1,0 +1,920 @@
+{% include 'shogun-content-handler' %}
+{% render 'shogun-content-handler' %}
+<!doctype html>
+<html class="no-js supports-no-cookies" lang="{{ shop.locale }}">
+  <head>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="{{ settings.color_accent }}">
+
+    {%- if current_tags -%}
+      <meta name="robots" content="noindex,follow">
+    {%- endif -%}
+
+    <link rel="canonical" href="{{ canonical_url }}">
+
+    {%- render 'dns-preconnects' -%}
+
+    {% liquid
+      render 'css-variables'
+      render 'vite-tag' with '@/styles/layout/theme.scss'
+    %}
+
+    {%- capture seo_title -%}
+      {{ page_title }}
+      {%- if current_tags -%}{%- assign meta_tags = current_tags | join: ', ' -%} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags -}}{%- endif -%}
+      {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{%- endif -%}
+      {%- assign escaped_page_title = page_title | escape -%}
+      {%- unless escaped_page_title contains shop.name %} &ndash; {{ shop.name }}{%- endunless -%}
+    {%- endcapture -%}
+
+    <title>{{ seo_title | strip }}</title>
+
+    {%- if page_description -%}
+      <meta name="description" content="{{ page_description | escape }}">
+    {%- endif -%}
+
+    {%- render 'favicon' -%}
+
+    {% render 'vite-tag' with '@/scripts/layout/theme.js' %}
+    {% if settings.load_jquery %}
+      <script defer src="{{ 'jquery-351.min.js' | asset_url }}"></script>
+    {% endif %}
+    {%- render 'regionalisation' -%}
+
+    {%- liquid
+      assign search_fields_list = ''
+      if settings.search_body == true
+        assign search_fields_list = search_fields_list | append: 'body' | append: ','
+      endif
+      if settings.search_product_type == true
+        assign search_fields_list = search_fields_list | append: 'product_type' | append: ','
+      endif
+      if settings.search_tag == true
+        assign search_fields_list = search_fields_list | append: 'tag' | append: ','
+      endif
+      if settings.search_title == true
+        assign search_fields_list = search_fields_list | append: 'title' | append: ','
+      endif
+      if settings.search_variants_barcode == true
+        assign search_fields_list = search_fields_list | append: 'variants.barcode' | append: ','
+      endif
+      if settings.search_variants_sku == true
+        assign search_fields_list = search_fields_list | append: 'variants.sku' | append: ','
+      endif
+      if settings.search_variants_title == true
+        assign search_fields_list = search_fields_list | append: 'variants.title' | append: ','
+      endif
+      if settings.search_vendor == true
+        assign search_fields_list = search_fields_list | append: 'vendor' | append: ','
+      endif
+      assign search_fields_array = search_fields_list | split: ','
+      capture search_fields
+        for item in search_fields_array
+          echo item
+          unless forloop.last
+            echo ','
+          endunless
+        endfor
+      endcapture
+
+      # ---------------------------------------------------------------------------------
+      # SEARCH SUGGESTIONS
+      # ---------------------------------------------------------------------------------
+
+      assign search_suggestions_terms = settings.search_suggestions_terms | replace: ', ', ',' | split: ',' | json
+    -%}
+
+    {%- capture search_suggestions_links -%}
+      [
+        {%- if settings.search_suggestions_links -%}
+          {% for link in linklists[settings.search_suggestions_links].links %}
+            {
+              "title": {{ link.title | json }},
+              "url": {{ link.url | json }}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        {%- endif -%}
+      ]
+    {%- endcapture -%}
+
+    <script>
+      document.documentElement.className = document.documentElement.className.replace('no-js', '');
+      window.theme = {
+        ecommerce: {{ settings.enable_ecommerce | json }},
+        strings: {
+          addToCart: {{ 'products.product.add_to_cart' | t | json }},
+          addedToCart: {{ 'products.product.added_message' | t | json }},
+          soldOut: {{ 'products.product.sold_out' | t | json }},
+          oneRemaining: {{ 'products.product.one_remaining' | t | json }},
+          unavailable: {{ 'products.product.unavailable' | t | json }},
+          cart: {
+            title: {{ 'cart.general.title' | t | json }},
+            subtotal: {{ 'cart.general.subtotal' | t | json }},
+            shipping: {{ 'cart.general.shipping' | t | json }},
+            checkout: {{ 'cart.general.checkout' | t | json }},
+            close: {{ 'cart.general.close_cart' | t | json }},
+            loading: {{ 'cart.general.loading_message' | t | json }},
+            itemQuantity: {{ 'cart.general.item_quantity' | t | json }},
+            remove: {{ 'cart.general.remove' | t | json }},
+            dismissErrorMessage: {{ 'cart.general.dismiss_error_message' | t | json }},
+            empty: {
+              title: {{ 'cart.general.empty.title' | t | json }},
+              text: {{ 'cart.general.empty.text' | t | json }},
+              continue_shopping: {{ 'cart.general.empty.continue_shopping' | t | json }}
+            },
+            note: {
+              prompt: {{ 'cart.general.note.prompt' | t | json }},
+              label: {{ 'cart.general.note.label' | t | json }}
+            },
+          },
+          freeShippingBar: {
+            remaining: {{ 'cart.freeShippingBar.remaining' | t | json }},
+            reached: {{ 'cart.freeShippingBar.reached' | t | json }},
+          },
+          cartUpsells: {
+            title: {{ 'cart.upsells.title' | t | json }},
+            add: {{ 'cart.upsells.add' | t | json }},
+            view: {{ 'cart.upsells.view' | t | json }},
+          },
+          pagination: {
+            loadMore: {{ 'general.pagination.load_more' | t | json }},
+            loadPrevious: {{ 'general.pagination.load_previous' | t | json }},
+            loading: {{ 'general.pagination.loading' | t | json }},
+          },
+          products: {
+            variantSelect: {
+              emptyError: {{ 'products.variant_select.empty_error' | t | json }},
+            }
+          },
+          search: {
+            search: {{ 'general.search.search' | t | json }},
+            submit: {{ 'general.search.submit' | t | json }},
+            close: {{ 'general.search.close' | t | json }},
+            placeholder: {{ 'general.search.placeholder' | t | json }},
+            helpText: {{ 'general.search.search_help_text' | t | json }},
+            viewAll: {{ 'general.search.view_all' | t | json }},
+            noResultsHtml: {{ 'general.search.no_results_html' | t | json }},
+            instantResults: {{ 'general.search.instant_results' | t | json }},
+            instantNoResults: {{ 'general.search.instant_no_results' | t | json }},
+            typeSuggestions: {{ 'general.search.type_suggestions' | t | json }},
+            typeProducts: {{ 'general.search.type_products' | t | json }},
+            typeCollections: {{ 'general.search.type_collections' | t | json }},
+            typeArticles: {{ 'general.search.type_articles' | t | json }},
+            typePages: {{ 'general.search.type_pages' | t | json }},
+            suggestions: {
+              terms: {{ 'general.search.suggestions.terms' | t | json }},
+              links: {{ 'general.search.suggestions.links' | t | json }},
+              products: {{ 'general.search.suggestions.products' | t | json }},
+            }
+          },
+           collection: {
+            readMore: {{ 'collections.general.read_more' | t | json }},
+            readLess: {{ 'collections.general.read_less' | t | json }}
+          }
+        },
+        moneyFormat: {{ shop.money_format | json }},
+        cart: {{ cart | json }},
+        searchSettings: {
+          enableInstantSearch: {{ settings.enable_instant_search | json }},
+          types: [
+            {%- if settings.search_display_collections -%}'collection',{%- endif -%}
+            {%- if settings.search_display_pages -%}'page',{%- endif -%}
+            {%- if settings.search_display_articles -%}'article',{%- endif -%}
+          ],
+          unavailable_products: {{ settings.search_unavailable_products | json }},
+          limit: {{ settings.search_header_display_results | json }},
+          fields: {{ search_fields | json }},
+          suggestions: {
+            enabled: {{ settings.show_custom_search_suggestions | json }},
+            terms: {{ search_suggestions_terms }},
+            links: {{ search_suggestions_links }},
+            products: {% if settings.search_suggestions_collection %}true{% else %}false{% endif %}
+          },
+        },
+        freeShippingBar: {
+          enabled: {{ settings.free_shipping_bar_enabled | json }},
+          serviceOne: {{ settings.free_shipping_bar_service_1 | json }},
+          thresholdOne: {{ settings.free_shipping_bar_threshold_1 | default: 0 | json }},
+          {%- liquid
+            assign threshold_1_num = settings.free_shipping_bar_threshold_1 | plus: 0
+            assign threshold_2_num = settings.free_shipping_bar_threshold_2 | plus: 0
+            if threshold_2_num > threshold_1_num and settings.free_shipping_bar_service_2 != blank
+              assign valid_threshold_2 = true
+            endif
+          -%}
+          {%- if valid_threshold_2 -%}
+          serviceTwo: {{ settings.free_shipping_bar_service_2 | json }},
+          thresholdTwo: {{ settings.free_shipping_bar_threshold_2 | json }},
+          {% endif %}
+        },
+        cartEmpty: {
+          link: {{ settings.cart_continue_shopping_link | json }},
+        },
+        cartNote: {
+          enabled: {{ settings.cart_note_enabled | json }}
+        },
+        cartUpsells: {
+          enabled: false,
+          limit: 0,
+        },
+        shippingPrice: {{ settings.cart_shipping_price | json }},
+        breakpoints: {
+          sm: {{ settings.grid_small | json }},
+          md: {{ settings.grid_medium | json }},
+          lg: {{ settings.grid_large | json }},
+          xl: {{ settings.grid_xl | json }},
+        },
+        locale: {
+          endonymName: {{ request.locale.endonym_name | json }},
+          isoCode: {{ request.locale.iso_code | json }},
+          name: {{ request.locale.name | json }},
+          primary: {{ request.locale.primary | json }},
+          rootUrl: {{ request.locale.root_url | json }},
+          pageType: {{ request.page_type | json }},
+        },
+        urlPatterns: {
+          assetUrl: {{ '_name_.js' | asset_url | json }},
+          fileUrl: {{ '_name_.js' | file_url | json }},
+        },
+        cartMessage: {
+          enabled: {% if settings.custom_message_enabled and settings.custom_message != blank %}true{% else %}false{% endif %},
+          text: {{ settings.custom_message | json }},
+        },
+        storefrontAPI: {
+          version: {{ settings.storefront_api_version | json }},
+          key: {{ settings.storefront_api_key | json }},
+        },
+      };
+    </script>
+
+    {{ content_for_header }}
+
+    {% liquid
+      render 'social-meta-tags'
+      render 'marker-io-script'
+      render 'littledata-layer'
+      render 'gtm', position: 'head'
+    %}
+
+    {% render 'shogun-head' %}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
+  </head>
+
+  <body id="{{ page_title | handle }}" class="template-{{ request.page_type | handle }}">
+    {% render 'gtm', position: 'body' %}
+
+    {%- if settings.enable_fader -%}<div class="fader-overlay" data-fader></div>{%- endif -%}
+
+    <a class="in-page-link visually-hidden skip-link" href="#MainContent" aria-label="Skip to main content">
+      {{- 'general.accessibility.skip_to_content' | t -}}
+    </a>
+
+    {% sections 'header-group' %}
+
+    <main id="MainContent">
+      {{ content_for_layout }}
+    </main>
+
+    {% liquid
+      sections 'footer-group'
+      section 'login-modal'
+      section 'newsletter-popup'
+
+      unless request.page_type == 'cart'
+        render 'component-side-cart'
+      endunless
+
+      render 'swatches'
+      render 'json-ld'
+      render 'ga4'
+      render 'klaviyo-id'
+      render 'instant-page'
+      render 'swymSnippet'
+      render 'swym-custom-cart'
+    %}
+
+    <!-- Notify Code Start Here -->
+    <script src="https://a.klaviyo.com/media/js/onsite/onsite.js"></script>
+    <script>
+           (function () {
+  const observeAndReplace = () => {
+    const observer = new MutationObserver(() => {
+      const name = document.getElementById("name");
+      const email = document.getElementById("email");
+      const content = document.getElementById("content");
+      const headline = document.getElementById("headline");
+     
+      if (name && email && content && headline) {
+        name.placeholder = 'Name';
+        email.placeholder = 'Email';
+        headline.placeholder = "Title";
+        content.placeholder = "Add review here";
+        
+       
+      }
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+
+   
+  };
+
+ 
+  observeAndReplace();
+
+ 
+  const popupButton = document.getElementById("yotpo-main-widget-btn");
+  if (popupButton) {
+    popupButton.addEventListener("click", () => {
+      setTimeout(observeAndReplace, 50); // Delay to allow DOM changes to start
+    });
+  }
+})();
+
+      var klaviyo = klaviyo || [];
+      klaviyo.init({
+        account: "V3iGft",
+        platform: "shopify"
+      });
+      klaviyo.enable("backinstock",{
+        trigger: {
+          product_page_text: "Notify Me",
+          product_page_class: "btn",
+          product_page_text_align: "center",
+          product_page_margin: "0px",
+          replace_anchor: true
+        },
+        modal: {
+         headline: "{product_name}",
+         body_content: "Register to receive a notification when this item comes back in stock.",
+         email_field_label: "Email address",
+         button_label: "Notify Me",
+         newsletter_subscribe_label: "By signing up I agree to the terms and conditions and privacy policy.",
+         subscribe_checked: false,
+         subscription_success_label: "You’re in! We’ll let you know when it’s available.",
+         footer_content: '',
+         additional_styles: "@import url('{{ 'klaviyo-bis-modal.css' | asset_url }}');",
+         drop_background_color: "#0f0f0f",
+         background_color: "#fcfbf8",
+         text_color: "#0f0f0f",
+         button_text_color: "#0f0f0f",
+         button_background_color: "#fcfbf8",
+         close_button_color: "#0f0f0f",
+         error_background_color: "#fff",
+         error_text_color: "#0f0f0f",
+         success_background_color: "#f2f7f1",
+         success_text_color: "#88a180"
+        }
+      });
+    </script>
+    <style>
+      .template-product .product__form-actions-wrapper .btn--add-to-cart[disabled] {
+        display:none;
+      }
+      a.klaviyo-bis-trigger {
+        background-color: #fcfbf8;
+        color: #0f0f0f;
+        margin-top:-1px !important;
+        width:100%!important;
+        justify-content: left;
+        padding:1rem;
+      }
+      a.klaviyo-bis-trigger:hover {
+        background-color: #0f0f0f;
+        color: #fcfbf8;
+      }
+      @media (max-width:989px){
+        a.klaviyo-bis-trigger {
+          padding:1rem 0.75rem!important;
+          border-width:1px 0;
+        }
+      }
+    </style>
+    <!-- Notify Code Ends Here -->
+
+    {% comment %}script for shipping charges table{% endcomment %}
+    <script>
+     const o= new MutationObserver((mutationsList, observer) => {
+        const reviewButton = document.querySelector('.yotpo-new-review-submit');
+        if (reviewButton) {
+          reviewButton.innerHTML = 'Send Review';
+          observer.disconnect(); // Stop observing once we've made the change
+        }
+      });
+      
+      // Start observing the entire body for added nodes
+      o.observe(document.body, { childList: true, subtree: true });
+      function moveElement() {
+  let getElement = document.querySelector(".geo-location");
+  let getNavElement = document.querySelector(".nav__mobile-footer-links");
+  let getHeadElement = document.querySelector(".header__actions");
+  
+  if (window.innerWidth < 767) {
+    if (getElement && getNavElement) {
+      getNavElement.appendChild(getElement);
+    }
+  } else if(getElement && getHeadElement) {
+    getHeadElement.appendChild(getElement);
+  }
+}
+
+// Run on load
+moveElement();
+  window.addEventListener("resize", function () {
+  moveElement();
+});
+       if(document.querySelector('.country-return-section')){
+           let regions = document.querySelectorAll('.country-return-section h2');
+
+           let tableRegions = `
+<div class="parent-container container container--sm">
+  <div class="main-table-header">
+`;
+
+           regions.forEach((region) => {
+               tableRegions += `<button class="region-header" data-region="${region.textContent.toLowerCase()}">${region.textContent}</button>`;
+           });
+
+           tableRegions += `
+  </div>
+  <div class="main-table-content"></div>
+</div>`;
+
+           let firstShopifySection = document.querySelector('#MainContent .shopify-section');
+
+           if (firstShopifySection) {
+               firstShopifySection.insertAdjacentHTML('afterend', tableRegions);
+           }
+
+           let countryReturnSections = document.querySelectorAll('.country-return-section');
+           let mainTableContent = document.querySelector('.main-table-content');
+
+           if (mainTableContent && countryReturnSections.length > 0) {
+               countryReturnSections.forEach((section) => {
+                   mainTableContent.appendChild(section);
+                   section.style.display = 'none';
+               });
+           }
+
+           let regionButtons = document.querySelectorAll('.region-header');
+
+           regionButtons.forEach((button) => {
+               button.addEventListener('click', () => {
+                   let selectedRegion = button.getAttribute('data-region');
+
+                   countryReturnSections.forEach((section) => {
+                       let regionHeading = section.querySelector('h2').textContent.toLowerCase();
+                       section.style.display = regionHeading === selectedRegion ? 'block' : 'none';
+                       section.querySelector('h2').style.display = 'none'
+                   });
+
+                   regionButtons.forEach((btn) => btn.classList.remove('active'));
+                   button.classList.add('active');
+                   mainTableContent.h2.style.display = 'none'
+               });
+           });
+
+           if (regionButtons.length > 0) {
+               regionButtons[0].click();
+           }
+
+       }
+
+      const observer = new MutationObserver(function (mutations) {
+ 
+  const reviews = document.querySelectorAll('.yotpo-reviews-container .yotpo-reviews-list .yotpo-review');
+  
+  
+  if (reviews.length > 0) {
+    observer.disconnect();
+    {% comment %} if (window.innerWidth > 768) { {% endcomment %}
+    applyYotpoStyles();
+    {% comment %} } {% endcomment %}
+  }
+});
+
+
+observer.observe(document.body, { childList: true, subtree: true });
+
+function applyYotpoStyles() {
+  document.querySelectorAll('.yotpo-review').forEach(review => {
+    const ratingTitle = review.querySelector('.yotpo-review-rating-title');
+   
+
+    if (ratingTitle && !review.querySelector('.moved-rating-title')) {
+      const reviewTitle = ratingTitle.querySelector('.yotpo-review-title');
+      if (reviewTitle) {
+        reviewTitle.style.display = 'none';
+      }
+      ratingTitle.classList.add('moved-rating-title'); // Prevent duplicate move
+      ratingTitle.remove();
+      review.insertBefore(ratingTitle, review.firstChild);
+    }
+  });
+
+  document.querySelectorAll('.yotpo-review').forEach(review => {
+    const date = review.querySelector('.yotpo-review-right-panel .yotpo-date-format');
+    const leftPanel = review.querySelector('.yotpo-review-left-panel');
+
+    if (date && leftPanel && !leftPanel.contains(date)) {
+      leftPanel.appendChild(date);
+    }
+  });
+
+  // 🖥 Desktop-only logic for limiting reviews & adding button
+  if (window.innerWidth > 768) {
+    styleYotpoReviews();
+  }
+}
+
+      
+
+  function styleYotpoReviews() {
+
+    const maxVisible = 3;
+    const container = document.getElementById('yotpo-reviews-container');
+    const reviewList = container?.querySelector('.yotpo-reviews-list');
+    const reviews = reviewList?.querySelectorAll('.yotpo-review') || [];
+
+    if (!container || !reviewList || reviews.length === 0) return;
+   
+    if(reviews.length>3)
+    {
+      const btn=document.querySelector('.yotpo-header-container');
+      btn.style.display='none';
+    }
+    // Limit to 3 reviews
+    reviews.forEach((review, index) => {
+      if (index >= maxVisible) {
+        review.style.display = 'none';
+      }
+    });
+
+    // Only add the button if there are more than 3 reviews and button not already added
+    if (reviews.length > maxVisible && !container.querySelector('.read-all-reviews-btn')) {
+      const button = document.createElement('button');
+      button.textContent = 'Read all reviews';
+      button.className = 'read-all-reviews-btn yotpo-new-review-btn yotpo-btn-l empty-state';
+      // Optional: Manually apply Yotpo-like styles if needed
+       button.style.cssText = `
+            border-bottom: 2px solid #000;
+            width: auto !important;
+            border-radius: 0px !important;
+            background: none !important;
+            color: #000 !important;
+            text-align: left !important;
+            cursor: pointer;
+            align-self: center;
+            font-family:"ABC Diatype", sans-serif;
+            
+            font-size: 12px;
+            font-weight:500;
+            line-height: 125.9%;
+            min-height: 30px;
+            height: -moz-fit-content;
+            height: fit-content;
+            padding: 0;
+           
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            display: block;
+            transition: all 0.2s ease;
+        `;
+          const yotpoMainButton = document.getElementById('yotpo-main-widget-btn');
+         
+          button.addEventListener('click', function() {
+          const yotpoTab = document.querySelector('.yotpo-reviews-tab-floating-tab');
+          
+          if (yotpoTab) {
+          
+           
+            yotpoTab.click();
+            document.body.style.overflow = 'hidden';
+            const intervalId = setInterval(() => {
+              const drawerContainer = document.querySelector('.reviews-tab-drawer-container-visible');
+              const reviewElements = document.querySelector(
+                '.reviews-tab-drawer-container-visible .reviews-tab-drawer #yotpo-tab-reviews-container .yotpo-reviews-tab-list'
+              );
+               const head=document.querySelector('.yotpo-reviews-tab-tabs')
+              const reviewReviews = reviewElements?.getElementsByClassName('yotpo-reviews-tab-review');
+
+             
+            
+              if (drawerContainer && head && reviewElements && reviewReviews && reviewReviews.length>0) {
+                
+          const obr = new MutationObserver(() => {
+            const isDrawerVisible = document.querySelector('.reviews-tab-drawer-container-visible');
+            if (!isDrawerVisible) {
+              document.body.style.overflow = 'auto';
+             
+              obr.disconnect(); 
+            }
+          });
+
+          obr.observe(document.body, { childList: true, subtree: true });
+                clearInterval(intervalId);
+                const custom = document.createElement('button');
+                  custom.type = 'button';
+                  custom.className = 'custom-yotpo-toggle-btn';
+                  custom.textContent = 'X';
+                  custom.style.cssText = 'font-weight:700; color: #000;  cursor: pointer; font-size: 16px !important;';
+      
+                  
+                  custom.addEventListener("click", function () {
+                    const originalToggle = document.querySelector('.yotpo-reviews-tab-floating-tab');
+                    if (originalToggle) {
+                      originalToggle.click(); // Trigger the same behavior
+                    } else {
+                      console.warn("Yotpo toggle element not found.");
+                    }
+                  });
+
+                  head.append(custom)
+                
+            
+                
+                  const buttonWrapper = document.createElement('div');
+                  buttonWrapper.className = 'custom-review-button-wrapper';
+                  buttonWrapper.style.margin = '20px 0';
+            
+                  const customReviewButton = document.createElement('button');
+                  customReviewButton.type = 'button';
+                  customReviewButton.className = 'custom-review-button';
+                  customReviewButton.textContent = 'WRITE A REVIEW';
+                  customReviewButton.style.cssText = 'padding: 14px 60px;font-weight:500; color: #000; border: 2px solid rgb(0,0,0,0.5); cursor: pointer; font-size: 12px !important;';
+            
+                  buttonWrapper.appendChild(customReviewButton);
+            
+                  customReviewButton.addEventListener('click', function () {
+                    
+                    const liveYotpoButton = document.getElementById('yotpo-main-widget-btn');
+                    if (liveYotpoButton) {
+                      liveYotpoButton.click();
+                      const interval = setInterval(() => {
+                        const name = document.getElementById("name");
+                        const email = document.getElementById("email");
+                        const content = document.getElementById("content");
+                        const headline = document.getElementById("headline");
+                        if (name&&content&&headline&&email) {
+                          name.placeholder = "Name";
+                          headline.placeholder = "Title";
+                          content.placeholder = "Add review here";
+                          email.placeholder="Email"
+                          clearInterval(interval);
+                        }
+                      }, 10);
+                    
+                      
+                    } else {
+                      console.warn('Yotpo button not found at click time!');
+                    }
+                  });
+            
+                  reviewElements.appendChild(buttonWrapper);
+            
+                  
+                 
+            
+                  Array.from(reviewReviews).forEach((child) => {
+                    const getStars = child.querySelector(".yotpo-reviews-tab-review-center-panel .yotpo-star-rating");
+                    if (getStars) {
+                      child.prepend(getStars);
+                    }
+                   
+                  });
+                
+              } else {
+                console.log('Waiting for drawer and/or review elements to load...');
+              }
+            }, 100);
+          
+          } else {
+            console.warn('Yotpo floating tab not found!');
+          }
+        });
+
+      // Insert button right after the review list
+      reviewList.insertAdjacentElement('afterend', button);
+    }
+    }
+function waitForFloatingTabChanges() {
+  const observer = new MutationObserver(() => {
+    const floatingContent = document.querySelector('.yotpo-popup .yotpo-main-widget');
+    if (floatingContent) {
+      observer.disconnect();
+      
+
+      
+      floatingContent.style.background = "#f0f0f0";
+
+      // Example: Hide title
+      const title = floatingContent.querySelector('.yotpo-header');
+      if (title) title.style.display = 'none';
+    }
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+}
+    </script>
+
+    <style>
+ 
+/* Ensure text is always black on mobile - TOP PRIORITY */
+@media (max-width: 768px) {
+body.template-index button.md-orbe-custom-selector > span,
+body .header--is-pinned button.md-orbe-custom-selector > span,
+body button.md-orbe-custom-selector > span {
+        color: #000 !important; /* Always black on mobile */
+    }
+}
+ 
+/* Default button styling (white text) for home page (.template-index) on desktop */
+@media (min-width: 769px) {
+  #md-footer-selector-block{
+    display:none;
+  }
+body.template-index button.md-orbe-custom-selector > span,
+body.template-index header.header:not(.header--is-pinned) button.md-orbe-custom-selector > span {
+        font-family: var(--font-body) !important;
+        font-weight: 500 !important;
+        font-size: 13px !important;
+        color: #fff !important; /* White only on home page */
+        padding-left: 0px;
+    }
+}
+ 
+/* Hover effect on desktop home page (turns black) */
+@media (min-width: 769px) {
+body.template-index header.header:hover button.md-orbe-custom-selector > span {
+        color: #000 !important; /* Black on hover for home page */
+    }
+}
+ 
+/* When the header is pinned on desktop home page */
+@media (min-width: 769px) {
+body.template-index .header--is-pinned button.md-orbe-custom-selector > span {
+        color: #000 !important; /* Black when pinned on home page */
+    }
+}
+ 
+/* For ALL other pages on desktop, text is ALWAYS black */
+@media (min-width: 769px) {
+body:not(.template-index) button.md-orbe-custom-selector > span {
+        font-family: var(--font-body) !important;
+        font-weight: 500 !important;
+        font-size: 13px !important;
+        color: #000 !important; /* Always black on other pages */
+        padding-left: 0px;
+    }
+}
+
+      .yotpo-review{
+       
+          flex-direction:column !important;
+      }
+
+      .yotpo-review-left-panel
+      {
+        display: flex !important;
+        gap: 5px !important;
+      }
+
+      .yotpo-review-right-panel
+      {
+         padding-left: 0px !important;
+         padding-right: 0px !important;
+      }
+
+      .yotpo-reviews-tab-floating-tab {
+        display: none !important;
+      }
+      
+      .custom-review-button
+      {
+        display:none;
+      }
+
+      .md-footer-selector__content{
+        background-color:#fcfbf8 !important;
+      }
+ 
+    </style>
+
+
+    <script>
+        const ob = new MutationObserver(function (mutations) {
+      let reviewAdded = false;
+    
+      mutations.forEach(mutation => {
+        mutation.addedNodes.forEach(node => {
+          if (node.nodeType === 1) {
+            if (node.matches('.yotpo-review') || node.querySelector('.yotpo-review')) {
+              reviewAdded = true;
+            }
+          }
+        });
+      });
+    
+      if (reviewAdded) {
+        applyYotpo();
+      }
+    
+      const btn = document.querySelector('.yotpo-reviews-pagination-item');
+      if (btn && !btn.dataset.listenerAdded) {
+        btn.dataset.listenerAdded = "true";
+    
+        btn.addEventListener('click', () => {
+          
+    
+          setTimeout(() => {
+            applyYotpo();
+          }, 400);
+        });
+      }
+    });
+    
+    ob.observe(document.body, { childList: true, subtree: true });
+    
+    function applyYotpo() {
+      document.querySelectorAll('.yotpo-review').forEach(review => {
+        const ratingTitle = review.querySelector('.yotpo-review-rating-title');
+        if (ratingTitle && !review.querySelector('.moved-rating-title')) {
+          const reviewTitle = ratingTitle.querySelector('.yotpo-review-title');
+          if (reviewTitle) {
+            reviewTitle.style.display = 'none';
+          }
+          ratingTitle.classList.add('moved-rating-title');
+          ratingTitle.remove();
+          review.insertBefore(ratingTitle, review.firstChild);
+        }
+      });
+    
+      document.querySelectorAll('.yotpo-review').forEach(review => {
+        const date = review.querySelector('.yotpo-review-right-panel .yotpo-date-format');
+        const leftPanel = review.querySelector('.yotpo-review-left-panel');
+    
+        if (date && leftPanel && !leftPanel.contains(date)) {
+          leftPanel.appendChild(date);
+        }
+      });
+    }
+  document.addEventListener("DOMContentLoaded", function () {
+      const observer = new MutationObserver(function (mutations, observerInstance) {
+        const signUpButton = document.querySelector('.yotpo-register-link button');
+  
+        if (signUpButton) {
+          console.log("Yotpo sign up button detected");
+  
+          signUpButton.addEventListener("click", function () {
+            sessionStorage.setItem("redirectAfterRegister", "rewards");
+          });
+  
+          
+          observerInstance.disconnect();
+        }
+      });
+  
+      
+      observer.observe(document.body, {
+        childList: true,
+        subtree: true
+      });
+    });
+   
+    
+    document.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector('form[action="/account"]');
+      if (form) {
+        form.addEventListener("submit", function () {
+          sessionStorage.setItem("justRegistered", "true");
+        });
+      }
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+      if (window.location.pathname === "/") {
+        if (sessionStorage.getItem("justRegistered") === "true") {
+          sessionStorage.removeItem("justRegistered");
+  
+          const redirectTarget = sessionStorage.getItem("redirectAfterRegister");
+  
+          if (redirectTarget === "rewards") {
+            sessionStorage.removeItem("redirectAfterRegister"); 
+            window.location.href = "/pages/rewards";
+          }
+  
+          // If no special redirect set, stay on /account
+        }
+      }
+    });
+    </script>
+   
+  </body>
+</html>

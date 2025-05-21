@@ -1,0 +1,455 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_5dd8dd35-72c6-4952-aac1-91c463dc63af.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Cape Town Travel Guide",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>For a city that uniquely blends modernity with jagged mountain ranges and ocean views, it’s hard to look beyond the beauty of the South African city of Cape Town. Also offering an overindulgence of luxury stays and boutique hotels, organic wine bars and seafood bistros, here the FAITHFULL team shares their curated guide to keep on hand for your next holiday.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_hdwEph": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/2_2e79fbf5-04de-4cf8-a1da-c9720664b5a2.webp",
+        "background_image_2": "shopify://shop_images/3_00d5410a-ea3f-4d96-a8e1-cd9c2a7bca98.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "second--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/dorphotel/ \" title=\"https://www.instagram.com/dorphotel/ \">The Dorp Hotel</a></p><p>High on the slopes of Signal Hill, with unparalleled Table Mountain views, The Dorp Hotel is warm, unpretentious and a home away from home. Each room is uniquely decorated with wide vista terraces, handmade linen robes and bespoke wallpapers. </p><p><a href=\"https://www.instagram.com/ellermanhousehotel/?hl=en \" title=\"https://www.instagram.com/ellermanhousehotel/?hl=en \">Ellerman House</a></p><p>A luxurious boutique hotel with two private villas situated on Lions Head above Bantry Bay with spectacular views of the ocean. It offers modern yet relaxed rooms along with an iconic swimming pool overlooking the bay adorned with nostalgic black and white striped chaises and palm trees. </p><p><a href=\"https://www.instagram.com/babylonstoren/?hl=en \" title=\"https://www.instagram.com/babylonstoren/?hl=en \">Babylonstoren Hotel</a></p><p>Not just a boutique hotel – but a working farm with an organic garden, farm-to-table restaurant, winery and spa. The ultimate experience, it is designed as one of the oldest Cape Dutch farmhouses with high ceilings and cosy rooms. </p><p><a href=\"https://www.hotel-weekend.com/hotels/sterrekopje \" title=\"https://www.hotel-weekend.com/hotels/sterrekopje \">Sterrekopje</a></p><p>If you’re searching for more of an idyllic retreat experience, Sterrekopje is a 125-acre regenerative farm surrounded by nature with 11 individually decorated rooms. All they ask is you switch off, embrace a colour-coded chakra garden and start your day with yoga on a floating jetty. </p><p><a href=\"https://www.instagram.com/tintswalo_atlantic?igsh=aWFjODRxbzBobmlx \" title=\"https://www.instagram.com/tintswalo_atlantic?igsh=aWFjODRxbzBobmlx \">Tintswalo Atlantic</a></p><p>Perched on stilts between ancient milkwood trees on the beachfront of Chapman’s Peak Drive, this luxurious ranch-style hotel is the perfect getaway location with its romantic restaurant Chefs Warehouse and rustic pool and deck. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_e66a9edd-bf5a-4221-987f-dd3631643afe.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Where to dine",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/lacolombect/?hl=en \" title=\"https://www.instagram.com/lacolombect/?hl=en \">La Colombe</a></p><p>Voted one of the best restaurants in South Africa, La Colombe is a fusion of French and Asian fine dining with a menu famous for its custom chef’s menus.  </p><p><a href=\"https://www.instagram.com/thebungalowclifton/?hl=en \" title=\"https://www.instagram.com/thebungalowclifton/?hl=en \">The Bungalow Clifton</a></p><p>Described as the epitome of ‘barefoot luxury,’ this restaurant offers waterfront views of Clifton 4 Beach, white linen tablecloths and a fresh menu of sushi, seafood and greens. </p><p><a href=\"https://www.leoswinebar.com/\" title=\"https://www.leoswinebar.com/\">Leo’s Wine Bar</a></p><p>A cosy wine bar known for its natural and low intervention wines, tucked into Max Bagels shop. It’s eclectic, unique and the perfect spot for an aperitivo hour.  </p><p><a href=\"https://clubkloof.com/\" title=\"https://clubkloof.com/\">Club Kloof</a></p><p>For what they call “Italian-ish” food and a signature cocktail menu, visit Club Kloof who offer a retro-style space with funky red embellishments and a famous cherry whiskey sour. </p><p><a href=\"https://www.instagram.com/thepotluckclubct?igsh=eHlkZW8xdjVwMTU1 \" title=\"https://www.instagram.com/thepotluckclubct?igsh=eHlkZW8xdjVwMTU1 \">The Pot Luck Club</a></p><p>For a laid-back vibe, small eats (ideal for sharing) and an unique drinks menu, The Pot Luck Club is found in a restored biscuit factory up six stories with 180 degree view of the city and harbour. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/5_551fdd96-a7e8-4a57-a253-48d0a87fa1c1.webp",
+        "background_image_2": "shopify://shop_images/6_1e691166-5580-4281-875d-0b7b2444ec87.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Where to swim",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Clifton 4 Beaches</p><p>The Clifton Beaches consist of four beaches, each separated by naturally situated granite rocks. They are a favourite amongst both visitors and locals for their easy accessibility, pristine white sand and soft blue waves. The least crowded is Clifton 1, smaller in size but with spectacular views of the ocean and Millionaire’s Row, some of the most beautiful homes in Cape Town. </p><p>Maidens Cove Tidal Pools</p><p>If you’re looking for more of a cove, the Maidens Cove consists of two tidal pools, each with their own attractive qualities. The first is found between Glen Beach and Camps Bay Beach and is perfect for reading by the ocean or enjoying a picnic. The second is perched by Clifton 4 and offers views of the Atlantic Ocean, the Twelve Apostles Mountain Range and the mountains of the Western Cape. The perfect spot for cool dip, surrounded by the privacy of rounded boulders. </p><p>Saunders Rock Beach</p><p>A small, scenic beach that sits at the southern end of the promenade, right where Sea Point meets Bantry Bay. It’s mostly loved by Wim Hoff enthusiasts for cold water plunges (even during the warmer months). </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_PyXX3z": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3t7Rhj": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_1b404089-705f-4d82-875f-8c188a505213.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3t7Rhj"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_ddXyEg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WdnYrt": {
+          "type": "title",
+          "settings": {
+            "title": "Where to find an unique experience",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CXX6Jm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/beauconstantia/?hl=en \" title=\"https://www.instagram.com/beauconstantia/?hl=en \">Wine tasting at Beau Constantia</a></p><p>A contemporary boutique wine farm at the top of the iconic Constantia Valley that welcomes visitors for a long lunch and wine tasting, overlooking their own vineyards.  </p><p>Sunrise hike at Lion’s Head</p><p>The Lion's Head Hike is a short 5km hike with moderate difficulty but it’s more than worth it when you reach the incredible panoramic views of the city. The best time to visit? For sunrise. </p><p>Spend a Saturday morning at Oranjezicht City Farm Market</p><p>For a true local’s experience, visit the Oranjezicht City Farm Market which supports over 40 local farmers and 80 artisanal food traders. </p><p><a href=\"https://www.jacislodges.co.za/experiences/ \" title=\"https://www.jacislodges.co.za/experiences/ \">Embark on a safari with Jaci’s Lodges’ Conservation Safaris</a></p><p>One of the most memorable experiences in South Africa, this conservation experience includes game drives, walking safaris, rhino notching and bird watching – designed to assist in wildlife conservation efforts in the greater Madikwe Game Reserve.</p><p><a href=\"https://www.instagram.com/_akjpstudio?igsh=MWtmeGF1bDd2ZDRqaA%3D%3D \" title=\"https://www.instagram.com/_akjpstudio?igsh=MWtmeGF1bDd2ZDRqaA%3D%3D \">Shop at AKJP Studio</a></p><p>If you’re looking for local designers, this concept store is home to 40 South African designers as well as its own label. Discover leather handbags, crochet knitwear, ceramic homewares and handmade Egyptian tablecloths. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WdnYrt",
+        "richtext_CXX6Jm"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Travel Edit",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "vacation-edit",
+        "product_list": [
+          "arion-top-blue-stripe",
+          "yerres-mini-dress-blossom-egg-shell-powder-blue",
+          "sete-bikini-top-bistre",
+          "lida-maxi-dress-blue-stripe"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/a-guide-to-paris"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/copenhagen-travel-guide"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/milan-travel-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_eUJjCy",
+        "article_zPApBT",
+        "article_n84pcB"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_hdwEph",
+    "rich_text_UbFWPp",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "editorial_layout_BNpN6Q",
+    "rich_text_K4xM3c",
+    "image_banner_PyXX3z",
+    "rich_text_ddXyEg",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

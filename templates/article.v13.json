@@ -1,0 +1,225 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_e8bf5ecd-394a-4731-a002-dd959d2d3db5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_fMr3Rx": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_3dff4128-6d35-41a5-b1e4-bd5376363392.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT",
+        "image_fMr3Rx"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "A Karamellpudding Recipe",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>In the spirit of the season, our Co-Founder and Creative Director shares a beloved family recipe to share with family and friends. Recreate her Norwegian caramel pudding, or ‘Karamellpudding’ with the recipe below. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>INGREDIENTS</p><p>1/2 cup & 1 tbsp sugar, divided</p><p>2 1/2 cups whole milk</p><p>4 eggs</p><p>1 tsp vanilla</p><p>Whipped cream and berries for serving</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 48
+          }
+        },
+        "richtext_wWcUAM": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>METHOD</p><p>1. Preheat the oven to 250 degrees celsius. </p><p>1. Pour 1/2 cup sugar into a loaf pan and place on the stove over a low to medium heat. Stir until melted and a light golden brown colour.</p><p>3. Once melted, swirl the caramel around the cover the base of the pan. Then set aside to cool and allow the caramel to harden.</p><p>4. In a medium sauce pan, stir together the milk and 1 tbsp sugar. Heat over a medium heat to a slow boil. Remove from heat and set aside to cool.</p><p>5. Whisk the eggs and vanilla together in a separate bowl. Once the milk mixture has cooled, whisk the eggs and vanilla in. </p><p>6. Pour the mixture into the loaf pan and set the pan inside a larger roasting pan. Pour boiling water into the roasting pan until it reaches halfway up the loaf tin. </p><p>7. Bake for around 2 1/2 hours or until the pudding is set. Remove the pan from the water bath and let cool. Cover and chill overnight. </p><p>8. Ready to serve the following day, add whipped cream and berries to a liking.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy",
+        "richtext_wWcUAM"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Jours D'or",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "jours-dor",
+        "product_list": [
+          "yerres-dress-peony-stamp-garnet",
+          "lowen-mini-dress-white",
+          "jane-mini-dress-garnet",
+          "en-vau-shirt-pinstripe-garnet-blush"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/copenhagen-travel-guide"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/milan-travel-guide"
+          }
+        },
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/ibiza-travel-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_zPApBT",
+        "article_n84pcB",
+        "article_eUJjCy"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "rich_text_UbFWPp",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

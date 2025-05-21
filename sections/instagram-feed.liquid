@@ -1,0 +1,116 @@
+{% if section.settings.feed_id != blank %}
+  <section
+    class="section section--instagram-feed"
+    data-section-id="{{ section.id }}"
+    data-section-type="instagram-feed"
+  >
+    {%- if section.blocks.size > 0 -%}
+      <div class="container container--fluid">
+        <ul class="instagram-feed__links list-none">
+          {%- for block in section.blocks -%}
+            <li><a href="{{ block.settings.url }}" target="_blank" rel="noreferrer" class="btn btn--text">{{ block.settings.text }}</a></li>
+          {%- endfor -%}
+        </ul>
+      </div>
+    {%- endif -%}
+
+    <div class="instagram-feed__app">
+      <script
+        async
+        src="//foursixty.com/media/scripts/fs.embed.v2.5.js"
+        data-feed-id={{ section.settings.feed_id | json }}
+        data-theme="showcase_v2_5"
+        data-open-links-in-same-page="true"
+        data-page-size="5"
+      ></script>
+    </div>
+  </section>
+{% endif %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Instagram Feed",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "header",
+        "content": "Foursixty Settings"
+      },
+      {
+        "type": "text",
+        "id": "feed_id",
+        "label": "Feed ID",
+        "default": "faithfull-the-brand-australia"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "link",
+        "name": "Link",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Link Settings"
+          },
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Link Text"
+          },
+          {
+            "type": "url",
+            "id": "url",
+            "label": "Link URL"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Instagram Feed"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

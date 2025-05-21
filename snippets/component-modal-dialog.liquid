@@ -1,0 +1,56 @@
+{% comment %}
+  Parameters
+    modal_class: string, can include multiple separated by space. Each will be prefixed with 'modal--'
+    modal_id: string, unique identifier
+    modal_label: strings for aria attributes
+    modal_desc: strings for aria attributes
+    modal_content
+    modal_sticky_header: true or false
+    modal_header: String. populates the sticky header
+    modal_visible: true or false
+    add_modal_overlay: boolean
+{% endcomment %}
+{% assign modal_classes_arr = modal_class | split: ' ' %}
+{%- capture modal_classes -%}
+  {% for class in modal_classes_arr %} modal--{{ class }}{% endfor %}
+  {{ modal_size | append: ' ' }}
+{%- endcapture -%}
+
+<div
+  class="modal{{ modal_classes }}{% if modal_visible %} modal--visible{% endif %}"
+  {% if modal_id != blank %}
+    id="modal-{{ modal_id }}"
+  {% endif %}
+  role="dialog"
+  {% if modal_label != blank %}
+    aria-label="{{ modal_label }}"
+  {% endif %}
+  {% if modal_desc != blank %}
+    aria-description="{{ modal_desc }}"
+  {% endif %}
+  data-modal="{{ modal_id }}"
+  aria-hidden="{% if modal_visible %}false{% else %}true{% endif %}"
+>
+  <div class="modal__dialog">
+    {% if modal_sticky_header %}
+      <div class="modal__header">
+        {% if modal_header != blank -%}
+          <h2 class="h6">{{ modal_header }}</h2>
+        {%- endif %}
+        <button type="button" class="btn-none modal__close-button" data-modal-close="modal-{{ modal_id }}">
+          {% render 'icon-cross' %}
+        </button>
+      </div>
+    {% else %}
+      <button type="button" class="btn-none modal__close-button" data-modal-close="modal-{{ modal_id }}">
+        {% render 'icon-cross' %}
+      </button>
+    {% endif %}
+    <div class="modal__content">
+      {{ modal_content }}
+    </div>
+  </div>
+  {% if add_modal_overlay %}
+    <div class="modal__overlay" data-modal-close="modal-{{ modal_id }}"></div>
+  {% endif %}
+</div>

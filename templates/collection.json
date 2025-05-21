@@ -1,0 +1,59 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "banner": {
+      "type": "hero-banner",
+      "disabled": true,
+      "settings": {
+        "breadcrumbs": false,
+        "title": "",
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style_1": "text",
+        "text_color": "--color-black",
+        "text_color_desktop": "--color-black",
+        "title_size": "h1",
+        "enable_banner_parallax": false,
+        "position": "top",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "top_margin_desktop": "32",
+        "top_margin_mobile": "16",
+        "paginate": 24,
+        "collection_width": "container container--fluid",
+        "include_collection_title": true,
+        "navbar_container_width": "container container--fluid",
+        "include_layout_switcher": true,
+        "include_product_view_switcher": true,
+        "include_filters": true,
+        "include_sort": true,
+        "pagination_type": "infinite-scroll"
+      }
+    },
+    "footer": {
+      "type": "collection-footer",
+      "settings": {
+        "description": ""
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "main",
+    "footer"
+  ]
+}

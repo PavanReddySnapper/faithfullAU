@@ -1,0 +1,85 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-404",
+      "settings": {
+        "title": "Sorry, we can't seem to find this page",
+        "text": "The page you requested was not found. Here are some suggestions to get you back on track."
+      }
+    },
+    "featured_collections_hrTWhG": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_GW4ra4": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses-maxis",
+            "image": "shopify://shop_images/250424_1_HEROBANNER_1500x2000_D1W18_002.jpg",
+            "title": "Shop Dresses",
+            "url": ""
+          }
+        },
+        "collection_aGFKUF": {
+          "type": "collection",
+          "settings": {
+            "collection": "swim",
+            "image": "shopify://shop_images/2_c652ed0e-0745-4b05-a9e5-8ef11d4289f2.jpg",
+            "title": "Shop Swim",
+            "url": ""
+          }
+        },
+        "collection_eUTdU3": {
+          "type": "collection",
+          "settings": {
+            "collection": "matching-sets",
+            "image": "shopify://shop_images/250424_2_TRIOFEATURE_1000x1500_D1W18_001.jpg",
+            "title": "Shop Sets",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_GW4ra4",
+        "collection_aGFKUF",
+        "collection_eUTdU3"
+      ],
+      "settings": {
+        "bottom_margin_desktop": "16",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "featured_products_4wdLbz": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "New Arrivals",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "new-arrivals",
+        "product_list": [],
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "featured_collections_hrTWhG",
+    "featured_products_4wdLbz"
+  ]
+}

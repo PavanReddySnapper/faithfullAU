@@ -1,0 +1,53 @@
+{%- comment -%}
+  @param {string} [type=edit] - Type of address form; edit or new. Defaults to edit.
+  @param {string} [classes] - CSS classes to add to the address forms.
+  @param {boolean} [cancel_button] - Enables or disables the Cancel button.
+{%- endcomment -%}
+
+{%- assign type = type | default: 'edit' -%}
+
+{%- if type == 'edit' -%}
+  {% form 'customer_address', address, class: classes, data-address-form: 'edit' %}
+    {%- render 'address-form-fields', form: form, address: address -%}
+    <div class="form__group">
+      <div class="form__inline-input" class="address-form__default-checkbox">
+        {{ form.set_as_default_checkbox -}}
+        <label for="address_default_address_{{ form.id }}">
+          {{- 'customer.addresses.set_default' | t -}}
+        </label>
+      </div>
+    </div>
+    <div class="button-container">
+      <button type="submit" class="btn{% unless cancel_button %} btn--block{% endunless %}">
+        {{- 'customer.addresses.update' | t -}}
+      </button>
+      {%- if cancel_button -%}
+        <button type="button" class="btn btn--secondary" data-address-cancel>
+          {{- 'customer.addresses.cancel' | t -}}
+        </button>
+      {%- endif -%}
+    </div>
+  {% endform %}
+{%- elsif type == 'new' -%}
+  {% form 'customer_address', customer.new_address, class: classes, data-address-form: 'new' %}
+    {%- render 'address-form-fields', form: form -%}
+    <div class="form__group">
+      <div class="form__inline-input" class="address-form__default-checkbox">
+        {{ form.set_as_default_checkbox -}}
+        <label for="address_default_address_{{ form.id }}">
+          {{- 'customer.addresses.set_default' | t -}}
+        </label>
+      </div>
+    </div>
+    <div class="button-container">
+      <button type="submit" class="btn{% unless cancel_button %} btn--block{% endunless %}">
+        {{- 'customer.addresses.add' | t -}}
+      </button>
+      {%- if cancel_button -%}
+        <button type="button" class="btn btn--secondary" data-address-cancel>
+          {{- 'customer.addresses.cancel' | t -}}
+        </button>
+      {%- endif -%}
+    </div>
+  {% endform %}
+{%- endif -%}

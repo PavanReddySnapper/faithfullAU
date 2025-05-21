@@ -1,0 +1,79 @@
+{%- comment -%}
+  Parameters
+  image: Liquid object - Shopify media object.
+  img_alt (optional): string - Text for the alt attribute. Defaults to media alt.
+  max_width: (optional): number|string - maximum width used for srcset.
+  img_class (optional): string - Class(es) for the <img> element.
+  img_attributes (optional): string - Attribute(s) for the <img> element.
+  lazy: (optional) boolean - Defaults to true (lazy-load).
+  sizes (optional) : string - sizes attribute for <img>. Defaults to empty.
+  aspect_ratio (optional): string - Defaults to empty, which uses image intrinsic aspect ratio.
+{%- endcomment -%}
+
+{%- liquid
+  assign lazy = lazy | default: true, allow_false: true
+-%}
+
+{%- capture image_markup -%}
+  {%- unless image == blank -%}
+    {%- assign assign img_alt = img_alt | default: image.alt -%}
+    {%- if image contains '.svg' -%}
+      <img class="component-image__image{% if img_class != blank %} {{ img_class }}{% endif %}"
+        src="{{ image | image_url }}"
+        loading="{% if lazy %}lazy{% else %}eager{% endif %}"
+        width="{{ image.width }}"
+        height="{{ image.height }}"
+        alt="{{ img_alt | strip_html | escape }}"
+        {{ img_attributes }}
+      />
+    {%- else -%}
+      {%- comment -%}
+        Handle preview images of non-image media objects (eg. 3D models, videos)
+        Handle Accentuate Custom Fields MediaV2 images through cloudinary_src property
+      {%- endcomment -%}
+      {%- liquid
+        if image.media_type and image.media_type != 'image'
+          assign image = image.preview_image
+        endif
+
+        if image.cloudinary_src == blank
+          assign src_fallback = image | image_url: width: 640
+          assign src_template = image | image_url: width: 100 | replace: 'width=100', 'width={width}'
+        else
+          assign src_fallback = image.cloudinary_src | append: 'w_640'
+          assign src_template = image.cloudinary_src | append: 'w_{width}'
+        endif
+
+        capture srcset
+          render 'srcset', img_url: src_template, max_width: max_width
+        endcapture
+      -%}
+      <img class="component-image__image{% if img_class != blank %} {{ img_class }}{% endif %}"
+        srcset="{{ srcset }}"
+        src="{{ src_fallback }}"
+        loading="{% if lazy %}lazy{% else %}eager{% endif %}"
+        {% unless lazy %}fetchpriority="high"{% endunless %}
+        sizes="{{ sizes }}"
+        width="{{ image.width }}"
+        height="{{ image.height }}"
+        alt="{{ img_alt | strip_html | escape }}"
+        {{ img_attributes }}
+      />
+    {%- endif -%}
+  {%- else -%}
+    {{ 'image' | placeholder_svg_tag: 'component-image__image placeholder-svg' }}
+  {%- endunless -%}
+{%- endcapture -%}
+
+{%- if aspect_ratio != blank -%}
+  <div
+    class="component-image__wrapper{% if image contains '.svg' %} component-image__wrapper--svg{% endif %} aspect-ratio aspect-ratio--{{ aspect_ratio }}"
+    {% if aspect_ratio == 'natural' %}
+      style="padding-top: {% if image != blank %}{{ 100 | divided_by: image.aspect_ratio | append: '%' }}{% else %}100%{% endif %}"
+    {% endif %}
+  >
+    {{ image_markup }}
+  </div>
+{%- else -%}
+  {{ image_markup }}
+{%- endif -%}

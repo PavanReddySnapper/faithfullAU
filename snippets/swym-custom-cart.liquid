@@ -1,0 +1,29 @@
+{% if page.template_suffix == 'swym' %}
+  <script>
+    function swymCallbackFn() {
+      // Override the Swym cart API to support custom side cart
+      var replayAddToCartOriginalFn = _swat.replayAddToCart;
+      window._swat.replayAddToCart = function () {
+        // Save the successCallback
+        var successCallbackFn = arguments[2];
+        arguments[2] = function (data) {
+          if (successCallbackFn && updateThirdPartyCartFn) {
+            successCallbackFn(data);
+            updateThirdPartyCartFn(data);
+          }
+        };
+        // Call the orginal function
+        replayAddToCartOriginalFn.apply(this, arguments);
+      };
+      // Runs on success callback
+      function updateThirdPartyCartFn(productData) {
+        // TWP - Custom event dispatched when a product is successfully added to cart by Swym
+        document.dispatchEvent(new CustomEvent('swym:added-to-cart'));
+      }
+    }
+    if (!window.SwymCallbacks) {
+      window.SwymCallbacks = [];
+    }
+    window.SwymCallbacks.push(swymCallbackFn);
+  </script>
+{% endif %}

@@ -1,0 +1,6 @@
+{%- if settings.enable_preconnects -%}
+  {%- for link in linklists[settings.dns_preconnects_linklist].links %}
+    <link rel="preconnect" href="{{ link.url }}" crossorigin>
+    <link rel="dns-prefetch" href="{{ link.url }}">
+  {% endfor -%}
+{%- endif -%}

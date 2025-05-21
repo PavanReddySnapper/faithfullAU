@@ -1,0 +1,114 @@
+@media screen and (max-width:989px) {
+.product__form-actions {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9;
+}  
+.product__form-options .variant-select__content {
+  top: unset;
+  bottom: 100%;
+}  
+.product--sticky-atc-enabled .product__form-actions {
+    position: relative;
+    margin: 0;
+  }
+ .product--sticky-atc-enabled .product__form-actions .variant-select__content {
+    top: 100%;
+    bottom: unset;
+  }   
+.product--sticky-atc-enabled .product__form-actions .btn-container .btn {
+  border-left: 1px solid #000;
+  border-right: 1px solid #000;
+}  
+}
+.gift_button {
+  width: auto !important;
+  display: inline-block;
+  margin: -38px 0 0;
+  position: relative;
+  top: -34px;
+}
+.gift_button #button {
+  background: none !important;
+  border: 0 !important;
+}
+
+
+
+@media screen and (max-width:767px) {
+.product-card__badges li {
+  font-size: 0.563rem;
+}
+.gift_button {
+  width: 100% !important;
+  display: inline-block;
+  margin: 10px 0 0;
+  position: relative;
+  top: 0;
+} 
+}
+
+
+
+.main-table-header{
+    display: flex;
+    gap: 1rem;
+}
+.region-header{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    padding: 0;
+    font-weight: 500;
+}
+.region-header:hover{
+
+    color: black;
+}
+.region-header.active{
+    border-bottom: 1px solid black;
+}
+
+.country-return-section table{
+    font-weight: 500;
+
+
+}
+
+#info-shipping-countries .country-return-section{
+    overflow: auto;
+}
+.parent-container{
+    height: auto;
+    margin-bottom:50px;
+}
+#info-shipping-countries .country-return-section table th{
+    background: none;
+    border-left: none;
+    border-right: none;
+    font-weight: var(--font-weight-body-bold);
+    white-space: nowrap;
+
+}
+#info-shipping-countries .country-return-section table tbody tr td{
+    border-left: none;
+    border-right: none;
+    font-weight: var(--font-weight-body);
+}
+#info-shipping-countries .country-return-section table tbody tr td{
+
+}
+#info-shipping-countries .country-return-section table tbody tr td:first-child{
+    position: sticky;
+    left: 0;
+    background: var(--color-neutral-10);
+}
+
+#info-shipping-countries .country-return-section table thead tr th:first-child{
+    position: sticky;
+    left: 0;
+    background: var(--color-neutral-10);
+}
+

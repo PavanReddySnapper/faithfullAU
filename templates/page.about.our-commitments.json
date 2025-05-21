@@ -1,0 +1,240 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Our Commitments",
+        "is_primary_heading": true,
+        "page_nav": "about-us-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "rich_text_HbCV3N": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_PWDwQ8": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>FAITHFULL is committed to creating thoughtfully produced, socially responsible garments. From our manufacturing choices and commercial practices to our organisational culture, community investment, environmental footprint and social impact, we ensure that each step is a positive one and one that falls in line with our brand’s values.</p><p>While always a continual work in progress, we are putting in the time, research and resources to grow everyday.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_PWDwQ8"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_with_text_QnbiDQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_Bx4KWd": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/comm-1.jpg",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        },
+        "text_grfEnC": {
+          "type": "text",
+          "settings": {
+            "pre_title": "",
+            "title": "How We Make A Difference",
+            "title_size": "h2",
+            "text": "<h6>COMMUNITY-FOCUSED AND FAMILY-MINDED</h6><p>We care about who makes our pieces, just as much as who they are made for. Our people are the beating heart of our brand, so we put them first. We are passionate about supporting local communities and creating a caring and collaborative work environment for everybody.</p>",
+            "button_label": "",
+            "button_url": "",
+            "button_style": "btn--text btn--link",
+            "image1_label": "",
+            "image1_link": "",
+            "image2_label": "",
+            "image2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Bx4KWd",
+        "text_grfEnC"
+      ],
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "image_with_text_3Fgkdt": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_nbyw9K": {
+          "type": "text",
+          "settings": {
+            "pre_title": "",
+            "title": "We Ensure",
+            "title_size": "h2",
+            "text": "<h6>EMPLOYEE BENEFITS</h6><p>All head office and design studio employees in Australia and Indonesia are paid above the national minimum wage along with additional benefits. We also provide a safe and supportive working environment for all employees.</p><h6>UPSKILLING AND TRAINING</h6><p>We provide training programs both externally and internally for individuals who may not have extensive experience or skills prior to their role at FAITHFULL but are eager to learn and develop their repertoire. We offer access to both professional education and a range of holistic courses.</p><h6>COMMUNITY INVESTMENT</h6><p>Since the beginning, we have provided financial and managerial assistance to local businesses and communities to support their growth in conjunction with our own. As FAITHFULL continues to grow, our ongoing goal is to see these small, independent partners and factories and the people within them prosper even further.</p><p><strong>PARENTAL SUPPORT</strong></p><p>We support all parents returning to the workforce after their parental leave by employing home industry contractors. Many members of our design office work from home, allowing them the freedom and duality to support their families.</p>",
+            "button_label": "",
+            "button_url": "",
+            "button_style": "btn--text btn--link",
+            "image1_label": "",
+            "image1_link": "",
+            "image2_label": "",
+            "image2_link": ""
+          }
+        },
+        "image_tWgfqC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1-Desktop_3aba7312-5573-4704-847b-d3a738df8dcb.webp",
+            "image_mobile": "shopify://shop_images/1-Mobile.webp",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "text_nbyw9K",
+        "image_tWgfqC"
+      ],
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "text_list_wGER7j": {
+      "type": "text-list",
+      "blocks": {
+        "text_qtBEhN": {
+          "type": "text",
+          "settings": {
+            "title": "GIVE BACK PROGRAMS",
+            "description": "<p>We are committed to giving back to a diverse range of charities and community organisations, primarily in Indonesia. However, we also provide support to international organisations based on global circumstances and community needs. For example we have partnered with Trees4Trees, Thread Together, Worn For Good and donated to initiatives in response to the 2024 Los Angeles wildfires.</p><p>In 2024, we provided and distributed numerous food packs to communities and villages throughout Indonesia, partnering with organisations including Komunitas Taman Hati, Shelter Satwa Bali and Seeds of Hope. We also organised food donations to a number of animal shelters and street feeders, including Kijang Putih Shelter Ungasan, and worked closely with Yayasan Seva Bhuana and Bali Pet Crusaders. </p>"
+          }
+        },
+        "text_LJkDqK": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "HYGIENE PACKAGES",
+            "description": "<p>In August, 2018, a devastating earthquake struck Lombok, and a number of small surrounding islands. Widespread damage ensued and we supported a number of organisations through monetary assistance as well as purchasing supplies for distribution. With many people having their houses and places of business destroyed, makeshift camps were created for families to stay. We created and distributed hygiene packs full of necessities, as well as blankets and clothing, donated by our employees. We were able to give more than 5000 hygiene packs to a number of remote villages, supplied food for more than 1000 people and contributed over 100 boxes of clothing.</p>"
+          }
+        },
+        "text_p9xENj": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "STOCK AND MATERIAL DONATIONS",
+            "description": "<p>We donate fabric to women’s centres within Indonesia, where they are given the opportunity to learn entrepreneurial skills and make blankets and other gifts. We also donate our excess stock, sample collections and fabric, to several charitable organisations across Bali and Australia, such as Thread Together, Worn for Good, the Red Cross.</p>"
+          }
+        },
+        "text_AwKy6P": {
+          "type": "text",
+          "settings": {
+            "title": "STOCK & MATERIAL DONATIONS",
+            "description": "<p>We donate fabric to women’s centres within Indonesia, where they are given the opportunity to learn entrepreneurial and production skills. We also donate our excess stock, sample collections and fabric to several charitable organisations across Indonesia and Australia, including ThreadTogether, Worn for Good, The Red Cross and initiatives in response to the 2024 Los Angeles wildfires.</p><p>We also work closely with the Bali Life Foundation where we have provided over one tonne of excess fabric and offcuts to education and training programs for women who were learning how to sew and handcraft goods, where they would go on to create baskets, dolls, coasters and tote bags. </p>"
+          }
+        },
+        "text_TmrneD": {
+          "type": "text",
+          "settings": {
+            "title": "CONSCIOUS BUSINESS PRACTICES",
+            "description": "<p>Both our offices in Sydney and Bali practice recycling and aim to minimise wastage. Team members are provided with reusable water bottles with clean, filtered water stations. In addition, the Bali office has partnered with the recycling organisation, ecoBali, to implement environmentally friendly practices and team training workshops.</p>"
+          }
+        },
+        "text_7bBqBi": {
+          "type": "text",
+          "settings": {
+            "title": "EARTH DAY",
+            "description": "<p>Since 2021, we have donated 100% of our online sales profits on Earth Day to Trees4Trees. Trees4Trees is a non-profit foundation based in Indonesia that focuses on renewing the environment and empowering local communities through reforestation and education. Each year our donations have led to the planting of over 15,000 trees across Indonesia.</p>"
+          }
+        },
+        "text_UgX7jp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_qtBEhN",
+        "text_LJkDqK",
+        "text_p9xENj",
+        "text_AwKy6P",
+        "text_TmrneD",
+        "text_7bBqBi",
+        "text_UgX7jp"
+      ],
+      "settings": {
+        "title": "We Give Back",
+        "text": "",
+        "button_text": "",
+        "button_link": "shopify://pages/about-us",
+        "layout": "grid",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "image_with_text_banner_xLLRqH": {
+      "type": "image-with-text-banner",
+      "settings": {
+        "image": "shopify://shop_images/comm-4.jpg",
+        "pre_title": "",
+        "pre_title_alignment": "center",
+        "pre_title_alignment_mobile": "center",
+        "title": "",
+        "title_style": "h1",
+        "title_alignment": "center",
+        "title_alignment_mobile": "center",
+        "text": "",
+        "text_style": "body-medium",
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40"
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_HbCV3N",
+    "image_with_text_QnbiDQ",
+    "image_with_text_3Fgkdt",
+    "text_list_wGER7j",
+    "image_with_text_banner_xLLRqH"
+  ]
+}

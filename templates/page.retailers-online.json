@@ -1,0 +1,203 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "container--sm",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "main_page_header_hEMyiV": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Our Retailers",
+        "is_primary_heading": true,
+        "page_nav": "retailers-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_xKWLbM": {
+      "type": "store-locator",
+      "blocks": {
+        "store_QAA9Bf": {
+          "type": "store",
+          "settings": {
+            "title": "Anthropologie",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://www.anthropologie.com</p>"
+          }
+        },
+        "store_iUhDTW": {
+          "type": "store",
+          "settings": {
+            "title": "Bloomingdale's",
+            "contact": "<p>Available online at Bloomingdale's worldwide.<br/><br/>https://www.bloomingdales.com</p>"
+          }
+        },
+        "store_tzzKHt": {
+          "type": "store",
+          "settings": {
+            "title": "David Jones",
+            "contact": "<p>Available online and in stores across multiple locations in Australia<br/><br/>13 33 57<br/>https://www.davidjones.com<br/></p>"
+          }
+        },
+        "store_6eUPgU": {
+          "type": "store",
+          "settings": {
+            "title": "Eras Department Store",
+            "contact": "<p>Available online and in stores across multiple locations in Greece<br/><br/>+35 722 365 000<br/>https://era.com.cy</p>"
+          }
+        },
+        "store_Fmqbix": {
+          "type": "store",
+          "settings": {
+            "title": "END",
+            "contact": "<p>Available online and in stores in the UK and Italy</p><p><br/>https://www.endclothing.com</p>"
+          }
+        },
+        "store_PHee3q": {
+          "type": "store",
+          "settings": {
+            "title": "Fenwick",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://www.fenwick.co.uk</p>"
+          }
+        },
+        "store_zQnTQz": {
+          "type": "store",
+          "settings": {
+            "title": "Free Shop",
+            "contact": "<p>Available online and in stores across multiple locations in Greece. <br/><br/>https://freeshop.gr</p>"
+          }
+        },
+        "store_xYz8xk": {
+          "type": "store",
+          "settings": {
+            "title": "Freudian Kicks",
+            "contact": "<p>Available online in Norway.<br/><br/>https://www.freudiankicks.com</p>"
+          }
+        },
+        "store_GnB4eY": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Girls With Gems",
+            "contact": "<p>Available online and in stores at Girls With Gems<br/><br/>+61 413 488 823<br/>https://www.girlswithgems.com<br/></p>"
+          }
+        },
+        "store_czKa3k": {
+          "type": "store",
+          "settings": {
+            "title": "Harvey Nichols",
+            "contact": "<p>Available online and in store across multiple locations in Europe, USA, and Asia.<br/><br/>https://www.harveynichols.com</p>"
+          }
+        },
+        "store_MCMcie": {
+          "type": "store",
+          "settings": {
+            "title": "Printemps",
+            "contact": "<p>Available online and in stores across multiple locations in France.<br/><br/>https://www.printempsfrance.com</p>"
+          }
+        },
+        "store_b6Xm98": {
+          "type": "store",
+          "settings": {
+            "title": "Prochaine",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://prochaine.co.uk</p>"
+          }
+        },
+        "store_p9wPKY": {
+          "type": "store",
+          "settings": {
+            "title": "Mytheresa",
+            "contact": "<p>Available online at Mytheresa worldwide.<br/><br/>https://www.mytheresa.com</p>"
+          }
+        },
+        "store_8ErBA3": {
+          "type": "store",
+          "settings": {
+            "title": "Net-A-Porter",
+            "contact": "<p>Available online at Net-A-Porter worldwide.<br/><br/>https://www.net-a-porter.com/<br/></p>"
+          }
+        },
+        "store_HJNMGB": {
+          "type": "store",
+          "settings": {
+            "title": "Nordstrom",
+            "contact": "<p>Available online at Nordstrom worldwide.<br/><br/>https://www.nordstrom.com</p>"
+          }
+        },
+        "store_REEgEc": {
+          "type": "store",
+          "settings": {
+            "title": "Revolve",
+            "contact": "<p>Available online at Revolve worldwide.<br/><br/>+1 562 926 5672\thttps://www.revolveclothing.com/</p>"
+          }
+        },
+        "store_nQxR4c": {
+          "type": "store",
+          "settings": {
+            "title": "Saks Fifth Avenue",
+            "contact": "<p>Available online at Saks Fifth Avenue worldwide<br/><br/>https://www.saksfifthavenue.com/</p>"
+          }
+        },
+        "store_mejibq": {
+          "type": "store",
+          "settings": {
+            "title": "Selfridges",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://www.selfridges.com</p>"
+          }
+        },
+        "store_HQeCCb": {
+          "type": "store",
+          "settings": {
+            "title": "Zalando",
+            "contact": "<p>Available online and in stores across multiple locations in Germany.<br/><br/>https://zalando.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_QAA9Bf",
+        "store_iUhDTW",
+        "store_tzzKHt",
+        "store_6eUPgU",
+        "store_Fmqbix",
+        "store_PHee3q",
+        "store_zQnTQz",
+        "store_xYz8xk",
+        "store_GnB4eY",
+        "store_czKa3k",
+        "store_MCMcie",
+        "store_b6Xm98",
+        "store_p9wPKY",
+        "store_8ErBA3",
+        "store_HJNMGB",
+        "store_REEgEc",
+        "store_nQxR4c",
+        "store_mejibq",
+        "store_HQeCCb"
+      ],
+      "settings": {
+        "title": "Online",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_page_header_hEMyiV",
+    "store_locator_xKWLbM"
+  ]
+}

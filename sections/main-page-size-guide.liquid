@@ -1,0 +1,88 @@
+<div data-section-id="{{ section.id }}" data-section-type="main-page-size-guide">
+  <div class="container container--sm">
+    {%- render 'size-table', type: section.settings.size_type, table_title: section.settings.table_title -%}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Size Guide",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Size Guide Settings"
+      },
+      {
+        "type": "select",
+        "id": "size_type",
+        "label": "Size Type",
+        "default": "Apparel",
+        "options": [
+          {
+            "value": "Apparel",
+            "label": "Apparel"
+          },
+          {
+            "value": "Swim",
+            "label": "Swim"
+          },
+          {
+            "value": "Bra",
+            "label": "Bra"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "table_title",
+        "label": "Table Title",
+        "info": "(optional) Used when no Body Measurements are provided."
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 120
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 80
+      }
+    ],
+    "presets": [
+      {
+        "name": "Size Guide",
+        "category": "Text"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["page"]
+    }
+  }
+{% endschema %}

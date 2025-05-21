@@ -1,0 +1,81 @@
+{%- liquid
+  assign accordion_labels = ''
+  assign accordion_content = ''
+
+  # PRODUCT DESCRIPTION
+  if product.description != blank
+    assign accordion_labels = accordion_labels | append: 'Description|||'
+    assign accordion_content = accordion_content | append: product.description | append: '|||'
+  endif
+
+  # DETAILS
+  if product.metafields.custom_fields.product_details
+    assign accordion_labels = accordion_labels | append: 'Details|||'
+    assign accordion_content = accordion_content | append: product.metafields.custom_fields.product_details | append: '|||'
+  endif
+
+  # SIZE & FIT
+  if display_size_fit_tab and product.metafields.custom_fields.size_and_fit_content
+    assign accordion_labels = accordion_labels | append: 'Size & Fit|||'
+    assign accordion_content = accordion_content | append: product.metafields.custom_fields.size_and_fit_content | append: '|||'
+  endif
+
+  # GARMENT CARE
+  if product.metafields.custom_fields.garment_care_desc
+    assign accordion_labels = accordion_labels | append: 'Garment Care|||'
+    assign accordion_content = accordion_content | append: product.metafields.custom_fields.garment_care_desc | append: '|||'
+  endif
+
+  # Reviews
+  if display_size_fit_tab
+    assign accordion_labels = accordion_labels | append: 'Reviews|||'  
+  endif
+
+
+  for block in section.blocks
+    if block.type == 'accordion_item'
+      assign accordion_labels = accordion_labels | append: block.settings.title
+      unless forloop.last
+        assign accordion_labels = accordion_labels | append: '|||'
+      endunless
+      if block.settings.content_type == 'text'
+        assign accordion_content = accordion_content | append: block.settings.content_text
+      else
+        assign accordion_content = accordion_content | append: pages[block.settings.content_page].content
+      endif
+      unless forloop.last
+        assign accordion_content = accordion_content | append: '|||'
+      endunless
+    endif
+  endfor
+
+  assign label_array = accordion_labels | split: '|||'
+  assign content_array = accordion_content | replace: '<h1>', '<h2 class="h1">' | replace: '</h1>', '</h2>' | split: '|||'
+-%}
+
+{%- if label_array.size > 0 and content_array.size > 0 -%}
+  <ul class="product__description-tabs tab__list list-none ">
+    {%- for label in label_array -%}
+      <li>
+        <button
+          class="tab__link navigation btn-none"
+          data-accordion-trigger
+          data-accordion-panel="#accordion-trigger-{{ forloop.index }}-{{ section.id }}"
+          {% if forloop.first %}
+            aria-selected="true"
+          {% endif %}
+        >
+          {{ label }}
+        </button>
+      </li>
+    {%- endfor -%}
+  </ul>
+
+  {%- render 'component-accordion-item',
+    labels: label_array,
+    contents: content_array,
+    open_first: true,
+    unique: section.id,
+    rte: true
+  -%}
+{%- endif -%}

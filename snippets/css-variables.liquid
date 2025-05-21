@@ -1,0 +1,81 @@
+{{ 'ABCDiatype-Regular.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: '' }}
+{{ 'ABCDiatype-Medium.woff2' | asset_url | preload_tag: as: 'font', type: 'font/woff2', crossorigin: '' }}
+
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+  @font-face {
+    font-family: 'ABC Diatype';
+    src: url("{{ 'ABCDiatype-Regular.woff2' | asset_url }}") format('woff2'),
+      url("{{ 'ABCDiatype-Regular.woff' | asset_url }}") format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'ABC Diatype';
+    src: url("{{ 'ABCDiatype-Medium.woff2' | asset_url }}") format('woff2'),
+      url("{{ 'ABCDiatype-Medium.woff' | asset_url }}") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'FreightDispBlack';
+    src: url('FreightDispBlack.woff2') format('woff2'),
+      url('FreightDispBlack.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'FreightDispMedium';
+    src: url('FreightDispMedium.woff2') format('woff2'),
+      url('FreightDispMedium.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'ProximaNova-Light';
+    src: url('ProximaNova-Light.woff') format('woff'),
+    url('ProximaNova-Light.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'FreightTextLight';
+    src: url('FreightTextLight.woff') format('woff'),
+      url('FreightTextLight.woff2') format('woff2');
+  }
+  @font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('ProximaNovaRegular.woff') format('woff'),
+      url('ProximaNovaRegular.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'ProximaNova-Semibold';
+    src: url('ProximaNova-Semibold.woff') format('woff'),
+      url('ProximaNova-Semibold.woff2') format('woff2');
+  }
+
+  {% liquid
+    capture icon_check_svg
+      render 'icon-check'
+    endcapture
+    assign icon_check = icon_check_svg | replace: 'currentColor', '#2E2C2A' | base64_encode | prepend: 'url(data:image/svg+xml;base64,' | append: ')'
+
+    capture icon_error_svg
+      render 'icon-error'
+    endcapture
+    assign icon_error = icon_error_svg | replace: 'currentColor', '#c53131' | base64_encode | prepend: 'url(data:image/svg+xml;base64,' | append: ')'
+
+    capture icon_star_filled_svg
+      render 'icon-star'
+    endcapture
+    assign icon_star_filled = icon_star_filled_svg | replace: 'fill="none"', 'fill="#0f0f0f"' | base64_encode | prepend: 'url(data:image/svg+xml;base64,' | append: ')'
+  %}
+  :root {
+    --icon-check: {{ icon_check }};
+    --icon-error: {{ icon_error }};
+    --icon-star-filled: {{ icon_star_filled }};
+  }
+</style>

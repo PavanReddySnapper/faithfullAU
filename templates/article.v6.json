@@ -1,0 +1,948 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_3c860862-0de0-4b2c-8661-80268192bf24.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "A Summer Reading Guide",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A rustic island off the coast of Italy. Volcanic rocks, dotted with organic cotton beach towels and <a href=\"https://au.faithfullthebrand.com/products/anacapri-pareo-futura-stripe-sky-blue-multi\"><span style=\"text-decoration:underline\">silk crepe pareos</span></a>. Straw bags plenished with SPF bottles, <a href=\"https://au.faithfullthebrand.com/products/antibes-shirt-white\"><span style=\"text-decoration:underline\">linen shirts</span></a> and folded, dog-eared books. No summer vacation is complete without a captivating, mind-numbing read that offers a sense of escapism. Pages stained with sticky sunscreen and salt water that are passed around amongst travellers, each sharing their own thoughts and reviews.  </p><p>In light of the summer season, below we’ve pulled together a series of our favourite titles for every occasion. Whether you’re searching for easy read you can blitz through in an afternoon or a richly descriptive novel that’ll transport you to an oasis abroad.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_tTjwpQ": {
+      "type": "image-banner",
+      "blocks": {
+        "image_T3Rr74": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/2_562ba5ae-8f2f-47d8-bb7e-1c4b4b56aed2.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_T3Rr74"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "Vintage classics you’ll hold onto long after your holiday",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Persuasion by Jane Austen<br/>A vintage treasure by the indelible Jane Austen that follows a woman in her late twenties who grapples with letting go of her first love due to his lack of rank and wealth. </p><p>The Secret History by Donna Tartt<br/>A modern classic published in the early 1990s where a group of eccentric and wildly clever students, under the influence of their professor, discover a new way of thinking that goes beyond the boundaries of normal morality, leading them to slip gradually from innocent to evil. </p><p>Wide Sargasso Sea by Jean Rhys<br/>Designed to serve as a prequel to Charlotte Brontë’s <em>Jane Eyre</em>, this novel is set in Jamaica during the post-emancipation 1840s and tells the story of Antoinette Cosway, a Creole woman who, in Rhys’s imagining, becomes the madwoman in the attic in Brontë’s classic. </p><p>The White Album by Joan Didion<br/>An American classic that examines key events and celebrities of the 1960s, including Jim Morrison, Janis Joplin and the Black Panthers and attempts to make sense of mass culture at the time it was published in 1979. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/3_fa7e8f80-ff4d-4489-9eb4-298882ead84d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Delectable beach reads, designed to be devoured in a day",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Romantic Comedy by Curtis Sittenfeld <br/>A modern take on the traditional romantic comedy, this fictional story follows a late night script writer and her unlikely relationship with a film star. </p><p>My Year Of Rest And Relaxation by Ottessa Moshfegh<br/>The internal monologue of a twenty-something woman living in early noughties New York as she attempts to escape her daily life by inducing a year-long sleep. </p><p>The Husbands by Holly Gramazio<br/>A lighthearted comedy that explores the age old question – have we made the right decision? This fictional London woman discovers what her life would have been had she spent them with multiple different husbands. </p><p>Cult Classic by Sloane Crosley<br/>The fictional story of an engaged thirty-something magazine editor, who after running into several of her exes on the streets of New York, discovers a high-concept cult has orchestrated these events in order to teach her ‘something’ about love.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_cXyQxg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_trb6eX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_99905bd1-a343-4740-bdf6-6553991fdb06.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_trb6eX"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Life lessons that’ll inspire you to return home with a renewed perspective",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Everything I Know About Love by Dolly Alderton <br/>A beloved memoir that offers relatable and honest accounts of what it’s like to fall in love, navigate friendships and relationships in a modern world and the importance of self-love. </p><p>Conversations On Love by Natasha Lunn<br/>A heartwarming collection of essays that intertwines personal experience with multiple different interviews, exploring love in all its many forms. From romantic love to friendship, loss and how relationships can evolve over time.</p><p>How Do We Know We're Doing It Right? by Pandora Sykes<br/>A series of essays that breaks down the different myths and anxieties that consume women in a modern day society, tackling topics from happiness to wellness, consumerism and cancel culture.</p><p>Tell Me I’m An Artist by Chelsea Martin<br/>A fictional coming-of-age story of a struggling artist attempting to find her place in a new social class with wealthy, well-connected peers. It grapples with themes of social hierarchy and privilege, and ruminates on the shame that follows choosing a path that has not been laid out for you</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_PyXX3z": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3t7Rhj": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/5_a01bc48c-4e25-455a-94fb-bcb67415a932.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3t7Rhj"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_ddXyEg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WdnYrt": {
+          "type": "title",
+          "settings": {
+            "title": "New releases your travel companions will want to borrow",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CXX6Jm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Liars by Sarah Manguso (available July 23)<br/>A deep dive into the fictional collapse of a marriage and what it means to be both a wife, mother and an artist. </p><p>Intermezzo by Sally Rooney (available September 24)<br/>The best selling author of <em>Normal People </em>returns with the tale of two very different brothers who are both grieving the death of their father and how they navigate their relationships with the women in their lives. </p><p>Scrap by Calla Henkel (available August 20) <br/>A black humour-style novel that tells the story of a young woman, obsessed with true crime podcasts, who finds herself thrust into a murder mystery when her enigmatic boss is killed. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WdnYrt",
+        "richtext_CXX6Jm"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_MKzRLJ": {
+      "type": "image-banner",
+      "blocks": {
+        "image_FanEha": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/6_cfa8b3b3-9bae-4b60-b466-8ff63d7132e8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_FanEha"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_X3wnba": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AECMJk": {
+          "type": "title",
+          "settings": {
+            "title": "A nitty-gritty read you can take your time with",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_D8mww3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Blue Sisters by Coco Mellors<br/>A deep and meaningful story of four fictional sisters, each vastly different from the other. Following the death of the fourth sister, the three reunite and grapple with feelings of grief, addiction, heartbreak and love. </p><p>The Girls by Emma Cline<br/>Loosely inspired by the events of 1969 involving Sharon Tate and the Manson Family, this is a fictional story of a fourteen year old girl who finds herself caught up in a cult-like group, living on a California ranch and devoted entirely to one aspiring musician. </p><p>Tennis Lessons by Susannah Dickey<br/>Darkly funny but candidly honest, this is the story of one woman’s road to adulthood, exploring each year of her life. </p><p>My Policeman by Bethan Roberts<br/>A raw yet tender portrayal of a police officer living in 1950s England who is torn between his duty to his wife and his secret relationship with an art curator. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        }
+      },
+      "block_order": [
+        "title_AECMJk",
+        "richtext_D8mww3"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_h8fbzd": {
+      "type": "image-banner",
+      "blocks": {
+        "image_gyhXwQ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_af07596b-f4d3-4869-9421-19f5a2e74a5d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gyhXwQ"
+      ],
+      "custom_css": [],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_eWqQnY": {
+      "type": "rich-text",
+      "blocks": {
+        "title_68VMir": {
+          "type": "title",
+          "settings": {
+            "title": "Travel-inspired tales that’ll transport you to another world (in case you’re not on summer vacation)",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_it3C4d": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Hot Milk by Deborah Levy<br/>Set on the south coast of Spain and Athens, Greece, this novel follows a mother daughter duo and their relationship as they are in search for a medical cure for a mysterious illness. </p><p>Call Me By Your Name by André Aciman<br/>A fictional coming-of-age story following a teenage boy spending a summer at his parent’s cliff-side mansion on the Italian Riviera in the late 1980s and his blossoming relationship with a guest of his father’s. It explores themes of obsession, fascination, passion and intimacy (and has an excellent film adaptation with Timothee Chalamet). </p><p>Before We Were Innocent by Ella Berman<br/>Exploring the nuances of female friendship, this novel begins during a sun-soaked summer in Greece, and goes on to follow the trajectory of two women’s lives after tragedy strikes and the media’s obsession with their potential involvement. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_68VMir",
+        "richtext_it3C4d"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Journal",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "midi-dresses",
+        "product_list": [],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "image_banner_LTgfqb": {
+      "type": "image-banner",
+      "blocks": {
+        "image_HAAVdp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_17_1a4618e4-356a-4812-a7e1-6f432f6cb744.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_UxBCJq": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_18_473da4ca-f9f3-4751-8f36-79ba2d085085.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_868WwE": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_19_5c2b432e-0b1e-4770-8cb8-2a22919a2623.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_PAbCg3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_20_225a10e8-d2c2-47fc-920c-81ca93ecc210.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_qiEP87": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_21_4c62a10b-89f1-46c9-ba87-84bb6c171d04.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_gJHKhL": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_22_2bb4ae32-1c1f-4412-ac2a-b6a69391683f.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_HAAVdp",
+        "image_UxBCJq",
+        "image_868WwE",
+        "image_PAbCg3",
+        "image_qiEP87",
+        "image_gJHKhL"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_with_text_pkRQPB": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_cjbG4y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_25_fb4d4cee-3069-4902-9d9f-5c4d272306f1.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        },
+        "text_FHKtVU": {
+          "type": "text",
+          "settings": {
+            "pre_title": "",
+            "title": "Living between two sun-drenched cities, Tel-Aviv and Lisbon, what does a quintessential Summer day look like to you?",
+            "title_size": "h4",
+            "text": "<p>I am inspired by older times and I aim to revive them in my work. I would define my creative style as Romantic and nostalgic yet I always connect to the brand/ client’s personal style and necessities.</p><p>Baroque and romanticism have a big influence on my work and inspiration. I often visit palaces, antique museums and art collections that hold paintings and sculptures from those eras.</p><p>I visit the flea market once a week to source objects and tableware that I use in my work and events design.</p>",
+            "button_label": "",
+            "button_url": "",
+            "button_style": "btn--text btn--link",
+            "image1": "shopify://shop_images/Rectangle_1697.png",
+            "image1_label": "Lusia Maxi Dress Elka Floral",
+            "image1_link": "#",
+            "image2": "shopify://shop_images/Rectangle_1698.png",
+            "image2_label": "Lusia Maxi Dress Elka Floral",
+            "image2_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_cjbG4y",
+        "text_FHKtVU"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "image_with_text_kwWhpa": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_aEcFC4": {
+          "type": "text",
+          "settings": {
+            "pre_title": "We Care",
+            "title": "Our People, Our Planet",
+            "title_size": "h2",
+            "text": "<p>We care deeply about our people and our planet, so we’re continually investing our time and resources in doing better and being greater.<br/><br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+            "button_label": "Read More",
+            "button_url": "#",
+            "button_style": "btn--text btn--link",
+            "image1_label": "",
+            "image1_link": "",
+            "image2_label": "",
+            "image2_link": ""
+          }
+        },
+        "image_GPy9kP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_27_bb01e99c-a583-4f94-a00c-9e92a0fe6695.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "text_aEcFC4",
+        "image_GPy9kP"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "featured_products_EfpHri": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Journal",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "accessories",
+        "product_list": [
+          "maceio-fringed-dress-black",
+          "vieste-oversized-shirt-lemon",
+          "aurelie-maxi-dress-calla-print-charred-navy",
+          "en-vau-oversized-shirt-foam-taupe-stripe",
+          "loire-skirt-taupe",
+          "anais-maxi-dress-lemon",
+          "citara-maxi-dress-white"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_9qfq9P": {
+      "type": "rich-text",
+      "blocks": {
+        "title_CKLXmc": {
+          "type": "title",
+          "settings": {
+            "title": "A must do, see and eat  in Lisbon, Portugal",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_WhVmkC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Must do in Lisbon during the summer: find a good “Tasca” which is a traditional Portuguese restaurant and have a long lunch with Fresh Robalo (white fish) and some white wine. </p><p>Order some clams in coriander and garlic for a starter.</p><p>Stroll at Feira Da Ladra (flea market) on Saturday morning.</p><p>Take a cold ocean swim on the coast of Caparica.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-end",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_CKLXmc",
+        "richtext_WhVmkC"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--lg",
+        "single_row_desktop": true,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_9nTMVL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_KiYMD9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_29_b6d0847f-fe5d-4849-9e16-6c524374ec79.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Xgp9Wm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/Image_30_1ddeff56-188f-4a5f-bf22-0b23ab310f57.png",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KiYMD9",
+        "image_Xgp9Wm"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_VDARQf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9KXFbW": {
+          "type": "title",
+          "settings": {
+            "title": "What feelings or things evoke a sense of summer for you?",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_xxBgwB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A sense of summer is the smell of sunscreen. It’s this excitement to wake up in the morning. It’s the early morning hours that are a bit chilly and you know that soon the warmth of the sun will take over. The smell of grilled fish, fresh light beer, and white laundry hanging on every window. Peaches and cherries. That’s summer to me.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        },
+        "button_Rj6dGP": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Edit",
+            "link": "#",
+            "button_style": "btn--secondary",
+            "margin_bottom": 4
+          }
+        }
+      },
+      "block_order": [
+        "title_9KXFbW",
+        "richtext_xxBgwB",
+        "button_Rj6dGP"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "image_banner_tTjwpQ",
+    "rich_text_UbFWPp",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "image_banner_cXyQxg",
+    "rich_text_K4xM3c",
+    "image_banner_PyXX3z",
+    "rich_text_ddXyEg",
+    "image_banner_MKzRLJ",
+    "rich_text_X3wnba",
+    "image_banner_h8fbzd",
+    "rich_text_eWqQnY",
+    "featured_products_3zGbcJ",
+    "image_banner_LTgfqb",
+    "image_with_text_pkRQPB",
+    "image_with_text_kwWhpa",
+    "featured_products_EfpHri",
+    "rich_text_9qfq9P",
+    "image_banner_9nTMVL",
+    "rich_text_VDARQf"
+  ]
+}

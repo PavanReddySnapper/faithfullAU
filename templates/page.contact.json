@@ -1,0 +1,69 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "contact_detail_iAyHAj": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Live Chat Hours",
+            "text": "Monday to Friday (7am to 8:00pm AEST)"
+          }
+        },
+        "contact_detail_iaxJXE": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Customer Enquiries",
+            "text": "shop@faithfullthebrand.com"
+          }
+        },
+        "contact_detail_3n4Eim": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Press Enquiries",
+            "text": "madison@faithfullthebrand.com"
+          }
+        },
+        "contact_detail_RmFd3Q": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Collaboration Enquiries",
+            "text": "social@faithfullthebrand.com"
+          }
+        },
+        "contact_detail_DarG7R": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Wholesale Enquiries",
+            "text": "<a href=\"mailto:rebekah@faithfullthebrand.com\" target=\"_blank\" title=\"mailto:rebekah@faithfullthebrand.com\">rebekah@faithfullthebrand.com</a>"
+          }
+        }
+      },
+      "block_order": [
+        "contact_detail_iAyHAj",
+        "contact_detail_iaxJXE",
+        "contact_detail_3n4Eim",
+        "contact_detail_RmFd3Q",
+        "contact_detail_DarG7R"
+      ],
+      "settings": {
+        "title": "Contact Us",
+        "text": "We would love to hear from you! Feel free to contact us anytime to ask a question or share your feedback. If you need an answer straight away please visit our Customer Care page or chat to us on Live Chat located at the bottom of your screen.",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

@@ -1,0 +1,718 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_zMrULT": {
+      "type": "image-banner",
+      "blocks": {
+        "image_C9bYHb": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_318b7e4e-609a-45c6-8fc0-a9bb6a192326.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_C9bYHb"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_g43DRX": {
+      "type": "rich-text",
+      "blocks": {
+        "title_wwTkUr": {
+          "type": "title",
+          "settings": {
+            "title": "Jours D'or",
+            "is_primary_heading": true,
+            "heading_style": "h1",
+            "pre_heading": "Holiday 25 Campaign",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_mtE7tq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>While continuing to embody a sense of ease with effortless appeal, Holiday 2025 blends timeless sophistication and signature silhouettes with nostalgic nods to eras bygone. Inspired by the enduring style of Grace Kelly, and vintage references of her through the era, vacationing in both Paris and LA’s Chateau Marmont, her affection for feminine shapes and subtle detailing and ability to blend effortless wearability with Old Hollywood glamour is reflected throughout the collection with soft tailoring, delicate appliques and a palette of warm, creamy neutrals. Nostalgic prints including classic pinstripes and floral motifs, inspired by the art deco, modernist decor of the Chateau Marmont are also peppered throughout.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_w7qDcp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Meg Dmitruk is captured on location in Paris, France.<br/>Photographer Carly Dame<br/>1st and 2nd Assistants Marjorie Le Gall and Scotty Vance<br/>Hair and Makeup Artist Joel Phillips</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_DEWmPr": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"/collections/jours-dor\" title=\"Jours D'or\">SHOP THE COLLECTION</a></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_wwTkUr",
+        "richtext_mtE7tq",
+        "richtext_w7qDcp",
+        "richtext_DEWmPr"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--md",
+        "single_row_desktop": false,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 16,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_ykwFg9": {
+      "type": "image-banner",
+      "blocks": {
+        "image_wYiHKe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_1d7096e8-0d8b-49cd-a3de-f15241f4fe3e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Sanne Mini Dress Aurora",
+            "button_link_1": "shopify://products/sanne-mini-dress-aurora",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_wmC8cA": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_f05d85f8-52c6-4694-a229-631c5fb6e32d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_4iLcwC": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_fa23af8a-3eb2-464f-a898-4c5d5818d4c8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Corbiere Vest White",
+            "button_link_1": "shopify://products/corbiere-vest-white",
+            "button_label_2": "Clove Trouser White",
+            "button_link_2": "shopify://products/clove-trouser-white"
+          }
+        },
+        "image_wzQwep": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_cc2a9276-f1b6-44a8-81f4-1168d07230b6.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Adelia Maxi Dress Khaki",
+            "button_link_1": "shopify://products/adelia-maxi-dress-khaki",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_wYiHKe",
+        "image_wmC8cA",
+        "image_4iLcwC",
+        "image_wzQwep"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_LtRQyD": {
+      "type": "image-banner",
+      "blocks": {
+        "image_XEctGp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_3dd19b46-7d52-4f5f-8d92-fc27443bb729.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Jane Mini Dress White",
+            "button_link_1": "shopify://products/jane-mini-dress-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_zR9ipW": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_177cb650-e6af-4bdd-a383-581fc8526350.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Tae Midi Dress Blossom Blue",
+            "button_link_1": "shopify://products/tae-midi-dress-blossom-blue",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_HeHHnk": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/8_522ea247-7b44-4177-8b7e-11d5ee1b3fbf.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Emma Mini Dress Black",
+            "button_link_1": "shopify://products/emma-mini-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_xXTGjA": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_1ca86ec1-cada-49e2-a205-bfc34d3c0ca0.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XEctGp",
+        "image_zR9ipW",
+        "image_HeHHnk",
+        "image_xXTGjA"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_kBCkKg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_mJqNcp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_00863e8f-f4c3-4253-927d-ab380150a21e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Jane Vest Black",
+            "button_link_1": "shopify://products/jane-vest-black",
+            "button_label_2": "Jane Mini Skirt Black",
+            "button_link_2": "shopify://products/jane-mini-skirt-black"
+          }
+        },
+        "image_LA8HN6": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/11_d88cd81c-317a-434e-b1d6-a7644c2c2aeb.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Corbiere Vest Cornflower Blue",
+            "button_link_1": "shopify://products/corbiere-vest-cornflower-blue",
+            "button_label_2": "Clove Trouser Cornflower Blue",
+            "button_link_2": "shopify://products/clove-trouser-cornflower-blue"
+          }
+        },
+        "image_f8EHi6": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/12_fe7d0189-6f0c-4edd-890e-fa2c1df5c069.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_n9k4Jt": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/13_62382fbe-1bc6-4fd0-b72b-e579e7994275.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Chambien Top Eden Print",
+            "button_link_1": "shopify://products/chambien-top-eden-print",
+            "button_label_2": "Chambien Pant Eden Print",
+            "button_link_2": "shopify://products/chambien-pant-eden-print"
+          }
+        }
+      },
+      "block_order": [
+        "image_mJqNcp",
+        "image_LA8HN6",
+        "image_f8EHi6",
+        "image_n9k4Jt"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_mxeEr8": {
+      "type": "image-banner",
+      "blocks": {
+        "image_wAHgkR": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/14_4da226b0-2151-4d92-ac27-2f9220f62db6.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_kyjaC3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/15_ff0bce87-2237-4791-863d-67c7f61c82c8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Laon Top White",
+            "button_link_1": "shopify://products/laon-top-white",
+            "button_label_2": "Lenza Trouser Beige",
+            "button_link_2": "shopify://products/lenza-trouser-beige"
+          }
+        },
+        "image_qtAdC9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/16_330ef495-5b52-4b37-a206-14eb09a57360.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Soame Maxi Dress Blossom Yellow",
+            "button_link_1": "shopify://products/soame-maxi-dress-blossom-yellow",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_bVRWMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/17_1f64cf52-4106-4fee-8050-ea239ef2ad12.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Jane Vest Garnet",
+            "button_link_1": "shopify://products/jane-vest-garnet",
+            "button_label_2": "Jane Mini Skirt Garnet",
+            "button_link_2": "shopify://products/jane-mini-skirt-garnet"
+          }
+        }
+      },
+      "block_order": [
+        "image_wAHgkR",
+        "image_kyjaC3",
+        "image_qtAdC9",
+        "image_bVRWMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_kC8D7L": {
+      "type": "image-banner",
+      "blocks": {
+        "image_nHLDaQ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/18_4c0e1dc0-456c-4fbf-becd-cac1a1d76a1b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Enna Short Sleeve Blazer Beige",
+            "button_link_1": "shopify://products/enna-short-sleeve-blazer-beige",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_WpW7Je": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/19_9f825b8d-9198-40ce-bd3e-0c5a1b8abbcc.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_QgHDHT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/20_13f842fe-73c8-446d-9965-197ab859b378.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Noa Mini Dress Pinstripe Garnet Blush",
+            "button_link_1": "shopify://products/noa-mini-dress-pinstripe-garnet-blush",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_748wid": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/21_5677d84c-ee86-4602-bd36-63646d6b8697.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_nHLDaQ",
+        "image_WpW7Je",
+        "image_QgHDHT",
+        "image_748wid"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_UPJAVU": {
+      "type": "image-banner",
+      "blocks": {
+        "image_N7bm9M": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/22_09d93c69-8b1e-4dfa-92ad-e8af9785ddb9.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_nh4Qe4": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/23_f5048779-0ddb-4d16-9a91-f2ca5b4a7eaa.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lida Maxi Dress Blue Stripe",
+            "button_link_1": "shopify://products/lida-maxi-dress-blue-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_4cTt6m": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/24_1a4348d8-2f46-4d30-a6e8-ced5fb71a63e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_8KRM4A": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/29.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Corbiere Vest Bistre",
+            "button_link_1": "shopify://products/corbiere-vest-bistre",
+            "button_label_2": "Lila Mini Short Bistre",
+            "button_link_2": "shopify://products/lila-mini-short-bistre"
+          }
+        }
+      },
+      "block_order": [
+        "image_N7bm9M",
+        "image_nh4Qe4",
+        "image_4cTt6m",
+        "image_8KRM4A"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_d3fQah": {
+      "type": "image-banner",
+      "blocks": {
+        "image_KydrWe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/25_0531423b-a3bb-4dfc-b64b-2d8cf53dc8c2.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Sanne Midi Dress Linnea",
+            "button_link_1": "shopify://products/sanne-midi-dress-linnea",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_BpLakP": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/26_da9315e7-560f-4d1b-b4da-5455234c7050.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_XW6L6j": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/27_0beca671-233b-48a5-a96e-06fc946644ca.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Enna Long Sleeve Blazer Charcoal",
+            "button_link_1": "shopify://products/enna-long-sleeve-blazer-charcoal",
+            "button_label_2": "Lenza Trouser Charcoal",
+            "button_link_2": "shopify://products/lenza-trouser-charcoal"
+          }
+        },
+        "image_8jdAaM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/28.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Tiesse Maxi Dress Blue Stripe",
+            "button_link_1": "shopify://products/tiesse-maxi-dress-blue-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KydrWe",
+        "image_BpLakP",
+        "image_XW6L6j",
+        "image_8jdAaM"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "featured_products_BrpfLX": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Holiday 25",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "jours-dor",
+        "product_list": [
+          "sanne-mini-dress-aurora",
+          "corbiere-vest-white",
+          "adelia-maxi-dress-khaki",
+          "jane-mini-dress-white"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_XGBTBh": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Dgaz9L": {
+          "type": "title",
+          "settings": {
+            "title": "Shop New Arrivals",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "button_4TRaB4": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Now",
+            "link": "shopify://collections/new-arrivals",
+            "button_style": "btn--secondary",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_Dgaz9L",
+        "button_4TRaB4"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_banner_zMrULT",
+    "rich_text_g43DRX",
+    "image_banner_ykwFg9",
+    "image_banner_LtRQyD",
+    "image_banner_kBCkKg",
+    "image_banner_mxeEr8",
+    "image_banner_kC8D7L",
+    "image_banner_UPJAVU",
+    "image_banner_d3fQah",
+    "featured_products_BrpfLX",
+    "rich_text_XGBTBh"
+  ]
+}

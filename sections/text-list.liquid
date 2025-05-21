@@ -1,0 +1,170 @@
+<div class="text-list" data-section-id="{{ section.id }}" data-section-type="text-list">
+  <div class="container container--sm">
+    {%- if section.settings.title != blank -%}
+      <div class="text-list__header">
+        <div>
+          <h2>{{ section.settings.title }}</h2>
+          {%- if section.settings.text != blank -%}
+            <div class="rte body-medium">{{ section.settings.text }}</div>
+          {%- endif -%}
+        </div>
+
+        {%- if section.settings.button_text != blank -%}
+          <a
+            href="{{ section.settings.button_link | default: '#' }}"
+            class="btn btn--small btn--secondary hide--max-lg"
+          >
+            {{- section.settings.button_text -}}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <ul class="text-list__{{ section.settings.layout }} list-none">
+        {%- for block in section.blocks -%}
+          <li class="text-list__item">
+            <div class="text-list__item-title h6">{{ block.settings.title }}</div>
+            {%- if block.settings.description != blank -%}
+              <div class="text-list__item-content rte body-medium">{{ block.settings.description }}</div>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if section.settings.button_text != blank -%}
+      <div class="text-list__footer hide--min-lg">
+        <a
+          href="{{ section.settings.button_link | default: '#' }}"
+          class="btn btn--small btn--secondary btn--block"
+        >
+          {{- section.settings.button_text -}}
+        </a>
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Text List",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Intro"
+      },
+      {
+        "type": "header",
+        "content": "Button Settings"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "header",
+        "content": "Layout Settings"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Layout Style",
+        "default": "grid",
+        "options": [
+          {
+            "value": "grid",
+            "label": "Grid"
+          },
+          {
+            "value": "list",
+            "label": "List"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 64
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Text Settings"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "description",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text List",
+        "category": "Text"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["page"]
+    }
+  }
+{% endschema %}

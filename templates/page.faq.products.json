@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": false,
+        "page_nav": "faqs-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I find information on your products and sustainability?",
+            "content": "<p>We care deeply about our people and our planet, so we’re continually investing our time and resources in doing better and being greater. To find out more about our sustainability practices and about our products, visit the following pages:<br/><br/><a href=\"https://au.faithfullthebrand.com/pages/our-b-corp-certification\"><span style=\"text-decoration:underline\">Our B Corp Certification</span></a><br/><br/><a href=\"https://au.faithfullthebrand.com/pages/our-products\"><span style=\"text-decoration:underline\">Our Products and Certified Materials</span></a><br/><br/><a href=\"https://au.faithfullthebrand.com/pages/our-commitments\"><span style=\"text-decoration:underline\">Our Commitments</span></a></p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "What size am I?",
+            "content": "<p>To help you find the best size, product measurements of each style can be found on each product page. </p><p>All of our garments are measured in centimetres and are of the garment laid flat. For general information on product sizing and size conversion, read our size and fit guide.</p><p>If you would like further advice on sizing, please contact our team at <a href=\"mailto:shop@faithfullthebrand.com\" title=\"mailto:shop@faithfullthebrand.com\">shop@faithfullthebrand.com</a>.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "How do I care for my garment?",
+            "content": "<p>Our garments are hand-made, hand-dyed and hand-printed in bali, indonesia. Due to this hand-made process each piece is unique and there can be slight irregularities in the print and colour of the garment.</p><p>To extend the longevity of your faithfull the brand piece whilst caring for the environment please follow these instructions: hand-wash in cold water or use lower temperature washes and delicate spin cycles. Avoid bleach and use environmentally friendly detergents. Avoid tumble dry and hang dry where possible. This saves electricity and avoids fibre degradation. Cool iron when needed.</p><p>These care processes are more gentle on the garments and help to protect the colour, shape and structure of the fabric whilst reducing the amount of energy used. Each piece will have specific care instructions found on the label inside the garment. Please ensure these are carefully followed.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_0",
+        "question_1",
+        "question_2"
+      ],
+      "settings": {
+        "title": "",
+        "is_primary_heading": false,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

@@ -1,0 +1,125 @@
+{% schema %}
+{
+"name": "Country Return",
+"class":"custom-returns",
+"settings": [
+{
+"id": "section_country",
+"type": "text",
+"label": "Country Name",
+"default": "Default Country Name"
+}
+],
+"blocks": [
+{
+"type": "country_details",
+"name": "Country Details",
+"settings": [
+{
+"id": "heading",
+"type": "text",
+"label": "Country",
+"default": "Enter country name"
+},
+{
+"id": "transit_time",
+"type": "text",
+"label": "Est. Transit Time",
+"default": "Enter transit time"
+},
+{
+"id": "free_shipping_threshold",
+"type": "text",
+"label": "Free Shipping Threshold",
+"default": "Enter free shipping threshold"
+},
+{
+"id": "shipping_fee",
+"type": "text",
+"label": "Shipping Fee",
+"default": "Enter shipping fee"
+},
+{
+"id": "taxes_and_duties",
+"type": "text",
+"label": "Taxes and Duties",
+"default": "Enter taxes and duties"
+},
+{
+"id": "price_of_returns",
+"type": "text",
+"label": "Price of Returns",
+"default": "Price of Returns"
+}
+]
+}
+],
+"presets": [
+{
+"name": "Country Return",
+"category": "Custom",
+"blocks": [
+{
+"type": "country_details"
+}
+]
+}
+]
+}
+{% endschema %}
+{% for country in page.sections %}
+  <script>
+    console.log('section', {{ country.name | json }})
+  </script>
+{% endfor %}
+<div class="country-return-section">
+  <h2>{{ section.settings.section_country }}</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Country</th>
+        <th>Est. Transit Time</th>
+        <th>Free Shipping Threshold</th>
+        <th>Shipping Fee</th>
+        <th>Taxes and Duties</th>
+        <th>Price of Returns</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for block in section.blocks %}
+        <tr>
+          <td>{{ block.settings.heading }}</td>
+          <td>{{ block.settings.transit_time }}</td>
+          <td>{{ block.settings.free_shipping_threshold }}</td>
+          <td>{{ block.settings.shipping_fee }}</td>
+          <td>{{ block.settings.taxes_and_duties }}</td>
+          <td>{{ block.settings.price_of_returns }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .country-return-section {
+      margin: 20px 0;
+  }
+  .country-return-section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+  }
+  .country-return-section table {
+      width: 100%;
+      border-collapse: collapse;
+  }
+  .country-return-section table th,
+  .country-return-section table td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+  }
+  .country-return-section table th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+  }
+</style>

@@ -1,0 +1,881 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "container--sm",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "main_page_header_hEMyiV": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Our Retailers",
+        "is_primary_heading": true,
+        "page_nav": "retailers-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_y87bit": {
+      "type": "store-locator",
+      "blocks": {
+        "store_PEEbCc": {
+          "type": "store",
+          "settings": {
+            "title": "Bernard Boutique",
+            "contact": "<p>4-8 High Street,<br/>Esher, KT10 9RT, UK<br/><br/>https://bernardboutique.com</p>"
+          }
+        },
+        "store_tP4mHt": {
+          "type": "store",
+          "settings": {
+            "title": "END - Glasgow",
+            "contact": "<p>196 Ingram St, </p><p>Glasgow G1 1DG</p><p><br/>https://www.endclothing.com</p>"
+          }
+        },
+        "store_cYzD9Q": {
+          "type": "store",
+          "settings": {
+            "title": "END - Newcastle",
+            "contact": "<p>104-108 Grey St, </p><p>Newcastle Upon Tyne NE1 6JG</p><p><br/>https://www.endclothing.com</p>"
+          }
+        },
+        "store_98bzmW": {
+          "type": "store",
+          "settings": {
+            "title": "Harrods",
+            "contact": "<p>87-135 Bromptom Road,<br/>Knightsbridge, London, SW1X 7XL<br/><br/>https://www.harrods.com</p>"
+          }
+        },
+        "store_nmBmVh": {
+          "type": "store",
+          "settings": {
+            "title": "Hatch ",
+            "contact": "<p>55 King’s Road, London, SW3 4ND<br/><br/></p>"
+          }
+        },
+        "store_RjYhj3": {
+          "type": "store",
+          "settings": {
+            "title": "Kiti Boutique",
+            "contact": "<p>Pontcanna Mews<br/>1/200 Kings Road,<br/>Pontcanna, CF11 9DF<br/><br/>https://kiticymru.com</p>"
+          }
+        },
+        "store_Y8QXin": {
+          "type": "store",
+          "settings": {
+            "title": "Morgan Clare",
+            "contact": "<p>3 Montpellier Gardens,</p><p>Harrogate, HG1 2TF<br/><br/>https://www.morganclare.co.uk</p>"
+          }
+        },
+        "store_k4BWXa": {
+          "type": "store",
+          "settings": {
+            "title": "NO.4 Boutique",
+            "contact": "<p>4-8 High Street, Esher</p><p>Surrey, KT10 9RT</p>"
+          }
+        },
+        "store_94jAta": {
+          "type": "store",
+          "settings": {
+            "title": "POM London",
+            "contact": "<p>East Street, Petworth West Sussex, London, GU28 0ABUK<br/><br/>https://pomlondon.co.uk</p>"
+          }
+        },
+        "store_QKzHEM": {
+          "type": "store",
+          "settings": {
+            "title": "Rove London ",
+            "contact": "<p>333 Portobello Rd, London, W10 5SA<br/><br/><br/>https://rove-london.com</p>"
+          }
+        },
+        "store_QRtW4t": {
+          "type": "store",
+          "settings": {
+            "title": "Stanwells",
+            "contact": "<p>13 High Street,<br/>Lymington, Hampshire, SO41 9AA<br/><br/>http://www.stanwells.com</p>"
+          }
+        },
+        "store_AEDEqT": {
+          "type": "store",
+          "settings": {
+            "title": "The Modern Society",
+            "contact": "<p>33 Redchurch Street,<br/>London, E27 DJUK<br/><br/>https://themodernsociety.com</p>"
+          }
+        },
+        "store_BjgM6r": {
+          "type": "store",
+          "settings": {
+            "title": "Tilogy",
+            "contact": "<p>33 Duke Of York Square,<br/>London, SW3 4LY<br/><br/>https://www.trilogystores.co.uk</p>"
+          }
+        },
+        "store_iqrwh6": {
+          "type": "store",
+          "settings": {
+            "title": "Treen",
+            "contact": "<p>2-4 St Stephen Place, </p><p>Edinburgh, EH35AJUK<br/><br/>https://shoptreen.com/</p>"
+          }
+        },
+        "store_6nMAkW": {
+          "type": "store",
+          "settings": {
+            "title": "Willow and Wolf",
+            "contact": "<p>95 High Street,<br/>Malborough, SN8 1HD<br/><br/>https://willowandwolfboutique.co.uk</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_PEEbCc",
+        "store_tP4mHt",
+        "store_cYzD9Q",
+        "store_98bzmW",
+        "store_nmBmVh",
+        "store_RjYhj3",
+        "store_Y8QXin",
+        "store_k4BWXa",
+        "store_94jAta",
+        "store_QKzHEM",
+        "store_QRtW4t",
+        "store_AEDEqT",
+        "store_BjgM6r",
+        "store_iqrwh6",
+        "store_6nMAkW"
+      ],
+      "settings": {
+        "title": "United Kingdom",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_t6fRVy": {
+      "type": "store-locator",
+      "blocks": {
+        "store_BVxWzB": {
+          "type": "store",
+          "settings": {
+            "title": "Anthropologie",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://www.anthropologie.com</p>"
+          }
+        },
+        "store_JTLrqd": {
+          "type": "store",
+          "settings": {
+            "title": "Fenwick",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://www.fenwick.co.uk</p>"
+          }
+        },
+        "store_dxWF7Y": {
+          "type": "store",
+          "settings": {
+            "title": "Net-A-Porter",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://www.net-a-porter.com</p>"
+          }
+        },
+        "store_RkHkPQ": {
+          "type": "store",
+          "settings": {
+            "title": "Selfridges",
+            "contact": "<p>Available online and in store across multiple locations in UK<br/><br/>https://www.selfridges.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_BVxWzB",
+        "store_JTLrqd",
+        "store_dxWF7Y",
+        "store_RkHkPQ"
+      ],
+      "settings": {
+        "title": "United Kingdom - Online",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_8QBepj": {
+      "type": "store-locator",
+      "blocks": {
+        "store_nLhhyA": {
+          "type": "store",
+          "settings": {
+            "title": "Ane Blich House",
+            "contact": "<p>Nesttunvegen 98<br/>Nesttun, 5221, Norway<br/><br/>+47 40 67 7034<br/>https://aneblichhouse.no</p>"
+          }
+        },
+        "store_4CadwL": {
+          "type": "store",
+          "settings": {
+            "title": "Æra",
+            "contact": "<p>Available in multiple locations in Norway.<br/><br/>https://www.aerafashion.no</p>"
+          }
+        },
+        "store_Jj6QUr": {
+          "type": "store",
+          "settings": {
+            "title": "Bæksøm/Jørbæk",
+            "contact": "<p>Kirkealleen 1,<br/>Slemmestad, 3470, Norway</p>"
+          }
+        },
+        "store_WH6bLi": {
+          "type": "store",
+          "settings": {
+            "title": "Cara",
+            "contact": "<p>Nedre torggt 11,<br/>Drammen, 3015, Norway<br/><br/>+47 32 83 52 55<br/>http://www.caradrammen.no</p>"
+          }
+        },
+        "store_GaP6if": {
+          "type": "store",
+          "settings": {
+            "title": "Dale Trend",
+            "contact": "<p>Langelandsvegen 25, 6010 Ålesund, Storgata 8, 6003 Ålesund, Norway<br/><br/>+47 70 13 12 12<br/>https://daleplus.no</p>"
+          }
+        },
+        "store_YiJXWC": {
+          "type": "store",
+          "settings": {
+            "title": "Elger",
+            "contact": "<p>Gamle Ringeriksvei 34,<br/>Bekkestua, 1357, Norway<br/><br/>+47 67 48 1313<br/>https://www.bekkestuasenter.no/elger</p>"
+          }
+        },
+        "store_f6cXnF": {
+          "type": "store",
+          "settings": {
+            "title": "Follestad",
+            "contact": "<p>Valkyrigaten 5,<br/>Oslo, 366, Norway<br/><br/>http://follestad.com</p>"
+          }
+        },
+        "store_KhX7mh": {
+          "type": "store",
+          "settings": {
+            "title": "Høyer",
+            "contact": "<p>Available in multiple locations in Norway.<br/><br/>https://hoyer.no</p>"
+          }
+        },
+        "store_7VrVx7": {
+          "type": "store",
+          "settings": {
+            "title": "Jørbæk",
+            "contact": "<p>Vogellundveien 6<br/>Nesbru, 1394, Norway<br/><br/>+47 66 77 7470<br/>https://www.vic.no</p>"
+          }
+        },
+        "store_iixMnx": {
+          "type": "store",
+          "settings": {
+            "title": "Kouture",
+            "contact": "<p>Karl Johansgate 5-7<br/>Oslo, Norway<br/><br/>https://kouture.no</p>"
+          }
+        },
+        "store_XBQVHH": {
+          "type": "store",
+          "settings": {
+            "title": "Kry Interior",
+            "contact": "<p>Markedsgata 21<br/>(Amfi) Alta, 9510, Norway</p>"
+          }
+        },
+        "store_6KnRqe": {
+          "type": "store",
+          "settings": {
+            "title": "Lise Anns",
+            "contact": "<p>P.A.Heuchs gate 13,<br/>Kragerø, Norway<br/><br/>https://liseanns.no</p>"
+          }
+        },
+        "store_MRrECh": {
+          "type": "store",
+          "settings": {
+            "title": "Modo",
+            "contact": "<p>Ålesund Storsenter, Kipervikgata 5, 6003 Ålesund, Norway<br/><br/>+47 71 48 14 49<br/>https://modostore.no</p>"
+          }
+        },
+        "store_E7KPNG": {
+          "type": "store",
+          "settings": {
+            "title": "Moniker",
+            "contact": "<p>Valkyriegata 3<br/>Oslo,366, Norway<br/><br/>+47 93 65 7971</p>"
+          }
+        },
+        "store_WqJkGc": {
+          "type": "store",
+          "settings": {
+            "title": "Mostue",
+            "contact": "<p>Storgata 26<br/>Lillestrøm2000, Norway<br/><br/>+47 63 89 0770<br/>https://www.mostuelillestrom.no</p>"
+          }
+        },
+        "store_Bpye9Y": {
+          "type": "store",
+          "settings": {
+            "title": "Neoz",
+            "contact": "<p>Rådhusgata 11,<br/>Sandefjord, 3211, Norway<br/><br/>+47 33 52 2640<br/>http://www.neoz.no</p>"
+          }
+        },
+        "store_3RaUhx": {
+          "type": "store",
+          "settings": {
+            "title": "No22",
+            "contact": "<p>Damplassen 22<br/>Oslo, 852, Norway<br/><br/>+47 22 56 9104<br/>https://no22.no/</p>"
+          }
+        },
+        "store_p6FByC": {
+          "type": "store",
+          "settings": {
+            "title": "Ovidia Bay",
+            "contact": "<p>Torget 7, <br/>1440, Drøbak, Norway<br/><br/>+47 468 29 407</p>"
+          }
+        },
+        "store_DUkXp3": {
+          "type": "store",
+          "settings": {
+            "title": "Qomo",
+            "contact": "<p>Torggata 35, <br/>Oslo, 183, Norway<br/><br/>+47 21 38 9727<br/>https://qomo.no</p>"
+          }
+        },
+        "store_WNEF9m": {
+          "type": "store",
+          "settings": {
+            "title": "Retro",
+            "contact": "<p>Available online and in stores across multiple locations in Norway.<br/><br/>https://retro.no</p>"
+          }
+        },
+        "store_xjA4kf": {
+          "type": "store",
+          "settings": {
+            "title": "Seven Females",
+            "contact": "<p>Øvrelangsgate 57-59<br/>Tønsberg, Norway<br/><br/>https://sevenfemales.net</p>"
+          }
+        },
+        "store_bEMpM7": {
+          "type": "store",
+          "settings": {
+            "title": "Skandi",
+            "contact": "<p>Borgundfjordvegen 116, <br/>Aalesund, 6017, Norway<br/><br/>http://skandi.no</p>"
+          }
+        },
+        "store_iXecc3": {
+          "type": "store",
+          "settings": {
+            "title": "Steen & Strøm",
+            "contact": "<p>Kongens gate 23<br/>Oslo, Norway<br/><br/>https://steenogstromoslo.no/</p>"
+          }
+        },
+        "store_UpzHG4": {
+          "type": "store",
+          "settings": {
+            "title": "Tatler",
+            "contact": "<p>Bogstadveien 2<br/>Oslo, 355, Norway<br/><br/>+47 22 60 2958<br/>http://www.tatler.no</p>"
+          }
+        },
+        "store_Ej6qg4": {
+          "type": "store",
+          "settings": {
+            "title": "Therese M",
+            "contact": "<p>Voldportgaten 73<br/>Gamle Fredrikstad, 1632, Norway<br/><br/>+47 99 32 8169<br/>https://therese-m.no</p>"
+          }
+        },
+        "store_fHQ7bz": {
+          "type": "store",
+          "settings": {
+            "title": "Twisted Bergen",
+            "contact": "<p>Nygårdsgaten 1B,<br/>5015, Bergen, Norway<br/><br/>+47 55 96 01 87</p>"
+          }
+        },
+        "store_HanrBU": {
+          "type": "store",
+          "settings": {
+            "title": "Urban Pioneers",
+            "contact": "<p>Birkedalsveien 26,<br/>Søgne, 4640, Norway<br/><br/>+47 404 02 882<br/>https://www.urbanpioneers.no</p>"
+          }
+        },
+        "store_FzV3HQ": {
+          "type": "store",
+          "settings": {
+            "title": "Urban Pioneers",
+            "contact": "<p>Jernbanetorget 6,<br/>0154, Oslo, Norway<br/><br/>+47 468 64 323<br/>https://www.urbanpioneers.no</p>"
+          }
+        },
+        "store_HMAPYj": {
+          "type": "store",
+          "settings": {
+            "title": "Villoid",
+            "contact": "<p>Fornebuveien 38<br/>Lysaker, 1366, Norway<br/><br/>+47 46 94 1766<br/>https://villoid.no/</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_nLhhyA",
+        "store_4CadwL",
+        "store_Jj6QUr",
+        "store_WH6bLi",
+        "store_GaP6if",
+        "store_YiJXWC",
+        "store_f6cXnF",
+        "store_KhX7mh",
+        "store_7VrVx7",
+        "store_iixMnx",
+        "store_XBQVHH",
+        "store_6KnRqe",
+        "store_MRrECh",
+        "store_E7KPNG",
+        "store_WqJkGc",
+        "store_Bpye9Y",
+        "store_3RaUhx",
+        "store_p6FByC",
+        "store_DUkXp3",
+        "store_WNEF9m",
+        "store_xjA4kf",
+        "store_bEMpM7",
+        "store_iXecc3",
+        "store_UpzHG4",
+        "store_Ej6qg4",
+        "store_fHQ7bz",
+        "store_HanrBU",
+        "store_FzV3HQ",
+        "store_HMAPYj"
+      ],
+      "settings": {
+        "title": "Norway",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_R4Cbkm": {
+      "type": "store-locator",
+      "blocks": {
+        "store_b6jTXP": {
+          "type": "store",
+          "settings": {
+            "title": "Anne Sax",
+            "contact": "<p>Groennegade 30, <br/>Copenhagen, K1107, Denmark<br/><br/>33 32 00 52<br/>http://annesax.dk</p>"
+          }
+        },
+        "store_HKAcjG": {
+          "type": "store",
+          "settings": {
+            "title": "Bernardelli",
+            "contact": "<p>Corso Umberto I, 27, <br/>Mantova, Italia, <br/><br/>+39 0376 221619<br/>https://www.bernardellistores.com</p>"
+          }
+        },
+        "store_TcwCiW": {
+          "type": "store",
+          "settings": {
+            "title": "Best of Brands",
+            "contact": "<p>Järnvägsgatan 11<br/>Nacka, 13154, Sweden<br/><br/>http://bestofbrands.com</p>"
+          }
+        },
+        "store_JPCVgV": {
+          "type": "store",
+          "settings": {
+            "title": "Beymen",
+            "contact": "<p>Available in multiple locations in Istanbul, Turkey.<br/><br/>https://www.beymen.com</p>"
+          }
+        },
+        "store_kgWAde": {
+          "type": "store",
+          "settings": {
+            "title": "Bitten",
+            "contact": "<p>O.H.Bangs vei 17,<br/>Høvik, 1322, Norway<br/><br/>http://bitten.no</p>"
+          }
+        },
+        "store_yjtc99": {
+          "type": "store",
+          "settings": {
+            "title": "Breuninger",
+            "contact": "<p>Breuninger Stuttgart, Marktstr. 1-3, Stuttgart, 70173, Germany<br/><br/>+49 711 211 2828<br/>https://www.e-breuninger.de/en</p>"
+          }
+        },
+        "store_mbDfVy": {
+          "type": "store",
+          "settings": {
+            "title": "By Rory",
+            "contact": "<p>Quinta Shopping, <br/>Quinta Do Lagoalmancilloule<br/>Almancil, 8135, Portugal<br/><br/>https://byrory.com</p>"
+          }
+        },
+        "store_Ygj9Rz": {
+          "type": "store",
+          "settings": {
+            "title": "Chiaro Scuro di  Piccinelli",
+            "contact": "<p>Via Nazionale, 102<br/>Piamborno, BS 25052, Italy<br/><br/>+39 0364 360484<br/>https://www.madeinchiaroscuro.it/it</p>"
+          }
+        },
+        "store_gC8LnV": {
+          "type": "store",
+          "settings": {
+            "title": "Coco Bis",
+            "contact": "<p>Av.Meritxell, 20 AD500, Andorra la Vella<br/><br/>+376 804343<br/>http://cocobis.com/en</p>"
+          }
+        },
+        "store_frmtmB": {
+          "type": "store",
+          "settings": {
+            "title": "D Gallery",
+            "contact": "<p>Via Cesare Battisti 3 D, Bologna, Milan, 40123, Italy<br/><br/>https://dgallerystore.com/pages/about</p>"
+          }
+        },
+        "store_UeatMY": {
+          "type": "store",
+          "settings": {
+            "title": "Dada Concept Store",
+            "contact": "<p>Viale Morin 1/G <br/>Forte De Marmi, 55042, Italy<br/><br/>+39 0584 70437<br/>https://shop.dadaconceptstore.it</p>"
+          }
+        },
+        "store_nHfzKw": {
+          "type": "store",
+          "settings": {
+            "title": "Den Dama",
+            "contact": "<p>Frognerveien 4Oslo, 257, Norway<br/><br/>+47 22 55 3099<br/>https://dendama.com</p>"
+          }
+        },
+        "store_b9XQn7": {
+          "type": "store",
+          "settings": {
+            "title": "Dolci Trame",
+            "contact": "<p>Via Pantaneto, 27<br/>Siena, SI 53100, Italy<br/><br/>+39 0577 550763<br/>https://dolcitrame.store</p>"
+          }
+        },
+        "store_VYTD6q": {
+          "type": "store",
+          "settings": {
+            "title": "El Corte Ingles",
+            "contact": "<p>S.A. Calle Hermosilla 112<br/>Madrid, 28009, Spain<br/><br/>+34 914 01 8500<br/>https://www.elcorteingles.es</p>"
+          }
+        },
+        "store_6LQkdU": {
+          "type": "store",
+          "settings": {
+            "title": "Emerson Renaldi",
+            "contact": "<p>Kaiserstrasse 31<br/>Nürnberg, 90403, Germany<br/><br/>+49 911 208 808<br/>https://www.emerson-renaldi.com/shake</p>"
+          }
+        },
+        "store_XYgeaU": {
+          "type": "store",
+          "settings": {
+            "title": "END - Milan",
+            "contact": "<p>V. dei Mercanti, 21, 20123,</p><p>Milano MI, Italy<br/><br/>https://www.endclothing.com</p>"
+          }
+        },
+        "store_96mPJt": {
+          "type": "store",
+          "settings": {
+            "title": "Eraldo",
+            "contact": "<p>ia Roma, 173, 30022<br/>Ceggia, VE, Italy<br/><br/>+39 0421 329567<br/>https://www.eraldo.com/gb/woman</p>"
+          }
+        },
+        "store_c9yhzH": {
+          "type": "store",
+          "settings": {
+            "title": "Fan Fan",
+            "contact": "<p>Rue caroline 71003 Lausanne, Suisse, Switzerland<br/><br/>https://www.fanfanconceptstore.com</p>"
+          }
+        },
+        "store_MkbmqM": {
+          "type": "store",
+          "settings": {
+            "title": "Ferrer",
+            "contact": "<p>Albert I laan 257,<br/>Nieuwpoort, 8620, Belgium<br/><br/>+32 58 23 23 09<br/>http://www.ferrer.be/home</p>"
+          }
+        },
+        "store_RHzHGA": {
+          "type": "store",
+          "settings": {
+            "title": "Fillipoo Marchesani",
+            "contact": "<p>Filippo Marchesani Srl, <br/>Corso Duca Degli Abruzzi 46<br/>Cupello, 66051, Italy<br/><br/>https://www.filippomarchesani.com/en</p>"
+          }
+        },
+        "store_UzmBHY": {
+          "type": "store",
+          "settings": {
+            "title": "Jades",
+            "contact": "<p>Großenbaumer Weg 11,<br/>Düsseldorf, 40472, Germany<br/><br/>+49 211 862 9360<br/>https://www.jades24.com</p>"
+          }
+        },
+        "store_aRjXpY": {
+          "type": "store",
+          "settings": {
+            "title": "Joel Jolina",
+            "contact": "<p>Lilla Brogatan 23,<br/>503 35 Borås, Sweden<br/><br/>+46 33 10 71 50<br/>https://joeljolina.se</p>"
+          }
+        },
+        "store_Mn7Kn6": {
+          "type": "store",
+          "settings": {
+            "title": "Karin Winther",
+            "contact": "<p>Lindegaardsvej 2,<br/>Charlottenlund, Denmark<br/><br/>https://karinwinther.dk</p>"
+          }
+        },
+        "store_8PPeiE": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "L'Editorial",
+            "contact": "<p>17 Rue St James<br/>Bordeaux, 33100, France<br/><br/>556387048<br/>https://leditorial-boutique.com</p>"
+          }
+        },
+        "store_b7Ugcg": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "La Rinascente",
+            "contact": "<p>P.za del Duomo, <br/>Milan, 20121, Italy<br/><br/>https://www.rinascente.it/en</p>"
+          }
+        },
+        "store_3Kq3ir": {
+          "type": "store",
+          "settings": {
+            "title": "La Samartine",
+            "contact": "<p>21 rue de la monnaie<br/>Paris, 75001, France<br/><br/>+33 1 8888 6000<br/>https://www.dfs.com/en/samaritaine</p>"
+          }
+        },
+        "store_zAYeDt": {
+          "type": "store",
+          "settings": {
+            "title": "La Vie En Rose ",
+            "contact": "<p>Naoussa, Paros, 84401, Greece</p>"
+          }
+        },
+        "store_thNqdr": {
+          "type": "store",
+          "settings": {
+            "title": "Le Bon Marche",
+            "contact": "<p>24 Rue de Sèvres,<br/>Paris, 75007, France<br/><br/>+33 1 44 39 8000<br/>https://www.24s.com</p>"
+          }
+        },
+        "store_CMfGy4": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Lukse",
+            "contact": "<p>Serebrennikovskaya Ulitsa, 31 Novosibirsk Oblast, 630099, Russia<br/><br/>+7 383 303 45 55<br/>https://lukse.ru</p>"
+          }
+        },
+        "store_PJNEFf": {
+          "type": "store",
+          "settings": {
+            "title": "M.G. Timinis&Sons Ltd",
+            "contact": "<p>250 - 274 Archiepiscopou Makariou Iii Avenue,<br/>Limassol, 3105, Cyprus</p>"
+          }
+        },
+        "store_YAcmQz": {
+          "type": "store",
+          "settings": {
+            "title": "Maggs",
+            "contact": "<p>Bubenbergplatz 15,<br/>Bern, 3001, Switzerland<br/><br/>+41 31 311 4124<br/>http://www.maggs.ch</p>"
+          }
+        },
+        "store_mPyTVG": {
+          "type": "store",
+          "settings": {
+            "title": "Marque ",
+            "contact": "<p>3 Saperne Pole str Kyiv, 01041, Ukraine<br/><br/><br/>+380 68 795 0535<br/>https://marque.ua</p>"
+          }
+        },
+        "store_jAYazr": {
+          "type": "store",
+          "settings": {
+            "title": "MCMarket",
+            "contact": "<p>39 Av. Princesse Grace, Monaco, 98000, France<br/><br/>+377 97 97 12 12<br/>http://www.mcmarketfashion.com</p>"
+          }
+        },
+        "store_kpfRwz": {
+          "type": "store",
+          "settings": {
+            "title": "Mosaic Studios ",
+            "contact": "<p>Jerina Stamo, PF Ismail, Qemali, 34 1001</p>"
+          }
+        },
+        "store_LdzLai": {
+          "type": "store",
+          "settings": {
+            "title": "MQ13",
+            "contact": "<p>13 Metriquadri Srl, Viale Paolo Guidi, 102, 47814, Bellaria Igea Marina Rimini, Italy</p>"
+          }
+        },
+        "store_Q8BrLN": {
+          "type": "store",
+          "settings": {
+            "title": "Penelope",
+            "contact": "<p>Via Romanino 1,<br/>Brescia, BS25122, Italy<br/><br/>39 030 290473</p>"
+          }
+        },
+        "store_8fyReW": {
+          "type": "store",
+          "settings": {
+            "title": "Profumo Di Biscotii",
+            "contact": "<p>Via Albizzi, N°4<br/>Ceresena, 47521, Italy<br/><br/>+39 0547 481270<br/>http://profumodibiscotti.com</p>"
+          }
+        },
+        "store_6n8MFw": {
+          "type": "store",
+          "settings": {
+            "title": "Sea Green",
+            "contact": "<p>6a-7a Monkstown,<br/>Crescent, Monkstown, Ireland<br/><br/>https://www.seagreen.com</p>"
+          }
+        },
+        "store_rCQyEd": {
+          "type": "store",
+          "settings": {
+            "title": "Smallable Concept Store",
+            "contact": "<p>81 Rue du Cherche-Midi,<br/>Paris, 75006, France<br/><br/>+33 1 40 46 01 15<br/>https://fr.smallable.com/page/smallable-concept-store</p>"
+          }
+        },
+        "store_rbQ6mT": {
+          "type": "store",
+          "settings": {
+            "title": "Vakko",
+            "contact": "<p>Levazım, Zorlu Center, Koru Sok,<br/>No 2, 34340, Beşiktaş, Istanbul, Turkey<br/><br/>https://www.vakko.com/en/</p>"
+          }
+        },
+        "store_BbgeyU": {
+          "type": "store",
+          "settings": {
+            "title": "Wakakuu",
+            "contact": "<p>Nodi huset, Hovås Allé 1, <br/>436 57 Hovås, Sweden<br/><br/><br/>https://www.wakakuu.com</p>"
+          }
+        },
+        "store_tBifHd": {
+          "type": "store",
+          "settings": {
+            "title": "Zali Boutique",
+            "contact": "<p>Chora Andíparos,<br/>Kikladhes, 84007, Greece<br/><br/>+30 6938279663<br/>http://In Store Only</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_b6jTXP",
+        "store_HKAcjG",
+        "store_TcwCiW",
+        "store_JPCVgV",
+        "store_kgWAde",
+        "store_yjtc99",
+        "store_mbDfVy",
+        "store_Ygj9Rz",
+        "store_gC8LnV",
+        "store_frmtmB",
+        "store_UeatMY",
+        "store_nHfzKw",
+        "store_b9XQn7",
+        "store_VYTD6q",
+        "store_6LQkdU",
+        "store_XYgeaU",
+        "store_96mPJt",
+        "store_c9yhzH",
+        "store_MkbmqM",
+        "store_RHzHGA",
+        "store_UzmBHY",
+        "store_aRjXpY",
+        "store_Mn7Kn6",
+        "store_8PPeiE",
+        "store_b7Ugcg",
+        "store_3Kq3ir",
+        "store_zAYeDt",
+        "store_thNqdr",
+        "store_CMfGy4",
+        "store_PJNEFf",
+        "store_YAcmQz",
+        "store_mPyTVG",
+        "store_jAYazr",
+        "store_kpfRwz",
+        "store_LdzLai",
+        "store_Q8BrLN",
+        "store_8fyReW",
+        "store_6n8MFw",
+        "store_rCQyEd",
+        "store_rbQ6mT",
+        "store_BbgeyU",
+        "store_tBifHd"
+      ],
+      "settings": {
+        "title": "Europe",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_acepdw": {
+      "type": "store-locator",
+      "blocks": {
+        "store_aEX8Jd": {
+          "type": "store",
+          "settings": {
+            "title": "Boozt",
+            "contact": "<p>Available online in Sweden.<br/><br/>https://www.boozt.com</p>"
+          }
+        },
+        "store_VcVxL3": {
+          "type": "store",
+          "settings": {
+            "title": "END",
+            "contact": "<p>Available Online and in stores in the UK and Italy.<br/><br/>https://www.endclothing.com</p>"
+          }
+        },
+        "store_7iqydD": {
+          "type": "store",
+          "settings": {
+            "title": "Free Shop",
+            "contact": "<p>Available online and in stores across multiple locations in Greece. <br/><br/>https://freeshop.gr</p>"
+          }
+        },
+        "store_rbAGen": {
+          "type": "store",
+          "settings": {
+            "title": "Freudian Kicks",
+            "contact": "<p>Available online in Norway.<br/><br/>https://www.freudiankicks.com</p>"
+          }
+        },
+        "store_zG6hCL": {
+          "type": "store",
+          "settings": {
+            "title": "Mytheresa ",
+            "contact": "<p>Available online in Munich, Germany.<br/><br/>https://www.mytheresa.com</p>"
+          }
+        },
+        "store_gQDqYD": {
+          "type": "store",
+          "settings": {
+            "title": "Printemps",
+            "contact": "<p>Available online and in stores across multiple locations in France.<br/><br/>https://www.printempsfrance.com</p>"
+          }
+        },
+        "store_TPACae": {
+          "type": "store",
+          "settings": {
+            "title": "Zalando",
+            "contact": "<p>Available online and in stores across multiple locations in Germany.<br/><br/>https://zalando.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_aEX8Jd",
+        "store_VcVxL3",
+        "store_7iqydD",
+        "store_rbAGen",
+        "store_zG6hCL",
+        "store_gQDqYD",
+        "store_TPACae"
+      ],
+      "settings": {
+        "title": "Europe - Online",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_page_header_hEMyiV",
+    "store_locator_y87bit",
+    "store_locator_t6fRVy",
+    "store_locator_8QBepj",
+    "store_locator_R4Cbkm",
+    "store_locator_acepdw"
+  ]
+}

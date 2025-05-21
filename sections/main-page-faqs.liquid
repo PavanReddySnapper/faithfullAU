@@ -1,0 +1,115 @@
+<section class="section section--main-page-faqs" data-section-id="{{ section.id }}" data-section-type="main-page-faqs">
+  <div class="main-page-faqs__container container container--sm">
+    {%- if section.settings.title != blank -%}
+      <div class="section-title">
+        {%- liquid
+          assign heading_tag = 'p'
+          if section.settings.is_primary_heading
+            assign heading_tag = 'h1'
+          endif
+        -%}
+        <{{ heading_tag }} class="h6">
+          {{ section.settings.title }}
+        </{{ heading_tag }}>
+      </div>
+    {%- endif -%}
+
+    <div class="rte">
+      {%- liquid
+        assign section_blocks = section.blocks | map: 'settings'
+        assign label_array = section_blocks | map: 'title'
+        assign content_array = section_blocks | map: 'content'
+        render 'component-accordion-item', labels: label_array, contents: content_array, multi: false, open_first: false, unique: section.id
+      -%}
+    </div>
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "FAQ Accordions",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "FAQ"
+      },
+      {
+        "type": "checkbox",
+        "id": "is_primary_heading",
+        "label": "Is Primary Page Heading",
+        "default": true,
+        "info": "This will make the heading an <h1> tag. Only use once per page."
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 120
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 80
+      }
+    ],
+    "blocks": [
+      {
+        "type": "question",
+        "name": "Question",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ Accordions",
+        "category": "Text"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

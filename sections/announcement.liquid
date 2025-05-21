@@ -1,0 +1,168 @@
+{%- if section.settings.announcement_bar_enabled and section.blocks.size > 0 -%}
+  {%- if section.settings.announcement_bar_home_page_only == false or request.page_type == 'index' -%}
+    {% capture section_settings %}{"infinite": {{ section.settings.infinite | json }}, "autoplay_speed": {{ section.settings.autoplay_speed | json }}}{% endcapture %}
+    {% # prettier-ignore-attribute %}
+    <div
+      class="announcement-section"
+      data-section-id="{{ section.id }}"
+      data-section-type="announcement"
+      data-section-settings='{{ section_settings }}'
+    >
+      <div
+        class="announcement-slider{% if section.blocks.size < 2 %} single-slide{% endif %}"
+        data-announcement-container
+      >
+        {%- for message_block in section.blocks -%}
+          {%- assign active = false -%}
+          {%- if forloop.last -%}
+            {%- assign active = true -%}
+          {%- endif -%}
+          {%- assign show_block = false -%}
+
+          {%- if message_block.type == 'announcement_message' -%}
+            {%- assign show_block = true -%}
+          {%- elsif message_block.type == 'announcement_message_2' and localization.country.iso_code == 'AU' -%}
+            {%- assign show_block = true -%}
+          {%- endif -%}
+          {%- if show_block -%}
+            <div class="announcement-slide" data-active="{{ active }}" data-announcement>
+              <p class="label">{{ message_block.settings.title }}</p>
+            </div>
+          {% endif %}
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: var({{ section.settings.announcement_background }});
+    color: var({{ section.settings.announcement_color }});
+  }
+</style>
+
+{% render 'vite-tag' with '@/scripts/sections/announcement.js' %}
+
+{% schema %}
+{
+  "name": "Announcement",
+  "class": "announcement-bar",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Announcement bar"
+    },
+    {
+      "type": "checkbox",
+      "id": "announcement_bar_enabled",
+      "label": "Enable announcement bar",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "announcement_bar_home_page_only",
+      "label": "Show on home page only",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "announcement_background",
+      "label": "Announcement background colour",
+      "default": "--color-neutral-20",
+      "options": [
+        {
+          "value": "--color-neutral-20",
+          "label": "Neutral 20"
+        },
+        {
+          "value": "--color-neutral-40",
+          "label": "Neutral 40"
+        },
+        {
+          "value": "--color-secondary-90",
+          "label": "Secondary 90 (Chocolate)"
+        },
+        {
+          "value": "--color-white",
+          "label": "White"
+        },
+        {
+          "value": "--color-black",
+          "label": "Black"
+        }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "announcement_color",
+      "label": "Announcement text colour",
+      "default": "--color-black",
+      "options": [
+        {
+          "value": "--color-primary-20",
+          "label": "Primary 20"
+        },
+        {
+          "value": "--color-primary-40",
+          "label": "Primary 40 (Sand)"
+        },
+        {
+          "value": "--color-secondary-90",
+          "label": "Secondary 90 (Chocolate)"
+        },
+        {
+          "value": "--color-white",
+          "label": "White"
+        },
+        {
+          "value": "--color-black",
+          "label": "Black"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay speed",
+      "info": "Seconds between transitions. Zero will disable autoplay",
+      "default": 3,
+      "min": 0,
+      "max": 10,
+      "step": 0.5
+    },
+    {
+      "type": "checkbox",
+      "id": "infinite",
+      "label": "Infinite loop slider",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "announcement_message",
+      "name": "Global Announcement",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Announcement text",
+          "default": "Announce something here"
+        }
+      ]
+    },
+    {
+      "type": "announcement_message_2",
+      "name": "AUS Announcement",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Announcement text",
+          "default": "Announce something here"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

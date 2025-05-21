@@ -1,0 +1,287 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": true,
+        "page_nav": "shipping-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 48
+      }
+    },
+    "rich_text_wGEBBx": {
+      "type": "rich-text",
+      "blocks": {
+        "title_hDVedt": {
+          "type": "title",
+          "settings": {
+            "title": "",
+            "is_primary_heading": false,
+            "heading_style": "h5",
+            "pre_heading": "Order Processing",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_TyLxeV": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>All FAITHFULL orders are shipped out within 1-2 business days from purchase from our warehouse in Padstow, Sydney, Australia.<br/><br/>Shipping time frames are in addition to our processing times. Any orders placed on weekends and public holidays will be processed the following business day. </p><p>Orders will be delivered between 8am-6pm Monday to Friday. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        }
+      },
+      "block_order": [
+        "title_hDVedt",
+        "richtext_TyLxeV"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 48
+      }
+    },
+    "shipping_table_hzxDVq": {
+      "type": "shipping-table",
+      "blocks": {
+        "shipping_rate_XjCkJp": {
+          "type": "shipping_rate",
+          "settings": {
+            "title": "Standard Shipping",
+            "price": "$10",
+            "description": "Orders under $250 AUD. Please allow 3-8 business days to receive your order once shipped, pending on if you are located in metro or non-metro areas."
+          }
+        },
+        "shipping_rate_RrtiVD": {
+          "type": "shipping_rate",
+          "settings": {
+            "title": "Standard Shipping",
+            "price": "Free",
+            "description": "Orders over $250 AUD. Please allow 3-8 business days to receive your order once shipped, pending on if you are located in metro or non-metro areas."
+          }
+        },
+        "shipping_rate_hGUFQr": {
+          "type": "shipping_rate",
+          "settings": {
+            "title": "Express Shipping",
+            "price": "$15",
+            "description": "Orders under $500 AUD. Please allow 1-4 business days to receive your order once shipped, pending on if you are located in metro or non-metro areas."
+          }
+        },
+        "shipping_rate_fTFkKE": {
+          "type": "shipping_rate",
+          "settings": {
+            "title": "Express Shipping",
+            "price": "Free",
+            "description": "Orders over $500 AUD. Please allow 1-4 business days to receive your order once shipped, pending on if you are located in metro or non-metro areas."
+          }
+        },
+        "shipping_rate_TGTWnQ": {
+          "type": "shipping_rate",
+          "settings": {
+            "title": "On Demand Same Day Shipping",
+            "price": "$20",
+            "description": "Order must be placed by 12 noon to be eligible for same day delivery. Please allow up to 9PM AEDT to receive your order once shipped. Service only available in specified Sydney suburbs. Service does not operate on public holidays or weekends. For orders placed on these days the item will ship same-day the next business day."
+          }
+        }
+      },
+      "block_order": [
+        "shipping_rate_XjCkJp",
+        "shipping_rate_RrtiVD",
+        "shipping_rate_hGUFQr",
+        "shipping_rate_fTFkKE",
+        "shipping_rate_TGTWnQ"
+      ],
+      "settings": {
+        "title": "Australia Shipping",
+        "disclaimer": "Please note that we are unable to ship to APO and FPO addresses. For shipping to all other countries please select 'International Shipping' tab at the top of page.",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "shipping_table_Y8WM8q": {
+      "type": "shipping-table",
+      "blocks": {
+        "shipping_rate_xixzXV": {
+          "type": "shipping_rate",
+          "settings": {
+            "title": "New Zealand (AusPost & NZ Post)",
+            "price": "$15",
+            "description": "Please allow 8-10 business days to receive your order."
+          }
+        },
+        "shipping_rate_9ECYQk": {
+          "type": "shipping_rate",
+          "disabled": true,
+          "settings": {
+            "title": "Canada (DHL Express Shipping)",
+            "price": "$25",
+            "description": "Please allow 3-5 business days to receive your order."
+          }
+        },
+        "shipping_rate_4VUaTt": {
+          "type": "shipping_rate",
+          "disabled": true,
+          "settings": {
+            "title": "United Kingdom (DHL Express Shipping)",
+            "price": "$35",
+            "description": "Please allow 3-5 business days to receive your order."
+          }
+        },
+        "shipping_rate_LqpwF3": {
+          "type": "shipping_rate",
+          "disabled": true,
+          "settings": {
+            "title": "Europe (DHL Express Shipping)",
+            "price": "$35",
+            "description": "Please allow 3-8 business days to receive your order."
+          }
+        },
+        "shipping_rate_BJQQCL": {
+          "type": "shipping_rate",
+          "disabled": true,
+          "settings": {
+            "title": "Rest of World (DHL Express Shipping)",
+            "price": "$35",
+            "description": "Please allow 3-8 business days to receive your order."
+          }
+        }
+      },
+      "block_order": [
+        "shipping_rate_xixzXV",
+        "shipping_rate_9ECYQk",
+        "shipping_rate_4VUaTt",
+        "shipping_rate_LqpwF3",
+        "shipping_rate_BJQQCL"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "International Shipping",
+        "disclaimer": "Please note we are unable to ship to the following countries: Russia, Channel Islands (Jersey, Isle of Man, Guernsey), China, Ukraine, Saudi-Arabia, certain countries in Africa & the Pacifics.",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "rich_text_yaYM3P": {
+      "type": "rich-text",
+      "blocks": {
+        "title_tYHJWn": {
+          "type": "title",
+          "settings": {
+            "title": "",
+            "is_primary_heading": false,
+            "heading_style": "h5",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_QGRqKG": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Delivery Times</strong></p><p>Delivery time frames are in addition to order processing times. Orders will be delivered between 8am - 6pm Monday to Friday. Please ensure that someone is available at the shipping address to accept the delivery during this time.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "richtext_TkKwRA": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>On Demand Same Day Delivery</strong></p><p>Delivery time frames are in addition to order processing times. Orders must be received by 12PM AEDT in order to make the On Demand same day service. Orders will be delivered between 8am - 9pm Monday to Friday. Please ensure that someone is available at the shipping address to accept the delivery during this time. Service does not operate on public holidays or weekends. For orders placed on these days the item will ship same-day the next business day.  For full list of eligible Sydney suburbs click <a href=\"/pages/on-demand-same-day-delivery-postcodes\" title=\"On Demand Same Day Delivery Postcodes\">here. </a></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "richtext_Mqit3F": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Choice of Courier</strong></p><p>All orders are shipped via Australia Post.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "richtext_CrFAC6": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Tracking Your Parcel</strong></p><p>Once your parcel has been shipped from the warehouse, you will be sent an email confirmation with tracking information.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "richtext_PjRAra": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Authority To Leave</strong></p><p>You may have the option to request Australia Post to leave the parcel in a safe place without a signature. If you provide Australia Post with an Authority to Leave, risk of loss or damage to parcels will pass onto you and we are not liable for missing, lost or stolen parcels.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "richtext_8rHQDT": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>Order Not Delivered</strong></p><p>In the event that your order is not delivered, missing or lost, please reach out to our customer care team via email at <a href=\"mailto:shop@faithfullthebrand.com\" title=\"mailto:shop@faithfullthebrand.com\">shop@faithfullthebrand.com</a>. Once the package has been declared lost by the shipping provider, we can issue you a replacement, store credit or refund.<br/><br/>If your order is stated as delivered on the tracking information but the parcel is unable to be located, customers must reach out to our customer care team via email at shop@faithfullthebrand.com within 5 days of the delivery date stated on the tracking.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_tYHJWn",
+        "richtext_QGRqKG",
+        "richtext_TkKwRA",
+        "richtext_Mqit3F",
+        "richtext_CrFAC6",
+        "richtext_PjRAra",
+        "richtext_8rHQDT"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_wGEBBx",
+    "shipping_table_hzxDVq",
+    "shipping_table_Y8WM8q",
+    "rich_text_yaYM3P"
+  ]
+}

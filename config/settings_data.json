@@ -1,0 +1,194 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "enable_instant_search": true,
+    "search_suggestions_terms": "Midi Dresses, Floral Dresses, Linen, Silk, Cotton, Swim, Sale",
+    "search_suggestions_links": "search-menu-2024",
+    "search_suggestions_collection": "new-arrivals",
+    "enable_hreflangs": false,
+    "enable_autoredirects": false,
+    "1_region_name": "Australia",
+    "1_region_code": "AU",
+    "1_region_domain": "https://au.faithfullthebrand.com",
+    "1_region_country_list": "AU,NZ",
+    "1_region_current": false,
+    "2_region_name": "International",
+    "2_region_code": "INT",
+    "2_region_domain": "https://faithfullthebrand.com",
+    "2_region_country_list": "US,CA,GB,EU",
+    "2_region_default": false,
+    "contact_page_url": "shopify://pages/contact",
+    "account_links": "page-nav-customer-account-pages",
+    "enable_login_modal": false,
+    "color_primary": "#0f0f0f",
+    "color_accent": "#fcfbf8",
+    "show_second_image": true,
+    "ghost_image_index": "1",
+    "garment_image_index": "-0",
+    "include_form": true,
+    "custom_message_enabled": false,
+    "enable_marker_io": false,
+    "marker_io_destination_id": "65d114097f9a13db282b51d9",
+    "wishlist_page_url": "shopify://pages/wishlist",
+    "storefront_api_key": "2dac1e1160100e144cafb8cd0042fda5",
+    "checkout_logo_image": "shopify://shop_images/logo1.png",
+    "checkout_logo_size": "small",
+    "cart_upsells_enabled": false,
+    "sections": {
+      "login-modal": {
+        "type": "login-modal",
+        "settings": {}
+      },
+      "newsletter-popup": {
+        "type": "newsletter-popup",
+        "settings": {
+          "popup_enabled": false,
+          "popup_timer_delay": 2,
+          "popup_description": "Newsletter signup popup",
+          "title": "Newsletter",
+          "text": "Sign up to get 15% off your first order",
+          "image": "shopify://shop_images/1_3_af1fb1e4-787b-4ec8-a663-55d356578e14.webp",
+          "form_type": "shopify"
+        }
+      },
+      "main-gift-card": {
+        "type": "main-gift-card",
+        "settings": {}
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "5946647744298494267": {
+        "type": "shopify://apps/wishlist-plus/blocks/wishlist-app-embed/80c3b1fc-3a8f-407e-8367-ffdeebb8b612",
+        "disabled": false,
+        "settings": {}
+      },
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "10142937387702430166": {
+        "type": "shopify://apps/preorder-notify-me-pre-order-t/blocks/app-embed/bf6c109b-79b5-457c-8752-0e5e9e9676e7",
+        "disabled": false,
+        "settings": {}
+      },
+      "18412211718521571910": {
+        "type": "shopify://apps/giftnote-gift-messages-cards/blocks/core/37eb4f2f-4979-41f3-a677-fa25a2a97659",
+        "disabled": false,
+        "settings": {
+          "title": "Give the Gift of Choice",
+          "description": "<p>Enter your message below and select when to send it.</p>",
+          "logo_height": 20,
+          "theme": "light",
+          "modal_background": "#fcfbf8",
+          "primary_color": "#0f0f0f",
+          "title_color": "#000000",
+          "button_color": "#ffffff",
+          "font": "inter_n4",
+          "order_default_method": "instant",
+          "giftcard_default_method": "instant",
+          "hide_delivery": true,
+          "hide_phone": false,
+          "force_open": false,
+          "order_event": "",
+          "voucher_event": "gn_reload",
+          "custom_styles": ".md\\:px-12 {\n    padding-left: 48px;\n    padding-right: 48px;\n    background: var(--site-background-color);\n  }\n.sm\\:shadow-lg {\n    ackground: #fff;\n}\n  .sm\\:border-gray-300 {\n    border: 0;\n  }\n#title {\n  color: #000000;\n  font-size: 1.1875rem;\n  letter-spacing: -.01125rem;\n  line-height: 1.333;\n  font-family: var(--font-headings);\n  font-weight: normal;\n  margin: 0 0 5px;\n  text-align: left;\n  width: 100%;\n}\n.text-center.mb-4 {\n  width: 100%;\n  text-align: left;\n}\n.text-center p {\n    margin-bottom: .5rem;\n    padding: 0;\n    font-size: .75rem;\n    line-height: 1.375;\n    font-weight: var(--font-weight-body);\n}\n#to-field, #from-field, #message-field, #email-field, #phone-field, #date-field, #time-field {\n  border: 1px solid #000;\n  border-radius: 0;\n  background: #fff;\n  box-shadow: none;\n  padding: 5.5px 10px;\n}\n#methods {\n  padding: 5px 0;\n  border: 0;\n  background: transparent !important;\n  box-shadow: none !important;\n  border-radius: 0;\n}\n#content, #alerts {\n  border-radius: 0;\n}\nul#method{\nborder-radius: 0;\n}\ntextarea#message {\n    background: none;\n}\n#form input, #form textarea, #time {\n    background: none;\n    font-size: .75rem;    \n    font-weight: var(--font-weight-body-bold);\n    resize: none;\n}\nlabel.font-medium {\n  margin: 0 0 0px;\n  font-size: 0.75rem !important;\n  line-height: 1.1;  \n  text-transform: capitalize;\n  font-weight: var(--font-weight-body-bold);\n  color: #000;\n}\n#content #powered {\n    display: none !important;\n    opacity: 0;\n}\n#order-message {\n  font-size: .75rem;\n  text-transform: capitalize;\n}\n#content .bg-primary, #content #method .active{\nborder-radius: 0;\n}\nbutton svg {\n  width: 12px;\n}\ntracked-tab-parent{\nborder-radius: 0 !important;\n}\n\nform#form{\n  border: 0;\n  padding: 0;\n}\n#tracked-panel p, #instant-panel p{\n  margin-bottom: 0;\n  border: 1px solid #000;\n  padding: 10px;\n}\n#scheduled-panel p {\n  margin-bottom: 20px;\n  border: 1px solid #000;\n  padding: 10px;\n}\nform#form .grid {\n  margin-bottom: 15px;\n}\nform#form .grid #scheduled-panel .grid {\n  margin-bottom: 0;\n}\n#message-field .text-gray-400{\n display:none;\n}\n#content .button-color {\n  text-transform: capitalize;\n}"
+        }
+      },
+      "10864971697205422121": {
+        "type": "shopify://apps/gorgias-live-chat-helpdesk/blocks/gorgias/a66db725-7b96-4e3f-916e-6c8e6f87aaaa",
+        "disabled": false,
+        "settings": {}
+      },
+      "5858961087409699889": {
+        "type": "shopify://apps/geolocation-orbe/blocks/app-embed-footer-selector/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
+        "disabled": false,
+        "settings": {
+          "footer_ui_type": "geolocation",
+          "option_language": true,
+          "style_corners": "square",
+          "style_dropdown": "outlined",
+          "option_classic_flag_style": "none",
+          "option_classic_currency_type": "iso_symbol",
+          "search_country": true,
+          "block_background": "#ffffff",
+          "style_colors_background": "#ffffff",
+          "style_colors_border": "#000000",
+          "style_colors_text": "#000000",
+          "option_modal_continent": false,
+          "option_flag_style": "none",
+          "option_currency_type": "iso",
+          "option_modal_language": false,
+          "title": "Select Your Region",
+          "language_title": "Preferred Language",
+          "helper_text": "Changing language will not affect your selected region",
+          "block_alignement": "flex-end"
+        }
+      },
+      "15912215999290715800": {
+        "type": "shopify://apps/geolocation-orbe/blocks/app-embed-modal/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
+        "disabled": false,
+        "settings": {
+          "test_mode": false,
+          "modal_closeButton": false,
+          "option_flag_style": "none",
+          "option_currency_type": "iso_symbol",
+          "option_language": false,
+          "option_search_country": true,
+          "title": "Please select your shipping country",
+          "text": "Shop and explore in your local currency by selecting from the below",
+          "helper_text": "",
+          "cta_text": "SHOP NOW",
+          "fallback_text": "We don’t ship to {country}",
+          "alignment_image": "right",
+          "style_corners": "square",
+          "style_dropdown": "outlined",
+          "modal_button_align": "full_width",
+          "title_font_size": 19,
+          "text_font_size": 13,
+          "show_blurred_background": false,
+          "style_colors_background": "#fcfbf8",
+          "style_colors_closeButton": "#0f0f0f",
+          "style_colors_cta_text": "#fcfbf8",
+          "style_colors_cta_button": "#000000",
+          "style_colors_text": "#000000"
+        }
+      },
+      "8962992520437913685": {
+        "type": "shopify://apps/yotpo-loyalty-rewards/blocks/loader-app-embed-block/2f9660df-5018-4e02-9868-ee1fb88d6ccd",
+        "disabled": false,
+        "settings": {
+          "inject_modules_loader": true,
+          "inject_sdk_loader": false
+        }
+      },
+      "7570552984445421165": {
+        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/settings/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {}
+      },
+      "14339172867238703359": {
+        "type": "shopify://apps/yotpo-product-photo-reviews/blocks/reviews_tab/eb7dfd7d-db44-4334-bc49-c893b51b36cf",
+        "disabled": false,
+        "settings": {
+          "product": ""
+        }
+      }
+    }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".accordion__trigger-indicator {width: 16px; height: 16px;}",
+      ".aspect-ratio--2-3 {padding-top: 150%;}"
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+<div data-section-id="{{ section.id }}" data-section-type="contact-form">
+  <div class="container">
+    {% form 'contact' %}
+      {% if form.posted_successfully? %}
+        <p class="form__success-message">
+          {{ 'contact.form.post_success' | t }}
+        </p>
+      {% endif %}
+
+      {% if form.errors contains 'form' %}
+        <div class="form__error-message">
+          {{ form.errors.messages.form }}
+        </div>
+      {% endif %}
+
+      <div class="form__group">
+        <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+        <input
+          type="text"
+          name="contact[name]"
+          id="ContactFormName"
+          class="{% if form.errors contains 'name' %}input-error{% endif %}"
+          placeholder="{{ 'contact.form.name' | t }}"
+          value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+        >
+
+        {% if form.errors contains 'name' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.name | capitalize }}
+            {{ form.errors.messages.name }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="form__group">
+        <label for="ContactFormEmail">{{ 'contact.form.email' | t }}</label>
+        <input
+          type="email"
+          name="contact[email]"
+          id="ContactFormEmail"
+          class="{% if form.errors contains 'email' %}input-error{% endif %}"
+          placeholder="{{ 'contact.form.email' | t }}"
+          value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
+          spellcheck="false"
+          autocomplete="off"
+          autocapitalize="off"
+        >
+
+        {% if form.errors contains 'email' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="form__group">
+        <label for="ContactFormPhone">{{ 'contact.form.phone' | t }}</label>
+        <input
+          type="tel"
+          name="contact[phone]"
+          id="ContactFormPhone"
+          class="{% if form.errors contains 'phone' %}input-error{% endif %}"
+          placeholder="{{ 'contact.form.phone' | t }}"
+          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
+          pattern="[0-9\(\)\+ \-]*"
+        >
+
+        {% if form.errors contains 'phone' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.phone | capitalize }}
+            {{ form.errors.messages.phone }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="form__group">
+        <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+        <textarea
+          rows="10"
+          name="contact[body]"
+          id="ContactFormMessage"
+          class="{% if form.errors contains 'body' %}input-error{% endif %}"
+          placeholder="{{ 'contact.form.message' | t }}"
+        >
+        {%- if form.body -%}
+        {{- form.body -}}
+        {%- endif -%}
+        </textarea>
+
+        {% if form.errors contains 'body' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.body | capitalize }}
+            {{ form.errors.messages.body }}
+          </div>
+        {% endif %}
+      </div>
+
+      <input type="submit" class="btn" value="{{ 'contact.form.send' | t }}">
+    {% endform %}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Contact Form",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 64
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 64
+      }
+    ]
+  }
+{% endschema %}

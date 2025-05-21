@@ -1,0 +1,105 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": false,
+        "page_nav": "faq-pages",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "content": "<p>You are currently on our Australian website which currently ships to Australia, New Zealand and Indonesia only. <br/>For customers located in the united states or canada, please visit your local site at <a href=\"https://faithfullthebrand.com\" title=\"https://faithfullthebrand.com\">faithfullthebrand.com.</a></p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "When will my order be processed?",
+            "content": "<p>Once your order has been confirmed and accepted by us, our dispatch team endeavors to process it as quickly as possible so it is ready for dispatch within 1 to 2 business days.</p><p>Any orders placed on weekends and public holidays will be processed the following business day.</p><p>Please allow an additional 3 to 4 business days for order processing during sale periods, due to higher than normal volumes of orders.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "When will my order be dispatched?",
+            "content": "<p>The dispatch date of your order will depend on the order processing time. Our dispatch team endeavors to process all orders as quickly as possible. </p><p>We aim to dispatch all orders within 1 to 2 business days of purchase from our warehouse in sydney, australia.  During sale periods, please allow an additional 3 to 4 business days for your order to be dispatched due to higher than normal volumes of orders.<br/></p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "title": "My order has been shipped. When will it arrive?",
+            "content": "<p>Once your order has been shipped by our dispatch team, the delivery timeframe will vary depending on the shipping method selected at checkout, the shipping carrier used and your location from our warehouse in sydney.</p><p>Please note that delivery timeframes are in addition to processing times.</p><h6>Australian delivery</h6><ul><li>Standard shipping:<strong><br/></strong>Please allow 2 to 8 business days after processing to receive your order, pending on if you are located in the metro or non-metro area.</li><li>Express shipping:<br/>Please allow 1 to 4 business days after processing to receive your order, pending on if you are located in the metro or non-metro area.</li></ul><h6>New zealand delivery</h6><ul><li>Standard shipping:<br/>Please allow 8-10 business days after processing for you to receive your order once shipped.</li></ul><h6>Delivery delays</h6><ul><li>We recommend that you regularly check the websites of our shipping partners to take notice of any delays that are being experienced within their network.</li></ul><p>If you have any question about receiving your order, please contact our customer care team at <a href=\"mailto:shop@faithfullthebrand.com\" title=\"mailto:shop@faithfullthebrand.com\">shop@faithfullthebrand.com</a><br/></p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer same day delivery?",
+            "content": "<p>No, we currently do not offer same day delivery. If you would like to receive your order as soon as possible, we recommend selecting the express shipping option at checkout.<br/></p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "title": "I entered the wrong address on my order, can I update it?",
+            "content": "<p>If you have entered an incorrect shipping address on your order and your order has not been shipped, please contact our customer care team as soon as possible. </p><p>Please note that once your order has been shipped from the warehouse, we are unable to change the shipping address.<br/></p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "title": "How can I track my order?",
+            "content": "<p>Once your order has been shipped, you will be sent an email confirmation containing a tracking number and link. </p><p>Please allow up to 48 hours for updates to appear on the tracking page after the notification.<br/></p>"
+          }
+        },
+        "question_8": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship to APO/FPO addresses?",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_0",
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_8"
+      ],
+      "settings": {
+        "title": "{{ page.title }}",
+        "is_primary_heading": true,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

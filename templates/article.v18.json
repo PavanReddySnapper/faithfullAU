@@ -1,0 +1,388 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.26.22_pm.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "In The Design Studio",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Step behind the scenes of the Summer 2025 collection, Letters From Hydra, as the team shares intimate snippets from their camera and references they've collected. Brought to life between our design studios in Bali, Indonesia and Sydney, Australia. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.20.25_pm.png",
+        "background_image_2": "shopify://shop_images/Photo_19-11-2024_15_00_39.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "image_banner_K6yJE9": {
+      "type": "image-banner",
+      "blocks": {
+        "image_mWVxzX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/IMG_9886_1.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_mWVxzX"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "editorial_layout_rf38Db": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_9923_1.jpg",
+        "background_image_2": "shopify://shop_images/Photo_18-11-2024_12_14_51_1.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "image_banner_qLBEtB": {
+      "type": "image-banner",
+      "blocks": {
+        "image_GCcKEA": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.25.59_pm.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_GCcKEA"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "editorial_layout_Wq9MmH": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_3433_1.jpg",
+        "background_image_2": "shopify://shop_images/IMG_8758_2.heic",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "image_banner_Ly6BVX": {
+      "type": "image-banner",
+      "blocks": {
+        "image_np3jB4": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/IMG_3529_9a8f475d-02bf-4fa2-b1ee-f5864461ee4e.heic",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_np3jB4"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "editorial_layout_h8wcy6": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_9884_1_4edf239b-5484-47f7-ad75-36045678326b.jpg",
+        "background_image_2": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.43.51_pm.png",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "karys-mini-wrap-skirt-mandraki-floral",
+          "laia-maxi-dress-valentine",
+          "heidi-mini-dress-gingham-deep-red",
+          "aniela-maxi-dress-sifnos-stripe"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/in-conversation-with-villa-cleo"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/cape-town-travel-guide"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/a-morning-in-new-york-with-constanze-saemann"
+          }
+        }
+      },
+      "block_order": [
+        "article_eUJjCy",
+        "article_zPApBT",
+        "article_n84pcB"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_BNpN6Q",
+    "image_banner_K6yJE9",
+    "editorial_layout_rf38Db",
+    "image_banner_qLBEtB",
+    "editorial_layout_Wq9MmH",
+    "image_banner_Ly6BVX",
+    "editorial_layout_h8wcy6",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

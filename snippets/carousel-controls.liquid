@@ -1,0 +1,34 @@
+{%- comment -%}
+  Parameters
+  container_class (optional): string – Class(es) for the container element
+  prev_btn_attr (optional): string – Attribute(s) for the previous button
+  next_btn_attr (optional): string – Attribute(s) for the next button
+{%- endcomment -%}
+
+{%- liquid
+  assign prev_btn_attr = prev_btn_attr | default: 'data-prev-btn'
+  assign next_btn_attr = next_btn_attr | default: 'data-next-btn'
+-%}
+
+{% unless show_gradient %}
+  <div class="controls-container {{ container_class }}">
+{% endunless %}
+<button
+  {{ prev_btn_attr }}
+  class="btn--control btn--control-prev{% if show_gradient %} hide{% endif %}"
+  aria-label="{{ 'accessibility_labels.view_previous_slide' | t }}"
+>
+  {% render 'icon-chevron-left' %}
+  {% if show_gradient %}<div class="btn-control-prev__gradient"></div>{% endif %}
+</button>
+<button
+  {{ next_btn_attr }}
+  class="btn--control btn--control-next{% if show_gradient %} hide{% endif %}"
+  aria-label="{{ 'accessibility_labels.view_next_slide' | t }}"
+>
+  {% if show_gradient %}<div class="btn-control-next__gradient"></div>{% endif %}
+  {% render 'icon-chevron-right' %}
+</button>
+{% unless show_gradient %}
+  </div>
+{% endunless %}

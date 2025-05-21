@@ -1,0 +1,691 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_b9cd6ec9-44bb-4708-b3ac-e2e89a16d2f4.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "In The Studio",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "FALL 2024 LOOKBOOK",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The Di Milano collection embodies a sense of ease with effortless appeal, wearability and versatility at the forefront of each design. Soft tailoring and slender silhouettes come together with a palette of creamy neutrals and rich, exuberant hues. Nostalgic nods to eras bygone continue with delicate floral and classic stripe motifs.</p><p>Step inside the studio shoot for the Di Milano collection, where the pieces are styled together for enduring, transeasonal appeal. Larissa Schumacher is captured on film by Claudia Smith with assistance from Maxwell Finch and Hamish McIntosh. Hair and make up by Nisha Van Berkel and styling by the creative team, with assistance from Yael Swartz.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_V3tEjc": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RAHTKF": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_8f9ccf75-ab29-4522-ad67-0d6585c67fd6.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "En Vau Shirt Striped Soft Blue",
+            "button_link_1": "shopify://products/en-vau-shirt-striped-soft-blue",
+            "button_label_2": "Emilie Trouser Black",
+            "button_link_2": "shopify://products/emilie-trouser-black"
+          }
+        },
+        "image_PNGCEA": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_70a482b2-346d-4837-892f-d708fe84546f.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Margot Maxi Dress White",
+            "button_link_1": "shopify://products/margot-maxi-dress-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_4JCWUK": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_35895899-116b-4088-9c57-f62f26f9c94a.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Paloma Maxi Dress Black",
+            "button_link_1": "shopify://products/paloma-maxi-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_jwanVq": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_4011a8ff-5545-4dc8-8af8-bfccbfe967f0.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Bodil Top Chocolate Brown",
+            "button_link_1": "shopify://products/bodil-top-chocolate-brown",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RAHTKF",
+        "image_PNGCEA",
+        "image_4JCWUK",
+        "image_jwanVq"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_6CUKd8": {
+      "type": "image-banner",
+      "blocks": {
+        "image_ENeeiX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_d2b4a5d8-9ed9-445f-a3bf-1105cbdc626b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Sanne Midi Dress Black",
+            "button_link_1": "shopify://products/sanne-midi-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Kya6eD": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_fa35f861-3158-473b-ae41-3fef539b5d73.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ines Fringe Dress Oatmeal",
+            "button_link_1": "shopify://products/ines-fringe-dress-oatmeal",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Gij6Ug": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/8_72db6ba7-7f21-4ac6-958e-5ac75e6362fe.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Vieste Shirt Bordeaux",
+            "button_link_1": "",
+            "button_label_2": "Emilie Trouser Bordeaux",
+            "button_link_2": ""
+          }
+        },
+        "image_g8UeFG": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_cdb32d98-e616-4115-b891-9586fe74a68c.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aleza Top White",
+            "button_link_1": "shopify://products/aleza-top-white",
+            "button_label_2": "Lena High Waisted Trouser Black",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ENeeiX",
+        "image_Kya6eD",
+        "image_Gij6Ug",
+        "image_g8UeFG"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/10_9c9b6024-eb1c-43dd-a989-1f07a8a3301e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aya String Midi Dress Cream Pinstripe",
+            "button_link_1": "shopify://products/aya-string-midi-dress-cream-pinstripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_tzeYwj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_mpKw4B": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/11_58a73827-3780-4ae0-9ee4-5fd409be98da.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Bijou Asymmetric Dress Black",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_8q4zmR": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/12_3dbe6b6d-0f5c-4e2b-a632-bf96781c8e31.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Margot Maxi Dress Bordeaux",
+            "button_link_1": "",
+            "button_label_2": "Frederikke Cashmere Cardigan Black",
+            "button_link_2": "shopify://products/frederikke-cashmere-cardigan-black"
+          }
+        },
+        "image_EbDAKJ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/13_778fcd14-b19e-45dd-a854-3e4d39fa0609.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Sofie Maxi Dress Chocolate Brown",
+            "button_link_1": "shopify://products/sofie-maxi-dress-chocolate-brown",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_TUEUVe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/14_66dcc8f3-a2c0-4be1-91e9-eae912824641.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Freja Shirt Wine Pinstripe",
+            "button_link_1": "shopify://products/aleza-top-white",
+            "button_label_2": "Emilie Trouser Black",
+            "button_link_2": "shopify://products/emilie-trouser-black"
+          }
+        }
+      },
+      "block_order": [
+        "image_mpKw4B",
+        "image_8q4zmR",
+        "image_EbDAKJ",
+        "image_TUEUVe"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_rHTJrr": {
+      "type": "image-banner",
+      "blocks": {
+        "image_9EjCdU": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/15_8f5a5417-a479-4504-ac93-f60c9d439dae.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Freja Shirt Cream Pinstripe",
+            "button_link_1": "shopify://products/freja-shirt-cream-pinstripe",
+            "button_label_2": "Emilie Trouser Beige",
+            "button_link_2": "shopify://products/emilie-trouser-beige"
+          }
+        },
+        "image_BTwRwr": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/16_2a7e3354-faee-4ab0-b7ca-fc071cc23996.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ciel Top Oatmeal",
+            "button_link_1": "shopify://products/ciel-top-oatmeal",
+            "button_label_2": "Sanne Pant Oatmeal",
+            "button_link_2": "shopify://products/sanne-pant-oatmeal"
+          }
+        },
+        "image_BDq9Kb": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/17_ccfdfeca-a1be-4205-9181-2a504b0647dd.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_pprBKX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/18_d54a8100-f74f-4874-938b-d715470d570e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Vanze Coat Off White",
+            "button_link_1": "shopify://products/vanze-coat-off-white",
+            "button_label_2": "Emilie Trouser Beige",
+            "button_link_2": "shopify://products/emilie-trouser-beige"
+          }
+        }
+      },
+      "block_order": [
+        "image_9EjCdU",
+        "image_BTwRwr",
+        "image_BDq9Kb",
+        "image_pprBKX"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_JRgzcU": {
+      "type": "image-banner",
+      "blocks": {
+        "image_zWkjRL": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/19_2a39c5a0-86e2-44fb-af49-3eb0c492ab04.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lulea Wrap Vest Black",
+            "button_link_1": "shopify://products/lulea-wrap-vest-black",
+            "button_label_2": "Lulea Pant Black",
+            "button_link_2": "shopify://products/lulea-pant-black"
+          }
+        }
+      },
+      "block_order": [
+        "image_zWkjRL"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_bmLXMG": {
+      "type": "image-banner",
+      "blocks": {
+        "image_tVXr7H": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/20_876621cb-7bfb-496e-8e08-d9627dfe43c7.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_P78tFh": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/21.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_DyARMm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/22.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Brita Top Black",
+            "button_link_1": "shopify://products/brita-top-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Y7nRdR": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/23.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aya String Midi Dress Cream Pinstripe",
+            "button_link_1": "shopify://products/aya-string-midi-dress-cream-pinstripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_tVXr7H",
+        "image_P78tFh",
+        "image_DyARMm",
+        "image_Y7nRdR"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_KKeD6U": {
+      "type": "image-banner",
+      "blocks": {
+        "image_e49ngq": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/24.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Vanze Coat Off White",
+            "button_link_1": "shopify://products/vanze-coat-off-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_x9Fc7V": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/25.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_RhdYiX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/26_3a082fd6-fe22-4cec-ba14-f819fee94d42.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aleza Top White",
+            "button_link_1": "shopify://products/aleza-top-white",
+            "button_label_2": "Lena High Waisted Trouser Black",
+            "button_link_2": ""
+          }
+        },
+        "image_ewYBGQ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/27.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Odin Coat Black",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_e49ngq",
+        "image_x9Fc7V",
+        "image_RhdYiX",
+        "image_ewYBGQ"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "SHOP FALL 2024",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "di-milano",
+        "product_list": [
+          "en-vau-shirt-striped-soft-blue",
+          "lulea-wrap-vest-black",
+          "ines-fringe-dress-oatmeal",
+          "margot-maxi-dress-white"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/celebrating-roma"
+          }
+        },
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/on-holiday-with-vera-van-erp"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/behind-the-roma-print"
+          }
+        }
+      },
+      "block_order": [
+        "article_n84pcB",
+        "article_eUJjCy",
+        "article_zPApBT"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "image_banner_V3tEjc",
+    "image_banner_6CUKd8",
+    "image_banner_GGQzjj",
+    "image_banner_tzeYwj",
+    "image_banner_rHTJrr",
+    "image_banner_JRgzcU",
+    "image_banner_bmLXMG",
+    "image_banner_KKeD6U",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

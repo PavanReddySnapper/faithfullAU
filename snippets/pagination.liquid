@@ -1,0 +1,28 @@
+{%- comment -%}
+  show_prev_next: true or false - will display next/previous arrows
+  type: 'standard', 'load-more' or 'infinite-scroll' - standard pagination, lazy loading with button or lazy loading without button
+  position: 'bottom' or 'top' - used for load more/infinite scroll pagination type only
+
+  {% render 'pagination', paginate: paginate %}
+{%- endcomment -%}
+
+{%- liquid
+  assign show_prev_next = show_prev_next | default: true, allow_false: true
+  assign type = type | default: 'standard'
+  assign position = position | default: 'bottom'
+-%}
+
+{%- if paginate.pages > 1 -%}
+  <nav
+    class="pagination-nav{% if type != 'standard' %} pagination-nav--{{ position }}{% endif %}"
+    aria-label="{{ 'accessibility_labels.pagination_label' | t }}"
+  >
+    {%- liquid
+      if type == 'standard'
+        render 'pagination-standard', paginate: paginate, show_prev_next: show_prev_next
+      else
+        render 'pagination-load-more', paginate: paginate, position: position, type: type
+      endif
+    -%}
+  </nav>
+{%- endif -%}

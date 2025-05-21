@@ -1,0 +1,6 @@
+{%- liquid
+  layout none
+  echo '<div class="slide" data-slide>'
+  render 'product-card', card_attributes: 'data-product-card-recently-viewed', sizes: '(min-width: 48rem) 25vw, 50vw'
+  echo '</div>'
+-%}

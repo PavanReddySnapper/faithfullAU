@@ -1,0 +1,159 @@
+{% liquid
+  assign text_color = section.settings.text_color
+  assign background_color = section.settings.background_color
+  assign title = section.settings.title
+%}
+
+<section
+  class="section section--newsletter"
+  data-section-id="{{ section.id }}"
+  data-section-type="newsletter"
+  style="
+    --text-color: var({{ text_color }});
+    {% if background_color != blank %}--background-color: var({{ background_color }});{% endif %}
+  "
+>
+  <div class="container">
+    {% render 'section-content', text_color: text_color, title: title, title_size: 'h6' %}
+    {%- render 'component-subscribe-form', form_name: 'customer', id: 'subscribe-form', value: 'newsletter' -%}
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Newsletter",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "select",
+        "id": "background_color",
+        "label": "Background Colour",
+        "default": "transparent",
+        "options": [
+          {
+            "value": "transparent",
+            "label": "None"
+          },
+          {
+            "value": "var(--color-primary-20)",
+            "label": "Pink"
+          },
+          {
+            "value": "var(--color-neutral-10)",
+            "label": "Neutral"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_color",
+        "label": "Text Color",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "paragraph",
+        "content": "Any customers who sign up will have an account created for them in Shopify. [View customers](/admin/customers?query=&accepts_marketing=1)"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title",
+        "default": "Newsletter"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_desktop",
+        "label": "Bottom Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_mobile",
+        "label": "Bottom Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Newsletter"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"],
+      "groups": ["footer"]
+    }
+  }
+{% endschema %}

@@ -1,0 +1,153 @@
+{%- if section.blocks.size > 1 -%}
+  {%- liquid
+    if section.blocks.size > 0
+      case section.blocks.size
+        when 2
+          assign block_width = 'half'
+        when 3
+          assign block_width = 'third'
+      endcase
+    endif
+
+    assign sizes = '(min-width: 48rem) calc(100vw / cols), 100vw' | replace: 'cols', section.blocks.size
+  -%}
+
+  <section
+    class="section section-featured-collections"
+    data-section-id="{{ section.id }}"
+    data-section-type="featured-collections"
+  >
+    <div class="featured-collections__container container container--flush container--fluid">
+      {%- for block in section.blocks -%}
+        <div class="featured-collections__slide {{ block_width }}">
+          {%- render 'component-collection-image-tile',
+            collection: collections[block.settings.collection],
+            title: block.settings.title,
+            image: block.settings.image,
+            url: block.settings.url,
+            sizes: sizes
+          -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  </section>
+{%- endif -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% render 'vite-tag' with '@/scripts/sections/featured-collections.js' %}
+
+{% schema %}
+  {
+    "name": "Featured Collections",
+    "class": "featured-collections",
+    "max_blocks": 3,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_desktop",
+        "label": "Bottom Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "16",
+            "label": "16px"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_mobile",
+        "label": "Bottom Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "16",
+            "label": "16px"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+            "info": "It will default to the collection image, if this setting is left empty"
+          },
+          {
+            "label": "Title",
+            "id": "title",
+            "type": "text",
+            "info": "It will default to the collection name, if this setting is left empty"
+          },
+          {
+            "label": "Url",
+            "id": "url",
+            "type": "url",
+            "info": "It will default to the collection link, if this setting is left empty"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Collections"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

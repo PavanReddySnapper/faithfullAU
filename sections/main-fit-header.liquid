@@ -1,0 +1,89 @@
+<div class="main-page-header" data-section-id="{{ section.id }}" data-section-type="main-page-header">
+  <div class="page-header">
+    <div class="container container--sm">
+      {%- liquid
+        assign heading_tag = 'p'
+        if section.settings.is_primary_heading
+          assign heading_tag = 'h1'
+        endif
+      -%}
+      <{{ heading_tag }} class="h2">
+        {{ section.settings.title | default: page.title | newline_to_br }}
+      </{{ heading_tag }}>
+    </div>
+
+    {% render 'component-page-top-links', linklist: section.settings.page_nav %}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+
+  {% if section.settings.navigation_sticky %}
+    @media only screen and (min-width: {{ settings.grid_large }}px) {
+      .page-navigation {
+        position: sticky;
+        top: var(--header-height);
+      }
+    }
+  {% endif %}
+</style>
+
+{% schema %}
+  {
+    "name": "Fit & Style Header",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "info": "Optional. Overrides the default Page Title."
+      },
+      {
+        "type": "checkbox",
+        "id": "is_primary_heading",
+        "label": "Is Primary Page Heading",
+        "default": true,
+        "info": "This will make the heading an <h1> tag. Only use once per page."
+      },
+      {
+        "type": "header",
+        "content": "Navigation Settings"
+      },
+      {
+        "type": "link_list",
+        "id": "page_nav",
+        "label": "Page navigation list"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "category",
+        "name": "Category",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Category Settings"
+          },
+          {
+            "type": "page",
+            "id": "page",
+            "label": "Page"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

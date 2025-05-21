@@ -1,0 +1,39 @@
+{%- comment -%}
+  Due to accessibility requirements, we are regrouping all logical elements into the <a> element.
+  If a screen reader user is tabbing through the page, or browsing by links on the page with duplicated links,
+  they will appear identical which may lead to a confusing user experience.
+{%- endcomment -%}
+
+{%- comment -%}
+  Parameters
+  card_class: optional class on the parent element
+  sizes: optional sizes attribute for the image
+{%- endcomment -%}
+
+{% assign sizes = sizes | default: '(min-width: 61.875rem) 33vw, 50vw' %}
+
+<div class="article-card{% if card_class != blank %} {{ card_class }}{% endif %}">
+  <a
+    href="{{ article.url }}"
+    class="article-card__image aspect-ratio aspect-ratio--portrait"
+  >
+    {% if article.image %}
+      {%- render 'component-image', image: article.image, max_width: 960, sizes: sizes -%}
+    {% endif %}
+  </a>
+
+  <div class="article-card__content">
+    {%- if article.metafields.custom.category -%}
+      <a
+        href="{{ blog.url }}/tagged/{{ article.metafields.custom.category | handleize }}"
+        class="article-card__category h6"
+      >
+        {{ article.metafields.custom.category }}
+      </a>
+    {%- endif -%}
+
+    <h3 class="article-card__title h4">
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </h3>
+  </div>
+</div>

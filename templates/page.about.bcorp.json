@@ -1,0 +1,150 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Bcorp",
+        "is_primary_heading": true,
+        "page_nav": "about-us-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "rich_text_HbCV3N": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_PWDwQ8": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>FAITHFULL has been proudly B-Corp Certified since 2021 and was recertified at the end of 2024.</p><p>B-Corp Certification is a whole business assessment of a company’s social and environmental performance. It is based on five key impact areas of Governance, Workers, Community, Environment and Customers.</p><p>The movement has connected a global network of high performing and mission-driven businesses that are committed to forces of good. This includes over 8000 certified businesses in 90 countries, 160 industries represented and 150,000 businesses applying the B Impact Assessment.</p><p>Following FAITHFULL’s recertification at the end of 2024, we reached a new high score of 118.4, improving our original score of 96.3. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_PWDwQ8"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_with_text_banner_NYrACF": {
+      "type": "image-with-text-banner",
+      "settings": {
+        "image": "shopify://shop_images/1_dd27ca5f-bc8a-404d-926b-18fc63c7e44c.webp",
+        "pre_title": "",
+        "pre_title_alignment": "center",
+        "pre_title_alignment_mobile": "center",
+        "title": "What is a Certified B Corp & how did we become certified?",
+        "title_style": "h1",
+        "title_alignment": "center",
+        "title_alignment_mobile": "center",
+        "text": "Becoming certified as a B Corporation goes beyond product or service level certification. B Corp is the only accreditation that measures a company’s entire social and environmental performance. The B Impact Assessment evaluates how a company’s operations and business model impact its workers, community, environment, and customers. From supply chain and input materials, to charitable giving and employee benefits, B Corp demonstrates a business meets - and maintains - a substantiated level of social and environmental responsibility across their entire operation.",
+        "text_style": "body-medium",
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "text_list_kqeMeF": {
+      "type": "text-list",
+      "blocks": {
+        "text_YEQBQD": {
+          "type": "text",
+          "settings": {
+            "title": "Governance",
+            "description": "<p>FAITHFULL is an independent company with operations in both Bali, Indonesia and Sydney, Australia. We have revised our corporate governing documents for the inclusion of a stakeholder consideration clause, which we have integrated into formal decision-making processes. We have also established an internal Steering Committee to monitor environmental and social performance.</p>"
+          }
+        },
+        "text_teCEkg": {
+          "type": "text",
+          "settings": {
+            "title": "Workers",
+            "description": "<p>The highest scoring for FAITHFULL, we sit above-average and received a Best In World Award from B-Lab in 2022. Employees are valued at FAITHFULL with verified living wages, above-industry benefits, training opportunities and additional support programs.</p>"
+          }
+        },
+        "text_L99mEx": {
+          "type": "text",
+          "settings": {
+            "title": "Community",
+            "description": "<p>Both female-owned and led, with over 75% of managerial roles provided to women, we prioritise local manufacturing partners when able and maintain a positive corporate citizenship program with donations to a number of organisations across Indonesia, Australia and the world. Learn more about our values and commitments <a href=\"/pages/about\" title=\"About Us\">here</a>. </p>"
+          }
+        },
+        "text_6EJN4J": {
+          "type": "text",
+          "settings": {
+            "title": "Environment",
+            "description": "<p>While the fashion industry is known for its resource intensive practices, we consciously choose to produce products through the use of environmentally-preferred methods and materials, opting for certified fabrications and production processes including digital printing. We refuse to follow common industry practices like the burning of offcuts. Instead, we are always investigating new end-of-life strategies to account for the full lifecycle of each product. Learn more about our products and fabrications <a href=\"/pages/our-products\" title=\"Our Products\">here.</a></p>"
+          }
+        },
+        "text_a3D9fV": {
+          "type": "text",
+          "settings": {
+            "title": "Customers",
+            "description": "<p>We have always and will continue to maintain a positive relationship with our community, offering above-average product warranty and quality assurance. Learn more about our customer protections <a href=\"/pages/our-products\" title=\"Our Products\">here. </a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_YEQBQD",
+        "text_teCEkg",
+        "text_L99mEx",
+        "text_6EJN4J",
+        "text_a3D9fV"
+      ],
+      "settings": {
+        "title": "Our Impact",
+        "text": "",
+        "button_text": "See Our B Impact Report",
+        "button_link": "https://www.bcorporation.net/en-us/find-a-b-corp/company/faithfull-the-brand/",
+        "layout": "list",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "image_with_text_banner_yyfbmT": {
+      "type": "image-with-text-banner",
+      "settings": {
+        "image": "shopify://shop_images/1-Desktop.webp",
+        "pre_title": "",
+        "pre_title_alignment": "center",
+        "pre_title_alignment_mobile": "center",
+        "title": "",
+        "title_style": "h1",
+        "title_alignment": "center",
+        "title_alignment_mobile": "center",
+        "text": "",
+        "text_style": "body-medium",
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40"
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_HbCV3N",
+    "image_with_text_banner_NYrACF",
+    "text_list_kqeMeF",
+    "image_with_text_banner_yyfbmT"
+  ]
+}

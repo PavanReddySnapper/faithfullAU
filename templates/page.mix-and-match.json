@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "container--sm",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "mix_and_maxtch_b66tmX": {
+      "type": "mix-and-match",
+      "blocks": {
+        "product_piABWx": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "Pattern",
+            "product": "flora-bikini-top-francis-floral",
+            "image": "shopify://shop_images/mix-match-top-03.jpg"
+          }
+        },
+        "product_WTbRRp": {
+          "type": "product",
+          "settings": {
+            "group": "group_2",
+            "filter_category": "Pattern",
+            "product": "aquarius-bikini-bottoms-francis-floral",
+            "image": "shopify://shop_images/mix-match-bottom-03.jpg"
+          }
+        },
+        "product_BCaHer": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "Solid",
+            "product": "alani-bikini-top-black",
+            "image": "shopify://shop_images/mix-match-top-01_be05683c-3c6d-43cc-acd8-743643c1ebe7.jpg"
+          }
+        },
+        "product_wWiA3x": {
+          "type": "product",
+          "settings": {
+            "group": "group_2",
+            "filter_category": "Solid",
+            "product": "afonso-bikini-bottoms-black",
+            "image": "shopify://shop_images/mix-match-bottom-01.jpg"
+          }
+        },
+        "product_ttBDDM": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "Pattern",
+            "product": "carmen-bikini-top-cala-nica-floral-blue",
+            "image": "shopify://shop_images/mix-match-top-04.jpg"
+          }
+        },
+        "product_MiViYL": {
+          "type": "product",
+          "settings": {
+            "group": "group_2",
+            "filter_category": "Pattern",
+            "product": "zamora-bikini-bottoms-cala-nica-floral-blue",
+            "image": "shopify://shop_images/mix-match-bottom-04.jpg"
+          }
+        },
+        "product_6C3npQ": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "hollis-bikini-top-magenta",
+            "image": "shopify://shop_images/mix-match-top-05.jpg"
+          }
+        },
+        "product_AwjKKD": {
+          "type": "product",
+          "settings": {
+            "group": "group_2",
+            "filter_category": "Solid",
+            "product": "nomi-bikini-bottoms-magenta",
+            "image": "shopify://shop_images/mix-match-bottom-05.jpg"
+          }
+        },
+        "product_Y6LFBH": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "Pattern",
+            "product": "calli-bikini-top-la-pacifica",
+            "image": "shopify://shop_images/mix-match-top-02.jpg"
+          }
+        },
+        "product_wnLfxT": {
+          "type": "product",
+          "settings": {
+            "group": "group_2",
+            "filter_category": "Pattern",
+            "product": "dylla-bikini-bottoms-la-pacifica",
+            "image": "shopify://shop_images/mix-match-bottom-02.jpg"
+          }
+        },
+        "product_kJFY3K": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "Solid",
+            "product": "amira-bikini-top-salsa",
+            "image": "shopify://shop_images/Amira_Bikini_Top_Salsa.jpg"
+          }
+        },
+        "product_Jphcnp": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "Solid",
+            "product": "el-bajio-bikini-top-salsa",
+            "image": "shopify://shop_images/El_Bajio_Bikini_Top_Salsa.jpg"
+          }
+        },
+        "product_HxcYJJ": {
+          "type": "product",
+          "settings": {
+            "group": "group_2",
+            "filter_category": "Solid",
+            "product": "dua-bikini-bottoms-salsa",
+            "image": "shopify://shop_images/Dua_Bikini_Bottoms_Salsa_f910f9ba-f324-4506-b4ea-89e31cb2b3a2.jpg"
+          }
+        },
+        "product_H3aJhB": {
+          "type": "product",
+          "settings": {
+            "group": "group_2",
+            "filter_category": "Solid",
+            "product": "reyes-bikini-bottoms-salsa",
+            "image": "shopify://shop_images/Reyes_Bikini_Bottoms_Salsa.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "product_piABWx",
+        "product_WTbRRp",
+        "product_BCaHer",
+        "product_wWiA3x",
+        "product_ttBDDM",
+        "product_MiViYL",
+        "product_6C3npQ",
+        "product_AwjKKD",
+        "product_Y6LFBH",
+        "product_wnLfxT",
+        "product_kJFY3K",
+        "product_Jphcnp",
+        "product_HxcYJJ",
+        "product_H3aJhB"
+      ],
+      "settings": {
+        "title": "Swim Mix & Match",
+        "subtitle": "Our swimwear is designed to be mixed and matched so you can create your perfect bikini set.",
+        "slide_size": "sm",
+        "group_1_title": "Top",
+        "group_2_title": "Bottom"
+      }
+    },
+    "mix_and_maxtch_b77tmX": {
+      "type": "mix-and-match",
+      "blocks": {
+        "product_piABWx": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "flora-bikini-top-francis-floral",
+            "image": "shopify://shop_images/mix-match-top-03.jpg"
+          }
+        },
+        "product_BCaHer": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "alani-bikini-top-black",
+            "image": "shopify://shop_images/mix-match-top-01_be05683c-3c6d-43cc-acd8-743643c1ebe7.jpg"
+          }
+        },
+        "product_ttBDDM": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "carmen-bikini-top-cala-nica-floral-blue",
+            "image": "shopify://shop_images/mix-match-top-04.jpg"
+          }
+        },
+        "product_6C3npQ": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "hollis-bikini-top-magenta",
+            "image": "shopify://shop_images/mix-match-top-05.jpg"
+          }
+        },
+        "product_Y6LFBH": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "calli-bikini-top-la-pacifica",
+            "image": "shopify://shop_images/mix-match-top-02.jpg"
+          }
+        },
+        "product_kJFY3K": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "amira-bikini-top-salsa",
+            "image": "shopify://shop_images/Amira_Bikini_Top_Salsa.jpg"
+          }
+        },
+        "product_Jphcnp": {
+          "type": "product",
+          "settings": {
+            "group": "group_1",
+            "filter_category": "",
+            "product": "el-bajio-bikini-top-salsa",
+            "image": "shopify://shop_images/El_Bajio_Bikini_Top_Salsa.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "product_piABWx",
+        "product_BCaHer",
+        "product_ttBDDM",
+        "product_6C3npQ",
+        "product_Y6LFBH",
+        "product_kJFY3K",
+        "product_Jphcnp"
+      ],
+      "settings": {
+        "title": "",
+        "subtitle": "",
+        "slide_size": "sm",
+        "group_1_title": "Top",
+        "group_2_title": "Bottom"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "mix_and_maxtch_b66tmX",
+    "mix_and_maxtch_b77tmX"
+  ]
+}

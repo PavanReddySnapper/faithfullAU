@@ -1,0 +1,25 @@
+{%- comment -%}
+  Parameters
+  collection: the collection object
+  image: (optional) Shopify image object
+  title: (optional) string – Custom collection title
+  url: (optional) url – Custom collection url
+  sizes: the sizes attribute for the image
+{%- endcomment -%}
+{% liquid
+  assign image = image | default: collection.featured_image
+  assign title = title | default: collection.title
+  assign url = url | default: collection.url
+  assign sizes = sizes | default: '(min-width: 48rem) calc(100vw / 3), 100vw'
+%}
+
+<a class="collection-image-tile" href="{{ url }}">
+  {%- render 'component-image', image: image, aspect_ratio: 'portrait', max_width: 960, sizes: sizes -%}
+  <div href="{{ url }}" class="collection-image-tile__overlay">
+    {% if title != blank %}
+      <h3 class="collection-image-tile__title h6">
+        {{ title }}
+      </h3>
+    {% endif %}
+  </div>
+</a>

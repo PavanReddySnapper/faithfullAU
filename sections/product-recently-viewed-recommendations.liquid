@@ -1,0 +1,267 @@
+{% liquid
+  assign text_color = section.settings.text_color
+  assign recommendations_title = section.settings.recommendations_title | default: 'Recommendations'
+  assign recently_viewed_title = section.settings.recently_viewed_title | default: 'Recently Viewed'
+  assign max_products = section.settings.max_products
+  assign carousel_controls_classes = 'controls-container--top'
+  assign slider_classes = 'carousel products-carousel'
+  assign slide_class = 'full'
+
+  if request.page_type == 'product'
+    assign product_id = product.id
+  elsif section.settings.recommendations_type == 'cart' and cart.item_count > 0
+    assign min = 0
+    assign max = cart.items.size
+    assign diff = max | minus: min
+    assign random_number = 'now' | date: '%N' | modulo: diff | plus: min
+    assign product_id = cart.items[random_number].product_id
+  elsif section.settings.recommendations_type != 'collection' and section.settings.product != blank
+    assign product_id = section.settings.product.id
+  else
+    assign recommendations_collection = collections[section.settings.recommendations_collection] | default: collections.all
+    assign min = 0
+    assign max = recommendations_collection.all_products_count
+    assign diff = max | minus: min
+    assign random_number = 'now' | date: '%N' | modulo: diff | plus: min
+    assign product_id = recommendations_collection.products[random_number].id
+  endif
+
+  case max_products
+    when 2
+      assign slide_class = 'half'
+      assign columns = 2
+    when 3
+      assign slide_class = 'third'
+      assign columns = 3
+    when 4, 5, 6, 7, 8
+      assign slide_class = 'quarter'
+      assign columns = 4
+  endcase
+
+  if max_products > 4
+    assign slider_classes = slider_classes | append: ' carousel--min-lg'
+  endif
+  if max_products < 5
+    assign carousel_controls_classes = carousel_controls_classes | append: ' hide--min-lg'
+  endif
+
+  if max_products < 3
+    assign carousel_controls_classes = carousel_controls_classes | append: ' hide'
+  endif
+
+  assign sizes = '(min-width: 48rem) calc(100vw / cols), 50vw' | replace: 'cols', columns | replace: 'calc(100vw / 1)', '100vw'
+%}
+
+<section
+  class="section section--recently-viewed-recommendations recently-viewed-recommendations__wrapper hide"
+  data-section-id="{{ section.id }}"
+  data-section-type="product-recently-viewed-recommendations"
+  data-product-handle="{{ product.handle }}"
+  data-limit="{{ max_products }}"
+  data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit={{ max_products }}"
+  data-slide-class="{{ slide_class }}"
+  style="--text-color: var({{ text_color }});"
+>
+  <div class="js-tabs">
+    <div class="container container--fluid">
+      <div class="recently-viewed-recommendations__toolbar">
+        <ul class="js-tablist">
+          <li class="js-tablist__item">
+            <a
+              class="js-tablist__link"
+              href="#Recommendations"
+              aria-controls="Recommendations"
+              data-tab-link
+              data-selected="1"
+            >
+              {{- recommendations_title -}}
+            </a>
+          </li>
+          <li>{% render 'icon-divider' %}</li>
+          <li class="js-tablist__item">
+            <a
+              class="js-tablist__link"
+              href="#RecentlyViewed"
+              aria-controls="RecentlyViewed"
+              data-tab-link
+            >
+              {{- recently_viewed_title -}}
+            </a>
+          </li>
+        </ul>
+        <div class="recommendations__controls hide" data-carousel-controls data-recommendations-controls>
+          {% render 'carousel-controls', container_class: carousel_controls_classes %}
+        </div>
+        <div class="recently-viewed__controls hide" data-carousel-controls data-recently-viewed-controls>
+          {% render 'carousel-controls', container_class: carousel_controls_classes %}
+        </div>
+      </div>
+    </div>
+
+    <div class="container container--flush container--fluid">
+      <div
+        id="Recommendations"
+        class="js-tabcontent"
+        data-recommendations-container
+      >
+        <div
+          class="recently-viewed-recommendations__slider {{ slider_classes }}"
+          data-slider-container
+          data-recommendations-slider-container
+        >
+          {%- for product in recommendations.products limit: max_products -%}
+            <div class="slide {{ slide_class }}" data-slide>
+              {% render 'product-card', product: product, sizes: sizes %}
+            </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div
+        id="RecentlyViewed"
+        class="js-tabcontent"
+      >
+        <div
+          class="recently-viewed-recommendations__slider {{ slider_classes }}"
+          data-slider-container
+          data-recently-viewed-slider-container
+        ></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% render 'vite-tag' with '@/scripts/sections/product-recently-viewed-recommendations.js' %}
+
+{% schema %}
+  {
+    "name": "Recently Viewed and Recs",
+    "class": "recently-viewed-recommendations",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "recommendations_title",
+        "label": "Title for Products Recommendations",
+        "default": "Recommendations"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "recently_viewed_title",
+        "label": "Title for Recently Viewed Products",
+        "default": "Recently Viewed"
+      },
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "range",
+        "id": "max_products",
+        "label": "Max products to show",
+        "min": 1,
+        "max": 8,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "type": "select",
+        "id": "text_color",
+        "label": "Text colour",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_desktop",
+        "label": "Bottom Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "64",
+            "label": "64px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_mobile",
+        "label": "Bottom Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "64",
+            "label": "64px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Recently Viewed/Recommendations"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["product"]
+    }
+  }
+{% endschema %}

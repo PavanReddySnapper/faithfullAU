@@ -1,0 +1,73 @@
+<div class="account-template" data-section-id="{{ section.id }}" data-section-type="main-customers-activate-account">
+  <div class="container container--sm">
+    {% form 'activate_customer_password' %}
+      <div class="page-header">
+        <h1>{{ 'customer.activate_account.title' | t }}</h1>
+        <p>{{ 'customer.activate_account.subtext' | t }}</p>
+      </div>
+
+      {% if form.errors contains 'form' %}
+        <div class="form__error-message">
+          {{ form.errors.messages.form }}
+        </div>
+      {% endif %}
+
+      <div class="form__group">
+        <label for="CustomerPassword">
+          {{ 'customer.activate_account.password' | t }}
+        </label>
+        <input
+          type="password"
+          name="customer[password]"
+          id="CustomerPassword"
+          class="{% if form.errors contains 'password' %}input-error{% endif %}"
+          placeholder="{{ 'customer.activate_account.password' | t }}"
+        >
+
+        {% if form.errors contains 'password' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.password | capitalize }}
+            {{ form.errors.messages.password }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="form__group">
+        <label for="CustomerPasswordConfirmation">
+          {{ 'customer.activate_account.password_confirm' | t }}
+        </label>
+        <input
+          type="password"
+          name="customer[password_confirmation]"
+          id="CustomerPasswordConfirmation"
+          class="{% if form.errors contains 'password_confirmation' %}input-error{% endif %}"
+          placeholder="{{ 'customer.activate_account.password_confirm' | t }}"
+        >
+
+        {% if form.errors contains 'password_confirmation' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.password_confirmation | capitalize }}
+            {{ form.errors.messages.password_confirmation }}
+          </div>
+        {% endif %}
+      </div>
+
+      <input type="submit" class="btn" value="{{ 'customer.activate_account.submit' | t }}">
+      <input
+        type="submit"
+        class="btn btn--secondary"
+        name="decline"
+        value="{{ 'customer.activate_account.cancel' | t }}"
+      >
+    {% endform %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Activate Account",
+    "enabled_on": {
+      "templates": ["customers/activate_account"]
+    }
+  }
+{% endschema %}

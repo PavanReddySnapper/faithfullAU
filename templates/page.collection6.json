@@ -1,0 +1,1029 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_RUwcYH": {
+      "type": "image-banner",
+      "blocks": {
+        "image_Riwqj8": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_75af457b-69a4-4d77-b5f5-7053b9e49966.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Riwqj8"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_g43DRX": {
+      "type": "rich-text",
+      "blocks": {
+        "title_wwTkUr": {
+          "type": "title",
+          "settings": {
+            "title": "La Madrague",
+            "is_primary_heading": true,
+            "heading_style": "h1",
+            "pre_heading": "Spring 2025 Campaign",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_mtE7tq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>An ode to the golden age of St Tropez, the collection draws inspiration from a photographic series captured by Willy Rizzo, ‘La belle histoire de St Tropez,’ a translation to ‘the wonderful story of St Tropez.’ Throughout the late 1950s and 60s, Rizzo was bemused by the transition of St Tropez from a quaint fishing village to a beloved haunt of Parisian society, capturing the likes of Brigitte Bardot and French filmstars. The collection name itself, La Madrague, is a direct nod to Bardot and her beloved 1963 song, said to be inspired by her St Tropez vacation home. Rich in colour and texture, nostalgic maritime stripes come together with romantic floral motifs and geometric designs, reminiscent of 1960s patterns. The palette is warm with soft neutrals, baby blues and buttery yellows, injected with bursts of vibrant raspberry reds and chocolate browns.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_w7qDcp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Nadine Leopold is captured on location in St Tropez, France.<br/><br/>Photographer Jordan Malane<br/>1st Assistant Luke Simmonds<br/>Hair and Makeup Artist Joel Phillips</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_e6fzA4": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"/collections/la-madrague\" title=\"La Madrague\">SHOP THE COLLECTION</a></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_wwTkUr",
+        "richtext_mtE7tq",
+        "richtext_w7qDcp",
+        "richtext_e6fzA4"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--md",
+        "single_row_desktop": false,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 16,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_cwDtbX": {
+      "type": "image-banner",
+      "blocks": {
+        "image_NdhmaB": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_ae9b4209-29da-46f2-afba-7b48377423a5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Blair Mini Dress",
+            "button_link_1": "shopify://products/blair-mini-dress-cecile-floral-pale-blue",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_LPAKtp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_263812d2-2e0d-4633-899c-e8e2340b9a9e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_cctptf": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_68a246a8-1358-4002-a36d-273f5bcfda4b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ana Top",
+            "button_link_1": "shopify://products/ana-top-white",
+            "button_label_2": "Claudine Pant",
+            "button_link_2": "shopify://products/claudine-pant-white"
+          }
+        }
+      },
+      "block_order": [
+        "image_NdhmaB",
+        "image_LPAKtp",
+        "image_cctptf"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_DBfQTb": {
+      "type": "image-banner",
+      "blocks": {
+        "image_xeNfMF": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/5_448bb80d-d923-4dae-867b-0161ab6292a7.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Arlette Top",
+            "button_link_1": "shopify://products/arlette-strapless-top-navy-white-stripe",
+            "button_label_2": "Citara Midi Skirt",
+            "button_link_2": "shopify://products/citara-drawstring-midi-skirt-navy"
+          }
+        }
+      },
+      "block_order": [
+        "image_xeNfMF"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_LGQerY": {
+      "type": "image-banner",
+      "blocks": {
+        "image_JNeDi9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_b170d109-6a97-4d41-8817-fdb3c527e063.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_DTWXfk": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_3deb5f1d-6522-4ae8-9a33-67a56dfb5e23.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Corbiere Vest",
+            "button_link_1": "shopify://products/corbiere-vest-navy",
+            "button_label_2": "Clove Trouser",
+            "button_link_2": "shopify://products/clove-trouser-navy"
+          }
+        }
+      },
+      "block_order": [
+        "image_JNeDi9",
+        "image_DTWXfk"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_BrpfLX": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": true,
+        "text_color": "--color-black",
+        "title": "Shop The Looks",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "la-madrague",
+        "product_list": [
+          "arlette-strapless-top-navy-white-stripe",
+          "blair-mini-dress-cecile-floral-pale-blue",
+          "clove-trouser-navy",
+          "ana-top-white"
+        ],
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "256ee49b-a256-40c1-9682-ef3f84d3a5d5": {
+      "type": "image-banner",
+      "blocks": {
+        "2a278432-8cb2-4216-8b45-fcbcd7239bb5": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/8_68fc7252-2014-4df2-8e62-abe0f4e9a49c.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "2a278432-8cb2-4216-8b45-fcbcd7239bb5"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_AzPmyL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_rrWt4P": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_2f1ae8f1-84e3-4c52-9244-35556a85eda7.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Eveline Vest",
+            "button_link_1": "shopify://products/eveline-vest-caramel",
+            "button_label_2": "Florine Mini Shorts",
+            "button_link_2": "shopify://products/florine-mini-shorts-caramel"
+          }
+        },
+        "image_UELRMk": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_63a87377-b4a8-495c-bd89-4ac5c4d9372c.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_HLxAGC": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/11_4b1dfd46-e30f-4f0e-a59b-cf0dee4ebf47.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Kelly Mini Dress",
+            "button_link_1": "shopify://products/kelly-mini-dress-breton-stripe-red",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rrWt4P",
+        "image_UELRMk",
+        "image_HLxAGC"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_yCgecR": {
+      "type": "image-banner",
+      "blocks": {
+        "image_nJNawM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/12_289d9129-dd85-492e-bd0b-1cfe51d047a6.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lydie Mini Dress",
+            "button_link_1": "shopify://products/lydie-mini-dress-red",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_nJNawM"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_UNC4NW": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": true,
+        "text_color": "--color-black",
+        "title": "Shop The Looks",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "la-madrague",
+        "product_list": [
+          "kelly-mini-dress-breton-stripe-red",
+          "claudine-pant-white",
+          "lydie-mini-dress-red",
+          "eveline-vest-caramel"
+        ],
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "image_banner_kRX4Xt": {
+      "type": "image-banner",
+      "blocks": {
+        "image_UEgWec": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_b8055dbc-1b98-402a-b54a-1d065191884d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_aj3JwH": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_65f1562f-18ff-4559-b2b6-6cd1eebac503.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Yvonne Midi Dress",
+            "button_link_1": "shopify://products/yvonne-midi-dress-leona-floral-lilac",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_UEgWec",
+        "image_aj3JwH"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_zdJpRm": {
+      "type": "image-banner",
+      "blocks": {
+        "image_BfQpkw": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/11_0233c230-c7f0-4ad7-b0ba-6aca2a6b0e9e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Noa Mini Dress",
+            "button_link_1": "shopify://products/noa-mini-dress-gingham-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_BfQpkw"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_Mdb6ak": {
+      "type": "image-banner",
+      "blocks": {
+        "image_kBbMCx": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/12_7522bcef-d62f-4daf-872c-505dcc99eb89.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Esterel Bikini Top",
+            "button_link_1": "shopify://products/esterel-bikini-top-gingham-red",
+            "button_label_2": "Claudine Pant",
+            "button_link_2": "shopify://products/claudine-pant-white"
+          }
+        },
+        "image_jQkqLc": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/13_11ac12f5-abf3-4096-8f9b-3e098dc07a28.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_EmLQQx": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/14_717d9601-0293-43cc-987c-17ed2a68ad33.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Bandol Bikini Top",
+            "button_link_1": "shopify://products/bandol-bikini-top-white",
+            "button_label_2": "Bandol Bikini Bottom",
+            "button_link_2": "shopify://products/bandol-bikini-bottom-white"
+          }
+        }
+      },
+      "block_order": [
+        "image_kBbMCx",
+        "image_jQkqLc",
+        "image_EmLQQx"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_p6DgBg": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Looks",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "la-madrague",
+        "product_list": [
+          "yvonne-midi-dress-leona-floral-lilac",
+          "bandol-bikini-top-white",
+          "florine-mini-shorts-caramel",
+          "noa-mini-dress-gingham-black"
+        ],
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "image_banner_AyMyUM": {
+      "type": "image-banner",
+      "blocks": {
+        "image_PfLqAK": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/1_0edcc2c6-ae24-4dad-8c0d-ed640a6129ad.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PfLqAK"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_cyKwP6": {
+      "type": "image-banner",
+      "blocks": {
+        "image_CbGTYe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_deab55f5-388f-430f-acd0-862bf5c4c4f3.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Bandol Bikini Top",
+            "button_link_1": "shopify://products/bandol-bikini-top-white",
+            "button_label_2": "Bandol Bikini Bottom",
+            "button_link_2": "shopify://products/bandol-bikini-bottom-white"
+          }
+        },
+        "image_TtzLGe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_d3a20901-2ae9-4215-a765-ca5d08fb2694.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_JXC4my": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_6325199d-73f2-46c2-b2b6-9e964f53cbc5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Jane Vest",
+            "button_link_1": "shopify://products/jane-vest-butter",
+            "button_label_2": "Clove Trouser",
+            "button_link_2": "shopify://products/clove-trouser-butter"
+          }
+        }
+      },
+      "block_order": [
+        "image_CbGTYe",
+        "image_TtzLGe",
+        "image_JXC4my"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_HRP8Nf": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RMxrmX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/5_40983a79-4728-458b-95c6-614ea54f1d4b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Citara Halter Top",
+            "button_link_1": "shopify://products/citara-halter-top-butter-stripe",
+            "button_label_2": "Citara Drawstring Skirt",
+            "button_link_2": "shopify://products/citara-drawstring-skirt-butter-stripe"
+          }
+        }
+      },
+      "block_order": [
+        "image_RMxrmX"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_GKAQHg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_igK8KF": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_a96b717a-d1ce-4e16-bcfd-499badc292f0.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Dinard One Piece",
+            "button_link_1": "shopify://products/dinard-one-piece-butter",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_LEjdHQ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_c0d55e58-2476-4869-8cf6-acdfad96c0fd.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Eveline Mini Dress",
+            "button_link_1": "shopify://products/eveline-mini-dress-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_igK8KF",
+        "image_LEjdHQ"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_7tGDLT": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": true,
+        "text_color": "--color-black",
+        "title": "Shop The Looks",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "la-madrague",
+        "product_list": [
+          "citara-halter-top-butter-stripe",
+          "eveline-mini-dress-white",
+          "dinard-one-piece-butter",
+          "clove-trouser-butter"
+        ],
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "image_banner_xbgefY": {
+      "type": "image-banner",
+      "blocks": {
+        "image_cNeVeB": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/8_4314a1a9-9f82-4302-a8df-d996f6e6eb6a.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Josette Vest",
+            "button_link_1": "shopify://products/josette-vest-natural",
+            "button_label_2": "Lila Mini Shorts",
+            "button_link_2": "shopify://products/lila-mini-shorts-natural"
+          }
+        }
+      },
+      "block_order": [
+        "image_cNeVeB"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_4F4mXg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_WqcDME": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_58f321bc-b8b8-4ee1-a24b-7c60a940b43b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lydie Maxi Dress",
+            "button_link_1": "shopify://products/lydie-maxi-dress-coffee",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_HEKcaA": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_1394aba3-6165-4451-bc38-f08950d4e932.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_WqcDME",
+        "image_HEKcaA"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_FH3Rt3": {
+      "type": "image-banner",
+      "blocks": {
+        "image_Ndkm7a": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/5_e16b04ee-02d5-4917-92f5-81ccecf0a1dd.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Mira Mini Dress",
+            "button_link_1": "shopify://products/mira-mini-dress-adeline-floral-yellow",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Ndkm7a"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_t9rTYr": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RkwPid": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_2efabb2a-6dea-4773-beb2-3993de6e0944.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ana Top",
+            "button_link_1": "shopify://products/ana-top-colette-floral-multi",
+            "button_label_2": "Lila Mini Shorts",
+            "button_link_2": "shopify://products/lila-mini-shorts-colette-floral-multi"
+          }
+        },
+        "image_GkHHD6": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_5b134728-f510-4b92-8b76-d746f7680ea1.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_4xhWwD": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_d293d0a8-1273-4407-b134-b022d490fd29.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Enya Midi Dress",
+            "button_link_1": "shopify://products/enya-midi-dress-meleu-stripe-multi",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RkwPid",
+        "image_GkHHD6",
+        "image_4xhWwD"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_DR9FMe": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Looks",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "la-madrague",
+        "product_list": [
+          "josette-vest-natural",
+          "enya-midi-dress-meleu-stripe-multi",
+          "lydie-maxi-dress-coffee",
+          "mira-mini-dress-adeline-floral-yellow"
+        ],
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    }
+  },
+  "order": [
+    "image_banner_RUwcYH",
+    "rich_text_g43DRX",
+    "image_banner_cwDtbX",
+    "image_banner_DBfQTb",
+    "image_banner_LGQerY",
+    "featured_products_BrpfLX",
+    "256ee49b-a256-40c1-9682-ef3f84d3a5d5",
+    "image_banner_AzPmyL",
+    "image_banner_yCgecR",
+    "featured_products_UNC4NW",
+    "image_banner_kRX4Xt",
+    "image_banner_zdJpRm",
+    "image_banner_Mdb6ak",
+    "featured_products_p6DgBg",
+    "image_banner_AyMyUM",
+    "image_banner_cyKwP6",
+    "image_banner_HRP8Nf",
+    "image_banner_GKAQHg",
+    "featured_products_7tGDLT",
+    "image_banner_xbgefY",
+    "image_banner_4F4mXg",
+    "image_banner_FH3Rt3",
+    "image_banner_t9rTYr",
+    "featured_products_DR9FMe"
+  ]
+}

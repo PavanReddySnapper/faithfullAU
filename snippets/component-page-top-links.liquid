@@ -1,0 +1,73 @@
+{% comment %}
+  Parameters
+  linklist: link list object from settings
+  parent_class: Class for the outer wrapper for modifiers
+{% endcomment %}
+{%- assign secondary_menu = false -%}
+
+<div class="page-navigation page-navigation__primary page-navigation__slider {{ parent_class }}">
+  <ul class="list-none carousel" data-slider-container>
+    {% for link in linklist.links %}
+      {% liquid
+        assign link_title = link.object.title | downcase
+        assign page_title = page.title | downcase
+        assign is_active = false
+        if request.path contains '/account'
+          if request.page_type == 'customers/order' and link.url contains 'view=orders'
+            assign is_active = true
+          elsif request.page_type == 'customers/account'
+            if template.suffix
+              assign param = template.suffix | prepend: 'view='
+              if link.url contains param
+                assign is_active = true
+              endif
+            elsif link.url == routes.account_url and link.url != routes.account_logout_url and link.url != routes.account_addresses_url
+              assign is_active = true
+            endif
+          elsif request.page_type == 'customers/addresses' and request.path == link.url
+            assign is_active = true
+          endif
+        else
+          if link_title == page_title
+            assign is_active = true
+          endif
+        endif
+
+        if link.child_active
+          assign is_active = true
+          assign secondary_menu = link.links
+        endif
+      %}
+      <li data-slide>
+        <a
+          href="{{ link.url }}"
+          {% if is_active %}
+            class="is-active"
+          {% endif %}
+        >
+          {{- link.title -}}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+  {% render 'carousel-controls', show_gradient: true %}
+</div>
+
+{%- if secondary_menu -%}
+  <div class="page-navigation page-navigation__secondary">
+    <ul class="list-none">
+      {% for link in secondary_menu %}
+        <li>
+          <a
+            href="{{ link.url }}"
+            {% if link.active %}
+              class="is-active"
+            {% endif %}
+          >
+            {{- link.title -}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+{%- endif -%}

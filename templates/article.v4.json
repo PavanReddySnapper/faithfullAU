@@ -1,0 +1,1055 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_1e76d45f-f55a-47c6-9608-9b8c0794ae5d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "A Guide To Pantelleria",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>One of Italy’s best kept secrets and often referred to as The Black Pearl of the Mediterranean, Pantelleria is a rustic and authentic island off the coast of Sicily and Tunisia, beloved by locals for its volcanic cliffs, marine grottos and natural, authentic cuisine. Also the backdrop for our Summer 2024 campaign shoot, Pantelleria boasts a series of luxury boutique hotels and idyllic restaurants and bars overlooking the rocky beaches and black cliffs.</p><p>Here, the creative team shares their bespoke guide to the island, including where to stay, swim, drink and dine.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_kLALrY": {
+      "type": "image-banner",
+      "blocks": {
+        "image_X4HVfm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_a6c703a6-eeef-412d-aa2c-9606ceca2bbf.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_dFhmzJ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/3_8d06e0c7-9e9b-49c4-be48-329ccbe6f415.webp",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_X4HVfm",
+        "image_dFhmzJ"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_yBBCLQ": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AEfmHE": {
+          "type": "title",
+          "settings": {
+            "title": "How to access Pantelleria",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_PqrtRN": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>There are a few different ways to access the island, the most popular being by plane or ferry. The Pantelleria airport welcomes at least two flights daily from the Sicilian cities of Palermo and Trapani and during the summer months - Milan, Rome and some other Italian locations. Meanwhile, ferries operate from several different Italian cities, the quickest being two and half hours from Trapani.</p><p>Once you’re on the island, we recommend opting for a car or motorbike to help you access remote beaches and locations. Whether you rent for the duration of your stay or book a private driver, either option will allow you to move around with ease. Taxis are available, however are scarce</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_AEfmHE",
+        "richtext_PqrtRN"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_FGqb8e": {
+      "type": "image-banner",
+      "blocks": {
+        "image_N3BJYh": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_9f3d30fb-5eb1-4e82-a206-8eddceb88760.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_N3BJYh"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/clublevante/\" title=\"https://www.instagram.com/clublevante/\">Club Levante</a></p><p>The home base for our creative team, Club Levante is a sustainable boutique hotel with panoramic views of the Arco dell’Elefante (a natural arch of rugged grey stone over the ocean, known by some as the Elephant Rock). Hosted by the warm and accommodating Matteo and once a private estate, it features a long stretching pool with tropical gardens and rustic, stone buildings.</p><p><a href=\"https://www.instagram.com/tenutaborgia/\" title=\"https://www.instagram.com/tenutaborgia/\">Tenuta Borgia</a></p><p> A backdrop location for the campaign shoot, Tenuta Borgia is an ancient-style property, recently restored but still preserving the natural charm of the traditional drywall. With several different villa-style accommodations to choose from, it’s designed for groups ranging anywhere between two and 24, some with private plunge and swimming pools, patios and gardens.</p><p><a href=\"https://www.instagram.com/sikelia.pantelleria/\" title=\"https://www.instagram.com/sikelia.pantelleria/\">Sikela Luxury Hotel</a></p><p>For a luxurious stay and experience, Sikelia offers 20 individual suites built within an ancient dammusi structure and designed with a refined palette in mind. Imagine towering ceilings, long straight lines, effortlessly stylish furniture and simple yet authentic decor.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_xt6tFB": {
+      "type": "image-banner",
+      "blocks": {
+        "image_8tPEg4": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_b291d35d-c652-4b27-84e3-c2d489e0b4ac.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8tPEg4"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "80",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "Where to dine",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/panificiomarrone/\" title=\"https://www.instagram.com/panificiomarrone/\">Panificio Marrone Francesco</a></p><p>A traditional bakery where the smell of fresh bread wafts into the street, here you'll find local and traditional delicacies, ideal for a morning or afternoon picnic by the ocean. Think tumo cheese, capers and olives, focaccia, pizza slices and cannoli.</p><p><a href=\"https://www.instagram.com/explore/locations/958484090905382/azienda-agricola-emanuela-bonomo/\" title=\"https://www.instagram.com/explore/locations/958484090905382/azienda-agricola-emanuela-bonomo/\">Azienda Agricola Di Emanuela Bonomo</a></p><p>If you’re looking to pick up any local or fresh produce from the island, this is a small farm shop that offers their own home-grown organic fruit and vegetables, preserves, olive oil, wines and jams. They also serve aperitivo with local wine and snacks in their beautiful outdoor area overlooking their farm and fields.</p><p><a href=\"https://www.instagram.com/explore/locations/711689452272950/ristorante-bar-la-vela/\" title=\"https://www.instagram.com/explore/locations/711689452272950/ristorante-bar-la-vela/\">Ristorante Bar Lavela</a></p><p>For fresh, local seafood pastas and authentic pizzas, Ristorante Bar La Vela is one of the best spots with casual outdoor dining and located right in the town hub.</p><p><a href=\"https://www.instagram.com/osteriailprincipeilpirata/?hl=en\" title=\"https://www.instagram.com/osteriailprincipeilpirata/?hl=en\">Il Principle E Il Pirate</a></p><p>For a slightly more luxe dining experience, Il Principe e il Pirate offers ocean views and six courses, including traditional couscous, fresh fish and seafood, homemade pastas and bacio pantesco (a typical Pantellerian dessert)</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_cXyQxg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_trb6eX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/6_4dd3f85e-df9b-4e3f-95dd-911ebb497f84.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_6FCUJV": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_8f92ebba-2f02-48a7-8f3e-23deb5ed45ee.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "Loire Skirt Taupe",
+            "button_link_2": "shopify://products/loire-skirt-taupe"
+          }
+        }
+      },
+      "block_order": [
+        "image_trb6eX",
+        "image_6FCUJV"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_ddXyEg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WdnYrt": {
+          "type": "title",
+          "settings": {
+            "title": "Where to drink",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CXX6Jm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/kayakayapantelleria/?hl=en\" title=\"https://www.instagram.com/kayakayapantelleria/?hl=en\">Kaya-Kaya, Il Bar Del Porto</a></p><p> A small cliffside bar close to the port, this is perhaps one of the best spots to enjoy an afternoon aperitif. As the sun sets, the space also turns into a dance floor with live music and DJs.</p><p><a href=\"https://www.instagram.com/dispensapantesca/\" title=\"https://www.instagram.com/dispensapantesca/\">Dispenca Patesca</a></p><p>A local establishment with views of the ocean, this is a relaxed and casual space to watch the sunset and sip on a natural, locally-sourced wine. There’s also a small grocery where you can pick up authentic spreads, oils and capers, as Pantelleria is known to produce some of the world’s best. </p><p><a href=\"https://www.instagram.com/_sesiventi_/\" title=\"https://www.instagram.com/_sesiventi_/\">Sesiventi</a></p><p>Perhaps one of the most incredible rooftop spaces, Sesiventi is fitted with dome-style seating for people to perch with a cocktail and watch the sun go down. Later in the evening, the bar and restaurant plays host to live music and DJs.</p><p><a href=\"https://www.instagram.com/donnafugatawine/\" title=\"https://www.instagram.com/donnafugatawine/\">Donnafugata's Vineyard</a></p><p>Pantelleria is also home to some of Italy’s most unique wineries. Donnafugata, in particular, is a family, farmhouse-style winery, known for its colourful and spirited wines, reflective of Pantelleria itself. Book in for a tasting or long lunch.</p><p></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WdnYrt",
+        "richtext_CXX6Jm"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_PyXX3z": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3t7Rhj": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/8_bf0895b3-868a-45bb-a6c2-3e5c04e36112.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3t7Rhj"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_X3wnba": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AECMJk": {
+          "type": "title",
+          "settings": {
+            "title": "Where to swim",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_D8mww3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Cala Tramontana</p><p>While Pantelleria is known for its incredible swimming spots, it’s known to be without sandy beaches. Cala Tramontana is one of the best locations as it offers long, flat stretches of concrete where you can lie out for the day and dive into the ocean with ease, without the discomfort of sharp rocks.</p><p>Cala Levante</p><p>For a quick dip to cool off or a spot to watch some of the island’s best sunrises, Cala Levante is a ravine with views of the Elephant Rock and other artistic rock formations.</p><p>Cala Gadir</p><p>This spot has been beloved for generations of locals as there is a free and public thermal bath where sea water mixes with hot sulphur water. The surrounding harbour is also usually very calm and tranquil, making it an ideal spot for swimming and snorkelling.</p><p>Cala Martingana</p><p>As one of the only secluded bays on the island, this cove-style beach is ideal for particularly windy days as you’ll be protected and tucked away.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        }
+      },
+      "block_order": [
+        "title_AECMJk",
+        "richtext_D8mww3"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_aXbtGW": {
+      "type": "image-banner",
+      "blocks": {
+        "image_8dFc9N": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_72d7f1de-d8fa-4008-acb2-dff835e546ea.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_8dFc9N"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "80",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_hbkDEj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_rHLFDp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_17_1a4618e4-356a-4812-a7e1-6f432f6cb744.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_aCLRNP": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_18_473da4ca-f9f3-4751-8f36-79ba2d085085.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_jh7TbR": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_19_5c2b432e-0b1e-4770-8cb8-2a22919a2623.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_q7MqwH": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_20_225a10e8-d2c2-47fc-920c-81ca93ecc210.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_LNYAqM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_21_4c62a10b-89f1-46c9-ba87-84bb6c171d04.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rHLFDp",
+        "image_aCLRNP",
+        "image_jh7TbR",
+        "image_q7MqwH",
+        "image_LNYAqM"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_LTgfqb": {
+      "type": "image-banner",
+      "blocks": {
+        "image_HAAVdp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_17_1a4618e4-356a-4812-a7e1-6f432f6cb744.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_UxBCJq": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_18_473da4ca-f9f3-4751-8f36-79ba2d085085.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_868WwE": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_19_5c2b432e-0b1e-4770-8cb8-2a22919a2623.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_PAbCg3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_20_225a10e8-d2c2-47fc-920c-81ca93ecc210.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_qiEP87": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_21_4c62a10b-89f1-46c9-ba87-84bb6c171d04.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_gJHKhL": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_22_2bb4ae32-1c1f-4412-ac2a-b6a69391683f.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_HAAVdp",
+        "image_UxBCJq",
+        "image_868WwE",
+        "image_PAbCg3",
+        "image_qiEP87",
+        "image_gJHKhL"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_with_text_pkRQPB": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_cjbG4y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_25_fb4d4cee-3069-4902-9d9f-5c4d272306f1.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        },
+        "text_FHKtVU": {
+          "type": "text",
+          "settings": {
+            "pre_title": "",
+            "title": "Living between two sun-drenched cities, Tel-Aviv and Lisbon, what does a quintessential Summer day look like to you?",
+            "title_size": "h4",
+            "text": "<p>I am inspired by older times and I aim to revive them in my work. I would define my creative style as Romantic and nostalgic yet I always connect to the brand/ client’s personal style and necessities.</p><p>Baroque and romanticism have a big influence on my work and inspiration. I often visit palaces, antique museums and art collections that hold paintings and sculptures from those eras.</p><p>I visit the flea market once a week to source objects and tableware that I use in my work and events design.</p>",
+            "button_label": "",
+            "button_url": "",
+            "button_style": "btn--text btn--link",
+            "image1": "shopify://shop_images/Rectangle_1697.png",
+            "image1_label": "Lusia Maxi Dress Elka Floral",
+            "image1_link": "#",
+            "image2": "shopify://shop_images/Rectangle_1698.png",
+            "image2_label": "Lusia Maxi Dress Elka Floral",
+            "image2_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_cjbG4y",
+        "text_FHKtVU"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "image_with_text_kwWhpa": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_aEcFC4": {
+          "type": "text",
+          "settings": {
+            "pre_title": "We Care",
+            "title": "Our People, Our Planet",
+            "title_size": "h2",
+            "text": "<p>We care deeply about our people and our planet, so we’re continually investing our time and resources in doing better and being greater.<br/><br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+            "button_label": "Read More",
+            "button_url": "#",
+            "button_style": "btn--text btn--link",
+            "image1_label": "",
+            "image1_link": "",
+            "image2_label": "",
+            "image2_link": ""
+          }
+        },
+        "image_GPy9kP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_27_bb01e99c-a583-4f94-a00c-9e92a0fe6695.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "text_aEcFC4",
+        "image_GPy9kP"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "featured_products_EfpHri": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Journal",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "accessories",
+        "product_list": [
+          "maceio-fringed-dress-black",
+          "vieste-oversized-shirt-lemon",
+          "aurelie-maxi-dress-calla-print-charred-navy",
+          "en-vau-oversized-shirt-foam-taupe-stripe",
+          "loire-skirt-taupe",
+          "anais-maxi-dress-lemon",
+          "citara-maxi-dress-white"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_9qfq9P": {
+      "type": "rich-text",
+      "blocks": {
+        "title_CKLXmc": {
+          "type": "title",
+          "settings": {
+            "title": "A must do, see and eat  in Lisbon, Portugal",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_WhVmkC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Must do in Lisbon during the summer: find a good “Tasca” which is a traditional Portuguese restaurant and have a long lunch with Fresh Robalo (white fish) and some white wine. </p><p>Order some clams in coriander and garlic for a starter.</p><p>Stroll at Feira Da Ladra (flea market) on Saturday morning.</p><p>Take a cold ocean swim on the coast of Caparica.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-end",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_CKLXmc",
+        "richtext_WhVmkC"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--lg",
+        "single_row_desktop": true,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_tTjwpQ": {
+      "type": "image-banner",
+      "blocks": {
+        "image_T3Rr74": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/Image_29_b6d0847f-fe5d-4849-9e16-6c524374ec79.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_pACfMd": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/Image_30_1ddeff56-188f-4a5f-bf22-0b23ab310f57.png",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "Lusia Maxi Dress Elka Floral",
+            "button_link_2": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_T3Rr74",
+        "image_pACfMd"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_9nTMVL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_KiYMD9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_29_b6d0847f-fe5d-4849-9e16-6c524374ec79.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Xgp9Wm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/Image_30_1ddeff56-188f-4a5f-bf22-0b23ab310f57.png",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KiYMD9",
+        "image_Xgp9Wm"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_VDARQf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9KXFbW": {
+          "type": "title",
+          "settings": {
+            "title": "What feelings or things evoke a sense of summer for you?",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_xxBgwB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A sense of summer is the smell of sunscreen. It’s this excitement to wake up in the morning. It’s the early morning hours that are a bit chilly and you know that soon the warmth of the sun will take over. The smell of grilled fish, fresh light beer, and white laundry hanging on every window. Peaches and cherries. That’s summer to me.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        },
+        "button_Rj6dGP": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Edit",
+            "link": "#",
+            "button_style": "btn--secondary",
+            "margin_bottom": 4
+          }
+        }
+      },
+      "block_order": [
+        "title_9KXFbW",
+        "richtext_xxBgwB",
+        "button_Rj6dGP"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "image_banner_kLALrY",
+    "rich_text_yBBCLQ",
+    "image_banner_FGqb8e",
+    "rich_text_K4xM3c",
+    "image_banner_xt6tFB",
+    "rich_text_UbFWPp",
+    "image_banner_cXyQxg",
+    "rich_text_ddXyEg",
+    "image_banner_PyXX3z",
+    "rich_text_X3wnba",
+    "image_banner_aXbtGW",
+    "image_banner_hbkDEj",
+    "image_banner_LTgfqb",
+    "image_with_text_pkRQPB",
+    "image_with_text_kwWhpa",
+    "featured_products_EfpHri",
+    "rich_text_9qfq9P",
+    "image_banner_tTjwpQ",
+    "image_banner_9nTMVL",
+    "rich_text_VDARQf"
+  ]
+}

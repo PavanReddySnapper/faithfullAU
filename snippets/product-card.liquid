@@ -1,0 +1,248 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+  assign add_to_cart_label = 'products.product.add_to_cart' | t
+
+  # Badges
+  # --------------------------------------------------------------------------
+  assign badges = product.metafields.custom.badges.value | join: ','
+  if settings.show_on_sale_badges and product.compare_at_price > product.price
+    assign badges = 'products.product.on_sale' | t | append: ',' | append: badges
+  endif
+
+  # Preorder
+  # --------------------------------------------------------------------------
+  assign preorder_enabled = product.metafields.preorder.enabled.value
+  if preorder_enabled
+    assign badges = 'products.preorder.badge' | t | append: ',' | append: badges
+    assign add_to_cart_label = 'products.preorder.card_add_to_cart' | t
+    assign preorder_message = product.metafields.preorder.message.value
+  endif
+
+  # Ghost Image (Secondary Image on Hover)
+  # --------------------------------------------------------------------------
+  assign ghost_image = false
+  assign ghost_image_media_count = product.media.size | minus: 1
+
+  if settings.show_second_image and product.media.size > 1
+    assign ghost_image_index = settings.ghost_image_index
+
+    if ghost_image_index contains '-'
+      assign ghost_image_index = ghost_image_index | remove: '-'
+      assign ghost_image_index = ghost_image_media_count | minus: ghost_image_index | at_least: 1
+    else
+      assign ghost_image_index = settings.ghost_image_index | at_most: ghost_image_media_count
+    endif
+
+    assign ghost_image = product.media[ghost_image_index]
+  endif
+
+  # Garment Image (Secondary Image on Hover)
+  # --------------------------------------------------------------------------
+  assign garment_image = false
+  assign garment_image_media_count = product.media.size | minus: 1
+
+  if settings.show_second_image and product.media.size > 1
+    assign garment_image_index = settings.garment_image_index
+
+    if garment_image_index contains '-'
+      assign garment_image_index = garment_image_index | remove: '-'
+      assign garment_image_index = garment_image_media_count | minus: garment_image_index | at_least: 1
+    else
+      assign garment_image_index = settings.garment_image_index | at_most: garment_image_media_count
+    endif
+
+    assign garment_image = product.media[garment_image_index]
+  endif
+-%}
+
+{% capture product_json %}
+{
+  "id": {{ product.id | json }},
+  "variants": {{ product.variants | json }},
+  "handle": {{ product.handle | json }}
+}
+{% endcapture %}
+
+{% # prettier-ignore %}
+<product-card
+  class="product-card"
+  data-product-card="{{ product.handle }}"
+  data-product-id="{{ product.id }}"
+  {{ card_attributes }}
+  product='{{ product_json | escape }}'
+>
+  <div class="product-card__top">
+    {% if settings.enable_wishlist %}
+      <button
+        class="product__wishlist-btn btn--icon"
+        aria-label="{{ 'wishlist.wishlist_add' | t }}"
+        data-wishlist-icon="{{ product.id }}"
+      >
+        {% render 'icon-star' %}
+      </button>
+    {% endif %}
+    <a class="product-card__image" href="{{ product.url }}">
+      <div class="product-card__image--model">
+        {%- render 'component-image',
+          image: product.featured_media,
+          aspect_ratio: 'portrait',
+          max_width: 960,
+          sizes: sizes
+        -%}
+      </div>
+
+      {%- if garment_image -%}
+        <div class="product-card__image--garment">
+          {%- render 'component-image',
+            image: garment_image,
+            aspect_ratio: 'portrait',
+            max_width: 960,
+            sizes: sizes
+          -%}
+        </div>
+      {%- endif -%}
+
+      {%- if ghost_image -%}
+          <div class="product-card__image--secondary">
+            {%- render 'component-image',
+              image: ghost_image,
+              aspect_ratio: 'portrait',
+              max_width: 960,
+              sizes: sizes
+            -%}
+          </div>
+      {%- endif -%}
+    </a>
+
+    {%- assign badges = badges | split: ',' -%}
+    {%- if badges.size > 0 -%}
+      <ul class="product-card__badges list-none">
+        {%- for badge in badges -%}
+          {% if badge == 'New Arrival' %}
+              <li>New In</li>
+          {% else %}
+              <li>{{ badge }}</li>
+          {% endif %}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if settings.include_form -%}
+      {% capture form_id %}product-form-{{ product.id }}{% endcapture %}
+      {% form 'product', product, data-product-card-form: '', class: 'product-card__form', id: form_id %}
+        <input type="hidden" name="quantity" value="1">
+
+        {%- if product.metafields.card.discount != blank -%}
+          <input type="hidden" name="properties[_discount_message]" value="{{ product.metafields.card.discount }}">
+        {%- endif -%}
+
+        {% if product.has_only_default_variant %}
+          <select
+            name="id"
+            class="no-js"
+            aria-label="{{ 'accessibility_labels.select_product_variant' | t }}"
+            data-product-select
+          >
+            {% for variant in product.variants %}
+              <option
+                {% if variant == current_variant %}
+                  selected="selected"
+                {% endif %}
+                {% unless variant.available %}
+                  disabled="disabled"
+                {% endunless %}
+                value="{{ variant.id }}"
+              >
+                {{ variant.title }}
+              </option>
+            {% endfor %}
+          </select>
+
+        {% else %}
+          <fieldset class="product-card__variants">
+            <legend class="visually-hidden">{{ 'products.product.select_a_variant' | t }}</legend>
+            {% for variant in product.variants %}
+              <input
+                name="id"
+                id="variant_{{ variant.id }}_{{ section.id }}"
+                value="{{ variant.id }}"
+                type="radio"
+                class="visually-hidden"
+                {% if variant == current_variant %}
+                  checked
+                {% endif %}
+                {% unless variant.available %}
+                  disabled
+                {% endunless %}
+              >
+              <label for="variant_{{ variant.id }}_{{ section.id }}">
+                {{ variant.option1 }}
+              </label>
+            {% endfor %}
+          </fieldset>
+        {% endif %}
+
+        <div class="product-card__actions">
+          <button
+            type="submit"
+            class="btn-none product-card__add"
+            data-add-to-cart
+            data-label="{{ add_to_cart_label }}"
+            {% unless product.available %}
+              disabled="disabled"
+            {% endunless %}
+            aria-label="{% if current_variant.available %}{{ product.title }} - {{ 'products.card.add_to_cart' | t }}{% else %}{{ product.title }} is {{ 'products.product.sold_out' | t }}{% endif %}"
+          >
+            <span data-add-to-cart-text>{{ add_to_cart_label }}</span>
+          </button>
+        </div>
+
+        {%- if preorder_message -%}
+          <input type="hidden" name="properties[_preorder_message]" value="{{ preorder_message }}">
+          <div class="product-card__preorder">{{ preorder_message }}</div>
+        {%- endif -%}
+      {% endform %}
+    {%- endif -%}
+  </div>
+
+  <div class="product-card__bottom">
+    <div class="product-card__meta">
+      <h3 class="product-card__title">
+        <a href="{{ product.url }}">
+          {{ product.title }}
+        </a>
+      </h3>
+
+      <a class="product-card__prices" href="{{ product.url }}">
+        {% if product.price_varies %}
+          <span>
+            {%- assign price_min = product.price_min | money -%}
+            {{ 'products.product.from_text_html' | t: price: price_min }}
+          </span>
+        {% else %}
+          {% if product.compare_at_price > product.price %}
+            <span class="product-card__compare-price">
+              <span class="visually-hidden">{{ 'products.product.regular_price' | t }}</span>
+              {{ product.compare_at_price | money }}
+            </span>
+          {% endif %}
+          <span>
+            {{ product.price | money }}
+          </span>
+        {% endif %}
+      </a>
+
+      {%- if product.metafields.card.discount != blank -%}
+        <div class="product-card__discount">
+          {{ product.metafields.card.discount }}
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- liquid
+      if settings.product_card_display_swatches and product.metafields.stitching.products.value
+        render 'product-stitching', product: product, stitching_products: product.metafields.stitching.products.value, limit: settings.product_card_max_swatches, show_current_product_first: true, class: 'product-card__swatches'
+      endif
+    -%}
+  </div>
+</product-card>

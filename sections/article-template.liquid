@@ -1,0 +1,288 @@
+
+<div class="mid-container">
+		<div class="journal-single">
+            <div class="journal-single-title">
+                <div class="caption text-center d-flex align-items-center justify-content-center">
+                    <div class="caption-inner">
+                      {% if article.tags.size > 0 %}
+                      {% for tag in article.tags %} 
+                      <label>
+                        {{ tag }}
+                      </label> 
+                      {% endfor %}
+                      {% endif %}
+                    </div>
+                </div>
+                <div class="page-title text-center">
+                    <h2 class="heading-secondary">{{ article.title }}</h2>
+                    <div class="intro-text">
+                        {{ article.metafields.custom_fields["intro_text"] }}
+                    </div>
+                </div>    
+            </div>
+          {% unless article.metafields.custom_fields["layout"] != blank %}
+          <div class="section-box content-box text-center">
+          {{ article.content }}
+          </div>
+          {% endunless %}
+			{% if article.metafields.custom_fields["layout"] != blank %}
+			{% assign separator = "|###|" %}
+			      {% assign content_type_array = article.metafields.custom_fields["content_type"] | split: separator %}
+			      {% assign different_size_left_image_array = article.metafields.custom_fields["different_size_left_image"] | split: separator %}
+			      {% assign different_size_right_image_array = article.metafields.custom_fields["different_size_right_image"] | split: separator %}
+			      {% assign editable_text_area_array = article.metafields.custom_fields["editable_text_area"] | split: separator %}
+			      {% assign fullwidth_image_array = article.metafields.custom_fields["fullwidth_image"] | split: separator %}
+			      {% assign portraite_image_left_array = article.metafields.custom_fields["portraite_image_left"] | split: separator %}
+			      {% assign portraite_image_right_array = article.metafields.custom_fields["portraite_image_right"] | split: separator %}
+			      {% assign landscape_image_array = article.metafields.custom_fields["landscape_image"] | split: separator %}
+			      {% assign two_column_text_quote_array = article.metafields.custom_fields["two_column_text_quote"] | split: separator %}
+			      {% assign two_column_text_text_array = article.metafields.custom_fields["two_column_text_text"] | split: separator %}
+			      {% assign text_only_array = article.metafields.custom_fields["text_only"] | split: separator %}
+			      {% assign fc_keys = article.metafields.custom_fields["layout"] | split: "," %}
+			      {% for i in fc_keys %}
+			        {% assign index = i | plus: 0 %}
+			        {% if content_type_array[index] == 'Two Portraite image(Different Size)' %}
+					<div class="section-box up-down-image">
+						<div class="row">
+							<div class="col-md-6 image-box">
+                              <img src="{{ different_size_left_image_array[index] }}" alt="blog-image1">
+								
+							</div>
+							<div class="col-md-6 image-box">
+                              <img src="{{ different_size_right_image_array[index] }}" alt="blog-image1">
+								
+							</div>
+						</div>
+					</div>
+					{% elsif content_type_array[index] == 'Editable text area' %}
+					<div class="section-box content-box text-center">
+						{{ editable_text_area_array[index] }}
+					</div>
+					{% elsif content_type_array[index] == 'Full width image' %}
+					<div class="section-box full-image text-center">
+						<img src="{{ fullwidth_image_array[index] }}" alt="blog-image1">
+					</div>
+					{% elsif content_type_array[index] == 'Two Portraite image(Same Size)' %}
+					<div class="section-box inner-two-col">
+						<div class="row">
+							<div class="col-md-6 image-box">
+								<img src="{{ portraite_image_left_array[index] }}" alt="blog-image1">
+							</div>
+							<div class="col-md-6 image-box">
+								<img src="{{ portraite_image_right_array[index] }}" alt="blog-image1">
+							</div>
+						</div>
+					</div>
+					{% elsif content_type_array[index] == 'One Landscape Image' %}
+					<div class="section-box inner-full-col">
+						<img src="{{ landscape_image_array[index] }}" alt="blog-image1">
+						
+					</div>
+					{% elsif content_type_array[index] == '2 column Text' %}
+					<div class="section-box title-content-single">
+						<div class="row align-items-center no-gutters">
+							<div class="col-md-5">
+								<div class="title-text">
+									<h3>“{{ two_column_text_quote_array[index] }}”</h3>
+								</div>
+							</div>
+							<div class="col-md-7">
+								{{ two_column_text_text_array[index] }}
+							</div>
+						</div>
+					</div>
+					{% elsif content_type_array[index] == 'Text Only' %}
+						{{ text_only_array[index] }}
+					{% endif %}
+					{% endfor %}
+					{% endif %}
+			<div class="photography text-center">
+				<div class="photo-content d-flex justify-content-center justify-content-center flex-wrap">
+                  {% if article.metafields.custom_fields["photography_title"] != blank %}
+					<div class="photo-title d-flex">
+						<h6>{{ article.metafields.custom_fields["photography_title"] }} :</h6>
+						<p> {{ article.metafields.custom_fields["photographer"] }}    </p>
+					</div>
+                  {% endif %}
+                  {% if article.metafields.custom_fields["styling_title"] != blank %}
+					<div class="photo-title d-flex">
+						<h6> {{ article.metafields.custom_fields["styling_title"] }} : </h6>
+						<p>{{ article.metafields.custom_fields["styling"] }} </p>
+					</div>
+                  {% endif %}
+                  {% if article.metafields.custom_fields["model__beauty_title"] != blank %}
+					<div class="photo-title d-flex">
+						<h6> {{ article.metafields.custom_fields["model__beauty_title"] }} :</h6>
+						<p> {{ article.metafields.custom_fields["model__beauty"] }}  </p>
+					</div>
+                  {% endif %}
+				</div>
+				<div class="share d-flex justify-content-center">
+					<h6>Share :</h6>
+					<ul class="d-flex p-0 m-0">
+						<li>
+							<a href="{{ settings.share_facebook_link }}"><img src="{{ 'instagram.svg' | asset_url }}" alt="" class="svg"></a>
+						</li>
+						<li>
+							<a href="{{ settings.share_instagram_link }}"><img src="{{ 'facebook.svg' | asset_url }}" alt="" class="svg"></a>
+						</li>
+						<li>
+							<a href="{{ settings.share_pinterest }}"><img src="{{ 'pinterest.svg' | asset_url }}" alt="" class="svg"></a>
+						</li>
+						<li>
+							<a href="{{ settings.share_twitter }}"><img src="{{ 'twitter.svg' | asset_url }}" alt="" class="svg"></a>
+						</li>
+					</ul>
+				</div>
+                <div class="text-center">
+                  <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="{{ blog.next_article }}">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="{{ blog.previous_article }}">Next</a></li>
+                  </ul>				
+                </div>
+			</div>
+			<div class="other-posts">
+                <div class="title text-center">
+                    <h3>Other posts you may like</h3>
+                </div>
+                {% assign currentHandle = article.handle %}
+                {% assign articlesFound = 0 %}
+                <div class="d-flex row no-gutters you-may-likes">
+                    {% for article1 in blogs[blog.handle].articles %}
+                    {% unless article1.handle == currentHandle %}
+                    <div class="col-md-4 col-6 journal-post">
+                        <div class="journal-box" style="background-image: url({{ article1.image | img_url : 'master' }});">
+                            <div class="journal-landing-image-mobile d-block d-md-none">
+                                <a href="{{ article1.url }}"><img src="{{ article1.image | img_url : 'master' }}" alt="blog1"></a>
+                            </div>
+                            <a class="link" href="{{ article1.url }}"></a>
+                            <div class="caption text-center d-flex align-items-center justify-content-center">
+                                <div class="caption-inner">
+                                    <label>{% if article1.tags.size > 0 %}{% for tag in article1.tags %} <a href="{{ blog.url }}/tagged/{{ tag | handle }}" class="link">{{ tag }}</a> {% endfor %}{% endif %}</label>
+                                    <h2>{{ article1.title | link_to: article1.url }}</h2>
+                                    <a href="{{ article1.url }}" class="btn">Read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% assign articlesFound = articlesFound |plus: 1 %}
+                    {% if articlesFound == 3 %}{% break %}{% endif %}
+                    {% endunless %}
+                    {% endfor %}
+                </div>  
+            </div>
+		</div>
+	</div>
+{% comment %}
+{% if section.settings.show_share_buttons %}
+  {% include 'social-sharing', share_title: article.title, share_permalink: article.url, share_image: article.image %}
+{% endif %}
+{% endcomment %}
+
+
+
+{% schema %}
+{
+  "name": {
+    "da": "Opslag",
+    "de": "Posts",
+    "en": "Posts",
+    "es": "Publicaciones",
+    "fi": "Julkaisut",
+    "fr": "Articles",
+    "hi": "पोस्ट",
+    "it": "Articoli",
+    "ja": "投稿",
+    "ko": "게시물",
+    "ms": "Siaran",
+    "nb": "Innlegg",
+    "nl": "Berichten",
+    "pt-BR": "Posts",
+    "pt-PT": "Publicações",
+    "sv": "Inlägg",
+    "th": "โพสต์",
+    "zh-CN": "文章",
+    "zh-TW": "貼文"
+  },
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "blog_show_author",
+      "label": {
+        "da": "Vis forfatter",
+        "de": "Autor anzeigen",
+        "en": "Show author",
+        "es": "Mostrar autor",
+        "fi": "Näytä tekijä",
+        "fr": "Afficher l'auteur",
+        "hi": "लेखक दिखाएं",
+        "it": "Mostra autore",
+        "ja": "執筆者を表示する",
+        "ko": "작성자 표시",
+        "ms": "Tunjukkan pengarang",
+        "nb": "Vis forfatter",
+        "nl": "Auteur weergeven",
+        "pt-BR": "Exibir autor(a)",
+        "pt-PT": "Mostrar autor",
+        "sv": "Visa författare",
+        "th": "แสดงผู้เขียน",
+        "zh-CN": "显示作者",
+        "zh-TW": "顯示作者"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "blog_show_date",
+      "label": {
+        "da": "Vis dato",
+        "de": "Datum anzeigen",
+        "en": "Show date",
+        "es": "Mostrar fecha",
+        "fi": "Näytä päivämäärä",
+        "fr": "Afficher la date",
+        "hi": "दिनांक दिखाएं",
+        "it": "Mostra data",
+        "ja": "日付を表示する",
+        "ko": "날짜 표시",
+        "ms": "Tunjukkan tarikh",
+        "nb": "Vis dato",
+        "nl": "Datum weergeven",
+        "pt-BR": "Exibir data",
+        "pt-PT": "Mostrar data",
+        "sv": "Visa datum",
+        "th": "แสดงวันที่",
+        "zh-CN": "显示日期",
+        "zh-TW": "顯示日期"
+      },
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_share_buttons",
+      "label": {
+        "da": "Vis knapper til deling på sociale medier",
+        "de": "Buttons für Social Media anzeigen",
+        "en": "Show social sharing buttons",
+        "es": "Mostrar botones para compartir en redes sociales",
+        "fi": "Näytä sosiaalisen median jakamispainikkeet",
+        "fr": "Afficher les boutons de partage sur les médias sociaux",
+        "hi": "सोशल शेयरिंग बटन दिखाएं",
+        "it": "Mostra i pulsanti per la condivisione sui social",
+        "ja": "ソーシャル共有ボタンを表示する",
+        "ko": "소셜 공유 버튼 표시",
+        "ms": "Tunjukkan butang perkongsian sosial",
+        "nb": "Vis knapper for deling på sosiale medier",
+        "nl": "Knoppen voor sociaal delen weergeven",
+        "pt-BR": "Exibir botões de compartilhamento em redes sociais",
+        "pt-PT": "Mostrar botões de partilha nas redes sociais",
+        "sv": "Visa knappar för delning i sociala medier",
+        "th": "แสดงปุ่มสำหรับแชร์ลงโซเชียล",
+        "zh-CN": "显示社交分享按钮",
+        "zh-TW": "顯示社群分享按鈕"
+      },
+      "default": true
+    }
+  ]
+}
+{% endschema %}

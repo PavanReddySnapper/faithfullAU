@@ -1,0 +1,42 @@
+<div
+  class="account-template account-template-account"
+  data-section-id="{{ section.id }}"
+  data-section-type="main-customers-account"
+>
+  {% render 'component-page-top-links',
+    linklist: linklists[settings.account_links],
+    parent_class: 'page-navigation__layout--top account__top-nav',
+    select_on_mobile: true
+  %}
+
+  <div class="container container--sm">
+    <header class="account__header hide">
+      <div class="page-header">
+        <h1>{{ 'customer.account.title' | t }}</h1>
+      </div>
+    </header>
+
+    <div class="account__module account__module--recent-order">
+      <h3 class="h6">{{ 'customer.orders.recent_order' | t }}</h3>
+      {% if customer.orders[0] %}
+        {% render 'order-card', order: customer.orders[0] %}
+      {% else %}
+        <p>{{ 'customer.orders.none' | t }}</p>
+      {% endif %}
+    </div>
+
+    <div class="account__module account__module--last">
+      <h3 class="h6">{{ 'customer.order.shipping_address' | t }}</h3>
+      {% render 'address-card', address: customer.default_address, template: 'account', hide_edit_buttons: true %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Account Overview",
+    "enabled_on": {
+      "templates": ["customers/account"]
+    }
+  }
+{% endschema %}

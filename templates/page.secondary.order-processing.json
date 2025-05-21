@@ -1,0 +1,66 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": false,
+        "page_nav": "shipping",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "rich_text_bhgARE": {
+      "type": "rich-text",
+      "blocks": {
+        "title_GTfbyP": {
+          "type": "title",
+          "settings": {
+            "title": "Order Processing",
+            "is_primary_heading": true,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 32
+          }
+        },
+        "richtext_P6eac6": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><ol><li>Amet nisl purus in mollis nunc sed id semper.</li><li>Netus et malesuada fames ac turpis. Ultrices in iaculis nunc sed augue lacus viverra vitae.</li><li>Posuere ac ut consequat semper viverra nam.</li></ol><p>Commodo quis imperdiet massa tincidunt nunc pulvinar sapien. Turpis egestas integer eget aliquet nibh praesent tristique magna sit. Facilisis sed odio morbi quis commodo odio aenean. Quam vulputate dignissim suspendisse in. Fames ac turpis egestas integer eget aliquet. Ac placerat vestibulum lectus mauris ultrices. Scelerisque eleifend donec pretium vulputate sapien. Rutrum tellus pellentesque eu tincidunt tortor aliquam nulla facilisi cras. Viverra vitae congue eu consequat ac felis donec et odio.</p><p>A erat nam at lectus urna duis convallis convallis tellus. Arcu vitae elementum curabitur vitae nunc sed. Varius vel pharetra vel turpis nunc eget lorem dolor sed. Mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Volutpat lacus laoreet non curabitur. Non sodales neque sodales ut etiam sit amet. Pharetra magna ac placerat vestibulum. Sed arcu non odio euismod lacinia at quis risus. Id porta nibh venenatis cras sed. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_GTfbyP",
+        "richtext_P6eac6"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "padding": "none",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 72
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_bhgARE"
+  ]
+}

@@ -1,0 +1,23 @@
+{% comment %}
+  GA4 View Item event
+  Based on the Analyzify tutorial linked below
+
+  Product view data layer v2.0 - part of "Shopify GA4 Kit" by Analyzify
+  Visit https://analyzify.app/shopify-google-analytics/ga4 for complete tutorial
+{% endcomment %}
+
+{% if settings.gtm_enabled and settings.gtm_id != blank and settings.ga4_enabled %}
+  {% if request.page_type == 'product' %}
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'twp_view_item',
+        productCurrency: {{ cart.currency.iso_code | json }},
+        productName: {{ product.title | json }},
+        productId: {{ product.id | json }},
+        productPrice: {{ product.price | money_without_currency | json }},
+        productBrand: {{ product.vendor | json }},
+      });
+    </script>
+  {% endif %}
+{% endif %}

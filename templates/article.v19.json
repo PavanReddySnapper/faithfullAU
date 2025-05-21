@@ -1,0 +1,316 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_20bdd7e6-dad6-483c-9f1b-c934953214e3.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "FAITHFULL x Harvey Nichols Exclusive Pop-Up",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We are excited to announce the opening of our first exclusive pop-up space in London, together with iconic British department store <a href=\"https://www.harveynichols.com/brand/faithfull-the-brand/\" target=\"_blank\" title=\"https://www.harveynichols.com/brand/faithfull-the-brand/\">Harvey Nichols</a>.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/2_3.webp",
+        "background_image_2": "shopify://shop_images/3_dcaba70b-dd9e-4e0a-aeea-f1a51461bc5c.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_XgqLLm": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_twFqpJ": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Designed with vintage decor and a warm colour palette, creating a summer oasis in the midst of the city of London, step inside to discover a curated edit of new season resortwear, swimwear and signature silhouettes. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_twFqpJ"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_cLpXaH": {
+      "type": "image-banner",
+      "blocks": {
+        "image_hT8W38": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_fc222ca5-ac12-4ffe-9640-c7b5ea6bf0dd.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hT8W38"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "editorial_layout_EKhaBz": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/5_2.webp",
+        "background_image_2": "shopify://shop_images/6_2.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_pRn479": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_JMiraP": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Visit the space at Level 4 of the London flagship Harvey Nichols at 109-125 Knightsbridge, London until March 2026. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_JMiraP"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "faroe-maxi-dress-eden-print",
+          "zelie-midi-dress-rose",
+          "jackie-vest-natural",
+          "jean-pant-natural"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/in-conversation-with-villa-cleo"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/cape-town-travel-guide"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-holiday-reading-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_eUJjCy",
+        "article_zPApBT",
+        "article_n84pcB"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_BNpN6Q",
+    "rich_text_XgqLLm",
+    "image_banner_cLpXaH",
+    "editorial_layout_EKhaBz",
+    "rich_text_pRn479",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

@@ -1,0 +1,12 @@
+{%- if shop.metaobjects.swatch.values != blank -%}
+  <style>
+    {%- for swatch in shop.metaobjects.swatch.values -%}
+      .swatch--{{ swatch.name | handleize }} {
+        --swatch-background-color: {{ swatch.color }};
+        {%- if swatch.image != blank %}
+          --swatch-background-image: url('{{ swatch.image | image_url: width: 32, height: 32, crop: 'center' }}');
+        {%- endif -%}
+      }
+    {%- endfor -%}
+  </style>
+{%- endif -%}

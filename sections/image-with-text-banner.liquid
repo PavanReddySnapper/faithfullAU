@@ -1,0 +1,245 @@
+{%- if section.settings.image != blank -%}
+  <section
+    class="image-text-banner"
+    data-section-id="{{ section.id }}"
+    data-section-type="image-with-text"
+  >
+    {%- render 'component-image',
+      image: section.settings.image,
+      sizes: '100vw',
+      img_class: 'image-text-banner__image'
+    -%}
+
+    <div class="image-text-banner__text">
+      <div class="container">
+        {%- if section.settings.pre_title != blank -%}
+          <p class="image-text-banner__pre-title h6  text-{{ section.settings.pre_title_alignment_mobile }} text-{{ section.settings.pre_title_alignment }}--min-md">
+            {{ section.settings.pre_title }}
+          </p>
+        {%- endif -%}
+
+        {%- if section.settings.title != blank -%}
+          <p class="image-text-banner__title {{ section.settings.title_style }} text-{{ section.settings.title_alignment_mobile }} text-{{ section.settings.title_alignment }}--min-md">
+            {{ section.settings.title }}
+          </p>
+        {%- endif -%}
+
+        {%- if section.settings.text != blank -%}
+          <p class="{{ section.settings.text_style }}">{{ section.settings.text }}</p>
+        {%- endif -%}
+      </div>
+    </div>
+  </section>
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+    }
+
+    @media only screen and (min-width: {{ settings.grid_medium }}px) {
+      #shopify-section-{{ section.id }} {
+        margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+      }
+    }
+  </style>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Image with Text Banner",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image Text Banner Settings"
+      },
+      {
+        "type": "header",
+        "content": "Image Settings"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background Image"
+      },
+      {
+        "type": "header",
+        "content": "Text Content Settings"
+      },
+      {
+        "type": "header",
+        "content": "Pre Title Settings"
+      },
+      {
+        "type": "text",
+        "id": "pre_title",
+        "label": "Pre Title"
+      },
+      {
+        "type": "text_alignment",
+        "id": "pre_title_alignment",
+        "label": "Pre Title Text Alignment (Desktop)",
+        "default": "center"
+      },
+      {
+        "type": "text_alignment",
+        "id": "pre_title_alignment_mobile",
+        "label": "Pre Title Text Alignment (Mobile)",
+        "default": "center"
+      },
+      {
+        "type": "header",
+        "content": "Title Settings"
+      },
+      {
+        "type": "textarea",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "select",
+        "id": "title_style",
+        "label": "Title Style",
+        "default": "h1",
+        "options": [
+          {
+            "value": "",
+            "label": "Paragraph"
+          },
+          {
+            "value": "h1",
+            "label": "Heading 1"
+          },
+          {
+            "value": "h2",
+            "label": "Heading 2"
+          },
+          {
+            "value": "h3",
+            "label": "Heading 3"
+          },
+          {
+            "value": "h4",
+            "label": "Heading 4"
+          },
+          {
+            "value": "h5",
+            "label": "Heading 5"
+          },
+          {
+            "value": "h6",
+            "label": "Heading 6"
+          }
+        ]
+      },
+      {
+        "type": "text_alignment",
+        "id": "title_alignment",
+        "label": "Title Text Alignment (Desktop)",
+        "default": "center"
+      },
+      {
+        "type": "text_alignment",
+        "id": "title_alignment_mobile",
+        "label": "Title Text Alignment (Mobile)",
+        "default": "center"
+      },
+      {
+        "type": "header",
+        "content": "Text Settings"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "select",
+        "id": "text_style",
+        "label": "Text Style",
+        "default": "body-medium",
+        "options": [
+          {
+            "value": "body-medium",
+            "label": "Paragraph"
+          },
+          {
+            "value": "h1",
+            "label": "Heading 1"
+          },
+          {
+            "value": "h2",
+            "label": "Heading 2"
+          },
+          {
+            "value": "h3",
+            "label": "Heading 3"
+          },
+          {
+            "value": "h4",
+            "label": "Heading 4"
+          },
+          {
+            "value": "h5",
+            "label": "Heading 5"
+          },
+          {
+            "value": "h6",
+            "label": "Heading 6"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_desktop",
+        "label": "Bottom Margin - Desktop",
+        "default": "40",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_mobile",
+        "label": "Bottom Margin - Mobile",
+        "default": "40",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image with Text Banner"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

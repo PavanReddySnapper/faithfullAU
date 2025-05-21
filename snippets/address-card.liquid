@@ -1,0 +1,96 @@
+{%- liquid
+  # Developer only setting
+  # @param {boolean} [modal] - Toggle between modal or collapsed view
+  # @param {boolean} [hide_edit_buttons] - Hides edit/remove address buttons
+  assign modal = false
+
+  if address == 'new'
+    assign type = 'new'
+  else
+    assign type = 'edit'
+  endif
+-%}
+
+<address-card class="address-card address-card--{{ type }}" data-is-modal="{{ modal }}">
+  {%- if type == 'edit' -%}
+    <div class="address-card__summary">
+      {{ address | format_address }}
+    </div>
+
+    {% unless hide_edit_buttons %}
+      <div class="button-container">
+        <button type="button" class="btn btn--text" data-address-form-trigger>
+          {{- 'customer.addresses.edit_address' | t -}}
+        </button>
+        <button type="button" class="btn btn--text hide" data-address-form-cancel-trigger>
+          {{- 'customer.addresses.cancel' | t -}}
+        </button>
+
+        {%- if template != 'account' -%}
+          <form
+            class="address__delete"
+            data-address-delete-form
+            method="post"
+            action="{{ routes.account_addresses_url }}/{{ address.id }}"
+            data-confirm-message="{{ 'customer.addresses.delete_confirm' | t }}"
+          >
+            <input type="hidden" name="_method" value="delete">
+            <button type="submit" class="btn btn--text">
+              {{- 'customer.addresses.delete' | t -}}
+            </button>
+          </form>
+        {%- endif -%}
+      </div>
+    {% endunless %}
+  {%- else -%}
+    <button type="button" class="btn btn--text" data-address-form-trigger>
+      {% render 'icon-plus' %}
+      {{- 'customer.addresses.add_new' | t -}}
+    </button>
+    <button type="button" class="btn btn--text hide" data-address-form-cancel-trigger>
+      {% render 'icon-cross' %}
+      {{- 'customer.addresses.cancel' | t -}}
+    </button>
+  {%- endif -%}
+
+  {%- if modal -%}
+    {%- liquid
+      if type == 'new'
+        assign modal_id = 'address-new-modal'
+        assign modal_header = 'customer.addresses.add_new' | t
+        assign modal_description = 'customer.addresses.add_new' | t
+      else
+        assign modal_id = 'address-' | append: address.id | append: '-modal'
+        assign modal_header = 'customer.addresses.edit_address' | t
+        assign modal_description = 'customer.addresses.edit_address' | t
+      endif
+    -%}
+
+    {%- liquid
+      capture address_modal_content
+        render 'address-form', type: type, address: address, classes: 'address__form', cancel_button: false
+      endcapture
+    -%}
+
+    {%- render 'component-modal-dialog',
+      modal_class: 'sm',
+      modal_id: modal_id,
+      modal_label: modal_header,
+      modal_desc: modal_description,
+      modal_content: address_modal_content,
+      modal_sticky_header: true,
+      modal_header: modal_header
+    -%}
+  {%- else -%}
+    <div class="address__collapsable-form" data-collapsable-address-form aria-expanded="false">
+      <p class="h6 address__collapsable-form-title">
+        {% if type == 'edit' %}
+          {{ 'customer.addresses.update' | t }}
+        {% else %}
+          {{ 'customer.addresses.add' | t }}
+        {% endif %}
+      </p>
+      {%- render 'address-form', type: type, address: address, classes: 'address__form', cancel_button: true -%}
+    </div>
+  {%- endif -%}
+</address-card>

@@ -1,0 +1,42 @@
+<div
+  class="account-template account-template-orders"
+  data-section-id="{{ section.id }}"
+  data-section-type="main-customers-account-orders"
+>
+  {% paginate customer.orders by 20 %}
+    {% render 'component-page-top-links',
+      linklist: linklists[settings.account_links],
+      parent_class: 'page-navigation__layout--top account__top-nav',
+      select_on_mobile: true
+    %}
+
+    <div class="container container--sm">
+      <header class="page-header hide">
+        <h1>{{ 'customer.account.title' | t }}</h1>
+      </header>
+
+      {% if customer.orders.size > 0 %}
+        {% for order in customer.orders %}
+          <div class="account__module{% if forloop.last %} account__module--last{% endif %}">
+            {%- render 'order-card', order: order -%}
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="account__module account__module--last">
+          <p>{{ 'customer.orders.none' | t }}</p>
+        </div>
+      {% endif %}
+
+      {% render 'pagination', paginate: paginate %}
+    </div>
+  {% endpaginate %}
+</div>
+
+{% schema %}
+  {
+    "name": "Account Orders",
+    "enabled_on": {
+      "templates": ["customers/account"]
+    }
+  }
+{% endschema %}

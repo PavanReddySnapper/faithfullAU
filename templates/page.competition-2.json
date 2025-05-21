@@ -1,0 +1,267 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_AzPmyL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_rrWt4P": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/faithfull_tropez_look-24-1.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rrWt4P"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_g43DRX": {
+      "type": "rich-text",
+      "blocks": {
+        "title_wwTkUr": {
+          "type": "title",
+          "settings": {
+            "title": "Win Your Dream Vacation To Greece",
+            "is_primary_heading": true,
+            "heading_style": "h1",
+            "pre_heading": "",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_mtE7tq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We are hosting a giveaway in partnership with Slojourn Studio which includes a $2000 FAITHFULL wardrobe voucher, up to $2000 in flight credit, 3-nights accommodation at Andronis Arcadia, Santorini, 3-nights accommodation at Gundari Resort, Folegandros, ferry transfers between islands and a $1500 Antler luggage voucher. </p>",
+            "font_size": "",
+            "content_max_width": "50%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_w7qDcp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>To enter you must sign up to FAITHFULL with your name, email address, mobile number and Instagram handle and follow the below accounts on Instagram:</p><p><a href=\"https://www.instagram.com/faithfullthebrand\" target=\"_blank\" title=\"https://www.instagram.com/faithfullthebrand\">@faithfullthebrand </a></p><p><a href=\"https://www.instagram.com/slojourn_studio\" target=\"_blank\" title=\"https://www.instagram.com/slojourn_studio\">@slojourn_studio</a> </p><p><a href=\"https://www.instagram.com/andronis_hotels\" target=\"_blank\" title=\"https://www.instagram.com/andronis_hotels\">@andronis_hotels</a> </p><p><a href=\"https://www.instagram.com/gundari_resort\" target=\"_blank\" title=\"https://www.instagram.com/gundari_resort\">@gundari_resort</a> </p><p><a href=\"https://www.instagram.com/antlerofficial\" target=\"_blank\" title=\"https://www.instagram.com/antlerofficial\">@antlerofficial</a></p>",
+            "font_size": "",
+            "content_max_width": "50%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_wwTkUr",
+        "richtext_mtE7tq",
+        "richtext_w7qDcp"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--md",
+        "single_row_desktop": false,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 16,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "shogun_custom_html_GMRbdx": {
+      "type": "shogun-custom-html",
+      "disabled": true,
+      "settings": {
+        "html": "<div class=\"klaviyo-form-SUj63C\"></div>"
+      }
+    },
+    "klaviyo_competition_form_m9wbYR": {
+      "type": "Klaviyo-Competition-Form",
+      "settings": {}
+    },
+    "rich_text_YQQ3HC": {
+      "type": "rich-text",
+      "blocks": {
+        "title_hkfjb6": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title": "Win Your Dream Vacation To Greece",
+            "is_primary_heading": true,
+            "heading_style": "h1",
+            "pre_heading": "",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_fzfKb3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Entries close midnight Sunday 6th April, 2025 AEDT.</p>",
+            "font_size": "",
+            "content_max_width": "50%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_bWUhEV": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><em>This Giveaway is open to entrants worldwide and over the age of 18. However, please note some exceptions apply. The value of the Giveaway is in Australian dollars. By entering the Giveaway, you acknowledge your information will also be shared with Slojourn Studio.</em></p>",
+            "font_size": "",
+            "content_max_width": "50%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_7L8xAL": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"/pages/dream-vacation-terms-and-conditions\" target=\"_blank\" title=\"Dream Vacation Terms and Conditions\"><em>Please read the full terms and conditions </em><span style=\"text-decoration:underline\"><em>here</em></span><em>. </em></a></p>",
+            "font_size": "",
+            "content_max_width": "50%",
+            "content_alignment": "center",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_hkfjb6",
+        "richtext_fzfKb3",
+        "richtext_bWUhEV",
+        "richtext_7L8xAL"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--md",
+        "single_row_desktop": false,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 16,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_cwDtbX": {
+      "type": "image-banner",
+      "blocks": {
+        "image_NdhmaB": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/DSCF8939.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "Soleil Trouser Sand",
+            "button_link_2": ""
+          }
+        },
+        "image_LPAKtp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/re-sizedrz_andronis_arcadia_18743_copy.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_cctptf": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/DSCF7038A-resize.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_NdhmaB",
+        "image_LPAKtp",
+        "image_cctptf"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_BrpfLX": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Vacation Edit",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "vacation-edit",
+        "product_list": [
+          "enya-midi-dress-meleu-stripe-multi",
+          "bandol-bikini-top-meleu-stripe-multi",
+          "camille-top-white",
+          "elva-shorts-cherry-stripe"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    }
+  },
+  "order": [
+    "image_banner_AzPmyL",
+    "rich_text_g43DRX",
+    "shogun_custom_html_GMRbdx",
+    "klaviyo_competition_form_m9wbYR",
+    "rich_text_YQQ3HC",
+    "image_banner_cwDtbX",
+    "featured_products_BrpfLX"
+  ]
+}

@@ -1,0 +1,91 @@
+{%- liquid
+  if request.page_type == 'collection'
+    assign results_type = 'general.pagination.products' | t
+    assign items_total = collection.products_count
+  elsif request.page_type == 'search'
+    assign results_type = 'general.pagination.results' | t
+    assign items_total = search.results_count
+  elsif request.page_type == 'blog'
+    assign results_type = 'general.pagination.articles' | t
+    assign items_total = blog.articles_count
+  endif
+
+  if paginate.current_page == paginate.pages
+    assign remaining_products_modulo = items_total | modulo: paginate.page_size
+    if remaining_products_modulo == 0
+      assign products_per_page = paginate.page_size
+    else
+      assign products_per_page = remaining_products_modulo
+    endif
+  elsif paginate.pages > 1
+    assign products_per_page = paginate.page_size
+  else
+    assign products_per_page = items_total
+  endif
+
+  assign progress = products_per_page | times: 100 | divided_by: items_total
+-%}
+
+{%- capture pagination_settings -%}
+{
+  "number_of_pages": {{ paginate.pages | json }},
+  "items_total": {{ items_total | json }},
+  "type": {{ type | json }}
+}
+{%- endcapture -%}
+
+{% # prettier-ignore-attribute %}
+<div class="pagination__load-more" data-pagination data-settings='{{- pagination_settings | strip_newlines -}}'>
+  {%- if position == 'top' -%}
+    {%- if paginate.previous -%}
+      <div class="pagination__load-prev">
+        <a
+          class="btn btn--link"
+          href="{{ paginate.previous.url }}"
+          rel="prev"
+          title="{{ 'general.pagination.load_previous' | t | capitalize }} {{ results_type }}"
+          data-load-more
+          data-load-prev
+        >
+          {{ 'general.pagination.load_previous' | t }}
+        </a>
+      </div>
+    {%- endif -%}
+
+  {%- else -%}
+    {%- if type == 'load-more' -%}
+      <p class="pagination__header label">
+        {%- liquid
+          assign viewed_html = '<span data-pagination-viewed>' | append: products_per_page | append: '</span>'
+          if request.page_type == 'blog'
+            echo 'general.pagination.article_progress_text_html' | t: count: viewed_html, total: items_total, results: results_type
+          else
+            echo 'general.pagination.progress_text_html' | t: count: viewed_html, total: items_total, results: results_type
+          endif
+        -%}
+      </p>
+
+      <div class="pagination__progress">
+        <div class="pagination__progress-bar" style="width: {{progress}}%;" data-progress-bar></div>
+      </div>
+
+    {%- else -%}
+      <div class="pagination__sentinel" data-pagination-sentinel></div>
+    {%- endif -%}
+
+    {% if paginate.next %}
+      <div class="pagination__load-next">
+        <a
+          class="btn btn--link"
+          href="{{ paginate.next.url }}"
+          rel="next"
+          title="{{ 'general.pagination.load_more' | t | capitalize }} {{ results_type }}"
+          data-load-more
+          data-load-next
+        >
+          {{ 'general.pagination.load_more' | t }}
+        </a>
+      </div>
+    {% endif %}
+  {% endif %}
+</div>

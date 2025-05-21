@@ -1,0 +1,533 @@
+{%- liquid
+  assign columns = section.blocks.size
+  assign block_width = 'full'
+  case columns
+    when 2
+      assign max_width = 1600
+      assign block_width = 'half'
+    when 3
+      assign max_width = 1600
+      assign block_width = 'third'
+    when 4
+      assign max_width = 1600
+      assign block_width = 'quarter'
+    when 5
+      assign max_width = 1600
+      assign block_width = 'fifth'
+    when 6
+      assign max_width = 1600
+      assign block_width = 'sixth'
+  endcase
+
+  assign sizes = '(min-width: 48rem) calc(100vw / cols), 100vw' | replace: 'cols', columns
+  if section.settings.block_layout == 'row'
+    assign sizes = '(min-width: 48rem) 50vw, 100vw'
+  endif
+  assign aspect_ratio = section.settings.aspect_ratio | default: 'portrait'
+  assign link_type = section.settings.link_type
+
+  assign all_blocks_contained = true
+  for block in section.blocks
+    if block.settings.container_width != 'container--md'
+      assign all_blocks_contained = false
+      break
+    endif
+  endfor
+
+  capture container_classes
+    echo 'image-banner--' | append: block_width | append: '-blocks '
+
+    for block in section.blocks
+      if block.settings.container_width == 'container--md'
+        echo 'image-banner--contained-blocks'
+        break
+      endif
+    endfor
+
+    if all_blocks_contained
+      echo ' image-banner--all-contained-blocks'
+    endif
+  endcapture
+-%}
+
+<div
+  class="image-banner {{ container_classes }}"
+  data-section-id="{{ section.id }}"
+  data-section-type="image-banner"
+>
+  {%- for block in section.blocks -%}
+    {%- liquid
+      capture img_alt
+        if block.settings.background_image.alt != blank
+          echo block.settings.background_image.alt
+        elsif block.settings.title != blank
+          echo block.settings.title
+        elsif block.settings.button_label_2 != blank
+          echo block.settings.button_label_2
+        endif
+      endcapture
+
+      # using `title` here so that it shows the label in the customiser block
+      assign button_label_1 = block.settings.title
+      assign button_link_1 = block.settings.button_link_1
+      assign button_label_2 = block.settings.button_label_2
+      assign button_link_2 = block.settings.button_link_2
+
+      assign button_style_1 = section.settings.button_style
+      assign button_style_2 = section.settings.button_style
+
+      assign show_button_1 = false
+      if button_label_1 != blank and button_link_1 != blank
+        assign show_button_1 = true
+      endif
+      assign show_button_2 = false
+      if button_label_2 != blank and button_link_2 != blank
+        assign show_button_2 = true
+      endif
+
+      assign container_element = 'div'
+      assign cta_element = 'a'
+      assign container_link = ''
+
+      # If the full image should be linked
+      if link_type == 'section'
+        if show_button_1 == false or show_button_2 == false
+          # Only link the full image if 1 button is shown (if 2 buttons shown, each button should link individually and this setting is ignored)
+          if show_button_1
+            assign container_link = button_link_1
+          elsif show_button_2
+            assign container_link = button_link_2
+          else
+            # If no buttons are shown but any links are still set, link the full image to the first link
+            if button_link_1 != blank
+              assign container_link = button_link_1
+            elsif button_link_2 != blank
+              assign container_link = button_link_2
+            endif
+          endif
+        endif
+
+        if container_link != blank
+          assign container_element = 'a'
+          assign cta_element = 'span'
+        endif
+      endif
+
+      capture section_classes
+        echo 'container '
+        echo block.settings.container_width | append: ' '
+        echo 'image--' | append: aspect_ratio | append: ' '
+        echo block_width
+      endcapture
+    -%}
+
+    <div
+      class="section image-banner__item shopify-block-{{ block.id }} {{ section_classes }}"
+      data-section-id="{{ block.id }}"
+    >
+      <{{ container_element }}
+        class="image-banner__container"
+        {% if container_element == 'a' %}
+          href="{{ container_link }}"
+        {% endif %}
+      >
+        {%- render 'component-image',
+          image: block.settings.background_image,
+          img_alt: img_alt,
+          max_width: max_width,
+          sizes: sizes,
+          aspect_ratio: aspect_ratio
+        -%}
+
+        {%- if show_button_1 or show_button_2 -%}
+          <div class="image-banner__content {{ section.settings.button_position }}{% if block.settings.hide_button_mobile %} hide--max-md{% endif %}">
+            {% if block.settings.subtitle != blank %}
+              <span class="subtitle h6">{{ block.settings.subtitle }}</span>
+            {% endif %}
+            <div class="buttons">
+              {%- if show_button_1 -%}
+                <{{ cta_element }}
+                  class="btn h4 {% if button_style_1 != blank %}btn--{{ button_style_1 }}{% endif %}"
+                  {% if cta_element == 'a' %}
+                    href="{{ button_link_1 }}"
+                  {% endif %}
+                >
+                  {{ button_label_1 }}
+                </{{ cta_element }}>
+              {%- endif -%}
+
+              {%- if show_button_2 -%}
+                {%- if show_button_1 -%}
+                  <div class="divider-icon">{% render 'icon-divider' %}</div>
+                {%- endif -%}
+                <{{ cta_element }}
+                  class="btn h4 {% if button_style_2 != blank %}btn--{{ button_style_2 }}{% endif %}"
+                  {% if cta_element == 'a' %}
+                    href="{{ button_link_2 }}"
+                  {% endif %}
+                >
+                  {{ button_label_2 }}
+                </{{ cta_element }}>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      </{{ container_element }}>
+    </div>
+  {%- endfor -%}
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-top: {{ section.settings.top_margin_mobile }}px;
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  #shopify-section-{{ section.id }} .image-banner {
+    gap: {{ section.settings.block_gap }}px;
+    flex-direction: {{ section.settings.block_layout }};
+    {% if section.settings.block_layout == 'row' %}
+      flex-wrap: wrap;
+    {% endif %}
+  }
+
+  #shopify-section-{{ section.id }} .image-banner__item {
+    flex: 50%;
+  }
+
+  #shopify-section-{{ section.id }} .image-banner__content .btn {
+    --button-text-color: var({{ section.settings.button_color }});
+    --button-text-hover-color: var({{ section.settings.button_color }});
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-top: {{ section.settings.top_margin_desktop }}px;
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+
+    #shopify-section-{{ section.id }} .image-banner {
+      gap: 0;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Image Banner",
+    "class": "image-banner-section",
+    "max_blocks": 6,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "top_margin_desktop",
+        "label": "Top Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_desktop",
+        "label": "Bottom Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "top_margin_mobile",
+        "label": "Top Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_mobile",
+        "label": "Bottom Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Blocks Settings"
+      },
+      {
+        "type": "select",
+        "id": "block_layout",
+        "label": "Block Layout - mobile only",
+        "info": "2 per row is only intended to work when there is no gap between the blocks",
+        "default": "column",
+        "options": [
+          {
+            "value": "column",
+            "label": "1 per row"
+          },
+          {
+            "value": "row",
+            "label": "2 per row"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "block_gap",
+        "label": "Gap between blocks - mobile only",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "aspect_ratio",
+        "label": "Image aspect ratio for all blocks",
+        "info": "Recommended size: 1600px x 1068px for landscape and 1600px x 2400px for portrait images",
+        "default": "portrait",
+        "options": [
+          {
+            "value": "portrait",
+            "label": "Portrait (2:3)"
+          },
+          {
+            "value": "landscape",
+            "label": "Landscape (3:2)"
+          }
+        ]
+      },
+      {
+        "type": "radio",
+        "id": "link_type",
+        "label": "Link type",
+        "default": "section",
+        "options": [
+          {
+            "value": "section",
+            "label": "Whole image is link"
+          },
+          {
+            "value": "cta",
+            "label": "Link is button only"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style for both buttons",
+        "default": "link",
+        "options": [
+          {
+            "value": "link",
+            "label": "Text with underline"
+          },
+          {
+            "value": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "button_position",
+        "label": "Button Position",
+        "default": "below-image",
+        "options": [
+          {
+            "value": "below-image",
+            "label": "Below the Image"
+          },
+          {
+            "value": "in-image",
+            "label": "In the image"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "button_color",
+        "label": "Button Color",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Image",
+        "type": "image",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Block settings"
+          },
+          {
+            "type": "select",
+            "id": "container_width",
+            "label": "Block container",
+            "default": "container--flush container--fluid",
+            "options": [
+              {
+                "value": "container--flush container--fluid",
+                "label": "Full Width"
+              },
+              {
+                "value": "container--md",
+                "label": "Contained in grid"
+              }
+            ]
+          },
+          {
+            "type": "header",
+            "content": "Image settings"
+          },
+          {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background image",
+            "info": "Recommended size: 1600px x 1068px for landscape and 1600px x 2400px for portrait images"
+          },
+          {
+            "type": "header",
+            "content": "Image content"
+          },
+          {
+            "type": "checkbox",
+            "id": "hide_button_mobile",
+            "label": "Hide buttons under image - mobile only",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "info": "Leave this blank to hide."
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "First button label",
+            "info": "Leave the label or link blank to hide the button."
+          },
+          {
+            "type": "url",
+            "id": "button_link_1",
+            "label": "First button link",
+            "info": "Leave the label or link blank to hide the button."
+          },
+          {
+            "type": "text",
+            "id": "button_label_2",
+            "label": "Second button label",
+            "info": "Leave the label or link blank to hide the button."
+          },
+          {
+            "type": "url",
+            "id": "button_link_2",
+            "label": "Second button link",
+            "info": "Leave the label or link blank to hide the button."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Banner",
+        "blocks": [
+          {
+            "type": "image"
+          },
+          {
+            "type": "image"
+          }
+        ]
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

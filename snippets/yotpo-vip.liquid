@@ -1,0 +1,175 @@
+{% unless customer.tags contains 'swell_vip_tier one' %}
+  <style>
+    .yotpo-vip-tabs .tabcontent:last-child,
+    .yotpo-vip-tiers-widget .swiper-container .yotpo-swiper-item:last-child {
+        position: relative !important;
+    }
+
+    .yotpo-vip-tabs .tabcontent:last-child:before {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+  </style>
+{% endunless %}
+
+{% if customer.tags contains 'swell_vip_tier four' %}
+  <style>
+      .yotpo-vip-tabs button:nth-child(1)::before {
+          display: block;
+          position: absolute;
+          content: "You are here";
+          font-size: 12px;
+          color: #969696;
+          top: -10px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+      }
+
+  </style>
+{% elsif customer.tags contains 'swell_vip_tier three' %}
+  <style>
+      .yotpo-vip-tabs button:nth-child(2)::before {
+          display: block;
+          position: absolute;
+          content: "You are here";
+          font-size: 12px;
+          color: #969696;
+          top: -10px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+      }
+  </style>
+{% elsif customer.tags contains 'swell_vip_tier two' %}
+  <style>
+      .yotpo-vip-tabs button:nth-child(3)::before {
+          display: block;
+          position: absolute;
+          content: "You are here";
+          font-size: 12px;
+          color: #969696;
+          top: -10px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+      }
+  </style>
+{% elsif customer.tags contains 'swell_vip_tier one' %}
+  <style>
+      .yotpo-vip-tabs button:nth-child(4)::before {
+          display: block;
+          position: absolute;
+          content: "You are here";
+          font-size: 12px;
+          color: #969696;
+          top: -10px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 100%;
+      } 
+  </style>
+{% endif %}
+
+<style>
+    .yotpo-vip-tiers-container {
+      width: 100%;
+    }
+
+    .yotpo-vip-tiers-widget .yotpo-vip-tiers-list {
+      padding: 0 !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  
+  .yotpo-vip-tabs  button {
+      position: relative;
+    }
+</style>
+
+
+  <div class="yotpo-vip-mob">
+     <div class="yotpo-widget-instance" data-yotpo-instance-id="1062108"></div>
+  </div>
+
+  <div class="yotpo-vip-tabs">
+    <!-- Tab links -->
+    <div class="tab">
+        <div class="button-tabs">
+          <button class="tablinks member active" onclick="openCity(event, 'member')" > <span>TIER 4</span> </button>
+          <button class="tablinks bronze" onclick="openCity(event, 'bronze')"> <span>TIER 3</span> </button>
+          <button class="tablinks silver" onclick="openCity(event, 'silver')"> <span>TIER 2</span> </button>
+          <button class="tablinks gold" onclick="openCity(event, 'gold')"> <span>TIER 1</span> </button>
+        </div>
+    </div>
+
+    <!-- Tab content -->
+    <div id="member" class="tabcontent">
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="1062108"></div>
+    </div>
+
+    <div id="bronze" class="tabcontent">
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="1062108"></div>
+    </div>
+
+    <div id="silver" class="tabcontent">
+     <div class="yotpo-widget-instance" data-yotpo-instance-id="1062108"></div>
+    </div>
+
+    <div id="gold" class="tabcontent">
+     <div class="yotpo-widget-instance" data-yotpo-instance-id="1062108"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+function openCity(evt, vipName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(vipName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+  {% unless customer %}
+ document.querySelector("button.tablinks.member").setAttribute('id', 'defaultOpen');
+  {% endunless %}
+  {% if customer.tags == empty %}
+  document.querySelector("button.tablinks.member").setAttribute('id', 'defaultOpen');
+{% endif %}
+ {% for tag in customer.tags %}
+ {% if tag == "swell_vip_tier four" %}
+       document.querySelector("button.tablinks.member").setAttribute('id', 'defaultOpen');
+ {% endif %}
+
+   {% if tag == "swell_vip_tier three" %}
+       document.querySelector("button.tablinks.bronze").setAttribute('id', 'defaultOpen');
+ {% endif %}
+
+   {% if tag == "swell_vip_tier two" %}
+       document.querySelector("button.tablinks.silver").setAttribute('id', 'defaultOpen');
+ {% endif %}
+
+   {% if tag == "swell_vip_tier one" %}
+       document.querySelector("button.tablinks.gold").setAttribute('id', 'defaultOpen');
+ {% endif %}
+{% endfor %}
+
+  document.getElementById("defaultOpen").click();
+
+</script>

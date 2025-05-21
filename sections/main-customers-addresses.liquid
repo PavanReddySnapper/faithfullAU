@@ -1,0 +1,59 @@
+<div
+  class="account-template account-template-addresses"
+  data-section-id="{{ section.id }}"
+  data-section-type="main-customers-addresses"
+>
+  {% paginate customer.addresses by 50 %}
+    {% render 'component-page-top-links',
+      linklist: linklists[settings.account_links],
+      parent_class: 'page-navigation__layout--top account__top-nav',
+      select_on_mobile: true
+    %}
+
+    <div class="container container--sm">
+      <header class="page-header hide">
+        <h1>{{ 'customer.addresses.title' | t }}</h1>
+      </header>
+
+      <div class="account account--narrow">
+        {% for address in customer.addresses %}
+          {% liquid
+            if address != customer.default_address
+              continue
+            endif
+          %}
+          <div class="account__module account__module--first-address">
+            <p class="h6 address-card__primary">{{ 'customer.addresses.default' | t }}</p>
+
+            {% render 'address-card', address: address %}
+          </div>
+        {% endfor %}
+        {% for address in customer.addresses %}
+          {% liquid
+            if address == customer.default_address
+              continue
+            endif
+          %}
+          <div class="account__module">
+            {% render 'address-card', address: address %}
+          </div>
+        {% endfor %}
+
+        <div class="account__module account__module--last account__module--add-address">
+          {% render 'address-card', address: 'new' %}
+        </div>
+
+        {% render 'pagination', paginate: paginate %}
+      </div>
+    </div>
+  {% endpaginate %}
+</div>
+
+{% schema %}
+  {
+    "name": "Addresses",
+    "enabled_on": {
+      "templates": ["customers/addresses"]
+    }
+  }
+{% endschema %}

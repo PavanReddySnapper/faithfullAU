@@ -1,0 +1,302 @@
+{%- assign items_per_page = cart.attributes.collection_products_per_page | default: section.settings.paginate -%}
+
+{% paginate search.results by items_per_page %}
+  <div
+    class="pagination__container "
+    data-section-id="{{ section.id }}"
+    data-section-type="main-search"
+  >
+    <div class="main-search__top">
+      <div class="main-search__top-search-bar {{ section.settings.search_width }}">
+        {%- if search.performed -%}
+          <h1 class="hide">{{ 'general.search.heading' | t: count: search.results_count }}</h1>
+          <p class="h6 hide--min-lg">
+            {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+          </p>
+        {%- else -%}
+          <h1 class="h6">{{ 'general.search.title' | t }}</h1>
+        {%- endif -%}
+
+        <form class="search__form" action="{{ routes.search_url }}" method="get" role="search">
+          <input type="hidden" name="type" value="product">
+          <input
+            type="search"
+            class="search__input"
+            name="q"
+            id="Search"
+            value="{{ search.terms | escape }}"
+            placeholder="{{ 'general.search.placeholder' | t }}"
+            aria-label="{{ 'general.search.title' | t }}"
+          >
+          <button type="submit" class="search__button btn btn--icon" aria-label="{{ 'general.search.submit' | t }}">
+            {% render 'icon-search' %}
+          </button>
+        </form>
+      </div>
+
+      {% render 'results-navbar', results: search, section_settings: section.settings %}
+    </div>
+
+    {%- if search.performed -%}
+      <div class="{{ section.settings.search_width }} container--flush">
+        <div data-results-pagination>
+          {%- liquid
+            if section.settings.pagination_type != 'standard' and paginate.previous
+              render 'pagination', paginate: paginate, type: section.settings.pagination_type, position: 'top'
+            endif
+          -%}
+        </div>
+
+        {%- liquid
+          assign product_image_sizes = '(min-width: 61.875rem) calc(100vw / 4), calc(100vw / 2)' | replace: 'calc(100vw / 1)', '100vw'
+          assign product_image_sizes_alt = '(min-width: 61.875rem) calc(100vw / 3), calc(100vw / 2)' | replace: 'calc(100vw / 1)', '100vw'
+        -%}
+
+        <ul
+          class="results-grid results-grid--default list-inline"
+          data-grid
+          data-results-grid
+          data-layout-mobile="2"
+          data-layout-mobile-alt="2"
+          data-layout-desktop="3"
+          data-layout-desktop-alt="4"
+          data-image-sizes-alt="{{ product_image_sizes_alt }}"
+        >
+          {% if search.results_count != 0 %}
+            {%- for item in search.results -%}
+              <li class="results-grid__tile" data-grid-item>
+                {% case item.object_type %}
+                  {% when 'product' %}
+                    {% render 'product-card', product: item, sizes: product_image_sizes %}
+                  {% when 'article' %}
+                    {% render 'article-card', article: item %}
+                  {% when 'page' %}
+                    {% render 'page-card', page: item %}
+                {% endcase %}
+              </li>
+            {%- endfor -%}
+
+          {%- else -%}
+            <li class="results-grid__tile results-grid__tile-full">
+              <p>{{ 'general.search.no_results_html' | t: terms: search.terms }}</p>
+            </li>
+          {% endif %}
+        </ul>
+
+        <div data-results-pagination>
+          {% render 'pagination', paginate: paginate, type: section.settings.pagination_type, position: 'bottom' %}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+{% endpaginate %}
+
+{% render 'vite-tag' with '@/scripts/sections/main-search.js' %}
+
+<style>
+  #shopify-section-{{ section.id }} .main-search__top {
+    margin-top: {{ section.settings.top_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_large }}px) {
+    #shopify-section-{{ section.id }} .main-search__top {
+      margin-top: {{ section.settings.top_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Main Search",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "top_margin_desktop",
+        "label": "Top Margin - Desktop",
+        "default": "32",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "16",
+            "label": "16px"
+          },
+          {
+            "value": "24",
+            "label": "24px"
+          },
+          {
+            "value": "32",
+            "label": "32px"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          },
+          {
+            "value": "96",
+            "label": "96px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "top_margin_mobile",
+        "label": "Top Margin - Mobile",
+        "default": "16",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "16",
+            "label": "16px"
+          },
+          {
+            "value": "24",
+            "label": "24px"
+          },
+          {
+            "value": "32",
+            "label": "32px"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          },
+          {
+            "value": "96",
+            "label": "96px"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "paginate",
+        "label": "Products per page",
+        "default": 24,
+        "min": 12,
+        "max": 96,
+        "step": 12
+      },
+      {
+        "type": "select",
+        "id": "search_width",
+        "label": "Search width",
+        "default": "container container--fluid",
+        "options": [
+          {
+            "value": "container",
+            "label": "Contained in grid"
+          },
+          {
+            "value": "container container--fluid",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Search navbar settings"
+      },
+      {
+        "type": "select",
+        "id": "navbar_container_width",
+        "label": "Navbar content width",
+        "default": "container container--fluid",
+        "options": [
+          {
+            "value": "container",
+            "label": "Contained in grid"
+          },
+          {
+            "value": "container container--fluid",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Layout switcher"
+      },
+      {
+        "type": "checkbox",
+        "id": "include_layout_switcher",
+        "label": "Include layout switcher - desktop only",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "include_product_view_switcher",
+        "label": "Include model - garment switcher",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Filters"
+      },
+      {
+        "type": "checkbox",
+        "id": "include_filters",
+        "label": "Include filters",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Sorting"
+      },
+      {
+        "type": "checkbox",
+        "id": "include_sort",
+        "label": "Include sorting",
+        "default": true
+      },
+      {
+        "type": "header",
+        "content": "Products Per Page"
+      },
+      {
+        "type": "header",
+        "content": "Pagination"
+      },
+      {
+        "type": "select",
+        "id": "pagination_type",
+        "label": "Pagination type",
+        "default": "standard",
+        "options": [
+          {
+            "value": "standard",
+            "label": "Standard"
+          },
+          {
+            "value": "load-more",
+            "label": "Load more"
+          },
+          {
+            "value": "infinite-scroll",
+            "label": "Infinite scroll"
+          }
+        ]
+      }
+    ],
+    "enabled_on": {
+      "templates": ["search"]
+    }
+  }
+{% endschema %}

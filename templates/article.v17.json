@@ -1,0 +1,576 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1-Updated_fe984321-c0fe-45bf-9e2b-465d8357de21.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "Inspired Artworks With Carla Nicieza",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>To celebrate the launch of the Spring 2025 collection, La Madrague, beloved #FAITHFULLGirl, artist and designer, Carla Nicieza, created four custom artworks inspired by her favourite pieces. Below, she shares intimate details into her creative process and how each piece came to life. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/2_7ee4ecbc-60d8-4b76-875b-f0221b150180.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Dalias On A Blue Vase",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“The print on the <a href=\"/products/sanne-mini-dress-cecile-floral-pale-blue\" title=\"Sanne Mini Dress Cecile Floral Pale Blue\"><span style=\"text-decoration:underline\">Sanne Mini Dress</span></a> made me think of my mom and how she fills every corner of the house with little vases of wildflowers, always random but always beautiful. This painting is a small tribute to that.” </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_NAH6Ur": {
+      "type": "image-banner",
+      "blocks": {
+        "image_Vg6zmK": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/3_dc250361-9f75-4c5d-a9fe-c1679362f801.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Vg6zmK"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_6UGKcF": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AGX9ai": {
+          "type": "title",
+          "settings": {
+            "title": "Night At The Bodega",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_NW4Pgh": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“This piece was inspired by the deep red of the <a href=\"/products/lydie-maxi-dress-red\" title=\"Lydie Maxi Dress Red\"><span style=\"text-decoration:underline\">Lydie Maxi Dress</span></a>. That shade of red reminds me of Spanish colmados – clay pots, fresh fruit, cheese, and glasses of wine. It just felt natural to bring that atmosphere into a painting.”</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AGX9ai",
+        "richtext_NW4Pgh"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_EHhFAK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_TFpjA9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_8b8f9fc4-859e-4520-869a-017f28437e47.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_TFpjA9"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_4YayT6": {
+      "type": "rich-text",
+      "blocks": {
+        "title_H7eYFj": {
+          "type": "title",
+          "settings": {
+            "title": "Ingredient List For Dinner",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_AfyFzw": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“The deep navy of the <a href=\"/products/clove-trouser-navy\" title=\"Clove Trouser Navy\"><span style=\"text-decoration:underline\">Clove Trousers</span></a> is one of my favorite colours, and I use it a lot in my paintings. I wanted to capture the contrast of white and blue, adding elements like onions and sardines – ingredients my dad loves to cook (and paint). I think I’ve inherited this fascination from him.”</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_H7eYFj",
+        "richtext_AfyFzw"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_kfXGch": {
+      "type": "image-banner",
+      "blocks": {
+        "image_parg6A": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/5_aa43f726-219d-4be7-8744-dba2d833795b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_parg6A"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_YkKtTT": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gt9AMV": {
+          "type": "title",
+          "settings": {
+            "title": "Menu Of The Day In Some Italian Village",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_C3LhcX": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“This one was inspired by summer days in Italy and the style and print of the <a href=\"/products/soame-maxi-dress-espresso-geo\" title=\"Soame Maxi Dress Espresso Geo\"><span style=\"text-decoration:underline\">Soame Maxi Dress</span></a>. Through my work, I paint moments I love or long for, and warm Mediterranean afternoons are something I always find myself yearning for during the winter months.”</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gt9AMV",
+        "richtext_C3LhcX"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/6_e2f9493c-712c-4c69-a1b7-3cd2b667908a.webp",
+        "background_image_2": "shopify://shop_images/7_e2d95048-6677-48c1-ae11-290e26a324de.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Inside Carla’s Creative Process",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>I would describe myself as… calm, creative, and curious.</p><p><em>I find inspiration in the simple pleasures of life…</em> starting the day with a morning coffee by the sea, followed by a painting session in my studio. I love getting lost in books and Pinterest for hours, and nature is a huge part of my creative process. I feel grateful for living in a place with beautiful landscapes and architecture, and plenty of sun.</p><p><em>My creative process…</em> varies daily, but I always begin by setting the mood – playing Japanese jazz, burning incense sticks, brewing tea or coffee, and preparing my materials. Once my table is ready, I start sketching on paper or canvas, and just allowing myself to experiment, without worrying about making something perfect.</p><p><em>I love to play with…</em> different mediums and materials to create my pieces. Some of my favorites include Chinese ink, handmade paper, and vintage Mallorquín cotton, which I source from second-hand markets on the island.</p><p><em>When I create…</em> my space is always peaceful and filled with light. I enjoy both daytime painting sessions and late-night ones, illuminated by small lamps and candles.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "rich_text_WD3egt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_7MRFC7": {
+          "type": "title",
+          "settings": {
+            "title": "Shop Carla’s Favourite Pieces",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_pKMGtA": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“FAITHFULL is my go-to for easy, timeless garments in thick linen – perfect for island life. I have a few of their basics, and I love how they’re simple yet so well-made, with beautiful cuts and fabrics. </p><p>Right now, I’m obsessed with the <a href=\"/products/soame-maxi-dress-espresso-geo\" title=\"Soame Maxi Dress Espresso Geo\"><span style=\"text-decoration:underline\">Soame Maxi Dress in Espresso</span></a>. I can’t wait for warmer days to wear it and grab a matching espresso at a little terrace somewhere. The print reminds me of one Carolyn Bessette wore in New York – effortless, classic, and just so chic. I would pair it with a small handbag and heeled strappy sandals.” </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_7MRFC7",
+        "richtext_pKMGtA"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "sanne-mini-dress-cecile-floral-pale-blue",
+          "clove-trouser-navy",
+          "soame-maxi-dress-espresso-geo",
+          "lydie-maxi-dress-red"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/in-conversation-with-villa-cleo"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/cape-town-travel-guide"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-holiday-reading-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_eUJjCy",
+        "article_zPApBT",
+        "article_n84pcB"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "image_banner_NAH6Ur",
+    "rich_text_6UGKcF",
+    "image_banner_EHhFAK",
+    "rich_text_4YayT6",
+    "image_banner_kfXGch",
+    "rich_text_YkKtTT",
+    "editorial_layout_BNpN6Q",
+    "rich_text_K4xM3c",
+    "rich_text_WD3egt",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

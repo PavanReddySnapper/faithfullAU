@@ -1,0 +1,406 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Photo_7-4-2025_6_04_24_am_1.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Philippines Travel Guide With Emily Yates",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>When searching for a true, rustic island escape with crystal blue waters and white sand beaches, it's hard to look beyond that of the South East Asian country of the Philippines with its small islands and inlets. Below, our #FAITHFULLGirl <a href=\"https://www.instagram.com/emelinaah/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/emelinaah/?hl=en\">Emily Yates</a> shares her guide to her favourite island escape in the Philippines, Puro Island Romblon. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/Photo_6-4-2025_7_36_35_am_3.jpg",
+        "background_image_2": "shopify://shop_images/Photo_6-4-2025_6_41_37_am_1.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_wc4xUY": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AJadF7": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_GzQnKU": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/unna___________/?hl=en\" title=\"https://www.instagram.com/unna___________/?hl=en\">UNNA</a></p><p>An eco-resort and private stay on Puro Island, Romblon. Nestled between a cove and a mangrove forest, UNNA was brought to life by interior designer and photographer, Vianca Soleil Roquero, who was inspired by the community's slow living ethos. She was drawn to the simple and untainted way of life and through her design choices brought in locally sourced marble, thatched roofing made from common cogon grass and kitchen huts constructed with coconut palm and timber. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AJadF7",
+        "richtext_GzQnKU"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_nRQAFX": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/Photo_6-4-2025_10_37_56_am.jpg",
+        "background_image_2": "shopify://shop_images/Photo_6-4-2025_8_58_11_am_5.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_TAGh9K": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WUpUan": {
+          "type": "title",
+          "settings": {
+            "title": "How to spend the perfect day",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_ebrRYe": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>\"The perfect day starts with a sunrise swim and ends with a sunset gin and tonic and another swim. The island also has a private chef, a local who the owner met a few years ago and every single thing he creates is absolutely incredible. I couldn’t get enough of the chicken adobo, and he made a traditional dinner for us on the last night that you eat with your hands which was an absolute stand out.</p><p></p><p>What most people don't know either is the hospitality is incredible. Everyone was so friendly and kind and it was truly such a warm and welcoming culture.\"</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WUpUan",
+        "richtext_ebrRYe"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_eiGjC6": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/Photo_6-4-2025_6_01_30_pm_1.jpg",
+        "background_image_2": "shopify://shop_images/Photo_5-4-2025_7_21_39_am_2__1.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_kGrEDf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_nzr3wb": {
+          "type": "title",
+          "settings": {
+            "title": "The travel companions you need",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_MBaQU3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>\"I never travel to a tropical location without sunscreen and mosquito repellant. And my girlfriends. Then we can giggle and gossip over wines while we're getting ready and swap FAITHFULL outifts.\"</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_nzr3wb",
+        "richtext_MBaQU3"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_X676KC": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/Photo_5-4-2025_8_05_03_am_3.jpg",
+        "background_image_2": "shopify://shop_images/Photo_5-4-2025_7_45_17_am.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "featured_articles_m8WKWF": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_cRfk9g": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-palm-springs-travel-guide"
+          }
+        },
+        "article_NXMDzb": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-marseille-travel-guide-with-parysatis"
+          }
+        },
+        "article_irhEng": {
+          "type": "article",
+          "settings": {
+            "article": "journal/cape-town-travel-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_cRfk9g",
+        "article_NXMDzb",
+        "article_irhEng"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "enya-midi-dress-meleu-stripe-multi",
+          "ana-top-colette-floral-multi",
+          "juliet-mini-dress-white",
+          "jamie-midi-dress-white"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_BNpN6Q",
+    "rich_text_wc4xUY",
+    "editorial_layout_nRQAFX",
+    "rich_text_TAGh9K",
+    "editorial_layout_eiGjC6",
+    "rich_text_kGrEDf",
+    "editorial_layout_X676KC",
+    "featured_articles_m8WKWF",
+    "featured_products_3zGbcJ"
+  ]
+}

@@ -1,0 +1,134 @@
+<div data-section-id="{{ section.id }}" data-section-type="product-modals">
+  {%- liquid
+    assign modal_ids = ''
+
+    for block in section.blocks
+      if modal_ids contains block.settings.type
+        continue
+      endif
+
+      assign modal_ids = modal_ids | append: block.settings.type | append: ','
+
+      assign modal_header = block.settings.title
+      assign modal_class = 'drawer ' | append: block.settings.type
+      assign modal_id = block.settings.type
+
+      capture modal_content
+        for index in (1..4)
+          assign title_key = 'content_title_' | append: index
+          assign text_key = 'content_text_' | append: index
+
+          if block.settings[title_key] != blank
+            echo '<h3 class="product-modal__title h6">' | append: block.settings[title_key] | append: '</h3>'
+          endif
+
+          if block.settings[text_key] != blank
+            assign text = block.settings[text_key] | replace: 'h1>', 'h4>' | replace: 'h2>', 'h4>' | replace: 'h3>', 'h4>' | replace: '<h4>', '<h4 class="h6">'
+            echo '<div class="product-modal__text rte">' | append: text | append: '</div>'
+          endif
+
+          if forloop.index == 1 and block.settings.type == 'size-guide'
+            render 'size-table'
+          endif
+        endfor
+      endcapture
+
+      render 'component-modal-dialog', modal_class: modal_class, modal_id: modal_id, modal_header: modal_header, modal_content: modal_content
+    endfor
+  -%}
+</div>
+
+{% render 'vite-tag' with '@/scripts/sections/product-modals.js' %}
+
+{% schema %}
+  {
+    "name": "Product Modals",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "modal",
+        "name": "Modal",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Modal Settings"
+          },
+          {
+            "type": "select",
+            "id": "type",
+            "label": "Modal Type",
+            "info": "Select the type of modal you want to display. Only one modal of each type can be displayed at a time.",
+            "options": [
+              {
+                "value": "shipping",
+                "label": "Shipping"
+              },
+              {
+                "value": "returns",
+                "label": "Returns"
+              },
+              {
+                "value": "size-guide",
+                "label": "Size Guide"
+              },
+              {
+                "value": "installments",
+                "label": "Installments"
+              }
+            ]
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Modal Title"
+          },
+          {
+            "type": "header",
+            "content": "Modal Content"
+          },
+          {
+            "type": "text",
+            "id": "content_title_1",
+            "label": "Content Title 1",
+            "default": "Content Title"
+          },
+          {
+            "type": "richtext",
+            "id": "content_text_1",
+            "label": "Content Text 1"
+          },
+          {
+            "type": "text",
+            "id": "content_title_2",
+            "label": "Content Title 2"
+          },
+          {
+            "type": "richtext",
+            "id": "content_text_2",
+            "label": "Content Text 2"
+          },
+          {
+            "type": "text",
+            "id": "content_title_3",
+            "label": "Content Title 3"
+          },
+          {
+            "type": "richtext",
+            "id": "content_text_3",
+            "label": "Content Text 3"
+          },
+          {
+            "type": "text",
+            "id": "content_title_4",
+            "label": "Content Title 4"
+          },
+          {
+            "type": "richtext",
+            "id": "content_text_4",
+            "label": "Content Text 4"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,158 @@
+{%- comment -%}
+  Parameters
+  disruptor: {metaobject} Collection Disruptor Tile metaobject
+{%- endcomment -%}
+
+{%- if current_page == 1 and disruptor.enabled == true -%}
+  {%- liquid
+    assign disruptor_title = disruptor.title
+    assign disruptor_text = disruptor.text
+    assign disruptor_content_position = disruptor.content_position | default: 'bottom-left'
+
+    assign disruptor_content_position_mobile = disruptor.content_position_mobile | default: 'bottom'
+    assign disruptor_content_position_mobile = disruptor_content_position_mobile | append: '--max-lg'
+
+    assign disruptor_image = disruptor.image.value
+    assign disruptor_image_2 = disruptor.image2.value
+    assign disruptor_use_split_image = disruptor.use_split_image | default: true
+    assign disruptor_aspect_ratio = disruptor.image_aspect_ratio | default: 'portrait' | replace: ':', '-'
+
+    assign disruptor_link = disruptor.link
+    assign disruptor_link_label = disruptor.link_label
+
+    assign content_alignment = disruptor.content_alignment | default: 'left'
+    assign content_alignment = 'text-' | append: content_alignment
+
+    assign content_alignment_mobile = disruptor.content_alignment_mobile | default: 'left'
+    assign content_alignment_mobile = 'text-' | append: content_alignment_mobile | append: '--max-lg'
+
+    assign mobile_row_number = disruptor.mobile_row_number | default: 1
+    assign desktop_row_number = disruptor.desktop_row_number | default: 1
+
+    assign mobile_column_start_number = disruptor.mobile_column_start_number | default: 1
+    assign mobile_column_end_number = disruptor.mobile_column_end_number | default: 1
+    assign mobile_column_end_number = mobile_column_end_number | plus: 1
+
+    assign desktop_column_start_number = disruptor.desktop_column_start_number | default: 1
+    assign desktop_column_end_number = disruptor.desktop_column_end_number | default: 1
+    assign desktop_column_end_number = desktop_column_end_number | plus: 1
+
+    if mobile_column_start_number == mobile_column_end_number
+      assign mobile_column_end_number = mobile_column_start_number | plus: 1
+    endif
+
+    if mobile_column_start_number > 2
+      assign mobile_column_start_number = 2
+    endif
+
+    if mobile_column_end_number > 3
+      assign mobile_column_end_number = 3
+    endif
+
+    if desktop_column_start_number == desktop_column_end_number
+      assign desktop_column_end_number = desktop_column_start_number | plus: 1
+    endif
+
+    if desktop_column_start_number > 4
+      assign desktop_column_start_number = 4
+    endif
+
+    if desktop_column_end_number > 5
+      assign desktop_column_end_number = 5
+    endif
+
+    assign is_mobile_span = false
+    if mobile_column_start_number == 1 and mobile_column_end_number == 3
+      assign is_mobile_span = true
+    endif
+
+    # default grid is 3 columns, alt grid is 4 columns on desktop
+    # mobile grid is always 2 columns
+
+    assign desktop_disruptor_span = 'disruptor-span__portrait'
+    assign desktop_disruptor_span_alt = 'disruptor-span__portrait-alt'
+    assign desktop_column_span = desktop_column_end_number | minus: desktop_column_start_number
+
+    if desktop_column_span == 1
+      assign desktop_disruptor_span = 'disruptor-span__portrait'
+      assign desktop_disruptor_span_alt = 'disruptor-span__portrait-alt'
+    elsif desktop_column_span > 1
+      assign desktop_disruptor_span = 'disruptor-span__landscape'
+      assign desktop_disruptor_span_alt = 'disruptor-span__landscape-alt'
+
+      if desktop_column_span == 3
+        assign desktop_disruptor_span = 'disruptor-span__landscape'
+        assign desktop_disruptor_span_alt = 'disruptor-span__2-1-alt'
+      else
+        assign desktop_disruptor_span_alt = 'disruptor-span__landscape-alt'
+      endif
+    endif
+
+    assign mobile_disruptor_span = 'disruptor-span__portrait--max-lg'
+    assign mobile_column_span = mobile_column_end_number | minus: mobile_column_start_number
+
+    if mobile_column_span == 1
+      assign mobile_disruptor_span = 'disruptor-span__portrait--max-lg'
+    elsif mobile_column_span > 1
+      assign mobile_disruptor_span = 'disruptor-span__landscape--max-lg'
+    endif
+
+    assign disruptor_span_classes = mobile_disruptor_span | append: ' ' | append: desktop_disruptor_span | append: ' ' | append: desktop_disruptor_span_alt
+
+    assign content_classes = disruptor_content_position | append: ' ' | append: disruptor_content_position_mobile | append: ' ' | append: content_alignment | append: ' ' | append: content_alignment_mobile
+  -%}
+
+  <li
+    class="results-grid__tile results-grid__disruptor-tile{% if disruptor_image != blank %} has-background{% endif %}"
+    style="
+      --mobile-row: {{ mobile_row_number }};
+      --desktop-row: {{ desktop_row_number }};
+      --mobile-column-start: {{ mobile_column_start_number }};
+      --mobile-column-end: {{ mobile_column_end_number }};
+      --desktop-column-start: {{ desktop_column_start_number }};
+      --desktop-column-end: {{ desktop_column_end_number }};
+    "
+    data-results-grid-item
+    {% if is_mobile_span %}
+      data-mobile-column-span
+    {% endif %}
+    data-desktop-column-start="{{ desktop_column_start_number }}"
+    data-desktop-column-end="{{ desktop_column_end_number }}"
+  >
+    <div class="disruptor-tile product-card">
+      <div class="product-card__top {{ disruptor_span_classes }}">
+        <div class="disruptor-tile__background">
+          {%- if disruptor_image != blank -%}
+            {%- render 'component-image',
+              image: disruptor_image,
+              aspect_ratio: disruptor_aspect_ratio,
+              max_width: 960,
+              sizes: '(min-width: 61.875rem) calc(100vw / 4), calc(100vw / 2)'
+            -%}
+          {%- endif -%}
+
+          {%- if disruptor_image_2 != blank and disruptor_use_split_image -%}
+            {%- render 'component-image',
+              image: disruptor_image_2,
+              aspect_ratio: disruptor_aspect_ratio,
+              max_width: 960,
+              sizes: '(min-width: 61.875rem) calc(100vw / 4), calc(100vw / 2)'
+            -%}
+          {%- endif -%}
+        </div>
+
+        <div class="disruptor-tile__content {{ content_classes }}">
+          {%- if disruptor_title != blank -%}
+            <h2 class="disruptor-tile__title">{{ disruptor_title }}</h2>
+          {%- endif -%}
+          {%- if disruptor_text != blank -%}
+            <p class="disruptor-tile__text">{{ disruptor_text }}</p>
+          {%- endif -%}
+          {%- if disruptor_link != blank -%}
+            <a href="{{ disruptor_link }}" class="disruptor-tile__link btn btn--text">{{ disruptor_link_label }}</a>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </li>
+{%- endif -%}

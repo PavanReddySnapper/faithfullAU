@@ -1,0 +1,461 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_84906989-a6fe-4a08-a80f-bc555a695d3a.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "In Conversation With Villa Cléo",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>The Spring 2025 collection, La Madrague, remains an ode to the golden age of St Tropez throughout the 1960s, drawing inspiration from a photographic series by Willy Rizzo and Brigette Bardot’s vacation home. To capture the essence of the golden age along the French Riviera, the creative team captured the collection against the backdrop of <a href=\"https://www.instagram.com/villacleocanadel/?hl=en\"><span style=\"text-decoration:underline\">Villa Cléo</span></a>, a provençale villa in St Tropez. </p><p>The villa muses vintage design references – bespoke floral prints, unique decor, rattan, beach chairs and wood paneling – with oceanfront views and a rustic stone pool, designed with sunset aperitivo hours in mind. Below, Marie-Sophie of Villa Cléo shares intimate design notes, her sources of inspiration and a local’s recipe to the perfect St Tropez evening. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_hdwEph": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/2_f262e48f-03ff-459a-b6bd-4d3bd6d46fed.webp",
+        "background_image_2": "shopify://shop_images/3_7042448d-edfb-4856-98e2-98367b6d155f.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "second--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "How would you describe Villa Cleo?",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>South of France as you’ve always imagined her to be but thought no longer existed. Simple, unassuming, wild. A place where the indoors and outdoors become one. Where the ocean feels both near and vast, as if you’re overlooking the entire coast, but in reality you are a mere stone’s throw from the sea. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "rich_text_3cbpcH": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AH6XpN": {
+          "type": "title",
+          "settings": {
+            "title": "When it came to designing the space, where did you look for sources of inspiration and direction?",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_4LaC33": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Casa Malaparte, for its playful stairs. Georgia O’Keeffe’s Ghost Ranch for additional touches. And the simplicity of 1960s provençal houses. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AH6XpN",
+        "richtext_4LaC33"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_eb61c878-57c4-490b-a850-3dcaa35632bb.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Could you speak to some of your favourite design notes at Villa Cleo? What makes your space so unique?",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We chose Pierre de Bormes, the signature stone of the region, to cover indoor and outdoor flooring and to surround the pool. We also used it on the guest house walls to blend seamlessly with nature.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "rich_text_6UGKcF": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AGX9ai": {
+          "type": "title",
+          "settings": {
+            "title": "Where did you source some of your vintage pieces? And can you provide some examples?",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_NW4Pgh": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We have pieces from all over. Vintage Brazilian furniture like the Sergio Rodrigues buffet; Moroccan carpeting’ and fabrics sourced from Saint-Germain in Paris. We found our round Pierre Chapo dining table at Les Puces in Paris and some Walter Lamb furniture at a gallery in LA. We also started visiting local flea markets and drove to Provence to find glasses, cutlery, and lamps. I also found many beautiful Vallauris plates on Selency, a French online flea market.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AGX9ai",
+        "richtext_NW4Pgh"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/5_2266f4e8-4c59-4f24-8cf6-79ff4108652e.webp",
+        "background_image_2": "shopify://shop_images/6_5d7a4e41-9345-4d63-a4ae-c902232fe76e.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Could you describe a perfect evening at Villa Cleo?",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>It starts with an aperitivo hour. We trade beach simplicity for effortless elegance. Françoise Hardy plays loudly; drinks are served on the terrace; and the sky turns pink. Dinner follows, bringing long Mediterranean summer evenings and the night ends with a midnight dip in the pool.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "MARIE-SOPHIE'S ESSENTIALS",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "soame-maxi-dress-espresso-geo",
+          "emily-bikini-top-white",
+          "cerise-mini-dress-black",
+          "leo-bikini-bottom-black"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/a-guide-to-paris"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/copenhagen-travel-guide"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/milan-travel-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_eUJjCy",
+        "article_zPApBT",
+        "article_n84pcB"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_hdwEph",
+    "rich_text_UbFWPp",
+    "rich_text_3cbpcH",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "rich_text_6UGKcF",
+    "editorial_layout_BNpN6Q",
+    "rich_text_K4xM3c",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

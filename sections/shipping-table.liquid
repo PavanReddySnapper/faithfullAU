@@ -1,0 +1,120 @@
+<div class="shipping-table" data-section-id="{{ section.id }}" data-section-type="shipping-table">
+  <div class="container container--sm">
+    {%- if section.settings.title != blank -%}
+      <h2 class="h6">{{ section.settings.title }}</h2>
+    {%- endif -%}
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="shipping-table__rates">
+        {%- for block in section.blocks -%}
+          <div class="shipping-table__rate ">
+            <div class="body-medium">{{ block.settings.title }}</div>
+            <div class="body-medium">{{ block.settings.price }}</div>
+            {%- if block.settings.description != blank -%}
+              <div class="shipping-table__rate-description">{{ block.settings.description }}</div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.disclaimer != blank -%}
+      <div class="shipping-table__disclaimer">{{ section.settings.disclaimer }}</div>
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Shipping Table",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "disclaimer",
+        "label": "Table Disclaimer",
+        "info": "This text will appear below the shipping table."
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 80
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 64
+      }
+    ],
+    "blocks": [
+      {
+        "type": "shipping_rate",
+        "name": "Shipping Rate",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Shipping Rate Settings"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "text",
+            "id": "price",
+            "label": "Price"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "description",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shipping Table",
+        "category": "Text"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["page"]
+    }
+  }
+{% endschema %}

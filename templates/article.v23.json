@@ -1,0 +1,447 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/IMG_4187_VSCO.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The St Tropez Travel Guide",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Once a quaint sun-drenched fishing village, through the 1950s and 60s St Tropez transformed into a beloved haunt of Parisian society, with the likes of Brigitte Bardot and Roger Vadim spending their summers there. Today, it remains a popular holiday destination for locals and travellers alike whilst still radiating rustic charm with cotton candy coloured buildings, wide stretches of Mediterranean blue oceans, cobbled beaches and charming boutique hotels. </p><p>The backdrop and inspiration for the Spring 2025 collection, <a href=\"https://au.faithfullthebrand.com/pages/la-madrague\" title=\"https://au.faithfullthebrand.com/pages/la-madrague\">La Madrague</a>, below discover the creative team’s guide to visiting St Tropez in the South of France. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/16A062AF-AAE6-4FDE-8E4B-ED186F4946E2.jpg",
+        "background_image_2": "shopify://shop_images/IMG_6178.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_wc4xUY": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AJadF7": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_GzQnKU": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/hotel.la.ponche/?hl=en \" title=\"https://www.instagram.com/hotel.la.ponche/?hl=en \">Hotel La Ponche</a></p><p><a href=\"https://www.instagram.com/hotelloupinet/?hl=en \" title=\"https://www.instagram.com/hotelloupinet/?hl=en \">Hotel Lou Pinet</a></p><p><a href=\"https://www.instagram.com/white1921sttropez/?hl=en \" title=\"https://www.instagram.com/white1921sttropez/?hl=en \">White 1921</a></p><p><a href=\"https://www.instagram.com/villacleocanadel/?hl=en \" title=\"https://www.instagram.com/villacleocanadel/?hl=en \">Villa Cléo</a></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AJadF7",
+        "richtext_GzQnKU"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_nRQAFX": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_0320_1.jpg",
+        "background_image_2": "shopify://shop_images/ae0d767e-d82e-4c5e-8d7f-a61fc9aaaeb6.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_TAGh9K": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WUpUan": {
+          "type": "title",
+          "settings": {
+            "title": "Where to drink and dine",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_ebrRYe": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/senequier_sainttropez/?hl=en \" title=\"https://www.instagram.com/senequier_sainttropez/?hl=en \">⁠Senequier</a></p><p><a href=\"https://www.instagram.com/lapesquiereetlemazagran/?hl=en \" title=\"https://www.instagram.com/lapesquiereetlemazagran/?hl=en \">La Pesquiere at le Mazagran</a></p><p><a href=\"https://www.instagram.com/lecafesainttropez/?hl=en \" title=\"https://www.instagram.com/lecafesainttropez/?hl=en \">Le Cafe </a></p><p>La Ramade </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WUpUan",
+        "richtext_ebrRYe"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_eiGjC6": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/301a7f70-19a7-4893-a2aa-7dc9f5e7b26d.jpg",
+        "background_image_2": "shopify://shop_images/IMG_0704_1.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_kGrEDf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_nzr3wb": {
+          "type": "title",
+          "settings": {
+            "title": "Where to swim",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_MBaQU3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>⁠La Ponche</p><p>⁠Plage de la Glaye</p><p>⁠Plage de Graniers</p><p>Plage de l’escalet</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_nzr3wb",
+        "richtext_MBaQU3"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_X676KC": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_8640.heic",
+        "background_image_2": "shopify://shop_images/PHOTO-2024-06-19-17-06-40.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_aYgH7g": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9P8VFy": {
+          "type": "title",
+          "settings": {
+            "title": "Where to find the best beach clubs",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_g9Ay6F": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/leclub55official/?hl=en \" title=\"https://www.instagram.com/leclub55official/?hl=en \">Le Club 55</a></p><p><a href=\"https://gigi-restaurant.com/saint-tropez/ \" title=\"https://gigi-restaurant.com/saint-tropez/ \">Gigi’s </a></p><p><a href=\"https://www.instagram.com/lesgraniers.sainttropez/ \" title=\"https://www.instagram.com/lesgraniers.sainttropez/ \">Le Granier</a></p><p><a href=\"https://www.tropicanaclub.fr/ \" title=\"https://www.tropicanaclub.fr/ \">Tropicana Club </a></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_9P8VFy",
+        "richtext_g9Ay6F"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_articles_m8WKWF": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_cRfk9g": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-philippines-travel-guide-with-emily-yates"
+          }
+        },
+        "article_NXMDzb": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-marseille-travel-guide-with-parysatis"
+          }
+        },
+        "article_irhEng": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-miami-travel-guide-with-duda-teixeira"
+          }
+        }
+      },
+      "block_order": [
+        "article_cRfk9g",
+        "article_NXMDzb",
+        "article_irhEng"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "ania-bikini-top-meleu-stripe-multi",
+          "antibes-strapless-top-meleu-stripe-multi",
+          "stevie-trouser-coffee",
+          "yeva-bikini-top-verte-multi"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_BNpN6Q",
+    "rich_text_wc4xUY",
+    "editorial_layout_nRQAFX",
+    "rich_text_TAGh9K",
+    "editorial_layout_eiGjC6",
+    "rich_text_kGrEDf",
+    "editorial_layout_X676KC",
+    "rich_text_aYgH7g",
+    "featured_articles_m8WKWF",
+    "featured_products_3zGbcJ"
+  ]
+}

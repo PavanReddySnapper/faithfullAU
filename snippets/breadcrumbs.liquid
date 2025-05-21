@@ -1,0 +1,74 @@
+<div class="container container--fluid">
+  {%- unless request.page_type == 'index'
+    or request.page_type == 'cart'
+    or request.page_type == 'list-collections'
+    or request.page_type == '404'
+  -%}
+    <nav class="breadcrumbs" aria-label="{{ 'general.breadcrumbs.label' | t }}">
+      <ol class="breadcrumbs__list">
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link" href="{{ routes.root_url }}"><span>Home</span></a>
+        </li>
+        {%- if request.page_type == 'page' -%}
+          <li class="breadcrumbs__item">
+            <span>{{ page.title }}</span>
+          </li>
+        {%- elsif request.page_type == 'product' -%}
+          {%- if collection.url -%}
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="{{ collection.url }}"
+                ><span>{{ collection.title }}</span></a
+              >
+            </li>
+          {%- endif -%}
+          <li class="breadcrumbs__item">
+            <span>{{ product.title }}</span>
+          </li>
+        {%- elsif request.page_type == 'collection' and collection.handle -%}
+          {%- if current_tags -%}
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="{{ collection.url }}"
+                ><span>{{ collection.title }}</span></a
+              >
+            </li>
+            <li class="breadcrumbs__item">
+              <span>{{ current_tags | join: ' + ' }}</span>
+            </li>
+          {%- else -%}
+            <li class="breadcrumbs__item">
+              <span>{{ collection.title }}</span>
+            </li>
+          {%- endif -%}
+        {%- elsif request.page_type == 'blog' -%}
+          {%- if current_tags -%}
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="{{ blog.url }}"
+                ><span>{{ blog.title }}</span></a
+              >
+            </li>
+            <li class="breadcrumbs__item">
+              <span>{{ current_tags | join: ' + ' }}</span>
+            </li>
+          {%- else -%}
+            <li class="breadcrumbs__item">
+              <span>{{ blog.title }}</span>
+            </li>
+          {%- endif -%}
+        {%- elsif request.page_type == 'article' -%}
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="{{ blog.url }}"
+              ><span>{{ blog.title }}</span></a
+            >
+          </li>
+          <li class="breadcrumbs__item">
+            <span>{{ article.title }}</span>
+          </li>
+        {%- else -%}
+          <li class="breadcrumbs__item">
+            <span>{{ page_title }}</span>
+          </li>
+        {%- endif -%}
+      </ol>
+    </nav>
+  {%- endunless -%}
+</div>

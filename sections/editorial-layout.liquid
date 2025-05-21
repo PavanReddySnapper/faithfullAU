@@ -1,0 +1,602 @@
+{%- liquid
+  assign block_width = 'half'
+  assign max_width = 1600
+  assign sizes = '(min-width: 48rem) 50vw, 100vw'
+  assign aspect_ratio = 'portrait'
+  assign text_color_mobile = section.settings.text_color_mobile
+  assign text_color_desktop = section.settings.text_color_desktop
+  assign background_color = section.settings.background_color
+  assign background_image = section.settings.background_image
+  assign background_image_2 = section.settings.background_image_2
+  assign image_button_label = section.settings.image_button_label
+  assign image_button_link = section.settings.image_button_link
+  assign image_button_style = section.settings.image_button_style
+  assign padding_mobile = section.settings.padding_mobile
+  assign hide_button_mobile = section.settings.hide_button_mobile
+  assign hide_content_mobile = section.settings.hide_content_mobile
+  assign pre_title = section.settings.pre_title
+  assign title = section.settings.title
+  assign content = section.settings.content
+  assign button_label = section.settings.button_label
+  assign button_link = section.settings.button_link
+  assign button_style = section.settings.button_style
+  assign hide_image = section.settings.hide_image
+  assign content_layout = section.settings.content_layout
+  assign content_layout_desktop = section.settings.content_layout_desktop
+
+  assign image_content_classes_1 = ''
+  assign image_content_classes_2 = ''
+
+  if content_layout contains 'first'
+    assign image_content_classes_1 = ' ' | append: content_layout
+  else
+    assign image_content_classes_2 = ' ' | append: content_layout
+  endif
+  if content_layout_desktop contains 'first'
+    assign image_content_classes_1 = image_content_classes_1 | append: ' ' | append: content_layout_desktop
+  else
+    assign image_content_classes_2 = image_content_classes_2 | append: ' ' | append: content_layout_desktop
+  endif
+
+  assign show_button = false
+  if button_label != blank and button_link != blank
+    assign show_button = true
+  endif
+
+  capture img_alt
+    if background_image.alt != blank
+      echo background_image.alt
+    elsif section.settings.title != blank
+      echo section.settings.title
+    elsif section.settings.button_label != blank
+      echo section.settings.button_label
+    endif
+  endcapture
+
+  capture img_alt_2
+    if background_image_2.alt != blank
+      echo background_image_2.alt
+    elsif section.settings.title != blank
+      echo section.settings.title
+    elsif section.settings.button_label != blank
+      echo section.settings.button_label
+    endif
+  endcapture
+
+  capture section_classes
+    echo 'container '
+    echo block.settings.container_width | append: ' '
+    echo 'image--' | append: aspect_ratio | append: ' '
+    echo block_width
+  endcapture
+-%}
+
+{% if background_image != blank and background_image_2 != blank %}
+  {%- capture section_styles -%}
+    --text-color-mobile: var({{ text_color_mobile }});
+    --text-color-desktop: var({{ text_color_desktop }});
+    {% if background_color != '' %}--background-color: var({{ background_color }});{% endif %}
+  {%- endcapture -%}
+
+  <section
+    class="section section-editorial-layout"
+    data-section-id="{{ section.id }}"
+    data-section-type="editorial-layout"
+    {% if section_styles != blank %}
+      style="{{ section_styles }}"
+    {% endif %}
+  >
+    <div class="editorial-layout__container container container--fluid container--flush">
+      <div class="editorial-layout__image-content{{ image_content_classes_1 }}{% unless padding_mobile %} image--no-padding{% endunless %}">
+        <div class="editorial-layout__image{% if hide_image == 'first' %} hide--max-md{% endif %}">
+          {%- render 'component-image',
+            image: background_image,
+            img_alt: img_alt,
+            max_width: max_width,
+            sizes: sizes,
+            aspect_ratio: aspect_ratio
+          -%}
+        </div>
+        {% if content_layout contains 'first' or content_layout_desktop contains 'first' %}
+          <div class="editorial-layout__content text-left">
+            {% if image_button_label != blank and image_button_link != blank %}
+              <p class="editorial-layout__image-button{% if hide_button_mobile %} hide--max-md{% endif %}">
+                <a
+                  class="btn btn--{{ image_button_style }}"
+                  href="{{ image_button_link }}"
+                >
+                  {{ image_button_label }}
+                </a>
+              </p>
+            {% endif %}
+            <div
+              {% if hide_content_mobile %}
+                class="hide--max-md"
+              {% endif %}
+            >
+              {% render 'section-content',
+                text_color: text_color_mobile,
+                pre_title_size: 'h6',
+                pre_title: pre_title,
+                title_size: 'h2',
+                title: title,
+                content_size: 'body-medium',
+                content: content,
+                show_button_1: show_button,
+                button_label_1: button_label,
+                button_link_1: button_link,
+                button_style_1: button_style
+              %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+      <div class="editorial-layout__image-content{{ image_content_classes_2 }}{% unless padding_mobile %} image--no-padding{% endunless %}">
+        <div class="editorial-layout__image{% if hide_image == 'second' %} hide--max-md{% endif %}">
+          {%- render 'component-image',
+            image: background_image_2,
+            img_alt: img_alt_2,
+            max_width: max_width,
+            sizes: sizes,
+            aspect_ratio: aspect_ratio
+          -%}
+        </div>
+        {% if content_layout contains 'second' or content_layout_desktop contains 'second' %}
+          <div class="editorial-layout__content text-left">
+            {% if image_button_label != blank and image_button_link != blank %}
+              <p class="editorial-layout__image-button{% if hide_button_mobile %} hide--max-md{% endif %}">
+                <a
+                  class="btn btn--{{ image_button_style }}"
+                  href="{{ image_button_link }}"
+                >
+                  {{ image_button_label }}
+                </a>
+              </p>
+            {% endif %}
+            <div
+              {% if hide_content_mobile %}
+                class="hide--max-md"
+              {% endif %}
+            >
+              {% render 'section-content',
+                text_color: text_color_mobile,
+                pre_title_size: 'h6',
+                pre_title: pre_title,
+                title_size: 'h2',
+                title: title,
+                content_size: 'body-medium',
+                content: content,
+                show_button_1: show_button,
+                button_label_1: button_label,
+                button_link_1: button_link,
+                button_style_1: button_style
+              %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-top: {{ section.settings.top_margin_mobile }}px;
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-top: {{ section.settings.top_margin_desktop }}px;
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+
+    #shopify-section-{{ section.id }} .editorial-layout__content {
+      padding-top: {{ section.settings.image_content_spacing_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Editorial Layout",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Image settings"
+      },
+      {
+        "type": "paragraph",
+        "content": "Both images must be added for this section to be displayed"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background image 1 - required",
+        "info": "Recommended size: 1600px x 2400px"
+      },
+      {
+        "type": "image_picker",
+        "id": "background_image_2",
+        "label": "Background image 2 - required",
+        "info": "Recommended size: 1600px x 2400px"
+      },
+      {
+        "type": "header",
+        "content": "Image content"
+      },
+      {
+        "type": "select",
+        "id": "hide_image",
+        "label": "Hide image - mobile",
+        "info": "Mobile only. Able to show both images, hide first or second image",
+        "default": "",
+        "options": [
+          {
+            "value": "",
+            "label": "Show both images"
+          },
+          {
+            "value": "first",
+            "label": "Hide first image"
+          },
+          {
+            "value": "second",
+            "label": "Hide second image"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "content_layout",
+        "label": "Content Layout - mobile",
+        "default": "first--max-md first--above",
+        "options": [
+          {
+            "value": "first--max-md first--above",
+            "label": "Content above first image"
+          },
+          {
+            "value": "first--max-md",
+            "label": "Content below first image"
+          },
+          {
+            "value": "on-first--max-md",
+            "label": "Content on first image"
+          },
+          {
+            "value": "second--max-md second--above",
+            "label": "Content above second image"
+          },
+          {
+            "value": "second--max-md",
+            "label": "Content below second image"
+          },
+          {
+            "value": "on-second--max-md",
+            "label": "Content on second image"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "content_layout_desktop",
+        "label": "Content Layout - desktop",
+        "info": "Content on first or second image",
+        "default": "first--min-md",
+        "options": [
+          {
+            "value": "first--min-md",
+            "label": "Content on first image"
+          },
+          {
+            "value": "second--min-md",
+            "label": "Content on second image"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "padding_mobile",
+        "label": "Show padding on mobile",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_button_mobile",
+        "label": "Hide button under image - mobile only",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "image_button_label",
+        "label": "Button label for image",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "image_button_link",
+        "label": "Button link for image",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "image_button_style",
+        "label": "Image button styles",
+        "default": "text",
+        "options": [
+          {
+            "value": "link",
+            "label": "Text with underline"
+          },
+          {
+            "value": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "image_content_spacing_desktop",
+        "label": "Spacing between Image and Text Content - desktop",
+        "default": "16px",
+        "options": [
+          {
+            "value": "16px",
+            "label": "Small"
+          },
+          {
+            "value": "24px",
+            "label": "Medium"
+          },
+          {
+            "value": "32px",
+            "label": "Large"
+          },
+          {
+            "value": "40",
+            "label": "Extra Large"
+          },
+          {
+            "value": "48",
+            "label": "Extra-extra Large"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_content_mobile",
+        "label": "Hide Content - mobile only",
+        "default": false
+      },
+      {
+        "type": "inline_richtext",
+        "id": "pre_title",
+        "label": "Pre title"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "inline_richtext",
+        "id": "content",
+        "label": "Content"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Content Button label",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Content Button link",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Content button styles",
+        "default": "link",
+        "options": [
+          {
+            "value": "link",
+            "label": "Text with underline"
+          },
+          {
+            "value": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Styles"
+      },
+      {
+        "type": "select",
+        "id": "text_color_mobile",
+        "label": "Text Color - mobile",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_color_desktop",
+        "label": "Text Color - desktop",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "background_color",
+        "label": "Background Color",
+        "default": "",
+        "options": [
+          {
+            "value": "",
+            "label": "None"
+          },
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "top_margin_desktop",
+        "label": "Top Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_desktop",
+        "label": "Bottom Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "top_margin_mobile",
+        "label": "Top Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_mobile",
+        "label": "Bottom Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Editorial Layout"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

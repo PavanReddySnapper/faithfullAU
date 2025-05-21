@@ -1,0 +1,57 @@
+{% assign description = collection.description | default: section.settings.description %}
+{%- if description != blank -%}
+  {%- liquid
+    if description contains '</p>'
+      assign description_split = description | split: '</p>'
+      assign visible_text = description_split[0] | append: '</p>'
+      assign hidden_text = description | replace: visible_text, ''
+    endif
+  -%}
+
+  <div data-section-id="{{ section.id }}" data-section-type="collection-footer">
+    <div class="container container--sm">
+      <div class="collection-footer__content text-center">
+        <div class="rte">
+          {% if hidden_text != blank and visible_text != blank %}
+            <div>{{ visible_text }}</div>
+
+            <div id="collection-description" class="collection-footer__collapse" data-collection-footer-collapsible>
+              {{ hidden_text }}
+            </div>
+
+            <button
+              class="collection-footer__toggle btn"
+              aria-expanded="false"
+              aria-controls="collection-description"
+              data-collection-footer-toggle
+            >
+              {{ 'collections.general.read_more' | t }}
+            </button>
+          {% else %}
+            {{ description }}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endif -%}
+
+{% render 'vite-tag' with '@/scripts/sections/collection-footer.js' %}
+
+{% schema %}
+  {
+    "name": "Collection Footer",
+    "class": "collection-footer",
+    "settings": [
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "info": "When set, it will overwrite the collection description if applicable. Recommended to use this only on Search template"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["collection", "search"]
+    }
+  }
+{% endschema %}

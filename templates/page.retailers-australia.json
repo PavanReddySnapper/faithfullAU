@@ -1,0 +1,450 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "container--sm",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "main_page_header_hEMyiV": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Our Retailers",
+        "is_primary_heading": false,
+        "page_nav": "retailers-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_xKWLbM": {
+      "type": "store-locator",
+      "blocks": {
+        "store_tzzKHt": {
+          "type": "store",
+          "settings": {
+            "title": "David Jones",
+            "contact": "<p>Available online and in stores across multiple locations in Australia<br/><br/>13 33 57<br/>https://www.davidjones.com<br/></p>"
+          }
+        },
+        "store_8ErBA3": {
+          "type": "store",
+          "settings": {
+            "title": "Net-A-Porter",
+            "contact": "<p>Available online at Net-A-Porter<br/><br/>https://www.net-a-porter.com/<br/></p>"
+          }
+        },
+        "store_GnB4eY": {
+          "type": "store",
+          "settings": {
+            "title": "Girls With Gems",
+            "contact": "<p>Available online at Girls With Gems<br/><br/>+61 413 488 823<br/>https://www.girlswithgems.com<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_tzzKHt",
+        "store_8ErBA3",
+        "store_GnB4eY"
+      ],
+      "settings": {
+        "title": "Australia - Online",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_y87bit": {
+      "type": "store-locator",
+      "blocks": {
+        "store_PEEbCc": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Coco & Lola",
+            "contact": "<p>35 Bay St,<br/>Double Bay, NSW, 2028<br/><br/>+61 472 506 089<br/>https://cocoandlola.com.au</p>"
+          }
+        },
+        "store_F9Ce8F": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Coco & Lola",
+            "contact": "<p>2/13 Whistler Street,<br/>Manly, 2095, NSW<br/><br/>+61 434 248 298<br/>https://cocoandlola.com.au</p>"
+          }
+        },
+        "store_DrpLaD": {
+          "type": "store",
+          "settings": {
+            "title": "Cupid & Beau",
+            "contact": "<p>396 Banna Avenue,<br/>Griffith, NSW, 2680</p><p><br/>(02) 6964 5080<br/>https://cupidandbeau.com.au</p>"
+          }
+        },
+        "store_AEDEqT": {
+          "type": "store",
+          "settings": {
+            "title": "Elysian  Collective",
+            "contact": "<p>4/49 Waterloo Street,<br/>Narrabeen, NSW, 2101<br/><br/>(07) 5474 9580<br/>https://elysiancollective.com.au</p>"
+          }
+        },
+        "store_BjgM6r": {
+          "type": "store",
+          "settings": {
+            "title": "Emte Boutique",
+            "contact": "<p>2/22 Bay Street,<br/>Tweed Heads, NSW, 2485<br/><br/>(07) 5474 9580<br/>https://www.emteboutique.com</p>"
+          }
+        },
+        "store_6nMAkW": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Fox & Dove",
+            "contact": "<p>2A, 75 Gould St,<br/>Bondi Beach, NSW, 2026<br/><br/>(02) 9130 7702<br/>https://www.foxanddove.com.au</p>"
+          }
+        },
+        "store_bmzCXE": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Fox & Dove",
+            "contact": "<p>1/647 Military Road,<br/>Mosman, NSW, 2088<br/><br/>(02) 8084 4388<br/>https://www.foxanddove.com.au</p>"
+          }
+        },
+        "store_mTRyQK": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Kalm Store ",
+            "contact": "<p>125 Fern Street, Gerringong, Municipality of Kiama, 2534<br/><br/>https://thekalmstore.com</p>"
+          }
+        },
+        "store_Lxhx8B": {
+          "type": "store",
+          "settings": {
+            "title": "Nik & She",
+            "contact": "<p>2/108-110 Harbour Drive,<br/>Coffs Harbour, NSW, 2450<br/><br/>(02) 6652 3377<br/>https://www.nikandshe.com.au</p>"
+          }
+        },
+        "store_izdDQw": {
+          "type": "store",
+          "settings": {
+            "title": "The New Trend ",
+            "contact": "<p>108 Oxford Street, Paddington, NSW, 2021<br/><br/>https://thenewtrend.com.au</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_PEEbCc",
+        "store_F9Ce8F",
+        "store_DrpLaD",
+        "store_AEDEqT",
+        "store_BjgM6r",
+        "store_6nMAkW",
+        "store_bmzCXE",
+        "store_mTRyQK",
+        "store_Lxhx8B",
+        "store_izdDQw"
+      ],
+      "settings": {
+        "title": "New South Wales",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_t6fRVy": {
+      "type": "store-locator",
+      "blocks": {
+        "store_BVxWzB": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Coco & Lola",
+            "contact": "<p>597 Malvern Road,<br/>Toorak, VIC, 3181<br/><br/>(03) 9510 4152<br/>https://cocoandlola.com.au</p>"
+          }
+        },
+        "store_bcJR3J": {
+          "type": "store",
+          "settings": {
+            "title": "Collections For Women",
+            "contact": "<p>315 Pakington St,<br/>Newtown, VIC, 3220<br/><br/>(03) 5229 2649<br/>http://www.collectionsonline.com.au</p>"
+          }
+        },
+        "store_8LdNK7": {
+          "type": "store",
+          "settings": {
+            "title": "Emma Marie",
+            "contact": "<p>4/4 Blackburne Square,<br/>Berwick, VIC, 3806<br/><br/>(03) 9707 5387<br/>https://www.emmamarie.com.au</p>"
+          }
+        },
+        "store_HUEXg9": {
+          "type": "store",
+          "settings": {
+            "title": "Girls With Gems",
+            "contact": "<p>5 Transvaal Ave, Double Bay,</p><p>NSW 2028<br/><br/>+61 413 488 823<br/>https://www.girlswithgems.com<br/></p>"
+          }
+        },
+        "store_yYTGyU": {
+          "type": "store",
+          "settings": {
+            "title": "Lonni",
+            "contact": "<p>28 Ballarat Street,<br/>Yarraville, VIC, 3013<br/><br/>+61 404 947 511<br/>https://lonni.com.au</p>"
+          }
+        },
+        "store_JTLrqd": {
+          "type": "store",
+          "settings": {
+            "title": "Mail Lane",
+            "contact": "<p>426 Sturt Street, <br/>Ballarat, VIC, 2250<br/><br/>(03) 5332 3901<br/>https://www.malilane.com.au</p>"
+          }
+        },
+        "store_6BkQzD": {
+          "type": "store",
+          "settings": {
+            "title": "Maple May",
+            "contact": "<p>84 Owens Street,<br/>Wangaratta, VIC, 3677<br/><br/>(03) 5722 4402<br/>https://www.maplemay.com.au</p>"
+          }
+        },
+        "store_RkHkPQ": {
+          "type": "store",
+          "disabled": true,
+          "settings": {
+            "title": "Mona Lisa",
+            "contact": "<p>17 Bath Lane, <br/>Benidgo, VIC, 3350<br/><br/>(03) 5443 9099<br/>https://monalisa.com.au</p>"
+          }
+        },
+        "store_MHGBHR": {
+          "type": "store",
+          "settings": {
+            "title": "Urban Soul",
+            "contact": "<p>395 Glen Huntly Road,<br/>Elsternwick, VIC, 3185<br/><br/>(03) 9523 5500<br/>https://www.urbansoul.com.au</p>"
+          }
+        },
+        "store_wxHUGM": {
+          "type": "store",
+          "settings": {
+            "title": "The New Trend",
+            "contact": "<p>121 Church Street,<br/>Brighton, VIC, 3186<br/><br/>(03) 9500 9075<br/>https://thenewtrend.com.au</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_BVxWzB",
+        "store_bcJR3J",
+        "store_8LdNK7",
+        "store_HUEXg9",
+        "store_yYTGyU",
+        "store_JTLrqd",
+        "store_6BkQzD",
+        "store_RkHkPQ",
+        "store_MHGBHR",
+        "store_wxHUGM"
+      ],
+      "settings": {
+        "title": "Victoria",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_R4Cbkm": {
+      "type": "store-locator",
+      "blocks": {
+        "store_7iGmeC": {
+          "type": "store",
+          "settings": {
+            "title": "Atelier on George",
+            "contact": "<p>78 George Street,<br/>East Fremantle, WA, 6158<br/><br/>+61 451 521 549<br/>https://atelier-on-george.com</p>"
+          }
+        },
+        "store_mnGUnV": {
+          "type": "store",
+          "settings": {
+            "title": "Bell & Luca",
+            "contact": "<p>14 Peels Place,<br/>Albany, WA, 6330<br/><br/>(08) 9843 0801<br/>https://bellandluca.com.au</p>"
+          }
+        },
+        "store_b6jTXP": {
+          "type": "store",
+          "settings": {
+            "title": "Boheme Luxe",
+            "contact": "<p>33 Napelean Street,<br/>Cottosloe, WA, 6011<br/><br/>(08) 9384 4332<br/>https://www.bohemeluxe.com.au</p>"
+          }
+        },
+        "store_6FeHbD": {
+          "type": "store",
+          "settings": {
+            "title": "Chachi",
+            "contact": "<p>212 William Street,<br/>Perth, WA, 6000<br/><br/>https://www.chachistore.com.au</p>"
+          }
+        },
+        "store_Eyz89M": {
+          "type": "store",
+          "settings": {
+            "title": "Chachi -  Applecross ",
+            "contact": "<p>Shop 3</p><p>37 Ardross Street Applecross,</p><p>Perth, WA, 6153<br/><br/>https://www.chachistore.com.au</p>"
+          }
+        },
+        "store_MxVfic": {
+          "type": "store",
+          "settings": {
+            "title": "Chachi - City Beach",
+            "contact": "<p>Empire Village S/C </p><p>31-33 Gayton Road, City Beach,</p><p>Perth, WA, 6015<br/><br/>https://www.chachistore.com.au</p>"
+          }
+        },
+        "store_heETPQ": {
+          "type": "store",
+          "settings": {
+            "title": "Chachi - Subiaco",
+            "contact": "<p>27 Rokey Road, Subiaco,</p><p>Perth, WA, 6007<br/><br/>https://www.chachistore.com.au</p>"
+          }
+        },
+        "store_izPNcb": {
+          "type": "store",
+          "settings": {
+            "title": "Coco & Lola",
+            "contact": "<p>71C Princess Road,<br/>Nedlands, WA, 6009<br/><br/>(08) 9386 2599<br/>https://cocoandlola.com.au</p>"
+          }
+        },
+        "store_EfpfYc": {
+          "type": "store",
+          "settings": {
+            "title": "Marine & Co",
+            "contact": "<p>3-4/115 Bussell Highway,<br/>Margaret River,WA, 6285<br/><br/>https://www.marineandcostore.com</p>"
+          }
+        },
+        "store_UdpgWa": {
+          "type": "store",
+          "settings": {
+            "title": "Milc",
+            "contact": "<p>2 Dunsborough Village Shopping Centre,<br/>Dunsborough, WA, 6281<br/><br/>(08) 9759 1186<br/>https://www.milchomewares.com</p>"
+          }
+        },
+        "store_GJ3M4r": {
+          "type": "store",
+          "settings": {
+            "title": "Nu Onda",
+            "contact": "<p>7/109-111 Flora Terrace,<br/>North Beach, WA, 6020<br/><br/>(08) 9447 2203<br/>https://www.sarafox.com.au</p>"
+          }
+        },
+        "store_PBmYh3": {
+          "type": "store",
+          "settings": {
+            "title": "Salt Boutique",
+            "contact": "<p>166 Marine Terrace, <br/>Geraldton, WA, 6530<br/><br/>+61 498 371 300<br/>https://saltboutique.com.au</p>"
+          }
+        },
+        "store_j8erP8": {
+          "type": "store",
+          "settings": {
+            "title": "Turquoise Lane",
+            "contact": "<p>353 Scarborough Beach Road,<br/>Innaloo, WA, 6018<br/><br/>+61 455 555 464<br/>https://turquoiselane.com.au/</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_7iGmeC",
+        "store_mnGUnV",
+        "store_b6jTXP",
+        "store_6FeHbD",
+        "store_Eyz89M",
+        "store_MxVfic",
+        "store_heETPQ",
+        "store_izPNcb",
+        "store_EfpfYc",
+        "store_UdpgWa",
+        "store_GJ3M4r",
+        "store_PBmYh3",
+        "store_j8erP8"
+      ],
+      "settings": {
+        "title": "Western Australia",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_V74L6b": {
+      "type": "store-locator",
+      "blocks": {
+        "store_qchUFC": {
+          "type": "store",
+          "settings": {
+            "title": "Gypsett",
+            "contact": "<p>19/62 Grafton Street,<br/>Cairns City, QLD, 4870<br/><br/>(07) 4041 5559<br/>https://www.gypsett.com.au</p>"
+          }
+        },
+        "store_N4hKN9": {
+          "type": "store",
+          "settings": {
+            "title": "Alterior Motif",
+            "contact": "<p>1/12 Hastings Street,<br/>Noosa Heads, QLD, 4567<br/><br/>(07) 5474 9580<br/>https://www.alteriormotif.com.au</p>"
+          }
+        },
+        "store_jYFNfb": {
+          "type": "store",
+          "settings": {
+            "title": "Emte Boutique",
+            "contact": "<p>3 James Street, <br/>Burleigh Heads, QLD, 4223<br/><br/>+61 433 320 996<br/>https://www.emteboutique.com</p>"
+          }
+        },
+        "store_XhhT8G": {
+          "type": "store",
+          "settings": {
+            "title": "Qualia Boutique ",
+            "contact": "<p>20 Whitsunday Blvd, Whitsundays, QLD, 4803<br/><br/>https://www.hamiltonislandretail.com/qualia-boutique.html</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_qchUFC",
+        "store_N4hKN9",
+        "store_jYFNfb",
+        "store_XhhT8G"
+      ],
+      "settings": {
+        "title": "Queensland",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "store_locator_pYGmrV": {
+      "type": "store-locator",
+      "blocks": {
+        "store_tzjemq": {
+          "type": "store",
+          "settings": {
+            "title": "Shop Monroe",
+            "contact": "<p>53 Commercial St East Mount Gambier, SA 5290<br/><br/>https://shopmonroe.com.au</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_tzjemq"
+      ],
+      "settings": {
+        "title": "South Australia & Tasmania",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_page_header_hEMyiV",
+    "store_locator_xKWLbM",
+    "store_locator_y87bit",
+    "store_locator_t6fRVy",
+    "store_locator_R4Cbkm",
+    "store_locator_V74L6b",
+    "store_locator_pYGmrV"
+  ]
+}

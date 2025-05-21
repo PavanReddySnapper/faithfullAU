@@ -1,0 +1,21 @@
+[
+  {%- for product in products limit: limit -%}
+    {
+      "title": {{ product.title | json }},
+      "url": {{ product.url | json }},
+      "price": {{ product.price | json }},
+      "compare_at_price": {{ product.compare_at_price | json }},
+      "featured_image": {
+        "url": {{ product.featured_image | image_url: width: 500 | json }}
+      },
+      "metafields": {
+        "custom": {
+          "badges": {{ product.metafields.custom.badges.value | json }}
+        },
+        "card": {
+          "discount": {{ product.metafields.card.discount.value | json }}
+        }
+      }
+    }{% unless forloop.last %},{% endunless %}
+  {%- endfor -%}
+]

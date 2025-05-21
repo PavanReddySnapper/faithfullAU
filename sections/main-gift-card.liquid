@@ -1,0 +1,90 @@
+{% comment %}
+  `gift_card.pass_url` is true if apple wallet is enabled for the shop
+{% endcomment %}
+
+{%- liquid
+  assign gift_card_expiry_date = gift_card.expires_on | date: '%d/%m/%y'
+  assign formatted_current_balance = gift_card.balance | money
+  assign giftcard_classes = 'gift-card'
+  assign formatted_initial_value = gift_card.initial_value | money_with_currency
+  if gift_card.expired or gift_card.enabled != true
+    assign giftcard_classes = giftcard_classes | append: ' gift-card--disabled'
+  endif
+-%}
+
+<section class="{{ giftcard_classes }}" data-section-id="{{ section.id }}" data-section-type="main-gift-card">
+  <div class="container">
+    <header>
+      <a href="{{ routes.root_url }}" class="logo-image h1">
+        {% assign shop_name = 'accessibility_labels.header_logo_home_label' | t: title: shop.name %}
+        {% render 'logo', title: shop_name -%}
+        <span class="visually-hidden">{{ shop_name }}</span>
+      </a>
+    </header>
+    <h1>{{ 'gift_cards.issued.subtext' | t }}</h1>
+    <h2>
+      {{ 'gift_cards.issued.initial_value' | t: value: formatted_initial_value }}
+      {% if gift_card.expired != true and gift_card.expires_on and gift_card.enabled %}
+        <span class="gift-card__tag gift-card__tag--active">
+          {{- 'gift_cards.issued.active' | t: expiry: gift_card_expiry_date -}}
+        </span>
+      {% elsif gift_card.expired and gift_card.enabled %}
+        <span class="gift-card__tag">{{ 'gift_cards.issued.expired' | t: expiry: gift_card_expiry_date }}</span>
+      {% elsif gift_card.enabled == false %}
+        <span class="gift-card__tag">{{ 'gift_cards.issued.disabled' | t }}</span>
+      {% endif %}
+    </h2>
+
+    {%- liquid
+      assign giftcard_image = settings.giftcard_image | image_url: width: 800
+      if gift_card.properties._image != blank
+        assign giftcard_image = gift_card.properties._image | file_img_url: '800x'
+      endif
+    -%}
+
+    {% if giftcard_image != blank %}
+      {% # theme-check-disable RemoteAsset %}
+      <img
+        src="{{ giftcard_image }}"
+        width="300"
+        height="200"
+        alt="Gift card illustration"
+      >
+      {% # theme-check-enable RemoteAsset %}
+    {% else %}
+      <img src="{{ 'gift-card/card.jpg' | shopify_asset_url }}" width="848" height="565" alt="Gift card illustration">
+    {% endif %}
+    <div class="gift-card__qr-code" data-qrcode-image-identifier="{{ gift_card.qr_identifier }}"></div>
+
+    {% if gift_card.balance != gift_card.initial_value %}
+      <p>{{ 'gift_cards.issued.remaining_html' | t: balance: formatted_current_balance }}</p>
+    {% endif %}
+
+    <input class="gift-card__number" data-qrcode-input value="{{ gift_card.code | format_code }}">
+
+    <div>
+      <small>{{ 'gift_cards.issued.redeem' | t }}</small>
+    </div>
+
+    <a href="{{ routes.root_url }}" class="button" target="_blank">{{ 'gift_cards.issued.shop_link' | t }}</a>
+
+    <div class="gift-card__copy-code">
+      <span class="gift-card__copy-success form__message" data-copy-success-message role="status"></span>
+      <button class="btn gift-card__copy-link" data-copy-card-button>{{ 'gift_cards.issued.copy_code' | t }}</button>
+      <template>
+        {%- render 'icon-tick' -%}
+        {{ 'gift_cards.issued.copy_code_success' | t }}
+      </template>
+    </div>
+
+    <button class="btn gift-card__print-link" data-print-button>{{ 'gift_cards.issued.print' | t }}</button>
+  </div>
+</section>
+
+{% render 'vite-tag' with '@/scripts/sections/main-gift-card.js' %}
+
+{% schema %}
+  {
+    "name": "Main Gift Card"
+  }
+{% endschema %}

@@ -1,0 +1,173 @@
+<div
+  class="account-template account-template-order"
+  data-section-id="{{ section.id }}"
+  data-section-type="main-customers-order"
+>
+  {% render 'component-page-top-links',
+    linklist: linklists[settings.account_links],
+    parent_class: 'page-navigation__layout--top account__top-nav',
+    select_on_mobile: true
+  %}
+
+  <div class="container container--md">
+    <header class="page-header hide">
+      <h1>{{ 'customer.account.title' | t }}</h1>
+    </header>
+
+    {%- liquid
+      capture order_summary_content
+        echo 'customer.orders.date' | t | append: '::'
+        echo order.created_at | date: format: 'month_day_year'
+
+        echo 'customer.orders.payment_status' | t | append: '::' | prepend: '--'
+        echo order.transactions[0].payment_details.credit_card_company | default: order.financial_status_label
+
+        assign tracking = order.line_items | map: 'fulfillment'
+        assign courier_company = settings.tracking_company
+
+        if tracking
+          assign courier_company = tracking[0].tracking_company
+          assign tracking_url_template = false
+          if tracking[0].tracking_url contains tracking[0].tracking_number
+            assign tracking_url_template = tracking[0].tracking_url | replace: tracking[0].tracking_number, '{TRACKING_NUMBER}'
+          endif
+
+          capture tracking_numbers
+            for item in tracking
+              for tracking_number in item.tracking_numbers
+                if tracking_url_template
+                  assign url = tracking_url_template | replace: '{TRACKING_NUMBER}', tracking_number
+                  echo tracking_number | link_to: url, target: '_blank' | append: ','
+                else
+                  echo tracking_number | append: ','
+                endif
+              endfor
+            endfor
+          endcapture
+          assign tracking_numbers = tracking_numbers | split: ',' | uniq
+
+          echo 'customer.order.tracking' | t | append: '::' | prepend: '--'
+          for number in tracking_numbers
+            echo number
+            unless forloop.last
+              echo '<br />'
+            endunless
+          endfor
+
+          if courier_company != blank
+            echo 'customer.order.courier' | t | append: '::' | prepend: '--'
+            echo courier_company
+          endif
+        endif
+
+        echo 'customer.order.fulfillment_status' | t | append: '::' | prepend: '--'
+        echo order.fulfillment_status_label
+
+        if order.cancelled
+          echo 'customer.order.cancelled' | t | append: '::' | prepend: '--'
+          echo order.cancelled_at | date: '%B %d, %Y %I:%M%p'
+
+          echo 'customer.order.cancelled_reason' | t | append: '::' | prepend: '--'
+          echo order.cancel_reason
+        endif
+      endcapture
+      assign order_summary_content = order_summary_content | split: '--'
+    -%}
+
+    <div class="account__module">
+      <ul class="order__summary list-none body-medium">
+        <li class="order__summary-heading">
+          <div class="order__summary-heading-text">
+            <span class="h6">{{ 'customer.order.title' | t: name: order.name }}</span>
+            <span class="order-card__status">{{ order.fulfillment_status_label }}</span>
+          </div>
+          <a class="btn btn--text" href="/account?view=orders">
+            {% render 'icon-arrow-left' %}
+            {{- 'customer.order.back' | t -}}
+          </a>
+        </li>
+        {%- for item in order_summary_content -%}
+          {%- assign text = item | split: '::' -%}
+          <li>
+            <span>{{ text[0] }}:</span>
+            <span>{{ text[1] }}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+
+    <div class="account__module account__module-line-items">
+      <ul class="list-none body-medium">
+        {% for line_item in order.line_items %}
+          {%- render 'line-item', line_item: line_item -%}
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="account__module">
+      <ul class="order__totals list-none body-medium">
+        <li>
+          <span>
+            {{ 'customer.order.subtotal' | t }}
+          </span>
+          {{ order.subtotal_price | money }}
+        </li>
+
+        {% for shipping_method in order.shipping_methods %}
+          <li>
+            <span>{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }})</span>
+            {{ shipping_method.price | money }}
+          </li>
+        {% endfor %}
+
+        {% for discount in order.discount_applications %}
+          <li>
+            <span>{{ 'customer.order.discount' | t }} ({{ discount.title }})</span>
+            -{{ discount.total_allocated_amount | money }}
+          </li>
+        {% endfor %}
+
+        {% for tax_line in order.tax_lines %}
+          <li>
+            <span>
+              {{- 'customer.order.tax' | t }}
+              ({{ tax_line.title }}
+              {{ tax_line.rate | times: 100 }}%)
+            </span>
+            {{ tax_line.price | money }}
+          </li>
+        {% endfor %}
+
+        <li>
+          <span>
+            {{ 'customer.order.total' | t }}
+          </span>
+          {{ order.total_price | money }}
+          {{ order.currency }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="account__module account__module--last">
+      <div class="order__addresses">
+        <div>
+          <h3 class="h6">{{ 'customer.order.billing_address' | t }}</h3>
+          {{ order.billing_address | format_address }}
+        </div>
+        <div>
+          <h3 class="h6">{{ 'customer.order.shipping_address' | t }}</h3>
+          {{ order.shipping_address | format_address }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Order",
+    "enabled_on": {
+      "templates": ["customers/order"]
+    }
+  }
+{% endschema %}

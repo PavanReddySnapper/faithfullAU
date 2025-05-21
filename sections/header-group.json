@@ -1,0 +1,191 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "blocks": {
+        "announcement_message_WVcYFL": {
+          "type": "announcement_message",
+          "disabled": true,
+          "settings": {
+            "title": "<a href=\"/pages/win-your-dream-vacation-to-greece\" title=\"Win Your Dream Vacation To Greece\">Win Your Dream Vacation To Greece</a>"
+          }
+        },
+        "announcement_message_T8Nymk": {
+          "type": "announcement_message",
+          "settings": {
+            "title": "<a href=\"/collections/letters-from-hydra\" title=\"Letters From Hydra\">Discover Letters From Hydra | New Collection</a>"
+          }
+        },
+        "announcement_message_MgYC83": {
+          "type": "announcement_message",
+          "disabled": true,
+          "settings": {
+            "title": "<a href=\"/collections/sale\" title=\"Sale\">New & Further Markdowns Added</a>"
+          }
+        },
+        "cd620928-3fae-4bec-95c8-fbbf230a80ff": {
+          "type": "announcement_message",
+          "settings": {
+            "title": "Sign up to our newsletter for 10% off your first order"
+          }
+        },
+        "announcement_message_wACkVh": {
+          "type": "announcement_message_2",
+          "settings": {
+            "title": "<a href=\"/pages/info-shipping\" title=\"Info Shipping\">Free standard shipping on Australian orders over $250.</a>"
+          }
+        },
+        "announcement_message_WWyMrV": {
+          "type": "announcement_message_2",
+          "settings": {
+            "title": "<a href=\"/pages/info-shipping\" title=\"Info Shipping\">Free express shipping on Australian orders over $500.</a>"
+          }
+        }
+      },
+      "block_order": [
+        "announcement_message_WVcYFL",
+        "announcement_message_T8Nymk",
+        "announcement_message_MgYC83",
+        "cd620928-3fae-4bec-95c8-fbbf230a80ff",
+        "announcement_message_wACkVh",
+        "announcement_message_WWyMrV"
+      ],
+      "settings": {
+        "announcement_bar_enabled": true,
+        "announcement_bar_home_page_only": false,
+        "announcement_background": "--color-primary-20",
+        "announcement_color": "--color-black",
+        "autoplay_speed": 6,
+        "infinite": false
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "787ce955-3c09-4787-9881-689a981d2226": {
+          "type": "submenu_images",
+          "settings": {
+            "title": "Shop",
+            "image_1": "shopify://shop_images/1_ae720462-0658-45c2-9fb5-e91568a9c55c.jpg",
+            "image_title_1": "New Arrivals",
+            "image_url_1": "shopify://collections/new-arrivals",
+            "image_2": "shopify://shop_images/2_a5beb25d-ed69-4466-a142-d9989a6c9637.jpg",
+            "image_title_2": "Shop New Prints",
+            "image_url_2": "shopify://collections/new-prints",
+            "image_title_3": "",
+            "image_url_3": "",
+            "image_title_4": "",
+            "image_url_4": ""
+          }
+        },
+        "bbd36364-ceff-49dd-849c-900d87340a7b": {
+          "type": "submenu_images",
+          "settings": {
+            "title": "Sale",
+            "image_1": "shopify://shop_images/250506_2_NAVIMAGE_1500x1000_VOSN_001.jpg",
+            "image_title_1": "New Sale",
+            "image_url_1": "shopify://collections/sale",
+            "image_2": "shopify://shop_images/250506_2_NAVIMAGE_1500x1000_VOSN_002.jpg",
+            "image_title_2": "Sale Sets",
+            "image_url_2": "shopify://collections/sale-sets",
+            "image_title_3": "",
+            "image_url_3": "",
+            "image_title_4": "",
+            "image_url_4": ""
+          }
+        },
+        "2623e5ff-7c2c-430d-a2d5-e8bd7c2e01c1": {
+          "type": "submenu_images",
+          "settings": {
+            "title": "About",
+            "image_1": "shopify://shop_images/1_a4b228a7-973f-4f86-8a0d-f57123e16ee3.webp",
+            "image_title_1": "Bcorp",
+            "image_url_1": "shopify://pages/about",
+            "image_2": "shopify://shop_images/2_841ff836-f7a2-4a02-9d30-7f0b5fcea3bd.webp",
+            "image_title_2": "Journal",
+            "image_url_2": "shopify://blogs/journal",
+            "image_title_3": "",
+            "image_url_3": "",
+            "image_title_4": "",
+            "image_url_4": ""
+          }
+        },
+        "ab393f27-8f4f-4fe7-b041-62782227fc3b": {
+          "type": "submenu_images",
+          "settings": {
+            "title": "Collections",
+            "image_1": "shopify://shop_images/1_ae720462-0658-45c2-9fb5-e91568a9c55c.jpg",
+            "image_title_1": "Letters From Hydra",
+            "image_url_1": "shopify://pages/letters-from-hydra",
+            "image_2": "shopify://shop_images/1_6b6361a0-e4f2-44c3-a8fd-acbb00adc416.webp",
+            "image_title_2": "La Madrague",
+            "image_url_2": "shopify://pages/la-madrague",
+            "image_title_3": "",
+            "image_url_3": "",
+            "image_title_4": "",
+            "image_url_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "787ce955-3c09-4787-9881-689a981d2226",
+        "bbd36364-ceff-49dd-849c-900d87340a7b",
+        "2623e5ff-7c2c-430d-a2d5-e8bd7c2e01c1",
+        "ab393f27-8f4f-4fe7-b041-62782227fc3b"
+      ],
+      "settings": {
+        "menu": "main-menu",
+        "header_is_sticky": true,
+        "transparent_header_templates": "index",
+        "mobile_image": "shopify://shop_images/1_ae720462-0658-45c2-9fb5-e91568a9c55c.jpg",
+        "mobile_image_title": "Shop New Arrivals",
+        "mobile_image_url": "shopify://collections/new-arrivals"
+      }
+    },
+    "1738892479dcbe7b35": {
+      "type": "apps",
+      "blocks": {
+        "geolocation_orbe_app_block_custom_button_9KBFHK": {
+          "type": "shopify://apps/geolocation-orbe/blocks/app-block-custom-button/7cb09287-cd2b-4646-837c-f1f9b6ea703e",
+          "settings": {
+            "title": "Geolocation Button",
+            "selector_type": "geolocation",
+            "block_position": ".geo-location",
+            "display_position": "last",
+            "button_content": "{country} ({currency_code}{currency_symbol})",
+            "custom_icon_svg": "",
+            "style_colors_text": "#000000",
+            "flag_size": 1,
+            "margin_left": 0,
+            "margin_right": 0,
+            "hide_desktop": false,
+            "hide_mobile": false,
+            "custom_classes_css": "my-class another-class",
+            "custom_css": "",
+            "custom_js": ""
+          }
+        }
+      },
+      "block_order": [
+        "geolocation_orbe_app_block_custom_button_9KBFHK"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "announcement",
+    "header",
+    "1738892479dcbe7b35"
+  ]
+}

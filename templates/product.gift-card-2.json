@@ -1,0 +1,130 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "0c948e2e-2f52-423a-b0b4-e3b2b8281f3c": {
+          "type": "accordion_item",
+          "settings": {
+            "title": "",
+            "content_type": "text",
+            "content_text": "",
+            "content_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "0c948e2e-2f52-423a-b0b4-e3b2b8281f3c"
+      ],
+      "settings": {
+        "sticky_atc": false,
+        "include_qty_selector": false,
+        "display_instalments_message": true,
+        "display_size_fit_tab": true,
+        "include_thumbs": true,
+        "video_controls": "autoplay",
+        "footer_shipping_modal": true,
+        "footer_returns": true,
+        "footer_size_guide": true,
+        "footer_size_guide_link": ""
+      }
+    },
+    "modals": {
+      "type": "product-modals",
+      "blocks": {
+        "a32d4f9c-9ea6-4c0b-aa85-cd68b5c20bbf": {
+          "type": "modal",
+          "settings": {
+            "type": "returns",
+            "title": "Returns",
+            "content_title_1": "Returns",
+            "content_text_1": "<h3>Full Price Items</h3><p>We want you to be completely satisfied with your online purchase. If you change your mind for any reason, you can return any full priced item within 14 days of the delivery date for a refund or store credit equal to the returned item’s value. Store credit notes are valid for 12 months from the date of issue.</p><h3>Sale & Final Sale Items</h3><p>Sales items that are marked down and not purchased as ‘Final Sale’ can be returned for a refund or store credit. Items purchased as final sale cannot be returned and are not eligible for refund, store credit or exchange, unless the items are deemed faulty.</p>",
+            "content_title_2": "Exchanges",
+            "content_text_2": "<p>We do not offer exchanges, but we do offer returns and full refund on items not worn within 14 days of the delivery date. Please note that all sales items are final sale and will not be accepted for return or refund unless faulty.</p>",
+            "content_title_3": "",
+            "content_text_3": "<p>For more information, view our <a href=\"/pages/contact\" title=\"Contact\">Returns Policy</a></p>",
+            "content_title_4": "",
+            "content_text_4": ""
+          }
+        },
+        "6fe2ad4b-9c09-40c6-916e-494459879a47": {
+          "type": "modal",
+          "settings": {
+            "type": "shipping",
+            "title": "Shipping",
+            "content_title_1": "Australia",
+            "content_text_1": "<h4>Free Standard Shipping for over $150</h4><p>$10 Standard Shipping for orders under $150 AUD. Please allow 2-8 business days to receive your order once shipped, pending on if you are located in metro or non-metro areas.</p><h4>Free Express Shipping over $300</h4><p>$15 Express Shipping on orders under $300 AUD. Please allow 1-4 business days to receive your order once shipped, pending on if you are located in metro or non-metro areas.</p>",
+            "content_title_2": "New Zealand",
+            "content_text_2": "<h4>Free Standard Shipping for over $150</h4><p>$15 Standard shipping on orders under $150 AUD. Please allow 5-10 business days for you to receive your order once shipped.</p>",
+            "content_title_3": "",
+            "content_text_3": "<p>For more information, view our <a href=\"/pages/contact\" title=\"Contact\">Shipping Info</a></p>",
+            "content_title_4": "",
+            "content_text_4": ""
+          }
+        },
+        "c8f37bba-6e0a-4c53-acad-ab2a22cedaeb": {
+          "type": "modal",
+          "settings": {
+            "type": "size-guide",
+            "title": "Size Guide",
+            "content_title_1": "Size Guide",
+            "content_text_1": "<p>Please note that this is a general guide to sizing, and the measurements provided are to give you an approximate idea of what size you will be in faithfull the brand against against your own measurements. Some styles may differ from the below fit guide. We make effort to providing sizing information in each item description.</p>",
+            "content_title_2": "How To Measure",
+            "content_text_2": "<h4>Bust</h4><p>Place the tape measure under your arms, around your back and across the fullest part of your bust. Once you have the tape measure lined up, relax your arms at either side.</p><h4>Waist</h4><p>Measure around your natural waistline - this is usually the narrowest point on your waist (above your belly button and below your rib cage). Run the tape measure around your waist (like a belt), keeping it straight.</p><h4>Hips</h4><p>Stand on a level surface with your feet together. Run the tape measure around the fullest part of your bottom and upper thighs, and not around your hip bones. Ensure the tape is straight around your body.</p>",
+            "content_title_3": "",
+            "content_text_3": "",
+            "content_title_4": "",
+            "content_text_4": ""
+          }
+        },
+        "d86a1f2f-cf9e-40f7-ac47-53a3e5e532d8": {
+          "type": "modal",
+          "settings": {
+            "type": "installments",
+            "title": "Buy now, pay later",
+            "content_title_1": "Buy now, pay later",
+            "content_text_1": "<p>We accept payments from all major credit cards via Shopify Payments, ShopPay, Afterpay and Klarna.<br/><br/></p>",
+            "content_title_2": "Afterpay",
+            "content_text_2": "<p>Afterpay is an interest-free payment plan option where you can buy now and pay for your purchase in 4 equal fortnightly instalments. The funds for the first payment will need to be available on your card at the time of purchase.<br/><br/>Afterpay is not available for purchases of gift cards  If your order contains gift cards and other eligible products, you will need to purchase your gift cards separately.<br/><br/><a href=\"https://help.afterpay.com/hc/en-us\" target=\"_blank\" title=\"https://help.afterpay.com/hc/en-us\">Learn more</a> about Afterpay</p>",
+            "content_title_3": "Klarna",
+            "content_text_3": "<p>Klarna is an interest-free payment plan option allowing you to pay for your purchase in 4 equal payments. The first payment is charged when your order is confirmed (usually the shipping date) and the next 3 payments are automatically charged every 2 weeks after that.</p><p>Klarna is not available for purchases of gift cards  If your order contains gift cards and other eligible products, you will need to purchase your gift cards separately.<br/><br/><a href=\"https://www.klarna.com/au/what-is-klarna/\" target=\"_blank\" title=\"https://www.klarna.com/au/what-is-klarna/\">Learn more</a> about Klarna</p>",
+            "content_title_4": "",
+            "content_text_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "a32d4f9c-9ea6-4c0b-aa85-cd68b5c20bbf",
+        "6fe2ad4b-9c09-40c6-916e-494459879a47",
+        "c8f37bba-6e0a-4c53-acad-ab2a22cedaeb",
+        "d86a1f2f-cf9e-40f7-ac47-53a3e5e532d8"
+      ],
+      "settings": {}
+    },
+    "product_recently_viewed_recommendations_mhYf73": {
+      "type": "product-recently-viewed-recommendations",
+      "settings": {
+        "recommendations_title": "You might like these",
+        "recently_viewed_title": "Recently Viewed",
+        "max_products": 8,
+        "text_color": "--color-black",
+        "bottom_margin_desktop": "64",
+        "bottom_margin_mobile": "40"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "modals",
+    "product_recently_viewed_recommendations_mhYf73"
+  ]
+}

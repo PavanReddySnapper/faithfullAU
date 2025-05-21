@@ -1,0 +1,447 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Top-Banner_6c2d0b93-f372-49e4-80a1-14c005cc2171.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Palm Springs Travel Guide",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>While Palm Springs is often synonymous with Coachella, it’s long been a favourite weekend destination for Californian locals. A desert oasis only two hours from LA, Palm Springs is a happening space for mid-century architecture, cultural art scenes, modern pool clubs and bars and natural hot springs.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_4470.heic",
+        "background_image_2": "shopify://shop_images/IMG_4313.heic",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_wc4xUY": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AJadF7": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_GzQnKU": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.avalon-hotel.com/palm-springs/\"><span style=\"text-decoration:underline\">Avalon Hotel & Bungalows Palm Springs</span></a></p><p>Walking distance from downtown, Avalon is a luxurious boutique-style hotel with manicured lawns, classic turquoise swimming pools and individual Spanish-inspired studios and villas. Next door, you’ll also discover their sister property, Ingleside Estate, another charming hotel property that was a frequent hotspot for celebrities in the 50s and 60s.</p><p><a href=\"https://sandshotelandspa.com/\"><span style=\"text-decoration:underline\">Sands Hotel & Spa</span></a></p><p>A boutique hotel in Indian Wells designed in collaboration with Matryn Lawrence Bullard, who drew inspiration from the kasbahs of Marrakech and the Sahara desert. Their Moroccan-style spa is also a wellness hub where their treatments combine traditional Western techniques with Moroccan ingredients and minerals from around the world.</p><p><a href=\"https://www.parkerpalmsprings.com/\"><span style=\"text-decoration:underline\">Parker Palm Springs</span></a></p><p>Described as <a href=\"https://www.cntraveler.com/hotels/united-states/palm-springs/le-parker-meridien-palm-springs\"><span style=\"text-decoration:underline\">‘retro-regal’</span></a>, the Parker is one of the largest and most unique properties in Palm Springs with Moroccan and French-inspired decor, lush gardens, a speakeasy bar and luxury spa.</p><p><a href=\"https://acehotel.com/palm-springs/\">Ace Hotel Palm Springs</a></p><p>A modern oasis that boasts contemporary style rooms with a few nostalgic Palm Springs touches. They also host regular events and sessions, including live open-air jazz series and DJ residencies and if you aren’t planning an overnight stay, there are day passes available for the pool and spa.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AJadF7",
+        "richtext_GzQnKU"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_nRQAFX": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_4262.png",
+        "background_image_2": "shopify://shop_images/IMG_4260.heic",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_TAGh9K": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WUpUan": {
+          "type": "title",
+          "settings": {
+            "title": "Where to drink and dine",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_ebrRYe": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://inglesideestate.com/melvyns/\"><span style=\"text-decoration:underline\">Melvyn’s Restaurant & Casablanca Lounge</span></a></p><p>Perhaps one of the most iconic restaurants in Palm Springs and a favourite of Frank Sinatra and Ava Gardner, Melvyn’s remains a mainstay for its authentic French cuisine, refined interiors and elevated yet relaxed demeanour. </p><p><a href=\"https://sandshotelandspa.com/dining-bar/\"><span style=\"text-decoration:underline\">The Pink Cabana</span></a></p><p>Tucked inside the Sands Hotel & Spa, this cafe and restaurant is a modern take on the 1950s and 60s tennis and racquet clubs of Palm Springs, outfitted with green and white chequered floors, palm tree wallpaper and rattan chairs.</p><p><a href=\"https://www.sandfishsushiwhiskey.com/palm-springs/home\"><span style=\"text-decoration:underline\">Sandfish Sushi & Whisky</span></a></p><p>A contemporary Japanese restaurant that specialises in modern sushi delicacies, paired with unique whiskey and cocktail formulas.</p><p><a href=\"https://keedysrestaurants.com/\"><span style=\"text-decoration:underline\">Keedy’s Fountain & Grill</span></a></p><p>A local institution with a nostalgic 1950s feel, Keedy’s is a roadside grill with all the American classics on offer.</p><p><a href=\"https://shermansdeli.com/\"><span style=\"text-decoration:underline\">Sherman’s Deli & Bakery</span></a></p><p>A taste of New York in the desert. Sherman’s is a classic family-style bakehouse with fresh deli bagels, sandwiches and salads.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WUpUan",
+        "richtext_ebrRYe"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_eiGjC6": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_4237.heic",
+        "background_image_2": "shopify://shop_images/IMG_4248.heic",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_kGrEDf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_nzr3wb": {
+          "type": "title",
+          "settings": {
+            "title": "Where to spend an afternoon",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_MBaQU3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Visit Joshua Tree</p><p>Only an hour’s drive from Palm Springs, Joshua Tree is a true natural wonder of the world with its unique rock formations and desert landscape. Even if you’re only planning a day trip, it’s worth staying for its incredible sunsets and crystal clear views of the night’s stars.</p><p>Book a jeep tour in the desert</p><p>Discover everything from the Palm Springs desert to the San Andreas Fault and the lush palm oases of the Indian Canyons in a true off-roading experience with an open air jeep.</p><p>Take a midcentury modern architecture tour</p><p>Palm Springs has some of the most iconic and interesting mid-century architecture in the world, and Modernism Tours by Modernism Week will take you through some of the most illustrious – from Elvis’ Honeymoon hideaway to the Kaufmann Desert House.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_nzr3wb",
+        "richtext_MBaQU3"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_X676KC": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_4064_2.heic",
+        "background_image_2": "shopify://shop_images/IMG_3983.heic",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_YcnpWL": {
+      "type": "rich-text",
+      "blocks": {
+        "title_XgnmFh": {
+          "type": "title",
+          "settings": {
+            "title": "Where to find unique vintage stores",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_wAWrNq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/thefrippery/?hl=en\"><span style=\"text-decoration:underline\">The Frippery</span></a></p><p>A vintage clothing and accessories space that focuses on mod, resort, bohemian style pieces.</p><p><a href=\"https://www.instagram.com/mitchellspalmsprings/\"><span style=\"text-decoration:underline\">Mitchells Palm Springs</span></a></p><p>A go-to spot in the desert for luxury second-hand designer goods including vintage jewellery, womenswear, menswear and archival pieces.</p><p><a href=\"https://www.instagram.com/hedgepalmsprings/?hl=en\"><span style=\"text-decoration:underline\">Hedge</span></a></p><p>Embrace the mid-century architecture of Palm Springs and explore the eclectic range of vintage furniture at Hedge, including consignment furniture, vases, decor and art.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_XgnmFh",
+        "richtext_wAWrNq"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "ania-bikini-top-meleu-stripe-multi",
+          "enya-midi-dress-meleu-stripe-multi",
+          "sable-polo-shirt-meleu-stripe-multi",
+          "julia-mini-dress-meleu-stripe-multi"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/copenhagen-travel-guide"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/behind-the-scenes-on-jours-dor"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/inspired-artworks-with-carla-nicieza"
+          }
+        }
+      },
+      "block_order": [
+        "article_eUJjCy",
+        "article_zPApBT",
+        "article_n84pcB"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_BNpN6Q",
+    "rich_text_wc4xUY",
+    "editorial_layout_nRQAFX",
+    "rich_text_TAGh9K",
+    "editorial_layout_eiGjC6",
+    "rich_text_kGrEDf",
+    "editorial_layout_X676KC",
+    "rich_text_YcnpWL",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

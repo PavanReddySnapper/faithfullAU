@@ -1,0 +1,76 @@
+{%- assign pre_title_size = pre_title_size | default: 'h5' -%}
+{%- if pre_title != blank -%}
+  <p class="section__pre-title {{ pre_title_size }}">{{ pre_title }}</p>
+{%- endif -%}
+
+{%- assign title_size = title_size | default: 'h3' -%}
+{%- if title != blank -%}
+  <h2 class="section__title {{ title_size }}">{{ title }}</h2>
+{%- endif -%}
+
+{%- if post_title != blank -%}
+  <p class="section__post-title h6">{{ post_title }}</p>
+{%- endif -%}
+
+{%- if content != blank -%}
+  <div class="rte{% if content_size != blank %} {{ content_size }}{% endif %}">
+    {{ content }}
+  </div>
+{%- endif -%}
+
+{%- if show_button_1 or show_button_2 -%}
+  {%- liquid
+    assign cta_element = cta_element | default: 'a'
+    assign text_color_brightness = text_color | color_brightness
+    assign button_color = '#FFFFFF'
+    if text_color_brightness > 127.5
+      assign button_color = '#000000'
+    endif
+    assign button_hover_background_color = text_color | color_modify: 'alpha', 0.7
+  -%}
+  <div
+    class="section__buttons"
+    style="
+      {% if text_color != blank %}
+        --button-color: {{ button_color }};
+        --button-background-color: {{ text_color }};
+        --button-border-color: {{ text_color }};
+        --button-hover-color: {{ button_color }};
+        --button-hover-background-color: {{ button_hover_background_color }};
+        --button-hover-border-color: {{ button_hover_background_color }};
+        --button-secondary-color: {{ text_color }};
+        --button-secondary-background-color: transparent;
+        --button-secondary-border-color: {{ text_color }};
+        --button-secondary-hover-color: {{ button_color }};
+        --button-secondary-hover-background-color: {{ text_color }};
+        --button-secondary-hover-border-color: {{ text_color }};
+        --button-text-color: {{ text_color }};
+        --button-text-hover-color: {{ text_color }};
+      {% endif %}
+    "
+  >
+    <div class="btn--group">
+      {%- if show_button_1 -%}
+        <{{ cta_element }}
+          class="btn {% if button_style_1 != blank %}btn--{{ button_style_1 }}{% endif %}"
+          {% if cta_element == 'a' %}
+            href="{{ button_link_1 }}"
+          {% endif %}
+        >
+          {{ button_label_1 }}
+        </{{ cta_element }}>
+      {%- endif -%}
+
+      {%- if show_button_2 -%}
+        <{{ cta_element }}
+          class="btn {% if button_style_2 != blank %}btn--{{ button_style_2 }}{% endif %}"
+          {% if cta_element == 'a' %}
+            href="{{ button_link_2 }}"
+          {% endif %}
+        >
+          {{ button_label_2 }}
+        </{{ cta_element }}>
+      {%- endif -%}
+    </div>
+  </div>
+{%- endif -%}

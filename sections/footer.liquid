@@ -1,0 +1,300 @@
+{%- assign newsletter_block = section.blocks | where: 'type', 'newsletter-form' | first -%}
+<style>
+
+  @media screen and (min-width:989px) {
+
+    .footer__base{
+      position: relative;
+      left:0;
+      bottom:0;
+    }
+    .footer__base-menus .footer-menu:not(:nth-child(4)), .footer__base-menus .footer-menu:nth-child(4) .footer-menu__title, .footer-menu__container .footer-menu:nth-child(4) {
+       display:none;
+    }
+
+    .footer__base-menus .footer-menu:nth-child(4) .footer-menu__list{
+        flex-direction:row;
+        flex-grow:1;
+        gap:20px;
+    }
+    
+
+    .footer__base-menus{
+       flex-grow:1;
+       display:flex;
+       justify-content:flex-end;
+       padding-right:5px;
+    }
+
+  
+  .footer-menu__container{
+    grid-template-columns:repeat(3,10.8125rem);
+  }
+  }
+@media screen and (max-width:990px) {
+  {% comment %} .footer-menu__container .footer-menu:nth-child(3){
+    grid-column:span 2;
+    width: 50%;
+  } {% endcomment %}
+
+
+
+  .footer-menu__container .footer-menu:nth-child(4){
+     grid-column:span 2;
+     
+  }
+  .footer-menu__container .footer-menu:nth-child(4) .footer-menu__title{
+    display: none;
+  }
+
+  .footer-menu__container .footer-menu:nth-child(4) .footer-menu__list{
+    flex-direction:row;
+    gap:20px;
+  }
+
+  .footer__base-menus{
+  
+  display:none;
+}
+}
+</style>
+<footer
+  class="footer{% if newsletter_block %} footer--has-newsletter{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="footer"
+>
+  <div class="footer__grid">
+    {%- if newsletter_block -%}
+      <div class="footer__newsletter">
+        {% if newsletter_block.settings.title != blank -%}
+          <h3 class="footer-newsletter__title h6">{{ newsletter_block.settings.title }}</h3>
+        {%- endif %}
+
+        {%-
+          render 'component-subscribe-form',
+          form_name: 'customer',
+          id: 'subscribe-form-footer',
+          value: 'newsletter',
+          button_style: 'icon',
+          name_field: true,
+        %}
+      </div>
+<style>
+.subscribe-form__wrapper .subscribe-form__button {
+  right: -8px;
+  min-width: 24px;
+  min-height: 24px;
+} 
+
+
+</style>
+    {%- endif -%}
+
+    <div class="footer-menu__container">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign title = false
+          case block.type
+            when 'newsletter-form'
+              continue
+            when 'contact'
+              assign title = block.settings.title
+            when 'menu'
+              assign title = linklists[block.settings.block_linklist].title
+          endcase
+        -%}
+        <div class="footer-menu footer-menu--{{ block.type }}">
+          {% if title != blank %}
+            <h3 class="footer-menu__title h6">{{ title }}</h3>
+          {% endif %}
+
+          {%- if block.type == 'menu' -%}
+            <ul class="footer-menu__list" role="list">
+              {% for link in linklists[block.settings.block_linklist].links %}
+                <li class="footer-menu__list-item body-medium" role="listitem">
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          {%- elsif block.type == 'contact' -%}
+            <div class="footer-menu__text body-small">
+              {% if block.settings.content != blank %}
+                <p>{{ block.settings.content }}</p>
+              {% endif %}
+
+              {% if block.settings.email != blank or block.settings.phone != blank %}
+                <ul class="list-none" role="list">
+                  {% if block.settings.email != blank %}
+                    <li role="listitem">{{ block.settings.email }}</li>
+                  {% endif %}
+                  {% if block.settings.phone != blank %}
+                    <li role="listitem">{{ block.settings.phone }}</li>
+                  {% endif %}
+                </ul>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        </div>
+      {% endfor %}
+
+      {%- liquid
+        assign display_currency_selector = section.settings.show_region_select
+
+        if display_currency_selector
+          assign currencies_selector_hidden = section.settings.currencies_selector_hidden | downcase
+          assign cart_currency_code = cart.currency.iso_code | downcase
+
+          if currencies_selector_hidden contains cart_currency_code
+            assign display_currency_selector = false
+          endif
+        endif
+      -%}
+
+      {% if display_currency_selector %}
+        <div class="footer__region-select">
+          {%- render 'component-currency-selector' -%}
+          {%- render 'component-currency-modal' -%}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="footer__base">
+    {% if section.settings.show_certificate and section.settings.certificate != blank %}
+      <div class="footer-base__certificate">
+        {%- render 'component-image', image: section.settings.certificate, max_width: 40 -%}
+      </div>
+    {% endif %}
+    <small class="footer__copyright">
+      &copy; {{ shop.name | link_to: routes.root_url }}
+      {{ 'now' | date: '%Y' }}
+    </small>
+
+    <div class="footer__base-menus footer__base-menus--desktop-only">
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign title = false
+          case block.type
+            when 'newsletter-form'
+              continue
+            when 'contact'
+              assign title = block.settings.title
+            when 'menu'
+              assign title = linklists[block.settings.block_linklist].title
+          endcase
+        -%}
+        {%- if block.type == 'menu' -%}
+          <div class="footer-menu footer-menu--{{ block.type }}">
+            {% if title != blank %}
+              <h3 class="footer-menu__title h6">{{ title }}</h3>
+            {% endif %}
+            <ul class="footer-menu__list" role="list">
+              {% for link in linklists[block.settings.block_linklist].links %}
+                <li class="footer-menu__list-item body-medium" role="listitem">
+                  <a href="{{ link.url }}">{{ link.title }}</a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {%- endif -%}
+      {% endfor %}
+    </div>
+    
+  </div>
+</footer>
+
+
+
+
+{% render 'vite-tag' with '@/scripts/sections/footer.js' %}
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "header",
+        "content": "Certification Image"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_certificate",
+        "label": "Show Certification Image",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "certificate",
+        "label": "Certification Image"
+      },
+      {
+        "type": "header",
+        "content": "Region Selector"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_region_select",
+        "label": "Show region selector",
+        "default": true
+      }
+    ],
+    "blocks": [
+      {
+        "type": "newsletter-form",
+        "name": "Newsletter Form",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Sign up to get 15% off your first full price order"
+          }
+        ]
+      },
+      {
+        "type": "menu",
+        "name": "Menu",
+        "limit": 4,
+        "settings": [
+          {
+            "id": "block_linklist",
+            "type": "link_list",
+            "label": "Menu"
+          }
+        ]
+      },
+      {
+        "type": "contact",
+        "name": "Contact",
+        "limit": 1,
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "content",
+            "label": "Content"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "email",
+            "label": "Email"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "phone",
+            "label": "Phone"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

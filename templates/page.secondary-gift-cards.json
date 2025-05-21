@@ -1,0 +1,178 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": false,
+        "page_nav": "shipping-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "rich_text_bhgARE": {
+      "type": "rich-text",
+      "blocks": {
+        "title_GTfbyP": {
+          "type": "title",
+          "settings": {
+            "title": "Purchasing a gift card",
+            "is_primary_heading": true,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_P6eac6": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Digital Gift Cards can be purchased on the FAITHFULL website <a href=\"https://au.faithfullthebrand.com/products/gift-card\"><span style=\"text-decoration:underline\">here</span>.</a> </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_KJbCgg": {
+          "type": "title",
+          "settings": {
+            "title": "Redeeming your gift card",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_QKzYzB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Gift Cards are automatically emailed to you once purchased. A unique code will be issued to the email address entered at checkout. To redeem, enter your unique gift card code in the ‘gift card or discount code’ box at checkout and click apply. Gift cards can be applied to an order in addition to a promotion or discount code.</p><p>If a gift card is partially redeemed in one transaction, the gift card balance will be updated automatically and available using the same code. If the cost of an order exceeds the available gift card balance, the cardholder will be required to pay the difference using an alternate payment method at checkout.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_Xbib6F": {
+          "type": "title",
+          "settings": {
+            "title": "Currency",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_fY8wVn": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Gift cards purchased on the FAITHFULL Australian website are available in AUD currency and can be redeemed on au.faithfullbrand.com<br/></p><p>If you wish to purchase a gift card from the FAITHFULL International website, please proceed to <a href=\"https://faithfulthebrand.com\" title=\"https://faithfullthebrand.com/\">faithfullthebrand.com</a></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "title_Xa8nxD": {
+          "type": "title",
+          "settings": {
+            "title": "Expiry",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_eTMBJC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Gift cards are valid for 3 years from the date of purchase.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_6gWapL": {
+          "type": "title",
+          "settings": {
+            "title": "Returning items purchased using a gift card",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_wErEat": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>If you return an item purchased using a gift card, the refund will be credited back to the gift card equal to the value of the returned item (excluding shipping).</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_KzQDKH": {
+          "type": "title",
+          "settings": {
+            "title": "Lost or stolen gift cards",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LXRAaP": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Faithfull the Brand does not take responsibility for any lost or stolen Gift Cards. If you lose your gift card code, please email our customer care team at shop@faithfullthebrand.com. You must provide the full name used for the purchase, the initial gift card value purchased, date of purchase & expiry date.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_GTfbyP",
+        "richtext_P6eac6",
+        "title_KJbCgg",
+        "richtext_QKzYzB",
+        "title_Xbib6F",
+        "richtext_fY8wVn",
+        "title_Xa8nxD",
+        "richtext_eTMBJC",
+        "title_6gWapL",
+        "richtext_wErEat",
+        "title_KzQDKH",
+        "richtext_LXRAaP"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 72
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_bhgARE"
+  ]
+}

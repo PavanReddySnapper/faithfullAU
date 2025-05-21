@@ -1,0 +1,527 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "video_banner_4zf3EW": {
+      "type": "video-banner",
+      "settings": {
+        "video_mobile": "shopify://files/videos/0-Hero-Banner.mp4",
+        "video_desktop": "shopify://files/videos/0-Hero-Banner.mp4",
+        "display_play_controls": false,
+        "display_mute_controls": false,
+        "enable_autoplay": true,
+        "controls_color": "light",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "rich_text_g43DRX": {
+      "type": "rich-text",
+      "blocks": {
+        "title_wwTkUr": {
+          "type": "title",
+          "settings": {
+            "title": "Di Milano",
+            "is_primary_heading": true,
+            "heading_style": "h1",
+            "pre_heading": "Fall 24 Campaign",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_mtE7tq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Introducing our latest collection, Di Milano.<br/><br/>The new season embodies a sense of ease with effortless appeal, wearability and versatility at the forefront of each design. Soft tailoring and slender silhouettes come together with a palette of creamy neutrals and rich, exuberant hues. Nostalgic nods to eras bygone continue with delicate floral and classic stripe motifs.Ever inspired by the romantic allure of Italy, there is an undertone of sensuality throughout, with the introduction of sheer fabrications, lace appliqués and artisanally crafted macrame.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_w7qDcp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Anna Virag is captured on location in Milan, Italy.<br/>Creative Direction by HA/NA Productions<br/>Photography by Rami Hanna<br/>Styling by Hanna MW</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_wwTkUr",
+        "richtext_mtE7tq",
+        "richtext_w7qDcp"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--md",
+        "single_row_desktop": false,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 16,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_ykwFg9": {
+      "type": "image-banner",
+      "blocks": {
+        "image_wYiHKe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_4f52e8cb-6fc5-4a80-8bda-9d96da13a013.webp",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Raynara Maxi Dress Wine",
+            "button_link_1": "shopify://products/raynara-maxi-dress-wine",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_wmC8cA": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_6cec2ce0-5852-4da9-996d-2cf36fa9bf72.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ilride Top White",
+            "button_link_1": "shopify://products/ilride-top-white",
+            "button_label_2": "Ilride Pant White",
+            "button_link_2": "shopify://products/ilride-pant-white"
+          }
+        },
+        "image_4iLcwC": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_14db8c45-8b8c-4841-b816-e17300f6622f.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Citara Strapless Top Black",
+            "button_link_1": "shopify://products/citara-strapless-top-black",
+            "button_label_2": "Citara Skirt Black",
+            "button_link_2": "shopify://products/citara-skirt-black"
+          }
+        },
+        "image_wzQwep": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_bf2a3230-06b9-4ee0-9d55-04baf7fa41d5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_wYiHKe",
+        "image_wmC8cA",
+        "image_4iLcwC",
+        "image_wzQwep"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_LtRQyD": {
+      "type": "image-banner",
+      "blocks": {
+        "image_XEctGp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_5935ae3e-ca90-4cdd-aafd-409a4e6cea71.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ilride Midi Dress White",
+            "button_link_1": "shopify://products/ilride-midi-dress-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_zR9ipW": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_9c748dc2-aa61-4a98-8b4e-863c8af9aa3f.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Noa Midi Dress Blue Pinstripe",
+            "button_link_1": "shopify://products/noa-midi-dress-blue-pinstripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_HeHHnk": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_4a97d001-0650-46d9-ac2f-fe528f9070fc.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_xXTGjA": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/8_e78eac3a-2e09-4c81-a13d-385d6744fdf9.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lulea Wrap Vest Black",
+            "button_link_1": "shopify://products/lulea-wrap-vest-black",
+            "button_label_2": "Lulea Pant Black",
+            "button_link_2": "shopify://products/lulea-pant-black"
+          }
+        }
+      },
+      "block_order": [
+        "image_XEctGp",
+        "image_zR9ipW",
+        "image_HeHHnk",
+        "image_xXTGjA"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_kBCkKg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_mJqNcp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_646c66ad-2137-4760-b1df-3670e1101082.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_LA8HN6": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_77ab1475-28d3-45d9-b16c-ba6131422ac5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_f8EHi6": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/11_36fae2c2-0562-4e88-89c6-a28579908bb3.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_n9k4Jt": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/12_9a8775fe-06a7-468e-8ba0-12eb01116986.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_mJqNcp",
+        "image_LA8HN6",
+        "image_f8EHi6",
+        "image_n9k4Jt"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_mxeEr8": {
+      "type": "image-banner",
+      "blocks": {
+        "image_wAHgkR": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/13_ba756e03-6129-4302-b8f0-6bdbed9f3f43.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Sanne Midi Dress Black",
+            "button_link_1": "shopify://products/sanne-midi-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_kyjaC3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/14_a18ddc78-dddf-4a0b-8c40-d41af32d42e0.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_qtAdC9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/15_dbf0ca10-0dda-4bb7-ada8-8595a6a2bd81.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_bVRWMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/16_157acc80-b5d1-4b7a-819a-cfb4ebdabbdf.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_wAHgkR",
+        "image_kyjaC3",
+        "image_qtAdC9",
+        "image_bVRWMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_banner_kC8D7L": {
+      "type": "image-banner",
+      "blocks": {
+        "image_nHLDaQ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/17_088f4fe8-193b-47c3-b3fe-3fcae83cc270.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_WpW7Je": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/18.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_QgHDHT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/19.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_748wid": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/20.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_nHLDaQ",
+        "image_WpW7Je",
+        "image_QgHDHT",
+        "image_748wid"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "featured_products_BrpfLX": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Summer 24 Dresses",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "dresses-maxis",
+        "product_list": [],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_XGBTBh": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Dgaz9L": {
+          "type": "title",
+          "settings": {
+            "title": "Shop New Arrivals",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "button_4TRaB4": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Now",
+            "link": "shopify://collections/new-arrivals",
+            "button_style": "btn--secondary",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_Dgaz9L",
+        "button_4TRaB4"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "video_banner_4zf3EW",
+    "rich_text_g43DRX",
+    "image_banner_ykwFg9",
+    "image_banner_LtRQyD",
+    "image_banner_kBCkKg",
+    "image_banner_mxeEr8",
+    "image_banner_kC8D7L",
+    "featured_products_BrpfLX",
+    "rich_text_XGBTBh"
+  ]
+}

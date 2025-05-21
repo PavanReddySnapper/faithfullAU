@@ -1,0 +1,155 @@
+{%- assign section_blocks = section.blocks | map: 'settings' -%}
+
+<ul class="nav" role="menu">
+  {% for link in linklists[section.settings.menu].links %}
+    {% if link.levels > 0 %}
+      <li  role="menuitem" class="nav__item nav__item--has-child is-collapsed {% if link.active %} is-active{% endif %}">
+        <a
+          href="{{ link.url }}"
+          class="nav__link navigation nav__link--level-1"
+          aria-expanded="false"
+          aria-label="{{ link.title }}"
+          data-nav-link
+        >
+          {{ link.title }}
+          {%- render 'icon-chevron-right-sm' -%}
+        </a>
+
+        <div class="nav__dropdown" data-nav-dropdown>
+          <div class="container container--fluid">
+            <div class="submenu{% if link.links.size == 1 %} submenu--single{% endif %}">
+              {% if link.levels > 0 %}
+                <ul class="submenu__links">
+                  {% for childlink in link.links %}
+                    <li class="nav__item">
+                      <a
+                        href="{{ childlink.url }}"
+                        class="nav__link nav__link--level-2{% if childlink.levels > 0 %} h6{% else %} navigation{% endif %}{% if link.links.size == 1 %} hide--max-lg{% endif %}"
+                      >
+                        {{ childlink.title }}
+                      </a>
+                      {% if childlink.levels > 0 %}
+                        <ul class="submenu__child-links">
+                          {% for grandchildlink in childlink.links %}
+                            <li>
+                              <a href="{{ grandchildlink.url }}" class="nav__link nav__link--level-3 navigation">
+                                {{ grandchildlink.title }}
+                              </a>
+                            </li>
+                          {% endfor %}
+                        </ul>
+                      {% endif %}
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+
+              {%- assign submenu_images = section_blocks | where: 'title', link.title | first -%}
+              {%- if submenu_images -%}
+                {%- for i in (1..4) -%}
+                  {%- liquid
+                    assign image_key = 'image_' | append: i
+                    assign submenu_image = submenu_images[image_key]
+                    if submenu_image == blank
+                      continue
+                    endif
+
+                    assign text_key = 'image_title_' | append: i
+                    assign submenu_image_text = submenu_images[text_key]
+
+                    assign link_key = 'image_url_' | append: i
+                    assign submenu_image_link = submenu_images[link_key]
+                  -%}
+                  <div class="nav__image hide--max-lg">
+                    {%- if submenu_image_link -%}
+                      <a href="{{ submenu_image_link }}">
+                    {%- endif -%}
+                    {%- render 'component-image',
+                      image: submenu_image,
+                      max_width: 640,
+                      sizes: '(min-width: 61.875rem) 22rem, 0',
+                      aspect_ratio: '3-2'
+                    -%}
+                    {%- if submenu_image_text -%}
+                      <div class="nav__image-text navigation">
+                        {{ submenu_image_text }}
+                      </div>
+                    {%- endif -%}
+                    {%- if submenu_image_link -%}
+                      </a>
+                    {%- endif -%}
+                  </div>
+                {%- endfor -%}
+              {%- endif -%}
+            </div>
+          </div>
+        </div>
+      </li>
+    {% else %}
+      <li class="nav__item{% if link.active %} is-active{% endif %}" role="menuitem">
+        <a href="{{ link.url }}" class="nav__link navigation nav__link--level-1">{{ link.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<div class="nav__mobile-footer hide--min-lg">
+  <ul class="nav__mobile-footer-links navigation">
+    {%- if settings.enable_wishlist and settings.wishlist_page_url -%}
+      <li>
+        <a href="{{ settings.wishlist_page_url }}">
+          {{ 'header.wishlist.label' | t }}
+        </a>
+      </li>
+    {%- endif -%}
+
+    {%- if settings.contact_page_url -%}
+      <li>
+        <a href="{{ settings.contact_page_url }}">
+          {{ 'header.contact.label' | t }}
+        </a>
+      </li>
+    {%- endif -%}
+
+    {%- if shop.customer_accounts_enabled -%}
+      <li>
+        {% if customer %}
+          <a href="{{ routes.account_url }}">
+            {{ 'header.account.my_account' | t }}
+          </a>
+        {% else %}
+          <a
+            href="{{ routes.account_login_url }}"
+            class="navigation"
+            data-login-modal-trigger
+            data-show-login-form
+          >
+            {{ 'header.account.login' | t }}
+          </a>
+        {% endif %}
+      </li>
+    {%- endif -%}
+  </ul>
+
+  {%- if section.settings.mobile_image -%}
+    <div class="nav__image">
+      {%- if section.settings.mobile_image_url -%}
+        <a href="{{ section.settings.mobile_image_url }}">
+      {%- endif -%}
+      {%- render 'component-image',
+        image: section.settings.mobile_image,
+        max_width: 640,
+        sizes: '(min-width: 61.875rem) 0, 20rem',
+        aspect_ratio: '3-2'
+      -%}
+      {%- if section.settings.mobile_image_title -%}
+        <div class="nav__image-text navigation">
+          {{ section.settings.mobile_image_title }}
+        </div>
+      {%- endif -%}
+      {%- if section.settings.mobile_image_url -%}
+        </a>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+</div>

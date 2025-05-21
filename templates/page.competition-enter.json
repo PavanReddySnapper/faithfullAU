@@ -1,0 +1,118 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-wishlist",
+      "disabled": true,
+      "settings": {
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_6CRy63": {
+      "type": "image-banner",
+      "blocks": {
+        "image_wFCUw3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/faithfull_tropez_look-24-1.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_wFCUw3"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_in4HFM": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WiD4QM": {
+          "type": "title",
+          "settings": {
+            "title": "Win Your Dream Vacation To Greece",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_nRUjt7": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We are hosting a giveaway in partnership with Slojourn Studio which includes a $2000 FAITHFULL wardrobe voucher, up to $2000 in flight credit, 3-nights accommodation at Andronis Arcadia, Santorini, 3-nights accommodation at Gundari Resort, Folegandros, ferry transfers between islands and a $1500 Antler luggage voucher.</p>",
+            "font_size": "",
+            "content_max_width": "50%",
+            "content_alignment": "center",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_idY3FV": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>To enter you must sign up to FAITHFULL with your name, email address, mobile number and Instagram handle and follow the below accounts on Instagram:</p><p>@faithfullthebrand </p><p>@slojourn_studio </p><p>@andronis_hotels </p><p>@gundari_resort </p><p>@antlerofficial</p>",
+            "font_size": "",
+            "content_max_width": "50%",
+            "content_alignment": "center",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WiD4QM",
+        "richtext_nRUjt7",
+        "richtext_idY3FV"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "shogun_custom_html_pPqhap": {
+      "type": "shogun-custom-html",
+      "settings": {
+        "html": "<div class=\"klaviyo-form-VSLD2Z\"></div>"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_6CRy63",
+    "rich_text_in4HFM",
+    "shogun_custom_html_pPqhap"
+  ]
+}

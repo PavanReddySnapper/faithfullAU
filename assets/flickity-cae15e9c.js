@@ -1,0 +1,1 @@
+import{F as e}from"./index-13f72e9f.js";const t=()=>{e.prototype._createResizeClass=function(){this.element.classList.add("flickity-resize")},e.createMethods.push("_createResizeClass");const s=e.prototype.resize;e.prototype.resize=function(){this.element.classList.remove("flickity-resize"),s.call(this),this.element.classList.add("flickity-resize")}};export{t as i};

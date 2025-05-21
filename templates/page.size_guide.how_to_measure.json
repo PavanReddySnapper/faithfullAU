@@ -1,0 +1,154 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Size Guide",
+        "is_primary_heading": false,
+        "page_nav": "size-guide-menu-2024",
+        "navigation_sticky": true,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "rich_text_Lyy8bg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_RFkk8y": {
+          "type": "title",
+          "settings": {
+            "title": "How To Measure",
+            "is_primary_heading": true,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 4
+          }
+        }
+      },
+      "block_order": [
+        "title_RFkk8y"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 24
+      }
+    },
+    "rich_text_fzLaz7": {
+      "type": "rich-text",
+      "blocks": {
+        "image_bPAyLj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/1_f39baddd-be3e-41f5-9760-28aebef9d402.webp",
+            "aspect_ratio": "natural",
+            "full_width_mobile": false,
+            "image_position": "row",
+            "image_alignment": "flex-start",
+            "image_position_mobile": "column-reverse"
+          }
+        },
+        "title_zDRgni": {
+          "type": "title",
+          "settings": {
+            "title": "Bust",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 4
+          }
+        },
+        "richtext_4aTyyE": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Place the tape measure under your arms, around your back and across the fullest part of your bust. Once you have the tape measure lined up, relax your arms at either side.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_DErr3a": {
+          "type": "title",
+          "settings": {
+            "title": "Waist",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 4
+          }
+        },
+        "richtext_piQnpL": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Measure around your natural waistline - this is usually the narrowest point on your waist (above your belly button and below your rib cage). Run the tape measure around your waist (like a belt), keeping it straight.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_hji6c6": {
+          "type": "title",
+          "settings": {
+            "title": "Hips",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 4
+          }
+        },
+        "richtext_87wHFP": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Stand on a level surface with your feet together. Run the tape measure around the fullest part of your bottom and upper thighs, and not around your hip bones. Ensure the tape is straight around your body.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "image_bPAyLj",
+        "title_zDRgni",
+        "richtext_4aTyyE",
+        "title_DErr3a",
+        "richtext_piQnpL",
+        "title_hji6c6",
+        "richtext_87wHFP"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 48,
+        "bottom_margin_mobile": 48
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_Lyy8bg",
+    "rich_text_fzLaz7"
+  ]
+}

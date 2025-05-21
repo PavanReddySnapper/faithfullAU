@@ -1,0 +1,363 @@
+{% liquid
+  # --------------------------------------------------------------
+  # PRODUCTS
+  # --------------------------------------------------------------
+  assign collection = collections[section.settings.collection]
+  assign products = collection.products
+
+  if section.settings.product_list.count > 0
+    assign products = section.settings.product_list
+    assign collection = false
+  endif
+
+  # --------------------------------------------------------------
+  # TEXT CONTENT
+  # --------------------------------------------------------------
+  assign title = section.settings.title
+  assign title_size = section.settings.title_size
+  assign content = section.settings.content
+  assign button_label_1 = section.settings.button_label_1
+  assign button_link_1 = section.settings.button_link_1
+  assign button_style = section.settings.button_style
+
+  assign show_button_1 = false
+  if button_label_1 != blank and button_link_1 != blank
+    assign show_button_1 = true
+  endif
+
+  # --------------------------------------------------------------
+  # SLIDE WIDTHS
+  # --------------------------------------------------------------
+  assign max_products = section.settings.max_products
+  assign columns = max_products
+  if max_products >= 4
+    assign columns = 4
+  endif
+
+  assign sizes = '(min-width: 48rem) calc(100vw / cols), 50vw' | replace: 'cols', columns | replace: 'calc(100vw / 1)', '100vw'
+
+  # --------------------------------------------------------------
+  # CLASSES
+  # --------------------------------------------------------------
+
+  # Slide
+  assign slide_classes = 'full,full,half,third,quarter' | split: ','
+  assign slide_class = slide_classes[columns]
+
+  # Slider + Container
+  assign show_desktop_content = section.settings.show_desktop_content
+
+  assign slider_classes = ''
+  assign container_classes = ''
+  assign top_container_classes = ''
+  assign carousel_controls_classes = 'controls-container--top'
+
+  if show_desktop_content
+    assign container_classes = 'desktop-content--show'
+    if max_products > 3
+      assign slider_classes = 'carousel--min-lg'
+    endif
+    if max_products < 4
+      assign carousel_controls_classes = carousel_controls_classes | append: ' hide--min-lg'
+    endif
+  else
+    if max_products > 4
+      assign slider_classes = 'carousel--min-lg'
+    endif
+    if max_products < 5
+      assign carousel_controls_classes = carousel_controls_classes | append: ' hide--min-lg'
+    endif
+  endif
+
+  if section.settings.use_ghost_image
+    assign slider_classes = slider_classes | append: ' product-view--model'
+  endif
+
+  if max_products < 3
+    assign carousel_controls_classes = carousel_controls_classes | append: ' hide'
+  endif
+
+  if show_desktop_content or title == blank
+    assign top_container_classes = 'desktop-justify-end'
+  endif
+%}
+
+<section
+  class="section section-featured-products"
+  data-section-id="{{ section.id }}"
+  data-section-type="featured-products"
+  style="--text-color: var({{ section.settings.text_color }});"
+>
+  <div class="featured-products__top-container container container--fluid {{ top_container_classes }}">
+    <h2 class="featured-products__title {{ title_size }} {% if show_desktop_content %} hide--min-lg{% endif %}">
+      {% if title != blank %}
+        {{ title }}
+      {% endif %}
+    </h2>
+    {% render 'carousel-controls', container_class: carousel_controls_classes %}
+  </div>
+
+  {%- if products.count > 0 -%}
+    <div class="featured-products__container container container--flush container--fluid {{ container_classes }}">
+      {% if show_desktop_content %}
+        <div class="featured-products__content hide--max-lg">
+          {%
+            render 'section-content',
+            text_color: section.settings.text_color,
+            title: title,
+            content: content,
+            show_button_1: show_button_1,
+            button_label_1: button_label_1,
+            button_link_1: button_link_1,
+            button_style_1: button_style,
+          %}
+        </div>
+      {% endif %}
+
+      <div
+        class="featured-products__slider carousel products-carousel {{ slider_classes }}"
+        data-slider-container
+      >
+        {%- for product in products limit: max_products -%}
+          <div class="featured-products__slide slide {{ slide_class }}" data-slide>
+            {%
+              render 'product-card',
+              product: product,
+              collection: collection,
+              sizes: sizes,
+            %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% render 'vite-tag' with '@/scripts/sections/featured-products.js' %}
+
+{% schema %}
+  {
+    "name": "Featured Products",
+    "class": "featured-products",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "use_ghost_image",
+        "label": "Use ghost image",
+        "info": "Ghost image index is determined by global theme settings for Product Cards",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "text_color",
+        "label": "Text colour",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title",
+        "default": "Featured Products"
+      },
+      {
+        "type": "select",
+        "id": "title_size",
+        "label": "Title Size",
+        "default": "h3",
+        "options": [
+          {
+            "value": "h1",
+            "label": "Heading 1"
+          },
+          {
+            "value": "h2",
+            "label": "Heading 2"
+          },
+          {
+            "value": "h3",
+            "label": "Heading 3"
+          },
+          {
+            "value": "h4",
+            "label": "Heading 4"
+          },
+          {
+            "value": "h5",
+            "label": "Heading 5"
+          },
+          {
+            "value": "h6",
+            "label": "Heading 6"
+          }
+        ]
+      },
+      {
+        "type": "checkbox",
+        "id": "show_desktop_content",
+        "label": "Show Desktop Content and Button",
+        "default": true
+      },
+      {
+        "type": "inline_richtext",
+        "id": "content",
+        "label": "Content - desktop only"
+      },
+      {
+        "type": "text",
+        "id": "button_label_1",
+        "label": "Button label - desktop only",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "Button link",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "button_style",
+        "label": "Button style",
+        "default": "btn--text btn--link",
+        "options": [
+          {
+            "value": "btn--primary",
+            "label": "Primary"
+          },
+          {
+            "value": "btn--secondary",
+            "label": "Secondary"
+          },
+          {
+            "value": "btn--secondary-dark",
+            "label": "Secondary Dark"
+          },
+          {
+            "value": "btn--text btn--link",
+            "label": "Text Underline"
+          },
+          {
+            "value": "btn--text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "max_products",
+        "label": "Max products to show",
+        "min": 1,
+        "max": 8,
+        "step": 1,
+        "default": 4
+      },
+      {
+        "type": "header",
+        "content": "Product Source"
+      },
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection",
+        "info": "Choose a collection of products to display (edit the collection above to update sort order)"
+      },
+      {
+        "type": "product_list",
+        "id": "product_list",
+        "label": "Product list",
+        "limit": 8,
+        "info": "Manually choose which products to display"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_desktop",
+        "label": "Bottom Margin - Desktop",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "bottom_margin_mobile",
+        "label": "Bottom Margin - Mobile",
+        "default": "0",
+        "options": [
+          {
+            "value": "0",
+            "label": "None"
+          },
+          {
+            "value": "40",
+            "label": "40px"
+          },
+          {
+            "value": "80",
+            "label": "80px"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Products"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

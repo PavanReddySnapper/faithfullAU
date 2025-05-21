@@ -1,0 +1,105 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": true,
+        "page_nav": "faqs-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "Can I change my order after it has been placed?",
+            "content": "<p>Unfortunately, we are not able to change your order once it is placed. Please choose your items carefully and ensure all shipping information is full and correct before placing your order. If you need assistance with an order error please contact our customer care team at shop@faithfullthebrand.com as soon as possible.</p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "Can I cancel an order after it has been placed?",
+            "content": "<p>If you are wanting to cancel an order, please contact our customer service team at shop@faithfullthebrand.com as soon as possible after it has been placed. Our warehouse team processes and ships orders out daily and we cannot guarantee that the request can be made.<br/></p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "I have received a faulty item.",
+            "content": "<p>Every product we send out is initially quality controlled, however if you have received a product with a manufacturing fault, FAITHFULL will replace the item or refund the cost as long as it has been returned to us within 30 days of the purchase date. Please contact our customer care team as soon as possible after receiving your order so we can guide you through the next steps and returns process. Please provide our team with photos clearly showing the defect or fault and a brief description for a preliminary assessment. <br/></p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "title": "I have received incorrect or missing items from my order.",
+            "content": "<p>If you are missing items from your order or have received incorrect items, please contact our customer care team as soon as possible after receiving your order at shop@faithfullthebrand.com. You will need to provide your order number, name and details of the missing or incorrect item/s. Our team will look into the issue as quickly as possible.<br/></p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "title": "I have been notified that an item is now out of stock after placing my order. Why is this?",
+            "content": "<p>Whilst we try to ensure that stock levels on the website are as accurate and up-to-date as possible, on rare occasions there may be a stock discrepancy for an item purchased. If a purchase has been made for an unavailable item, you will be notified via email by our customer care team as soon as possible and be offered a suitable replacement, a credit note or a full refund.<br/></p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "title": "I have placed my order but I forgot to add a discount code or gift certificate. Can you apply it to my order now?",
+            "content": "<p>If you placed your order during the promotional period but forgot to apply the discount code at checkout, please contact our customer care team at shop@faithfullthebrand.com with your order number and the discount code you forgot to apply. Our team will check whether your order and purchased items meet the terms and conditions of the sale or promotion.</p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "title": "Will I be charged import duties and taxes on my order?",
+            "content": "<p>For customers located outside of Australia, international deliveries may be subject to import duties and taxes. We currently ship all items Delivery Duty Paid (DDP). Taxes are calculated based on the items ordered, your shipment destination, value of your purchase, and the specific rates set by the local government. Taxes will be calculated and added to your order total in the shipping cart. There will be no additional vat or duty charges requested on delivery by our carriers.<br/></p>"
+          }
+        },
+        "question_7": {
+          "type": "question",
+          "settings": {
+            "title": "I received a request to verify my identity for my order. Why is this?",
+            "content": "<p>For the protection of our customers, FAITHFULL conducts ID verification checks on online orders at random. If your order is selected, our team will contact you directly to request further information for identity verification, which may include photo identification.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_0",
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_7"
+      ],
+      "settings": {
+        "title": "",
+        "is_primary_heading": false,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

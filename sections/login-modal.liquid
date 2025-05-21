@@ -1,0 +1,180 @@
+{%- if settings.enable_login_modal -%}
+  {%- liquid
+    assign current_url = request.origin | append: request.path
+    assign login_modal_classes = 'login-modal sm'
+    assign login_modal_label = 'Login'
+    assign login_modal_desc = 'Modal dialog for store login'
+  -%}
+
+  {%- capture login_modal_content -%}
+    <div data-login-modal-login-form>
+      {% form 'customer_login', return_to: current_url %}
+        <div class="modal-header text-center">
+          <h4 class="h2">{{ 'customer.login.title' | t }}</h4>
+        </div>
+
+        <div class="form__group">
+          <label for="login-modal-email">
+            {{ 'customer.login.email' | t }}
+          </label>
+          <input
+            type="email"
+            name="customer[email]"
+            id="login-modal-email"
+            placeholder="{{ 'customer.login.email' | t }}"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+          >
+        </div>
+
+        {% if form.password_needed %}
+          <div class="form__group">
+            <label for="login-modal-password">
+              {{ 'customer.login.password' | t }}
+            </label>
+            <input
+              type="password"
+              name="customer[password]"
+              id="login-modal-password"
+              placeholder="{{ 'customer.login.password' | t }}"
+            >
+          </div>
+        {% endif %}
+
+        {% if form.password_needed %}
+          <p>
+            <a href="#recover" data-show-recover-password-form>
+              {{ 'customer.login.forgot_password' | t }}
+            </a>
+          </p>
+        {% endif %}
+
+        <p>
+          <button type="submit" class="btn">
+            {{ 'customer.login.sign_in' | t }}
+          </button>
+        </p>
+
+        <p>
+          <a href="{{ routes.account_register_url }}" data-show-register-form>
+            {{ 'layout.customer.create_account' | t }}
+          </a>
+        </p>
+      {% endform %}
+    </div>
+
+    <div class="hide" data-login-modal-recover-password-form>
+      <div class="modal-header text-center">
+        <h2>{{ 'customer.recover_password.title' | t }}</h2>
+        <p>{{ 'customer.recover_password.subtext' | t }}</p>
+      </div>
+
+      {% form 'recover_customer_password' %}
+        <div class="form__group">
+          <label for="login-modal-recover-email">
+            {{ 'customer.recover_password.email' | t }}
+          </label>
+          <input
+            type="email"
+            name="email"
+            id="login-modal-recover-email"
+            placeholder="{{ 'customer.recover_password.email' | t }}"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+          >
+        </div>
+
+        <p>
+          <button type="submit" class="btn">
+            {{ 'customer.recover_password.submit' | t }}
+          </button>
+
+          <button type="button" class="btn" data-show-login-form>
+            {{ 'customer.recover_password.cancel' | t }}
+          </button>
+        </p>
+      {% endform %}
+    </div>
+
+    <div class="hide" data-login-modal-register-form>
+      <div class="modal-header text-center">
+        <h2>{{ 'customer.register.title' | t }}</h2>
+      </div>
+
+      {% form 'create_customer', return_to: current_url %}
+        <div class="form__group">
+          <label for="login-modal-register-first-name">
+            {{ 'customer.register.first_name' | t }}
+          </label>
+          <input
+            type="text"
+            name="customer[first_name]"
+            id="login-modal-register-first-name"
+            placeholder="{{ 'customer.register.first_name' | t }}"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="login-modal-register-last-name">
+            {{ 'customer.register.last_name' | t }}
+          </label>
+          <input
+            type="text"
+            name="customer[last_name]"
+            id="login-modal-register-last-name"
+            placeholder="{{ 'customer.register.last_name' | t }}"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="login-modal-register-email">
+            {{ 'customer.register.email' | t }}
+          </label>
+          <input
+            type="email"
+            name="customer[email]"
+            id="login-modal-register-email"
+            placeholder="{{ 'customer.register.email' | t }}"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="login-modal-register-password">
+            {{ 'customer.register.password' | t }}
+          </label>
+          <input
+            type="password"
+            name="customer[password]"
+            id="login-modal-register-password"
+            placeholder="{{ 'customer.register.password' | t }}"
+          >
+        </div>
+
+        <p>
+          <button type="submit" class="btn">
+            {{ 'customer.register.submit' | t }}
+          </button>
+        </p>
+
+        <p>
+          <a href="{{ routes.account_login_url }}" data-show-login-form>
+            {{ 'layout.customer.log_in' | t }}
+          </a>
+        </p>
+      {% endform %}
+    </div>
+  {%- endcapture -%}
+
+  {%- render 'component-modal-dialog',
+    modal_class: login_modal_classes,
+    modal_id: 'login',
+    modal_label: login_modal_label,
+    modal_desc: login_modal_desc,
+    modal_content: login_modal_content
+  -%}
+{%- endif -%}

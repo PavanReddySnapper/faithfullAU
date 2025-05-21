@@ -1,0 +1,61 @@
+{% if settings.yotpo_widget_script %} {{ settings.yotpo_widget_script }} {% endif %}
+{{ 'yotpo-main.css' | asset_url | stylesheet_tag }}
+
+<script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/wGY9v1OpfSEow2TFM03XJA" async></script>
+
+<div class="yotpo-rewards-widget">
+    <!-- Banner Section -->
+    <div class="yotpo-widget-instance" data-yotpo-instance-id="1052700"></div>
+    
+    {% if customer %}
+      <!-- My Activity Logged in -->
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="1052702"></div>
+    {% endif %}
+    
+    <!-- VIP Tier -->
+    {% if customer %} <div class="yotpo-vip-custom-title">Your FAITHFULL Club Tier Status</div> {% endif %}
+    {% render 'yotpo-vip' %}
+    
+    {% if customer %}
+      <!-- Earning Points Logged in -->
+      <div class="yotpo-widget-instance" data-yotpo-instance-id="1052697"></div>
+    {% endif %}
+    
+    <!-- Refer Friends -->
+    <div class="yotpo-widget-instance" data-yotpo-instance-id="1052701"></div>
+    
+    <!-- FAQ -->
+    {% render 'yotpo-faq' %}
+</div>
+
+{% if customer %}
+<style>
+  .yotpo-vip-custom-title {
+    margin-bottom: 230px;
+  }
+  .loyalty-faq-section-container {
+    border-top: 2px solid #d4d4d0;
+  }
+</style>
+{% endif %}
+
+{% unless customer %}
+  <style>
+    .yotpo-widget-referral-share.yotpo-widget-override-css .yotpo-center-container {
+      display: flex;
+      flex-direction: column;
+      padding: unset !important;
+    }
+    
+    .yotpo-widget-referral-share.yotpo-widget-override-css .yotpo-center-container::before {
+      display: block;
+      height: 472px;
+      width: 100%;
+      content: "";
+      background: url(https://cdn.shopify.com/s/files/1/0194/7436/files/02.jpg?v=1745432936) 50% 50%;
+      background-size: cover;
+      max-width: 683px;
+      margin: auto;
+    }
+  </style>
+{% endunless %}

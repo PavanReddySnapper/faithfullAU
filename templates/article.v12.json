@@ -1,0 +1,527 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_7fbaaac0-06d5-487a-bfdf-dac255863a78.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Paris Travel Guide",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Often known as the city of romance and luxury, Paris is also a city with unique boutique hotels, hole-in-the-wall style boulangerie and patisseries and classic late night bistros with a tasting menu of organic orange wines and Côte de Boeuf. Not to mention, there are historic parks for slow afternoons of reading and aperitivo bars with relaxed atmospheres for people watching. And while many of these places may seem unpretentious and inconspicuous, almost everywhere has been coveted by some of the most famous artists in history. Pablo Picasso, Ernest Hemingway, Brigitte Bardot, Sofia Coppola. </p><p>Here, discover the creative team’s curated guide to the French city.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_hdwEph": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/2_8d537f25-3683-482f-9722-ce71e2c166b8.webp",
+        "background_image_2": "shopify://shop_images/3_17cf031e-fd19-4fd2-9d25-b7d105c9230f.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "second--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/hotelbalzacparis/?hl=en \" title=\"https://www.instagram.com/hotelbalzacparis/?hl=en \">Hôtel Balzac Paris</a></p><p>A luxury boutique hotel, only a stone’s throw from the Champs-Élysées. Once the home of a famous French writer, Honoré de Balzac, it has been redesigned by stylish designer duo Festen with a warm contemporary feel and classic, vintage touches. </p><p><a href=\"https://www.instagram.com/hotelchateauvoltaire/?hl=en \" title=\"https://www.instagram.com/hotelchateauvoltaire/?hl=en \">Château Voltaire</a></p><p>Tucked between the Opera and the Tuileries, this is an understated cosy home-like hotel, with luxurious embellishments of marble tiles and art deco-style decor. Owned by the designer of Zadig & Voltaire, it is has often been known for romantic getaways and secret rendezvous. </p><p><a href=\"https://www.instagram.com/hotelrochechouart/?hl=en \" title=\"https://www.instagram.com/hotelrochechouart/?hl=en \">Hôtel Rochechouart</a></p><p>Once a 1920s late-night hotspot on the boulevard Rochechouart, drawing in travelling artists, writers and actors, it is now a Belle Époque-style boutique hotel with intimate rooms and a rooftop bar and brasserie, favoured even by locals. </p><p><a href=\"https://www.instagram.com/legrandmazarin/?hl=en \" title=\"https://www.instagram.com/legrandmazarin/?hl=en \">Le Grand Mazarin</a></p><p>Described by Conde Nast as a ‘Wes Anderson meets Alice in Wonderland literary-salon vibe,’ this boutique location is unique, colourful and a vibrant option for design aficionados. There’s a smattering of colours, contrasting patterns and tiles and maximalist-style decor throughout each of the rooms and shared spaces. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_87a3858f-755c-4a6a-907f-7115505d68d8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Where to dine at an authentic French bistro",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/chezjanou/?hl=en\" title=\"https://www.instagram.com/chezjanou/?hl=en\">Chez Janou</a></p><p>Charming, eccentric and unpretentious this is a local’s favourite for authentic French cuisine including ratatouille, duck breast and of course, the mousse au chocolat for dessert. </p><p><a href=\"https://www.instagram.com/bistrotpaulbert/?hl=en \" title=\"https://www.instagram.com/bistrotpaulbert/?hl=en \">Bistro Paul Bert</a></p><p>An old school Parisian bistro, beloved for its Côte de Boeuf (two medium rare steaks and French fries) and steak tartare with shaved black truffles. We recommend booking into this location, but just in case you can’t  – their sister restaurant down the street La Cave Paul Bert offers a classic menu of French wines and small plates. </p><p><a href=\"https://www.instagram.com/le_bon_georges/?hl=en \" title=\"https://www.instagram.com/le_bon_georges/?hl=en \">Le Bon Georges</a></p><p>Whether you’re seated at one of the worn wooden tables inside or at one of the blue wicker tables outside, there’s no better spot for people watching and trying some of Paris’ most famous delicacies – steak frites and pate. </p><p><a href=\"https://www.instagram.com/loulourestaurants/\" title=\"https://www.instagram.com/loulourestaurants/\">Lou Lou Paris</a></p><p>For a slightly more luxurious experience, Lou Lou combines classic Italian with French modernity outside one of the most iconic locations – the Louvre, with incredible views of the gardens and the Eiffel Tower in the distance. </p><p><a href=\"https://www.instagram.com/bistrotdestournelles/?hl=en \" title=\"https://www.instagram.com/bistrotdestournelles/?hl=en \">Bistrot Des Tournelles</a></p><p>Warm, rich and romantic with a palette of deep reds and wooden decor, this is an authentic restaurant with a curated yet delicious menu of croque monsieurs, beef stew and profiteroles with melted chocolate. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/5_1b71c03e-0d28-479a-9b3f-434ebc941555.webp",
+        "background_image_2": "shopify://shop_images/6_71c854cb-4420-4466-b01c-4df93348cd72.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Where to enjoy an aperitivo hour",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/f.o.l.d.e.r.o.l/?hl=en \" title=\"https://www.instagram.com/f.o.l.d.e.r.o.l/?hl=en \">Folderol</a></p><p>For those with an appetite for natural, organic wines and ice-cream, this hole-in-the-wall dessert spot and bar à vins is owned by the same husband and wife duo as Le Rigmarole. Tableless, guests tend to sit out on the streets of Paris to enjoy their aperitivo. </p><p><a href=\"https://www.instagram.com/compagniestgermain/?hl=en \" title=\"https://www.instagram.com/compagniestgermain/?hl=en \">La Compagnie St Germain</a></p><p>A classic and authentic Parisian wine bar with ‘hard to find French wines.’ With a sophisticated menu, sip on fine wines with a charcuterie offering from local artisan cheesemakers and purveyors. </p><p><a href=\"https://www.instagram.com/lagrandecremerie/?hl=en \" title=\"https://www.instagram.com/lagrandecremerie/?hl=en \">La Grande Crèmerie</a></p><p>A local favourite, which cannot be missed due to its vibrant blue exterior and soft yellow lettering. Pop inside for a French wine and share tapas in a relaxed yet warm, candlelit atmosphere.   </p><p>Le Nouvelle Institu </p><p>For a cheap and cheerful afternoon drink and snack, this is one of the best cornerside bars to covet. Opt for a street side table for a true and authentic experience. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_PyXX3z": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3t7Rhj": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_788d0c2a-a340-49e3-ace7-4fe3de503086.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3t7Rhj"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_ddXyEg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WdnYrt": {
+          "type": "title",
+          "settings": {
+            "title": "Where to find a traditional croissant and coffee",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CXX6Jm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/maison_isabelle_paris/?hl=en \" title=\"https://www.instagram.com/maison_isabelle_paris/?hl=en \">La Masion D’Isabelle</a></p><p>With many describing it as the home of the ‘best croissant in Paris’ (and after receiving an award in 2018 to confirm this) this is an unmissable bakery with croissants made with AOP butter from Poitou-Charentes, homemade pastries and fresh, crispy baguettes. </p><p><a href=\"https://www.instagram.com/boulangeriemamiche/ \" title=\"https://www.instagram.com/boulangeriemamiche/ \">Mamiche</a></p><p>A small boulangerie with all the classic delicacies and pastries as well as chunky chocolate chip cookies, cheesecakes, babkas and even Italian-style maritozzi.</p><p><a href=\"https://www.instagram.com/chezalainmiammiam/?hl=en \" title=\"https://www.instagram.com/chezalainmiammiam/?hl=en \">Chez Alain Miam Miam</a></p><p>Whenever the chef, Alain Roussel, is asked about the secret to the success of his bakery and sandwich stall, he replies ‘there are no secrets, only mysteries.’ Tucked in the Marché des Enfants Rouges, the oldest covered market in Paris, dating back to the 1600s, is a small stall that offers fresh sandwiches, crepes, pancakes and even loaves of bread. However, be prepared as during peak times the wait can last up to an hour or two. </p><p><a href=\"https://www.instagram.com/lecafedeflore/?hl=en \" title=\"https://www.instagram.com/lecafedeflore/?hl=en \">Café de Flore</a></p><p>While a little more on the touristy side, Café de Flore is a favourite for good reason – its emblematic shopfront, its breakfast menu of dippy eggs and omelettes and its previous clientele of Georges Bataille and Pablo Picasso.</p><p><a href=\"https://www.instagram.com/copains.paris/\" title=\"https://www.instagram.com/copains.paris/\">Copains</a></p><p>With a few locations dotted around Paris, this bakery and patisserie is famous for its creative use of naturally gluten-free flours. Flaky croissants, artisanal loaves of bread and sweet tarts. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WdnYrt",
+        "richtext_CXX6Jm"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "editorial_layout_DHpgRA": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/8_2dfba9b3-b720-4117-86f5-582e7fff3a30.webp",
+        "background_image_2": "shopify://shop_images/9_a1cea284-37c9-4d1e-a3f8-684b50237e6c.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "second--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_P6HhFy": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Nba4Na": {
+          "type": "title",
+          "settings": {
+            "title": "Where to spend an afternoon",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_gAzENj": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Wander around the streets of Le Marais </p><p>Perhaps one of the best neighbourhoods in Paris for shopping, wander around the streets of Le Marais for boutique stores, second-hand vintage and the luxurious BHV department store. </p><p><a href=\"https://www.instagram.com/demain.retro/?hl=en \" title=\"https://www.instagram.com/demain.retro/?hl=en \">Vintage shop at Demain Retro</a></p><p>A local Parisian concept store with a unique offering of luxury vintage pieces and emerging designers. Expect to find upcycled leather accessories, one-off tees and coats as well as sustainable French homewares brands like Mana Objects, handmade in Marseille. </p><p>Visit the Musée Carnavalet</p><p>If you’re looking for an alternative to the Louvre, this museum inside the Hôtel de Donon traces the history of Paris. While considered a history museum, it plays home to some of the most famous French artists, paintings and sculptures, including Jean Béraud. </p><p>Read a book in Tuileries</p><p>While this has become one of the more popular locations for photos, the Tuileries garden, one of the oldest in Paris, is a perfect spot to sit back and enjoy an afternoon book and coffee. Find one of the green chairs surrounding the fountain. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_Nba4Na",
+        "richtext_gAzENj"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Jours D'or",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "jours-dor",
+        "product_list": [
+          "corbiere-vest-white",
+          "en-vau-shirt-khaki-stripe",
+          "lowen-mini-dress-black",
+          "vence-midi-dress-aurora"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/copenhagen-travel-guide"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/milan-travel-guide"
+          }
+        },
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/ibiza-travel-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_zPApBT",
+        "article_n84pcB",
+        "article_eUJjCy"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_hdwEph",
+    "rich_text_UbFWPp",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "editorial_layout_BNpN6Q",
+    "rich_text_K4xM3c",
+    "image_banner_PyXX3z",
+    "rich_text_ddXyEg",
+    "editorial_layout_DHpgRA",
+    "rich_text_P6HhFy",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

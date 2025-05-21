@@ -1,0 +1,341 @@
+{%- liquid
+  assign text_color = section.settings.text_color
+  assign text_color_alpha = text_color.alpha
+  if text_color_alpha == 0
+    assign text_color = blank
+  endif
+  assign background_color = section.settings.background_color
+  assign background_color_alpha = background_color.alpha
+  if background_color_alpha == 0
+    assign background_color = blank
+  endif
+
+  assign pre_title = section.settings.pre_title
+  assign title = section.settings.title
+  assign post_title = section.settings.post_title
+  assign content = section.settings.content
+  assign button_label_1 = section.settings.button_label_1
+  assign button_link_1 = section.settings.button_link_1
+  assign button_style_1 = section.settings.button_style_1
+  assign button_label_2 = section.settings.button_label_2
+  assign button_link_2 = section.settings.button_link_2
+  assign button_style_2 = section.settings.button_style_2
+
+  assign show_button_1 = false
+  if button_label_1 != blank and button_link_1 != blank
+    assign show_button_1 = true
+  endif
+  assign show_button_2 = false
+  if button_label_2 != blank and button_link_2 != blank
+    assign show_button_2 = true
+  endif
+
+  assign show_section = false
+  if pre_title != blank or title != blank or post_title != blank or content != blank or show_button_1 or show_button_2 or section.blocks.size > 0
+    assign show_section = true
+  endif
+
+  assign columns = section.blocks.size
+-%}
+
+{% if show_section %}
+  {%- capture section_styles -%}
+    {%- if text_color != blank -%}--text-color: {{ text_color }};{%- endif -%}
+    {%- if background_color != blank -%}--background-color: {{ background_color }};{%- endif -%}
+  {%- endcapture -%}
+
+  <section
+    class="section section--shop-the-look"
+    data-section-id="{{ section.id }}"
+    data-section-type="shop-the-look"
+    {% if section_styles != blank %}
+      style="{{ section_styles }}"
+    {% endif %}
+  >
+    <div class="container">
+      {% render 'section-content',
+        text_color: text_color,
+        pre_title: pre_title,
+        title: title,
+        post_title: post_title,
+        content: content,
+        show_button_1: show_button_1,
+        button_label_1: button_label_1,
+        button_link_1: button_link_1,
+        button_style_1: button_style_1,
+        show_button_2: show_button_2,
+        button_label_2: button_label_2,
+        button_link_2: button_link_2,
+        button_style_2: button_style_2
+      %}
+      <div class="shop-the-look__grid cols--{{ columns }}">
+        {%- for block in section.blocks -%}
+          <div class="shop-the-look__item">
+            {%- liquid
+              if columns == 1
+                assign sizes = '100vw'
+              else
+                assign sizes = '(min-width: 77.5rem) calc(77.5rem / cols), (min-width: 48rem) calc(100vw / cols), 100vw' | replace: 'cols', columns
+              endif
+            -%}
+            {%-
+              render 'image-with-markers',
+              image: block.settings.image,
+              aspect_ratio: 'portrait',
+              max_width: 1600,
+              sizes: sizes,
+              product: block.settings.product,
+              product_position_x: block.settings.product_position_x,
+              product_position_y: block.settings.product_position_y,
+              product_2: block.settings.product_2,
+              product_2_position_x: block.settings.product_2_position_x,
+              product_2_position_y: block.settings.product_2_position_y,
+            -%}
+
+            {%- if block.settings.image_caption != blank -%}
+              <div class="caption">{{ block.settings.image_caption }}</div>
+            {%- endif -%}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Shop the Look",
+    "class": "shop-the-look",
+    "max_blocks": 3,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background colour"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text colour"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "pre_title",
+        "label": "Pre title"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title",
+        "default": "Shop the look"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "post_title",
+        "label": "Post title"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "content",
+        "label": "Content"
+      },
+      {
+        "type": "text",
+        "id": "button_label_1",
+        "label": "First button label",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "First button link",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "button_style_1",
+        "label": "First button style",
+        "default": "",
+        "options": [
+          {
+            "value": "",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          },
+          {
+            "value": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label_2",
+        "label": "Second button label",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link_2",
+        "label": "Second button link",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "button_style_2",
+        "label": "Second button style",
+        "default": "",
+        "options": [
+          {
+            "value": "",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          },
+          {
+            "value": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Product",
+        "type": "product",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Image Settings"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "image_caption",
+            "label": "Image caption"
+          },
+          {
+            "type": "header",
+            "content": "Product Marker Settings"
+          },
+          {
+            "type": "header",
+            "content": "Product 1 settings"
+          },
+          {
+            "type": "product",
+            "label": "Product 1",
+            "id": "product"
+          },
+          {
+            "type": "range",
+            "id": "product_position_x",
+            "label": "Product 1 - horizontal position",
+            "min": 0,
+            "max": 100,
+            "default": 10
+          },
+          {
+            "type": "range",
+            "id": "product_position_y",
+            "label": "Product 1 - vertical position",
+            "min": 0,
+            "max": 100,
+            "default": 10
+          },
+          {
+            "type": "header",
+            "content": "Product 2 settings"
+          },
+          {
+            "type": "product",
+            "label": "Product 2",
+            "id": "product_2"
+          },
+          {
+            "type": "range",
+            "id": "product_2_position_x",
+            "label": "Product 2 - horizontal position",
+            "min": 0,
+            "max": 100,
+            "default": 50
+          },
+          {
+            "type": "range",
+            "id": "product_2_position_y",
+            "label": "Product 2 - vertical position",
+            "min": 0,
+            "max": 100,
+            "default": 50
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Shop the Look",
+        "category": "Products",
+        "blocks": [
+          {
+            "type": "product"
+          },
+          {
+            "type": "product"
+          }
+        ]
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

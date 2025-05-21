@@ -1,0 +1,137 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": true,
+        "page_nav": "faqs-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_neRaTd": {
+          "type": "question",
+          "settings": {
+            "title": "Holiday Extended Returns Policy",
+            "content": "<p>Any orders placed from 1st December 2024 until 8th January 2025 are able to be returned via our online <a href=\"https://au.faithfullthebrand.com/a/return\" title=\"https://au.faithfullthebrand.com/a/return\">Returns Portal</a> within 30 days of delivery.</p><p>Please ensure your item/s are eligible to be returned and meet our conditions of return. Items must be returned in their original condition, with all original tags and hygiene stickers still attached and within 30 days of the delivery date. Items purchased as ‘final sale’ can only be exchanged for a different size where stock permits. </p>"
+          }
+        },
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "What is your returns policy?",
+            "content": "<p>Please ensure your item/s are eligible to be returned and meet our conditions of return. Items must be returned in their original condition, with all original tags and hygiene stickers still attached and within 14 days of the delivery date. Items purchased as ‘final sale’ can only be exchanged for a different size where stock permits. Read our full returns policy.</p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "How do I submit a return request?",
+            "content": "<p>To return your item/s, please read our returns policy to check your item/s are eligible for a return. If your item/s meet the conditions of return, you can submit a returns request via our <a href=\"https://au.faithfullthebrand.com/a/return\" title=\"https://au.faithfullthebrand.com/a/return\">online returns portal.</a><br/></p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer pre-paid returns?",
+            "content": "<p>Yes, we currently offer pre-paid return labels on Australian orders. We offer a flat rate of $14.95 for pre-paid returns, which will be deducted from your original refund amount at the time your refund is processed. We offer free returns postage for exchanges only.</p><p><br/>Unfortunately, we are unable to provide prepaid return labels for customers returning from Northern Territory. Customers returning from this region are kindly asked to arrange their own method of postage.</p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "title": "When will my return be processed?",
+            "content": "<p>Returns may take up to 3 to 5 business days from the date of delivery to be assessed and processed by us. Once your return or refund has been processed, you will receive a notification via email.<br/></p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "title": "When will I receive my refund?",
+            "content": "<p>If your returned item/s are eligible for a refund, please allow up to 7 to 10 business days from the date of delivery for the returned item/s to be assessed and processed by us. Refunds will be processed via the original payment method used to place the order. <br/><br/>Depending on your payment method and financial institution, please allow up to 10 business days for the refunded amount to be reflected at your end. We recommend checking with your payment provider for more information on their current processing times.<br/></p>"
+          }
+        },
+        "question_5": {
+          "type": "question",
+          "settings": {
+            "title": "Can I exchange an item?",
+            "content": "<p>You can request an exchange as per our <a href=\"/pages/info-returns\" title=\"Info Returns\">Returns Policy</a> through our website. Please note, once an item has been exchanged, the exchanged item is only eligible for a refund.<br/></p>"
+          }
+        },
+        "question_6": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return a sale item?",
+            "content": "<p>Sales items that are marked down and not purchased as ‘FINAL SALE’ can be returned for a refund or exchange.</p><p>Items marked as ‘FINAL SALE’ cannot be returned and are not eligible for refund, unless the items are deemed faulty. These items can be exchanged for a different size where stock permits. Where stock is not available of the requested size, a store credit will be issued.</p><p>Please see our full returns policy for more information.</p>"
+          }
+        },
+        "question_TxqFLp": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return an item purchased using a discount code?",
+            "content": "<p>Items purchased using a promotional discount code (including our first order welcome offer) are eligible to be returned for a refund or store credit equal to the returned item’s value, unless the item was purchased as final sale.</p>"
+          }
+        },
+        "question_JDNYk8": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return an item purchased from a stockist?",
+            "content": "<p>We do not accept returns for items purchased through one of our stockists. Please contact the retailer directly or visit their website for their full returns policy.</p>"
+          }
+        },
+        "question_JTwEtP": {
+          "type": "question",
+          "settings": {
+            "title": "How do Instant Exchanges work?",
+            "content": "<p>Instant Exchange allows you to secure your new item instantly, before posting back your returned item/s. Simply raise your Instant Exchange request via our <a href=\"https://au.faithfullthebrand.com/a/return\" title=\"https://au.faithfullthebrand.com/a/return\">Returns Portal </a>within 14 days of receiving your order and follow the prompts to select your new item. Once raised, you will receive an order confirmation email with your new items. Please ensure you post your returned item/s within 14 days of raising your Instant Exchange to avoid being charged for all items. </p>"
+          }
+        },
+        "question_zPtyHw": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return an item I ordered through Instant Exchange?",
+            "content": "<p>You can return item/s ordered through Instant Exchange for a refund only. You will receive a refund for the total amount paid for the original item and any difference paid for the exchanged item. All items must be processed via the online Returns Portal within 14 days of the delivery date and returned in their original condition (unworn, unaltered, unused and unwashed) with the tags attached. Any sign of tag tampering will not be accepted. All swimwear must be returned with the protective hygiene strip intact. Any sign of removal or alteration will not be accepted.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_neRaTd",
+        "question_0",
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4",
+        "question_5",
+        "question_6",
+        "question_TxqFLp",
+        "question_JDNYk8",
+        "question_JTwEtP",
+        "question_zPtyHw"
+      ],
+      "settings": {
+        "title": "",
+        "is_primary_heading": false,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

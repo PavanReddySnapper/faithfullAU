@@ -1,0 +1,1156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "container--sm",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "main_page_header_hEMyiV": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Our Retailers",
+        "is_primary_heading": true,
+        "page_nav": "retailers-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_rGHGG6": {
+      "type": "store-locator",
+      "blocks": {
+        "store_6VMHWF": {
+          "type": "store",
+          "settings": {
+            "title": "Annabel",
+            "contact": "<p>150 Main Street, <br/>Sag Harbor, NY, 11963, USA<br/><br/>https://annabeltheshop.com</p>"
+          }
+        },
+        "store_dUGaCz": {
+          "type": "store",
+          "settings": {
+            "title": "Brooke and Bell",
+            "contact": "<p>60 4th Street<br/>Hoboken, NJ, 7030, USA<br/><br/>+1 201 268-7001<br/>https://brookeandbel.com</p>"
+          }
+        },
+        "store_dTWkPr": {
+          "type": "store",
+          "settings": {
+            "title": "Charbellem ",
+            "contact": "<p>33 Witherspoon Street, Princeton,<br/>NJ, 08540, USA<br/><br/></p><p>https://charbellem.com</p>"
+          }
+        },
+        "store_tnGYzj": {
+          "type": "store",
+          "settings": {
+            "title": "Cloak and Dagger",
+            "contact": "<p>334 East 9th Street,<br/>New York, NY, 10003, USA<br/><br/>+1 212-673-0500<br/>https://www.cloakanddaggernyc.com</p>"
+          }
+        },
+        "store_GwzEKM": {
+          "type": "store",
+          "settings": {
+            "title": "Cloak and Dagger",
+            "contact": "<p>33 Tinker Street,<br/>Wookstock, NY, 12498, USA<br/><br/>https://www.cloakanddaggernyc.com</p>"
+          }
+        },
+        "store_gP9pDP": {
+          "type": "store",
+          "settings": {
+            "title": "Galvanic",
+            "contact": "<p>301 Washington Street,<br/>Cape May, NJ, 8204, USA<br/><br/>https://galvanic.co</p>"
+          }
+        },
+        "store_DHGr4H": {
+          "type": "store",
+          "settings": {
+            "title": "Isalis Prince",
+            "contact": "<p>22 Prince Street,<br/>New York, NY, 10012, USA<br/><br/>https://www.shopisalis.com</p>"
+          }
+        },
+        "store_KdDtYD": {
+          "type": "store",
+          "settings": {
+            "title": "Morley Darien",
+            "contact": "<p>1094 Post Road<br/>Darien, CT, 6820, USA<br/><br/>+1 561 279 9699<br/>https://shopmorley.com</p>"
+          }
+        },
+        "store_B7gwak": {
+          "type": "store",
+          "settings": {
+            "title": "Our North Shore",
+            "contact": "<p>43 Katonah Ave, NY, 10536, USA<br/><br/><br/>https://www.ournorthstore.com</p>"
+          }
+        },
+        "store_nzCMz9": {
+          "type": "store",
+          "settings": {
+            "title": "Salt Boutique",
+            "contact": "<p>72 Central Street<br/>Wellesley, MA, 2482, USA<br/><br/>+1 781 707 6595<br/>https://www.saltnantucket.com</p>"
+          }
+        },
+        "store_XQFFPh": {
+          "type": "store",
+          "settings": {
+            "title": "Salt Boutique",
+            "contact": "<p>4A South Water Street,<br/>Nantucket, MA, 2554, USA<br/><br/>+1 508 228 1128<br/>https://www.saltnantucket.com</p>"
+          }
+        },
+        "store_bAG7A4": {
+          "type": "store",
+          "settings": {
+            "title": "Salt Wellfleet ",
+            "contact": "<p>25 Bank St, Wellfleet, MA 02667, USA<br/><br/><br/>+1 508 237 1207<br/>https://saltwellfleet.com</p>"
+          }
+        },
+        "store_eLJQJX": {
+          "type": "store",
+          "settings": {
+            "title": "Skirt ",
+            "contact": "<p>1041 W Lancaster Ave, Retail, Abryn Mawr, PA, 19010, USA</p><p><br/>+1 610 520 0222<br/>https://shop-skirt.com</p>"
+          }
+        },
+        "store_RyYPzk": {
+          "type": "store",
+          "settings": {
+            "title": "Slate",
+            "contact": "<p>54 High Street,<br/>Charlestown, MA, 02129, USA<br/><br/>+1 508 939 1908<br/>https://slatemv.com</p>"
+          }
+        },
+        "store_QwH9hJ": {
+          "type": "store",
+          "settings": {
+            "title": "Togs",
+            "contact": "<p>66 Elm Street,<br/>New Canaan, CT, 6840, USA<br/><br/>+1 203 972 2871<br/>https://togsct.com</p>"
+          }
+        },
+        "store_rdJfRi": {
+          "type": "store",
+          "settings": {
+            "title": "Zane ",
+            "contact": "<p>41 exchange street, portland, maine, 04101, USA<br/><br/>+1 207 420 1800<br/>https://shopzane.com</p>"
+          }
+        },
+        "store_m7zLq9": {
+          "type": "store",
+          "settings": {
+            "title": "Warm",
+            "contact": "<p>171 Main Street,<br/>Amagansett, NY, 11930, USA<br/><br/>+1 631 658 9444<br/>https://warmny.com</p>"
+          }
+        },
+        "store_qCAQEj": {
+          "type": "store",
+          "settings": {
+            "title": "Warm Shop",
+            "contact": "<p>219 Morris Avenue,<br/>Spring Lake, NJ, 07762,USA<br/><br/>+1 732 943 5372<br/>https://shopwarmsl.com</p>"
+          }
+        },
+        "store_cXazfM": {
+          "type": "store",
+          "settings": {
+            "title": "25 South",
+            "contact": "<p>25 South State Street,<br/>Newtown, PA, 18940, USA<br/><br/>https://www.25southboutiques.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_6VMHWF",
+        "store_dUGaCz",
+        "store_dTWkPr",
+        "store_tnGYzj",
+        "store_GwzEKM",
+        "store_gP9pDP",
+        "store_DHGr4H",
+        "store_KdDtYD",
+        "store_B7gwak",
+        "store_nzCMz9",
+        "store_XQFFPh",
+        "store_bAG7A4",
+        "store_eLJQJX",
+        "store_RyYPzk",
+        "store_QwH9hJ",
+        "store_rdJfRi",
+        "store_m7zLq9",
+        "store_qCAQEj",
+        "store_cXazfM"
+      ],
+      "settings": {
+        "title": "Northeast - USA",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_6KRcyc": {
+      "type": "store-locator",
+      "blocks": {
+        "store_UKFQxH": {
+          "type": "store",
+          "settings": {
+            "title": "Bunny & Babe",
+            "contact": "<p>555 Chestnut Street,<br/>Winnetka, IL, 60093, USA<br/><br/>https://bunnyandbabe.com</p>"
+          }
+        },
+        "store_Mp4eqh": {
+          "type": "store",
+          "settings": {
+            "title": "Clairvaux",
+            "contact": "<p>2710 West 53rd Street,<br/>Fairway, KS, 66205, USA<br/><br/>+1 913 499 6660<br/>https://www.shopclairvaux.com</p>"
+          }
+        },
+        "store_fdVLww": {
+          "type": "store",
+          "settings": {
+            "title": "Eugenie",
+            "contact": "<p>Eugenie, 1400 Van Dyke Street,<br/>Detroit, MI, 48214, USA<br/><br/>https://www.eugeniedetroit.com</p>"
+          }
+        },
+        "store_4qhJWY": {
+          "type": "store",
+          "settings": {
+            "title": "Felt Chicago",
+            "contact": "<p>2317 North Milwaukee Avenue,<br/>Chicago, IL, 60647, USA<br/><br/>http://www.feltchicago.com</p>"
+          }
+        },
+        "store_6MV4f3": {
+          "type": "store",
+          "settings": {
+            "title": "Girl Next Door ",
+            "contact": "<p>19034, Old Detroit Road, Rocky River, Ohio, 44116<br/><br/>+1 440 331 4025<br/>https://girlnextdoorboutique.com</p>"
+          }
+        },
+        "store_cjKiTb": {
+          "type": "store",
+          "settings": {
+            "title": "L.A. Cool",
+            "contact": "<p>120 East Front Street,<br/>Traverse City, MI, 49684, USA<br/><br/>+1 231 709 4445<br/>https://shoplacool.com</p>"
+          }
+        },
+        "store_UfJNLR": {
+          "type": "store",
+          "settings": {
+            "title": "Requisite",
+            "contact": "<p>211 North Washington Avenue,<br/>Minneapolis, MN, 55401, USA<br/><br/>+1 612 259 7387</p>"
+          }
+        },
+        "store_BFq6fk": {
+          "type": "store",
+          "settings": {
+            "title": "Soho Boutique",
+            "contact": "<p>2757 Observatory Avenue,<br/>Cincinnati, OH, 45208, USA<br/><br/>https://shopsohoboutique.com/</p>"
+          }
+        },
+        "store_KgEQLe": {
+          "type": "store",
+          "settings": {
+            "title": "Splash St Louis",
+            "contact": "<p>Suite B<br/>8811 Ladue Road,<br/>St. Louis, MO, 63124, USA<br/><br/>+1 314 721 6442<br/>https://www.shopsplash.com</p>"
+          }
+        },
+        "store_tJ8Vy8": {
+          "type": "store",
+          "settings": {
+            "title": "The Most Beautiful",
+            "contact": "<p>1411 Vine Street,<br/>Cincinnati, OH, 45202, USA<br/><br/>+1 888-662-8737<br/>https://themostbeautifulthingintheworldis.com</p>"
+          }
+        },
+        "store_gnYnmR": {
+          "type": "store",
+          "settings": {
+            "title": "Tuckernuck",
+            "contact": "<p>℅ Whiplash,<br/> 1675 Beggrow St,<br/> Lockbourne, OH, 43137, USA<br/><br/>+1 888 501-8101<br/>https://www.tnuck.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_UKFQxH",
+        "store_Mp4eqh",
+        "store_fdVLww",
+        "store_4qhJWY",
+        "store_6MV4f3",
+        "store_cjKiTb",
+        "store_UfJNLR",
+        "store_BFq6fk",
+        "store_KgEQLe",
+        "store_tJ8Vy8",
+        "store_gnYnmR"
+      ],
+      "settings": {
+        "title": "Midwest - USA",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "store_locator_7WrXiW": {
+      "type": "store-locator",
+      "blocks": {
+        "store_hwghjH": {
+          "type": "store",
+          "settings": {
+            "title": "Carriage House ",
+            "contact": "<p>115 Johnston St, SE Decatur, AL,  35601, USA<br/><br/>+1 256 355 4349 <br/>https://shopcarriagehouse.com</p>"
+          }
+        },
+        "store_qfHPkB": {
+          "type": "store",
+          "settings": {
+            "title": "Cloth and Label",
+            "contact": "<p>3105 Frederica Road, <br/>St Simons Island, GA, 31522, USA<br/><br/>912 268 4767<br/>https://clothandlabel.com</p>"
+          }
+        },
+        "store_xQ3e9E": {
+          "type": "store",
+          "settings": {
+            "title": "Clover",
+            "contact": "<p>4603 West Lovers Lane, <br/>Dallas, TX, 75209, USA<br/><br/>https://cabanacanary.com</p>"
+          }
+        },
+        "store_DCNhCk": {
+          "type": "store",
+          "settings": {
+            "title": "Curio at Gaena Bazaar",
+            "contact": "<p>3400 Collins Avenue,<br/>Miami, FL, 33140, USA<br/><br/>https://www.curio-ny.com/faenabazaar</p>"
+          }
+        },
+        "store_RH6Hzf": {
+          "type": "store",
+          "settings": {
+            "title": "Febe Clothing ",
+            "contact": "<p>474 Metairie Road, Suite 102, Metairie, Louisiana 70005<br/><br/>+1 504 835 5250<br/>https://www.febeclothing.com</p>"
+          }
+        },
+        "store_Cdp7Ka": {
+          "type": "store",
+          "settings": {
+            "title": "Frankie",
+            "contact": "<p>1891 Purdy Avenue, <br/>Miami, FL, 33139, USA<br/><br/>+ 1 786 479 4898<br/>https://frankiemiami.com</p>"
+          }
+        },
+        "store_iFPxJh": {
+          "type": "store",
+          "settings": {
+            "title": "Happily Grey",
+            "contact": "<p>3820 Charlotte Ave Ste. 147,<br/>Nashville, TN, 37209, USA<br/><br/>https://www.shophappilygrey.com</p>"
+          }
+        },
+        "store_3EnWEP": {
+          "type": "store",
+          "settings": {
+            "title": "Indigo Octopus",
+            "contact": "<p>101 Coastal Highway,<br/>Fenwick Island, DE, 19944, USA<br/><br/>https://indigooctopus.com</p>"
+          }
+        },
+        "store_9Y3GQN": {
+          "type": "store",
+          "settings": {
+            "title": "Indigo Octopus",
+            "contact": "<p>10207 Old Georgetown Road, Bethesda, MD, 20814, USA<br/><br/>https://indigooctopus.com</p>"
+          }
+        },
+        "store_dBTpcG": {
+          "type": "store",
+          "settings": {
+            "title": "Islands",
+            "contact": "<p>118/1240 Duck Rd Unit<br/>Duck, NC, 27949, USA<br/><br/>+1 252 261 1376<br/>https://www.islandstheshop.com</p>"
+          }
+        },
+        "store_argywF": {
+          "type": "store",
+          "settings": {
+            "title": "La Pina Bohemia",
+            "contact": "<p>6910 NW 46 Street, <br/>Miami, FL, 33166, USA<br/><br/>+1 502 3039 3200</p>"
+          }
+        },
+        "store_eJwkHH": {
+          "type": "store",
+          "settings": {
+            "title": "Lola Dre",
+            "contact": "<p>111 Breakwater Court,<br/>Jupiter, FL, 33477, USA<br/><br/>+1 561 935 9949<br/>https://loladre.com</p>"
+          }
+        },
+        "store_7JRrWr": {
+          "type": "store",
+          "settings": {
+            "title": "Model Citizen",
+            "contact": "<p>Suite 213,<br/>330 A1A North, <br/>Ponte Vedra Beach, FL, 32082, USA<br/><br/>+1 904 273 5185<br/>https://modelcitizen.com</p>"
+          }
+        },
+        "store_PHQP3a": {
+          "type": "store",
+          "settings": {
+            "title": "Only On The Avenue",
+            "contact": "<p>3209 Westheimer Road,<br/>Houston, TX, 77098, USA<br/><br/>https://onlyontheavenue.com</p>"
+          }
+        },
+        "store_dyh4nJ": {
+          "type": "store",
+          "settings": {
+            "title": "Penelope T",
+            "contact": "<p>3310 West Bay to Bay Boulevard,<br/>Tampa, FL, 33629, USA<br/><br/>+1 813-254-5740<br/>https://penelopetboutique.com</p>"
+          }
+        },
+        "store_EhtpjB": {
+          "type": "store",
+          "settings": {
+            "title": "Periwinkle",
+            "contact": "<p>339 Periwinkle Avenue,<br/>Delray Beach, FL, 33483, USA<br/><br/>+1 561 279 9699<br/>https://periwinkleonline.com</p>"
+          }
+        },
+        "store_gfGbgF": {
+          "type": "store",
+          "settings": {
+            "title": "Roan",
+            "contact": "<p>3142 West Cary Street,<br/>Richmond, VA, 23221, USA<br/><br/>+1 804 288 3699<br/>https://www.roanshop.com</p>"
+          }
+        },
+        "store_kqbRTw": {
+          "type": "store",
+          "settings": {
+            "title": "Saint Bernard ",
+            "contact": "<p>8700 Ambassador Row, Dallas, TX 75247, USA<br/><br/>https://www.saintbernard.com</p>"
+          }
+        },
+        "store_AR44wn": {
+          "type": "store",
+          "settings": {
+            "title": "The Atelier ",
+            "contact": "<p>1915 Cahaba Road, Mountain Brook, AL, 35223, USA<br/><br/>https://theatelier-bhm.com</p>"
+          }
+        },
+        "store_34TTTb": {
+          "type": "store",
+          "settings": {
+            "title": "The Shoe Hive",
+            "contact": "<p>127 South Fairfax Street,<br/>Alexandria, VA, 22314, USA<br/><br/>https://theshoehive.com</p>"
+          }
+        },
+        "store_yYcnt6": {
+          "type": "store",
+          "settings": {
+            "title": "Tuckernuck",
+            "contact": "<p>1053 Wisconsin Avenue,<br/>Washington, DC, 20007, USA<br/><br/>+1 888 501 8101<br/>https://www.tnuck.com</p>"
+          }
+        },
+        "store_9diiCL": {
+          "type": "store",
+          "settings": {
+            "title": "Uniquities",
+            "contact": "<p>452 West Franklin Street, <br/>Chapel Hill, NC 27516, USA<br/><br/>+1 919 933 4007<br/>https://uniquities.com</p>"
+          }
+        },
+        "store_pbnrCy": {
+          "type": "store",
+          "settings": {
+            "title": "Wylie Grey",
+            "contact": "<p>601 Chestnut Hill Mews,<br/>Gathersburg, MD, 20878, USA<br/><br/>+1 301 926 4775<br/>https://wyliegrey.com</p>"
+          }
+        },
+        "store_RFAKm9": {
+          "type": "store",
+          "settings": {
+            "title": "You Are Here",
+            "contact": "<p>5109 Pershing Avenue, <br/>Fort Worth, TX, 76107, USA<br/><br/>+1 817 862 7466<br/>https://www.youareherefw.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_hwghjH",
+        "store_qfHPkB",
+        "store_xQ3e9E",
+        "store_DCNhCk",
+        "store_RH6Hzf",
+        "store_Cdp7Ka",
+        "store_iFPxJh",
+        "store_3EnWEP",
+        "store_9Y3GQN",
+        "store_dBTpcG",
+        "store_argywF",
+        "store_eJwkHH",
+        "store_7JRrWr",
+        "store_PHQP3a",
+        "store_dyh4nJ",
+        "store_EhtpjB",
+        "store_gfGbgF",
+        "store_kqbRTw",
+        "store_AR44wn",
+        "store_34TTTb",
+        "store_yYcnt6",
+        "store_9diiCL",
+        "store_pbnrCy",
+        "store_RFAKm9"
+      ],
+      "settings": {
+        "title": "South - USA",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_ReTEyJ": {
+      "type": "store-locator",
+      "blocks": {
+        "store_p6QYwT": {
+          "type": "store",
+          "settings": {
+            "title": "Angel",
+            "contact": "<p>1221 Coast Village Road,<br/>Montecito, CA, 93108, USA<br/><br/>+1 805 565 1599</p>"
+          }
+        },
+        "store_RjA8xM": {
+          "type": "store",
+          "settings": {
+            "title": "Four Seasons Maui",
+            "contact": "<p>3900 Wailea Alanui Drive,<br/>Wailea, HI, 96753, USA</p>"
+          }
+        },
+        "store_r8Ukph": {
+          "type": "store",
+          "settings": {
+            "title": "Four Seasons Hualalai",
+            "contact": "<p>100 Kaupulehu Drive,<br/>Kailua-Kona, HI, 96740, USA</p>"
+          }
+        },
+        "store_RTdJcg": {
+          "type": "store",
+          "settings": {
+            "title": "Gentle People",
+            "contact": "<p>86 S. Laurel St. Ventura, CA, 93001 United States<br/><br/></p><p>https://shopgentlepeople.com</p>"
+          }
+        },
+        "store_azURKJ": {
+          "type": "store",
+          "settings": {
+            "title": "Isalis Boutique",
+            "contact": "<p>2127 Union Street,<br/>San Francisco, CA, 94123, USA<br/><br/>https://www.shopisalis.com</p>"
+          }
+        },
+        "store_nDYC7p": {
+          "type": "store",
+          "settings": {
+            "title": "Isalis Valencia",
+            "contact": "<p>610 22nd Street,<br/>San Francisco, CA, 94107, USA<br/><br/>https://www.shopisalis.com</p>"
+          }
+        },
+        "store_biGWgQ": {
+          "type": "store",
+          "settings": {
+            "title": "Largo Drive",
+            "contact": "<p>6856 Valjean Avenue,<br/>Mont-Tremblant, LA, 91406, USA<br/><br/>+1 818 997 7504<br/>https://www.largodrive.com</p>"
+          }
+        },
+        "store_KzWJWU": {
+          "type": "store",
+          "settings": {
+            "title": "Milk Boutique",
+            "contact": "<p>1708 Barrington Court,<br/>California, CA, 90049, USA<br/><br/>+1 323 951 0330<br/>https://shopatmilk.com</p>"
+          }
+        },
+        "store_FxNaD9": {
+          "type": "store",
+          "settings": {
+            "title": "Pitkin County Dry Goods",
+            "contact": "<p>520 East Cooper Avenue, <br/>Aspen, CO, 81611, USA<br/><br/>+1 970-925-1681<br/>https://pitkincountydrygoods.com</p>"
+          }
+        },
+        "store_UfgrLG": {
+          "type": "store",
+          "settings": {
+            "title": "Romy Park ",
+            "contact": "<p>675 Main St STE R2, Park City, UT 84060, United States<br/></p>"
+          }
+        },
+        "store_3ekGrf": {
+          "type": "store",
+          "settings": {
+            "title": "The Alcove Long Beach",
+            "contact": "<p>5203 East 2nd Street,<br/>Long Beach, CA, 90803, USA<br/><br/>+1 562 433 2558<br/>https://www.shopthealcove.com</p>"
+          }
+        },
+        "store_BaFcLt": {
+          "type": "store",
+          "settings": {
+            "title": "The Alcove Malibu",
+            "contact": "<p>3838 Cross Creek Road, <br/>Malibu, CA, 90265, USA<br/><br/>+1 310 317 1190<br/>https://www.shopthealcove.com</p>"
+          }
+        },
+        "store_8bW6pT": {
+          "type": "store",
+          "settings": {
+            "title": "The Beehive",
+            "contact": "<p>451 Manhattan Beach Boulevard,<br/>Manhattan Beach, CA, 90266, USA<br/><br/>+1 310 796 5500<br/>https://thebeehivemb.com</p>"
+          }
+        },
+        "store_pn9UzX": {
+          "type": "store",
+          "settings": {
+            "title": "Vida Moulin",
+            "contact": "<p>1568 E Bethany Home Road,<br/>Phoenix, AZ, 85014, USA<br/><br/>+1 602 265 1644<br/>https://www.vidamoulin.com</p>"
+          }
+        },
+        "store_kpf6XH": {
+          "type": "store",
+          "settings": {
+            "title": "Wyeth",
+            "contact": "<p>Suite 102,<br/>8830 Washington Boulevard,<br/>Culver City, CA, 90232, USA</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_p6QYwT",
+        "store_RjA8xM",
+        "store_r8Ukph",
+        "store_RTdJcg",
+        "store_azURKJ",
+        "store_nDYC7p",
+        "store_biGWgQ",
+        "store_KzWJWU",
+        "store_FxNaD9",
+        "store_UfgrLG",
+        "store_3ekGrf",
+        "store_BaFcLt",
+        "store_8bW6pT",
+        "store_pn9UzX",
+        "store_kpf6XH"
+      ],
+      "settings": {
+        "title": "West - USA",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_cgtx9E": {
+      "type": "store-locator",
+      "blocks": {
+        "store_M3C9tQ": {
+          "type": "store",
+          "settings": {
+            "title": "A Kind Heart",
+            "contact": "<p>2607 Yonge Street,<br/>Toronto, ON, M4P 2J1<br/><br/>+1 647-352-5463<br/>https://akindheart.ca</p>"
+          }
+        },
+        "store_rTRaBe": {
+          "type": "store",
+          "settings": {
+            "title": "Adorn Boutique",
+            "contact": "<p>1216 9th Avenue S.E<br/>Calgary, AB,T2G 0T1<br/><br/>+1 403 261 9919<br/>https://www.adornboutique.ca</p>"
+          }
+        },
+        "store_WYLbTU": {
+          "type": "store",
+          "settings": {
+            "title": "Andrews",
+            "contact": "<p>101/89 Tycos<br/>  Drive,<br/>Toronto, ON, M6B 1W3<br/><br/>+1 416 969 9991<br/>https://www.andrewsco.com/</p>"
+          }
+        },
+        "store_eAbcwx": {
+          "type": "store",
+          "settings": {
+            "title": "Bella & Wren",
+            "contact": "<p>9110 Glover Rd Unit 2,<br/>Fort Langley, BC,V1M 2R5<br/><br/>https://www.bellawren.ca</p>"
+          }
+        },
+        "store_wBnU7z": {
+          "type": "store",
+          "settings": {
+            "title": "Bernstein & Gold",
+            "contact": "<p>608 Yates Street,<br/>Victoria, BC, V8W 1K9<br/><br/>+1 250 384 7899<br/>https://bernsteinandgold.com/</p>"
+          }
+        },
+        "store_eE6rLt": {
+          "type": "store",
+          "settings": {
+            "title": "Bigley's",
+            "contact": "<p>39 Bolton Street,<br/>Bobcaygeon, ON, K0M 1A0<br/><br/>+1 705 738 2522<br/>https://www.bigleyshoes.com</p>"
+          }
+        },
+        "store_8BPbwp": {
+          "type": "store",
+          "settings": {
+            "title": "Billie",
+            "contact": "<p>1012 Ave Laurier O<br/>Outremont, QC, H2V 2K8<br/><br/>+1 415 270 5415<br/>https://billieboutique.com</p>"
+          }
+        },
+        "store_tBWRjp": {
+          "type": "store",
+          "settings": {
+            "title": "Boheme",
+            "contact": "<p>1/2925 Pandosy Street<br/>Kelowna, BC, V1Y 1W1<br/><br/>+1 778 484 4638<br/>http://store@bohemecollective.ca</p>"
+          }
+        },
+        "store_GA8q9h": {
+          "type": "store",
+          "settings": {
+            "title": "Bres",
+            "contact": "<p>104 Central Ave North<br/>Swift Current, SK, S9H 0L1<br/><br/>+1 306 750 7499<br/>https://bresboutique.com</p>"
+          }
+        },
+        "store_piEUdz": {
+          "type": "store",
+          "settings": {
+            "title": "6 By Gee",
+            "contact": "<p>6 Roxborough St W, Toronto, ON, M5R 1T8<br/><br/>+1 416 960 8081<br/>https://6bygeebeauty.com/</p>"
+          }
+        },
+        "store_n6rV94": {
+          "type": "store",
+          "settings": {
+            "title": "Carbon",
+            "contact": "<p>1726 Avenue Road,<br/>Toronto, ON, M4V 2H2<br/><br/>+1 416 487 0795<br/>https://shopcarbon.ca</p>"
+          }
+        },
+        "store_LaH9fr": {
+          "type": "store",
+          "settings": {
+            "title": "Casual Affairs",
+            "contact": "<p>2873 Bloor Street W, <br/>Etobicoke, ON, M8X 1B3<br/><br/>https://casualaffairsclothing.ca</p>"
+          }
+        },
+        "store_abCFdC": {
+          "type": "store",
+          "settings": {
+            "title": "Feather & Foe",
+            "contact": "<p>13 Quebec Street,<br/>Guelph, ON, N1H 2T1<br/><br/>+1 519 824 8584<br/>https://www.featherandfoe.ca/</p>"
+          }
+        },
+        "store_hL8ay6": {
+          "type": "store",
+          "settings": {
+            "title": "Feather & Stone",
+            "contact": "<p>303 Sunseeker Avenue,<br/>Innisfil, ON, L9S 0J7<br/><br/>+1 705 294 2040<br/>https://featherandstoneboutique.ca</p>"
+          }
+        },
+        "store_9xDgGt": {
+          "type": "store",
+          "settings": {
+            "title": "First & Third",
+            "contact": "<p>567 Richmond St, London, ON<br/><br/><br/>https://www.firstandthird.ca</p>"
+          }
+        },
+        "store_f4UgXP": {
+          "type": "store",
+          "settings": {
+            "title": "Flow by Nicole",
+            "contact": "<p>231 Wilson St East,<br/>Ancaster, ON, L9G 2B8<br/><br/>+1 905 304 0777<br/>https://flowbynicole.com</p>"
+          }
+        },
+        "store_xXxxXk": {
+          "type": "store",
+          "settings": {
+            "title": "Fossellos",
+            "contact": "<p>5711 Cowrie Street,<br/>Sechelt, BC, V0N 3A0<br/><br/>+1 604 741 9883</p>"
+          }
+        },
+        "store_t8hGtQ": {
+          "type": "store",
+          "settings": {
+            "title": "Good Neighbor",
+            "contact": "<p>415 Roncesvalles Avenue,<br/>Toronto, OC, M6R 2N1<br/><br/>+1 416-546-3779<br/>https://www.goodnbr.com</p>"
+          }
+        },
+        "store_XqFGTh": {
+          "type": "store",
+          "settings": {
+            "title": "Good Neighbor",
+            "contact": "<p>935 Queen Street East, <br/>Toronto, ON, M4M 1J6<br/><br/>+1 647 350 0663<br/>https://www.goodnbr.com</p>"
+          }
+        },
+        "store_7r6YEC": {
+          "type": "store",
+          "settings": {
+            "title": "Greige",
+            "contact": "<p>6 Brentwood Road South, Etobicoke</p><p><br/>https://greigeboutique.com/</p>"
+          }
+        },
+        "store_kjwzhi": {
+          "type": "store",
+          "settings": {
+            "title": "Havik",
+            "contact": "<p>4545 Albert Street, Regina<br/><br/><br/>+1 306 522 8636<br/>https://havikclothiers.com</p>"
+          }
+        },
+        "store_eLQXtT": {
+          "type": "store",
+          "settings": {
+            "title": "Hills of Kerrisdale",
+            "contact": "<p>2125 West 41st Avenue,<br/>Vancouver, BC, V6M 1Z3<br/><br/>+1 604 266 9177<br/>https://www.hillsofkerrisdale.com</p>"
+          }
+        },
+        "store_DmM7bH": {
+          "type": "store",
+          "settings": {
+            "title": "Homebodies",
+            "contact": "<p>176 Lakeshore Road, <br/>Oakville, ON, L6J 1H6<br/><br/>+1 905 845 4848<br/>https://thehomebodystudio.ca</p>"
+          }
+        },
+        "store_6MEaUe": {
+          "type": "store",
+          "settings": {
+            "title": "James",
+            "contact": "<p>910 Sherbrooke Street,<br/>Quebec, PQ, H3Z 1H3<br/><br/>+1 514 369 0700</p>"
+          }
+        },
+        "store_pkTyCV": {
+          "type": "store",
+          "settings": {
+            "title": "James",
+            "contact": "<p>4910 Sherbrooke Street,<br/>Montreal, QC, H3Z 1H3<br/><br/>+1 514 369 0700</p>"
+          }
+        },
+        "store_3GBLtJ": {
+          "type": "store",
+          "settings": {
+            "title": "Joelles",
+            "contact": "<p>457 Brant Street ,<br/>Burlington, ON, L7R 2G3<br/><br/>https://www.joelles.com</p>"
+          }
+        },
+        "store_aiPBtY": {
+          "type": "store",
+          "settings": {
+            "title": "KB Style",
+            "contact": "<p>1800 Corydon Ave Unit #1</p><p><br/><br/>+1 204 415 0770<br/>https://kbstyle.ca</p>"
+          }
+        },
+        "store_YzP3w8": {
+          "type": "store",
+          "settings": {
+            "title": "Leo",
+            "contact": "<p>810B 16th Avenue S.W.<br/>Calgary, AB, T2R 0S9<br/><br/>http://cornelia@leoboutique.com</p>"
+          }
+        },
+        "store_6nxXLY": {
+          "type": "store",
+          "settings": {
+            "title": "Le Trunkshop",
+            "contact": "<p>251 Mont-Royal Ave E, Montreal, Quebec H2T 1P6<br/><br/>+1 514 303 1630<br/>https://www.letrunkshop.com/</p>"
+          }
+        },
+        "store_GtLLyG": {
+          "type": "store",
+          "settings": {
+            "title": "Lovers Land",
+            "contact": "<p>215 Ossington Avenue,<br/>Toronto, ON, M6J 2Z8<br/><br/>+1 416 551 3321<br/>https://www.loversland.com</p>"
+          }
+        },
+        "store_cz7bCx": {
+          "type": "store",
+          "settings": {
+            "title": "Maison 4110",
+            "contact": "<p>4110 Saint-Catherine St, Westmount, Quebec, H3Z 1P2<br/><br/>+1 514 935 1588<br/>https://maison4110.com/</p>"
+          }
+        },
+        "store_qkG6x4": {
+          "type": "store",
+          "settings": {
+            "title": "Man & Woman",
+            "contact": "<p>1365-2271 Harvey Avenue,<br/>Kelowna, BC, V1Y 6H2<br/><br/>+1 778 484 5057<br/>https://manwomanhome.com</p>"
+          }
+        },
+        "store_MgYaAp": {
+          "type": "store",
+          "settings": {
+            "title": "Meraki",
+            "contact": "<p>109-3671 Uptown Boulevard,<br/>Victoria,  BC, V8Z 0B9<br/><br/>+1 778 265 0508<br/>https://www.merakiboutique.ca</p>"
+          }
+        },
+        "store_cANKMM": {
+          "type": "store",
+          "settings": {
+            "title": "Mimi & Coco",
+            "contact": "<p>201 Laurier Ouest,<br/>Montreal, QC, H2T 2N9<br/><br/>+1 514 906 0349<br/>https://www.mimicoco.com</p>"
+          }
+        },
+        "store_JEABHJ": {
+          "type": "store",
+          "settings": {
+            "title": "Muse Muskoka",
+            "contact": "<p>111 Medora St Unit 5, Port Carling, ON P0B 1J0<br/><br/>+1 289 775 8803<br/>https://www.instagram.com/musemuskoka</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_M3C9tQ",
+        "store_rTRaBe",
+        "store_WYLbTU",
+        "store_eAbcwx",
+        "store_wBnU7z",
+        "store_eE6rLt",
+        "store_8BPbwp",
+        "store_tBWRjp",
+        "store_GA8q9h",
+        "store_piEUdz",
+        "store_n6rV94",
+        "store_LaH9fr",
+        "store_abCFdC",
+        "store_hL8ay6",
+        "store_9xDgGt",
+        "store_f4UgXP",
+        "store_xXxxXk",
+        "store_t8hGtQ",
+        "store_XqFGTh",
+        "store_7r6YEC",
+        "store_kjwzhi",
+        "store_eLQXtT",
+        "store_DmM7bH",
+        "store_6MEaUe",
+        "store_pkTyCV",
+        "store_3GBLtJ",
+        "store_aiPBtY",
+        "store_YzP3w8",
+        "store_6nxXLY",
+        "store_GtLLyG",
+        "store_cz7bCx",
+        "store_qkG6x4",
+        "store_MgYaAp",
+        "store_cANKMM",
+        "store_JEABHJ"
+      ],
+      "settings": {
+        "title": "Canada",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_VFNdtB": {
+      "type": "store-locator",
+      "blocks": {
+        "store_CfDXa3": {
+          "type": "store",
+          "settings": {
+            "title": "Nico",
+            "contact": "<p>2635 Gordon Road,<br/>Regina, SK, S4S 6H7<br/><br/>+1 306 359 6426<br/>https://nicoladyandbaby.com</p>"
+          }
+        },
+        "store_Gdtymp": {
+          "type": "store",
+          "settings": {
+            "title": "October",
+            "contact": "<p>847 Corydon Street,<br/>Winnipeg, MB, R3M 0W71 <br/><br/>+1 204 452 0737<br/>https://www.octoberboutiqueshop.com</p>"
+          }
+        },
+        "store_wHkUiz": {
+          "type": "store",
+          "settings": {
+            "title": "Over The Rainbow",
+            "contact": "<p>55 Bloor Street,<br/>W Suite, 123 Manulife Centre<br/>Toronto, ON, M4W 1A5<br/><br/>+1 416 967 7448<br/>https://www.rainbowjeans.com</p>"
+          }
+        },
+        "store_bX9Li9": {
+          "type": "store",
+          "settings": {
+            "title": "Paola Di",
+            "contact": "<p>3357 Yonge St, Toronto, ON M4N 2M6<br/><br/>+1 416 322 0430 <br/>https://paoladidesigns.ca/</p>"
+          }
+        },
+        "store_4fegE6": {
+          "type": "store",
+          "settings": {
+            "title": "Poppy & Olive",
+            "contact": "<p>1595 Bedford Highway,<br/>Bedford, NS, B4A 3Y4<br/><br/>+1 902 835 7009<br/>https://www.shoppoppyandolive.com</p>"
+          }
+        },
+        "store_XqTkeW": {
+          "type": "store",
+          "settings": {
+            "title": "Premium",
+            "contact": "<p>1385 Greene Avenue,<br/>Montreal, QC, H3Z 2A5<br/><br/>+1 514 937 3627<br/>https://premiumboutique.com</p>"
+          }
+        },
+        "store_VTLFeG": {
+          "type": "store",
+          "settings": {
+            "title": "Shop Mercurial",
+            "contact": "<p>218 E 28th Avenue,<br/>Vancouver, BC, V5V 2M4</p>"
+          }
+        },
+        "store_6LtmzW": {
+          "type": "store",
+          "settings": {
+            "title": "Something Pretty",
+            "contact": "<p>10 Front Street,<br/>Penticton, BC, V2A 1H1<br/><br/>+1 250 276 4308<br/>https://shopsomethingpretty.com</p>"
+          }
+        },
+        "store_eccc3x": {
+          "type": "store",
+          "settings": {
+            "title": "Style Artist",
+            "contact": "<p>112 Avenue Road,<br/>Toronto, ON, M5R 2H4<br/><br/>+1 416 720 0677<br/>https://styleartist.com</p>"
+          }
+        },
+        "store_WHGEQC": {
+          "type": "store",
+          "settings": {
+            "title": "Tallow",
+            "contact": "<p>358 Richmond Road,<br/>Ottawa, ON, K2A 0E1<br/><br/>+1 613 680 7881<br/>https://www.shoptallow.com</p>"
+          }
+        },
+        "store_P6aYX9": {
+          "type": "store",
+          "settings": {
+            "title": "Tallow",
+            "contact": "<p>1116 Wellington St<br/>Ottawa, ON, K1Y 2Y7<br/><br/>+1 613 680 7881<br/>https://www.shoptallow.com</p>"
+          }
+        },
+        "store_CqkpJA": {
+          "type": "store",
+          "settings": {
+            "title": "The Beach",
+            "contact": "<p>39/4314 Main Street<br/>Whistler, BC, V0N 1B4<br/><br/>+1 604 932 7505<br/>http://www.thebeachwhistler.com</p>"
+          }
+        },
+        "store_atRTGk": {
+          "type": "store",
+          "settings": {
+            "title": "The Hive",
+            "contact": "<p>60 Pine Street,<br/>Collingwood, ON, L9Y 2N7<br/><br/>https://thehivehoneyharbour.com</p>"
+          }
+        },
+        "store_fmH4HV": {
+          "type": "store",
+          "settings": {
+            "title": "The New Trend",
+            "contact": "<p>55 Avenue Road,<br/>Toronto, ON, M5R 3L2<br/><br/>https://tntfashion.ca</p>"
+          }
+        },
+        "store_4xPFyp": {
+          "type": "store",
+          "settings": {
+            "title": "The Posh Shoppe",
+            "contact": "<p>49 Hurontario St, Collingwood, ON L9Y 2L7<br/><br/><br/>+1 705 444 0224<br/>https://www.instagram.com/shopposhshoppe</p>"
+          }
+        },
+        "store_93N7AQ": {
+          "type": "store",
+          "settings": {
+            "title": "Trend",
+            "contact": "<p>650 Wellington Street<br/>Aurora, ON, TL4G 0K3<br/><br/>+1 905 841 2373<br/>https://www.instagram.com/trendboutiqueauroraontario</p>"
+          }
+        },
+        "store_EHwLAk": {
+          "type": "store",
+          "settings": {
+            "title": "Tucci Armadio",
+            "contact": "<p>154 Main Street,<br/>Unionville, ON, L3R 2G9<br/><br/>+1 905 943 9797</p>"
+          }
+        },
+        "store_kcD9C4": {
+          "type": "store",
+          "settings": {
+            "title": "Unfallen",
+            "contact": "<p>161 Mississaga Street East, Orillia, ON L3V 1V8<br/><br/>+1 705 238 7021<br/>https://unfallen.shop</p>"
+          }
+        },
+        "store_ahPG6N": {
+          "type": "store",
+          "settings": {
+            "title": "Want...the Clothing  Co.",
+            "contact": "<p>488 Baker Street,<br/>Nelson, BC, V1L 4H8</p>"
+          }
+        },
+        "store_NnDTwB": {
+          "type": "store",
+          "settings": {
+            "title": "West of Woodward",
+            "contact": "<p>1188 Hamilton Street,<br/>Vancouver, BC, V6B 2S2<br/><br/>+1 604 688 5757<br/>https://wofwoodward.com</p>"
+          }
+        },
+        "store_QbMYV3": {
+          "type": "store",
+          "settings": {
+            "title": "Whim and Violet",
+            "contact": "<p>2830 Peatt Road,<br/>Langford, BC, V9B 6Z2<br/><br/>https://shopwhimsviolet.ca</p>"
+          }
+        },
+        "store_E4K87T": {
+          "type": "store",
+          "settings": {
+            "title": "White Cherry",
+            "contact": "<p>3/10425 Islington Avenue,<br/>Vaughan, ON, L0J 1C0<br/><br/>+1 905 552 7700<br/>https://whitecherryboutique.com/</p>"
+          }
+        },
+        "store_c3Fbh3": {
+          "type": "store",
+          "settings": {
+            "title": "Wild & Heart",
+            "contact": "<p>1/38036 Cleveland Avenue,<br/>Squamish, BC, V8B 0A1<br/><br/>+1 604 390 3913<br/>https://www.wildandheart.com</p>"
+          }
+        },
+        "store_mcDjxc": {
+          "type": "store",
+          "settings": {
+            "title": "Will Boutique",
+            "contact": "<p>Suite 105-A,<br/>4 Pl. du Commerce<br/>Montreal, QC, H3E 1J4<br/><br/>+1 514 762 0777<br/>https://www.willboutique.com</p>"
+          }
+        },
+        "store_XwGGXB": {
+          "type": "store",
+          "settings": {
+            "title": "Wishlist YYZ",
+            "contact": "<p>629 Mt Pleasant Road,<br/>Toronto, ON, M4S 2N5<br/><br/>+1 416 901 5553<br/>https://www.wishlistyyz.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_CfDXa3",
+        "store_Gdtymp",
+        "store_wHkUiz",
+        "store_bX9Li9",
+        "store_4fegE6",
+        "store_XqTkeW",
+        "store_VTLFeG",
+        "store_6LtmzW",
+        "store_eccc3x",
+        "store_WHGEQC",
+        "store_P6aYX9",
+        "store_CqkpJA",
+        "store_atRTGk",
+        "store_fmH4HV",
+        "store_4xPFyp",
+        "store_93N7AQ",
+        "store_EHwLAk",
+        "store_kcD9C4",
+        "store_ahPG6N",
+        "store_NnDTwB",
+        "store_QbMYV3",
+        "store_E4K87T",
+        "store_c3Fbh3",
+        "store_mcDjxc",
+        "store_XwGGXB"
+      ],
+      "settings": {
+        "title": "Canada",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_pH9XBF": {
+      "type": "store-locator",
+      "settings": {
+        "title": "Online",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_page_header_hEMyiV",
+    "store_locator_rGHGG6",
+    "store_locator_6KRcyc",
+    "store_locator_7WrXiW",
+    "store_locator_ReTEyJ",
+    "store_locator_cgtx9E",
+    "store_locator_VFNdtB",
+    "store_locator_pH9XBF"
+  ]
+}

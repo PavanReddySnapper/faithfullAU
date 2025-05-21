@@ -1,0 +1,37 @@
+{%- comment -%}
+  Parameters
+  collection: {object} - The collection object to display.
+  sizes: {string} - The sizes attribute for the image.
+  aspect_ratio: {string} - The aspect ratio of the image. Defaults to 'portrait'
+  image: {object} - The image object to use. Defaults to collection.featured_image
+  badge: {string} - The badge to display. Defaults to collection.metafields.custom.badge
+{%- endcomment -%}
+{% liquid
+  assign sizes = sizes | default: '(min-width: 48rem) calc(100vw / 3), 50vw'
+  assign aspect_ratio = aspect_ratio | default: 'portrait'
+
+  assign image = image | default: collection.featured_image
+  assign badge = badge | default: collection.metafields.custom.badge
+  assign title = title | default: collection.title
+  assign url = url | default: collection.url
+%}
+
+<div class="collection-card">
+  <a
+    href="{{ url }}"
+    class="collection-card__image aspect-ratio aspect-ratio--{{ aspect_ratio }}"
+  >
+    {% if image != blank %}
+      {%- render 'component-image', image: image, max_width: 1080, sizes: sizes -%}
+    {% endif %}
+  </a>
+
+  <div class="collection-card__content">
+    {% if badge != blank -%}
+      <div class="collection-card__badge h6">{{ badge }}</div>
+    {%- endif %}
+    <h4 class="collection-card__title">
+      <a href="{{ url }}">{{ title }}</a>
+    </h4>
+  </div>
+</div>

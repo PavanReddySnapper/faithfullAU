@@ -1,0 +1,342 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/download_11.55.34_pm.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Marseille Travel Guide With Parysatis",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>There's no better way to explore the port cities and quaint towns along the South of France than by following the recommendations and observations from a true local. Beloved for its paradisiacal calanques, Mediterranean coastlines and heritage architecture, below French #FAITHFULLGirl Parysatis shares her bespoke guide to visiting Marseille. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_2015.jpg",
+        "background_image_2": "shopify://shop_images/01438A72-AA01-4526-9445-2CDF019C306A_1.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_dNri9x": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_mwzenF": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><em>The perfect day in Marseille...</em></p><p>Starts with a morning coffee at <a href=\"https://www.instagram.com/boujou.coffee/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/boujou.coffee/?hl=en\">Boujou</a>, perched along La Corniche, offering a serene view of the sea. Followed by a stroll through the bustling Noailles Market follows, where the air is filled with the scents of fresh spices and produce. </p><p>Lunch is best enjoyed at <a href=\"https://www.instagram.com/explore/locations/421280834/chez-etienne-pizzeria-cassaro/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/explore/locations/421280834/chez-etienne-pizzeria-cassaro/?hl=en\">Chez Étienne</a> in the charming Le Panier district, indulging in their famous wood-fired pizza. The afternoon calls for a refreshing swim in the secluded Malmousque cove. </p><p>As the sun begins to set, aperitifs at <a href=\"https://www.instagram.com/le_cafe_de_labbaye_/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/le_cafe_de_labbaye_/?hl=en\">Le Café de l’Abbaye</a> provide the perfect golden-hour glow, before rounding off the evening with a delightful dinner at La Mercerie.</p><p><em>The best spot to swim isn't what you think it is…</em></p><p>While most visitors rush to Plage des Catalans, true locals know that Anse de la Fausse Monnaie is the real gem – a small, rocky cove where the Mediterranean feels more personal and untouched.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_mwzenF"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_3fARJX": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_2025.jpg",
+        "background_image_2": "shopify://shop_images/A5F7F803-C2B6-42B5-9495-90B12BF19711.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_PyqJVz": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_TDGfVC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><em>You’ll find the most authentic French cuisine…</em></p><p>At <a href=\"https://www.restaurant-sepia.fr/julis\" target=\"_blank\" title=\"https://www.restaurant-sepia.fr/julis\">Le Bar Julius</a>, where classic French dishes are given a contemporary twist, or at Ippon, an intimate spot known for its creative and unexpected culinary delights.</p><p><em>You’ll find me at aperitivo hour…</em></p><p>Sipping on a glass of natural wine at <a href=\"https://larelevemarseille.fr/\" target=\"_blank\" title=\"https://larelevemarseille.fr/\">La Relève</a>, or unwinding at <a href=\"https://www.instagram.com/figuremarseille/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/figuremarseille/?hl=en\">Figures</a>, a laid-back haven with a cool terrace and effortlessly chic atmosphere.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_TDGfVC"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_KMtFVr": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/IMG_1974.jpg",
+        "background_image_2": "shopify://shop_images/740D4E0D-630E-4C15-B3F6-D591C806CF2D_1.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_XY7Fhg": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_L6QCQT": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><em>What the tourists don’t know is…</em></p><p>Cours Julien is a hidden paradise for vintage lovers, brimming with eclectic finds—from timeless home décor to unique fashion pieces. For those craving an escape from the city’s pulse, the Frioul Islands offer peaceful, crystal-clear beaches just a short boat ride away.</p><p><em>The best time of year to visit is…</em></p><p>September – when the crowds have thinned, the weather is still beautifully warm, and the sea is at its most inviting, offering a more relaxed and authentic Marseille experience.</p><p><em>A Marseille-inspired outfit is…</em></p><p>A breezy <a href=\"https://au.faithfullthebrand.com/collections/signatures\" target=\"_blank\" title=\"https://au.faithfullthebrand.com/collections/signatures\">linen dress</a>, effortlessly paired with comfortable flats, a straw hat for sun-drenched afternoons, and a woven basket bag – a timeless blend of effortless style and Provençal charm.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_L6QCQT"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "la-madrague",
+        "product_list": [
+          "juliet-dress-white",
+          "yvonne-midi-dress-adeline-floral-yellow",
+          "dinard-one-piece-butter",
+          "ana-top-natural"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/a-morning-in-new-york-with-constanze-saemann"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/in-conversation-with-villa-cleo"
+          }
+        },
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/inspired-artworks-with-carla-nicieza"
+          }
+        }
+      },
+      "block_order": [
+        "article_eUJjCy",
+        "article_zPApBT",
+        "article_n84pcB"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_BNpN6Q",
+    "rich_text_dNri9x",
+    "editorial_layout_3fARJX",
+    "rich_text_PyqJVz",
+    "editorial_layout_KMtFVr",
+    "rich_text_XY7Fhg",
+    "featured_products_3zGbcJ",
+    "featured_articles_KVqFxb"
+  ]
+}

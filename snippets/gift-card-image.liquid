@@ -1,0 +1,12 @@
+<div
+  class="gift-card-image"
+  style="background-image: url({{ background_image | image_url: width: 1280 }})"
+  data-gift-card-image
+>
+  <div class="gift-card-image__content">
+    {% render 'logo', title: shop.name %}
+    <p class="body-small hide" data-gift-card-text="message type"></p>
+    <p class="body-small hide" data-gift-card-text="recipient name"></p>
+    <p class="body-small hide" data-gift-card-text="message"></p>
+  </div>
+</div>

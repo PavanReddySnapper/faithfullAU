@@ -1,0 +1,260 @@
+<!-- CSS -->
+<style>
+@font-face {
+  font-family: 'ABCDiatype-Regular';
+  src: url('https://cdn.shopify.com/s/files/1/0194/7436/files/ABCDiatype-Regular_bc123591-8efc-4c32-988b-7b932abb11e4.otf?v=1744911612') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ABCDiatype-Medium';
+  src: url('https://cdn.shopify.com/s/files/1/0194/7436/files/ABCDiatype-Medium_6b08d875-71c6-440d-afb3-4189cf932172.otf?v=1744911528') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+  
+.loyalty-faq-section-container {
+    padding: 0 0 120px !important;
+    max-width: 100%;
+    margin: auto;
+    background-color: #fcfbf8;
+}
+  
+.loyalty-section-header {
+    text-align: center;
+    font-family: 'ABCDiatype-Regular' !important;
+    font-size: 23px !important;
+    font-weight: 400 !important;
+    color: #000;
+    margin-bottom: 30px !important;
+    padding-top: 50px;
+}
+
+.loyalty-faq .accordion {
+    background-color: #fcfbf8;
+    cursor: pointer;
+    width: 100%;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    border-bottom: 1px solid #d4d4d0;
+    margin: 0;
+    padding: 15px ;
+    align-items: center;
+    text-align: left;
+    font-family: 'ABCDiatype-Medium';
+    font-size: 13px;
+    font-weight: 500 !important;
+    color: #000;
+  }
+
+  .loyalty-faq {
+    max-width: 683px;
+    margin: auto;
+  }
+  
+  .loyalty-faq .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: #fcfbf8;
+    overflow: hidden;
+    transition: 0.4s;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .loyalty-faq .panel p {
+    font-family: 'ABCDiatype-Regular' !important;
+    font-size: 13px;
+    color: #000;
+  }
+
+  .loyalty-faq .panel a {
+    text-decoration: underline;
+  }
+  .loyalty-faq .accordion:hover {
+   cursor: pointer; 
+  }
+  
+  .loyalty-faq .active {
+    color: #000; 
+  }
+    
+  .loyalty-faq {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.loyalty-faq .loyalty-faq-question-container {
+    flex-basis: 100%;
+}
+  
+.loyalty-faq .accordion svg {
+  position: initial;
+  transform: none;
+}
+  
+.loyalty-faq .accordion.active svg {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transition: 0.2s;
+}
+
+/************* MOBILE ******************/
+@media only screen and (max-width: 1024px) {
+  .loyalty-faq .loyalty-faq-question-container {
+    flex-basis: 100%;
+}
+
+  .loyalty-section-header {
+    font-size: 23px !important;
+}
+
+.loyalty-faq .accordion {
+    font-size: 13px !important;
+  }
+
+  .loyalty-faq .panel p,
+  .loyalty-faq .panel a {
+    font-size: 13px !important;
+  }
+
+.loyalty-faq .accordion svg {
+    width: 30px !important;
+    min-width: 30px;
+    max-width: 32px;
+    padding-left: 10px !important;
+}
+  
+}
+</style>
+
+<!-- HTML -->
+<div class="loyalty-faq-section-container">
+
+  <h2 class="loyalty-section-header">Frequently Asked Questions</h2>
+  <div class="loyalty-faq">
+    
+<!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">How do I join The FAITHFULL Club?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+        Follow the link above and sign up to FAITHFULL and create an account. 
+      </p>
+    </div>
+  </div>
+
+<!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">When will I receive my welcome 10% off welcome code?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+The 10% off welcome code will arrive in your inbox within minutes after joining. Please allow for up to 10mins for it to arrive and ensure you have checked your spam folder. Our welcome code will only be sent to first time FAITHFULL customers.
+      </p>
+    </div>
+  </div>
+
+  <!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">How does The FAITHFULL Club work?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+        Every purchase you make will contribute to your lifetime spend. Your lifetime spend will determine which tier you reach. You can check your tier status in your account. 
+      </p>
+    </div>
+  </div>
+
+<!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">How do I receive my benefits?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+You will receive your benefits automatically via email and, if opted in text message. Check to ensure you are receiving both email and text messages from us and they are not being sent to your spam folder.
+      </p>
+    </div>
+  </div>
+
+  <!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">Will my tier be affected if I return an order?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+        Unfortunately your tier will be affected if you return an order as this will be deducted from your lifetime spend. 
+      </p>
+    </div>
+  </div>
+
+    <!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">Can I cancel or unsubscribe from FAITHFULL?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+        Yes, you can cancel your account or unsubscribe from our communications at any time. However, please note you will no longer receive exclusive benefits and rewards. 
+      </p>
+    </div>
+  </div>
+
+      <!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">Who can assist with my account?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+       Should you have any further questions or require assistance, reach out to our customer care team at shop@faithfullthebrand.com.
+      </p>
+    </div>
+  </div>
+
+         <!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion">My lifetime value is not correct, who can assist?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+Our lifetime value data is associated with the email you have used at checkout. Please ensure you have joined The FAITHFULL Club using the same email address you use at checkout. If your value is still not displaying correctly, please contact shop@faithfullthebrand.com and we will be happy to assist. Please note, we will need prior order details of any transactions not appearing within your account in order to resolve. 
+      </p>
+    </div>
+  </div>
+           <!-- QUESTION AND ANSWER-->
+  <div class="loyalty-faq-question-container">
+      <button class="accordion"> What currency is the lifetime value and rewards displayed?
+<svg width="12px" height="12px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 12H18M12 6V18" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>    </button>
+    <div class="panel">
+      <p> 
+Our lifetime value and rewards are displayed in AUD. Your reward vouchers will be converted at checkout to your local currency from the AUD amount using a current exchange rate for the AUD equivalent. Your lifetime value is displayed in AUD only.
+      </p>
+    </div>
+  </div>
+    
+  </div>
+</div>
+
+<!-- JavaScript -->
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>

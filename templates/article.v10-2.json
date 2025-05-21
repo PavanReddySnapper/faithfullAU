@@ -1,0 +1,898 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_9bf44fb3-76c8-4eea-b07b-64761ce047b3.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Copenhagen Travel Guide",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>While Copenhagen is often thought of for its relaxed, efficacious style it’s also an eclectic harbourside city that offers a myriad of boutique hotels, unique farm-to-table restaurants and colourful neighbourhoods. Cobblestone streets line harboursides and canals, while red, blue and yellow townhouses are chequered throughout. Locals sip only on natural, organic wines and love to peruse designer consignment stores and contemporary galleries. </p><p>Here, the creative team shares their curated guide to spending a weekend in the Danish city. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_hdwEph": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/2_0b33315e-9702-4198-b7c2-5e74d1ae8bf3.webp",
+        "background_image_2": "shopify://shop_images/3_3932fd55-25cf-48ff-8a71-edf8b1608dc9.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "second--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/sktpetri/?hl=en \" title=\"https://www.instagram.com/sktpetri/?hl=en \">Skt. Petri</a></p><p>Described as ‘laidback luxury,’ this boutique hotel in the Latin Quarter is only a short walk from Nyhavn and Stroget. Redesigned in 2017 by a Norwegian studio, the space has transformed from a 1928 department store to one with soft, comfortable rooms featuring luxurious details and a palette of gold, deep blue and emerald green. </p><p><a href=\"https://www.instagram.com/audocph/?hl=en \" title=\"https://www.instagram.com/audocph/?hl=en \">The Audo</a></p><p>Reflective of Scandinavian minimalism, the Audo is situated in the industrial district Nordhaven by the harbour and features 10 loft-style rooms with exposed beams and sunken windows in a palette of earthy tones and soft greys. </p><p><a href=\"https://www.instagram.com/villacph/\" title=\"https://www.instagram.com/villacph/\">Villa Copenhagen</a></p><p>Set right in the heart of Copenhagen, near Tivoli Gardens, this up-and-coming sustainable hotel was once the Neo-Baroque headquarters of the Danish post office. Now it’s a contemporary space with art-deco details and a rooftop pool that overlooks the city. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_2e6e3503-76d7-412f-97f5-351acd25d1b9.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Where to enjoy breakfast",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/lillebakery/?hl=en\" title=\"https://www.instagram.com/lillebakery/?hl=en\">Lille Bakery</a></p><p>An organic bakery that serves only seasonal produce from local, small scale farmers and millers. Fresh bread rolls with cheese and jams are served alongside their signature  prolog black filter coffee and fermented kombucha. </p><p><a href=\"https://www.instagram.com/atelierseptember/?hl=en\" title=\"https://www.instagram.com/atelierseptember/?hl=en\">Atelier September</a></p><p>A casual style cafe that’s beloved by locals for its comté cheese, soft-boiled eggs and rye bread. A traditional Scandinavian breakfast. </p><p><a href=\"https://www.instagram.com/groedcph/?hl=en \" title=\"https://www.instagram.com/groedcph/?hl=en \">GRØD</a></p><p>With GRØD being the Danish word for ‘porridge,’ this cafe is fittingly best known for its traditional Danish porridge with modern twists and seasonal ingredients. Everything from sweet oat porridge to savoury risottos. </p><p><a href=\"https://www.instagram.com/hartbageri/?hl=en \" title=\"https://www.instagram.com/hartbageri/?hl=en \">Hart Bageri</a></p><p>Considered one of the cities’ best bakeries, there are now 10 locations of Hart around Copenhagen. Their offering brings together sweet treats (pastries, croissants, danishes) with fresh loaves of bread and homemade cheesecakes. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/5_a4c8afbb-42a9-4431-8b0b-b9d8feb4a70d.webp",
+        "background_image_2": "shopify://shop_images/6_0f0761fc-d8b5-4771-9716-211d3f4d7249.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Where to dine",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/delphinerestaurant/?hl=en \" title=\"https://www.instagram.com/delphinerestaurant/?hl=en \">Delphine</a></p><p>A Mediterranean-inspired restaurant that embraces cuisine from the Greek Islands and southern Italy. Full of light and colour, dine on a menu of fresh seafood, green salads and greek yogurt soberts. </p><p><a href=\"https://www.instagram.com/baestcph/?hl=en\" title=\"https://www.instagram.com/baestcph/?hl=en\">BÆST</a></p><p>An Italian restaurant that focuses on raw milk cheeses and artisanal butchery, here you’ll devour homemade pizzas and charcuterie boards alongside an offering of organic wines. </p><p><a href=\"https://www.instagram.com/ilukacph/?hl=en \" title=\"https://www.instagram.com/ilukacph/?hl=en \">Iluka</a></p><p>Thoughtful and sustainably sourced seafood dishes are the heart of this small restaurant, one in which is set out with classic Danish minimalism and warmth. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_PyXX3z": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3t7Rhj": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_44a437fa-27b1-456e-90d7-063f672987cb.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3t7Rhj"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_ddXyEg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WdnYrt": {
+          "type": "title",
+          "settings": {
+            "title": "Where to drink",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CXX6Jm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/labanchinacph/ \" title=\"https://www.instagram.com/labanchinacph/ \">La Banchina</a> </p><p>Perhaps one of the most popular spots during summer, La Banchina is a small farm to table vegetarian and seafood restaurant with fresh natural wines that is situated right on the harbour. Guests can opt to sit inside (however noting tables are minimal) or enjoy their wine out on the jetties. During winter, guests tend to turn to the on-site sauna. </p><p><a href=\"https://www.instagram.com/pompettecph/?hl=en\" title=\"https://www.instagram.com/pompettecph/?hl=en\">Pompette</a></p><p>A small hole-in-the-wall organic natural bar and shop that is considered a neighbourhood favourite. The atmosphere is relaxed and cosy and the perfect spot for an afternoon stay or pre-dinner aperitif. </p><p><a href=\"https://www.instagram.com/apollo_kantine/?hl=en \" title=\"https://www.instagram.com/apollo_kantine/?hl=en \">Apollo Bar & Kantine</a></p><p>Tucked into the courtyard of the Kunsthal Charlottenborg at the Royal Danish Academy of Art, this is considered one of the best hidden treasures the city has to offer. The menu is uncomplicated, yet delicious with an array of unique non-alcoholic drinks and creative wines. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WdnYrt",
+        "richtext_CXX6Jm"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "editorial_layout_DHpgRA": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/8_104c0331-16f5-408e-8641-d65919aadb44.webp",
+        "background_image_2": "shopify://shop_images/9_35738dbb-6117-405d-8133-68dfc2f5d333.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "second--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_P6HhFy": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Nba4Na": {
+          "type": "title",
+          "settings": {
+            "title": "What to do",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_gAzENj": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/louiseroecph/?hl=en\" title=\"https://www.instagram.com/louiseroecph/?hl=en\">Visit the Louise Roe Gallery</a></p><p>A unique concept store where art, design and coffee come together. Visitors can sip on freshly brewed coffee while admiring (and browsing) European craftsmanship and elegant yet contemporary vessels, lamps, cushions, ceramics, glassware and gallery objects</p><p>Wander around Nyhavn </p><p>While a popular tourist destination, it remains so for a reason. The streets of Nyhavn are lined with colourful townhouses, bars and restaurants, all alongside one of the cities’ most notable canals. </p><p>Vintage shop in Vesterbro</p><p>Considered one of the most exciting and coveted new neighbourhoods in Copenhagen, Vesterbro offers an array of vintage stores – including Jérôme Vintage, Genskabt Vintage and Prag. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_Nba4Na",
+        "richtext_gAzENj"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Di Milano",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "di-milano",
+        "product_list": [
+          "freja-shirt-blue-pinstripe",
+          "lulea-wrap-vest-white",
+          "ines-fringe-dress-oatmeal",
+          "boda-midi-dress-poplar-sage"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "image_banner_LTgfqb": {
+      "type": "image-banner",
+      "blocks": {
+        "image_HAAVdp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_17_1a4618e4-356a-4812-a7e1-6f432f6cb744.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_UxBCJq": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_18_473da4ca-f9f3-4751-8f36-79ba2d085085.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_868WwE": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_19_5c2b432e-0b1e-4770-8cb8-2a22919a2623.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_PAbCg3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_20_225a10e8-d2c2-47fc-920c-81ca93ecc210.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_qiEP87": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_21_4c62a10b-89f1-46c9-ba87-84bb6c171d04.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_gJHKhL": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_22_2bb4ae32-1c1f-4412-ac2a-b6a69391683f.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_HAAVdp",
+        "image_UxBCJq",
+        "image_868WwE",
+        "image_PAbCg3",
+        "image_qiEP87",
+        "image_gJHKhL"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_with_text_pkRQPB": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_cjbG4y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_25_fb4d4cee-3069-4902-9d9f-5c4d272306f1.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        },
+        "text_FHKtVU": {
+          "type": "text",
+          "settings": {
+            "pre_title": "",
+            "title": "Living between two sun-drenched cities, Tel-Aviv and Lisbon, what does a quintessential Summer day look like to you?",
+            "title_size": "h4",
+            "text": "<p>I am inspired by older times and I aim to revive them in my work. I would define my creative style as Romantic and nostalgic yet I always connect to the brand/ client’s personal style and necessities.</p><p>Baroque and romanticism have a big influence on my work and inspiration. I often visit palaces, antique museums and art collections that hold paintings and sculptures from those eras.</p><p>I visit the flea market once a week to source objects and tableware that I use in my work and events design.</p>",
+            "button_label": "",
+            "button_url": "",
+            "button_style": "btn--text btn--link",
+            "image1": "shopify://shop_images/Rectangle_1697.png",
+            "image1_label": "Lusia Maxi Dress Elka Floral",
+            "image1_link": "#",
+            "image2": "shopify://shop_images/Rectangle_1698.png",
+            "image2_label": "Lusia Maxi Dress Elka Floral",
+            "image2_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_cjbG4y",
+        "text_FHKtVU"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "image_with_text_kwWhpa": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_aEcFC4": {
+          "type": "text",
+          "settings": {
+            "pre_title": "We Care",
+            "title": "Our People, Our Planet",
+            "title_size": "h2",
+            "text": "<p>We care deeply about our people and our planet, so we’re continually investing our time and resources in doing better and being greater.<br/><br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+            "button_label": "Read More",
+            "button_url": "#",
+            "button_style": "btn--text btn--link",
+            "image1_label": "",
+            "image1_link": "",
+            "image2_label": "",
+            "image2_link": ""
+          }
+        },
+        "image_GPy9kP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_27_bb01e99c-a583-4f94-a00c-9e92a0fe6695.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "text_aEcFC4",
+        "image_GPy9kP"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "featured_products_EfpHri": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Journal",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "accessories",
+        "product_list": [
+          "maceio-fringed-dress-black",
+          "vieste-oversized-shirt-lemon",
+          "aurelie-maxi-dress-calla-print-charred-navy",
+          "en-vau-oversized-shirt-foam-taupe-stripe",
+          "loire-skirt-taupe",
+          "anais-maxi-dress-lemon",
+          "citara-maxi-dress-white"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_9qfq9P": {
+      "type": "rich-text",
+      "blocks": {
+        "title_CKLXmc": {
+          "type": "title",
+          "settings": {
+            "title": "A must do, see and eat  in Lisbon, Portugal",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_WhVmkC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Must do in Lisbon during the summer: find a good “Tasca” which is a traditional Portuguese restaurant and have a long lunch with Fresh Robalo (white fish) and some white wine. </p><p>Order some clams in coriander and garlic for a starter.</p><p>Stroll at Feira Da Ladra (flea market) on Saturday morning.</p><p>Take a cold ocean swim on the coast of Caparica.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-end",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_CKLXmc",
+        "richtext_WhVmkC"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--lg",
+        "single_row_desktop": true,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_9nTMVL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_KiYMD9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_29_b6d0847f-fe5d-4849-9e16-6c524374ec79.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Xgp9Wm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/Image_30_1ddeff56-188f-4a5f-bf22-0b23ab310f57.png",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KiYMD9",
+        "image_Xgp9Wm"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_VDARQf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9KXFbW": {
+          "type": "title",
+          "settings": {
+            "title": "What feelings or things evoke a sense of summer for you?",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_xxBgwB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A sense of summer is the smell of sunscreen. It’s this excitement to wake up in the morning. It’s the early morning hours that are a bit chilly and you know that soon the warmth of the sun will take over. The smell of grilled fish, fresh light beer, and white laundry hanging on every window. Peaches and cherries. That’s summer to me.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        },
+        "button_Rj6dGP": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Edit",
+            "link": "#",
+            "button_style": "btn--secondary",
+            "margin_bottom": 4
+          }
+        }
+      },
+      "block_order": [
+        "title_9KXFbW",
+        "richtext_xxBgwB",
+        "button_Rj6dGP"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/milan-travel-guide"
+          }
+        },
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/ibiza-travel-guide"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/pantelleria-travel-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_n84pcB",
+        "article_eUJjCy",
+        "article_zPApBT"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_hdwEph",
+    "rich_text_UbFWPp",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "editorial_layout_BNpN6Q",
+    "rich_text_K4xM3c",
+    "image_banner_PyXX3z",
+    "rich_text_ddXyEg",
+    "editorial_layout_DHpgRA",
+    "rich_text_P6HhFy",
+    "featured_products_3zGbcJ",
+    "image_banner_LTgfqb",
+    "image_with_text_pkRQPB",
+    "image_with_text_kwWhpa",
+    "featured_products_EfpHri",
+    "rich_text_9qfq9P",
+    "image_banner_9nTMVL",
+    "rich_text_VDARQf",
+    "featured_articles_KVqFxb"
+  ]
+}

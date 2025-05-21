@@ -1,0 +1,126 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-contact",
+      "blocks": {
+        "contact_detail_iAyHAj": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Promotion partners",
+            "text": "World Resorts Co Pty Ltd ABN 81 080 243 124 (“Slojourn Studio”) | Andronis Caldera S.A (“Andronis Arcadia”) | Gundari Resort (“Gundari Resort”) | Antler Luggage Australia Pty Ltd ABN 14 007 047 627 (“Antler”) "
+          }
+        },
+        "contact_detail_iaxJXE": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Promotion",
+            "text": "“Win Your Dream Vacation To Greece” Promotion"
+          }
+        },
+        "contact_detail_3n4Eim": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Start Date",
+            "text": "Monday 31st March, 2025"
+          }
+        },
+        "contact_detail_RmFd3Q": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "End Date",
+            "text": "Sunday 6th April, 2025"
+          }
+        },
+        "contact_detail_DarG7R": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Draw Date",
+            "text": "Wednesday 9th April, 2025"
+          }
+        },
+        "contact_detail_66TYFT": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Redraw Date (If Required)",
+            "text": "Redraw Date: Monday 14th April"
+          }
+        },
+        "contact_detail_VjWGbP": {
+          "type": "contact-detail",
+          "settings": {
+            "title": "Permit Number",
+            "text": "New South Wales Authority TP/04203"
+          }
+        }
+      },
+      "block_order": [
+        "contact_detail_iAyHAj",
+        "contact_detail_iaxJXE",
+        "contact_detail_3n4Eim",
+        "contact_detail_RmFd3Q",
+        "contact_detail_DarG7R",
+        "contact_detail_66TYFT",
+        "contact_detail_VjWGbP"
+      ],
+      "settings": {
+        "title": "Win Your Dream Vacation Terms & Conditions",
+        "text": "The below terms and conditions are directly related to our 'Win Your Dream Vacation To Greece' competition. All eligible entries must adhere to the below.",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "rich_text_ehDUz7": {
+      "type": "rich-text",
+      "blocks": {
+        "title_XrhXCW": {
+          "type": "title",
+          "settings": {
+            "title": "Terms and Conditions",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_DNL3BK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>By entering the Promotion run by FAITHFULL, in partnership with Slojourn Studio, Andronis Arcadia, Gundari Resort and Antler, you agree and consent to the Terms & Conditions of the Promotion (the “Terms”). Please read these Terms carefully before participating. </p><p> </p><p>1. Prizes</p><p> </p><p>The Promotion offers the prize of a Holiday to the Greek Islands of Santorini and Folegandros to one individual (the “Prize Winner”) and one Guest of the Prize Winner’s choice (their “Guest”). The Prize Winner will receive the following Prizes:</p><p> </p><p>1a) $2000 AUD voucher to spend on au.faithfullthebrand.com;</p><p> </p><p>1b) $1500 AUD to spend on antler.com.au or antler.com;</p><p> </p><p>1c) 3 nights accommodation for 2 people at Andronis Arcadia, Santorini, Greece valued at $6474 AUD;</p><p> </p><p>1d) 3 nights accommodation for 2 people at Gundari Resort, Folegandros, Greece (“Gundari Resort”) valued at $6005 AUD;  </p><p> </p><p>1e) Internal ferry transfers for 2 people between the islands of Santorini and Folegandros valued at $100 AUD; </p><p> </p><p>1f) Travel credit for 2 people to the Greek Islands valued at up to $2000 AUD. </p><p> </p><p>The total value of all Prizes is estimated at $18079 AUD. The total value of all Prizes has been calculated at the date of 3 March 2025 and may be subject to change. </p><p> </p><p>The Prize Winner is entitled to bring their Guest for the Prizes outlined in subsections 1c, 1d, 1e and 1f. The Guest will not receive the Prizes outlined in subsections 1a or 1b. </p><p> </p><p>The Prizes in this section 1 are subject to the conditions of section 2. The Prizes cannot be changed or altered at the request of the Prize Winner. </p><p> </p><p>2. Prize Conditions</p><p> </p><p>The Prizes are subject to the following conditions:</p><p> </p><p>2a) The Prizes outlined in subsections 1a and 1b must be redeemed within 3 years of the Draw Date. </p><p> </p><p>2b) The Prizes outlined in subsections 1c, 1d, 1e and 1f must be redeemed before September 2026. </p><p> </p><p>2c) For the Prize outlined in subsections 1a, FAITHFULL will supply a digital voucher to the Prize Winner via the email submitted in the Entry per subsection 4b. The digital voucher is to be used at the Prize Winner’s own discretion and applied at checkout when placing an online order. Should the Prize Winner not use the entire $2000 AUD in a single translation, they may put the outstanding amount towards a future purchase. </p><p> </p><p>2d) For the Prize outlined in subsection 1b, Antler will place the order on behalf of the Prize Winner. The Prize Winner will be contacted by Antler to arrange the purchase via the email submitted in the Entry per subsection 4b. Should the prize winner not use the entire $1500 AUD in a single transaction, they may put the outstanding amount towards a future purchase by communicating this intention to Antler.</p><p> </p><p>2e) The Prizes outlined in subsections 1c and 1d can be redeemed on any date of the Prize Winner’s choosing, with the exceptions of the entirety of July 2025 and August 2025. Dates will be subject to availability at Andronis Arcadia and Gundari Resort and additional blockout dates may apply. </p><p> </p><p>2f) The Prizes outlined in subsections 1c and 1d will be organised by Slojourn Studio on behalf of the Prize Winner and their Guest. The Prize Winner will be contacted by Slojourn Studio to arrange the bookings via the email submitted in the Entry per subsection 4b.</p><p> </p><p>2g) The Prize outlined in subsection 1e will be booked by Slojourn Studio, through a third party affiliate, Solis Travel, on behalf of the Prize Winner and their Guest. The Prize Winner will be contacted by Slojourn Studio to arrange the booking via the email submitted in the Entry per subsection 4b. Dates and times of the internal ferry transfers will be subject to availability. </p><p> </p><p>2h) The Prize outlined in subsection 1f will be booked by Slojourn Studio, through a third party affiliate, Solis Travel, on behalf of the Prize Winner and their Guest, in a single transaction. The Prize Winner will be contacted by Slojourn Studio to arrange the booking via the email submitted in the Entry per subsection 4b. Dates and times of the travel to and from the Greek Islands for the Prize Winner and their Guest will be subject to availability. Should the $2000 AUD not cover the entirety of the travel to the Greek Islands for the Prize Winner and their Guest, the Prize Winner will be required to pay the remaining costs. Should the travel to the Greek Islands cost less than $2000 AUD, the Prize Winner will not be able to redeem the outstanding amount in cash, nor will they be able to use it towards other travel. The outstanding amount is null and void. </p><p> </p><p>2i) Should the Prize Winner and their Guest choose to stay at Arcadia Hotel and Gundari Resort in the months of July or August 2025, or opt to book their own internal ferry transfers and/or travel, they will not be able to redeem the Prizes in cash value and the Prizes will remain the possession of the relevant party. </p><p> </p><p>3. Eligibility and Compliance with Local Laws</p><p> </p><p>To enter the Promotion, Entrants must meet the following criteria:</p><p> </p><p>3a) Be an individual who is aged 18 and over;</p><p> </p><p>3b) Be an individual who is a resident of the following countries: Argentina, Australia, Austria, Bermuda, Bulgaria, Canada, Colombia, Czech Republic, Denmark, Estonia, Finland, Germany, Hungary, Indonesia, Latvia, Morocco, Netherlands, New Zealand, Norway, Peru, Serbia, Slovakia, South Africa, South Korea, Switzerland, United Kingdom and United States of America.   </p><p> </p><p>3c) Be an individual who can legally enter and visit the country of Greece for holiday purposes;</p><p> </p><p>3d) Be an individual who has a valid passport at the time of the Draw Date. </p><p> </p><p>Entrants are not eligible to enter the Promotion if they are employees of or affiliated with any of the below parties: </p><p> </p><p>3e) FAITHFULL;</p><p> </p><p>3f) Slojourn Studio;</p><p> </p><p>3g) Andronis Arcadia;</p><p> </p><p>3h) Gundari Resort and/or;</p><p> </p><p>3i) Antler. </p><p> </p><p>If Entrants do not meet this criteria, they are not eligible to receive the Prize and if drawn as the Prize Winner, they will be disqualified. An Alternative Winner will then be redrawn asper section 5. The Guest must also meet the criteria in subsections 3b to 3i. The Guest may be under the age of 18, particularly if they are a child or dependent of the Prize Winner. </p><p> </p><p>Entrants outside of Australia are responsible for ensuring that their entry into the Promotion complies with all applicable laws and regulations. FAITHFULL and the Promotion Partners are not responsible for verifying the legal eligibility of Entrants based on their country of residence. If it is discovered that participating is restricted or prohibited in an Entrant's jurisdiction their entry may be deemed invalid, and any prizes won may be forfeited. FAITHFULL or the Promotion Partners will not be liable for any losses, claims, or disputes arising from such restrictions.</p><p> </p><p>4. Entry Requirements</p><p> </p><p>To enter the Promotion, the Entrant must:</p><p> </p><p>4a) Follow the below accounts on Instagram:</p><p>i) @faithfullthebrand</p><p>ii) @slojourn_studio</p><p>iii) @andronis_hotels </p><p>iv) @gundari_resort </p><p>v) @antlerofficial </p><p>for the duration of the Promotional Period. </p><p> </p><p>4b) Sign up to the collective FAITHFULL and Slojourn Studio database with their email address and mobile phone number and remain subscribed for the duration of the Promotional Period. </p><p> </p><p>All Entries must be submitted before the End Date. Entries submitted following the End Date will not be eligible for the Prize. Entrants must be following all accounts listed in subsection 4a on Instagram at the time of the Draw Date. Entrants must remain subscribed to the FAITHFULL database until the Draw Date. Should FAITHFULL become aware that the Prize Winner has unfollowed any of the accounts listed in subsection 4a or unsubscribed from the FAITHFULL database before the Draw Date, the Prize may be revoked at the discretion of FAITHFULL. </p><p> </p><p>Entry to the Promotion does not require an entry free or any other related fee for participation. </p><p> </p><p>5. Prize Winner Draw</p><p> </p><p>FAITHFULL is solely responsible for selecting the Prize Winner. FAITHFULL will draw the winner by:</p><p> </p><p>5a) Random selection. </p><p> </p><p>Once the winner has been drawn:</p><p> </p><p>5b) The Prize Winner will be contacted within 2 business days via the email submitted during Entry per subsection 4b. The Prize Winner has a period of 4 days to respond and claim the Prize in writing via email (the “Claim Period”). </p><p> </p><p>5c) If the Prize Winner does not respond within the Claim Period, the Prize will be deemed forfeited. FAITHFULL reserves the right to redraw an alternative winner on the Redraw date. Should the original Prize Winner respond after the Alternative Winner has been drawn, they are no longer eligible to receive the prize. This process will continue until a Prize Winner has been drawn and the Prize has been accepted in writing via email. </p><p> </p><p>FAITHFULL reserves the right to verify the identity of the Prize Winner and disqualify any Entrant or Prize Winner that does not meet the criteria outlined in sections 3 and 4. </p><p> </p><p>6. Liability</p><p> </p><p>FAITHFULL, their Promotion Partners and their affiliates are not responsible for any damages, losses or injuries relating to the Promotion, the Prize or the Prize Winner and their Guest’s use of the Prize. When accepting the Prize, the Prize Winner and their Guest must accept the following conditions:</p><p> </p><p>6a) The Prize Winner and their Guest agree to hold harmless FAITHFULL, their Promotion Partners and their affiliates from any claims or liabilities that may arise from the Promotion or the Prize. </p><p> </p><p>6b) The Prize Winner and their Guest are responsible for securing their own travel insurance to cover the duration of their trip to the Greek Islands, including the date of their departing and returning transportation. FAITHFULL, their Promotion Partners and their affiliates are not liable for any incidents, issues or delays that may arise in relation to any of the Prizes. </p><p> </p><p>If the Prize Winner and their guest do not accept these conditions, they may be deemed ineligible for the Prize and FAITHFULL reserves the right to revoke the Prize from the Prize Winner and redraw an Alternative Winner. </p><p> </p><p>Nothing under this section 6 limits any Participants rights under the <em>Competition and Consumer Act 2010 </em>(Cth) (CCA). These Terms do not exclude or limit the application of any statutory provision, including but not limited to a provision of the CCA and the consumer guarantees under the Australian Consumer Law, where to do so would contravene that statute or cause any part of these Terms to be void. </p><p> </p><p>7. Force Majeure</p><p> </p><p>In the event that the Promotion is unable to proceed due to unforeseen circumstances, including but not limited to natural disasters, cyber-attacks, industrial strikes, computer viruses, fraud, technical failures, pandemics or government-imposed restrictions, FAITHFULL, or any of their Promotion Partners, may terminate, postpone or modify the Promotion as deemed appropriate by FAITHFULL without liability. </p><p> </p><p>8. Transferability</p><p> </p><p>None of the Prizes outlined in section 1 are transferable, refundable or can be exchanged for cash value. </p><p> </p><p>9. Privacy and Personal Information </p><p> </p><p>By entering the Promotion, the Entrant acknowledges that their Personal Information including their name, email address, mobile phone number and Instagram handle, may be collected by FAITHFULL and their Promotion Partners to be used for the following purposes:</p><p> </p><p>9a) To communicate with the Entrant regarding the Promotion, including for the purposes outlined in section 2;</p><p> </p><p>9b) To verify that these Terms have been complied with;</p><p> </p><p>9c) To use in promotional material for the Promotion without additional compensation, except where prohibited by law;</p><p> </p><p>9d) For future marketing purposes. </p><p> </p><p>Any other use of an Entrant’s Personal Information will be in accordance with FAITHFULL’s Privacy Policy, available at faithfullthebrand.com/policies/privacy-policy and in accordance with all applicable Privacy Legislation. </p><p> </p><p>Should the Entrant not consent to the above, FAITHFULL may deem the Entrant ineligible to receive the Prize and may revoke the Prize if awarded. </p><p> </p><p>10. Affiliation with Instagram</p><p> </p><p>This Promotion is not sponsored, endorsed or administered by Instagram. By entering the Promotion, the Entrant releases Instagram from any responsibility or liability related to the Promotion. </p><p> </p><p>11. Contact </p><p> </p><p>For any additional information or questions relating to the Promotion, an individual may contact press@faithfullthebrand.com. The individual accepts that should they attempt to contact FAITHFULL or the Promotion Partners in any other method of communication, they may not receive a response. </p><p> </p><p>12. Governing Law</p><p> </p><p>The Promotion and the Terms are governed by the laws of New South Wales, Australia. Any disputes will be subject to the exclusive jurisdiction of the courts of New South Wales, Australia.</p><p> </p><p>13. Definitions</p><p> </p><p><em>“Alternative Winner”</em></p><p><em>A randomly drawn winner chosen in the scenario that the Prize Winner does not claim the Prize in accordance with section 5 or is ineligible for the Prize in accordance with sections 3, 4 and 6. </em></p><p><em> </em></p><p><em>“Claim Period”</em></p><p><em>The period of time outlined in subsection 5b within which the Prize Winner must claim the Prize. </em></p><p><em> </em></p><p><em>“Draw Date”</em></p><p><em>The date outlined in the Schedule that the Prize Winner will be randomly drawn on. </em></p><p><em> </em></p><p><em>“Entrant”</em></p><p><em>An individual who willingly engages in the Promotion and follows the necessary entry requirements outlined in section 4. </em></p><p><em> </em></p><p><em>“Entry”</em></p><p><em>Following the entry requirements outlined in section 4 will be considered a single Entry to the Promotion. </em></p><p><em> </em></p><p><em>“Holiday”</em></p><p><em>The elements of the Prize which include accommodation and travel and exclude the spend at faithfullthebrand.com and antler.com. </em></p><p><em> </em></p><p><em>“Greek Islands”</em></p><p><em>The islands of Santorini and Folegandros in Greece, in which the Prize is offered. </em></p><p><em> </em></p><p><em>“Guest”</em></p><p><em>An individual selected by the Prize Winner to accompany them on the Holiday to the Greek Islands outlined in subsections 1c, 1d, 1e and 1f. </em></p><p><em> </em></p><p><em>“Permit”</em></p><p><em>The authority granted by New South Wales under the Community Gaming Act 2018 and the Community Gaming Regulation 2020 to run this Promotion. </em></p><p><em> </em></p><p><em>“Personal Information”</em></p><p><em>Has the meaning given in the Privacy Act 1988 (Cth). </em></p><p><em> </em></p><p><em>“Privacy Legislation”</em></p><p><em>Refers to the relevant privacy laws that apply to the entrants including the Privacy Act 1988 (Cth), the Regulation (EU) 2016/679 (General Data Protection Regulation) or any other equivalent privacy legislation. </em></p><p><em> </em></p><p><em>“Prize”</em></p><p><em>The reward outlined in section 1 that is granted to the randomly selected Prize Winner. </em></p><p><em> </em></p><p><em>“Prize Winner”</em></p><p><em>The individual who is the winning recipient of the Promotion, as randomly drawn in accordance with section 5. </em></p><p><em> </em></p><p><em>“Promotor”</em></p><p><em>The entity outlined in the Schedule that is responsible for the Promotion.</em></p><p><em> </em></p><p><em>“Promotion”</em></p><p><em>The giveaway described in the Schedule that is held by the Promoter. </em></p><p><em> </em></p><p><em>“Promotion Partners”</em></p><p><em>The entities outlined in the Schedule that are providing Prizes for the Promotion and that will receive Personal Information shared in accordance with these Terms. </em></p><p><em> </em></p><p><em>“Promotional Period”</em></p><p><em>The period of time outlined in the Schedule that runs from the Start Date until the Redraw Date. </em></p><p><em> </em></p><p><em>“Redraw Date”</em></p><p><em>The date outlined in the Schedule on which a Redraw will occur if necessary in accordance with subsections 5b and 5c. </em></p><p><em> </em></p><p><em>“Start Date”</em></p><p><em>The date outlined in the Schedule on which a Redraw will occur if necessary in accordance with subsections 5b and 5c. </em></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_XrhXCW",
+        "richtext_DNL3BK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_ehDUz7"
+  ]
+}

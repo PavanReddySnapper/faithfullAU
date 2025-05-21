@@ -1,0 +1,36 @@
+<div class="main-404" data-section-id="{{ section.id }}" data-section-type="main-404">
+  <div class="container container--sm">
+    <h1 class="h2">{{ section.settings.title }}</h1>
+    {%- if section.settings.text != blank -%}
+      <div class="main-404__text body-large rte">
+        {{ section.settings.text }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Main 404",
+    "settings": [
+      {
+        "type": "header",
+        "content": "404 Page"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "Sorry, we can't seem to find this page"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Text"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["404"]
+    }
+  }
+{% endschema %}

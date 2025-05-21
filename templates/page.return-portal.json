@@ -1,0 +1,39 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": true,
+        "page_nav": "shipping-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 48
+      }
+    },
+    "custom_return_exchange_portal_dTKGgj": {
+      "type": "custom-return-exchange-portal",
+      "settings": {
+        "heading": "Returns & Exchange Portal",
+        "btn1_text": "Australia",
+        "btn1_link": "https://au.faithfullthebrand.com/a/return",
+        "btn2_text": "Global",
+        "btn2_link": "https://web.global-e.com/Returns/Portal/gsBKW",
+        "description": "<p>Excl. USA, CAN,  Central America, South America and the Carribean.</p><p>For customer located in these regions please click <a href=\"https://faithfullthebrand.com/pages/country-region-returns\" target=\"_blank\" title=\"https://faithfullthebrand.com/pages/country-region-returns\">here</a></p>"
+      }
+    }
+  },
+  "order": [
+    "header",
+    "custom_return_exchange_portal_dTKGgj"
+  ]
+}

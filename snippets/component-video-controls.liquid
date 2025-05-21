@@ -1,0 +1,46 @@
+{%- comment -%}
+  Parameters
+  autoplay (optional): boolean - Defaults to false, whether the video should play automatically.
+  custom_play_controls: boolean - Defaults to false, whether play / pause control should be shown.
+  custom_mute_controls: boolean - Defaults to false, whether mute / unmute control should be shown.
+  muted (optional): boolean - Defaults to true, whether the video should have sound on.
+  color:
+{%- endcomment -%}
+
+{% if custom_play_controls or custom_mute_controls %}
+  <div class="component-video__controls component-video__controls--{{ controls_color }}">
+    {% if custom_play_controls %}
+      {%- liquid
+        assign control_state_class = 'video__play-control--play'
+        if autoplay
+          assign control_state_class = 'video__play-control--pause'
+        endif
+      -%}
+      <button
+        class="video__play-control {{ control_state_class }} btn-none"
+        aria-label="Play / Pause Video"
+        data-video-play
+      >
+        {% render 'icon-play' %}
+        {% render 'icon-pause' %}
+      </button>
+    {% endif %}
+
+    {% if custom_mute_controls %}
+      {%- liquid
+        assign control_state_class = 'video__volume-control--unmute'
+        if muted
+          assign control_state_class = 'video__volume-control--mute'
+        endif
+      -%}
+      <button
+        class="video__volume-control {{ control_state_class }} btn-none"
+        aria-label="Mute / Unmute Video"
+        data-video-volume
+      >
+        {% render 'icon-volume-on' %}
+        {% render 'icon-volume-off' %}
+      </button>
+    {% endif %}
+  </div>
+{% endif %}

@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Swim Fit & Styling Guide",
+        "is_primary_heading": false,
+        "page_nav": "swim-fit-styling-guide",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "overview": {
+      "type": "main-page-fit-overview",
+      "blocks": {
+        "detail_DjTkkF": {
+          "type": "detail",
+          "settings": {
+            "title": "Fit",
+            "text": "Best suited for cup sizes A to C. For help on sizing, see here to see our Swim Size Guide"
+          }
+        },
+        "detail_6wEKXG": {
+          "type": "detail",
+          "settings": {
+            "title": "Coverage",
+            "text": "Low"
+          }
+        },
+        "detail_hDbDUV": {
+          "type": "detail",
+          "settings": {
+            "title": "Bust Support",
+            "text": "Light to Medium"
+          }
+        },
+        "detail_cX3kJJ": {
+          "type": "detail",
+          "settings": {
+            "title": "Styling Tips",
+            "text": "For customisable bust coverage, opt for our Triangle Tops designed with sliding cups. Adjustable and tie straps can be shortened or lengthened to customise the fit and support to your body."
+          }
+        },
+        "detail_JytNHb": {
+          "type": "detail",
+          "settings": {
+            "title": "Pair with",
+            "text": "Wear our triangle tops with triangle-shaped or cheeky coverage bikini bottoms."
+          }
+        }
+      },
+      "block_order": [
+        "detail_DjTkkF",
+        "detail_6wEKXG",
+        "detail_hDbDUV",
+        "detail_cX3kJJ",
+        "detail_JytNHb"
+      ],
+      "settings": {
+        "title": "Underwire Tops",
+        "text": "<p>Our Bralette Bikini Tops are a versatile swim styling option, designed in various silhouettes – such as one shoulder, wide straps, thin straps and square neckline – to suit your personal swim fit and styling preferences. For a more supportive option, we recommend choosing our wider strap bralettes.</p>",
+        "button_text": "Shop Now",
+        "link": "",
+        "image_1": "shopify://shop_images/underwire-2.jpg",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "header",
+    "overview"
+  ]
+}

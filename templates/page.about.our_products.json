@@ -1,0 +1,266 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Our Products",
+        "is_primary_heading": true,
+        "page_nav": "about-us-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "rich_text_HbCV3N": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_PWDwQ8": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We have always valued quality over quantity, opting for handmade over mass produced. We honour the importance of garment quality and continue to strive towards creating forever pieces. By following environmentally-preferred methods and materials and opting for certified fabrications and production processes, our pieces are designed to last a lifetime. </p><p>Learn more on our signature fabrications and how they differ from conventional materials. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_PWDwQ8"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_with_text_banner_xLLRqH": {
+      "type": "image-with-text-banner",
+      "settings": {
+        "image": "shopify://shop_images/1_c9372f3c-121e-407f-bfea-5acdf318c76c.webp",
+        "pre_title": "",
+        "pre_title_alignment": "center",
+        "pre_title_alignment_mobile": "center",
+        "title": "",
+        "title_style": "h1",
+        "title_alignment": "center",
+        "title_alignment_mobile": "center",
+        "text": "",
+        "text_style": "body-medium",
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "text_list_VC3kax": {
+      "type": "text-list",
+      "blocks": {
+        "text_peaeMf": {
+          "type": "text",
+          "settings": {
+            "title": "LINEN EUROPEAN FLAX® OEKO-TEX® STANDARD 100 CERTIFIED",
+            "description": "<p>Retted in the flax fields of Europe with its unique climate and mineral-rich soil, specifically Normandy, France, this form of linen is spun into yarn and woven into a high quality fabrication. Its certification assures the process is ethically produced and is one of our signature fabrications.</p>"
+          }
+        },
+        "text_xfQRqH": {
+          "type": "text",
+          "settings": {
+            "title": "BCI CERTIFIED COTTON OEKO-TEX® STANDARD 100 CERTIFIED",
+            "description": "<p>Organic cotton forgoes conventional production methods and synthetic fertilisers for natural alternatives, allowing for reduced water wastage and greenhouse gas emissions and healthier working conditions. A signature fabrication for our brand.</p>"
+          }
+        },
+        "text_jQg6Fr": {
+          "type": "text",
+          "settings": {
+            "title": "RAYON LENZINGTM ECOVEROTM OEKO-TEX® STANDARD 100 CERTIFIED",
+            "description": "<p>A viscose rayon fabrication repurposed from wood pulp, sourced from sustainably managed forests. A beloved fabrication for our dresses, its certification ensures it has been tested against harmful chemicals and is certified for biodegradability.</p>"
+          }
+        },
+        "text_ttwj9T": {
+          "type": "text",
+          "settings": {
+            "title": "SILK CREPE OEKO-TEX® STANDARD 100 CERTIFIED",
+            "description": "<p>An occasionwear fabrication produced by weaving tightly twisted yarns, followed by a finishing process to set the crinkled feel. Certified through rigorous testing, it is free from chemicals, pesticides and allergens.</p>"
+          }
+        },
+        "text_EXUgQ6": {
+          "type": "text",
+          "settings": {
+            "title": "ECONYL® REGENERATED NYLON",
+            "description": "<p>This recycled nylon fabrication repurposes abandoned fishing nets and nylon waste from landfill and oceans worldwide and is paired with elastane for our swimwear.</p>"
+          }
+        },
+        "text_yPGG6V": {
+          "type": "text",
+          "settings": {
+            "title": "GRS (GLOBAL RECYCLED STANDARD) POLYESTER",
+            "description": "<p>This polyester fabrication, certified by the GRS, is at least 50%</p><p>recycled with traceable materials and manufactured in a sustainable</p><p>and ethical environment. A fabrication we use for our linings.</p>"
+          }
+        },
+        "text_TghwGE": {
+          "type": "text",
+          "settings": {
+            "title": "OEKO-TEX® 100 CERTIFIED",
+            "description": "<p>Every component has been tested for harmful substances.</p><p>100% Linen  /  Linen Rayon Crinkle  /  Cotton Canvas  /  Cotton Poplin  /  Cotton Voile  /  Cotton Terry Towelling</p>"
+          }
+        },
+        "text_eEjrJH": {
+          "type": "text",
+          "settings": {
+            "title": "ECONYL® NYLON",
+            "description": "<p>We are proud to use ECONYL® regenerated nylon for our printed swimwear. 100% regenerated nylon is made from abandoned fishing nets and nylon waste from landfills and oceans around the world. </p><p>78% ECONYL® Polyamide (Recycled) 22% Elastane</p>"
+          }
+        },
+        "text_7wHq4H": {
+          "type": "text",
+          "settings": {
+            "title": "REPREVE® POLYESTER LINING",
+            "description": "<p>As lining makes up 50% of swimwear fabric consumption, our linings are also made from recycled material, specifically regenerated nylon created from post consumer waste.</p><p>90% REPREVE® Recycled Polyester 10% Elastane</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_peaeMf",
+        "text_xfQRqH",
+        "text_jQg6Fr",
+        "text_ttwj9T",
+        "text_EXUgQ6",
+        "text_yPGG6V",
+        "text_TghwGE",
+        "text_eEjrJH",
+        "text_7wHq4H"
+      ],
+      "settings": {
+        "title": "Considered & Certified Materials",
+        "text": "<p>FAITHFULL uses certified fabrications and chooses fibers with lower environmental impact. Our materials include:</p>",
+        "button_text": "",
+        "button_link": "",
+        "layout": "list",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "image_with_text_banner_WbztAp": {
+      "type": "image-with-text-banner",
+      "settings": {
+        "image": "shopify://shop_images/1-Desktop_eb9a228b-877d-4024-9eed-805974f98eb8.webp",
+        "pre_title": "",
+        "pre_title_alignment": "center",
+        "pre_title_alignment_mobile": "center",
+        "title": "",
+        "title_style": "h1",
+        "title_alignment": "center",
+        "title_alignment_mobile": "center",
+        "text": "",
+        "text_style": "body-medium",
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "text_list_wGER7j": {
+      "type": "text-list",
+      "blocks": {
+        "text_qtBEhN": {
+          "type": "text",
+          "settings": {
+            "title": "RESPONSIBLE FASHION",
+            "description": "<p>We engage in ethical processes through each stage of creating FAITHFULL garments - in design, purchasing and production. We interact directly with our suppliers on a daily basis, which ensures safe, fair and positive working conditions for everyone involved in our supply chain.</p>"
+          }
+        },
+        "text_DNaEQG": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "HANDMADE ARTISTRY",
+            "description": "<p>Working with more than 1000 artisans across Bali, we are proud supporters of local manufacturing and preserving the artisanal skills of Indonesia. Their expertise is integral to the design and execution of our collections. As all Faithfull products are handmade from beginning to end, this craftsmanship is part of the DNA of our brand. </p>"
+          }
+        },
+        "text_BFi3yL": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "SUPPORTING FAMILY-OWNED SMALL BUSINESSES",
+            "description": "<p>Every item of every Faithfull collection is produced in Indonesia by family-run factories. Working with the home industry sector means we have the ability to support the local economy by creating more jobs and ensuring our working conditions and wages are fair.</p>"
+          }
+        },
+        "text_9gRLRX": {
+          "type": "text",
+          "settings": {
+            "title": "TRANSPARENT SUPPLY CHAINS",
+            "description": "<p> We have a hands-on, collaborative approach to our manufacturing, which means we have the unique position of having visibility over our entire supply chain from start to finish - and therefore the opportunity to keep adapting and improving it at every step.</p>"
+          }
+        },
+        "text_Fk6XaB": {
+          "type": "text",
+          "settings": {
+            "title": "FAIR PRICING",
+            "description": "<p>Our fees are based on the difficulty and intricacy<em> </em>of each style. The objective of this is to guarantee high production standards and encourage consistency, all while supporting and protecting our makers. </p>"
+          }
+        },
+        "text_Eqfe6h": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "QUALITY CONTROL & GARMENT LONGEVITY",
+            "description": "<p>The majority of our 100 employees in Bali are responsible for production, quality control and direct management of all our partner suppliers. This additional layer of care to our pieces helps to add an enhanced level of quality. We have a firm quality assurance policy to ensure the long life span of our products and we share proper garment care with our customers to help preserve this.</p>"
+          }
+        },
+        "text_RMTebx": {
+          "type": "text",
+          "settings": {
+            "title": "RESTRICTED SUBSTANCES LIST (RSL)",
+            "description": "<p>A Restricted Substances List (RSL) is adhered to during design and all production processes.</p>"
+          }
+        },
+        "text_LJkDqK": {
+          "type": "text",
+          "settings": {
+            "title": "MORE RESPONSIBLE PACKAGING",
+            "description": "<p>Packaging is always going to add extra impact, but we want FAITHFULL's to be as minimal as possible, which is why the polybags we use for apparel protection are made from cassava starch (also known as tapioca) and are completely biodegradable.</p><p>For eCommerce mailers, FAITHFULL chooses to use POLLAST!C™ Mailers made from 100% recycled Ocean Bound Plastic pollution.  </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_qtBEhN",
+        "text_DNaEQG",
+        "text_BFi3yL",
+        "text_9gRLRX",
+        "text_Fk6XaB",
+        "text_Eqfe6h",
+        "text_RMTebx",
+        "text_LJkDqK"
+      ],
+      "settings": {
+        "title": "For us, creating conscious products means making an unwavering commitment to…",
+        "text": "",
+        "button_text": "",
+        "button_link": "shopify://pages/about-us",
+        "layout": "grid",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 64
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_HbCV3N",
+    "image_with_text_banner_xLLRqH",
+    "text_list_VC3kax",
+    "image_with_text_banner_WbztAp",
+    "text_list_wGER7j"
+  ]
+}

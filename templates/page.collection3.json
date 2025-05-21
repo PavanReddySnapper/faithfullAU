@@ -1,0 +1,1165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_RUwcYH": {
+      "type": "image-banner",
+      "blocks": {
+        "image_Riwqj8": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_b2872f80-1ff8-4ef0-a749-25475f6f8803.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Riwqj8"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_g43DRX": {
+      "type": "rich-text",
+      "blocks": {
+        "title_wwTkUr": {
+          "type": "title",
+          "settings": {
+            "title": "Di Milano",
+            "is_primary_heading": true,
+            "heading_style": "h1",
+            "pre_heading": "Fall 2024 Campaign",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_mtE7tq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>As always, the new collection embodies a sense of ease with effortless appeal, wearability and versatility at the forefront of each design. Ever inspired by the romantic allure of travel, each piece translates seamlessly from the everyday to vacation wear. Pared back tailoring and transeasonal foundations are emphasised alongside a subtle nod to sensuality with new eveningwear and occasion-style pieces. Slender silhouettes are introduced with sheer fabrications and delicate lace appliques, underpinned by a sense of self-assured femininity. The palette combines creamy neutrals with rich, exuberant hues, reflective of the changing seasons.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_w7qDcp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Bianca Feliciano is captured on location in Paris, France.<br/><br/>Photography by Holly Gibson<br/>Styling by Rebecca Bonavia<br/>Hair and makeup by Joel Phillips</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_e6fzA4": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"/collections/di-milano\" title=\"Di Milano\">SHOP THE COLLECTION</a></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_wwTkUr",
+        "richtext_mtE7tq",
+        "richtext_w7qDcp",
+        "richtext_e6fzA4"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--md",
+        "single_row_desktop": false,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 16,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_cwDtbX": {
+      "type": "image-banner",
+      "blocks": {
+        "image_NdhmaB": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_fa349d9e-400a-454b-b879-78accfe00e3e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ilride Midi Dress White",
+            "button_link_1": "shopify://products/ilride-midi-dress-white",
+            "button_label_2": "Soleil Trouser Sand",
+            "button_link_2": ""
+          }
+        },
+        "image_LPAKtp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_72be5fa0-18e6-4783-a7da-61c5337fcb50.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Paloma Maxi Dress Black",
+            "button_link_1": "shopify://products/paloma-maxi-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_cctptf": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_b1ca0537-21d2-435e-8a03-ef42fbefd527.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Boe Tunic Top Wine",
+            "button_link_1": "shopify://products/boe-tunic-top-wine",
+            "button_label_2": "Lulea Pant Wine",
+            "button_link_2": "shopify://products/lulea-pant-wine"
+          }
+        }
+      },
+      "block_order": [
+        "image_NdhmaB",
+        "image_LPAKtp",
+        "image_cctptf"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_DBfQTb": {
+      "type": "image-banner",
+      "blocks": {
+        "image_xeNfMF": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/5_53ffb3ac-1c73-4331-a26e-b41f36d3cb87.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xeNfMF"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_LGQerY": {
+      "type": "image-banner",
+      "blocks": {
+        "image_JNeDi9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_7507a04b-af77-4acc-a4e0-3fb0be2a3bf5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lene Midi Dress Meander Blue",
+            "button_link_1": "shopify://products/lene-midi-dress-meander-blue",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_JNeDi9"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_kjgkNc": {
+      "type": "image-banner",
+      "blocks": {
+        "image_XnajLf": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_68b42442-a057-47bf-9906-ca01783bcfa5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Noa Midi Dress Blue Pinstripe",
+            "button_link_1": "shopify://products/noa-midi-dress-blue-pinstripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_DBRKiB": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/8_e7850f5e-7f26-4fd1-bf5e-31523b9a825d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Noa Midi Dress Blue Pinstripe",
+            "button_link_1": "shopify://products/noa-midi-dress-blue-pinstripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XnajLf",
+        "image_DBRKiB"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "a323484a-86e9-4203-aced-96da3b5efac8": {
+      "type": "image-banner",
+      "blocks": {
+        "85a0676d-6907-4ecf-bdfe-1499687c66cc": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_51f7e21f-3ecf-4f4f-8643-2572baefa962.webp",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Lene Midi Dress White",
+            "button_link_1": "shopify://products/lene-midi-dress-white",
+            "button_label_2": "Frederikke Cashmere Sweater Black",
+            "button_link_2": "shopify://products/frederikke-cashmere-sweater-grey-marle"
+          }
+        },
+        "fc5a42f0-f390-4585-90fc-161090f7d99f": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_c82f3747-6bbc-4887-82c7-761de1cedc5b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ilride Top Black",
+            "button_link_1": "shopify://products/ilride-top-black",
+            "button_label_2": "Ilride Pant Black",
+            "button_link_2": "shopify://products/ilride-pant-black"
+          }
+        },
+        "cbba2e9f-1333-4204-a445-a6cfe430f316": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/11_2bca9d8f-9cef-4430-8895-de27f2247232.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Boe Tunic Top Wine",
+            "button_link_1": "shopify://products/boe-tunic-top-wine",
+            "button_label_2": "Lulea Pant Wine",
+            "button_link_2": "shopify://products/lulea-pant-wine"
+          }
+        }
+      },
+      "block_order": [
+        "85a0676d-6907-4ecf-bdfe-1499687c66cc",
+        "fc5a42f0-f390-4585-90fc-161090f7d99f",
+        "cbba2e9f-1333-4204-a445-a6cfe430f316"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "256ee49b-a256-40c1-9682-ef3f84d3a5d5": {
+      "type": "image-banner",
+      "blocks": {
+        "2a278432-8cb2-4216-8b45-fcbcd7239bb5": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/12_a08fbad0-7799-4b3b-b2b9-e65ca7be4c6a.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Raynara Mini Dress Black",
+            "button_link_1": "shopify://products/raynara-mini-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "2a278432-8cb2-4216-8b45-fcbcd7239bb5"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_AzPmyL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_rrWt4P": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/13_6741336d-c687-4a5d-955a-c224e0be2107.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Paloma Maxi Dress Black",
+            "button_link_1": "shopify://products/paloma-maxi-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rrWt4P"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_Fz6hTf": {
+      "type": "image-banner",
+      "blocks": {
+        "image_XLanbe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/14_8b04eb4a-49da-42cb-8d81-c991644e3670.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lene Midi Dress Meander Blue",
+            "button_link_1": "shopify://products/lene-midi-dress-meander-blue",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_HGtq3N": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/15_cd7162d4-0571-409e-8149-fe24f5b78d33.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lene Midi Dress Meander Blue",
+            "button_link_1": "shopify://products/lene-midi-dress-meander-blue",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XLanbe",
+        "image_HGtq3N"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_JgtUha": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Linen sets",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "la-muse",
+        "product_list": [],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "31bfb285-537b-401c-b2bb-42613163fab3": {
+      "type": "image-banner",
+      "blocks": {
+        "a743fbfa-f531-4f6b-929a-5115fbf29a32": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/16_d6b464f4-fdfd-4c38-98b1-c991448304cd.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ilride Midi Dress White",
+            "button_link_1": "shopify://products/ilride-midi-dress-white",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        },
+        "1804dce8-738b-43fb-a1f5-8ceba53af9dd": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/17_2a2a21ac-eedd-4a31-b7c2-47d87821fefd.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        },
+        "image_W3XAcW": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/18_1710b255-37e3-406a-8058-61f5f7697bd0.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lene Midi Dress White",
+            "button_link_1": "shopify://products/lene-midi-dress-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "a743fbfa-f531-4f6b-929a-5115fbf29a32",
+        "1804dce8-738b-43fb-a1f5-8ceba53af9dd",
+        "image_W3XAcW"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_yCgecR": {
+      "type": "image-banner",
+      "blocks": {
+        "image_nJNawM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/1_1009925b-edc9-497a-828f-c5ed0e6d1a5b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Emilie Top Beige",
+            "button_link_1": "shopify://products/emilie-top-beige",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_nJNawM"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_eggwwk": {
+      "type": "image-banner",
+      "blocks": {
+        "image_fVCaYk": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_c3cfadfd-d0c0-48ff-b662-1e58f39d526b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Boda Midi Dress Poplar Sage",
+            "button_link_1": "shopify://products/boda-midi-dress-poplar-sage",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        },
+        "image_MnQKDc": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_c8370e6d-d613-4759-9e62-87627e854fdf.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Emilie Top Black",
+            "button_link_1": "shopify://products/emilie-top-black",
+            "button_label_2": "Emilie Trouser Black",
+            "button_link_2": "shopify://products/emilie-trouser-black"
+          }
+        },
+        "image_rUWyMD": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_d4f8fc97-7a2a-4691-87a2-8fa830333412.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Emilie Top Beige",
+            "button_link_1": "shopify://products/emilie-top-beige",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_fVCaYk",
+        "image_MnQKDc",
+        "image_rUWyMD"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_GbGmcA": {
+      "type": "image-banner",
+      "blocks": {
+        "image_xeFQ3J": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_9ac434d0-6aa7-478b-904a-85fb7999a0d7.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lena Blazer Beige",
+            "button_link_1": "shopify://products/lena-blazer-beige",
+            "button_label_2": "Emilie Trouser Beige",
+            "button_link_2": "shopify://products/emilie-trouser-beige"
+          }
+        },
+        "image_iCKpga": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/6_a0bd4fa1-fe0e-49b1-bee9-53bdf8a80aa9.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lena Blazer Beige",
+            "button_link_1": "shopify://products/lena-blazer-beige",
+            "button_label_2": "Emilie Trouser Beige",
+            "button_link_2": "shopify://products/emilie-trouser-beige"
+          }
+        }
+      },
+      "block_order": [
+        "image_xeFQ3J",
+        "image_iCKpga"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_YQdLaC": {
+      "type": "image-banner",
+      "blocks": {
+        "image_YACNhh": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7-1.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_YACNhh"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_brWzUY": {
+      "type": "image-banner",
+      "blocks": {
+        "image_88EnAm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/7_b1d1c8c5-7818-4c7f-aef3-9d0973917427.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lulea Wrap Vest Oatmeal",
+            "button_link_1": "shopify://products/lulea-wrap-vest-oatmeal",
+            "button_label_2": "Sanne Pant Oatmeal",
+            "button_link_2": "shopify://products/sanne-pant-oatmeal"
+          }
+        },
+        "image_xKUNwh": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/8_ad93052b-e5a8-453f-89c4-2dae9b7a558b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Boda Midi Dress Poplar Sage",
+            "button_link_1": "shopify://products/boda-midi-dress-poplar-sage",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_mFnUjU": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_fe5ea176-e871-4a5b-8454-3cadc4532f1d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aya Mini Dress Cream Pinstripe",
+            "button_link_1": "shopify://products/aya-mini-dress-cream-pinstripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_88EnAm",
+        "image_xKUNwh",
+        "image_mFnUjU"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_Dm6eXr": {
+      "type": "image-banner",
+      "blocks": {
+        "image_bjpfC3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/10_6cfbc63f-2f3b-40c2-8284-cf0ad7935106.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Emilie Top Black",
+            "button_link_1": "shopify://products/emilie-top-black",
+            "button_label_2": "Emilie Trouser Black",
+            "button_link_2": "shopify://products/emilie-trouser-black"
+          }
+        },
+        "image_6FzJaH": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/11_0dd9c7b3-e6b5-4952-9572-600f6f67fd13.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Emilie Top Black",
+            "button_link_1": "shopify://products/emilie-top-black",
+            "button_label_2": "Emilie Trouser Black",
+            "button_link_2": "shopify://products/emilie-trouser-black"
+          }
+        }
+      },
+      "block_order": [
+        "image_bjpfC3",
+        "image_6FzJaH"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_dPaifi": {
+      "type": "image-banner",
+      "blocks": {
+        "image_rW6iqH": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/2_20.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aya String Maxi Dress Wine Stripe",
+            "button_link_1": "shopify://products/aya-string-midi-dress-wine-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rW6iqH"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_eE6pqy": {
+      "type": "image-banner",
+      "blocks": {
+        "image_fw4RgR": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_19.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Vieste Shirt Bordeaux",
+            "button_link_1": "shopify://products/vieste-shirt-bordeaux",
+            "button_label_2": "Emilie Trouser Bordeaux",
+            "button_link_2": "shopify://products/emilie-trouser-bordeaux"
+          }
+        },
+        "image_anq3LG": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_35.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aurelia Midi Dress Amaryllis Floral Blue",
+            "button_link_1": "shopify://products/aurelia-midi-dress-amaryllis-floral-blue",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_dfDjq4": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_18.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Odin Coat Black",
+            "button_link_1": "shopify://products/odin-coat-black",
+            "button_label_2": "Emilie Trouser Black",
+            "button_link_2": "shopify://products/emilie-trouser-black"
+          }
+        }
+      },
+      "block_order": [
+        "image_fw4RgR",
+        "image_anq3LG",
+        "image_dfDjq4"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_ipcJFg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3BqAQf": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_88adbff9-ef64-4144-aeb2-7472382e9e81.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aya String Maxi Dress Wine Stripe",
+            "button_link_1": "shopify://products/aya-string-midi-dress-wine-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_HDhURQ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/6_839d6948-b8cc-4a43-ae37-f3b33b5051c8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aya String Maxi Dress Wine Stripe",
+            "button_link_1": "shopify://products/aya-string-midi-dress-wine-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3BqAQf",
+        "image_HDhURQ"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_8HcQFp": {
+      "type": "image-banner",
+      "blocks": {
+        "image_wJbWDW": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_a713b3d0-1306-46ea-86f1-bf923b5d5b67.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Odin Coat Black",
+            "button_link_1": "shopify://products/odin-coat-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_wJbWDW"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_FbcxFY": {
+      "type": "image-banner",
+      "blocks": {
+        "image_gAw6eW": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/8_aaf09f7b-8fc3-439f-bb70-c34c011f92d2.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Aurelia Midi Dress Amaryllis Floral Blue",
+            "button_link_1": "shopify://products/aurelia-midi-dress-amaryllis-floral-blue",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Dzicig": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_aa2b9e76-15de-401e-b40a-1ec83a7f98b4.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Vieste Shirt Bordeaux",
+            "button_link_1": "shopify://products/vieste-shirt-bordeaux",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_UNGypH": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_360d070c-4fb4-4ef2-9a13-879a6e6932fc.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Zona Top Black",
+            "button_link_1": "shopify://products/zona-top-black",
+            "button_label_2": "Emilie Trouser Black",
+            "button_link_2": "shopify://products/emilie-trouser-black"
+          }
+        }
+      },
+      "block_order": [
+        "image_gAw6eW",
+        "image_Dzicig",
+        "image_UNGypH"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_BrpfLX": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Fall 24",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "new-arrivals",
+        "product_list": [
+          "aya-string-midi-dress-wine-stripe",
+          "odin-coat-black",
+          "vieste-shirt-bordeaux",
+          "aurelia-midi-dress-amaryllis-floral-blue"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_XGBTBh": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Dgaz9L": {
+          "type": "title",
+          "settings": {
+            "title": "Shop Di Milano Collection",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "button_4TRaB4": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Now",
+            "link": "shopify://collections/new-arrivals",
+            "button_style": "btn--secondary",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_Dgaz9L",
+        "button_4TRaB4"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "image_banner_RUwcYH",
+    "rich_text_g43DRX",
+    "image_banner_cwDtbX",
+    "image_banner_DBfQTb",
+    "image_banner_LGQerY",
+    "image_banner_kjgkNc",
+    "a323484a-86e9-4203-aced-96da3b5efac8",
+    "256ee49b-a256-40c1-9682-ef3f84d3a5d5",
+    "image_banner_AzPmyL",
+    "image_banner_Fz6hTf",
+    "featured_products_JgtUha",
+    "31bfb285-537b-401c-b2bb-42613163fab3",
+    "image_banner_yCgecR",
+    "image_banner_eggwwk",
+    "image_banner_GbGmcA",
+    "image_banner_YQdLaC",
+    "image_banner_brWzUY",
+    "image_banner_Dm6eXr",
+    "image_banner_dPaifi",
+    "image_banner_eE6pqy",
+    "image_banner_ipcJFg",
+    "image_banner_8HcQFp",
+    "image_banner_FbcxFY",
+    "featured_products_BrpfLX",
+    "rich_text_XGBTBh"
+  ]
+}

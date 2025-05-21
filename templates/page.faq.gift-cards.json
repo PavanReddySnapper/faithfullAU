@@ -1,0 +1,73 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": true,
+        "page_nav": "faqs-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "How do I use my gift card?",
+            "content": "<p>FAITHFULL gift cards are automatically emailed to you once purchased. A unique code will be issued to the email address entered at checkout. </p><p>To redeem, enter your unique gift card code in the ‘gift card or discount code’ box at checkout and click apply. </p><p>Gift cards purchased through <strong>au.faithfullthebrand.com</strong> may only be redeemed on this website.</p><p>If you are having any issues redeeming your gift card, please contact our customer care team <a href=\"mailto:shop@faithfullthebrand.com\" title=\"mailto:shop@faithfullthebrand.com\">shop@faithfullthebrand.com</a>.<br/></p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "How long is my gift card valid for?",
+            "content": "<p>FAITHFULL gift cards are valid for 3 years from the date of purchase.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return my gift card?",
+            "content": "<p>FAITHFULL does not offer refund or returns on any gift card purchases.  Read our <a href=\"https://faithfullthebrand.com/pages/customer-care\"><span style=\"text-decoration:underline\">Returns Policy</span></a> here for more information. </p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "title": "Do you offer physical gift cards?",
+            "content": "<p>Unfortunately, we do not offer physical gift cards at this time.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_0",
+        "question_1",
+        "question_2",
+        "question_3"
+      ],
+      "settings": {
+        "title": "",
+        "is_primary_heading": false,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

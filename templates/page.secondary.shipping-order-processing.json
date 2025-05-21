@@ -1,0 +1,178 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": false,
+        "page_nav": "shipping-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "rich_text_bhgARE": {
+      "type": "rich-text",
+      "blocks": {
+        "title_GTfbyP": {
+          "type": "title",
+          "settings": {
+            "title": "Order Processing",
+            "is_primary_heading": true,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_P6eac6": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>All FAITHFULL orders are shipped out within 1-2 business days from purchase from our warehouse in Padstow, Sydney, Australia.<br/><br/>Shipping time frames are in addition to our processing times. Any orders placed on weekends and public holidays will be processed the following business day. </p><p>Orders will be delivered between 8am-6pm Monday to Friday. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_KJbCgg": {
+          "type": "title",
+          "settings": {
+            "title": "Sales & Promotional Periods",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_QKzYzB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>During sale and promotional periods, order processing times may be subject to delay due to a higher than normal volume of orders. Please allow an additional 3 - 4 business days for your order to be processed for shipment from the warehouse.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_Xbib6F": {
+          "type": "title",
+          "settings": {
+            "title": "Modifying or cancelling an order",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_fY8wVn": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Unfortunately, we are not able to change or cancel your order once it is placed. Please choose items carefully and ensure all shipping information is full and correct before placing your order. If you do need assistance with an order error please contact our customer care team at shop@faithfullthebrand.com as soon as possible. We pack and ship orders daily so cannot guarantee your requests can be made.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "title_Xa8nxD": {
+          "type": "title",
+          "settings": {
+            "title": "Wrong shipping address",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_eTMBJC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>If you have entered an incorrect shipping address on your order and your order has not been shipped, please contact our customer care team as soon as possible. Please note that once your order has been shipped from the warehouse, we are unable to change the shipping address. We advise that customers reach out to Australia Post directly as they may be able to redirect your parcel to a new address. Orders that are returned to sender due to an invalid address may be reshipped at the expense of the customer. After an order has been delivered to the correct shipping address, we cannot be held responsible in the event of loss or theft of the packages.</p><p>For all online customer service, order and product enquiries, please email shop@faithfullthebrand.com</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_6gWapL": {
+          "type": "title",
+          "settings": {
+            "title": "Item Availability",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_wErEat": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Whilst we try to ensure that stock levels on the website are as accurate and up-to-date as possible, on rare occasions there may be a stock discrepancy for an item purchased. If a purchase has been made for an unavailable item, you will be notified via email by our customer care team as soon as possible and be offered a suitable replacement, a credit note or a full refund.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_KzQDKH": {
+          "type": "title",
+          "settings": {
+            "title": "Pre-Orders",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LXRAaP": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>FAITHFULL currently offers certain styles available for pre-order. Pre-order styles will be processed like a normal FAITHFULL order but will be shipped at a later date specified on the individual product page. Pre-orders that are purchased along with an in-stock style will be shipped separately so you receive your in-stock style/s straight away. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_GTfbyP",
+        "richtext_P6eac6",
+        "title_KJbCgg",
+        "richtext_QKzYzB",
+        "title_Xbib6F",
+        "richtext_fY8wVn",
+        "title_Xa8nxD",
+        "richtext_eTMBJC",
+        "title_6gWapL",
+        "richtext_wErEat",
+        "title_KzQDKH",
+        "richtext_LXRAaP"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 72
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_bhgARE"
+  ]
+}

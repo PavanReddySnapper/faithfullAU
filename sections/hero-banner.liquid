@@ -1,0 +1,320 @@
+{%- liquid
+  case request.page_type
+    when 'collection'
+      assign resource = collection
+      assign content = collection.description
+    when 'page'
+      assign resource = page
+    when 'blog'
+      assign resource = blog
+    when 'article'
+      assign resource = article
+  endcase
+
+  if resource
+    assign title = resource.title
+    assign banner_image = resource.image
+  endif
+
+  if banner_image == blank
+    assign banner_image = section.settings.image
+  endif
+
+  if section.settings.title != blank
+    assign title = section.settings.title
+  endif
+
+  if section.settings.content != blank
+    assign content = section.settings.content
+  endif
+
+  assign button_label_1 = section.settings.button_label_1
+  assign button_link_1 = section.settings.button_link_1
+  assign button_style_1 = section.settings.button_style_1
+
+  assign show_button_1 = false
+  if button_label_1 != blank and button_link_1 != blank
+    assign show_button_1 = true
+  endif
+
+  assign sizes = '100vw'
+  assign img_attributes = ''
+
+  if section.settings.enable_banner_parallax
+    assign sizes = '125vw'
+    assign img_attributes = 'data-parallax-image'
+  endif
+
+  assign text_color = section.settings.text_color
+  assign text_color_desktop = section.settings.text_color_desktop
+  assign title_size = section.settings.title_size
+-%}
+
+{%- unless banner_image == blank and title == blank -%}
+  <div
+    class="hero-banner__container {% if section.settings.enable_banner_parallax and section.settings.position == 'bottom' %} hero-banner__bottom{% endif %}"
+    data-section-id="{{ section.id }}"
+    data-section-type="hero-banner"
+    data-section-position="{{ section.settings.position }}"
+    style="
+      --text-color: var({{ text_color }});
+      --desktop-text-color: var({{ text_color_desktop }});
+    "
+  >
+    {%- if section.settings.breadcrumbs -%}
+      {% render 'breadcrumbs' %}
+    {%- endif -%}
+
+    <div class="hero-banner__wrapper{% if section.settings.enable_banner_parallax %} with-parallax{% endif %}">
+      {%- if banner_image != blank -%}
+        <div class="hero-banner__image">
+          {% render 'component-image', img_attributes: img_attributes, image: banner_image, sizes: sizes %}
+        </div>
+      {%- endif -%}
+
+      <div class="hero-banner__content">
+        <div class="container">
+          {% render 'section-content',
+            text_color: text_color,
+            title: title,
+            title_size: title_size,
+            content: content,
+            show_button_1: show_button_1,
+            button_label_1: button_label_1,
+            button_link_1: button_link_1,
+            button_style_1: button_style_1
+          %}
+        </div>
+      </div>
+    </div>
+  </div>
+{%- endunless -%}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% render 'vite-tag' with '@/scripts/sections/hero-banner.js' %}
+
+{% schema %}
+  {
+    "name": "Hero Banner",
+    "class": "hero-banner",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "breadcrumbs",
+        "label": "Display breadcrumbs",
+        "default": false
+      },
+      {
+        "type": "header",
+        "content": "Image"
+      },
+      {
+        "type": "paragraph",
+        "content": "If an image has been uploaded to a specific collection or blog post then it will be displayed instead of the image below."
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Background image",
+        "info": "Recommended size 2560px wide"
+      },
+      {
+        "type": "header",
+        "content": "Content"
+      },
+      {
+        "type": "paragraph",
+        "content": "The content will automatically display for each collection/page/blog/blog post etc. but you can override it using the settings below."
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content"
+      },
+      {
+        "type": "text",
+        "id": "button_label_1",
+        "label": "Button label",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "Button link",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "button_style_1",
+        "label": "Button style",
+        "default": "text",
+        "options": [
+          {
+            "value": "text",
+            "label": "Text"
+          },
+          {
+            "value": "link",
+            "label": "Underlined Text"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Content styles"
+      },
+      {
+        "type": "select",
+        "id": "text_color",
+        "label": "Text colour - mobile",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "text_color_desktop",
+        "label": "Text colour - desktop",
+        "default": "--color-black",
+        "options": [
+          {
+            "value": "--color-primary-20",
+            "label": "Primary 20"
+          },
+          {
+            "value": "--color-primary-40",
+            "label": "Primary 40 (Sand)"
+          },
+          {
+            "value": "--color-secondary-90",
+            "label": "Secondary 90 (Chocolate)"
+          },
+          {
+            "value": "--color-white",
+            "label": "White"
+          },
+          {
+            "value": "--color-black",
+            "label": "Black"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "id": "title_size",
+        "label": "Title font size",
+        "default": "h1",
+        "options": [
+          {
+            "value": "h1",
+            "label": "Large"
+          },
+          {
+            "value": "h2",
+            "label": "Medium"
+          },
+          {
+            "value": "h3",
+            "label": "Small"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Parallax Effect"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_banner_parallax",
+        "label": "Enable parallax",
+        "info": "Adds a parallax effect to the background image on scroll",
+        "default": false
+      },
+      {
+        "type": "select",
+        "id": "position",
+        "label": "Banner position",
+        "info": "The position is required for the effect to display correctly",
+        "default": "top",
+        "options": [
+          {
+            "label": "Top",
+            "value": "top"
+          },
+          {
+            "label": "Bottom",
+            "value": "bottom"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Hero Banner"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

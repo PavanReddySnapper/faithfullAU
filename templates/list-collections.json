@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-collection-list",
+      "blocks": {
+        "collection_ranyrg": {
+          "type": "collection",
+          "settings": {
+            "collection": "jours-dor",
+            "column_size": "span 4",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "landscape",
+            "image": "shopify://shop_images/1_318b7e4e-609a-45c6-8fc0-a9bb6a192326.webp",
+            "badge_override": "Holiday 25",
+            "title_override": "",
+            "url_override": "https://au.faithfullthebrand.com/pages/jours-dor"
+          }
+        },
+        "collection_AhK4aL": {
+          "type": "collection",
+          "settings": {
+            "collection": "di-milano",
+            "column_size": "span 2",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/2_5b0a9797-7873-4189-8b6e-d62431fc9ebe.webp",
+            "badge_override": "Fall 24",
+            "title_override": "",
+            "url_override": "shopify://pages/di-milano"
+          }
+        },
+        "collection_FGAHtb": {
+          "type": "collection",
+          "settings": {
+            "collection": "di-milano",
+            "column_size": "span 4",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "landscape",
+            "image": "shopify://shop_images/3_45724971-4972-42c6-a02d-95977a8765e9.webp",
+            "badge_override": "Fall 24",
+            "title_override": "Di Milano",
+            "url_override": "shopify://pages/fall-24"
+          }
+        },
+        "collection_eFA3Mj": {
+          "type": "collection",
+          "settings": {
+            "collection": "summer-24",
+            "column_size": "span 2",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/4_68148bac-6a15-4f90-86dd-a5883857d098.webp",
+            "badge_override": "Summer 24",
+            "title_override": "Summer 2024",
+            "url_override": "shopify://pages/summer-24"
+          }
+        },
+        "collection_Rjibxn": {
+          "type": "collection",
+          "settings": {
+            "collection": "summer-24",
+            "column_size": "span 2",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/1-Hero-Portrait.webp",
+            "badge_override": "Summer 24",
+            "title_override": "Summer in Pantelleria",
+            "url_override": "shopify://pages/summer-in-pantelleria"
+          }
+        },
+        "collection_KLp6Fg": {
+          "type": "collection",
+          "settings": {
+            "collection": "roma",
+            "column_size": "span 4",
+            "column_size_mobile": "",
+            "aspect_ratio": "landscape",
+            "image": "shopify://shop_images/1_49fd75f3-54be-4971-8753-3255b7cb3ba8.webp",
+            "badge_override": "Spring 24",
+            "title_override": "Roma",
+            "url_override": "shopify://pages/roma"
+          }
+        },
+        "collection_jmmVNk": {
+          "type": "collection",
+          "settings": {
+            "collection": "loasis",
+            "column_size": "span 4",
+            "column_size_mobile": "",
+            "aspect_ratio": "landscape",
+            "image": "shopify://shop_images/2_db056aab-67d0-4c86-977d-a2aeb633aacd.webp",
+            "badge_override": "Resort 23",
+            "title_override": "L'Oasis",
+            "url_override": "shopify://pages/loasis"
+          }
+        },
+        "collection_NXDKV3": {
+          "type": "collection",
+          "settings": {
+            "collection": "la-muse",
+            "column_size": "span 2",
+            "column_size_mobile": "",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/3_b9a2f673-02d6-4933-a5d0-26279adb0c27.webp",
+            "badge_override": "Fall 23",
+            "title_override": "La Muse",
+            "url_override": "shopify://pages/la-muse-campaign"
+          }
+        },
+        "collection_3xegMW": {
+          "type": "collection",
+          "settings": {
+            "collection": "la-muse",
+            "column_size": "span 2",
+            "column_size_mobile": "",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/4_bbed9389-d503-4079-a781-fd35f3f9accb.webp",
+            "badge_override": "Fall 23",
+            "title_override": "La Muse in New York City",
+            "url_override": "shopify://pages/la-muse"
+          }
+        },
+        "collection_7WqPb6": {
+          "type": "collection",
+          "settings": {
+            "collection": "monikh-x-faithfull-the-brand",
+            "column_size": "span 4",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "landscape",
+            "image": "shopify://shop_images/7_ed7b1656-938b-4130-8f62-70096cf3abb0.webp",
+            "badge_override": "Collaboration",
+            "title_override": "Monikh x Faithfull",
+            "url_override": "shopify://pages/monikh-x-faithfull-the-brand"
+          }
+        },
+        "collection_G7QJiD": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "sol-de-verano",
+            "column_size": "span 2",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/5_a556b97c-fb12-4884-9e1a-0ed337940cbd.webp",
+            "badge_override": "Summer 23",
+            "title_override": "Sol de Verano",
+            "url_override": "shopify://pages/sol-de-verano"
+          }
+        },
+        "collection_A3EagP": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "sol-de-verano",
+            "column_size": "span 2",
+            "column_size_mobile": "",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/8_6a990f5a-885c-4c20-8b6e-8e40c5c7ad52.webp",
+            "badge_override": "Summer 23",
+            "title_override": "Summer Moments",
+            "url_override": "shopify://pages/summer-moments"
+          }
+        },
+        "collection_mwXR8b": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "sardinian-holiday",
+            "column_size": "span 2",
+            "column_size_mobile": "",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/6_59a4fc70-1eb7-471f-ad44-21a05dc10523.webp",
+            "badge_override": "Spring 23",
+            "title_override": "Sardinian Holiday",
+            "url_override": "shopify://pages/sardinian-holiday"
+          }
+        },
+        "collection_r9Dxxq": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "tropical-tones",
+            "column_size": "span 4",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "landscape",
+            "image": "shopify://shop_images/9.2.webp",
+            "badge_override": "Resort 23",
+            "title_override": "Island In the Sun",
+            "url_override": "shopify://pages/island-in-the-sun-editorial"
+          }
+        },
+        "collection_Wqt6L3": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "tropical-tones",
+            "column_size": "span 2",
+            "column_size_mobile": "span 2",
+            "aspect_ratio": "portrait",
+            "image": "shopify://shop_images/10.webp",
+            "badge_override": "Resort 23",
+            "title_override": "Tropiques",
+            "url_override": "shopify://pages/tropiques"
+          }
+        }
+      },
+      "block_order": [
+        "collection_ranyrg",
+        "collection_AhK4aL",
+        "collection_FGAHtb",
+        "collection_eFA3Mj",
+        "collection_Rjibxn",
+        "collection_KLp6Fg",
+        "collection_jmmVNk",
+        "collection_NXDKV3",
+        "collection_3xegMW",
+        "collection_7WqPb6",
+        "collection_G7QJiD",
+        "collection_A3EagP",
+        "collection_mwXR8b",
+        "collection_r9Dxxq",
+        "collection_Wqt6L3"
+      ],
+      "settings": {
+        "title": "Our Collections",
+        "text": "",
+        "content_source": "blocks",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

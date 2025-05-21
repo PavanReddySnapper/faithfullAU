@@ -1,0 +1,131 @@
+{% if section.blocks.size > 0 %}
+  {% liquid
+    case section.blocks.size
+      when 1
+        assign sizes = '(min-width: 48rem) 100vw, 50vw'
+        assign block_width = 'full'
+      when 2
+        assign sizes = '(min-width: 48rem) 50vw, 50vw'
+        assign block_width = 'half'
+      else
+        assign sizes = '(min-width: 48rem) calc(100vw / 3), 50vw'
+        assign block_width = 'third'
+    endcase
+  %}
+
+  <section
+    class="section section--featured-articles"
+    data-section-id="{{ section.id }}"
+    data-section-type="featured-articles"
+  >
+    <div class="featured-articles__content-container container container--fluid">
+      {% if section.settings.title != blank %}
+        <h2 class="featured-articles__title h6">{{ section.settings.title }}</h2>
+      {% endif %}
+      {% liquid
+        if section.blocks.size > 2
+          if section.blocks.size == 3
+            render 'carousel-controls', container_class: 'controls-container--top hide--min-lg'
+          else
+            render 'carousel-controls', container_class: 'controls-container--top'
+          endif
+        endif
+      %}
+    </div>
+
+    <div class="container container--flush container--fluid">
+      <ul
+        class="featured-articles__slider carousel{% if section.blocks.size > 3 %} carousel--min-lg{% endif %}"
+        data-slider-container
+      >
+        {% for block in section.blocks %}
+          <li class="featured-articles__slide slide {{ block_width }}" data-slide>
+            {% render 'article-card', article: articles[block.settings.article], sizes: sizes %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <style>
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+    }
+
+    @media only screen and (min-width: {{ settings.grid_medium }}px) {
+      #shopify-section-{{ section.id }} {
+        margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+      }
+    }
+  </style>
+{% endif %}
+
+{% render 'vite-tag' with '@/scripts/sections/featured-articles.js' %}
+
+{% schema %}
+  {
+    "name": "Featured Articles",
+    "class": "featured-articles",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Featured Articles"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "article",
+        "name": "Article",
+        "settings": [
+          {
+            "label": "Article",
+            "id": "article",
+            "type": "article"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Articles"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

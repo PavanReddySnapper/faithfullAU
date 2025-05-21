@@ -1,0 +1,1111 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "video_banner_4zf3EW": {
+      "type": "video-banner",
+      "settings": {
+        "video_mobile": "shopify://files/videos/Banner_61dca34f-eb00-409c-8d8e-c7f1530b67ff.mp4",
+        "video_desktop": "shopify://files/videos/Banner_1f8728e6-56b5-4492-b97c-682578b9263a.mp4",
+        "display_play_controls": false,
+        "display_mute_controls": false,
+        "enable_autoplay": true,
+        "controls_color": "light",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "rich_text_g43DRX": {
+      "type": "rich-text",
+      "blocks": {
+        "title_wwTkUr": {
+          "type": "title",
+          "settings": {
+            "title": "Summer 2024",
+            "is_primary_heading": true,
+            "heading_style": "h1",
+            "pre_heading": "Summer 2024 Campaign",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_mtE7tq": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Introducing Summer 2024.<br/><br/>A reflection of core values – pure, timeless designs and traditional Balinese craftsmanship.  Summer 2024 brings together new silhouettes and natural colour palettes, whilst simultaneously exploring artisanal detailing, delicate handcrafting and unique fabrications.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_w7qDcp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Jennifer Matias, is captured on location in Pantelleria, Italy<br/><br/>Campaign Photography by Jordan Malane.<br/>Videography by Tom Mitchell with Lachlan Starling as first assistant.<br/>Hair and makeup by Joel Phillips.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        },
+        "richtext_yaQcDw": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"/collections/summer-24\" title=\"Summer 24\">SHOP THE COLLECTION</a></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_wwTkUr",
+        "richtext_mtE7tq",
+        "richtext_w7qDcp",
+        "richtext_yaQcDw"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--md",
+        "single_row_desktop": false,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 16,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_cwDtbX": {
+      "type": "image-banner",
+      "blocks": {
+        "image_NdhmaB": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_eb680c14-732e-4c0d-8dbf-6f8f6ca0f7ac.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "En Vau Shirt Foam Taupe Stripe",
+            "button_link_1": "shopify://products/en-vau-oversized-shirt-foam-taupe-stripe",
+            "button_label_2": "Soleil Trouser Sand",
+            "button_link_2": ""
+          }
+        },
+        "image_LPAKtp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_614dba09-c57d-48a9-ba94-47813aa17c24.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_cctptf": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_efa65b58-02c9-476f-b217-e189ada76ef6.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Maceio Fringed Dress Black",
+            "button_link_1": "shopify://products/maceio-fringed-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_NdhmaB",
+        "image_LPAKtp",
+        "image_cctptf"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_DBfQTb": {
+      "type": "image-banner",
+      "blocks": {
+        "image_xeNfMF": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_72f014e5-52d6-417a-b55e-daa79c5247e0.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "En Vau Shirt Foam Taupe Stripe",
+            "button_link_1": "shopify://products/en-vau-oversized-shirt-foam-taupe-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_xeNfMF"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_LGQerY": {
+      "type": "image-banner",
+      "blocks": {
+        "image_JNeDi9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_93199d0b-9767-4431-b152-76ef5ed1bccc.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Antibes Shirt White",
+            "button_link_1": "shopify://products/antibes-shirt-white",
+            "button_label_2": "Ida Pant White",
+            "button_link_2": "shopify://products/ida-pant-white"
+          }
+        }
+      },
+      "block_order": [
+        "image_JNeDi9"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_kjgkNc": {
+      "type": "image-banner",
+      "blocks": {
+        "image_XnajLf": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_f3bde33b-75ee-4cbd-adfe-7ae248c58d76.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Soleil Maxi Dress Black",
+            "button_link_1": "shopify://products/soleil-maxi-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_DBRKiB": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_a2faee0c-53ca-40c1-8157-24d66f4c9e8f.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Soleil Maxi Dress Black",
+            "button_link_1": "shopify://products/soleil-maxi-dress-black",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_XnajLf",
+        "image_DBRKiB"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "a323484a-86e9-4203-aced-96da3b5efac8": {
+      "type": "image-banner",
+      "blocks": {
+        "85a0676d-6907-4ecf-bdfe-1499687c66cc": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/8_03d8ec81-0f32-4ea5-b37c-9acb50811eaa.webp",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        },
+        "fc5a42f0-f390-4585-90fc-161090f7d99f": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_227bddb6-7d1f-4e21-8e0e-483bb5915d3f.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        },
+        "cbba2e9f-1333-4204-a445-a6cfe430f316": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_227c0d76-792e-4cd7-becd-77634aba7791.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Vieste Shirt Sky Blue",
+            "button_link_1": "shopify://products/vieste-oversized-shirt-sky-blue",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        }
+      },
+      "block_order": [
+        "85a0676d-6907-4ecf-bdfe-1499687c66cc",
+        "fc5a42f0-f390-4585-90fc-161090f7d99f",
+        "cbba2e9f-1333-4204-a445-a6cfe430f316"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_aiKiNK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_A4VkHq": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/citara-strapless-top-white-summer-24-tops-44732889563320.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Citara Top White",
+            "button_link_1": "shopify://products/citara-strapless-top-white",
+            "button_label_2": "Citara Skirt White",
+            "button_link_2": "shopify://products/citara-skirt-white"
+          }
+        },
+        "image_fD4Q3j": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/12.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Citara Strapless Top White",
+            "button_link_1": "shopify://products/citara-strapless-top-white",
+            "button_label_2": "Citara Skirt White",
+            "button_link_2": "shopify://products/citara-skirt-white"
+          }
+        }
+      },
+      "block_order": [
+        "image_A4VkHq",
+        "image_fD4Q3j"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_AzPmyL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_rrWt4P": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/13.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_rrWt4P"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "cta",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_JgtUha": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Linen sets",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "la-muse",
+        "product_list": [],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "31bfb285-537b-401c-b2bb-42613163fab3": {
+      "type": "image-banner",
+      "blocks": {
+        "a743fbfa-f531-4f6b-929a-5115fbf29a32": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/14.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Anais Maxi Dress Lemon",
+            "button_link_1": "shopify://products/anais-maxi-dress-lemon",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        },
+        "1804dce8-738b-43fb-a1f5-8ceba53af9dd": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/15.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Maceio Fringed Dress Black",
+            "button_link_1": "shopify://products/maceio-fringed-dress-black",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        },
+        "image_W3XAcW": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/16.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Antibes Shirt White",
+            "button_link_1": "shopify://products/antibes-shirt-white",
+            "button_label_2": "Ida Pant White",
+            "button_link_2": "shopify://products/ida-pant-white"
+          }
+        }
+      },
+      "block_order": [
+        "a743fbfa-f531-4f6b-929a-5115fbf29a32",
+        "1804dce8-738b-43fb-a1f5-8ceba53af9dd",
+        "image_W3XAcW"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "256ee49b-a256-40c1-9682-ef3f84d3a5d5": {
+      "type": "image-banner",
+      "blocks": {
+        "2a278432-8cb2-4216-8b45-fcbcd7239bb5": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/17.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "En Vau Shirt Foam Taupe",
+            "button_link_1": "shopify://products/en-vau-oversized-shirt-foam-taupe-stripe",
+            "button_label_2": "Elea Bikini Top Futura Stripe",
+            "button_link_2": "shopify://products/elea-string-bikini-top-futura-stripe-taupe-multi"
+          }
+        }
+      },
+      "block_order": [
+        "2a278432-8cb2-4216-8b45-fcbcd7239bb5"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "featured_products_BrpfLX": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Summer 24 Dresses",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "dresses-maxis",
+        "product_list": [],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "7d1c42a1-cd81-41a3-ad8f-117375c45198": {
+      "type": "image-banner",
+      "blocks": {
+        "58818b2e-1567-4977-8f65-60f4e7ca711b": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_570ec84f-6dc8-41c9-896c-f88cc118cca6.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Antibes Top Khaki",
+            "button_link_1": "shopify://products/antibes-top-khaki",
+            "button_label_2": "Ida Pant Khaki",
+            "button_link_2": "shopify://products/ida-pant-khaki"
+          }
+        },
+        "image_f9B6ix": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_46fdfd96-9ef1-47c5-a0c2-fcac449c8144.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_DQeUEc": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_6829ba4d-debf-4a43-be95-ce17f936a7f8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Alliste Shirt Black",
+            "button_link_1": "shopify://products/alliste-shirt-black",
+            "button_label_2": "Elea Bikini Top Black",
+            "button_link_2": "shopify://products/elea-string-bikini-top-black"
+          }
+        }
+      },
+      "block_order": [
+        "58818b2e-1567-4977-8f65-60f4e7ca711b",
+        "image_f9B6ix",
+        "image_DQeUEc"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "fb36c92e-b872-43c2-bccb-87546238a6f5": {
+      "type": "image-banner",
+      "blocks": {
+        "ef770481-2f8f-49fe-8046-04f3472ad5a0": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_e6cc65bb-ff93-4878-b2aa-568670c0aec1.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Maceio Maxi Dress",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": "#"
+          }
+        }
+      },
+      "block_order": [
+        "ef770481-2f8f-49fe-8046-04f3472ad5a0"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "5770bf68-177d-4ac9-b320-86685497242d": {
+      "type": "image-banner",
+      "blocks": {
+        "54f0c027-f671-4d08-9ff9-5271aa3dc72f": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_26b606b1-f8ba-4374-aee4-298f2e0fc405.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "54f0c027-f671-4d08-9ff9-5271aa3dc72f"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "40",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_Fz6hTf": {
+      "type": "image-banner",
+      "blocks": {
+        "image_XLanbe": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_4117a075-e12e-4d1b-91d8-dc71e03a0ded.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Maceio T-Shirt White",
+            "button_link_1": "shopify://products/maceio-t-shirt-white",
+            "button_label_2": "Cassis Pant White",
+            "button_link_2": "shopify://products/cassis-pant-white"
+          }
+        },
+        "image_HGtq3N": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_8b66394a-8893-479c-a5f0-86f01174430a.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Maceio T-Shirt White",
+            "button_link_1": "shopify://products/maceio-t-shirt-white",
+            "button_label_2": "Bebe Bikini Bottom White",
+            "button_link_2": "shopify://products/bebe-bikini-bottom-white"
+          }
+        }
+      },
+      "block_order": [
+        "image_XLanbe",
+        "image_HGtq3N"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_qTfxPL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_yMnUrw": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/8_e17543d2-9fd9-44e3-80af-6d063a533764.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Citara Maxi Dress Cocoa",
+            "button_link_1": "shopify://products/citara-maxi-dress-cocoa",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_KRaJ4V": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/9_608d683a-d1a3-4659-97e8-fc5d5cc92191.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_aDJ4HT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/10_8aea3aa7-0583-47d0-b89a-6770ff05c77e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ciele Top Azalea White",
+            "button_link_1": "shopify://products/ciele-top-azalea-white",
+            "button_label_2": "Maceio Skirt White",
+            "button_link_2": "shopify://products/maceio-asymmetrical-skirt-white"
+          }
+        }
+      },
+      "block_order": [
+        "image_yMnUrw",
+        "image_KRaJ4V",
+        "image_aDJ4HT"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_a4gX9j": {
+      "type": "image-banner",
+      "blocks": {
+        "image_npJ7nM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/11_75408749-25ad-4fa1-ae2a-486e3776291b.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Elea Bikini Top Terracotta Stripe",
+            "button_link_1": "shopify://products/elea-string-bikini-top-terracotta-multi-stripe",
+            "button_label_2": "En Vau Shirt Terracotta Stripe",
+            "button_link_2": "shopify://products/en-vau-shirt-terracotta-multi-stripe"
+          }
+        },
+        "image_AtqB7N": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/12_18db1430-5083-4739-a879-a3838dcaf12e.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Cassis Pant Umber",
+            "button_link_1": "shopify://products/cassis-pant-umber",
+            "button_label_2": "En Vau Shirt Terracotta Stripe",
+            "button_link_2": "shopify://products/en-vau-shirt-terracotta-multi-stripe"
+          }
+        }
+      },
+      "block_order": [
+        "image_npJ7nM",
+        "image_AtqB7N"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_i7DaNL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_LA7HEi": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ciele Maxi Dress Azalea White",
+            "button_link_1": "shopify://products/ciele-maxi-dress-azalea-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_LA7HEi"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_aiDine": {
+      "type": "image-banner",
+      "blocks": {
+        "image_JtKqgg": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/2_8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Antibes Shirt Sand",
+            "button_link_1": "shopify://products/antibes-sleeveless-wrap-shirt-sand",
+            "button_label_2": "Antibes Short Sand",
+            "button_link_2": "shopify://products/antibes-short-sand"
+          }
+        }
+      },
+      "block_order": [
+        "image_JtKqgg"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_kUpq3N": {
+      "type": "image-banner",
+      "blocks": {
+        "image_Ag8D7r": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/3_8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ciele Top Black",
+            "button_link_1": "shopify://products/ciele-top-black",
+            "button_label_2": "Ciele Maxi Skirt Black",
+            "button_link_2": "shopify://products/ciele-maxi-skirt-black"
+          }
+        },
+        "image_qYCeHg": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/4_8.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_HzLrnJ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/5_6.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Biarritz Singlet Maxi Dress Terracotta Ombre",
+            "button_link_1": "shopify://products/biarritz-singlet-maxi-dress-terracotta-ombre",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_Ag8D7r",
+        "image_qYCeHg",
+        "image_HzLrnJ"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_DQQEqX": {
+      "type": "image-banner",
+      "blocks": {
+        "image_98RgMr": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/6_5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Sao Paulo Skirt Terracotta Stripe",
+            "button_link_1": "shopify://products/sao-paulo-skirt-terracotta-multi-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_TPLKgr": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_3.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Sao Paulo Top Terracotta Stripe",
+            "button_link_1": "shopify://products/sao-paulo-long-sleeve-top-terracotta-multi-stripe",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_98RgMr",
+        "image_TPLKgr"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "image_banner_K7cNcN": {
+      "type": "image-banner",
+      "blocks": {
+        "image_mpmFUG": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/8_2.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Ciele Maxi Dress Azalea White",
+            "button_link_1": "shopify://products/ciele-maxi-dress-azalea-white",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_mpmFUG"
+      ],
+      "settings": {
+        "top_margin_desktop": "80",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_XGBTBh": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Dgaz9L": {
+          "type": "title",
+          "settings": {
+            "title": "Shop Summer 24 Collection",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "button_4TRaB4": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Now",
+            "link": "shopify://collections/new-arrivals",
+            "button_style": "btn--secondary",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_Dgaz9L",
+        "button_4TRaB4"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "video_banner_4zf3EW",
+    "rich_text_g43DRX",
+    "image_banner_cwDtbX",
+    "image_banner_DBfQTb",
+    "image_banner_LGQerY",
+    "image_banner_kjgkNc",
+    "a323484a-86e9-4203-aced-96da3b5efac8",
+    "image_banner_aiKiNK",
+    "image_banner_AzPmyL",
+    "featured_products_JgtUha",
+    "31bfb285-537b-401c-b2bb-42613163fab3",
+    "256ee49b-a256-40c1-9682-ef3f84d3a5d5",
+    "featured_products_BrpfLX",
+    "7d1c42a1-cd81-41a3-ad8f-117375c45198",
+    "fb36c92e-b872-43c2-bccb-87546238a6f5",
+    "5770bf68-177d-4ac9-b320-86685497242d",
+    "image_banner_Fz6hTf",
+    "image_banner_qTfxPL",
+    "image_banner_a4gX9j",
+    "image_banner_i7DaNL",
+    "image_banner_aiDine",
+    "image_banner_kUpq3N",
+    "image_banner_DQQEqX",
+    "image_banner_K7cNcN",
+    "rich_text_XGBTBh"
+  ]
+}

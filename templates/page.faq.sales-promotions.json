@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": true,
+        "page_nav": "faqs-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "How do I use a promotional or discount code?",
+            "content": "<p>To apply a promotional or discount code to your order, enter the code in the ‘gift card or discount code’ field at checkout and click apply.</p><p>The discount will be applied on eligible items only. To find out what products are eligible for a sale or discount, see our terms and conditions.</p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "I missed out on shopping during the sale. Can you honour the sale price?",
+            "content": "<p>Unfortunately, we are unable to apply a promotional discount or sale price after the sale period has ended.</p><p>Please read the promotional terms and conditions carefully to be aware of the start and finish dates of the offer.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "Can I return a sale item?",
+            "content": "<p>Sales items that are marked down and not purchased as ‘FINAL SALE’ can be returned for a refund or store credit.</p><p>Items marked as ‘FINAL SALE’ cannot be returned and are not eligible for refund, store credit or exchange, unless the items are deemed faulty.<br/>Please see our full returns policy for more information.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_0",
+        "question_1",
+        "question_2"
+      ],
+      "settings": {
+        "title": "",
+        "is_primary_heading": false,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

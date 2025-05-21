@@ -1,0 +1,11 @@
+{%- if customer -%}
+  <script>
+    var _learnq = _learnq || [];
+    _learnq.push([
+      'identify',
+      {
+        $email: '{{ customer.email }}',
+      },
+    ]);
+  </script>
+{%- endif -%}

@@ -1,0 +1,342 @@
+{%- liquid
+  # ------------------------------------------------------------------------------
+  # SIZE CONVERSION TABLE
+  # ------------------------------------------------------------------------------
+  # Attributes
+  #   - type: The type of size table to display. Defaults to 'Apparel'.
+  #   - table_title: (optional) The title of the table
+
+  assign hide_header = false
+
+  assign type = type | default: 'Apparel'
+  assign sizes = shop.metaobjects.size.values | where: 'type', type | sort_natural: 'order'
+  assign has_measurements = false
+
+  assign regions = 'au,us,uk,eu' | split: ','
+  assign measurements = 'bust,hips,waist' | split: ','
+
+  if type == 'Bra'
+    assign hide_header = true
+    assign regions = 'us_can,uk,eu,us,nz,fr,it,aus_nz' | split: ','
+  endif
+-%}
+
+<style>
+  
+  .size-tables .tab-buttons {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  .size-tables .tab-button {
+    
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-right: 5px;
+  }
+
+  {% comment %} .size-tables .tab-button.active {
+    background-color: #ddd;
+  } {% endcomment %}
+
+  .size-tables .tab-content .tab-pane {
+    display: none;
+  }
+
+  .size-tables .tab-content .tab-pane.active {
+    display: block;
+  }
+  .measurement-tables{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .measurement-tables .measurement-tab-buttons {
+    display: flex;
+    
+  }
+
+  .measurement-tables .measurement-tab-button {
+    
+    cursor: pointer;
+    border: 1px solid #ccc;
+    {% comment %} background-color: #f9f9f9; {% endcomment %}
+    margin-right: 5px;
+  }
+
+  {% comment %} .measurement-tables .measurement-tab-button.active {
+    background-color: #ddd;
+  } {% endcomment %}
+
+  .measurement-tables .measurement-tab-content .measurement-tab-pane {
+    display: none;
+  }
+
+  .measurement-tables .measurement-tab-content .measurement-tab-pane.active {
+    display: block;
+  }
+
+  .unit-cm,
+  .unit-in {
+    display: none;
+  }
+
+  [data-active-unit="cm"] .unit-cm {
+    display: inline;
+  }
+
+  [data-active-unit="in"] .unit-in {
+    display: inline;
+  }
+
+  .size-tables .tab-buttons {
+  display: flex;
+  margin-bottom: 16px;
+  
+}
+
+.size-tables .tab-button {
+  
+  cursor: pointer;
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  margin-right: 20px;
+  font-size: 16px;
+  color: #000; /* Default text color */
+  transition: all 0.3s ease; /* Smooth transition for underline */
+}
+
+.size-tables table tr {
+  border-bottom: 1px solid #000 !important; /* Add a 1px solid black border at the bottom of each row */
+}
+
+.measurement-tables table tr {
+  border-bottom: 1px solid var(--color-neutral-30) !important; /* Add a 1px solid black border at the bottom of each row */
+}
+
+.size-tables table th, .measurement-tables table th{
+  border-top: 1px solid var(--color-neutral-30) !important;
+}
+.size-tables table th,
+.size-tables table td {
+  border-bottom: 1px solid var(--color-neutral-30) !important;
+}
+
+.measurement-tables table th,
+.measurement-tables table td {
+  border-bottom: 1px solid var(--color-neutral-30) !important;
+}
+
+.size-tables table,
+.measurement-tables table {
+  border-collapse: collapse;
+}
+
+.size-tables .tab-button.active {
+  color: #000; /* Active text color */
+  
+  border-bottom: 1px solid #000; /* Underline for active tab */
+}
+
+.measurement-tables .measurement-tab-buttons {
+  display: flex;
+  height:51px;
+  padding:16px 0px;
+  border-bottom: 1px solid var(--color-neutral-30);
+}
+
+.measurement-tables .measurement-tab-button {
+  font-size: .8125rem;
+    font-weight: var(--font-weight-body-bold);
+  text-transform: uppercase;
+  cursor: pointer;
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  margin-right: 5px;
+  color: #000; /* Default text color */
+  transition: all 0.3s ease; /* Smooth transition for underline */
+}
+
+.measurement-tables .measurement-tab-button.active {
+ 
+  border-bottom: 1px solid #000; /* Underline for active tab */
+}
+
+button{
+
+padding-block:0px;
+padding-inline:0px;
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Tab switching for Size Conversion and Body Measure
+    const tabButtons = document.querySelectorAll('.size-tables .tab-button');
+    const tabPanes = document.querySelectorAll('.size-tables .tab-pane');
+
+    tabButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const targetTab = this.getAttribute('data-tab');
+
+        tabButtons.forEach(btn => btn.classList.remove('active'));
+        tabPanes.forEach(pane => pane.classList.remove('active'));
+
+        this.classList.add('active');
+        document.getElementById(targetTab).classList.add('active');
+      });
+    });
+
+    // Tab switching for cm and inches within Body Measure
+    const measurementTabButtons = document.querySelectorAll('.measurement-tables .measurement-tab-button');
+    const measurementTable = document.querySelector('.measurement-table');
+
+    measurementTabButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const targetUnit = this.getAttribute('data-unit');
+
+        measurementTabButtons.forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        // Update the active unit in the measurement table
+        measurementTable.setAttribute('data-active-unit', targetUnit);
+
+        // Toggle visibility of cm and inches
+        const cmSpans = measurementTable.querySelectorAll('.unit-cm');
+        const inSpans = measurementTable.querySelectorAll('.unit-in');
+
+        if (targetUnit === 'cm') {
+          cmSpans.forEach(span => span.style.display = 'inline');
+          inSpans.forEach(span => span.style.display = 'none');
+        } else {
+          cmSpans.forEach(span => span.style.display = 'none');
+          inSpans.forEach(span => span.style.display = 'inline');
+        }
+      });
+    });
+
+    // Initialize the default unit (cm)
+    const defaultUnit = measurementTable.getAttribute('data-active-unit');
+    if (defaultUnit === 'cm') {
+      measurementTable.querySelectorAll('.unit-in').forEach(span => span.style.display = 'none');
+    } else {
+      measurementTable.querySelectorAll('.unit-cm').forEach(span => span.style.display = 'none');
+    }
+  });
+</script>
+
+{%- capture size_conversion_table -%}
+  <table>
+    {%- unless hide_header -%}
+      <thead>
+        <tr>
+          <th></th>
+          {%- for size in sizes -%}
+            <th style="text-align:center;width:78.28px;height:35px;">{{ size.name | upcase }}</th>
+          {%- endfor -%}
+        </tr>
+      </thead>
+    {%- endunless -%}
+
+    <tbody >
+      {%- for region in regions -%}
+        {%- liquid
+          assign key = 'conversion_' | append: region
+
+          # Skip empty regions
+          assign regions_with_values = sizes | where: key
+          if regions_with_values.size == 0
+            continue
+          endif
+
+          assign locale_key = 'products.size_table.regions.' | append: region
+        -%}
+        <tr style="border-bottom:1px solid #000">
+          <th style="border:none;width:78.28px;height:35px;text-align:left" >{{ locale_key | t }}</th>
+          {%- for size in sizes -%}
+            <td style="border:none;width:78.28px;height:35px;text-align:center">{{ size[key] }}</td>
+          {%- endfor -%}
+        </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+{%- endcapture -%}
+
+{%- capture measurement_table -%}
+  <measurement-table class="measurement-table" data-active-unit="cm">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {%- for size in sizes -%}
+            <th style="border:none;width:78.28px;height:35px;text-align:center" >{{ size.name | upcase }}</th>
+          {%- endfor -%}
+        </tr>
+      </thead>
+
+      <tbody>
+        {%- for measurement in measurements -%}
+          {%- liquid
+            assign key_cm = 'measurement_' | append: measurement | append: '_cm'
+            assign key_in = 'measurement_' | append: measurement | append: '_in'
+          -%}
+          <tr>
+            <th style="border:none;width:78.28px;height:35px;text-align:left" >{{ measurement | upcase }}</th>
+            {%- for size in sizes -%}
+              {%- liquid
+                if size[key_cm] != blank
+                  assign has_measurements = true
+                endif
+              -%}
+              <td style="border:none;width:78.28px;height:35px;text-align:center" >
+                <span data-unit="cm" class="unit-cm">
+                  {{ size[key_cm] }}
+                  <span class="visually-hidden">CM</span>
+                </span>
+                <span data-unit="in" class="unit-in">
+                  {{ size[key_in] }}
+                  <span class="visually-hidden">INCH</span>
+                </span>
+              </td>
+            {%- endfor -%}
+          </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </measurement-table>
+{%- endcapture -%}
+
+<div class="size-tables">
+  <div class="tab-buttons">
+    <button class="tab-button active" data-tab="size-conversion" style="font-size: .8125rem;
+    font-weight: var(--font-weight-body-bold);">Size Conversion</button>
+    <button class="tab-button" data-tab="body-measure" style="font-size: .8125rem;
+      font-weight: var(--font-weight-body-bold);" >Body Measurements</button>
+  </div>
+
+  <div class="tab-content">
+    <div id="size-conversion" class="tab-pane active">
+      {{ size_conversion_table }}
+    </div>
+
+    <div id="body-measure" class="tab-pane">
+      <div class="measurement-tables">
+        <div class="measurement-tab-buttons" style="display:flex;justify-content:space-between" >
+          <div>
+            <button class="measurement-tab-button active" data-unit="cm">CM</button>
+            <button class="measurement-tab-button" data-unit="in">INCH</button>
+          </div>
+          {%- assign footer_message = 'products.size_table.footer_message_html' | t -%}
+          {%- if footer_message != '' -%}
+            <div style="color:black" >{{ footer_message }}</div>
+          {%- endif -%}
+        </div>
+
+        <div class="measurement-tab-content">
+          {{ measurement_table }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

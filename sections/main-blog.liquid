@@ -1,0 +1,248 @@
+{%- liquid
+  assign pagination_size = 50
+  assign category_view = true
+
+  if current_tags or section.blocks.size == 0
+    assign pagination_size = section.settings.blog_paginate
+    assign category_view = false
+  endif
+-%}
+
+{% paginate blog.articles by pagination_size %}
+  <div class="main-blog" data-section-id="{{ section.id }}" data-section-type="main-blog">
+    <div class="main-blog__header">
+      <div class="container">
+        <h1 class="h2">
+          <a href="{{ blog.url }}">{{ blog.title }}</a>
+        </h1>
+      </div>
+
+      {%- assign filter_tags = section.settings.filter_tags | replace: ', ', ',' | split: ',' -%}
+      {%- if filter_tags.size > 0 -%}
+        <div class="main-blog__toolbar page-navigation">
+          <ul class="list-none" title="{{ 'blogs.blog.accessibility.filter_tags' | t }}">
+            <li>
+              <a
+                href="{{ blog.url }}"
+                class="navigation{% unless current_tags %} is-active{% endunless %}"
+                title="{{ 'blogs.blog.accessibility.view_all' }}"
+              >
+                {{- 'blogs.blog.all_posts' | t -}}
+              </a>
+            </li>
+            {% for tag in filter_tags %}
+              <li>
+                <a
+                  href="{{ blog.url }}/tagged/{{ tag | handleize }}"
+                  class="navigation{% if current_tags contains tag %} is-active{% endif %}"
+                  title="{{ 'blogs.blog.accessibility.tag_link' | t: tag: tag }}"
+                >
+                  {{ tag }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- assign featured_article = articles[section.settings.featured_article] -%}
+    {%- if featured_article and current_tags == blank and paginate.current_page == 1 -%}
+      <div class="main-blog__featured-article">
+        <a
+          class="main-blog__featured-article-image aspect-ratio aspect-ratio--landscape"
+          href="{{ featured_article.url }}"
+        >
+          {%- if featured_article.image -%}
+            {%- render 'component-image',
+              image: featured_article.image,
+              max_width: 1600,
+              sizes: '(min-width: 61.875rem) calc(100vw - 30.625rem), 100vw'
+            -%}
+          {%- endif -%}
+        </a>
+
+        <div>
+          <div class="main-blog__featured-article-content">
+            {% liquid
+              assign url = section.settings.featured_article_cta | default: featured_article.url
+              assign title = section.settings.featured_article_title | default: featured_article.title
+              assign excerpt_or_content = section.settings.featured_article_content_exerpt | default: featured_article.excerpt_or_content
+            %}
+            {%- if section.settings.featured_article_category != blank -%}
+              <a href="{{ url }}" class="h6">
+                {{ section.settings.featured_article_category }}
+              </a>
+            {%- elsif featured_article.metafields.custom.category -%}
+              <a href="{{ blog.url }}/tagged/{{ featured_article.metafields.custom.category | handleize }}" class="h6">
+                {{ featured_article.metafields.custom.category }}
+              </a>
+            {%- endif -%}
+
+            <h2 class="h3">
+              <a href="{{ url }}">{{ title }}</a>
+            </h2>
+
+            {%- if excerpt_or_content != blank -%}
+              <div class="rte hide--max-lg">
+                {{ excerpt_or_content | truncatewords: 60 }}
+              </div>
+            {%- endif -%}
+
+            {%- if url != blank -%}
+              <div class="read-more hide--max-lg">
+                <a href="{{ url }}" class="btn btn--text btn--link">Read More</a>
+              </div>
+            {%- endif -%}
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if category_view -%}
+      {%- liquid
+        # theme-check-disable NestedSnippet
+        render 'main-blog-categories'
+        # theme-check-enable NestedSnippet
+      -%}
+    {%- else -%}
+      <div class="pagination__container">
+        {%- if section.settings.pagination_type != 'standard' and paginate.previous -%}
+          <div class="container">
+            {%- render 'pagination', paginate: paginate, type: section.settings.pagination_type, position: 'top' -%}
+          </div>
+        {%- endif -%}
+        <ul class="main-blog__grid list-none" data-grid>
+          {% for article in blog.articles %}
+            <li data-grid-item>
+              {% render 'article-card', article: article %}
+            </li>
+          {% endfor %}
+        </ul>
+
+        <div class="container">
+          {% render 'pagination', paginate: paginate, type: section.settings.pagination_type, position: 'bottom' %}
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+{%- endpaginate -%}
+
+{% render 'vite-tag' with '@/scripts/sections/main-blog.js' %}
+
+{% schema %}
+  {
+    "name": "Main Blog",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Blog Settings"
+      },
+      {
+        "type": "range",
+        "id": "blog_paginate",
+        "label": "Articles per page",
+        "default": 12,
+        "min": 3,
+        "max": 48,
+        "step": 3
+      },
+      {
+        "type": "select",
+        "id": "pagination_type",
+        "label": "Pagination type",
+        "default": "standard",
+        "options": [
+          {
+            "value": "standard",
+            "label": "Standard"
+          },
+          {
+            "value": "load-more",
+            "label": "Load more"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Header Settings"
+      },
+      {
+        "type": "textarea",
+        "id": "filter_tags",
+        "label": "Filter Tags",
+        "info": "A comma separated list of tags to filter by.",
+        "placeholder": "Travel, Editorial, Lifestyle",
+        "default": "Behind the Brand, Travel, Editorial, Interviews"
+      },
+      {
+        "type": "header",
+        "content": "Featured Article"
+      },
+      {
+        "type": "article",
+        "id": "featured_article",
+        "label": "Featured Article",
+        "info": "Select an article to feature at the top of the blog landing view."
+      },
+      {
+        "type": "inline_richtext",
+        "id": "featured_article_category",
+        "label": "Featured Article Subtitle",
+        "info": "Uses this instead of the article's custom category metafield as the subtitle"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "featured_article_title",
+        "label": "Featured Article Title",
+        "info": "Uses this instead of the article's title as the title"
+      },
+      {
+        "type": "richtext",
+        "id": "featured_article_content_exerpt",
+        "label": "Featured Article Content",
+        "info": "Uses this instead of the article's content/exerpt as the content"
+      },
+      {
+        "type": "url",
+        "id": "featured_article_cta",
+        "label": "Featured Article CTA",
+        "info": "Uses this instead of the article's link as the url"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "category",
+        "name": "Category",
+        "limit": 4,
+        "settings": [
+          {
+            "type": "header",
+            "content": "Category Settings"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Category Title",
+            "default": "Articles"
+          },
+          {
+            "type": "text",
+            "id": "tag",
+            "label": "Category Tag",
+            "info": "Posts will be filtered by this tag.",
+            "default": "Editorial"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Main Blog"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["blog"]
+    }
+  }
+{% endschema %}

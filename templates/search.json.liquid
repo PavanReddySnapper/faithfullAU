@@ -1,0 +1,23 @@
+{%- layout none -%}
+{%- liquid
+  paginate search.results by 12
+    capture products
+      render 'product-json', products: search.results, limit: 12
+    endcapture
+  endpaginate
+
+  capture suggestions
+    if search.terms
+      echo '[]'
+    else
+      render 'product-json', products: collections[settings.search_suggestions_collection].products, limit: 6
+    endif
+  endcapture
+-%}
+
+<script type="application/json" data-results>
+  {
+    "products": {{ products }},
+    "suggestions": {{ suggestions }}
+  }
+</script>

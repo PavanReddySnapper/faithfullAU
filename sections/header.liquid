@@ -1,0 +1,236 @@
+{%- liquid
+  assign shop_name = 'accessibility_labels.header_logo_home_label' | t: title: shop.name
+
+  # TRANSPARENT HEADER
+  assign transparent_templates = section.settings.transparent_header_templates | remove: ' ' | split: ','
+  assign transparent_header = false
+
+  if transparent_templates contains template
+    assign transparent_header = true
+  endif
+-%}
+
+{%- capture logo_markup -%}
+<a href="{{ routes.root_url }}" class="logo-image">
+  {% render 'logo', title: shop_name %}<span class="visually-hidden">{{ shop_name }}</span>
+</a>
+{%- endcapture -%}
+
+<header
+  class="header{% if transparent_header %} header--is-transparent{% endif %}{% if section.settings.header_is_sticky %} header--is-sticky{% endif %}"
+  data-section-id="{{ section.id }}"
+  data-section-type="header"
+>
+  <div class="fader fader--nav" data-toggle-nav data-nav-overlay></div>
+  <div class="header__wrapper">
+    <div class="container container--fluid">
+      <div class="header__grid">
+        <div>
+          <button class="nav__toggle btn-none hide--min-lg" aria-label="Toggle menu" type="button" data-nav-toggle>
+            {% render 'icon-menu' %}
+          </button>
+
+          <nav class="drawer drawer--left drawer--nav">
+            <div class="drawer__header hide--min-lg">
+              <button
+                type="button"
+                class="btn-none nav__close"
+                aria-label="{{ 'general.navigation.close_navigation' | t }}"
+                data-nav-close
+              >
+                {% render 'icon-cross' %}
+              </button>
+
+              {{ logo_markup }}
+            </div>
+            {% render 'header-section-main-navigation' %}
+          </nav>
+        </div>
+
+        <div class="header__grid-logo">
+          {% if request.page_type == 'index' %}
+            <h1>{{ logo_markup }}</h1>
+          {% else %}
+            <div class="h1">{{ logo_markup }}</div>
+          {% endif %}
+        </div>
+
+        <div>
+          {%- render 'header-section-secondary-nav' -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+{%- if section.settings.header_is_sticky -%}
+  <style>
+    .header-section {
+      position: sticky;
+      top: calc(var(--announcement-height, 0) - 1px);
+    }
+  </style>
+{%- endif -%}
+
+{% render 'vite-tag' with '@/scripts/sections/header.js' %}
+
+{% schema %}
+  {
+    "name": "Header",
+    "class": "header-section",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Menu Settings"
+      },
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu",
+        "default": "main-menu"
+      },
+      {
+        "type": "header",
+        "content": "Display Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "header_is_sticky",
+        "label": "Header is sticky",
+        "default": true
+      },
+      {
+        "type": "textarea",
+        "id": "transparent_header_templates",
+        "label": "Transparent Header Templates",
+        "info": "Enter a comma separated list of templates where the header will be transparent. eg. index, collection, search. The header will remain transparent until the user scrolls down.",
+        "placeholder": "index, collection, search etc."
+      },
+      {
+        "type": "header",
+        "content": "Mobile Image Settings",
+        "info": "Image will be displayed on mobile devices before the secondary links."
+      },
+      {
+        "type": "image_picker",
+        "id": "mobile_image",
+        "label": "Mobile Image",
+        "info": "Recommended size: 680x455px (3:2 aspect ratio)"
+      },
+      {
+        "type": "text",
+        "id": "mobile_image_title",
+        "label": "Mobile Image Title"
+      },
+      {
+        "type": "url",
+        "id": "mobile_image_url",
+        "label": "Mobile Image URL",
+        "info": "Link will be applied to the image and text."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "submenu_images",
+        "name": "Submenu Images",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Submenu Images"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Link Title",
+            "placeholder": "Shop",
+            "info": "The parent link title for the submenu. Case sensitive."
+          },
+          {
+            "type": "header",
+            "content": "Image 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1",
+            "info": "Recommended size: 680x455px (3:2 aspect ratio)"
+          },
+          {
+            "type": "text",
+            "id": "image_title_1",
+            "label": "Image 1 Title"
+          },
+          {
+            "type": "url",
+            "id": "image_url_1",
+            "label": "Image 1 URL",
+            "info": "Link will be applied to the image and text."
+          },
+          {
+            "type": "header",
+            "content": "Image 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2",
+            "info": "Recommended size: 680x455px (3:2 aspect ratio)"
+          },
+          {
+            "type": "text",
+            "id": "image_title_2",
+            "label": "Image 2 Title"
+          },
+          {
+            "type": "url",
+            "id": "image_url_2",
+            "label": "Image 2 URL",
+            "info": "Link will be applied to the image and text."
+          },
+          {
+            "type": "header",
+            "content": "Image 3"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_3",
+            "label": "Image 3",
+            "info": "Recommended size: 680x455px (3:2 aspect ratio)"
+          },
+          {
+            "type": "text",
+            "id": "image_title_3",
+            "label": "Image 3 Title"
+          },
+          {
+            "type": "url",
+            "id": "image_url_3",
+            "label": "Image 3 URL",
+            "info": "Link will be applied to the image and text."
+          },
+          {
+            "type": "header",
+            "content": "Image 4"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_4",
+            "label": "Image 4",
+            "info": "Recommended size: 680x455px (3:2 aspect ratio)"
+          },
+          {
+            "type": "text",
+            "id": "image_title_4",
+            "label": "Image 4 Title"
+          },
+          {
+            "type": "url",
+            "id": "image_url_4",
+            "label": "Image 4 URL",
+            "info": "Link will be applied to the image and text."
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

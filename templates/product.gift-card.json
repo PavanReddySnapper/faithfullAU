@@ -1,0 +1,82 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product-gift-card",
+      "blocks": {
+        "image_option_yG7rGz": {
+          "type": "image_option",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/1_1f164273-3ca2-458a-afe3-c73f136d6978.webp"
+          }
+        },
+        "image_option_DPQEAG": {
+          "type": "image_option",
+          "settings": {
+            "title": "",
+            "image": "shopify://shop_images/3_34af0089-c490-4a06-bcb4-5847e71aad4f.webp"
+          }
+        },
+        "image_option_T3gkJF": {
+          "type": "image_option",
+          "settings": {
+            "title": "Green Waves",
+            "image": "shopify://shop_images/4_5912ca82-c66f-44e2-b148-13bbb36e874d.webp"
+          }
+        },
+        "image_option_yUwRFU": {
+          "type": "image_option",
+          "settings": {
+            "title": "Pink Ditzy",
+            "image": "shopify://shop_images/2_39d68917-3aed-4bae-ac25-99f337dd154b.webp"
+          }
+        },
+        "accordion_item_dyr3xp": {
+          "type": "accordion_item",
+          "disabled": true,
+          "settings": {
+            "title": "Shipping & Returns",
+            "content_type": "text",
+            "content_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+            "content_page": ""
+          }
+        },
+        "accordion_item_RjyDaP": {
+          "type": "accordion_item",
+          "disabled": true,
+          "settings": {
+            "title": "Contact Us",
+            "content_type": "text",
+            "content_text": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in.</p>",
+            "content_page": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_option_yG7rGz",
+        "image_option_DPQEAG",
+        "image_option_T3gkJF",
+        "image_option_yUwRFU",
+        "accordion_item_dyr3xp",
+        "accordion_item_RjyDaP"
+      ],
+      "settings": {
+        "gift_card_recipient_message_max_characters": 256,
+        "enable_recipient_email": false,
+        "enable_send_on": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

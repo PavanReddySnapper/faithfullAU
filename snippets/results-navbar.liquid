@@ -1,0 +1,189 @@
+<form class="results-navbar" data-results-navbar>
+  {%- if request.page_type == 'collection' -%}
+    <input type="hidden" name="q" value="{{ results.current_vendor | escape }}">
+  {%- elsif request.page_type == 'search' and results.performed %}
+    <input type="hidden" name="q" value="{{ results.terms | escape }}">
+    <input type="hidden" name="type" value="product">
+  {%- endif -%}
+
+  <div class="results-navbar__container {{ section_settings.navbar_container_width }}">
+    {% if request.page_type == 'collection' %}
+      <h1 class="h6{% unless section_settings.include_collection_title %} hidden{% endunless %}">
+        {{ results.title }}
+      </h1>
+    {% elsif request.page_type == 'search' and results.performed %}
+      <p class="h6 hide--max-lg">
+        {{ 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count }}
+      </p>
+    {% endif %}
+
+    <div class="results-navbar__row">
+      {%- if section_settings.include_layout_switcher -%}
+        <div class="layout-switch__button-group layout-switcher hide--max-lg">
+          <button
+            type="button"
+            class="btn btn--icon layout-switch layout-switch--default is-selected"
+            disabled="disabled"
+            aria-label="{{ 'accessibility_labels.display_two_products_per_grid_row' | t }}"
+            aria-pressed="true"
+            data-results-layout-switch="default"
+          >
+            {% render 'icon-toggle-3' %}
+          </button>
+          <button
+            type="button"
+            class="btn btn--icon layout-switch layout-switch--alt"
+            aria-label="{{ 'accessibility_labels.display_one_product_per_grid_row' | t }}"
+            aria-pressed="false"
+            data-results-layout-switch="alt"
+          >
+            {% render 'icon-toggle-4' %}
+          </button>
+        </div>
+      {%- endif -%}
+
+      {% if section_settings.include_product_view_switcher %}
+        <div class="layout-switch__button-group">
+          <button
+            type="button"
+            class="btn btn--icon product-view-switch product-view-switch--default is-selected"
+            aria-label="{{ 'accessibility_labels.display_two_products_per_grid_row' | t }}"
+            aria-pressed="true"
+            data-results-product-view-switch="model"
+          >
+            <span>{{ 'collections.layout.alternate_view' | t }}</span>
+            {% render 'icon-arrow-sort' %}
+          </button>
+          <button
+            type="button"
+            class="btn btn--icon product-view-switch product-view-switch--model"
+            disabled="disabled"
+            aria-label="{{ 'accessibility_labels.display_two_products_per_grid_row' | t }}"
+            aria-pressed="false"
+            data-results-product-view-switch="default"
+          >
+            <span>{{ 'collections.layout.default_view' | t }}</span>
+            {% render 'icon-arrow-sort' %}
+          </button>
+        </div>
+      {% endif %}
+
+      {%- if section_settings.include_filters -%}
+        <button type="button" class="btn btn--icon" data-results-filter-toggle>
+          <span>{{ 'collections.filtering.title' | t }}</span>
+          {% render 'icon-chevron-down' %}
+        </button>
+      {%- endif -%}
+
+      {%- if section_settings.include_sort -%}
+        {%- render 'results-sort', results: results -%}
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if section_settings.include_filters -%}
+    {% render 'results-filters', results: results %}
+  {%- endif -%}
+
+  {%- if section_settings.include_sort -%}
+    {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
+    <ul
+      class="results-filter__filter-list results-filter__sort-by text-right is-hidden"
+      aria-label="{{ 'accessibility_labels.sort_product_collection_list' | t }}"
+      data-results-sort-list
+    >
+      <li class="results-filter__filter-value">
+        <input
+          type="radio"
+          name="sort_by"
+          value="created-descending"
+          class="results-filter__sort-input hide"
+          id="SortByDateDescending"
+          {% if sort_by == 'created-descending' %}
+            checked
+          {% endif %}
+        >
+        <label for="SortByDateDescending">
+          {{ 'collections.sorting.date_descending' | t }}
+        </label>
+      </li>
+      <li class="results-filter__filter-value">
+        <input
+          type="radio"
+          name="sort_by"
+          value="best-selling"
+          class="results-filter__sort-input hide"
+          id="SortByBestSelling"
+          {% if sort_by == 'best-selling' %}
+            checked
+          {% endif %}
+        >
+        <label for="SortByBestSelling">
+          {{ 'collections.sorting.best_selling' | t }}
+        </label>
+      </li>
+      <li class="results-filter__filter-value">
+        <input
+          type="radio"
+          name="sort_by"
+          value="price-descending"
+          class="results-filter__sort-input hide"
+          id="SortByPriceDescending"
+          {% if sort_by == 'price-descending' %}
+            checked
+          {% endif %}
+        >
+        <label for="SortByPriceDescending">
+          {{ 'collections.sorting.price_descending' | t }}
+        </label>
+      </li>
+      <li class="results-filter__filter-value">
+        <input
+          type="radio"
+          name="sort_by"
+          value="price-ascending"
+          class="results-filter__sort-input hide"
+          id="SortByPriceAscending"
+          {% if sort_by == 'price-ascending' %}
+            checked
+          {% endif %}
+        >
+        <label for="SortByPriceAscending">
+          {{ 'collections.sorting.price_ascending' | t }}
+        </label>
+      </li>
+      {%- if request.page_type == 'collection' -%}
+        <li class="results-filter__filter-value">
+          <input
+            type="radio"
+            name="sort_by"
+            value="title-ascending"
+            class="results-filter__sort-input hide"
+            id="SortByTitleAscending"
+            {% if sort_by == 'title-ascending' %}
+              checked
+            {% endif %}
+          >
+          <label for="SortByTitleAscending">
+            {{ 'collections.sorting.az' | t }}
+          </label>
+        </li>
+        <li class="results-filter__filter-value">
+          <input
+            type="radio"
+            name="sort_by"
+            value="title-descending"
+            class="results-filter__sort-input hide"
+            id="SortByTitleDescending"
+            {% if sort_by == 'title-descending' %}
+              checked
+            {% endif %}
+          >
+          <label for="SortByTitleDescending">
+            {{ 'collections.sorting.za' | t }}
+          </label>
+        </li>
+      {%- endif -%}
+    </ul>
+  {%- endif -%}
+</form>

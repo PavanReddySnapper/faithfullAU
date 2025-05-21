@@ -1,0 +1,11 @@
+{% if shop.enabled_currencies.size > 1 %}
+  <button
+    class="header__btn header__btn--currency btn--text-icon btn-none {% if type == 'desktop' %}hide--max-xl{% elsif type == 'mobile' %}hide--min-xl{% endif %}"
+    type="button"
+    data-modal-currency-trigger
+  >
+    {{ cart.currency.name }} / {{ cart.currency.symbol -}}
+    {{- cart.currency.iso_code }}
+    {% render 'icon-chevron-down' %}
+  </button>
+{% endif %}

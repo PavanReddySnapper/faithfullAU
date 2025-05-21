@@ -1,0 +1,894 @@
+{% # theme-check-disable TemplateLength %}
+<div class="container">
+  <div class="page-header">
+    <h1 class="h2">{{ page.title }}</h1>
+  </div>
+
+  <div class="page-content">
+    <style>
+      section {
+        margin-bottom: 32px;
+      }
+
+      section code {
+        display: block;
+        margin: 16px 0;
+      }
+
+      .section-title {
+        margin-bottom: 16px;
+      }
+
+      .buttons-container {
+        margin: 16px 0;
+      }
+
+      .buttons-container button {
+        margin: 0 24px 16px 0;
+      }
+
+      .buttons-container .btn--block {
+        margin-right: 0;
+      }
+
+      section .form__group input:not([type='checkbox']):not([type='radio']),
+      section .form__group textarea {
+        width: 100%;
+      }
+
+      .form__group--flex {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+
+      .form__group--flex input {
+        margin-right: 10px;
+      }
+
+      .icons-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        grid-auto-rows: 60px;
+        margin: 50px 0 100px;
+      }
+
+      .controls-demo {
+        position: relative;
+        height: 200px;
+        margin-bottom: 16px;
+        border: 1px solid var(--color-black);
+      }
+    </style>
+
+    <section>
+      <h2 class="section-title h3">Hero</h2>
+      <h1 class="hero1">Hero One</h1>
+      <h1 class="hero2">Hero Two</h1>
+      <h1 class="hero3">Hero Three</h1>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Headings</h2>
+      <h1>Heading one</h1>
+      <h2>Heading two</h2>
+      <h3>Heading three</h3>
+      <h4>Heading four</h4>
+      <h5>Heading five</h5>
+      <h6>Heading six</h6>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Body text</h2>
+      <code>default</code>
+      <p>
+        Suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat.
+      </p>
+      <code>.body-small</code>
+      <p class="body-small">
+        Suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat.
+      </p>
+      <code>.body-medium</code>
+      <p class="body-medium">
+        Suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat.
+      </p>
+      <code>.body-large</code>
+      <p class="body-large">
+        Suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Other text</h2>
+      <code>.caption</code>
+      <p class="caption">
+        Suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat.
+      </p>
+      <code>.helper</code>
+      <p class="helper">
+        Suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+        vulputate velit esse molestie consequat.
+      </p>
+      <code>.label</code>
+      <p class="label">Label</p>
+      <code>.navigation</code>
+      <ul class="navigation list-none" style="display: flex; gap: 32px; margin-bottom: 32px;">
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li><a href="#">Nav 3</a></li>
+        <li><a href="#">Nav 4</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h4 class="docs-title">Blockquote</h4>
+
+      <blockquote>
+        <p>
+          Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim
+          pellentesque felis.
+        </p>
+        <cite>The author of the quote</cite>
+      </blockquote>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">RTE</h2>
+      <div class="rte">
+        <h1>Heading One</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in.
+        </p>
+        <h2>Heading Two</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in.
+        </p>
+        <h3>Heading Three</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in.
+        </p>
+        <h4>Heading Four</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in.
+        </p>
+        <h5>Heading Five</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in.
+        </p>
+        <h6>Heading Six</h6>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in.
+        </p>
+        <p>
+          Lorem <strong>ipsum dolor sit</strong> amet, consectetuer <em>adipiscing elit</em>, sed diam nonummy nibh
+          euismod tincidunt ut laoreet dolore magna <a href="#">liquam erat volutpat</a>. Ut wisi enim ad minim veniam,
+          quis nostrud exerci tation ullamcorper.
+        </p>
+
+        <ul>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+        </ul>
+
+        <ol>
+          <li>One</li>
+          <li>Two</li>
+          <li>Three</li>
+          <li>Four</li>
+        </ol>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Icons</h2>
+
+      <div class="icons-grid">
+        {%- liquid
+          render 'icon-chevron-left'
+          render 'icon-chevron-up'
+          render 'icon-chevron-down'
+          render 'icon-chevron-right'
+          render 'icon-cross'
+          render 'icon-plus'
+          render 'icon-minus'
+          render 'icon-menu'
+          render 'icon-arrow-left'
+          render 'icon-arrow-up'
+          render 'icon-arrow-down'
+          render 'icon-arrow-right'
+          render 'icon-arrow-north-east'
+          render 'icon-arrow-corner-right'
+          render 'icon-arrow-return'
+          render 'icon-arrow-undo'
+          render 'icon-arrow-sort'
+          render 'icon-chat'
+          render 'icon-search'
+          render 'icon-account'
+          render 'icon-bag-empty'
+          render 'icon-bag'
+          render 'icon-email'
+          render 'icon-region'
+          render 'icon-location'
+          render 'icon-direction'
+          render 'icon-bookmark'
+          render 'icon-lock'
+          render 'icon-likes'
+          render 'icon-volume-on'
+          render 'icon-volume-off'
+          render 'icon-discount'
+          render 'icon-gift'
+          render 'icon-size'
+          render 'icon-share'
+          render 'icon-play'
+          render 'icon-pause'
+          render 'icon-calendar'
+          render 'icon-pin-location'
+          render 'icon-get-location'
+          render 'icon-tick'
+          render 'icon-info'
+
+          render 'icon-filter'
+          render 'icon-heart'
+          render 'icon-model-xr'
+          render 'icon-rss'
+        -%}
+      </div>
+
+      <div class="icons-grid">
+        {%- liquid
+          render 'icon-official'
+          render 'icon-free-shipping'
+          render 'icon-returns'
+          render 'icon-payments'
+        -%}
+      </div>
+
+      <div class="icons-grid">
+        {%- liquid
+          render 'icon-amex'
+          render 'icon-apple-pay'
+          render 'icon-google-pay'
+          render 'icon-mastercard'
+          render 'icon-paypal'
+          render 'icon-shopify-pay'
+          render 'icon-jcb'
+          render 'icon-discover'
+          render 'icon-visa'
+          render 'icon-afterpay'
+          render 'icon-zip'
+          render 'icon-klarna'
+          render 'icon-humm'
+          render 'icon-openpay'
+        -%}
+      </div>
+
+      <div class="icons-grid">
+        {%- liquid
+          render 'icon-facebook'
+          render 'icon-instagram'
+          render 'icon-pinterest'
+          render 'icon-snapchat'
+          render 'icon-tiktok'
+          render 'icon-tumblr'
+          render 'icon-twitter'
+          render 'icon-vimeo'
+          render 'icon-youtube'
+        -%}
+      </div>
+
+      {% render 'icon-shopify-logo' %}
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Buttons</h2>
+
+      <h4>Default Button</h4>
+      <code>.btn</code>
+      <div class="buttons-container">
+        <button class="btn">Default Button</button>
+        <button class="btn" disabled>Button Disabled</button>
+      </div>
+
+      <h4>Default Dark Button</h4>
+      <code>.btn .btn--dark</code>
+      <div class="buttons-container">
+        <button class="btn btn--dark">Default Dark Button</button>
+        <button class="btn btn--dark" disabled>Default Dark Button Disabled</button>
+      </div>
+
+      <h4>Default Button with icon</h4>
+      <code>.btn .btn--icon-left, .btn .btn--icon-right</code>
+      <div class="buttons-container">
+        <button class="btn btn--icon-left">{% render 'icon-chevron-left' %}Default Button with left icon</button>
+        <button class="btn btn--icon-right">Default Button with icon right{% render 'icon-chevron-left' %}</button>
+      </div>
+
+      <h4>Secondary Button</h4>
+      <code>.btn .btn--secondary</code>
+      <div class="buttons-container">
+        <button class="btn btn--secondary">Secondary Button</button>
+        <button class="btn btn--secondary" disabled>Secondary Button Disabled</button>
+      </div>
+
+      <h4>Secondary Dark Button</h4>
+      <code>.btn .btn--secondary-dark</code>
+      <div class="buttons-container">
+        <button class="btn btn--secondary-dark">Secondary Dark Button</button>
+        <button class="btn btn--secondary-dark" disabled>Secondary Dark Button Disabled</button>
+      </div>
+
+      <h4>Secondary Button with icon</h4>
+      <code>.btn .btn--secondary .btn--icon-left, .btn .btn--secondary .btn--icon-right</code>
+      <div class="buttons-container">
+        <button class="btn btn--secondary btn--icon-left">
+          {% render 'icon-chevron-left' %}Secondary Button with left icon
+        </button>
+        <button class="btn btn--secondary btn--icon-right">
+          Secondary Button with icon right{% render 'icon-chevron-left' %}
+        </button>
+      </div>
+
+      <h4>Small Button</h4>
+      <code>.btn .btn--small</code>
+      <div class="buttons-container">
+        <button class="btn btn--small">Small Button</button>
+        <button class="btn btn--small" disabled>Small Disabled</button>
+      </div>
+
+      <h4>Block Button</h4>
+      <code>.btn .btn--block</code>
+      <div class="buttons-container">
+        <button class="btn btn--block">Block Button</button>
+        <button class="btn btn--block" disabled>Button Disabled</button>
+      </div>
+
+      <h4>Text Button</h4>
+      <code>.btn .btn--text</code>
+      <div class="buttons-container">
+        <button class="btn btn--text">Text Button</button>
+      </div>
+
+      <h4>Text Button with icon</h4>
+      <code>.btn .btn--text .btn--icon-left, .btn .btn--text .btn--icon-right</code>
+      <div class="buttons-container">
+        <button class="btn btn--text btn--icon-left">{% render 'icon-chevron-left' %}Text Button with left icon</button>
+        <button class="btn btn--text btn--icon-right">
+          Text Button with icon right{% render 'icon-chevron-left' %}
+        </button>
+      </div>
+
+      <h4>Link Button</h4>
+      <code>.btn .btn--link</code>
+      <div class="buttons-container">
+        <button class="btn btn--link"><a>Link Button</a></button>
+      </div>
+
+      <h4>Icon Button</h4>
+      <code>.btn .btn--icon</code>
+      <div class="buttons-container">
+        <button class="btn btn--icon">{% render 'icon-cross' %}</button>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Forms</h2>
+      <form>
+        <div class="form__group">
+          <label for="ContactFormName">{{ 'contact.form.name' | t }}</label>
+          <input
+            type="text"
+            name="contact[name]"
+            id="ContactFormName"
+            placeholder="{{ 'contact.form.name' | t }}"
+            value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="ContactFormName">Disabled</label>
+          <input
+            disabled
+            type="text"
+            name="contact[name]"
+            id="ContactFormName"
+            placeholder="{{ 'contact.form.name' | t }}"
+            value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="ContactFormName">Error</label>
+          <input
+            class="input-error"
+            type="text"
+            name="contact[name]"
+            id="ContactFormName"
+            placeholder="{{ 'contact.form.name' | t }}"
+            value="Error"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="ContactFormName">Input Box</label>
+          <input
+            class="input--box"
+            type="text"
+            name="contact[name]"
+            id="ContactFormName"
+            placeholder="Input Box"
+            value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="ContactFormName">Disabled Input Box</label>
+          <input
+            class="input--box"
+            type="text"
+            name="contact[name]"
+            id="ContactFormName"
+            placeholder="Input Box"
+            disabled
+            value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          >
+        </div>
+
+        <div class="form__group">
+          <label for="ContactFormName">Error Input Box</label>
+          <input
+            class="input--box input-error"
+            type="text"
+            name="contact[name]"
+            id="ContactFormName"
+            placeholder="Input Box"
+            value="Error"
+            style="margin-bottom: 4px;"
+          >
+          <span class="helper">Helper Error Text</span>
+        </div>
+
+        <div class="form__group">
+          <select id="selectHorizontal1">
+            <option value="0">Choose option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <div class="form__inline-input">
+            <input type="checkbox" id="checkInline">
+            <label for="checkInline">Checkbox Label</label>
+          </div>
+          <div class="form__inline-input">
+            <input type="checkbox" id="checkInline2" disabled>
+            <label for="checkInline2">Checkbox Label disabled</label>
+          </div>
+          <div class="form__inline-input">
+            <input type="checkbox" id="checkInline3" checked disabled>
+            <label for="checkInline3">Checkbox Label checked disabled</label>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <div class="form__inline-input">
+            <input type="radio" id="radio-option-1" name="radio-option">
+            <label for="radio-option-1">Radio Button 1</label>
+          </div>
+          <div class="form__inline-input">
+            <input type="radio" id="radio-option-2" name="radio-option">
+            <label for="radio-option-2">Radio Button 2</label>
+          </div>
+          <div class="form__inline-input">
+            <input type="radio" id="radio-option-3" name="radio-option">
+            <label for="radio-option-3">Radio Button 3</label>
+          </div>
+          <div class="form__inline-input">
+            <input type="radio" id="radio-option-4" name="radio-option" disabled>
+            <label for="radio-option-4">Radio Button 4 disabled</label>
+          </div>
+        </div>
+
+        <div class="form__group">
+          <label for="ContactFormMessage">{{ 'contact.form.message' | t }}</label>
+          <textarea
+            rows="10"
+            name="contact[body]"
+            id="ContactFormMessage"
+            placeholder="{{ 'contact.form.message' | t }}"
+          >
+          {%- if form.body -%}
+          {{- form.body -}}
+          {%- endif -%}
+          </textarea>
+        </div>
+
+        <input type="submit" class="btn" value="{{ 'contact.form.send' | t }}">
+      </form>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Form validation</h2>
+
+      <form>
+        <p class="form__info-message">Info message</p>
+
+        <p class="form__success-message">Success message</p>
+
+        <p class="form__warning-message">Warning message</p>
+
+        <div class="form__error-message">Error message</div>
+
+        <div class="form__group">
+          <label for="ContactFormName">{{ 'contact.form.name' | t }} (error)</label>
+          <input
+            type="text"
+            name="contact[name]"
+            id="ContactFormName"
+            class="input-error"
+            placeholder="{{ 'contact.form.name' | t }}"
+            value="{% if form[name] %}{{ form[name] }}{% elsif customer %}{{ customer.name }}{% endif %}"
+          >
+
+          <div class="input__error-message">Form input error message</div>
+        </div>
+      </form>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Breadcrumbs</h2>
+
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/"><span>Home</span></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#"><span>Gold</span></a>
+          </li>
+          <li class="breadcrumbs__item"><span>Choker with Gold Pendant</span></li>
+        </ol>
+      </nav>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Accordions</h2>
+      {%- liquid
+        assign accordion_labels = 'Accordion label 1|Accordion label 2|Accordion label 3|Accordion label 4'
+        assign accordion_content = 'Accordion content lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.|Accordion content lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.|Accordion content lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.|Accordion content lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.'
+
+        assign label_array = accordion_labels | split: '|'
+        assign content_array = accordion_content | split: '|'
+
+        render 'component-accordion-item', labels: label_array, contents: content_array, multi: false, open_first: true
+      -%}
+
+      <h3>Same accordion with multi open but closed first item</h3>
+      {% render 'component-accordion-item',
+        labels: label_array,
+        contents: content_array,
+        multi: true,
+        open_first: false
+      %}
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Pagination</h2>
+
+      <nav class="pagination-nav" aria-label="{{ 'accessibility_labels.pagination_label' | t }}">
+        <ol class="pagination">
+          <li class="disabled" aria-label="{{ 'accessibility_labels.previous_page_disabled' | t }}">
+            <span class="pagination__arrow" aria-hidden="true">{% render 'icon-chevron-left' %}</span>
+          </li>
+          <li class="active" aria-current="page" aria-label="{{ 'accessibility_labels.current_page' | t }} 1">
+            <span class="pagination__page">1</span>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="pagination__page pagination__page-link"
+              aria-label="{{ 'accessibility_labels.page' | t }} 2"
+            >
+              <span class="visually-hidden">{{ 'accessibility_labels.page' | t }}</span> 2
+            </a>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="pagination__page pagination__page-link"
+              aria-label="{{ 'accessibility_labels.page' | t }} 3"
+            >
+              <span class="visually-hidden">{{ 'accessibility_labels.page' | t }}</span> 3
+            </a>
+          </li>
+          <li aria-label="&hellip;">
+            <span class="pagination__page">&hellip;</span>
+          </li>
+          <li>
+            <a
+              href="#"
+              class="pagination__page pagination__page-link"
+              aria-label="{{ 'accessibility_labels.page' | t }} 6"
+            >
+              <span class="visually-hidden">{{ 'accessibility_labels.page' | t }}</span> 6
+            </a>
+          </li>
+          <li>
+            <a class="pagination__arrow" href="#" aria-label="{{ 'accessibility_labels.next_page' | t }}">
+              <span aria-hidden="true">{% render 'icon-chevron-right' %}</span>
+            </a>
+          </li>
+        </ol>
+      </nav>
+
+      <nav class="pagination-nav pagination-nav--bottom" aria-label="{{ 'accessibility_labels.pagination_label' | t }}">
+        <div class="pagination__load-more" data-pagination>
+          <p class="pagination__header">
+            {%- liquid
+              assign viewed_html = '<span data-pagination-viewed>' | append: 48 | append: '</span>'
+              assign results_type = 'general.pagination.products' | t
+
+              echo 'general.pagination.progress_text_html' | t: count: viewed_html, total: 96, results: results_type
+            -%}
+          </p>
+
+          <div class="pagination__progress">
+            <div class="pagination__progress-bar" style="width: 20%;" data-progress-bar></div>
+          </div>
+
+          <div class="pagination__load-next">
+            <a
+              class="btn"
+              href="#"
+              rel="next"
+              title="{{ 'general.pagination.load_more' | t | capitalize }} {{ results_type }}"
+              data-load-more
+              data-load-next
+            >
+              {{ 'general.pagination.load_more' | t }}
+            </a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Controls</h2>
+
+      <div class="controls-demo">
+        <ol class="flickity-page-dots">
+          <li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li>
+          <li class="dot" aria-label="Page dot 2"></li>
+          <li class="dot" aria-label="Page dot 3"></li>
+        </ol>
+
+        <ol class="flickity-page-dots flickity-page-dots--long" style="bottom: -40px;">
+          <li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li>
+          <li class="dot" aria-label="Page dot 2"></li>
+          <li class="dot" aria-label="Page dot 3"></li>
+        </ol>
+
+        <ol class="flickity-page-dots flickity-page-dots--long flickity-page-dots--scroll" style="bottom: -60px;">
+          <li class="dot is-selected" aria-label="Page dot 1" aria-current="step"></li>
+          <li class="dot" aria-label="Page dot 2"></li>
+          <li class="dot" aria-label="Page dot 3"></li>
+        </ol>
+
+        {% render 'carousel-controls' %}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Navigation</h2>
+
+      <p>Horizontal</p>
+      <ul class="navigation list-none" style="display: flex; flex-direction: column; gap: 4px;">
+        <li><a href="#">Nav 1</a></li>
+        <li><a href="#">Nav 2</a></li>
+        <li><a href="#">Nav 3</a></li>
+        <li>
+          <a href="#">{% render 'icon-chevron-right' %}Nav 4</a>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title">Breadcrumbs</h2>
+
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <ol class="breadcrumbs__list list-none">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="/"><span>Home</span></a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#"><span>Breadcrumb 1</span></a>
+          </li>
+          <li class="breadcrumbs__item"><span>Breadcrumb 2</span></li>
+        </ol>
+      </nav>
+    </section>
+
+    <section>
+      <h2 class="section-title h2">Tabs</h2>
+
+      <div class="js-tabs">
+        <ul class="js-tablist list-none" style="margin-bottom: 8px;">
+          <li class="js-tablist__item">
+            <a class="js-tablist__link navigation" href="#tab-1" data-selected="1">Details</a>
+          </li>
+          <li class="js-tablist__item">
+            <a class="js-tablist__link navigation" href="#tab-2">Shipping & Returns</a>
+          </li>
+          <li class="js-tablist__item">
+            <a class="js-tablist__link navigation" href="#tab-3">Care</a>
+          </li>
+        </ul>
+
+        <div id="tab-1" class="js-tabcontent">
+          <p>Tab 1 content</p>
+        </div>
+        <div id="tab-2" class="js-tabcontent">
+          <p>Tab 2 content</p>
+        </div>
+        <div id="tab-3" class="js-tabcontent">
+          <p>Tab 3 content</p>
+        </div>
+      </div>
+
+      <h2 class="section-title h2">Tabs with divider</h2>
+
+      <div class="js-tabs">
+        <ul class="js-tablist list-none" style="margin-bottom: 8px;">
+          <li class="js-tablist__item">
+            <a class="js-tablist__link navigation" href="#tab-1" data-selected="1">Details</a>
+          </li>
+          <li>{% render 'icon-divider' %}</li>
+          <li class="js-tablist__item">
+            <a class="js-tablist__link navigation" href="#tab-2">Shipping & Returns</a>
+          </li>
+          <li>{% render 'icon-divider' %}</li>
+          <li class="js-tablist__item">
+            <a class="js-tablist__link navigation" href="#tab-3">Care</a>
+          </li>
+        </ul>
+
+        <div id="tab-1" class="js-tabcontent">
+          <p>Tab 1 content</p>
+        </div>
+        <div id="tab-2" class="js-tabcontent">
+          <p>Tab 2 content</p>
+        </div>
+        <div id="tab-3" class="js-tabcontent">
+          <p>Tab 3 content</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Collection Image Tile (for featured collections)</h2>
+
+      {%- for collection in collections limit: 1 -%}
+        {% assign collection = collection %}
+      {%- endfor -%}
+      <div class="collection-list__grid">
+        <div class="collection-list__grid-item">
+          {%- render 'component-collection-image-tile', collection: collection, title: 'Shop sets' -%}
+        </div>
+        <div class="collection-list__grid-item">
+          {%- render 'component-collection-image-tile', collection: collection -%}
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Portrait Collection Card (for collection listing)</h2>
+
+      {%- for collection in collections limit: 1 -%}
+        {% assign collection = collection %}
+      {%- endfor -%}
+      <div class="collection-list__grid">
+        <div class="collection-list__grid-item">
+          {%- render 'component-collection-card', collection: collection -%}
+        </div>
+        <div class="collection-list__grid-item">
+          {%- render 'component-collection-card', collection: collection, image_content_source: 'metafields' -%}
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Landscape Collection Card (for collection listing)</h2>
+
+      {%- for collection in collections limit: 1 -%}
+        {% assign collection = collection %}
+      {%- endfor -%}
+      <div class="collection-list__grid">
+        <div class="collection-list__grid-item">
+          {%- render 'component-collection-card', collection: collection, aspect_ratio: 'landscape' -%}
+        </div>
+        <div class="collection-list__grid-item">
+          {%- render 'component-collection-card',
+            collection: collection,
+            aspect_ratio: 'landscape',
+            image_content_source: 'metafields'
+          -%}
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Product Card</h2>
+
+      <ul
+        class="results-grid results-grid--default list-inline"
+        data-layout-mobile="2"
+        data-layout-mobile-alt="1"
+        data-layout-desktop="4"
+        data-layout-desktop-alt="2"
+      >
+        {%- for product in collection.products limit: 4 -%}
+          <li class="results-grid__tile">
+            {%- render 'product-card', product: product -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title h3">Article Card</h2>
+
+      <div class="featured-blog__grid">
+        {%- for article in blogs.journal.articles limit: 3 -%}
+          {% render 'article-card', article: article, blog: blogs.journal %}
+        {%- endfor -%}
+      </div>
+    </section>
+
+    <section style="margin-top: 120px;">
+      <h2 class="section-title h3">Component Video</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;">
+        {% liquid
+          assign product = all_products['video-test']
+
+          for media in product.media
+            if media.media_type == 'image'
+              continue
+            endif
+
+            render 'component-video', video: media, autoplay: true, poster_width: 800, aspect_ratio: 'natural'
+          endfor
+
+          assign video_url = 'surfer.mp4' | file_url
+          render 'component-video', video: video_url, autoplay: true, controls: true
+
+          render 'component-video', video: video_url, autoplay: true, controls: true, aspect_ratio: 'natural'
+
+          assign video_url = 'Time_Lapse_Video_Of_Clouds.mp4' | file_url
+          assign image = product.media | where: 'media_type', 'image' | first
+          render 'component-video', video: video_url, autoplay: false, poster: image
+        %}
+      </div>
+    </section>
+  </div>
+</div>

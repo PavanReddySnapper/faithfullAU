@@ -1,0 +1,57 @@
+{% comment %}
+  {%- render 'image-with-markers',
+    image: Image object
+    aspect_ratio,
+    max_width: Integer,
+    sizes,
+    product: Product object,
+    product_position_x: Integer,
+    product_position_y: Integer,
+    product_2: Product object,
+    product_2_position_x: Integer,
+    product_2_position_y: Integer,
+  -%}
+{% endcomment %}
+
+<div class="image-with-markers">
+  {%- render 'component-image', image: image, aspect_ratio: aspect_ratio, max_width: max_width, sizes: sizes -%}
+
+  <div class="image-with-markers__container">
+    {%- if product != blank -%}
+      <div class="image-with-markers__wrapper" style="left: {{ product_position_x }}%; top: {{ product_position_y }}%;">
+        <div class="image-with-markers__tooltip{% if product_position_x > 50 %} image-with-markers__tooltip--right{% endif %}">
+          <a class="h6" href="{{ product.url }}">
+            <span class="image-with-markers__tooltip-title">{{ product.title }}</span>
+            <span class="image-with-markers__tooltip-price">
+              {{- product.selected_or_first_available_variant.price | money -}}
+            </span>
+          </a>
+        </div>
+
+        <button class="image-with-markers__trigger btn-none">
+          {% render 'icon-plus' %}
+        </button>
+      </div>
+    {%- endif -%}
+
+    {%- if product_2 != blank -%}
+      <div
+        class="image-with-markers__wrapper"
+        style="left: {{ product_2_position_x }}%; top: {{ product_2_position_y }}%;"
+      >
+        <div class="image-with-markers__tooltip{% if product_2_position_x > 50 %} image-with-markers__tooltip--right{% endif %}">
+          <a class="h6" href="{{ product_2.url }}">
+            <span class="image-with-markers__tooltip-title">{{ product_2.title }}</span>
+            <span class="image-with-markers__tooltip-price">
+              {{- product_2.selected_or_first_available_variant.price | money -}}
+            </span>
+          </a>
+        </div>
+
+        <button class="image-with-markers__trigger btn-none">
+          {% render 'icon-plus' %}
+        </button>
+      </div>
+    {%- endif -%}
+  </div>
+</div>

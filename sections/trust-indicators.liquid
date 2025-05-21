@@ -1,0 +1,94 @@
+{% if section.blocks.size > 0 %}
+  <div data-section-id="{{ section.id }}" data-section-type="trust-indicators">
+    <div class="container container--fluid container--flush trust-indicators__container">
+      {% for block in section.blocks %}
+        {% liquid
+          assign title = block.settings.title
+          assign url = block.settings.url
+
+          if title == blank
+            continue
+          endif
+        %}
+        {% unless forloop.first %}
+          <div class="trust-indicators__item text-center hide--max-lg">|</div>
+        {% endunless %}
+        <div class="trust-indicators__item text-center">
+          {% if url != blank %}<a href="{{ url }}">{% endif %}
+          <span class="trust-indicator__title h6">{{ title }}</span>
+          {% if url != blank %}</a>{% endif %}
+        </div>
+      {% endfor %}
+      <!-- {% content_for 'blocks' %} -->
+    </div>
+  </div>
+{% endif %}
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Trust Indicators",
+  "class": "trust-indicators",
+  "max_blocks": 3,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Spacing"
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_desktop",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "unit": "px",
+      "label": "Bottom Margin - Desktop",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin_mobile",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "unit": "px",
+      "label": "Bottom Margin - Mobile",
+      "default": 0
+    }
+  ],
+  "blocks": [
+    {
+      "type": "trust-indicator",
+      "name": "Trust Indicator",
+      "settings": [
+        {
+          "id": "title",
+          "label": "Title",
+          "type": "inline_richtext"
+        },
+        {
+          "id": "url",
+          "label": "URL",
+          "type": "url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trust Indicators"
+    }
+  ]
+}
+{% endschema %}

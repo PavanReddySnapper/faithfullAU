@@ -1,0 +1,72 @@
+<ul class="header__actions">
+  <li
+    {% if settings.enable_instant_search and request.page_type != 'search' %}
+      data-header-search
+    {% endif %}
+  >
+    <a
+      class="header__btn navigation header__btn--search"
+      href="{{ routes.search_url }}"
+      aria-label="{{ 'header.search.label' | t }}"
+    >
+      {%- render 'icon-search' -%}
+      <span class="header__btn-label">{{ 'header.search.label' | t }}</span>
+    </a>
+  </li>
+
+  {%- if settings.enable_wishlist and settings.wishlist_page_url -%}
+    <li>
+      <a href="{{ settings.wishlist_page_url }}" class="header__btn navigation header__btn--wishlist">
+        {%- render 'icon-wishlist' -%}
+        <span class="header__btn-label">
+          {{ 'header.wishlist.label' | t }}
+        </span>
+      </a>
+    </li>
+  {%- endif -%}
+
+  {%- if shop.customer_accounts_enabled -%}
+    <li class="hide--max-lg">
+      {% if customer %}
+        <a href="{{ routes.account_url }}" class="header__btn navigation">
+          {{ 'header.account.my_account' | t }}
+        </a>
+      {% else %}
+        <a
+          href="{{ routes.account_login_url }}"
+          class="header__btn navigation"
+          data-login-modal-trigger
+          data-show-login-form
+        >
+          {{ 'header.account.login' | t }}
+        </a>
+      {% endif %}
+    </li>
+  {%- endif -%}
+
+  {%- if settings.enable_ecommerce -%}
+    <li>
+      <a
+        href="{{ routes.cart_url }}"
+        class="header__btn navigation header__btn--cart"
+        {% unless request.page_type == 'cart' %}
+          data-toggle-cart
+        {% endunless %}
+      >
+        {%- render 'icon-bag' -%}
+        <span class="header__btn-label">
+          {{ 'header.cart.label' | t }}
+
+          <span data-items-count>
+            {% if cart.item_count > 0 %}
+              ({{ cart.item_count }})
+            {%- endif -%}
+          </span>
+
+          <span class="visually-hidden"> {{ 'layout.cart.items_count' | t: count: cart.item_count }}</span>
+        </span>
+      </a>
+    </li>
+  {%- endif -%}
+  <li class="geo-location" style="padding:8px 0px"></li>
+</ul>

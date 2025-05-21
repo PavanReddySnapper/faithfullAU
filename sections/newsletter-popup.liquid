@@ -1,0 +1,127 @@
+{%- if section.settings.popup_enabled -%}
+  <div
+    data-section-id="{{ section.id }}"
+    data-section-type="newsletter-popup"
+    data-timer-delay="{{ section.settings.popup_timer_delay }}"
+  >
+    {% capture popup_content %}
+    <div class="newsletter-popup">
+      {%- if section.settings.text != blank -%}
+        <div class="rte">{{ section.settings.text }}</div>
+      {%- endif -%}
+
+      {%- if section.settings.form_type == 'shopify' -%}
+        {%- render 'component-subscribe-form',
+          id: section.id,
+          form_name: 'customer',
+          class: 'newsletter-popup__form',
+          name_field: true,
+          button_style: 'icon',
+        -%}
+      {%- else -%}
+          <div class="newsletter-popup__form">
+            TO DO: Klaviyo Form Embed
+          </div>
+      {%- endif -%}
+
+
+      {%- if section.settings.image -%}
+        {%- render 'component-image',
+          image: section.settings.image,
+          aspect_ratio: 'square',
+          max_width: 640,
+          sizes: '20rem'
+        -%}
+      {%- endif -%}
+
+
+    </div>
+  {% endcapture %}
+
+    {% render 'component-modal-dialog',
+      modal_class: 'popup corner',
+      modal_id: section.id,
+      modal_header: section.settings.title,
+      modal_label: section.settings.title,
+      modal_desc: section.settings.popup_description,
+      modal_content: popup_content,
+      modal_sticky_header: true
+    %}
+  </div>
+{%- endif -%}
+
+{% render 'vite-tag' with '@/scripts/sections/newsletter-popup.js' %}
+
+{% schema %}
+  {
+    "name": "Newsletter Popup",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Popup Display Settings",
+        "info": "Will show a popup after a specified delay, and won't show again in the same browser for 24hrs."
+      },
+      {
+        "type": "checkbox",
+        "id": "popup_enabled",
+        "label": "Enable popup",
+        "default": false
+      },
+      {
+        "type": "number",
+        "id": "popup_timer_delay",
+        "label": "Popup timer delay (seconds)",
+        "default": 5
+      },
+      {
+        "type": "text",
+        "id": "popup_description",
+        "label": "Popup description",
+        "default": "Newsletter signup popup",
+        "info": "Required for accessibility, a brief description of the purpose of the popup."
+      },
+      {
+        "type": "header",
+        "content": "Popup Content"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Popup Title",
+        "default": "Newsletter"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Sign up to get 15% off your first full price order"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image",
+        "info": "Recommended size: 640x640 (square)"
+      },
+      {
+        "type": "header",
+        "content": "Newsletter Form"
+      },
+      {
+        "type": "select",
+        "id": "form_type",
+        "label": "Newsletter Form Type",
+        "default": "shopify",
+        "options": [
+          {
+            "value": "shopify",
+            "label": "Shopify"
+          },
+          {
+            "value": "klaviyo",
+            "label": "Klaviyo"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

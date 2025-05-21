@@ -1,0 +1,375 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/000085260016.jpg",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Sifnos Travel Guide With Brigette Clark",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>There is more to the Greek Islands than what you already know – Mykonos, Santorini, Ios. Perhaps some of the most serene landscapes and iyllic cliffs are actually found in the more remote islands, like that of Sifnos. A tiny yet picturesque island that perches between Milos and Paros. Where charming yet quaint villages come together with fresh Cycladic cuisine, raw elemental architecture and peaceful beaches to relax into. If you're planning your next escape to the Greek Islands, pay attention to what Sifnos has to offer with a bespoke guide from #FAITHFULLGirl and photographer, <a href=\"https://www.instagram.com/brigetteclark_/?hl=en\" title=\"https://www.instagram.com/brigetteclark_/?hl=en\">Brigette Clarke</a>. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/000085180004.jpg",
+        "background_image_2": "shopify://shop_images/000085180003.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_wc4xUY": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AJadF7": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_GzQnKU": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://verinahotelsifnos.com/\" target=\"_blank\" title=\"https://verinahotelsifnos.com/\">Verina</a></p><p>An exclusive array of private apartments and suites, perched on an eastern cliff edge of Sifnos in the Cyclades.</p><p><a href=\"https://www.instagram.com/chez_sifnos/\" target=\"_blank\" title=\"https://www.instagram.com/chez_sifnos/\">Chez Sifnos</a></p><p>A small yet authentic private stay with three units, made up of five bedrooms with their own bathrooms, kitchens and scenic verandahs with island views. The perfect option for larger groups. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AJadF7",
+        "richtext_GzQnKU"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_cihn4K": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/000085260032.jpg",
+        "background_image_2": "shopify://shop_images/sifnos_003.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_TAGh9K": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WUpUan": {
+          "type": "title",
+          "settings": {
+            "title": "Where to drink and dine",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_ebrRYe": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/cantina_sifnos/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/cantina_sifnos/?hl=en\">Cantina </a></p><p>One of the unmissable dinner restaurants located in the area of Kastro and situated down the cliff on the water at Seralia beach. An authentic and local gem that emphasises minimal waste by sourcing local and seasonal produce. (It is recommended to book in advance). </p><p><a href=\"https://www.instagram.com/loggia_sifnos/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/loggia_sifnos/?hl=en\">Loggia</a> </p><p>On the clifftop of Kastro, you'll find a groovy new wine bar with classic fresh seafood, woodfire snacks and shareable dinner plates. Also the perfect sunset spot for cocktail hour or a late night candlelit drink. </p><p><a href=\"https://www.instagram.com/bostanisifnos/\" target=\"_blank\" title=\"https://www.instagram.com/bostanisifnos/\">Bostani</a> </p><p>If you're looking for casual yet fine Greek cuisine, this one is set up with a beautiful vegetable garden for the true farm to table experience. </p><p><a href=\"https://www.instagram.com/captaingeorgesifnos/\" target=\"_blank\" title=\"https://www.instagram.com/captaingeorgesifnos/\">Captain George </a></p><p>A more casual experience right along the walk at Seralina, Kastro, if you're looking for something delectable yet relaxed. </p><p><a href=\"https://www.instagram.com/pelicanos_sifnos/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/pelicanos_sifnos/?hl=en\">Pelicanos</a>  </p><p>Located in Faros beach, this is the sister restaurant to Cantina and the perfect beach club vibe for a long lunch. It is worth the day trip from Sifnos town to Faros Bay and taking the walk along the coast trail to Apokofto Beach. </p><p>Cherronissos Fish Taverna </p><p>You can't leave Sifnos without trying an authentic octopus dish. Right on the water in the area of Kamini, this restaurant serves fresh seafood and octopus caught a mere few hours before you sit down. </p><p><a href=\"https://www.studioskavos.gr/\" target=\"_blank\" title=\"https://www.studioskavos.gr/\">Cavos</a></p><p>For a night on the town, it's hard to miss the pirate-style bar situated just down from Loggia. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WUpUan",
+        "richtext_ebrRYe"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_JNqgJB": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/000085180006.jpg",
+        "background_image_2": "shopify://shop_images/000085260036.jpg",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80"
+      }
+    },
+    "rich_text_kGrEDf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_nzr3wb": {
+          "type": "title",
+          "settings": {
+            "title": "Where to explore",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_MBaQU3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/peristeriona/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/peristeriona/?hl=en\">Atsonios Ceramics </a></p><p>This is an incredible family run (three generation) ceramics store. You cannot leave without purchasing some of their amazing pieces. They have even kept their original underground kiln around the back of the building. </p><p><a href=\"https://verinahotelsifnos.com/bostani-treatment/\" target=\"_blank\" title=\"https://verinahotelsifnos.com/bostani-treatment/\">Verina Spa </a></p><p>A beautiful spa which overlooks the ocean, offering a range of massage and treatments. After your treatment you can even walk through their vegetable garden to their restaurant and end your afternoon with an early dinner. </p><p>Church of the Seven Martyrs </p><p>For one of the most beautiful sunrises, walk out by the church. There is also a swimming spot nearby or if you're brave enough to rock jump down, the local's jump from the right side of the church.  </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_nzr3wb",
+        "richtext_MBaQU3"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_articles_m8WKWF": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_cRfk9g": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-philippines-travel-guide-with-emily-yates"
+          }
+        },
+        "article_NXMDzb": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-marseille-travel-guide-with-parysatis"
+          }
+        },
+        "article_irhEng": {
+          "type": "article",
+          "settings": {
+            "article": "journal/the-st-tropez-travel-guide"
+          }
+        }
+      },
+      "block_order": [
+        "article_cRfk9g",
+        "article_NXMDzb",
+        "article_irhEng"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "letters-from-hydra",
+        "product_list": [
+          "ania-bikini-top-sifnos-stripe",
+          "aniela-maxi-dress-sifnos-stripe",
+          "elisa-bikini-top-sifnos-stripe",
+          "en-vau-oversized-shirt-sifnos-stripe"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_BNpN6Q",
+    "rich_text_wc4xUY",
+    "editorial_layout_cihn4K",
+    "rich_text_TAGh9K",
+    "editorial_layout_JNqgJB",
+    "rich_text_kGrEDf",
+    "featured_articles_m8WKWF",
+    "featured_products_3zGbcJ"
+  ]
+}

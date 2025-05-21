@@ -1,0 +1,257 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="collection-list"
+  class="collection-list section--border-{{ section.settings.border }}"
+>
+  {%- if section.settings.title or section.settings.text -%}
+    <div class="collection-list__header">
+      <div class="container container--sm">
+        {%- if section.settings.title != blank -%}
+          <h1 class="h2">{{ section.settings.title }}</h1>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <div class="rte">
+            {{ section.settings.text }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  <div class="collection-list__grid">
+    {%- if section.settings.content_source == 'blocks' -%}
+      {%- for block in section.blocks -%}
+        {%- liquid
+          assign collection = collections[block.settings.collection]
+          if collection == blank
+            continue
+          endif
+        -%}
+
+        <div
+          class="collection-list__grid-item"
+          style="--grid-column-desktop: {{ block.settings.column_size }}; --grid-column-mobile: {{ block.settings.column_size_mobile }}"
+        >
+          {%- liquid
+            assign sizes = '(min-width: 48rem) {desktop_width}, {mobile_width}'
+            case block.settings.column_size
+              when 'span 2'
+                assign sizes = sizes | replace: '{desktop_width}', '33.333vw'
+              when 'span 3'
+                assign sizes = sizes | replace: '{desktop_width}', '50vw'
+              when 'span 4'
+                assign sizes = sizes | replace: '{desktop_width}', '75vw'
+            endcase
+
+            case block.settings.column_size_mobile
+              when 'span 2'
+                assign sizes = sizes | replace: '{mobile_width}', '100vw'
+              else
+                assign sizes = sizes | replace: '{mobile_width}', '50vw'
+            endcase
+
+            render 'component-collection-card', collection: collection, image: block.settings.image, aspect_ratio: block.settings.aspect_ratio, sizes: sizes, badge: block.settings.badge_override, url: block.settings.url_override, title: block.settings.title_override
+          -%}
+        </div>
+      {%- endfor -%}
+
+    {%- else -%}
+      {%- for collection in collections -%}
+        {%- liquid
+          if collection.handle == 'frontpage' or collection.all_products_count < 2
+            continue
+          endif
+        -%}
+
+        <div class="collection-list__grid-item">
+          {%- render 'component-collection-card', collection: collection, sizes: '(min-width: 48rem) 33.333vw, 50vw' -%}
+        </div>
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Collection List",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Header"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section Title",
+        "default": "Collections"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Section Text"
+      },
+      {
+        "type": "header",
+        "content": "Content Settings"
+      },
+      {
+        "type": "select",
+        "id": "content_source",
+        "label": "Content Source",
+        "default": "all",
+        "options": [
+          {
+            "value": "blocks",
+            "label": "Section Blocks"
+          },
+          {
+            "value": "all",
+            "label": "All Collections"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "label": "Collection",
+            "id": "collection",
+            "type": "collection"
+          },
+          {
+            "type": "header",
+            "content": "Display Settings"
+          },
+          {
+            "type": "select",
+            "id": "column_size",
+            "label": "Desktop Column Size",
+            "default": "span 2",
+            "options": [
+              {
+                "value": "span 2",
+                "label": "Third"
+              },
+              {
+                "value": "span 3",
+                "label": "Half"
+              },
+              {
+                "value": "span 4",
+                "label": "Two Thirds"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "column_size_mobile",
+            "label": "Mobile Column Size",
+            "default": "span 2",
+            "options": [
+              {
+                "value": "",
+                "label": "Half"
+              },
+              {
+                "value": "span 2",
+                "label": "Full"
+              }
+            ]
+          },
+          {
+            "type": "select",
+            "id": "aspect_ratio",
+            "label": "Desktop Aspect Ratio",
+            "info": "Select a Desktop aspect ratio. Landscape images will span 2 columns.",
+            "default": "portrait",
+            "options": [
+              {
+                "value": "portrait",
+                "label": "Portrait"
+              },
+              {
+                "value": "landscape",
+                "label": "Landscape"
+              }
+            ]
+          },
+          {
+            "type": "header",
+            "content": "Override Settings"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image Override",
+            "info": "Overrides default image."
+          },
+          {
+            "type": "text",
+            "id": "badge_override",
+            "label": "Badge Override",
+            "info": "Overrides default badge."
+          },
+          {
+            "type": "text",
+            "id": "title_override",
+            "label": "Title Override",
+            "info": "Overrides default title."
+          },
+          {
+            "label": "URL Override",
+            "id": "url_override",
+            "type": "url",
+            "info": "Overrides default URL."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection List"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

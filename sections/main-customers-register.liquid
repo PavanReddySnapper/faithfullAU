@@ -1,0 +1,151 @@
+<div
+  class="account-template account-template-register"
+  data-section-id="{{ section.id }}"
+  data-section-type="main-customers-register"
+>
+  <div class="container container--sm">
+    <div class="page-header text-left">
+      <h1 class="h2">{{ 'customer.register.title' | t }}</h1>
+      <p class="body-medium">Discover the world of FAITHFULL where club members receive exclusive early access to preview and shop new collections and seasonal sales as well as experience personalised rewards and benefits.</p>
+    </div>
+
+    {% form 'create_customer' %}
+      {% if form.errors contains 'form' %}
+        <div class="form__error-message">
+          {{ form.errors.messages.form }}
+        </div>
+      {% endif %}
+
+      <div class="form__group--container">
+        <div class="form__group">
+          <input
+            type="text"
+            name="customer[first_name]"
+            id="FirstName"
+            class="{% if form.errors contains 'first_name' %}input-error{% endif %}"
+            placeholder="{{ 'customer.register.first_name' | t }}"
+            autofocus
+            value="{{ form.first_name }}"
+          >
+
+          {% if form.errors contains 'first_name' %}
+            <div class="input__error-message">
+              {{ form.errors.translated_fields.first_name | capitalize }}
+              {{ form.errors.messages.first_name }}
+            </div>
+          {% endif %}
+        </div>
+
+        <div class="form__group">
+          <input
+            type="text"
+            name="customer[last_name]"
+            id="LastName"
+            class="{% if form.errors contains 'last_name' %}input-error{% endif %}"
+            placeholder="{{ 'customer.register.last_name' | t }}"
+            value="{{ form.last_name }}"
+          >
+
+          {% if form.errors contains 'last_name' %}
+            <div class="input__error-message">
+              {{ form.errors.translated_fields.last_name | capitalize }}
+              {{ form.errors.messages.last_name }}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="form__group">
+        <input
+          type="email"
+          name="customer[email]"
+          id="Email"
+          class="{% if form.errors contains 'email' %}input-error{% endif %}"
+          placeholder="{{ 'customer.register.email' | t }}"
+          value="{% if form.email %}{{ form.email }}{% endif %}"
+          spellcheck="false"
+          autocomplete="off"
+          autocapitalize="off"
+        >
+
+        {% if form.errors contains 'email' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.email | capitalize }}
+            {{ form.errors.messages.email }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="form__group">
+        <input
+          type="password"
+          name="customer[password]"
+          id="CreatePassword"
+          class="{% if form.errors contains 'password' %}input-error{% endif %}"
+          placeholder="{{ 'customer.register.password' | t }}"
+        >
+
+        {% if form.errors contains 'password' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.password | capitalize }}
+            {{ form.errors.messages.password }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="form__group">
+        <input
+          type="tel"
+          name="customer[note][Phone]"
+          pattern="[0-9]{6,12}"
+          id="Phone"
+          class="{% if form.errors contains 'phone' %}input-error{% endif %}"
+          placeholder="{{ 'customer.register.phone' | t }}"
+          aria-label="{{ 'customer.register.phone' | t }}"
+        >
+
+        {% if form.errors contains 'phone' %}
+          <div class="input__error-message label">
+            {{ form.errors.translated_fields.phone | capitalize }}
+            {{ form.errors.messages.phone }}
+          </div>
+        {% endif %}
+      </div>
+
+      <div class="form__group form__group--marketing">
+        <div class="form__inline-input">
+           <input
+            type="hidden"
+            name="customer[accepts_marketing]"
+            value="true"
+          />
+          
+          <label for="Marketing" class="body-small">By creating an account and joining The FAITHFULL Club you agree to receive communications from FAITHFULL. You can opt out at any time.<a href="/policies/privacy-policy" style="font-weight:bold">Please see our Privacy Policy here for more information.</a></label>
+       
+        </div>
+      </div>
+
+      <p>
+        <input type="submit" value="{{ 'customer.register.submit' | t }}" class="btn btn--secondary">
+      </p>
+
+      {% capture button %}
+        <a href="{{ routes.account_login_url }}">
+          {{ 'customer.register.login' | t }}
+        </a>
+      {% endcapture %}
+      <p class="account-template-login__button-container">
+        {{ 'customer.register.login_html' | t: button: button }}
+      </p>
+    {% endform %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Register",
+    "enabled_on": {
+      "templates": ["customers/register"]
+    }
+  }
+{% endschema %}

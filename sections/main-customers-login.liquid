@@ -1,0 +1,157 @@
+<div
+  class="account-template account-template-login"
+  data-section-id="{{ section.id }}"
+  data-section-type="main-customers-login"
+>
+  <div class="container container--sm">
+    <div class="form__info-message hide" id="ResetSuccess">
+      {{ 'customer.recover_password.success' | t }}
+    </div>
+
+    <div id="CustomerLoginForm">
+      {% form 'customer_login' %}
+        <div class="page-header text-left">
+          <h1 class="h2">{{ 'customer.login.title' | t }}</h1>
+          <p class="body-medium">{{ 'customer.login.text' | t }}</p>
+        </div>
+
+        {% if form.errors contains 'form' %}
+          <div class="form__error-message">
+            {{ form.errors.messages.form }}
+          </div>
+        {% endif %}
+
+        <div class="form__group">
+          <input
+            type="email"
+            name="customer[email]"
+            id="CustomerEmail"
+            class="{% if form.errors contains 'email' %}input-error{% endif %}"
+            placeholder="{{ 'customer.login.email' | t }}"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+            autofocus
+          >
+
+          {% if form.errors contains 'email' %}
+            <div class="input__error-message">
+              {{ form.errors.translated_fields.email | capitalize }}
+              {{ form.errors.messages.email }}
+            </div>
+          {% endif %}
+        </div>
+
+        {% if form.password_needed %}
+          <div class="form__group form__group--password">
+            <input
+              type="password"
+              name="customer[password]"
+              id="CustomerPassword"
+              class="{% if form.errors contains 'password' %}input-error{% endif %}"
+              placeholder="{{ 'customer.login.password' | t }}"
+            >
+
+            {% if form.errors contains 'password' %}
+              <div class="input__error-message">
+                {{ form.errors.translated_fields.password | capitalize }}
+                {{ form.errors.messages.password }}
+              </div>
+            {% endif %}
+
+            {% if form.password_needed %}
+              <p class="account-template__recover-password-button">
+                <a href="#recover" id="RecoverPassword">{{ 'customer.login.forgot_password' | t }}</a>
+              </p>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        <p class="button-container">
+          <input type="submit" class="btn btn--secondary" value="{{ 'customer.login.sign_in' | t }}">
+        </p>
+
+        {% capture button %}
+          <a href="{{ routes.account_register_url }}">
+            {{ 'customer.login.create_account' | t }}
+          </a>
+        {% endcapture %}
+        <p class="account-template-login__button-container">
+          {{ 'customer.login.create_account_html' | t: button: button }}
+        </p>
+      {% endform %}
+    </div>
+
+    <div id="RecoverPasswordForm" class="hide">
+      <div class="page-header text-left">
+        <h2>{{ 'customer.recover_password.title' | t }}</h2>
+        <p class="body-medium">{{ 'customer.recover_password.subtext' | t }}</p>
+      </div>
+
+      {% form 'recover_customer_password' %}
+        {% if form.posted_successfully? %}
+          <span class="hide reset-password-success"></span>
+        {% endif %}
+
+        <div class="form__group form__group--recover-password">
+          <input
+            type="email"
+            name="email"
+            id="RecoverEmail"
+            class="{% if form.errors contains 'form' %}input-error{% endif %}"
+            placeholder="{{ 'customer.recover_password.email' | t }}"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+          >
+
+          {% if form.errors contains 'form' %}
+            <div class="input__error-message">
+              {{ form.errors.messages.form }}
+            </div>
+          {% endif %}
+        </div>
+
+        <input type="submit" class="btn btn--secondary" value="{{ 'customer.recover_password.submit' | t }}">
+
+        {% capture login_button %}
+          <button type="button" class="btn btn--text" id="HideRecoverPasswordLink">
+            {{ 'customer.recover_password.cancel' | t }}
+          </button>
+        {% endcapture %}
+        <p class="account-template-login__button-container">
+          {{ 'customer.recover_password.login_html' | t: button: login_button }}
+        </p>
+      {% endform %}
+    </div>
+
+    <!-- {% if shop.checkout.guest_login %}
+      <h2>{{ 'customer.login.guest_title' | t }}</h2>
+
+      {% form 'guest_login' %}
+        <input type="submit" class="btn" value="{{ 'customer.login.guest_continue' | t }}">
+      {% endform %}
+    {% endif %} -->
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const url = window.location.href;
+    if (url.includes('pages/rewards')) {
+      const heading = document.querySelector('#CustomerLoginForm .page-header p');
+      if (heading) {
+        heading.textContent = 'Discover the world of FAITHFULL where club members receive exclusive early access to preview and shop new collections and seasonal sales as well as experience personalised rewards and benefits.';
+      }
+    }
+  });
+</script>
+{% render 'vite-tag' with '@/scripts/sections/main-customers-login.js' %}
+
+{% schema %}
+  {
+    "name": "Login",
+    "enabled_on": {
+      "templates": ["customers/login"]
+    }
+  }
+{% endschema %}

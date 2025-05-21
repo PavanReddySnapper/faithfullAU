@@ -1,0 +1,55 @@
+<div data-section-id="{{ section.id }}" data-section-type="main-wishlist">
+  <div class="container container--flush container--fluid">
+    <div class="page-header hide">
+      <h1>{{ page.title }}</h1>
+    </div>
+
+    {{ page.content }}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Main Wishlist",
+    "class": "main-wishlist",
+    "templates": ["page"],
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 140,
+        "step": 2,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 140,
+        "step": 2,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ]
+  }
+{% endschema %}

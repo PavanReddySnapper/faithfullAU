@@ -1,0 +1,189 @@
+{%- liquid
+  assign video_desktop = section.settings.video_desktop
+  assign poster_image_desktop = section.settings.poster_image_desktop
+  assign video_mobile = section.settings.video_mobile
+  assign poster_image_mobile = section.settings.poster_image_mobile
+  assign display_play_controls = section.settings.display_play_controls
+  assign display_mute_controls = section.settings.display_mute_controls
+  assign enable_autoplay = section.settings.enable_autoplay
+  assign controls_color = section.settings.controls_color
+
+  if video_mobile != blank and video_desktop != blank
+    assign desktop_class = 'hide--max-lg'
+    assign mobile_class = 'hide--min-lg'
+  endif
+
+  unless enable_autoplay
+    assign poster_width = 2560
+  endunless
+-%}
+
+{% # theme-check-disable LiquidTag %}
+{%- capture video_desktop_content -%}
+  {% if video_desktop != blank %}
+    {%- render 'component-video',
+      video: video_desktop,
+      aspect_ratio: 'natural',
+      autoplay: enable_autoplay,
+      muted: enable_autoplay,
+      controls: false,
+      custom_play_controls: display_play_controls,
+      custom_mute_controls: display_mute_controls,
+      controls_color: controls_color,
+      loop: enable_autoplay,
+      poster: poster_image_desktop,
+      poster_width: poster_width,
+      wrapper_class: desktop_class
+    -%}
+  {% endif %}
+{%- endcapture -%}
+
+{%- capture video_mobile_content -%}
+  {% if video_mobile != blank %}
+    {%- render 'component-video',
+      video: video_mobile,
+      aspect_ratio: 'natural',
+      autoplay: enable_autoplay,
+      muted: enable_autoplay,
+      controls: false,
+      custom_play_controls: display_play_controls,
+      custom_mute_controls: display_mute_controls,
+      controls_color: controls_color,
+      loop: enable_autoplay,
+      poster: poster_image_mobile,
+      poster_width: poster_width,
+      wrapper_class: mobile_class
+    -%}
+  {% endif %}
+{%- endcapture -%}
+{% # theme-check-enable LiquidTag %}
+
+<div data-section-id="{{ section.id }}" data-section-type="video-banner">
+  <div class="container container--fluid container--flush">
+    {{ video_desktop_content }}
+    {{ video_mobile_content }}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% render 'vite-tag' with '@/scripts/sections/video-banner.js' %}
+
+{% schema %}
+  {
+    "name": "Video Banner",
+    "class": "video-banner",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Mobile Video"
+      },
+      {
+        "type": "video",
+        "id": "video_mobile",
+        "label": "Video (Optional)",
+        "info": "Desktop video will be diplayed on mobile as well if this setting is empty."
+      },
+      {
+        "type": "image_picker",
+        "id": "poster_image_mobile",
+        "label": "Poster Image  (Optional)",
+        "info": "Image displayed until video is downloaded and starts playing. Recommended for videos with controls. Image should be 1600px x 900px"
+      },
+      {
+        "type": "header",
+        "content": "Desktop Video"
+      },
+      {
+        "type": "video",
+        "id": "video_desktop",
+        "label": "Video",
+        "info": "Recommended aspect ratio landscape / 16:9"
+      },
+      {
+        "type": "image_picker",
+        "id": "poster_image_desktop",
+        "label": "Poster Image (Optional)",
+        "info": "Image displayed until video is downloaded and starts playing. Recommended for videos with controls. Image should be 2560px x 1440px"
+      },
+      {
+        "type": "header",
+        "content": "Video Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_play_controls",
+        "label": "Display Play / Pause Controls"
+      },
+      {
+        "type": "checkbox",
+        "id": "display_mute_controls",
+        "label": "Display Mute / Unmute Controls"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_autoplay",
+        "label": "Enable Video Autoplay",
+        "default": true
+      },
+      {
+        "type": "select",
+        "id": "controls_color",
+        "label": "Colour for Custom Video Controls",
+        "default": "light",
+        "options": [
+          {
+            "value": "light",
+            "label": "Light"
+          },
+          {
+            "value": "dark",
+            "label": "Dark"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video Banner"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

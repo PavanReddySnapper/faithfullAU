@@ -1,0 +1,50 @@
+<div class="order-card">
+  <div class="order-card__content">
+    <ul class="list-none">
+      <li class="order-card__date-status">
+        <span>{{ order.created_at | date: format: 'month_day_year' }}</span>
+        <span class="order-card__status">{{ order.fulfillment_status_label -}}</span>
+      </li>
+      <li>
+        {{ 'customer.orders.order_number' | t }}
+        {{ order.name }}
+      </li>
+      <li>{{ order.total_price | money }}</li>
+    </ul>
+
+    <a href="{{ order.customer_url }}" class="btn btn--text btn--link">{{ 'customer.orders.view_order' | t }}</a>
+  </div>
+
+  <div class="order-card__thumbnails">
+    {% liquid
+      assign thumbnail_products = order.line_items | where: 'image'
+
+      # Placeholder images will only render if the conditions below are met
+      if order.line_items.size <= 3 or thumbnail_products.size < 3
+        assign thumbnail_products = order.line_items
+      endif
+    %}
+
+    {% for line_item in thumbnail_products limit: 3 %}
+      <div class="order-card__thumbnail{% unless forloop.first %} hide--max-md{% endunless %}">
+        {%- if line_item.image -%}
+          {%- render 'component-image',
+            image: line_item.image,
+            aspect_ratio: 'portrait',
+            max_width: 160,
+            sizes: '5rem'
+          -%}
+        {%- else -%}
+          <div class="aspect-ratio aspect-ratio--portrait"></div>
+        {%- endif -%}
+      </div>
+    {% endfor %}
+
+    {% if order.line_items.size > 3 %}
+      <div class="order-card__additional-count">
+        <span class="h6 hide--max-md">+{{ order.line_items.size | minus: 3 }}</span>
+        <span class="h6 hide--min-md">+{{ order.line_items.size | minus: 1 }}</span>
+      </div>
+    {% endif %}
+  </div>
+</div>

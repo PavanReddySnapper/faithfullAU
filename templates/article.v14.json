@@ -1,0 +1,808 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_a8432d2b-c18c-4449-884d-78480d25ae1d.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_6zf3TG": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/2_784e4f86-fa33-40ee-82c4-f1ed5682f66f.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT",
+        "image_6zf3TG"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Holiday Reading Guide",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Whether you’re spending the holiday season by the seashore on the coast of Australia or curling up by the fire, sheltering from the Scandinavian snow, there is no better time of year to pour into a new novel or devour the final pages of a title you haven’t had a chance to finish yet. </p><p>Here, the FAITHFULL team shares the titles on their holiday reading list. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_tTjwpQ": {
+      "type": "image-banner",
+      "blocks": {
+        "image_T3Rr74": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/3_cc96f74e-9cdc-4021-bf9c-e3aff18349a0.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_T3Rr74"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "The Creative Act: A Way of Being by Rick Rubin",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“Rick Rubin is such an interesting character of life and his career trajectory in the record industry is unparalleled. I’ve just picked this one up and the perspectives he has on creative processes are articulated in such an authentic and inspiring way.” </p><p><em>– Amy, Customer Experience Executive</em></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_cbbe4d6a-4037-4941-9571-d68af160b1de.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Didion and Babitz by Lili Anolik",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“A friend of mine recently purchased this one for my birthday and immediately I knew I’d have to set whatever was next on my TBR pile aside. It’s a dynamic and compelling exploration of the complicated relationship and rivalry between writers and creatives Joan Didion and Eve Babitz.”</p><p><em>– Madison, Content Manager </em></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 40,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_cXyQxg": {
+      "type": "image-banner",
+      "blocks": {
+        "image_trb6eX": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/5_2e9e517d-dca8-4d87-bb3d-c4a9f48431d4.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_trb6eX"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "80",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "Cleopatra and Frankenstein by Coco Mellors",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“I’d seen almost everyone on Instagram reading this novel over the summer in Europe and now I can see why. Halfway through, it follows an age gap relationship who impulsively marry and how their lives intertwine with those around them.”</p><p><em>– Joyah, Junior Creative Director </em></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_PyXX3z": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3t7Rhj": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/6_131ab7ec-6c70-479d-a631-ea3f7ebed3f5.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3t7Rhj"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_ddXyEg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WdnYrt": {
+          "type": "title",
+          "settings": {
+            "title": "Intermezzo by Sally Rooney",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CXX6Jm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“It’s hard to look past anything Sally Rooney produces and <em>Intermezzo</em> is no different. I’ve been waiting patiently since she announced a new title would be released this year and this one is set to explore the relationship between two brothers and their romantic attachments.”</p><p><em>– Georgia, Wholesale Manager </em></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WdnYrt",
+        "richtext_CXX6Jm"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_MKzRLJ": {
+      "type": "image-banner",
+      "blocks": {
+        "image_FanEha": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_d6cd58a8-6b11-4779-85ef-84ef2a662feb.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_FanEha"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_X3wnba": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AECMJk": {
+          "type": "title",
+          "settings": {
+            "title": "Tomorrow, and Tomorrow, and Tomorrow by Gabrielle Zevin",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_D8mww3": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“I saw the <em>New York Times</em> describe this as ‘a love letter to the literary gamer’ and was enticed by the book’s marriage of creativity, friendship and video gaming. According to the synopsis it centers around two friends and the launch of their own successful video game.”</p><p><em>– Grace, Senior Graphic Designer </em></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        }
+      },
+      "block_order": [
+        "title_AECMJk",
+        "richtext_D8mww3"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_h8fbzd": {
+      "type": "image-banner",
+      "blocks": {
+        "image_gyhXwQ": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/8_9b015b27-0a72-4dd6-abe3-a053f03b4160.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_gyhXwQ"
+      ],
+      "custom_css": [],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_eWqQnY": {
+      "type": "rich-text",
+      "blocks": {
+        "title_68VMir": {
+          "type": "title",
+          "settings": {
+            "title": "Lessons in Chemistry by Bonnie Garmus",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_it3C4d": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“Planning to spend much of the holiday season by the sea, I wanted to find a title I could finish in an afternoon. This one is effortlessly funny and easy to read, yet still explores deeper themes of gender stereotypes and societal norms, set in 1960s California.” </p><p><em>– Isabella, Junior Producer </em></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_68VMir",
+        "richtext_it3C4d"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_efxPVq": {
+      "type": "image-banner",
+      "blocks": {
+        "image_WyJ9x6": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/9_3f1dd44f-8d3e-4e51-9c1f-6e0bec9cde5a.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_WyJ9x6"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_Dj3RYC": {
+      "type": "rich-text",
+      "blocks": {
+        "title_jy3PHR": {
+          "type": "title",
+          "settings": {
+            "title": "The Beautiful Fall by Alicia Drake",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_UL7exJ": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>“This one is a little different from what I usually lean towards but I am eager to dive into a study on the careers, rivalries and obsessions of Yves Saint Laurent and Karl Lagerfeld throughout the 1970s.”</p><p><em>– Remy, E-Commerce Buyer </em></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_jy3PHR",
+        "richtext_UL7exJ"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop Holiday 2025",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "jours-dor",
+        "product_list": [
+          "lida-maxi-dress-blue-stripe",
+          "emily-bikini-top-white",
+          "sanne-midi-dress-linnea",
+          "corbiere-vest-bistre"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "image_banner_9nTMVL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_KiYMD9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_29_b6d0847f-fe5d-4849-9e16-6c524374ec79.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Xgp9Wm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/Image_30_1ddeff56-188f-4a5f-bf22-0b23ab310f57.png",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KiYMD9",
+        "image_Xgp9Wm"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_VDARQf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9KXFbW": {
+          "type": "title",
+          "settings": {
+            "title": "What feelings or things evoke a sense of summer for you?",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_xxBgwB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A sense of summer is the smell of sunscreen. It’s this excitement to wake up in the morning. It’s the early morning hours that are a bit chilly and you know that soon the warmth of the sun will take over. The smell of grilled fish, fresh light beer, and white laundry hanging on every window. Peaches and cherries. That’s summer to me.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        },
+        "button_Rj6dGP": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Edit",
+            "link": "#",
+            "button_style": "btn--secondary",
+            "margin_bottom": 4
+          }
+        }
+      },
+      "block_order": [
+        "title_9KXFbW",
+        "richtext_xxBgwB",
+        "button_Rj6dGP"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "featured_articles_KVqFxb": {
+      "type": "featured-articles",
+      "blocks": {
+        "article_n84pcB": {
+          "type": "article",
+          "settings": {
+            "article": "journal/a-karamellpudding-recipe"
+          }
+        },
+        "article_eUJjCy": {
+          "type": "article",
+          "settings": {
+            "article": "journal/a-guide-to-paris"
+          }
+        },
+        "article_zPApBT": {
+          "type": "article",
+          "settings": {
+            "article": "journal/behind-the-scenes-on-jours-dor"
+          }
+        }
+      },
+      "block_order": [
+        "article_n84pcB",
+        "article_eUJjCy",
+        "article_zPApBT"
+      ],
+      "settings": {
+        "title": "Featured Articles",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "image_banner_tTjwpQ",
+    "rich_text_UbFWPp",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "image_banner_cXyQxg",
+    "rich_text_K4xM3c",
+    "image_banner_PyXX3z",
+    "rich_text_ddXyEg",
+    "image_banner_MKzRLJ",
+    "rich_text_X3wnba",
+    "image_banner_h8fbzd",
+    "rich_text_eWqQnY",
+    "image_banner_efxPVq",
+    "rich_text_Dj3RYC",
+    "featured_products_3zGbcJ",
+    "image_banner_9nTMVL",
+    "rich_text_VDARQf",
+    "featured_articles_KVqFxb"
+  ]
+}

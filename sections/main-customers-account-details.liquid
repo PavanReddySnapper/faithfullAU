@@ -1,0 +1,73 @@
+<div
+  class="account-template account-template-account-details"
+  data-section-id="{{ section.id }}"
+  data-section-type="main-customers-account"
+>
+  {% render 'component-page-top-links',
+    linklist: linklists[settings.account_links],
+    parent_class: 'page-navigation__layout--top account__top-nav',
+    select_on_mobile: true
+  %}
+
+  <div class="container container--sm">
+    <header class="account__header hide">
+      <div class="page-header">
+        <h1>{{ 'customer.account.title' | t }}</h1>
+      </div>
+    </header>
+
+    <div class="account__module account__module--last account__module--details">
+      <div class="account-details">
+        <p class="body-small">
+          <span>{{ 'customer.account_info.name_label' | t }}:</span>
+          <span>{{ customer.name }}</span>
+        </p>
+        <p class="body-small">
+          <span>{{ 'customer.account_info.email_label' | t }}:</span>
+          <span>{{ customer.email }}</span>
+        </p>
+      </div>
+      {% form 'recover_customer_password' %}
+        {% if form.posted_successfully? %}
+          <span class="hide reset-password-success"></span>
+        {% endif %}
+
+        <div class="form__group">
+          <input
+            type="email"
+            name="email"
+            id="RecoverEmail"
+            value="{{ customer.email }}"
+            class="{% if form.errors contains 'form' %}input-error{% else %}hide{% endif %}"
+            placeholder="{{ 'customer.recover_password.email' | t }}"
+            aria-label="{{ 'customer.recover_password.email' | t }}"
+            spellcheck="false"
+            autocomplete="off"
+            autocapitalize="off"
+          >
+
+          {% if form.errors contains 'form' %}
+            <div class="input__error-message label">
+              {{ form.errors.messages.form }}
+            </div>
+          {% endif %}
+        </div>
+
+        <input
+          type="submit"
+          class="btn btn--text btn--link"
+          value="{{ 'customer.account_info.change_password' | t }}"
+        >
+      {% endform %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Account Overview",
+    "enabled_on": {
+      "templates": ["customers/account"]
+    }
+  }
+{% endschema %}

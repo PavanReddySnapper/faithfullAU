@@ -1,0 +1,118 @@
+<div class="main-contact" data-section-id="{{ section.id }}" data-section-type="main-contact">
+  {%- if section.settings.title != blank or section.settings.text != blank -%}
+    <div class="page-header">
+      <div class="container">
+        {%- if section.settings.title != blank -%}
+          <h1 class="h2">{{ section.settings.title }}</h1>
+        {%- endif -%}
+        {%- if section.settings.text != blank -%}
+          <div class="rte body-medium">
+            {{ section.settings.text }}
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- if section.blocks.size > 0 -%}
+    <div class="container container--sm">
+      <div class="main-contact__content">
+        {%- for block in section.blocks -%}
+          <div class="main-contact__detail">
+            <h2 class="h6">{{ block.settings.title }}</h2>
+            <div class="rte body-medium">
+              {{ block.settings.text }}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Contact Page",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Contact Page Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Page Title",
+        "default": "{{ page.title }}"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "We would love to hear from you! Feel free to contact us anytime to ask a question or share your feedback. If you need an answer straight away please visit our Customer Care page or chat to us on Live Chat located at the bottom of your screen."
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 64
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 64
+      }
+    ],
+    "blocks": [
+      {
+        "type": "contact-detail",
+        "name": "Contact Detail",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Contact Detail Settings"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Contact Page"
+      }
+    ]
+  }
+{% endschema %}

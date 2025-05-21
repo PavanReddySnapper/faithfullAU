@@ -1,0 +1,787 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-article",
+      "disabled": true,
+      "settings": {
+        "blog_show_author": false,
+        "blog_show_date": true
+      }
+    },
+    "image_banner_Vh8WwK": {
+      "type": "image-banner",
+      "blocks": {
+        "image_h7iVMT": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/1_1264fced-a7c8-4a2c-9c7d-9f5f237dec97.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_h7iVMT"
+      ],
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "40",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_bqnrRt": {
+      "type": "rich-text",
+      "blocks": {
+        "title_6Pwd9W": {
+          "type": "title",
+          "settings": {
+            "title": "The Milan Travel Guide With Hanna MW",
+            "is_primary_heading": true,
+            "heading_style": "h3",
+            "pre_heading": "JOURNAL",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iAmcEf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A curated travel guide to the vibrant city of Milan, as shared by Fall 2024 Di Milano campaign stylist and friend of the brand, <a href=\"https://www.instagram.com/hannamw/\" title=\"https://www.instagram.com/hannamw/\">Hanna MW</a>. With quotes from Hanna, peruse through some of the city's best hidden gems, local wine bars and organic and authentic Italian trattorias.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "center",
+            "margin_bottom": 16
+          }
+        }
+      },
+      "block_order": [
+        "title_6Pwd9W",
+        "richtext_iAmcEf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "center",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "sm",
+        "list_style": "none",
+        "bottom_margin_desktop": 32,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "editorial_layout_hdwEph": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/2_0658bd9b-336f-4265-a246-e2b6604465ea.webp",
+        "background_image_2": "shopify://shop_images/3_de284399-24e1-478a-b665-a8f23716fe98.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "second--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_UbFWPp": {
+      "type": "rich-text",
+      "blocks": {
+        "title_4TaBAn": {
+          "type": "title",
+          "settings": {
+            "title": "Where to eat",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_LG6NPy": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/torredipisa_trattoria/?hl=en\" title=\"https://www.instagram.com/torredipisa_trattoria/?hl=en\">Trattoria Torre di Pisa</a></p><p>This is my favourite restaurant in Milan, for date night or dinner with a group of friends. It’s so charming and classy in the most perfect Italian way.</p><p><a href=\"https://www.instagram.com/ristorante_dagiacomo/?hl=en\" title=\"https://www.instagram.com/ristorante_dagiacomo/?hl=en\">Da Giacomo </a></p><p>I don’t think I’ve ever been in Milan without a stop at Giacomo, it might be a little too Instagram-ed by now but it’s too good to not book a table here and it’s as beautiful as it looks. It's the best Spaghetti Vongole in town.</p><p><a href=\"https://www.instagram.com/asantalucia_/\" title=\"https://www.instagram.com/asantalucia_/\">À Santa Lucia</a></p><p>This is a beautiful spot for lunch into the city centre. There's always so many beautifully dressed-up people to watch and admire.</p><p><a href=\"https://www.instagram.com/allanticovinaiofirenze/?hl=en\" title=\"https://www.instagram.com/allanticovinaiofirenze/?hl=en\">All’Antico Vinaio</a></p><p>Here is the perfect take away lunch destination. My favourite one is the one with pistachios cream and truffle.</p><p><a href=\"https://www.instagram.com/bicemilano/?hl=en\" title=\"https://www.instagram.com/bicemilano/?hl=en\">Bice Milano</a></p><p>If you’re shopping in the city centre this is a easy, can't-go-wrong spot for a satisfying lunch.</p><p><a href=\"https://www.instagram.com/trattoriamadonnina/?hl=en\" title=\"https://www.instagram.com/trattoriamadonnina/?hl=en\">Trattoria Madonnina</a></p><p>This trattoria is a messy yet lovely spot, perfect for a late night dinner with a group of friends.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_4TaBAn",
+        "richtext_LG6NPy"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_GGQzjj": {
+      "type": "image-banner",
+      "blocks": {
+        "image_RBLkRM": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_c5b8eefd-9087-4a85-a9fd-dd3aa0968cce.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_RBLkRM"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Where to spend an aperitivo hour",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/barparadisomilano/?hl=en\" title=\"https://www.instagram.com/barparadisomilano/?hl=en\">Bar Paradiso </a></p><p>This is a lovely wine bar with a good natural wine selection. The mood is always so lovely for an afternoon aperitivo, so much so I would recommend going here before dinner. </p><p><a href=\"https://www.instagram.com/explore/locations/11849/bar-basso/?hl=en\" title=\"https://www.instagram.com/explore/locations/11849/bar-basso/?hl=en\">Bar Basso</a></p><p>The is one of few cocktail bars that balances rustic Italian charm and  authentic, vintage decor with cosmopolitan-style drinks. One could say it's the bar that actually brought cocktails to the city of Milan.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "editorial_layout_BNpN6Q": {
+      "type": "editorial-layout",
+      "settings": {
+        "background_image": "shopify://shop_images/5_30208ece-309a-48c7-9743-532f9b26fcc5.webp",
+        "background_image_2": "shopify://shop_images/6_ae97228f-ecf3-46b0-ac6e-95659b10f3d8.webp",
+        "hide_image": "",
+        "content_layout": "first--max-md first--above",
+        "content_layout_desktop": "first--min-md",
+        "padding_mobile": true,
+        "hide_button_mobile": false,
+        "image_button_label": "",
+        "image_button_link": "",
+        "image_button_style": "text",
+        "image_content_spacing_desktop": "16px",
+        "hide_content_mobile": false,
+        "pre_title": "",
+        "title": "",
+        "content": "",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "link",
+        "text_color_mobile": "--color-black",
+        "text_color_desktop": "--color-black",
+        "background_color": "",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40"
+      }
+    },
+    "rich_text_K4xM3c": {
+      "type": "rich-text",
+      "blocks": {
+        "title_giaDgB": {
+          "type": "title",
+          "settings": {
+            "title": "What to see and do",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CtBDzK": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/villanecchicampiglio/?hl=en\" title=\"https://www.instagram.com/villanecchicampiglio/?hl=en\">Villa Necchi </a></p><p>This is a beautiful home you can take a guided tour around. I would pick up a coffee and croissant first and spend my morning here.</p><p><a href=\"https://www.instagram.com/explore/locations/100333940624402/villa-borsani/?hl=en\" title=\"https://www.instagram.com/explore/locations/100333940624402/villa-borsani/?hl=en\">Villa Borsani </a></p><p>This villa is a residence that was envisioned and brought to life by Osvaldo Borsani. It is undeniably one of the most beautiful architectural homes I’ve ever been to.</p><p><a href=\"https://www.instagram.com/explore/locations/317703085/libraccio/\" title=\"https://www.instagram.com/explore/locations/317703085/libraccio/\">Libraccio</a></p><p>\"Even if you're not an avid reader, this is a  book store well worth visiting, offering an incredible range of books to peruse.\" </p><p><a href=\"https://www.instagram.com/pavemilano/?hl=en\" title=\"https://www.instagram.com/pavemilano/?hl=en\">Pavé</a></p><p>\"If you're looking for a little pick-me-up throughout the day, this is a cute bakery for breakfast, coffee and snacks.\"</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_giaDgB",
+        "richtext_CtBDzK"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "image_banner_PyXX3z": {
+      "type": "image-banner",
+      "blocks": {
+        "image_3t7Rhj": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_545631db-2e7f-4ded-bff8-4f57ad3a0d0a.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_3t7Rhj"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_ddXyEg": {
+      "type": "rich-text",
+      "blocks": {
+        "title_WdnYrt": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_CXX6Jm": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/crossing_condotti/\" title=\"https://www.instagram.com/crossing_condotti/\">Crossing Condotti</a></p><p>This is a boutique hotel that spans two floors of a neoclassical Milanese building, shared by local families who have lived there for generations.</p><p><a href=\"https://www.instagram.com/galleriavikmilano/?hl=en\" title=\"https://www.instagram.com/galleriavikmilano/?hl=en\">Galleria Vik Milano</a></p><p>There is actually a hotel located inside the iconic Galleria Vittoria Emanuele II. It is a truly unique stay that puts you right in the heart of Milan.</p><p><a href=\"https://www.instagram.com/vico.milano/?hl=en\" title=\"https://www.instagram.com/vico.milano/?hl=en\">Vico Milano</a></p><p>Set in a sunny Italian courtyard, this is a unique villa, filled with the owner’s personal art and antique collection.</p><p><a href=\"https://www.instagram.com/explore/locations/133476943181442/max-brown-missori/?__d=1%3Futm_source%3Dig_embed\" title=\"https://www.instagram.com/explore/locations/133476943181442/max-brown-missori/?__d=1%3Futm_source%3Dig_embed\">Max Brown Missori</a></p><p>Centrally located near the famous Duomo, this is a boutique stay with gorgeous personal touches like a record player in every room.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_WdnYrt",
+        "richtext_CXX6Jm"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "featured_products_3zGbcJ": {
+      "type": "featured-products",
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Journal",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 4,
+        "collection": "di-milano",
+        "product_list": [],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "image_banner_LTgfqb": {
+      "type": "image-banner",
+      "blocks": {
+        "image_HAAVdp": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_17_1a4618e4-356a-4812-a7e1-6f432f6cb744.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_UxBCJq": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_18_473da4ca-f9f3-4751-8f36-79ba2d085085.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_868WwE": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_19_5c2b432e-0b1e-4770-8cb8-2a22919a2623.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_PAbCg3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_20_225a10e8-d2c2-47fc-920c-81ca93ecc210.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_qiEP87": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_21_4c62a10b-89f1-46c9-ba87-84bb6c171d04.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_gJHKhL": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_22_2bb4ae32-1c1f-4412-ac2a-b6a69391683f.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_HAAVdp",
+        "image_UxBCJq",
+        "image_868WwE",
+        "image_PAbCg3",
+        "image_qiEP87",
+        "image_gJHKhL"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "0",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "0",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "in-image",
+        "button_color": "--color-white"
+      }
+    },
+    "image_with_text_pkRQPB": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_cjbG4y": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_25_fb4d4cee-3069-4902-9d9f-5c4d272306f1.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        },
+        "text_FHKtVU": {
+          "type": "text",
+          "settings": {
+            "pre_title": "",
+            "title": "Living between two sun-drenched cities, Tel-Aviv and Lisbon, what does a quintessential Summer day look like to you?",
+            "title_size": "h4",
+            "text": "<p>I am inspired by older times and I aim to revive them in my work. I would define my creative style as Romantic and nostalgic yet I always connect to the brand/ client’s personal style and necessities.</p><p>Baroque and romanticism have a big influence on my work and inspiration. I often visit palaces, antique museums and art collections that hold paintings and sculptures from those eras.</p><p>I visit the flea market once a week to source objects and tableware that I use in my work and events design.</p>",
+            "button_label": "",
+            "button_url": "",
+            "button_style": "btn--text btn--link",
+            "image1": "shopify://shop_images/Rectangle_1697.png",
+            "image1_label": "Lusia Maxi Dress Elka Floral",
+            "image1_link": "#",
+            "image2": "shopify://shop_images/Rectangle_1698.png",
+            "image2_label": "Lusia Maxi Dress Elka Floral",
+            "image2_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_cjbG4y",
+        "text_FHKtVU"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "40",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "image_with_text_kwWhpa": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_aEcFC4": {
+          "type": "text",
+          "settings": {
+            "pre_title": "We Care",
+            "title": "Our People, Our Planet",
+            "title_size": "h2",
+            "text": "<p>We care deeply about our people and our planet, so we’re continually investing our time and resources in doing better and being greater.<br/><br/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>",
+            "button_label": "Read More",
+            "button_url": "#",
+            "button_style": "btn--text btn--link",
+            "image1_label": "",
+            "image1_link": "",
+            "image2_label": "",
+            "image2_link": ""
+          }
+        },
+        "image_GPy9kP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Image_27_bb01e99c-a583-4f94-a00c-9e92a0fe6695.png",
+            "hide_button_mobile": false,
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "text_aEcFC4",
+        "image_GPy9kP"
+      ],
+      "disabled": true,
+      "settings": {
+        "is_header": false,
+        "bottom_margin_desktop": "80",
+        "bottom_margin_mobile": "40",
+        "list_style": ""
+      }
+    },
+    "featured_products_EfpHri": {
+      "type": "featured-products",
+      "disabled": true,
+      "settings": {
+        "use_ghost_image": false,
+        "text_color": "--color-black",
+        "title": "Shop The Journal",
+        "title_size": "h6",
+        "show_desktop_content": false,
+        "content": "",
+        "button_label_1": "",
+        "button_link_1": "",
+        "button_style": "btn--text btn--link",
+        "max_products": 8,
+        "collection": "accessories",
+        "product_list": [
+          "maceio-fringed-dress-black",
+          "vieste-oversized-shirt-lemon",
+          "aurelie-maxi-dress-calla-print-charred-navy",
+          "en-vau-oversized-shirt-foam-taupe-stripe",
+          "loire-skirt-taupe",
+          "anais-maxi-dress-lemon",
+          "citara-maxi-dress-white"
+        ],
+        "bottom_margin_desktop": "0",
+        "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_9qfq9P": {
+      "type": "rich-text",
+      "blocks": {
+        "title_CKLXmc": {
+          "type": "title",
+          "settings": {
+            "title": "A must do, see and eat  in Lisbon, Portugal",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_WhVmkC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Must do in Lisbon during the summer: find a good “Tasca” which is a traditional Portuguese restaurant and have a long lunch with Fresh Robalo (white fish) and some white wine. </p><p>Order some clams in coriander and garlic for a starter.</p><p>Stroll at Feira Da Ladra (flea market) on Saturday morning.</p><p>Take a cold ocean swim on the coast of Caparica.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-end",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_CKLXmc",
+        "richtext_WhVmkC"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--lg",
+        "single_row_desktop": true,
+        "padding": "md",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_9nTMVL": {
+      "type": "image-banner",
+      "blocks": {
+        "image_KiYMD9": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--flush container--fluid",
+            "background_image": "shopify://shop_images/Image_29_b6d0847f-fe5d-4849-9e16-6c524374ec79.png",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        },
+        "image_Xgp9Wm": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/Image_30_1ddeff56-188f-4a5f-bf22-0b23ab310f57.png",
+            "hide_button_mobile": true,
+            "subtitle": "",
+            "title": "Lusia Maxi Dress Elka Floral",
+            "button_link_1": "#",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KiYMD9",
+        "image_Xgp9Wm"
+      ],
+      "disabled": true,
+      "settings": {
+        "top_margin_desktop": "0",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "0",
+        "bottom_margin_mobile": "40",
+        "block_layout": "row",
+        "block_gap": "0",
+        "aspect_ratio": "portrait",
+        "link_type": "section",
+        "button_style": "text",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_VDARQf": {
+      "type": "rich-text",
+      "blocks": {
+        "title_9KXFbW": {
+          "type": "title",
+          "settings": {
+            "title": "What feelings or things evoke a sense of summer for you?",
+            "is_primary_heading": false,
+            "heading_style": "h4",
+            "pre_heading": "",
+            "margin_bottom": 40
+          }
+        },
+        "richtext_xxBgwB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A sense of summer is the smell of sunscreen. It’s this excitement to wake up in the morning. It’s the early morning hours that are a bit chilly and you know that soon the warmth of the sun will take over. The smell of grilled fish, fresh light beer, and white laundry hanging on every window. Peaches and cherries. That’s summer to me.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        },
+        "button_Rj6dGP": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Edit",
+            "link": "#",
+            "button_style": "btn--secondary",
+            "margin_bottom": 4
+          }
+        }
+      },
+      "block_order": [
+        "title_9KXFbW",
+        "richtext_xxBgwB",
+        "button_Rj6dGP"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 56,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_Vh8WwK",
+    "rich_text_bqnrRt",
+    "editorial_layout_hdwEph",
+    "rich_text_UbFWPp",
+    "image_banner_GGQzjj",
+    "rich_text_UF39en",
+    "editorial_layout_BNpN6Q",
+    "rich_text_K4xM3c",
+    "image_banner_PyXX3z",
+    "rich_text_ddXyEg",
+    "featured_products_3zGbcJ",
+    "image_banner_LTgfqb",
+    "image_with_text_pkRQPB",
+    "image_with_text_kwWhpa",
+    "featured_products_EfpHri",
+    "rich_text_9qfq9P",
+    "image_banner_9nTMVL",
+    "rich_text_VDARQf"
+  ]
+}

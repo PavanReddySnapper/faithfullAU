@@ -1,0 +1,65 @@
+<ol class="pagination">
+  {%- if show_prev_next -%}
+    {%- if paginate.previous -%}
+      <li>
+        <a
+          class="pagination__arrow"
+          href="{{ paginate.previous.url }}"
+          aria-label="{{ 'accessibility_labels.previous_page' | t }}"
+        >
+          <span aria-hidden="true">{% render 'icon-chevron-left' %}</span>
+        </a>
+      </li>
+    {%- else -%}
+      <li class="disabled" aria-label="{{ 'accessibility_labels.previous_page_disabled' | t }}">
+        <span class="pagination__arrow" aria-hidden="true">{% render 'icon-chevron-left' %}</span>
+      </li>
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- for part in paginate.parts -%}
+    {%- if part.is_link -%}
+      <li>
+        <a
+          href="{{ part.url }}"
+          class="pagination__page pagination__page-link"
+          aria-label="{{ 'accessibility_labels.page' | t }} {{ part.title }}"
+        >
+          <span class="visually-hidden">{{ 'accessibility_labels.page' | t }}</span> {{ part.title }}
+        </a>
+      </li>
+    {%- else -%}
+      {%- if part.title == paginate.current_page -%}
+        <li
+          class="active"
+          aria-current="page"
+          aria-label="{{ 'accessibility_labels.current_page' | t }} {{ part.title }}"
+        >
+          <span class="pagination__page">{{ part.title }}</span>
+        </li>
+      {%- else -%}
+        <li aria-label="{{ part.title }}">
+          <span class="pagination__page">{{ part.title }}</span>
+        </li>
+      {%- endif -%}
+    {%- endif -%}
+  {%- endfor -%}
+
+  {%- if show_prev_next -%}
+    {%- if paginate.next -%}
+      <li>
+        <a
+          class="pagination__arrow"
+          href="{{ paginate.next.url }}"
+          aria-label="{{ 'accessibility_labels.next_page' | t }}"
+        >
+          <span aria-hidden="true">{% render 'icon-chevron-right' %}</span>
+        </a>
+      </li>
+    {%- else -%}
+      <li class="disabled" aria-label="{{ 'accessibility_labels.next_page_disabled' | t }}">
+        <span class="pagination__arrow" aria-hidden="true">{% render 'icon-chevron-right' %}</span>
+      </li>
+    {%- endif -%}
+  {%- endif -%}
+</ol>

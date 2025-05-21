@@ -1,0 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": true,
+        "page_nav": "faqs-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "Do I need to create an account to place an order?",
+            "content": "<p>You do not need to be logged into a customer account to place an online order.<br/></p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "Does adding an item to my cart reserve the item?",
+            "content": "<p>Unfortunately, adding an item to your cart does not mean they are reserved. If an item has sold out after it has been added to your cart, you will see a message at checkout about the item unavailability.<br/></p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "The item I wanted to purchase is now out of stock.",
+            "content": "<p>If you have missed out on an item and it is listed as ‘sold out’, you can sign up to receive an email notification when the item is back in stock. On the product page, simply select your desired size and click the ‘notify when available’ button to sign up.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_0",
+        "question_1",
+        "question_2"
+      ],
+      "settings": {
+        "title": "",
+        "is_primary_heading": false,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

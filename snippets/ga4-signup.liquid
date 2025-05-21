@@ -1,0 +1,26 @@
+{%- comment -%}
+  GA4 Newsletter Signup Event
+  https://developers.google.com/analytics/devguides/collection/ga4/reference/events#sign_up
+
+  Parameters
+  signup_method: method of signup event (eg. newsletter, account)
+{%- endcomment -%}
+
+{% liquid
+  assign event = 'invalid'
+  if signup_method == 'newsletter' or signup_method == 'account'
+    assign event = 'twp_' | append: signup_method | append: '_sign_up'
+  endif
+%}
+
+{% if settings.gtm_enabled and settings.gtm_id != blank and settings.ga4_enabled and event != 'invalid' %}
+  <script>
+    (() => {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: '{{ event }}',
+        signupMethod: '{{ signup_method }}',
+      });
+    })();
+  </script>
+{% endif %}

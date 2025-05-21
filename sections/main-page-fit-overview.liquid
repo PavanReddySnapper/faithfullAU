@@ -1,0 +1,158 @@
+<div class="fit-overview" data-section-id="{{ section.id }}" data-section-type="fit-overview">
+  <div class="fit-overview__grid">
+    <div class="fit-overview__text">
+      <div class="container container--sm">
+        <h1 class="h3">{{ section.settings.title }}</h1>
+        {%- if section.settings.text != blank -%}
+          <div class="rte">
+            {{ section.settings.text }}
+          </div>
+        {%- endif -%}
+
+        {%- if section.blocks.size > 0 -%}
+          <ul class="fit-overview__highlights list-none">
+            {%- for block in section.blocks -%}
+              <li>
+                <span class="h6">{{ block.settings.title }}</span>
+                <span>{{ block.settings.text }}</span>
+              </li>
+            {%- endfor -%}
+          </ul>
+        {%- endif -%}
+
+        {%- if section.settings.button_text != blank -%}
+          <a href="{{ section.settings.link | default: '#' }}" class="btn btn--secondary btn--small">
+            {{- section.settings.button_text -}}
+          </a>
+        {%- endif -%}
+      </div>
+    </div>
+
+    <div class="fit-overview__images">
+      {%- liquid
+        assign aspect_ratio = 'square'
+        assign sizes = '(min-width: 48rem) 50vw, 100vw'
+        if section.settings.image_2 and section.settings.image_1
+          assign aspect_ratio = 'portrait'
+          assign sizes = '(min-width: 48rem) 25vw, 100vw'
+        endif
+
+        if section.settings.image_1
+          render 'component-image', image: section.settings.image_1, aspect_ratio: aspect_ratio, sizes: sizes
+        endif
+
+        if section.settings.image_2
+          render 'component-image', image: section.settings.image_2, aspect_ratio: aspect_ratio, sizes: sizes
+        endif
+      -%}
+    </div>
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Fit & Style Overview",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Content Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "info": "Optional. Overrides the default Page Title.",
+        "default": "{{ page.title }}"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text",
+        "info": "(optional) Leave blank to hide."
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "Button Link"
+      },
+      {
+        "type": "header",
+        "content": "Images"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Image 1",
+        "info": "Recommended size 800px x 1200px (1:2 aspect ratio)"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "Image 2"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 40
+      }
+    ],
+    "blocks": [
+      {
+        "type": "detail",
+        "name": "Detail",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Detail Settings"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

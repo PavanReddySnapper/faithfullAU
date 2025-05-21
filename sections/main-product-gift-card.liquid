@@ -1,0 +1,350 @@
+<div
+  data-section-id="{{ section.id }}"
+  data-section-type="main-product-gift-card"
+>
+  <div class="gift-card-product__grid ">
+    <div class="gift-card-product__image-wrapper">
+      {%- render 'gift-card-image', background_image: section.blocks[0].settings.image -%}
+    </div>
+    <div class="gift-card-product__details">
+      <div class="gift-card-product__details-inner">
+      <div class="container">
+        <h1 class="h2 h2--desktop">{{ product.title }}</h1>
+
+        {% form 'product', product, data-product-form: '', data-product-handle: product.handle, class: 'gift-card-product__form' %}
+          {%- assign accordion_labels = 'gift_cards.product.recipient_group_label' | t -%}
+          {%- capture accordion_content -%}
+            <div class="gift-card-option" data-option-group="recipient">
+              <div class="form__group">
+                <label for="recipient-message-type-{{ section.id }}" class="visually-hidden">{{ 'gift_cards.recipient_form.message_type.label' | t }}</label>
+                <select
+                  id="recipient-message-type-{{ section.id }}"
+                  name="properties[Message type]"
+                  data-recipient-field
+                >
+                  <option value="" disabled selected hidden>{{ 'gift_cards.recipient_form.message_type.label' | t }}</option>
+                  {%- for i in (1..6) -%}
+                    {%- liquid
+                      assign option_key = 'gift_cards.recipient_form.message_type.options.' | append: i
+                      assign option = option_key | t
+                      if option == ''
+                        continue
+                      endif
+                    -%}
+                    <option value="{{ option }}">{{ option }}</option>
+                  {%- endfor -%}
+                </select>
+              </div>
+
+              <div class="form__group">
+                <label for="recipient-name-{{ section.id }}" class="visually-hidden">{{ 'gift_cards.recipient_form.name.label' | t }}</label>
+                <input
+                  id="recipient-name-{{ section.id }}"
+                  type="text"
+                  name="properties[Recipient name]"
+                  placeholder="{{ 'gift_cards.recipient_form.name.placeholder' | t }}"
+                  data-recipient-field
+                  required
+                  {% if form.errors contains 'name' %}
+                    aria-invalid="true"
+                    aria-describedby="RecipientForm-name-error-{{ section.id }}"
+                  {% endif %}
+                >
+
+                {%- if form.errors contains 'name' -%}
+                  <div id="RecipientForm-name-error-{{ section.id }}" class="input__error-message">
+                    {{ form.errors.messages.name }}
+                  </div>
+                {%- endif -%}
+              </div>
+
+
+              {%- if section.settings.enable_recipient_email -%}
+                <div class="form__group">
+                  <label for="recipient-email-{{ section.id }}" class="visually-hidden">{{ 'gift_cards.recipient_form.email.label' | t }}</label>
+                  <input
+                    id="recipient-email-{{ section.id }}"
+                    type="email"
+                    name="properties[Recipient email]"
+                    placeholder="{{ 'gift_cards.recipient_form.email.placeholder' | t }}"
+                    required
+                    {% if form.errors contains 'email' %}
+                      aria-invalid="true"
+                      aria-describedby="RecipientForm-email-error-{{ section.id }}"
+                    {% endif %}
+                  >
+
+                  {%- if form.errors contains 'email' -%}
+                    <div id="RecipientForm-email-error-{{ section.id }}" class="input__error-message">
+                      {{ form.errors.messages.email }}
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+              <div class="form__group">
+                {%- liquid
+                  assign max_chars_message_rendered = 'gift_cards.recipient_form.max_characters' | t: max_chars: section.settings.gift_card_recipient_message_max_characters
+                  assign message_label_rendered = 'gift_cards.recipient_form.message.label' | t
+                -%}
+
+                <label class="visually-hidden" for="recipient-message-{{ section.id }}">
+                  {{ message_label_rendered }}
+                  <span class="caption">
+                    {{ max_chars_message_rendered }}
+                  </span>
+                </label>
+
+                <textarea
+                  rows="1"
+                  id="recipient-message-{{ section.id }}"
+                  name="properties[Message]"
+                  maxlength="{{ section.settings.gift_card_recipient_message_max_characters }}"
+                  placeholder="{{ 'gift_cards.recipient_form.message.placeholder' | t }}"
+                  aria-label="{{ message_label_rendered }} {{ max_chars_message_rendered }}"
+                  data-recipient-field
+                  {% if form.errors contains 'message' %}
+                    aria-invalid="true"
+                    aria-describedby="RecipientForm-message-error-{{ section.id }}"
+                  {% endif %}
+                ></textarea>
+
+                {%- if form.errors contains 'message' -%}
+                  <div id="RecipientForm-message-error-{{ section.id }}" class="input__error-message">
+                    {{ form.errors.messages.message }}
+                  </div>
+                {%- endif -%}
+              </div>
+
+              {%- if section.settings.enable_send_on and section.settings.enable_recipient_email -%}
+                <div class="form__group form__group--send-on">
+                  <label class="form__label" for="recipient-send-on-{{ section.id }}">
+                    {{ 'gift_cards.recipient_form.send_on.label' | t }}
+                  </label>
+                  <input
+                    autocomplete="send_on"
+                    type="date"
+                    id="recipient-send-on-{{ section.id }}"
+                    name="properties[Send on]"
+                    placeholder="{{ 'gift_cards.recipient_form.send_on.placeholder' | t }}"
+                    pattern="\d{4}-\d{2}-\d{2}"
+                    min="{{ 'now' | date: '%Y-%m-%d' }}"
+                    max="{{ 'now' | date: "%s" | plus: 31536000 | date: '%Y-%m-%d' }}"
+                    {% if form.errors contains 'send_on' %}
+                      aria-invalid="true"
+                      aria-describedby="RecipientForm-send_on-error-{{ section.id }}"
+                    {% endif %}
+                  >
+
+                  {%- if form.errors contains 'send_on' -%}
+                    <div id="RecipientForm-send_on-error-{{ section.id }}" class="input__error-message">
+                      {{ form.errors.messages.send_on }}
+                    </div>
+                  {%- endif -%}
+                </div>
+              {%- endif -%}
+
+              <button class="gift-card-option__next-button btn btn--small btn--secondary" disabled data-next-button>
+                {{ 'gift_cards.product.accordion_next' | t }}
+              </button>              
+            </div>
+          {%- endcapture -%}
+          
+
+          {%- assign image_blocks = section.blocks | where: 'type', 'image_option' -%}
+          {%- if image_blocks.size > 0 -%}
+            {%- assign accordion_labels = 'gift_cards.product.appearance_group_label' | t | prepend: '|||' | prepend: accordion_labels %}
+            {%- capture accordion_content -%}
+              {{ accordion_content | append: '|||' }}
+              <div class="gift-card-option" data-option-group="appearance">
+                <ul class="gift-card-option__images list-none">
+                  {%- for block in image_blocks -%}
+                    <li>
+                      {%- assign file_name = block.settings.image | split: '/' | last -%}
+                      <input
+                        class="hide"
+                        type="radio"
+                        name="properties[_image]"
+                        id="option-{{ block.id }}"
+                        value="{{ file_name }}"
+                        data-image="{{ block.settings.image | image_url: width: 1280 }}"
+                        data-gift-card-image-option
+                        {% if forloop.first %}
+                          checked="checked"
+                        {% endif %}
+                      >
+                      <label
+                        for="option-{{ block.id }}"
+                        class="gift-card-option__swatch"
+                        style="background-image: url({{ block.settings.image | image_url: width: 1280 }})"
+                      >
+                        <span class="visually-hidden">{{ block.settings.title }}</span>
+                      </label>
+                    </li>
+                  {%- endfor -%}
+                </ul>
+
+                <button class="gift-card-option__next-button btn btn--small btn--secondary" disabled data-next-button>
+                  {{ 'gift_cards.product.accordion_next' | t }}
+                </button>
+              </div>
+            {%- endcapture -%}
+          {%- endif -%}
+
+          {%- assign accordion_labels = 'gift_cards.product.amount_group_label' | t | prepend: '|||' | prepend: accordion_labels -%}
+          {%- capture accordion_content -%}
+          {{ accordion_content | append: '|||' }}
+          <div class="gift-card-option" data-option-group="amount">
+            <div class="gift-card__add-wrapper">
+              {% # prettier-ignore-attribute %}
+              <gift-card-value-selector class="gift-card-value" data-json='{"variants": {{ product.variants | json }}}'>
+                <input  name="id" type="text" class="hide" value="">
+                <button
+                  type="button"
+                  aria-label="{{ 'accessibility_labels.decrement_quantity' | t }}"
+                  class="btn-none"
+                  data-decrement
+                >
+                  {% render 'icon-minus' %}
+                </button>
+
+                <div class="gift-card-value__variant" data-current-value>
+                  {{ 0 | money }}
+                </div>
+
+                <button
+                  type="button"
+                  aria-label="{{ 'accessibility_labels.increment_quantity' | t }}"
+                  class="btn-none"
+                  data-increment
+                >
+                  {% render 'icon-plus' %}
+                </button>
+              </gift-card-value-selector>
+
+              <button
+                type="submit"
+                class="btn btn--secondary btn--block"
+                name="add"
+                disabled
+              >
+                {{ 'products.product.add_to_cart' | t }}
+              </button>
+            </div>
+          </div>
+          {%- endcapture -%}
+            {%- liquid
+              assign accordion_labels = accordion_labels | split: '|||'
+              assign accordion_content = accordion_content | split: '|||'
+              render 'component-accordion-item', labels: accordion_labels, contents: accordion_content, modifiers: 'sm', multi: false, open_first: true
+            -%}
+        {% endform %}
+
+        <div class="product__description product__description--mobile-tabs">
+          {%- render 'product-accordion' -%}
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+{% render 'vite-tag' with '@/scripts/sections/main-product-gift-card.js' %}
+
+{% schema %}
+  {
+    "name": "Main Gift Card Product",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Message Settings"
+      },
+      {
+        "type": "number",
+        "id": "gift_card_recipient_message_max_characters",
+        "label": "Message max characters",
+        "default": 256
+      },
+      {
+        "type": "header",
+        "content": "Delivery Settings"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_recipient_email",
+        "label": "Enable Recipient Email",
+        "default": true,
+        "info": "Allow customers to enter an email address for the gift card to be sent to."
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_send_on",
+        "label": "Enable Send On Field",
+        "default": true,
+        "info": "Allow customers to select a date for the gift card to be sent on. Requires the Recipient Email field to be enabled."
+      }
+    ],
+    "blocks": [
+      {
+        "type": "image_option",
+        "name": "Image Option",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Image Option Settings"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Option Title"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Option Image"
+          }
+        ]
+      },
+      {
+        "type": "accordion_item",
+        "name": "Global Accordion Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Accordion label"
+          },
+          {
+            "type": "select",
+            "id": "content_type",
+            "label": "Content type",
+            "default": "text",
+            "options": [
+              {
+                "value": "text",
+                "label": "Text"
+              },
+              {
+                "value": "page",
+                "label": "Page"
+              }
+            ]
+          },
+          {
+            "type": "richtext",
+            "id": "content_text",
+            "label": "Content - text"
+          },
+          {
+            "type": "page",
+            "id": "content_page",
+            "label": "Content - page"
+          }
+        ]
+      }
+    ],
+    "enabled_on": {
+      "templates": ["product"]
+    }
+  }
+{% endschema %}

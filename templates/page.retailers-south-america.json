@@ -1,0 +1,199 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "container--sm",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    },
+    "main_page_header_hEMyiV": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Our Retailers",
+        "is_primary_heading": true,
+        "page_nav": "retailers-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_y87bit": {
+      "type": "store-locator",
+      "blocks": {
+        "store_PEEbCc": {
+          "type": "store",
+          "settings": {
+            "title": "Superette",
+            "contact": "<p>73 Barrys Point Road, <br/>Takapuna, Auckland, 6220, <br/>New Zealand<br/><br/>+64 9 360 2362<br/>https://www.superette.com.au</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_PEEbCc"
+      ],
+      "settings": {
+        "title": "New Zealand",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "store_locator_t6fRVy": {
+      "type": "store-locator",
+      "blocks": {
+        "store_BVxWzB": {
+          "type": "store",
+          "settings": {
+            "title": "Always Summer",
+            "contact": "<p>Limegrove Lifestyle Centre, Highway 1 Holetown, BB24016, Barbados<br/><br/>+1 246 434 6745</p>"
+          }
+        },
+        "store_JTLrqd": {
+          "type": "store",
+          "settings": {
+            "title": "Artifacts",
+            "contact": "<p>No. 55, Lane 76, <br/>Shinkong E.Rd.Dasi District, Taoyuan City, Taiwan<br/><br/>https://www.artifactsstore.com</p>"
+          }
+        },
+        "store_RkHkPQ": {
+          "type": "store",
+          "settings": {
+            "title": "Beach Project",
+            "contact": "<p>Shop 248, L2, Pacific Place, <br/>88 Queensway, Admiralty<br/>Hong Kong, Hong Kong</p>"
+          }
+        },
+        "store_Qwtqdi": {
+          "type": "store",
+          "settings": {
+            "title": "Bloomingdale's Dubai",
+            "contact": "<p>Financial Center Road,<br/>Downtown Dubai, United Arab Emirates<br/><br/>+971 4 350 5333<br/>https://bloomingdales.ae</p>"
+          }
+        },
+        "store_KyDzJF": {
+          "type": "store",
+          "settings": {
+            "title": "Bloomingdale's Kuwait",
+            "contact": "<p>360 Mall, Sixth Ring Road,<br/>South Surra, Kuwait City<br/>13151, Kuwait<br/><br/>+965 2208 4932<br/>https://bloomingdales.com.kw</p>"
+          }
+        },
+        "store_Wt3fd3": {
+          "type": "store",
+          "settings": {
+            "title": "Cocobum",
+            "contact": "<p>Four Seasons Resort, 2 Street,<br/>Jumeirah - Jumeirah 2, Dubai, UAE<br/><br/>+971 56 109 0990<br/>https://www.cocobum.com</p>"
+          }
+        },
+        "store_wqj8Ti": {
+          "type": "store",
+          "settings": {
+            "title": "Harvey Nichols Dubai",
+            "contact": "<p>Interchange Four - Mall of the Emirates, Sheikh Zayed Road<br/>Dubai - United Arab Emirates<br/><br/>+971 4 409 8888<br/>https://www.harveynichols.com/store/dubai</p>"
+          }
+        },
+        "store_wXL7NU": {
+          "type": "store",
+          "settings": {
+            "title": "Harvey Nichols Kuwait",
+            "contact": "<p>Grand Avenue, The Avenues, <br/>Al-Rai, 5th Ring Road<br/>Safat, Kuwait</p>"
+          }
+        },
+        "store_AcHb3y": {
+          "type": "store",
+          "settings": {
+            "title": "L Carene",
+            "contact": "<p>18 Pak Sha Road, <br/>G/F Causeway Bay, Hong Kong<br/><br/>852 2110 4687<br/>https://www.lcarene.com</p>"
+          }
+        },
+        "store_QGKeAN": {
+          "type": "store",
+          "settings": {
+            "title": "Michal & Moran",
+            "contact": "<p>24 he Behiar<br/>Tel Aviv, 6299808, Israel<br/></p>"
+          }
+        },
+        "store_WMtCMm": {
+          "type": "store",
+          "settings": {
+            "title": "Olivia Boutique",
+            "contact": "<p>Avenida Magdalena #1400 2145 PR, <br/>San Juan, 907 Puerto Rico<br/><br/>+1 787 722 6317<br/>https://shop-olivia.com</p>"
+          }
+        },
+        "store_ijiLqa": {
+          "type": "store",
+          "settings": {
+            "title": "Rubaiyat Saudi Arabia",
+            "contact": "<p>Stars Avenue Mall, King Abdulaziz Road, Al Zahra District, <br/>Jeddah, 23424, Saudi Arabia<br/><br/>+966 126 606 699<br/>http://rubaiyat.com</p>"
+          }
+        },
+        "store_9riNR8": {
+          "type": "store",
+          "settings": {
+            "title": "Sand Dollar Dubai",
+            "contact": "<p>2403 Smart Heights,<br/>Tecom, Jumeriah, 450609, <br/>Dubai - United Arab Emirates<br/><br/>+97 145 516 211<br/>https://sanddollardubai.com</p>"
+          }
+        },
+        "store_ND3Pd6": {
+          "type": "store",
+          "settings": {
+            "title": "Shop Label",
+            "contact": "<p>Shop 58 Constantia Village, Constantia Main Road,<br/>Cape Town, 7800, South Africa<br/><br/>https://shop-label.com</p>"
+          }
+        },
+        "store_bcJR3J": {
+          "type": "store",
+          "settings": {
+            "title": "The Luxury Edition",
+            "contact": "<p>Seaside Finolhu<br/>Maldives, Maldives</p>"
+          }
+        },
+        "store_yYTGyU": {
+          "type": "store",
+          "settings": {
+            "title": "Trinity",
+            "contact": "<p>TrinityShinsegae<br/>International Inc. Trinity,<br/> 449, Dosan Daero, Gangnam Gu Seoul, 06015, Korea</p>"
+          }
+        }
+      },
+      "block_order": [
+        "store_BVxWzB",
+        "store_JTLrqd",
+        "store_RkHkPQ",
+        "store_Qwtqdi",
+        "store_KyDzJF",
+        "store_Wt3fd3",
+        "store_wqj8Ti",
+        "store_wXL7NU",
+        "store_AcHb3y",
+        "store_QGKeAN",
+        "store_WMtCMm",
+        "store_ijiLqa",
+        "store_9riNR8",
+        "store_ND3Pd6",
+        "store_bcJR3J",
+        "store_yYTGyU"
+      ],
+      "settings": {
+        "title": "Rest Of World",
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "main_page_header_hEMyiV",
+    "store_locator_y87bit",
+    "store_locator_t6fRVy"
+  ]
+}

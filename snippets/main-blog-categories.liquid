@@ -1,0 +1,101 @@
+{%- liquid
+  # ---------------------------------------------------------------
+  # MAIN BLOG FEED
+  # ---------------------------------------------------------------
+  # This section is used to display a list of articles from a
+  # specific blog. The articles are filtered by a specific tag.
+  # Posts will only display if no current tags are applied.
+
+  # theme-check-disable UnusedAssign
+
+  assign category_0_title = section.blocks[0].settings.title
+  assign category_0_tag = section.blocks[0].settings.tag | downcase
+  assign category_0_articles = ''
+
+  assign category_1_title = section.blocks[1].settings.title
+  assign category_1_tag = section.blocks[1].settings.tag | downcase
+  assign category_1_articles = ''
+
+  assign category_2_title = section.blocks[2].settings.title
+  assign category_2_tag = section.blocks[2].settings.tag | downcase
+  assign category_2_articles = ''
+
+  assign category_3_title = section.blocks[3].settings.title
+  assign category_3_tag = section.blocks[3].settings.tag | downcase
+  assign category_3_articles = ''
+
+  # Loop over articles and push handles to arrays
+  for article in blog.articles offset: 3
+    assign tags_downcase = article.tags | join: ',' | downcase | split: ','
+
+    if tags_downcase contains category_0_tag
+      assign category_0_articles = category_0_articles | append: ',' | append: article.handle
+    elsif tags_downcase contains category_1_tag
+      assign category_1_articles = category_1_articles | append: ',' | append: article.handle
+    elsif tags_downcase contains category_2_tag
+      assign category_2_articles = category_2_articles | append: ',' | append: article.handle
+    elsif tags_downcase contains category_3_tag
+      assign category_3_articles = category_3_articles | append: ',' | append: article.handle
+    endif
+  endfor
+
+  assign category_0_articles = category_0_articles | remove_first: ',' | split: ','
+  assign category_1_articles = category_1_articles | remove_first: ',' | split: ','
+  assign category_2_articles = category_2_articles | remove_first: ',' | split: ','
+  assign category_3_articles = category_3_articles | remove_first: ',' | split: ','
+
+  # theme-check-enable UnusedAssign
+-%}
+
+{% # Recent Articles %}
+<div class="main-blog__category">
+  <ul class="main-blog__grid list-none">
+    {% for article in blog.articles limit: 3 %}
+      <li
+        {% if forloop.index == 3 %}
+          class="hide--max-md"
+        {% endif %}
+      >
+        {% render 'article-card', article: article %}
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% # Categories %}
+{%- for i in (i..4) -%}
+  {%- liquid
+    assign title = 'category_' | append: i | append: '_title'
+    assign tag = 'category_' | append: i | append: '_tag'
+    assign handles = 'category_' | append: i | append: '_articles'
+
+    assign handle_count = [handles].size | plus: 0
+    if handle_count == 0
+      continue
+    endif
+  -%}
+
+  <div class="main-blog__category">
+    <div class="container container--fluid">
+      <div class="main-blog__category-header">
+        <h2 class="h6">{{ [title] | default: [tag] }}</h2>
+        <a href="{{ blog.url }}/tagged/{{ [tag] | handleize }}" class="btn btn--text">
+          {{ 'blogs.general.view_all' | t }}
+          {%- render 'icon-chevron-right-sm' -%}
+        </a>
+      </div>
+    </div>
+
+    <ul class="main-blog__grid list-none">
+      {%- for handle in [handles] limit: 3 -%}
+        <li
+          {% if forloop.index == 3 %}
+            class="hide--max-md"
+          {% endif %}
+        >
+          {%- render 'article-card', article: articles[handle] -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+{%- endfor -%}

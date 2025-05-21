@@ -1,0 +1,326 @@
+{% liquid
+  assign text_color = section.settings.text_color
+  assign text_color_alpha = text_color.alpha
+  if text_color_alpha == 0
+    assign text_color = blank
+  endif
+  assign background_color = section.settings.background_color
+  assign background_color_alpha = background_color.alpha
+  if background_color_alpha == 0
+    assign background_color = blank
+  endif
+
+  assign pre_title = section.settings.pre_title
+  assign title = section.settings.title
+  assign post_title = section.settings.post_title
+  assign content = section.settings.content
+  assign button_label_1 = section.settings.button_label_1
+  assign button_link_1 = section.settings.button_link_1
+  assign button_style_1 = section.settings.button_style_1
+  assign button_label_2 = section.settings.button_label_2
+  assign button_link_2 = section.settings.button_link_2
+  assign button_style_2 = section.settings.button_style_2
+
+  assign show_button_1 = false
+  if button_label_1 != blank and button_link_1 != blank
+    assign show_button_1 = true
+  endif
+  assign show_button_2 = false
+  if button_label_2 != blank and button_link_2 != blank
+    assign show_button_2 = true
+  endif
+
+  assign show_section = false
+  if pre_title != blank or title != blank or post_title != blank or content != blank or show_button_1 or show_button_2 or section.blocks.size > 0
+    assign show_section = true
+  endif
+%}
+
+{% if show_section %}
+  {%- capture section_styles -%}
+    {%- if text_color != blank -%}--text-color: {{ text_color }};{%- endif -%}
+    {%- if background_color != blank -%}--background-color: {{ background_color }};{%- endif -%}
+  {%- endcapture -%}
+
+  <section
+    class="section section-featured-logos"
+    data-section-id="{{ section.id }}"
+    data-section-type="featured-logos"
+    {% if section_styles != blank %}
+      style="{{ section_styles }}"
+    {% endif %}
+  >
+    <div class="container">
+      {% render 'section-content',
+        text_color: text_color,
+        pre_title: pre_title,
+        title: title,
+        post_title: post_title,
+        content: content,
+        show_button_1: show_button_1,
+        button_label_1: button_label_1,
+        button_link_1: button_link_1,
+        button_style_1: button_style_1,
+        show_button_2: show_button_2,
+        button_label_2: button_label_2,
+        button_link_2: button_link_2,
+        button_style_2: button_style_2
+      %}
+    </div>
+    <div class="container container--fluid container--flush-max-lg">
+      <ul class="featured-logos__slider list-inline carousel" data-slider-container>
+        {%- liquid
+          assign block_length = section.blocks.size
+          if block_length > 0
+            capture block_width
+              case block_length
+                when 1
+                  echo ''
+                when 2
+                  echo 'half'
+                when 3
+                  echo 'third'
+                when 4
+                  echo 'quarter'
+                when 5
+                  echo 'fifth'
+                when 6
+                  echo 'sixth'
+              endcase
+            endcapture
+          endif
+        -%}
+        {%- for block in section.blocks -%}
+          {%- assign max_size = block.settings.img_max | append: 'px' -%}
+
+          {%- capture logo_markup -%}
+          {%- render 'component-image',
+            image: block.settings.image,
+            aspect_ratio: 'natural',
+            max_width: 480,
+            sizes: max_size
+          -%}
+        {%- endcapture -%}
+
+          <li class="slide slide--small featured-logos__slide {{ block_width }} shopify-block-{{ block.id }}">
+            {%- if block.settings.link != blank -%}
+              <a
+                href="{{ block.settings.link }}"
+                class="featured-logos__wrapper"
+                {% if block.settings.link_new_tab %}
+                  target="_blank"
+                {% endif %}
+              >
+                {{ logo_markup }}
+              </a>
+            {%- else -%}
+              <div class="featured-logos__wrapper">
+                {{ logo_markup }}
+              </div>
+            {%- endif -%}
+          </li>
+
+          {%- capture block_styles -%}
+          {{ block_styles }}
+
+          .shopify-block-{{ block.id }} .featured-logos__wrapper {
+            max-width: {{ max_size }};
+          }
+        {%- endcapture -%}
+        {%- endfor -%}
+      </ul>
+    </div>
+  </section>
+{% endif %}
+
+<style>
+  {{ block_styles }}
+
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% render 'vite-tag' with '@/scripts/sections/featured-logos.js' %}
+
+{% schema %}
+  {
+    "name": "Featured Logos",
+    "class": "featured-logos",
+    "max_blocks": 6,
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background colour"
+      },
+      {
+        "type": "color",
+        "id": "text_color",
+        "label": "Text colour"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "pre_title",
+        "label": "Pre title"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title",
+        "default": "Featured Logos"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "post_title",
+        "label": "Post title"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "content",
+        "label": "Content"
+      },
+      {
+        "type": "text",
+        "id": "button_label_1",
+        "label": "First button label",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "First button link",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "button_style_1",
+        "label": "First button style",
+        "default": "",
+        "options": [
+          {
+            "value": "",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          },
+          {
+            "value": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "button_label_2",
+        "label": "Second button label",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "url",
+        "id": "button_link_2",
+        "label": "Second button link",
+        "info": "Leave the label or link blank to hide the button."
+      },
+      {
+        "type": "select",
+        "id": "button_style_2",
+        "label": "Second button style",
+        "default": "",
+        "options": [
+          {
+            "value": "",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          },
+          {
+            "value": "text",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Logo image"
+          },
+          {
+            "type": "range",
+            "id": "img_max",
+            "label": "Image max width",
+            "min": 0,
+            "max": 200,
+            "step": 5,
+            "unit": "px",
+            "default": 100
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "Link",
+            "info": "Optional"
+          },
+          {
+            "type": "checkbox",
+            "id": "link_new_tab",
+            "label": "Open link in new tab?",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Logos"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

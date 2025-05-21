@@ -1,0 +1,133 @@
+<div class="fader fader--filters" data-results-filter-toggle></div>
+
+<div
+  class="results-filter__drawer filters-drawer is-hidden"
+  aria-hidden="true"
+  data-results-filter-drawer
+>
+  <div class="results-filter__wrapper">
+    <div class="results-filter__header">
+      <button type="button" class="btn-none" data-results-filter-toggle>{% render 'icon-cross' %}</button>
+    </div>
+
+    <div class="results-filter__row">
+      {%- for filter in results.filters -%}
+        <div class="results-filter__filter-row">
+          <span class="h6">{{ filter.label }}</span>
+
+          <div data-results-filter-content>
+            {%- case filter.type -%}
+              {%- when 'boolean', 'list' -%}
+                <ul class="results-filter__filter-list">
+                  {%- for filter_value in filter.values -%}
+                    {% unless filter_value.count == 0 and filter_value.active == false -%}
+                      <li class="results-filter__filter-value">
+                        <input
+                          type="checkbox"
+                          name="{{ filter_value.param_name }}"
+                          value="{{ filter_value.value }}"
+                          id="Filter-{{ filter.param_name }}-{{ forloop.index }}"
+                          {% if filter_value.active -%}
+                            checked
+                          {%- endif %}
+                          {% if filter_value.count == 0 and filter_value.active == false -%}
+                            disabled
+                          {%- endif %}
+                        >
+                        <label class="body-small" for="Filter-{{ filter.param_name }}-{{ forloop.index }}">
+                          {{ filter_value.label }}
+                        </label>
+                      </li>
+                    {% endunless %}
+                  {%- endfor -%}
+                </ul>
+              {%- when 'price_range' -%}
+                {%- liquid
+                  assign range_min = 0
+                  assign range_max = filter.range_max | divided_by: 100.0 | ceil
+                  assign min_value = range_min
+                  if filter.min_value.value
+                    assign min_value = filter.min_value.value | divided_by: 100.0 | floor
+                  endif
+                  assign max_value = range_max
+                  if filter.max_value.value
+                    assign max_value = filter.max_value.value | divided_by: 100.0 | ceil
+                  endif
+                -%}
+
+                <div class="results-filter__filter-range">
+                  <div class="results-filter__filter-range-from">
+                    <label class="body-small" for="Filter-{{ filter.min_value.param_name }}">From</label>
+
+                    <span class="body-small">{{ cart.currency.symbol }}</span>
+
+                    <input
+                      name="{{ filter.min_value.param_name }}"
+                      id="Filter-{{ filter.min_value.param_name }}"
+                      type="number"
+                      class="body-small"
+                      placeholder="{{ range_min }}"
+                      min="{{ range_min }}"
+                      max="{{ max_value }}"
+                      {% if filter.min_value.value -%}
+                        value="{{ min_value }}"
+                      {%- endif %}
+                      data-results-filter-price-range-min
+                    >
+                  </div>
+                  <div class="results-filter__filter-range-to">
+                    <label class="body-small" for="Filter-{{ filter.max_value.param_name }}">To</label>
+
+                    <span class="body-small">{{ cart.currency.symbol }}</span>
+
+                    <input
+                      name="{{ filter.max_value.param_name }}"
+                      id="Filter-{{ filter.max_value.param_name }}"
+                      type="number"
+                      class="body-small"
+                      placeholder="{{ range_max }}"
+                      min="{{ min_value }}"
+                      max="{{ range_max }}"
+                      {% if filter.max_value.value -%}
+                        value="{{ max_value }}"
+                      {%- endif %}
+                      data-results-filter-price-range-max
+                    >
+                  </div>
+                </div>
+            {%- endcase -%}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="results-filter__footer" data-results-filter-footer>
+    {%- liquid
+      assign results_params = ''
+      if results.terms != blank
+        assign results_params = '?type=product' | append: '&q=' | append: results.terms
+      endif
+
+      if results.sort_by != blank
+        if results_params == ''
+          assign results_params = '?sort_by=' | append: results.sort_by
+        else
+          assign results_params = results_params | append: '&sort_by=' | append: results.sort_by
+        endif
+      endif
+    -%}
+
+    <a
+      class="btn btn--block btn--secondary"
+      href="{{ results.url }}{{ results_params }}"
+      data-results-filter-clear-link
+    >
+      {{ 'collections.filtering.clear_all' | t }}
+    </a>
+
+    <button type="submit" class="btn btn--block" data-results-filter-submit>
+      {{ 'collections.filtering.apply' | t }}
+    </button>
+  </div>
+</div>

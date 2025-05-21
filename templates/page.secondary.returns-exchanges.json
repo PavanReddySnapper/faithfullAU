@@ -1,0 +1,149 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": false,
+        "page_nav": "shipping",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "rich_text_gpKVPG": {
+      "type": "rich-text",
+      "blocks": {
+        "title_Qrwybj": {
+          "type": "title",
+          "settings": {
+            "title": "Returns",
+            "is_primary_heading": true,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_yqfp8M": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We want you to be completely satisfied with your online purchase. If you change your mind for any reason, you can return any full priced item within 21 days of the purchase date for a refund or store credit equal to the returned item’s value. Store credit notes are valid for 12 months from the date of issue.</p><p>Please note, sale items that are marked down and not purchased as ‘Final Sale’ can be returned for a refund or store credit. Items purchased as 'Final Sale' cannot be returned and are not eligible for refund, store credit or exchange, unless the items are deemed faulty (see Faulty Items Returns Policy below). Items purchased using store credit or a promotional discount code (including our first order offer) are eligible to be returned for a refund or store credit equal to the returned item’s value (unless the item was purchased as final sale).</p><p>To make a return, simply follow the steps on our Returns Portal. Once your return request has been approved, you will receive an email with further instructions on how to send your order back to us.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "button_dJVciG": {
+          "type": "button",
+          "settings": {
+            "text": "Make a Return",
+            "link": "#",
+            "button_style": "btn--primary",
+            "margin_bottom": 24
+          }
+        },
+        "title_zgnQYV": {
+          "type": "title",
+          "settings": {
+            "title": "Conditions of Return",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 8
+          }
+        },
+        "richtext_hQtGnp": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Please ensure your items meet the below conditions of return. Item/s must be:</p><ol><li>Sent back to us within 21 days from the purchase date;</li><li>Returned in their original condition: unworn, unaltered, unused and unwashed</li><li>Returned with all original tags attached. Please note that all swimwear must be returned with the protective hygiene strip intact and will not be accepted if this strip is removed or altered.</li><li>Delivered back to us within 30 days from the order delivery date.</li></ol>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 32
+          }
+        },
+        "title_BJaTwg": {
+          "type": "title",
+          "settings": {
+            "title": "Costs of Return",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 8
+          }
+        },
+        "richtext_QiLUMD": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Customers will be responsible for any shipping and handling charges to return any unwanted items. We do not provide prepaid return labels, so you will need to organize this with your local courier. We take no responsibility for missing incoming deliveries of a return. We encourage you to return your item/s via registered or traceable postal services as return parcels remain the responsibility of the customer until received by Faithfull the Brand. Please note that original shipping charges and taxes/duties are non-refundable.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 40
+          }
+        },
+        "divider_N4tQQp": {
+          "type": "divider",
+          "settings": {
+            "margin_bottom": 40
+          }
+        },
+        "title_8MfgUQ": {
+          "type": "title",
+          "settings": {
+            "title": "Exchanges",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_kN9yzC": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We currently do not offer exchanges through our website and instead encourage you to return a full priced item for refund and place a new order for your desired item.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_Qrwybj",
+        "richtext_yqfp8M",
+        "button_dJVciG",
+        "title_zgnQYV",
+        "richtext_hQtGnp",
+        "title_BJaTwg",
+        "richtext_QiLUMD",
+        "divider_N4tQQp",
+        "title_8MfgUQ",
+        "richtext_kN9yzC"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "padding": "none",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_gpKVPG"
+  ]
+}

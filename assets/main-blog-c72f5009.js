@@ -1,0 +1,1 @@
+import{r as n}from"./theme-sections-ecef3d83.js";import{i as s}from"./pagination-982e48d2.js";const t="main-blog";var i,e,o;const r=((o=(e=(i=window.Shopify)==null?void 0:i.theme)==null?void 0:e.sections)==null?void 0:o.registered)||{},d=typeof r[t]>"u";d&&n(t,{onLoad(){s(this.id)}});

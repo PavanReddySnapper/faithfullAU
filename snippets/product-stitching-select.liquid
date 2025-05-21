@@ -1,0 +1,61 @@
+{%- if stitching_products.count > 1 -%}
+  <variant-select class="variant-select">
+    <button class="variant-select__trigger btn-none" data-trigger>
+      <span class="variant-select__option h6">
+        {%- liquid
+          assign swatch_label = product.metafields.stitching.swatch.value.name
+
+          # Fallback if swatch is not assigned
+          if swatch_label == blank
+            assign color_option = product.options_with_values | where: 'name', 'Color' | first
+            if color_option == blank
+              assign color_option = product.options_with_values | where: 'name', 'Colour' | first
+            endif
+            assign swatch_label = color_option.values[0] | default: 'none'
+          endif
+        -%}
+        <span
+          href="{{ product.url }}"
+          class="swatch swatch--{{ swatch_label | handleize }}"
+          aria-label="{{ product.title }} Swatch"
+        ></span>
+        {{ swatch_label }}
+      </span>
+      {%- render 'icon-chevron-down' -%}
+    </button>
+
+    <div class="variant-select__content" data-content>
+      <ul class="variant-select__list list-none">
+        {%- for stitching_product in stitching_products -%}
+          {%- liquid
+            if stitching_product == product
+              continue
+            endif
+
+            assign swatch = stitching_product.metafields.stitching.swatch.value
+            assign swatch_label = swatch.name
+
+            # Fallback if swatch is not assigned
+            if swatch_label == blank
+              assign color_option = stitching_product.options_with_values | where: 'name', 'Color' | first
+              if color_option == blank
+                assign color_option = stitching_product.options_with_values | where: 'name', 'Colour' | first
+              endif
+              assign swatch_label = color_option.values[0] | default: 'none'
+            endif
+          -%}
+
+          <li>
+            <a href="{{ stitching_product.url }}" class="variant-select__option h6">
+              <span
+                class="swatch swatch--{{ swatch_label | handleize }}{% if stitching_product == product %} swatch--active{% endif %}"
+                aria-label="{{ stitching_product.title }} Swatch"
+              ></span>
+              {{ swatch_label }}
+            </a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  </variant-select>
+{%- endif -%}

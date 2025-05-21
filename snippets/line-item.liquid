@@ -1,0 +1,44 @@
+<li class="line-item">
+  <div class="line-item__content">
+    <a href="{{ line_item.product.url }}" class="line-item__title">{{ line_item.product.title }}</a>
+
+    <div class="line-item__prices">
+      <span class="line-item__price">{{ line_item.final_price | money }}</span>
+
+      {%- if line_item.original_price > line_item.final_price -%}
+        <span class="line-item__price line-item__price-original">{{ line_item.original_price | money }}</span>
+      {%- endif -%}
+    </div>
+
+    <ul class="list-none">
+      <li>x{{ line_item.quantity }}</li>
+
+      {% for option in line_item.options_with_values %}
+        {% if option.value != 'Default Title' %}
+          <li>{{ option.name }}: {{ option.value }}</li>
+        {% endif %}
+      {% endfor %}
+
+      {% for property in line_item.properties %}
+        {% assign property_first_char = property.first | slice: 0 %}
+        {% if property.last != blank and property_first_char != '_' %}
+          <li>{{ property.first }}: {{ property.last }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+
+  <a href="{{ line_item.product.url }}">
+    {%- if line_item.image -%}
+      {%- render 'component-image',
+        image: line_item.image,
+        img_class: 'line-item__image',
+        aspect_ratio: 'portrait',
+        max_width: 320,
+        sizes: '5rem'
+      -%}
+    {%- else -%}
+      <div class="line-item__image aspect-ratio aspect-ratio--portrait"></div>
+    {%- endif -%}
+  </a>
+</li>

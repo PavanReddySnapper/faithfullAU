@@ -1,0 +1,23 @@
+{% if shop.enabled_currencies.size > 1 %}
+  {%- capture modal_content -%}
+    <p class="currencies__label body-small">{{ 'layout.header.currency_select' | t }}</p>
+
+    <ul class="currencies__list list-none">
+      {%- for currency in shop.enabled_currencies -%}
+        <li>
+          <a class="currency-list__link btn btn--text" href="?currency={{ currency.iso_code }}">
+            {{ currency.symbol }}{{ currency.iso_code }}
+            {% if currency == cart.currency %}{% render 'icon-tick' %}{% endif %}
+          </a>
+        </li>
+      {%- endfor -%}
+    </ul>
+  {%- endcapture -%}
+
+  {%- render 'component-modal-dialog',
+    modal_class: 'currency sm',
+    modal_id: 'currency--footer',
+    modal_content: modal_content,
+    add_modal_overlay: true
+  -%}
+{% endif %}

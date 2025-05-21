@@ -1,0 +1,88 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Size Guide",
+        "is_primary_heading": false,
+        "page_nav": "size-guide-menu-2024",
+        "navigation_sticky": true,
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "rich_text_zifCq7": {
+      "type": "rich-text",
+      "blocks": {
+        "title_GebUP4": {
+          "type": "title",
+          "settings": {
+            "title": "Swim Size Guide",
+            "is_primary_heading": true,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_97axiF": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Please note that this is a general guide to sizing, and the measurements provided are to give you an approximate idea of what size you will be in faithfull the brand against against your own measurements. Some styles may differ from the below fit guide. We make effort to providing sizing information in each item description.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 4
+          }
+        }
+      },
+      "block_order": [
+        "title_GebUP4",
+        "richtext_97axiF"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 48,
+        "bottom_margin_mobile": 48
+      }
+    },
+    "size-guide": {
+      "type": "main-page-size-guide",
+      "settings": {
+        "size_type": "Apparel",
+        "table_title": "",
+        "bottom_margin_desktop": 48,
+        "bottom_margin_mobile": 32
+      }
+    },
+    "main_page_size_guide_YCDfLn": {
+      "type": "main-page-size-guide",
+      "settings": {
+        "size_type": "Bra",
+        "table_title": "Bra Size",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_zifCq7",
+    "size-guide",
+    "main_page_size_guide_YCDfLn"
+  ]
+}

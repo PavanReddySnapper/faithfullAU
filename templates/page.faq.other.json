@@ -1,0 +1,81 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Frequently Asked Questions",
+        "is_primary_heading": false,
+        "page_nav": "faqs-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "faqs": {
+      "type": "main-page-faqs",
+      "blocks": {
+        "question_0": {
+          "type": "question",
+          "settings": {
+            "title": "Do you have any stockists?",
+            "content": "<p>Yes, FAITHFULL is stocked at many retailers across the world. Please see our <a href=\"/pages/retailers-australia\" title=\"Retailers Australia\">Retailers Page</a> to find the nearest location. </p>"
+          }
+        },
+        "question_1": {
+          "type": "question",
+          "settings": {
+            "title": "Is this retailer a genuine stockist of Faithfull The Brand?",
+            "content": "<p>All genuine stockists of FAITHFULL are listed on our <a href=\"/pages/retailers-australia\" title=\"Retailers Australia\">Retailers Page</a> Please reach out to our FAITHFULL customer care team if you have any questions.</p>"
+          }
+        },
+        "question_2": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I visit a Faithfull The Brand store?",
+            "content": "<p>FAITHFULL currently dos not operate any physical stores. To find the closest stockist near you, please see our <a href=\"/pages/retailers-australia\" title=\"Retailers Australia\">Retailers Page. </a><br/></p>"
+          }
+        },
+        "question_3": {
+          "type": "question",
+          "settings": {
+            "title": "How do I contact someone for an influencer collaboration?",
+            "content": "<p>For all collaboration enquiries, please email our team at <a href=\"mailto:social@faithfullthebrand.com\" title=\"mailto:social@faithfullthebrand.com\">social@faithfullthebrand.com</a>.</p>"
+          }
+        },
+        "question_4": {
+          "type": "question",
+          "settings": {
+            "title": "I have sent an enquiry. When will I receive a reply from customer service?",
+            "content": "<p>Our customer care team operates during business hours on Monday to Friday from 9am to 5:00pm AEST.</p><p>If you have submitted an enquiry or sent an email, please allow up 2 to 3 business days to receive a response from our team.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_0",
+        "question_1",
+        "question_2",
+        "question_3",
+        "question_4"
+      ],
+      "settings": {
+        "title": "",
+        "is_primary_heading": false,
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "faqs"
+  ]
+}

@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Swim Fit & Styling Guide",
+        "is_primary_heading": false,
+        "page_nav": "swim-fit-styling-guide",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "overview": {
+      "type": "main-page-fit-overview",
+      "blocks": {
+        "detail_DjTkkF": {
+          "type": "detail",
+          "settings": {
+            "title": "Fit",
+            "text": "Best suited for cup sizes A to C. For help on sizing, see here to see our Swim Size Guide"
+          }
+        },
+        "detail_6wEKXG": {
+          "type": "detail",
+          "settings": {
+            "title": "Coverage",
+            "text": "Low"
+          }
+        },
+        "detail_hDbDUV": {
+          "type": "detail",
+          "settings": {
+            "title": "Bust Support",
+            "text": "Light to Medium"
+          }
+        },
+        "detail_cX3kJJ": {
+          "type": "detail",
+          "settings": {
+            "title": "Styling Tips",
+            "text": "For customisable bust coverage, opt for our Triangle Tops designed with sliding cups. Adjustable and tie straps can be shortened or lengthened to customise the fit and support to your body."
+          }
+        },
+        "detail_JytNHb": {
+          "type": "detail",
+          "settings": {
+            "title": "Pair with",
+            "text": "Wear our triangle tops with triangle-shaped or cheeky coverage bikini bottoms."
+          }
+        }
+      },
+      "block_order": [
+        "detail_DjTkkF",
+        "detail_6wEKXG",
+        "detail_hDbDUV",
+        "detail_cX3kJJ",
+        "detail_JytNHb"
+      ],
+      "settings": {
+        "title": "Triangle Tops",
+        "text": "<p>A classic silhouette that never goes out of style, our Triangle bikini tops offer light support and minimal coverage. These styles are suitable for all body shapes and designed with adjustable tie up straps so you can customise your perfect fit both around the neck and under bust.</p>",
+        "button_text": "Shop Now",
+        "link": "",
+        "image_1": "shopify://shop_images/d1f3363c52b153c198c7adba446a82b1.png",
+        "image_2": "shopify://shop_images/Image_605f5178-4230-4b0a-bb3b-274ab54f08f4.jpg"
+      }
+    },
+    "rich_text_EeQnAz": {
+      "type": "rich-text",
+      "blocks": {
+        "image_YPnY6Q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/triangle_image_text.jpg",
+            "image_mobile": "shopify://shop_images/triangle_image_text_mobile.jpg",
+            "aspect_ratio": "natural",
+            "full_width_mobile": true,
+            "image_position": "row",
+            "image_alignment": "flex-start",
+            "image_position_mobile": "column"
+          }
+        },
+        "title_nBKKz7": {
+          "type": "title",
+          "settings": {
+            "title": "Style Focus",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 4
+          }
+        },
+        "title_aqKMPb": {
+          "type": "title",
+          "settings": {
+            "title": "How To Tie the Marzia Bikini Top",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_xkUp7w": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>A classic silhouette that never goes out of style, our Triangle bikini tops offer light support and minimal coverage. These styles are suitable for all body shapes and designed with adjustable tie up straps so you can customise your perfect fit both around the neck and under bust.</p><ol><li>With the halter neck straps tied, bring the top behind you so the strap between the cups runs straight across your back. Put your arms through the loop and bring the top to your shoulders, just like a jacket.</li><li>The neck ties should be behind the neck and the waist strap should be sitting across the back. Bring the bust cups and tie ends in front of you, and position the cups where desired.</li><li>Cross over the ties at the front waist and bring the ties to the back waist. For a double wrap effect, cross over the ties again at the back and bring the ties to the front. Tie it securely on the front or side as desired.</li></ol>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "button_HQ67Ai": {
+          "type": "button",
+          "settings": {
+            "text": "Shop Marzia Bikini top",
+            "link": "shopify://products/marzia-bikini-top-cocoa",
+            "button_style": "btn--secondary",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "image_YPnY6Q",
+        "title_nBKKz7",
+        "title_aqKMPb",
+        "richtext_xkUp7w",
+        "button_HQ67Ai"
+      ],
+      "settings": {
+        "background_color": "var(--color-neutral-20)",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--lg",
+        "padding": "lg",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    }
+  },
+  "order": [
+    "header",
+    "overview",
+    "rich_text_EeQnAz"
+  ]
+}

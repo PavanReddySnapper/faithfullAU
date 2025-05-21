@@ -1,0 +1,104 @@
+<section
+  class="section section--store-locator"
+  data-section-id="{{ section.id }}"
+  data-section-type="store-locator"
+>
+  <div class="container container--flush container--md">
+    {% if section.settings.title != blank %}
+      <h2 class="h4 store-locator--title">{{ section.settings.title }}</h2>
+      <div class="store-locator--stores">
+        {% for block in section.blocks %}
+          <div class="store-locator--store">
+            {% if block.settings.title != blank %}
+              <p class="store--title h6">{{ block.settings.title }}</p>
+            {% endif %}
+            {% if block.settings.contact != blank %}
+              <div class="store--contact body-medium">{{ block.settings.contact }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Store Locator",
+    "class": "store-locator",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Section Settings"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 0
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Store",
+        "type": "store",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Store Name"
+          },
+          {
+            "type": "richtext",
+            "id": "contact",
+            "label": "Contact",
+            "info": "Add relevant contact details here like Physical Address, Phone Number and Links."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Store Locator"
+      }
+    ],
+    "enabled_on": {
+      "templates": ["*"]
+    }
+  }
+{% endschema %}

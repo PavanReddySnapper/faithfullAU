@@ -1,0 +1,83 @@
+{%- comment -%}
+  Parameters:
+    form_name: {string} name of form e.g. 'customer'
+    id: {string}id for form
+    value: {string} value of form e.g. 'newsletter'
+    class: {string} class for form element
+    button_style: {string} 'text' or 'icon'
+    name_field: {boolean} to show name field
+{%- endcomment -%}
+
+{% assign button_style = button_style | default: 'text' %}
+
+{%- form form_name, class: class, id: id -%}
+  {% if form.errors contains 'form' %}
+    <div class="form__error-message">
+      {{ form.errors.messages.form }}
+    </div>
+  {% endif %}
+
+  {%- if form.posted_successfully? -%}
+    <p class="form__success-message">{{ 'general.newsletter_form.confirmation' | t }}</p>
+    {%- render 'ga4-signup', signup_method: 'newsletter' -%}
+  {%- else -%}
+    {%- if name_field -%}
+      <div class="subscribe-form__wrapper form__group form__group--first-name">
+        <label for="{{ id }}__first_name">{{ 'general.newsletter_form.first_name.label' | t }}</label>
+        <input type="hidden" name="contact[tags]" value="{{ value }}">
+        <input
+          type="text"
+          required
+          name="contact[first_name]"
+          id="{{ id }}__first_name"
+          class="subscribe-form__input"
+          value=""
+          autocorrect="off"
+          autocapitalize="off"
+          placeholder="{{ 'general.newsletter_form.first_name.placeholder' | t }}"
+        >
+
+        {% if form.errors contains 'first_name' %}
+          <div class="input__error-message">
+            {{ form.errors.translated_fields.first_name | capitalize }}
+            {{ form.errors.messages.first_name }}
+          </div>
+        {% endif %}
+      </div>
+    {%- endif -%}
+
+    <div class="subscribe-form__wrapper form__group form__group--email">
+      <label for="{{ id }}__email">{{ 'general.newsletter_form.email.label' | t }}</label>
+      <input type="hidden" name="contact[tags]" value="{{ value }}">
+      <input
+        type="email"
+        required
+        name="contact[email]"
+        id="{{ id }}__email"
+        class="subscribe-form__input"
+        value=""
+        autocorrect="off"
+        autocapitalize="off"
+        placeholder="{{ 'general.newsletter_form.email.placeholder' | t }}"
+      >
+
+      {% if form.errors contains 'email' %}
+        <div class="input__error-message">
+          {{ form.errors.translated_fields.email | capitalize }}
+          {{ form.errors.messages.email }}
+        </div>
+      {% endif %}
+
+      <button type="submit" class="btn btn--text subscribe-form__button" name="commit">
+        {%- if button_style == 'icon' -%}
+          <span class="visually-hidden">
+            {{ 'general.newsletter_form.submit' | t }}
+          </span>
+          {%- render 'icon-chevron-right-sm' -%}
+        {%- else -%}
+          {{ 'general.newsletter_form.submit' | t }}
+        {%- endif -%}
+      </button>
+    </div>
+  {%- endif -%}
+{%- endform -%}

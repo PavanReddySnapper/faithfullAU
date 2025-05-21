@@ -1,0 +1,296 @@
+{%- liquid
+  assign current_variant = product.selected_or_first_available_variant
+
+  assign compare_at_price = product.selected_or_first_available_variant.compare_at_price
+  if compare_at_price <= product.selected_or_first_available_variant.price
+    assign compare_at_price = false
+  endif
+-%}
+
+  {%- if section.settings.display_instalments_message -%}
+    {%- capture modal_trigger -%}
+    <button type="button" data-modal-trigger="installments" class="btn-none">
+      {{ 'products.instalments.modal_trigger' | t }}
+    </button>
+    {%- endcapture -%}
+
+    <div class="product__instalments-message">
+      {{ 'products.instalments.message_html' | t: modal_trigger: modal_trigger }}
+    </div>
+  {%- endif -%}
+
+{% form 'product', product, data-product-form: '', data-product-handle: product.handle, class: 'product-form' %}
+  <div class="product__prices body-large" data-price-wrapper>
+    <span
+      class="product__compare-at-price{% unless compare_at_price %} hide{% endunless %}"
+      data-product-compare-at-price
+    >
+      {{- compare_at_price | money -}}
+    </span>
+    <span class="product__price" data-product-price>
+      {{- product.selected_or_first_available_variant.price | money -}}
+    </span>
+  </div>  
+
+  {%- assign option_count = 0 -%}
+  {%- capture product_options -%}
+  {%-
+    # VARIANT SELECTOR
+    # ----------------
+    # This component is used to render the variant selector for a product.
+    # Parameters:
+    #   - product {required}: The product object to render the variant selector for.
+  -%}
+
+  {% for option in product.options_with_values %}
+    {%- liquid
+      assign option_label = option.name
+      if option.selected_value
+        assign option_label = option.selected_value
+      endif
+
+      if option.values.size > 1
+        assign option_count = option_count | plus: 1
+      endif
+
+      assign option_note = false
+      if current_variant.available == false
+        #assign option_note = 'products.product.sold_out' | t
+        assign option_note = 'Notify Me'
+      elsif current_variant.inventory_quantity == 1
+        assign option_note = 'products.product.one_remaining' | t
+      endif
+    -%}
+    <variant-select class="variant-select{% if option.values.size == 1 %} hide{% endif %}">
+      <button class="variant-select__trigger btn-none" data-trigger>
+        <span class="variant-select__option h6" data-trigger-label>
+          <span class="variant-select__option-value{% unless current_variant.available %} variant-select__option-value--unavailable{% endunless %}">
+            {{ option_label }}
+          </span>
+
+          {%- if option_note -%}
+            <span class="variant-select__option-note">
+              {{ option_note }}
+            </span>
+          {%- endif -%}
+        </span>
+
+        {%- render 'icon-chevron-down' -%}
+      </button>
+
+      <div class="variant-select__content" data-content>
+        <ul class="variant-select__list list-none">
+          {% for value in option.values %}
+            <li class="variant-select__option">
+              {%- liquid
+                assign optionId = product.id | append: option.name | append: value | md5
+                assign matching_variant = product.variants | where: 'option1', value | first
+
+                assign option_note = false
+                if matching_variant.available == false
+                  #assign option_note = 'products.product.sold_out' | t
+                  assign option_note = 'Notify Me'
+                elsif matching_variant.inventory_quantity == 1
+                  assign option_note = 'products.product.one_remaining' | t
+                endif
+              -%}
+
+              <input
+                type="radio"
+                id="{{ optionId }}"
+                value="{{ value | escape }}"
+                name="options[{{ option.name | escape }}]"
+                data-option-name="{{ option.name }}"
+                {% if option.selected_value == value %}
+                  checked=""
+                {% endif %}
+              >
+              <label for="{{ optionId }}" class="h6">
+                <span class="variant-select__option-value{% if matching_variant.available == false %} variant-select__option-value--unavailable{% endif %}">
+                  {{ value }}
+                </span>
+
+                {%- if option_note -%}
+                  <span class="variant-select__option-note">
+                    {{ option_note }}
+                  </span>
+                {%- endif -%}
+              </label>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </variant-select>
+  {%- endfor -%}
+
+
+    {%- liquid
+      assign stitching_products = product.metafields.stitching.products.value
+      if settings.product_page_display_swatches and stitching_products and stitching_products.count > 1
+        assign option_count = option_count | plus: 1
+        render 'product-stitching-select', stitching_products: product.metafields.stitching.products.value
+      endif
+    -%}
+  {%- endcapture -%}
+
+  <div class="product__form-actions-wrapper">
+    <div
+      class="product__form-actions"
+      {%- if section.settings.sticky_atc -%}
+        data-sticky-atc-bar
+      {%- endif -%}
+    >
+      <div class="product__form-options js" data-product-options data-option-count="{{ option_count }}">
+        {{ product_options }}
+      </div>
+
+      {% comment %}
+        In order for this form to submit, it needs to contain an input with name="id".
+        ProductForm() will automatically create this input (or make sure it has the
+        right value set if it already exists) on form submit based on the
+        currently selected variant. However, if JS is disabled we need a fallback.
+
+        Include a single <select> element which allows users to select all variants
+        as a fallback and present it only when JS is disabled. In addition,
+        make sure to hide the option inputs declared above, which is done with the
+        .js class which only shows its contents when JS is enabled.
+      {% endcomment %}
+      <noscript class="no-js">
+        <select name="id" data-product-select>
+          {% for variant in product.variants %}
+            {% capture variant_selected %}{% if variant == current_variant %}selected=""{% endif %}{% endcapture %}
+            {% capture variant_available %}{% unless variant.available %}disabled=""{% endunless %}{% endcapture %}
+            <option value="{{ variant.id }}" {{ variant_selected }} {{ variant_available }}>{{ variant.title }}</option>
+          {% endfor %}
+        </select>
+      </noscript>
+
+      {% if section.settings.include_qty_selector %}
+        <div class="quantity-selector quantity-selector--product">
+          <button
+            type="button"
+            data-quantity-decrement
+            aria-label="{{ 'accessibility_labels.decrement_quantity' | t }}"
+            disabled="disabled"
+            class="btn-none"
+          >
+            {% render 'icon-minus' %}
+          </button>
+          <input
+            required
+            class="qty-input"
+            type="number"
+            id="Quantity"
+            name="quantity"
+            value="1"
+            min="1"
+            aria-label="{{ 'products.product.quantity' | t }}"
+            autocomplete="off"
+            data-quantity-input
+          >
+          <button
+            type="button"
+            data-quantity-increment
+            aria-label="{{ 'accessibility_labels.increment_quantity' | t }}"
+            class="btn-none"
+          >
+            {% render 'icon-plus' %}
+          </button>
+        </div>
+      {% else %}
+        <input type="hidden" id="Quantity" name="quantity" value="1" min="1">
+      {% endif %}
+
+      {%- liquid
+        assign add_to_cart_label = 'products.product.add_to_cart' | t
+        if preorder_enabled
+          assign add_to_cart_label = 'products.preorder.add_to_cart' | t
+          assign preorder_message = product.metafields.preorder.message.value
+        endif
+      -%}
+
+      <div class="btn-container">
+        {% if product.vendor == "Giftnote" %}
+          <style>
+            .klaviyo-bis-trigger, .btn--add-to-cart{
+              display:none !important;
+            }
+            
+          </style>
+          <template id="giftnote-pdp">
+            <style>
+              #button{
+                border-top: none !important;
+                border-radius: 0;
+                padding: 1rem;
+                color: var(--button-secondary-color);
+                background-color: var(--button-secondary-background-color);
+                border-color: var(--button-secondary-border-color);
+                font-family: var(--font-body);
+                font-weight: var(--font-weight-body-bold);
+                font-size: .75rem;
+                line-height: 1.454;
+                letter-spacing: .0275rem;
+                text-transform: uppercase;
+                text-align: center;
+                white-space: nowrap;
+                text-decoration: none;
+                display: inline-flex;
+                align-items: center;
+                border: 1px solid var(--button-border-color);
+                border-radius: 0;
+                transition: color var(--transition-duration) var(--transition-timing), background-color var(--transition-duration) var(--transition-timing), opacity var(--transition-duration) var(--transition-timing), border-color var(--transition-duration) var(--transition-timing);
+              }
+              #button:hover{
+                color: var(--button-secondary-hover-color);
+                background-color: var(--button-secondary-hover-background-color);
+                border-color: var(--button-secondary-hover-border-color);
+              }
+            </style>
+          </template>
+          <giftnote-voucher-button
+            data-styles="giftnote-pdp"
+            data-label="Send as a gift"
+          ></giftnote-voucher-button>
+         {% endif %}
+        <button
+          type="submit"
+          class="btn btn--block btn--small btn--secondary btn--add-to-cart{% if option_count == 0 %} has-single-option{% endif %}"
+          name="add"
+          data-add-to-cart
+          data-label="{{ add_to_cart_label }}"
+          {% unless current_variant.available %}
+            disabled=""
+          {% endunless %}
+        >
+          {% liquid
+            if current_variant.available
+              echo add_to_cart_label
+            else
+              echo 'products.product.sold_out' | t
+            endif
+          -%}
+        </button>
+          {% if current_variant.available == false %}
+            <div  class="klaviyo-notify-button" >
+              <a class="btn klaviyo-bis-trigger" 
+                href="#" 
+                style="margin: 0px; width: auto;">
+                Notify Me
+              </a>
+            </div>
+          {% endif %}
+       
+      </div>
+
+      {%- if preorder_message != blank -%}
+        <div class="product__form-preorder">{{ preorder_message }}</div>
+        <input type="hidden" name="properties[_preorder_message]" value="{{ preorder_message }}">
+      {%- endif -%}
+
+      {%- if product.metafields.card.discount != blank -%}
+        <input type="hidden" name="properties[_discount_message]" value="{{ product.metafields.card.discount }}">
+      {%- endif -%}
+    </div>
+  </div>
+{% endform %}

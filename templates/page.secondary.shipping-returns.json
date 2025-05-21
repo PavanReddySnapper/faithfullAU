@@ -1,0 +1,313 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": true,
+        "page_nav": "shipping-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 48
+      }
+    },
+    "rich_text_pyee3p": {
+      "type": "rich-text",
+      "blocks": {
+        "title_FGxPBj": {
+          "type": "title",
+          "settings": {
+            "title": "RETURNS",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_xpYUQU": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>To return an item, simply follow the steps on our <a href=\"https://au.faithfullthebrand.com/a/return\"><span style=\"text-decoration:underline\">Returns Portal</span></a>.<br/><br/>Once the request has been approved, a confirmation email will provide details on how to process the return.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "button_azXhrd": {
+          "type": "button",
+          "settings": {
+            "text": "REQUEST RETURN",
+            "link": "shopify://pages/custom-region-returns",
+            "button_style": "btn--primary",
+            "margin_bottom": 24
+          }
+        },
+        "title_ngdVVw": {
+          "type": "title",
+          "settings": {
+            "title": "Return Conditions",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 20
+          }
+        },
+        "richtext_mjYth7": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Returns must meet the following criteria for approval. </p><p>All items must be processed via the <a href=\"https://au.faithfullthebrand.com/a/return\" title=\"https://au.faithfullthebrand.com/a/return\">FAITHFULL Returns Portal</a> within 14 days of the delivery date and returned in their original condition (unworn, unaltered, unused and unwashed) with the tags attached. Any sign of tag tampering will not be accepted. All swimwear must be returned with the protective hygiene strip intact. Any sign of removal or alteration will not be accepted. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "divider_Dzd3gf": {
+          "type": "divider",
+          "settings": {
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_FGxPBj",
+        "richtext_xpYUQU",
+        "button_azXhrd",
+        "title_ngdVVw",
+        "richtext_mjYth7",
+        "divider_Dzd3gf"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "rich_text_wGEBBx": {
+      "type": "rich-text",
+      "blocks": {
+        "richtext_yAmHC7": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><strong>RETURN POLICIES<br/></strong>This policy applies to all purchases placed online at au.faithfullthebrand.com.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_pQ6zhy": {
+          "type": "title",
+          "settings": {
+            "title": "Full Price Items",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_ArnPQD": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Each item has been thoughtfully designed and crafted with longevity in mind. For this reason change of mind returns are accepted on any full price items with a full refund or exchange for another available item. In some cases, a store credit may be provided. Store credit notes are valid for 12 months from the date of issue. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_jMaky7": {
+          "type": "title",
+          "settings": {
+            "title": "Sale Items",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_mJ6qzB": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Sale items reduced from their original full price and not marked as “Final Sale” are accepted for returns with a full refund or exchange for an available item.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_77xJgN": {
+          "type": "title",
+          "settings": {
+            "title": "Final Sale Items",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_Xdt7Dc": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Final sale items (as marked) are final sale and will not be accepted for a refund or store credit. Should the item be deemed faulty (see conditions below) a replacement item will be offered. Should the replacement item be unavailable, a store credit equal to 100% of the item’s value will be offered. Store credit notes are valid for 12 months from the date of issue. Final sale items may be exchanged for a different size where stock permits, otherwise a store credit equal to 100% of the item's value will be offered.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_hNpnEc": {
+          "type": "title",
+          "settings": {
+            "title": "Exchanges",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_x4bMUf": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>We now offer Instant Exchanges which allows you to order your exchanged item instantly, without waiting for your return to arrive at our warehouse. </p><p>Simply raise your instant exchange via our <a href=\"https://au.faithfullthebrand.com/a/return\" title=\"https://au.faithfullthebrand.com/a/return\">Returns Portal</a> within 14 days of delivery of your original order. You will receive an order confirmation with your new exchange item details. A temporary hold for the cost of the new product will be placed on your card. If the return is not completed within the 14 day return window, the total fee will be charged to your card.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_iidHHy": {
+          "type": "title",
+          "settings": {
+            "title": "Store Credit and Promotional Discounts",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_rmVFEx": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Items purchased using a store credit or promotional discount, including the WELCOME offer are eligible for returns should they meet the above criteria. A full refund or store credit equal to 100% of the item’s value is available. Store credit notes are valid for 12 months from the date of issue. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_PMixdz": {
+          "type": "title",
+          "settings": {
+            "title": "Faulty Items",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_HqNEC8": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>In the event an item is faulty, please contact the customer care team at <a href=\"mailto:shop@faithfullthebrand.com\"><span style=\"text-decoration:underline\">shop@faithfullthebrand.com</span></a> with an image and/or video clearly revealing the issue, along with a short description. Once approved by the customer care team, a replacement item will be offered. Should the replacement item be unavailable, a store credit equal to 100% of the item’s value will be offered. Store credit notes are valid for 12 months from the date of issue. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_wW3MxJ": {
+          "type": "title",
+          "settings": {
+            "title": "Return Shipping on Australian Orders",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_b7NwPV": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Pre-paid Australian Post return labels are available for a flat rate of $14.95. The cost will be deducted from the original refund amount at the time of processing. </p><p>We offer free returns for exchanges only,</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        },
+        "title_TU6ty3": {
+          "type": "title",
+          "settings": {
+            "title": "Return Shipping on New Zealand Orders",
+            "is_primary_heading": false,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_xXteWY": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Unfortunately, pre-paid New Zealand return labels are unavailable at this time. Customers are responsible for organising all shipping and handling. </p><p>Please note FAITHFULL will not take responsibility for any missing returns that were lost and/or damaged in transit. It is recommended all orders are returned through a registered or traceable postal service as all returns remain the responsibility of the customer until received by FAITHFULL. All shipping, handling and taxes and duties are non-refundable. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "richtext_yAmHC7",
+        "title_pQ6zhy",
+        "richtext_ArnPQD",
+        "title_jMaky7",
+        "richtext_mJ6qzB",
+        "title_77xJgN",
+        "richtext_Xdt7Dc",
+        "title_hNpnEc",
+        "richtext_x4bMUf",
+        "title_iidHHy",
+        "richtext_rmVFEx",
+        "title_PMixdz",
+        "richtext_HqNEC8",
+        "title_wW3MxJ",
+        "richtext_b7NwPV",
+        "title_TU6ty3",
+        "richtext_xXteWY"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 80
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_pyee3p",
+    "rich_text_wGEBBx"
+  ]
+}

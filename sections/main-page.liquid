@@ -1,0 +1,88 @@
+<div class="main-page" data-section-id="{{ section.id }}" data-section-type="main-page">
+  <div class="container  {{ section.settings.content_width }}">
+    <div class="page-header">
+      <h1 class="h2">{{ page.title }}</h1>
+    </div>
+
+    {%- if page.content != blank -%}
+      <div class="main-page__content rte">
+        {{ page.content | replace: '<p>---</p>', '<hr />' }}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+<style>
+  #shopify-section-{{ section.id }} {
+    margin-bottom: {{ section.settings.bottom_margin_mobile }}px;
+  }
+
+  @media only screen and (min-width: {{ settings.grid_medium }}px) {
+    #shopify-section-{{ section.id }} {
+      margin-bottom: {{ section.settings.bottom_margin_desktop }}px;
+    }
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Main Page",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Layout Settings"
+      },
+      {
+        "type": "select",
+        "id": "content_width",
+        "label": "Content width",
+        "default": "container--sm",
+        "options": [
+          {
+            "value": "container--sm",
+            "label": "Small"
+          },
+          {
+            "value": "container--md",
+            "label": "Medium"
+          },
+          {
+            "value": "container--lg",
+            "label": "Large"
+          },
+          {
+            "value": "container--fluid",
+            "label": "Full width"
+          }
+        ]
+      },
+      {
+        "type": "header",
+        "content": "Section Spacing"
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_desktop",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Desktop",
+        "default": 120
+      },
+      {
+        "type": "range",
+        "id": "bottom_margin_mobile",
+        "min": 0,
+        "max": 120,
+        "step": 8,
+        "unit": "px",
+        "label": "Bottom Margin - Mobile",
+        "default": 80
+      }
+    ],
+    "enabled_on": {
+      "templates": ["page"]
+    }
+  }
+{% endschema %}

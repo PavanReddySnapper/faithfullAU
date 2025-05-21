@@ -1,0 +1,444 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "header": {
+      "type": "main-page-header",
+      "settings": {
+        "title": "Shipping & Returns",
+        "is_primary_heading": false,
+        "page_nav": "shipping-menu-2024",
+        "navigation_sticky": false,
+        "bottom_margin_desktop": 64,
+        "bottom_margin_mobile": 64
+      }
+    },
+    "rich_text_YBVdDJ": {
+      "type": "rich-text",
+      "blocks": {
+        "title_pcK8Pf": {
+          "type": "title",
+          "settings": {
+            "title": "",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "Order Processing",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_7aGrMN": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>All FAITHFULL orders are shipped out within 1-2 business days from purchase from our warehouse in Padstow, Sydney, Australia.<br/><br/>Shipping time frames are in addition to our processing times. Any orders placed on weekends and public holidays will be processed the following business day. </p><p>Orders will be delivered between 8am-6pm Monday to Friday. </p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_pcK8Pf",
+        "richtext_7aGrMN"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "custom_shipping_Ue9aDY": {
+      "type": "custom-shipping",
+      "blocks": {
+        "country_details_wzc9ty": {
+          "type": "country_details",
+          "settings": {
+            "heading": "New Zealand",
+            "transit_time": "1-3 business days",
+            "free_shipping_threshold": "$250",
+            "shipping_fee": "$20",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "$20"
+          }
+        },
+        "country_details_FC7fq8": {
+          "type": "country_details",
+          "settings": {
+            "heading": "United Kingdom",
+            "transit_time": "1-3 business days",
+            "free_shipping_threshold": "£380",
+            "shipping_fee": "£10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "£20"
+          }
+        },
+        "country_details_KQBtHd": {
+          "type": "country_details",
+          "settings": {
+            "heading": "United Arab Emirates",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": " د.إ.2600",
+            "shipping_fee": " د.إ.45",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": " د.إ.100"
+          }
+        },
+        "country_details_ypaF8E": {
+          "type": "country_details",
+          "settings": {
+            "heading": "France",
+            "transit_time": "3-4 business days",
+            "free_shipping_threshold": "€ 480",
+            "shipping_fee": "€ 10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€ 15"
+          }
+        },
+        "country_details_XgK78F": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Germany",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": "€ 430",
+            "shipping_fee": "€ 10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€ 15"
+          }
+        },
+        "country_details_XBjxUH": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Spain",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": "€ 400",
+            "shipping_fee": "€ 10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€ 15"
+          }
+        },
+        "country_details_eqpiVH": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Switzerland",
+            "transit_time": "2-3 business days",
+            "free_shipping_threshold": "₣300",
+            "shipping_fee": "₣10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "₣15"
+          }
+        },
+        "country_details_iH44TN": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Singapore",
+            "transit_time": "1-2 business days",
+            "free_shipping_threshold": "S$450",
+            "shipping_fee": "S$10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "S$20"
+          }
+        },
+        "country_details_RRdKg9": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Norway",
+            "transit_time": "2-3 business days",
+            "free_shipping_threshold": "4800 kr",
+            "shipping_fee": "10 kr",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "15 kr"
+          }
+        },
+        "country_details_i4xL7e": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Hong Kong",
+            "transit_time": "1-2 business days",
+            "free_shipping_threshold": "HK$2700",
+            "shipping_fee": "HK$60",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "HK$100"
+          }
+        },
+        "country_details_kDPxK3": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Sweden",
+            "transit_time": "2-3 business days",
+            "free_shipping_threshold": "4600 kr",
+            "shipping_fee": "100 kr",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "200 kr"
+          }
+        },
+        "country_details_N3QbqV": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Denmark",
+            "transit_time": "2-3 business days",
+            "free_shipping_threshold": "3100 kr",
+            "shipping_fee": "80 kr",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "100 kr"
+          }
+        },
+        "country_details_xkWfWM": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Poland",
+            "transit_time": "3-6 business days",
+            "free_shipping_threshold": "2000 zł",
+            "shipping_fee": "55 zł",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "100 zł"
+          }
+        },
+        "country_details_7UyymR": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Netherlands",
+            "transit_time": "3-4 business days",
+            "free_shipping_threshold": "€400",
+            "shipping_fee": "€10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€15"
+          }
+        },
+        "country_details_AzfDVL": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Taiwan",
+            "transit_time": "3-4 business days",
+            "free_shipping_threshold": "NT$10400",
+            "shipping_fee": "NT$350",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "NT$400"
+          }
+        },
+        "country_details_kdwLcM": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Italy",
+            "transit_time": "3-4 business days",
+            "free_shipping_threshold": "€400",
+            "shipping_fee": "€10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€15"
+          }
+        },
+        "country_details_Dj6QVE": {
+          "type": "country_details",
+          "settings": {
+            "heading": "South Korea",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": "₩440000",
+            "shipping_fee": "₩17000",
+            "taxes_and_duties": "Optional at checkout",
+            "price_of_returns": "₩20000"
+          }
+        },
+        "country_details_xc6Xwp": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Japan",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": "¥54000",
+            "shipping_fee": "¥1750",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "¥2000"
+          }
+        },
+        "country_details_MC6me8": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Ireland",
+            "transit_time": "2-3 business days",
+            "free_shipping_threshold": "€400",
+            "shipping_fee": "€10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€15"
+          }
+        },
+        "country_details_MwyDdd": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Malaysia",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": "RM2000",
+            "shipping_fee": "RM60",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "RM100"
+          }
+        },
+        "country_details_jRCmtb": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Belgium",
+            "transit_time": "2-4",
+            "free_shipping_threshold": "€400",
+            "shipping_fee": "€10",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€15"
+          }
+        },
+        "country_details_tWUajV": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Czech Republic",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": "10500 Kč",
+            "shipping_fee": "275 Kč",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "300 Kč"
+          }
+        },
+        "country_details_hpi7tt": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Greece",
+            "transit_time": "2-4 business days",
+            "free_shipping_threshold": "€460",
+            "shipping_fee": "€12",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "€15"
+          }
+        },
+        "country_details_9UnVn7": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Qatar",
+            "transit_time": "4-5 business days",
+            "free_shipping_threshold": "﷼.1600",
+            "shipping_fee": "﷼.45",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "﷼.100"
+          }
+        },
+        "country_details_LfdQkr": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Saudi Arabia",
+            "transit_time": "3-5 business days",
+            "free_shipping_threshold": "﷼1800",
+            "shipping_fee": "﷼40",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "﷼100"
+          }
+        },
+        "country_details_8FYiVj": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Israel",
+            "transit_time": "2-8 business days",
+            "free_shipping_threshold": "₪1500",
+            "shipping_fee": "₪35",
+            "taxes_and_duties": "Inclusive",
+            "price_of_returns": "₪100"
+          }
+        },
+        "country_details_DT6w7m": {
+          "type": "country_details",
+          "settings": {
+            "heading": "Rest of world",
+            "transit_time": "1-10 business days",
+            "free_shipping_threshold": "",
+            "shipping_fee": "Calculated at checkout",
+            "taxes_and_duties": "Optional at checkout",
+            "price_of_returns": "Calculated via returns portal"
+          }
+        }
+      },
+      "block_order": [
+        "country_details_wzc9ty",
+        "country_details_FC7fq8",
+        "country_details_KQBtHd",
+        "country_details_ypaF8E",
+        "country_details_XgK78F",
+        "country_details_XBjxUH",
+        "country_details_eqpiVH",
+        "country_details_iH44TN",
+        "country_details_RRdKg9",
+        "country_details_i4xL7e",
+        "country_details_kDPxK3",
+        "country_details_N3QbqV",
+        "country_details_xkWfWM",
+        "country_details_7UyymR",
+        "country_details_AzfDVL",
+        "country_details_kdwLcM",
+        "country_details_Dj6QVE",
+        "country_details_xc6Xwp",
+        "country_details_MC6me8",
+        "country_details_MwyDdd",
+        "country_details_jRCmtb",
+        "country_details_tWUajV",
+        "country_details_hpi7tt",
+        "country_details_9UnVn7",
+        "country_details_LfdQkr",
+        "country_details_8FYiVj",
+        "country_details_DT6w7m"
+      ],
+      "settings": {
+        "section_country": "International"
+      }
+    },
+    "rich_text_bhgARE": {
+      "type": "rich-text",
+      "blocks": {
+        "title_GTfbyP": {
+          "type": "title",
+          "settings": {
+            "title": "Shipping Countries",
+            "is_primary_heading": true,
+            "heading_style": "h6",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_P6eac6": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>For customers looking to ship to America, Canada, Mexico, South America and the Bahamas please shop <a href=\"https://faithfullthebrand.com.\" title=\"https://faithfullthebrand.com.\"><strong>faithfullthebrand.com.</strong></a></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_GTfbyP",
+        "richtext_P6eac6"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 120,
+        "bottom_margin_mobile": 72
+      }
+    }
+  },
+  "order": [
+    "header",
+    "rich_text_YBVdDJ",
+    "custom_shipping_Ue9aDY",
+    "rich_text_bhgARE"
+  ]
+}

@@ -1,0 +1,159 @@
+{%- liquid
+  # ------------------------------------------------------------------------------
+  # SIZE CONVERSION TABLE
+  # ------------------------------------------------------------------------------
+  # Attributes
+  #   - type: The type of size table to display. Defaults to 'Apparel'.
+  #   - table_title: (optional) The title of the table
+
+  assign hide_header = false
+
+  assign type = type | default: 'Apparel'
+  assign sizes = shop.metaobjects.size.values | where: 'type', type | sort_natural: 'order'
+  assign has_measurements = false
+
+  assign regions = 'au,us,uk,eu' | split: ','
+  assign measurements = 'bust,hips,waist' | split: ','
+
+  if type == 'Bra'
+    assign hide_header = true
+    assign regions = 'us_can,uk,eu,us,nz,fr,it,aus_nz' | split: ','
+  endif
+-%}
+
+{%- capture size_conversion_table -%}
+  <table>
+    {%- unless hide_header -%}
+      <thead>
+        <tr>
+          <th></th>
+          {%- for size in sizes -%}
+            <th>{{ size.name | upcase }}</th>
+          {%- endfor -%}
+        </tr>
+      </thead>
+    {%- endunless -%}
+
+    <tbody>
+      {%- for region in regions -%}
+        {%- liquid
+          assign key = 'conversion_' | append: region
+
+          # Skip empty regions
+          assign regions_with_values = sizes | where: key
+          if regions_with_values.size == 0
+            continue
+          endif
+
+          assign locale_key = 'products.size_table.regions.' | append: region
+        -%}
+        <tr>
+          <th>{{ locale_key | t }}</th>
+          {%- for size in sizes -%}
+            <td>{{ size[key] }}</td>
+          {%- endfor -%}
+        </tr>
+      {%- endfor -%}
+    </tbody>
+  </table>
+{%- endcapture -%}
+
+{%- capture measurement_table -%}
+  <measurement-table class="measurement-table" data-active-unit="cm">
+    <table>
+      <thead>
+        <tr>
+          <th></th>
+          {%- for size in sizes -%}
+            <th>{{ size.name | upcase }}</th>
+          {%- endfor -%}
+        </tr>
+      </thead>
+
+      <tbody>
+        {%- for measurement in measurements -%}
+          {%- liquid
+            assign key_cm = 'measurement_' | append: measurement | append: '_cm'
+            assign key_in = 'measurement_' | append: measurement | append: '_in'
+          -%}
+          <tr>
+            <th>{{ measurement }}</th>
+            {%- for size in sizes -%}
+              {%- liquid
+                if size[key_cm] != blank
+                  assign has_measurements = true
+                endif
+              -%}
+              <td>
+                <span data-unit="cm">
+                  {{ size[key_cm] }}
+                  <span class="visually-hidden">cm</span>
+                </span>
+                <span data-unit="in">
+                  {{ size[key_in] }}
+                  <span class="visually-hidden">inches</span>
+                </span>
+              </td>
+            {%- endfor -%}
+          </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+
+    <div class="size-table__footer">
+      <div class="size-table__toggles">
+        <input type="radio" name="size-table-toggle" id="size-table-toggle-cm-{{ block.id }}" value="cm" checked>
+        <label class="tab__link" for="size-table-toggle-cm-{{ block.id }}">
+          {{ 'products.size_table.units.cm' | t }}
+        </label>
+
+        <input type="radio" name="size-table-toggle" id="size-table-toggle-in-{{ block.id }}" value="in">
+        <label class="tab__link" for="size-table-toggle-in-{{ block.id }}">
+          {{ 'products.size_table.units.in' | t }}
+        </label>
+      </div>
+
+      {%- assign footer_message = 'products.size_table.footer_message_html' | t -%}
+      {%- if footer_message != '' -%}
+        <div>{{ footer_message }}</div>
+      {%- endif -%}
+    </div>
+  </measurement-table>
+{%- endcapture -%}
+
+<div class="size-tables rte">
+  {%- if has_measurements -%}
+    <div class="js-tabs">
+      <ul class="js-tablist list-none">
+        <li class="js-tablist__item">
+          <a
+            class="js-tablist__link navigation"
+            href="#size-table-1-{{ block.id }}"
+            data-selected="1"
+            aria-selected="true"
+          >
+            {{ 'products.size_table.tabs.size_conversion' | t }}
+          </a>
+        </li>
+        <li class="js-tablist__item">
+          <a class="js-tablist__link navigation" href="#size-table-2-{{ block.id }}">
+            {{ 'products.size_table.tabs.body_measurements' | t }}
+          </a>
+        </li>
+      </ul>
+
+      <div id="size-table-1-{{ block.id }}" class="js-tabcontent">
+        {{ size_conversion_table }}
+      </div>
+      <div id="size-table-2-{{ block.id }}" class="js-tabcontent" aria-hidden="true">
+        {{ measurement_table }}
+      </div>
+    </div>
+  {%- else -%}
+    {%- if table_title != blank -%}
+      <h3 class="h6">{{ table_title }}</h3>
+    {%- endif -%}
+
+    {{ size_conversion_table }}
+  {%- endif -%}
+</div>
