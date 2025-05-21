@@ -26,7 +26,7 @@
         "richtext_PWDwQ8": {
           "type": "richtext",
           "settings": {
-            "text": "<p>FAITHFULL is committed to creating thoughtfully produced, socially responsible garments. From our manufacturing choices and commercial practices to our organisational culture, community investment, environmental footprint and social impact, we ensure that each step is a positive one and one that falls in line with our brand’s values.</p><p>While always a continual work in progress, we are putting in the time, research and resources to grow everyday.</p>",
+            "text": "<p>Faithfull is committed to creating thoughtfully produced, socially responsible garments that you can feel great about wearing on the inside, and out.</p><p>From our manufacturing choices and commercial practices to our organisational culture and community investment, making better decisions across the business, which minimise our environmental footprint and maximise our positive social impact, is a continual work in progress.</p>",
             "font_size": "body-medium",
             "content_max_width": "100%",
             "content_alignment": "flex-start",
@@ -68,7 +68,7 @@
           "type": "text",
           "settings": {
             "pre_title": "",
-            "title": "How We Make A Difference",
+            "title": "FAITHFULL is...",
             "title_size": "h2",
             "text": "<h6>COMMUNITY-FOCUSED AND FAMILY-MINDED</h6><p>We care about who makes our pieces, just as much as who they are made for. Our people are the beating heart of our brand, so we put them first. We are passionate about supporting local communities and creating a caring and collaborative work environment for everybody.</p>",
             "button_label": "",
@@ -99,9 +99,9 @@
           "type": "text",
           "settings": {
             "pre_title": "",
-            "title": "We Ensure",
+            "title": "We provide...",
             "title_size": "h2",
-            "text": "<h6>EMPLOYEE BENEFITS</h6><p>All head office and design studio employees in Australia and Indonesia are paid above the national minimum wage along with additional benefits. We also provide a safe and supportive working environment for all employees.</p><h6>UPSKILLING AND TRAINING</h6><p>We provide training programs both externally and internally for individuals who may not have extensive experience or skills prior to their role at FAITHFULL but are eager to learn and develop their repertoire. We offer access to both professional education and a range of holistic courses.</p><h6>COMMUNITY INVESTMENT</h6><p>Since the beginning, we have provided financial and managerial assistance to local businesses and communities to support their growth in conjunction with our own. As FAITHFULL continues to grow, our ongoing goal is to see these small, independent partners and factories and the people within them prosper even further.</p><p><strong>PARENTAL SUPPORT</strong></p><p>We support all parents returning to the workforce after their parental leave by employing home industry contractors. Many members of our design office work from home, allowing them the freedom and duality to support their families.</p>",
+            "text": "<h6>EMPLOYEE BENEFITS</h6><p>We pay all of our 100+ employees, in Indonesia and Australia, above national minimum, along with additional benefits, such as daily lunch boxes, office yoga, and healthcare for every team member and their families. We also offer microfinancing to all employees.</p><h6>UPSKILLING AND TRAINING</h6><p>We provide training programs - both internally and externally - enabling us to employ local individuals who may have no previous experience or skills specific to their role but are eager to learn. As well as professional education, we are also committed to supporting our team’s personal development through a range of holistic courses.</p><h6>COMMUNITY INVESTMENT</h6><p>Community investment has been a major part of Faithfull’s mission from the beginning. Over the years, we have provided financial and managerial assistance to local businesses to support their growth, in conjunction with our own. As Faithfull continues to grow, our ongoing goal is to see these small, independent factories, and the people working within them, prosper even further.</p>",
             "button_label": "",
             "button_url": "",
             "button_style": "btn--text btn--link",
@@ -142,13 +142,12 @@
         "text_qtBEhN": {
           "type": "text",
           "settings": {
-            "title": "GIVE BACK PROGRAMS",
-            "description": "<p>We are committed to giving back to a diverse range of charities and community organisations, primarily in Indonesia. However, we also provide support to international organisations based on global circumstances and community needs. For example we have partnered with Trees4Trees, Thread Together, Worn For Good and donated to initiatives in response to the 2024 Los Angeles wildfires.</p><p>In 2024, we provided and distributed numerous food packs to communities and villages throughout Indonesia, partnering with organisations including Komunitas Taman Hati, Shelter Satwa Bali and Seeds of Hope. We also organised food donations to a number of animal shelters and street feeders, including Kijang Putih Shelter Ungasan, and worked closely with Yayasan Seva Bhuana and Bali Pet Crusaders. </p>"
+            "title": "GIVE-BACK PROGRAMS",
+            "description": "<p>As a company, we commit to giving back to a variety of charities and organisations within our community. Our primary focus is our local community in Bali, Indonesia; however we also provide support to international organisations, based on global circumstances and the needs of the communities. We don’t only partner with established NGOs; we also like to get involved with grass-roots organisations. Some of the causes we have contributed to in recent years include Trees4Trees, Worn For Good etc.</p>"
           }
         },
         "text_LJkDqK": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "title": "HYGIENE PACKAGES",
             "description": "<p>In August, 2018, a devastating earthquake struck Lombok, and a number of small surrounding islands. Widespread damage ensued and we supported a number of organisations through monetary assistance as well as purchasing supplies for distribution. With many people having their houses and places of business destroyed, makeshift camps were created for families to stay. We created and distributed hygiene packs full of necessities, as well as blankets and clothing, donated by our employees. We were able to give more than 5000 hygiene packs to a number of remote villages, supplied food for more than 1000 people and contributed over 100 boxes of clothing.</p>"
@@ -156,39 +155,31 @@
         },
         "text_p9xENj": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "title": "STOCK AND MATERIAL DONATIONS",
             "description": "<p>We donate fabric to women’s centres within Indonesia, where they are given the opportunity to learn entrepreneurial skills and make blankets and other gifts. We also donate our excess stock, sample collections and fabric, to several charitable organisations across Bali and Australia, such as Thread Together, Worn for Good, the Red Cross.</p>"
           }
         },
-        "text_AwKy6P": {
+        "text_7bBqBi": {
           "type": "text",
           "settings": {
-            "title": "STOCK & MATERIAL DONATIONS",
-            "description": "<p>We donate fabric to women’s centres within Indonesia, where they are given the opportunity to learn entrepreneurial and production skills. We also donate our excess stock, sample collections and fabric to several charitable organisations across Indonesia and Australia, including ThreadTogether, Worn for Good, The Red Cross and initiatives in response to the 2024 Los Angeles wildfires.</p><p>We also work closely with the Bali Life Foundation where we have provided over one tonne of excess fabric and offcuts to education and training programs for women who were learning how to sew and handcraft goods, where they would go on to create baskets, dolls, coasters and tote bags. </p>"
+            "title": "EARTH DAY INITIATIVES",
+            "description": "<p>For Earth Day in 2021, we donated 100% of our online sales to Trees4Trees, which planted 15,600 trees across Indonesia. Trees4Trees is a non-profit foundation based in Indonesia that focuses on renewing the environment and empowering local communities through reforestation and education.</p>"
+          }
+        },
+        "text_AwKy6P": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "title": "Conscious Business Practice",
+            "description": "<p>We practice recycling and minimise wastage within our offices in Bali, Indonesia and Sydney, Australia. At our HQ in Bali we have partnered up with the recycling organisation, ecoBali, to implement recycling procedures and more environmentally-friendly practices, through team training workshops.Our team members are provided with a durable, reusable water bottle with fresh, clean water dispensers available throughout the company headquarters.</p><p>From 2020, our suppliers and makers no longer deliver goods to our head office in plastic, we have produced self-fabric protective bags for goods to be delivered between offices.</p>"
           }
         },
         "text_TmrneD": {
           "type": "text",
           "settings": {
-            "title": "CONSCIOUS BUSINESS PRACTICES",
-            "description": "<p>Both our offices in Sydney and Bali practice recycling and aim to minimise wastage. Team members are provided with reusable water bottles with clean, filtered water stations. In addition, the Bali office has partnered with the recycling organisation, ecoBali, to implement environmentally friendly practices and team training workshops.</p>"
-          }
-        },
-        "text_7bBqBi": {
-          "type": "text",
-          "settings": {
-            "title": "EARTH DAY",
-            "description": "<p>Since 2021, we have donated 100% of our online sales profits on Earth Day to Trees4Trees. Trees4Trees is a non-profit foundation based in Indonesia that focuses on renewing the environment and empowering local communities through reforestation and education. Each year our donations have led to the planting of over 15,000 trees across Indonesia.</p>"
-          }
-        },
-        "text_UgX7jp": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "title": "",
-            "description": ""
+            "title": "Community Food Supplies",
+            "description": "<p>In 2020, the global pandemic made a significant impact on Bali’s economy, with the tourism industry, which had been the island’s financial backbone, coming to a complete halt.</p><p>Given that community spirit is such a core pillar of Balinese life, we launched a continuing project where our local internal team personally put together and distribute food care packages to affected communities. Although much of our community is self-sufficient, many live day-to-day so our intention in providing these food care packages is to help offer some relief and nutrition during a very difficult time.</p><p>As of December 2021, we have supplied food to more than 5000 families and 2100 kilograms of food animal shelters. We are committed to continuing to distribute food care packages throughout the remainder of 2021 and into 2022.</p>"
           }
         }
       },
@@ -196,10 +187,9 @@
         "text_qtBEhN",
         "text_LJkDqK",
         "text_p9xENj",
-        "text_AwKy6P",
-        "text_TmrneD",
         "text_7bBqBi",
-        "text_UgX7jp"
+        "text_AwKy6P",
+        "text_TmrneD"
       ],
       "settings": {
         "title": "We Give Back",
@@ -216,12 +206,8 @@
       "settings": {
         "image": "shopify://shop_images/comm-4.jpg",
         "pre_title": "",
-        "pre_title_alignment": "center",
-        "pre_title_alignment_mobile": "center",
         "title": "",
         "title_style": "h1",
-        "title_alignment": "center",
-        "title_alignment_mobile": "center",
         "text": "",
         "text_style": "body-medium",
         "bottom_margin_desktop": "40",

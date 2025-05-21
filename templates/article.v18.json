@@ -24,7 +24,7 @@
           "type": "image",
           "settings": {
             "container_width": "container--flush container--fluid",
-            "background_image": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.26.22_pm.png",
+            "background_image": "shopify://shop_images/1_4e9c7d7a-2ef7-4fd1-8a09-2600261903d2.webp",
             "hide_button_mobile": false,
             "subtitle": "",
             "title": "",
@@ -57,7 +57,7 @@
         "title_6Pwd9W": {
           "type": "title",
           "settings": {
-            "title": "In The Design Studio",
+            "title": "The Miami Travel Guide With Duda Teixeira",
             "is_primary_heading": true,
             "heading_style": "h3",
             "pre_heading": "JOURNAL",
@@ -67,7 +67,7 @@
         "richtext_iAmcEf": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Step behind the scenes of the Summer 2025 collection, Letters From Hydra, as the team shares intimate snippets from their camera and references they've collected. Brought to life between our design studios in Bali, Indonesia and Sydney, Australia. </p>",
+            "text": "<p>There’s more to Miami than meets the eye. The city known for its white sand beaches and Bahamas-blue oceans, is also a diverse epicenter for art and culture and cosmopolitan-style hotels and restaurants. Here, our longtime #FAITHFULLGirl and co-founder of <a href=\"https://www.instagram.com/eliou__/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/eliou__/?hl=en\">Éliou</a>, a local handcrafted jewellery and resortwear brand, <a href=\"https://www.instagram.com/duda._______/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/duda._______/?hl=en\">Duda Teixeira</a>, shares her local’s guide to the city – with boutique hotels, quiet coves, museums and unique oyster bars. </p>",
             "font_size": "",
             "content_max_width": "100%",
             "content_alignment": "center",
@@ -94,8 +94,8 @@
     "editorial_layout_BNpN6Q": {
       "type": "editorial-layout",
       "settings": {
-        "background_image": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.20.25_pm.png",
-        "background_image_2": "shopify://shop_images/Photo_19-11-2024_15_00_39.jpg",
+        "background_image": "shopify://shop_images/2_035f2f16-f664-484b-9407-553c06463c5a.webp",
+        "background_image_2": "shopify://shop_images/3_b1297408-9a41-4345-83c5-33f60dbdf2eb.webp",
         "hide_image": "",
         "content_layout": "first--max-md first--above",
         "content_layout_desktop": "first--min-md",
@@ -121,31 +121,71 @@
         "bottom_margin_mobile": "80"
       }
     },
-    "image_banner_K6yJE9": {
+    "rich_text_UF39en": {
+      "type": "rich-text",
+      "blocks": {
+        "title_gVy7Wf": {
+          "type": "title",
+          "settings": {
+            "title": "Where to stay",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_iMDT9c": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/mayfairhousemiami/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/mayfairhousemiami/?hl=en\">The Mayfair Hotel in Coconut Grove </a></p><p>Coconut Grove is one of Miami's most charming neighborhoods. The Mayfair Hotel, originally built in the 1980s by architect Kenneth Treister, has recently been remodeled and brought back to life. Expect peacock blue and terracotta tones, giant clawfoot tubs, and an open-air atrium lined with lush plants and outdoor corridors. The rooftop is also a solid spot – my friends and I usually go at sunset to play cards and have a drink (yes, very 60 year old behavior, but we keep it wholesome sometimes).</p><p><a href=\"https://www.sohohouse.com/houses/soho-beach-house \" title=\"https://www.sohohouse.com/houses/soho-beach-house \">Soho Beach House</a></p><p>Soho Beach House is right on the beach and during the weekdays it’s pretty quiet. I like to go early in the morning to watch the sunrise, hit the gym, do a quick steam and then head to the office.</p><p><a href=\"https://www.instagram.com/thestandardmiami/?hl=en \" title=\"https://www.instagram.com/thestandardmiami/?hl=en \">The Standard </a></p><p>There’s nothing quite as quintessentially ‘Miami’ as The Standard. Lush with tropical art deco- inspired decor, there’s an infinity pool overlooking Biscayne Bay island.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_gVy7Wf",
+        "richtext_iMDT9c"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_NAH6Ur": {
       "type": "image-banner",
       "blocks": {
-        "image_mWVxzX": {
+        "image_Vg6zmK": {
           "type": "image",
           "settings": {
-            "container_width": "container--flush container--fluid",
-            "background_image": "shopify://shop_images/IMG_9886_1.jpg",
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/4_f35c3fbb-92a2-4c9f-a879-7698614153a6.webp",
             "hide_button_mobile": false,
             "subtitle": "",
             "title": "",
-            "button_link_1": "#",
+            "button_link_1": "",
             "button_label_2": "",
             "button_link_2": ""
           }
         }
       },
       "block_order": [
-        "image_mWVxzX"
+        "image_Vg6zmK"
       ],
       "settings": {
-        "top_margin_desktop": "0",
-        "bottom_margin_desktop": "40",
-        "top_margin_mobile": "0",
-        "bottom_margin_mobile": "0",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
         "block_layout": "column",
         "block_gap": "0",
         "aspect_ratio": "landscape",
@@ -153,13 +193,53 @@
         "button_style": "link",
         "button_position": "below-image",
         "button_color": "--color-black"
+      }
+    },
+    "rich_text_6UGKcF": {
+      "type": "rich-text",
+      "blocks": {
+        "title_AGX9ai": {
+          "type": "title",
+          "settings": {
+            "title": "Where to swim",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_NW4Pgh": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Key Biscayne </p><p>Not to be confused with Key West, Key Biscane is where I grew up and it still feels like home. It’s quieter, feels more private and is more family-oriented. </p><p>The beach by Soho House </p><p>During the week, the beach at Soho House is my go-to. If the conditions are right, the water looks straight out of the Bahamas – crystal clear, that perfect shade of blue-green. But come the weekend, it can get quite busy so that’s when I’ll escape to Key Biscayne. </p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_AGX9ai",
+        "richtext_NW4Pgh"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
       }
     },
     "editorial_layout_rf38Db": {
       "type": "editorial-layout",
       "settings": {
-        "background_image": "shopify://shop_images/IMG_9923_1.jpg",
-        "background_image_2": "shopify://shop_images/Photo_18-11-2024_12_14_51_1.jpg",
+        "background_image": "shopify://shop_images/5_3328bc4c-1d73-458e-9c99-a294836f5ab6.webp",
+        "background_image_2": "shopify://shop_images/6_0422d445-15bf-4e9a-87ef-250b96957fcc.webp",
         "hide_image": "",
         "content_layout": "first--max-md first--above",
         "content_layout_desktop": "first--min-md",
@@ -185,31 +265,71 @@
         "bottom_margin_mobile": "0"
       }
     },
-    "image_banner_qLBEtB": {
+    "rich_text_4YayT6": {
+      "type": "rich-text",
+      "blocks": {
+        "title_H7eYFj": {
+          "type": "title",
+          "settings": {
+            "title": "Where to spend a morning",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_AfyFzw": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/facademiami/?hl=en \" target=\"_blank\" title=\"https://www.instagram.com/facademiami/?hl=en \">Façade</a></p><p>This is a new bakery that’s opened [2025] that I kept hearing about. I had perhaps the best coconut yogurt I’ve ever had, no exaggeration. It’s served with papaya, tahini and homemade granola. I’m still thinking about it. </p><p><a href=\"https://www.instagram.com/elbagel/?hl=en \" target=\"_blank\" title=\"https://www.instagram.com/elbagel/?hl=en \">El Bagel </a></p><p>Morning bagels at El Bagel are a must-do. It fittingly means “The Bagel.” On the weekends, I’ll opt for their cinnamon raisin bagel with PB+J and what makes it even more special is they add granola.</p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_H7eYFj",
+        "richtext_AfyFzw"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
+      }
+    },
+    "image_banner_kfXGch": {
       "type": "image-banner",
       "blocks": {
-        "image_GCcKEA": {
+        "image_parg6A": {
           "type": "image",
           "settings": {
-            "container_width": "container--flush container--fluid",
-            "background_image": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.25.59_pm.png",
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/7_fdc96ec7-a6dc-4b01-abf2-4cacad94604f.webp",
             "hide_button_mobile": false,
             "subtitle": "",
             "title": "",
-            "button_link_1": "#",
+            "button_link_1": "",
             "button_label_2": "",
             "button_link_2": ""
           }
         }
       },
       "block_order": [
-        "image_GCcKEA"
+        "image_parg6A"
       ],
       "settings": {
-        "top_margin_desktop": "0",
-        "bottom_margin_desktop": "40",
-        "top_margin_mobile": "0",
-        "bottom_margin_mobile": "0",
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
         "block_layout": "column",
         "block_gap": "0",
         "aspect_ratio": "landscape",
@@ -219,75 +339,51 @@
         "button_color": "--color-black"
       }
     },
-    "editorial_layout_Wq9MmH": {
-      "type": "editorial-layout",
-      "settings": {
-        "background_image": "shopify://shop_images/IMG_3433_1.jpg",
-        "background_image_2": "shopify://shop_images/IMG_8758_2.heic",
-        "hide_image": "",
-        "content_layout": "first--max-md first--above",
-        "content_layout_desktop": "first--min-md",
-        "padding_mobile": true,
-        "hide_button_mobile": false,
-        "image_button_label": "",
-        "image_button_link": "",
-        "image_button_style": "text",
-        "image_content_spacing_desktop": "16px",
-        "hide_content_mobile": false,
-        "pre_title": "",
-        "title": "",
-        "content": "",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "link",
-        "text_color_mobile": "--color-black",
-        "text_color_desktop": "--color-black",
-        "background_color": "",
-        "top_margin_desktop": "0",
-        "bottom_margin_desktop": "0",
-        "top_margin_mobile": "0",
-        "bottom_margin_mobile": "0"
-      }
-    },
-    "image_banner_Ly6BVX": {
-      "type": "image-banner",
+    "rich_text_YkKtTT": {
+      "type": "rich-text",
       "blocks": {
-        "image_np3jB4": {
-          "type": "image",
+        "title_gt9AMV": {
+          "type": "title",
           "settings": {
-            "container_width": "container--flush container--fluid",
-            "background_image": "shopify://shop_images/IMG_3529_9a8f475d-02bf-4fa2-b1ee-f5864461ee4e.heic",
-            "hide_button_mobile": false,
-            "subtitle": "",
-            "title": "",
-            "button_link_1": "#",
-            "button_label_2": "",
-            "button_link_2": ""
+            "title": "Where to spend an afternoon",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_C3LhcX": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/rubellmuseum/?hl=en \" target=\"_blank\" title=\"https://www.instagram.com/rubellmuseum/?hl=en \">The Rubell Museum</a></p><p>The Rubell Museum has played a significant role in Miami's contemporary art scene. It houses one of the largest private collections in North America, featuring works by major artists like Jean-Michel Basquiat, Cecily Brown, Keith Haring, Jeff Koons and Cindy Sherman.</p><p><a href=\"https://www.instagram.com/thestandardmiami/?hl=en \" target=\"_blank\" title=\"https://www.instagram.com/thestandardmiami/?hl=en \">The Spa at The Standard </a></p><p>You must book into the spa at The Standard – with a Turkish-style hammam and ice room. <em>Enough said.</em></p>",
+            "font_size": "body-medium",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
           }
         }
       },
       "block_order": [
-        "image_np3jB4"
+        "title_gt9AMV",
+        "richtext_C3LhcX"
       ],
       "settings": {
-        "top_margin_desktop": "0",
-        "bottom_margin_desktop": "40",
-        "top_margin_mobile": "0",
-        "bottom_margin_mobile": "0",
-        "block_layout": "column",
-        "block_gap": "0",
-        "aspect_ratio": "landscape",
-        "link_type": "section",
-        "button_style": "link",
-        "button_position": "below-image",
-        "button_color": "--color-black"
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "none",
+        "list_style": "",
+        "bottom_margin_desktop": 80,
+        "bottom_margin_mobile": 40
       }
     },
     "editorial_layout_h8wcy6": {
       "type": "editorial-layout",
       "settings": {
-        "background_image": "shopify://shop_images/IMG_9884_1_4edf239b-5484-47f7-ad75-36045678326b.jpg",
-        "background_image_2": "shopify://shop_images/Screen_Shot_2025-05-15_at_12.43.51_pm.png",
+        "background_image": "shopify://shop_images/8_113ca913-3c46-4bb5-9ebd-089c35b89a88.webp",
+        "background_image_2": "shopify://shop_images/9_a430e6ad-96e2-4f9f-bae7-f4169c673ddd.webp",
         "hide_image": "",
         "content_layout": "first--max-md first--above",
         "content_layout_desktop": "first--min-md",
@@ -311,6 +407,120 @@
         "bottom_margin_desktop": "0",
         "top_margin_mobile": "0",
         "bottom_margin_mobile": "0"
+      }
+    },
+    "rich_text_cLifWG": {
+      "type": "rich-text",
+      "blocks": {
+        "title_teTkwj": {
+          "type": "title",
+          "settings": {
+            "title": "Where to drink and dine",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_KktRqV": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p><a href=\"https://www.instagram.com/thestandardmiami/ \" target=\"_blank\" title=\"https://www.instagram.com/thestandardmiami/ \">Monterrey Bar at The Standard</a></p><p>I love the Monterrey Bar inside The Standard. It feels like a little time capsule in the best way. It nods to the property’s past as the Monterrey Motel but with a moodier vibe. Because it’s such a tiny space, it feels intimate and sexy. I love their mezcal selection – my usual go-to is mezcal on the rocks with a slice of orange.</p><p><a href=\"https://www.instagram.com/grampsgetaway/ \" target=\"_blank\" title=\"https://www.instagram.com/grampsgetaway/ \">Gramps Getaway</a></p><p>Gramps Getaway is one of my favorite spots to catch the sunset. Right on the water, it has that old Florida shack feel – laid-back and no frills. The Lazy Oyster, Miami’s first travelling oyster bar, has set up shop there, offering fresh-shucked oysters served with a spicy chili mignonette. It’s the perfect place to relax with great oysters and a drink by the water.</p><p><a href=\"https://www.instagram.com/sunnysmia/?hl=en \" target=\"_blank\" title=\"https://www.instagram.com/sunnysmia/?hl=en \">Sunny’s </a></p><p>Sunny’s is one of my favourite restaurants. It originally started as a pop-up and because people loved it so much they built a permanent space. The setting is stunning – the restaurant revolves around an outdoor courtyard illuminated by twinkling lights and a majestic banyan tree. Even if you don’t go for a full meal, I highly recommend stopping in for a drink. Their wine selection is great and so is their dirty gin martini.</p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_teTkwj",
+        "richtext_KktRqV"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
+      }
+    },
+    "image_banner_DhBAAz": {
+      "type": "image-banner",
+      "blocks": {
+        "image_PiVze3": {
+          "type": "image",
+          "settings": {
+            "container_width": "container--md",
+            "background_image": "shopify://shop_images/10_ef1fd486-4e8c-45dc-a412-1966274836e2.webp",
+            "hide_button_mobile": false,
+            "subtitle": "",
+            "title": "",
+            "button_link_1": "",
+            "button_label_2": "",
+            "button_link_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_PiVze3"
+      ],
+      "settings": {
+        "top_margin_desktop": "40",
+        "bottom_margin_desktop": "80",
+        "top_margin_mobile": "40",
+        "bottom_margin_mobile": "40",
+        "block_layout": "column",
+        "block_gap": "0",
+        "aspect_ratio": "landscape",
+        "link_type": "section",
+        "button_style": "link",
+        "button_position": "below-image",
+        "button_color": "--color-black"
+      }
+    },
+    "rich_text_MKEXi3": {
+      "type": "rich-text",
+      "blocks": {
+        "title_p3jWge": {
+          "type": "title",
+          "settings": {
+            "title": "The city’s best kept secrets",
+            "is_primary_heading": false,
+            "heading_style": "h3",
+            "pre_heading": "",
+            "margin_bottom": 24
+          }
+        },
+        "richtext_846MWL": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Mango season</p><p>Move to Miami and find yourself a friend with a mango tree. It’s life-changing! [The best months for mango season are May to October with peak season in July and August]. </p><p><a href=\"https://www.instagram.com/boatersgrill/?hl=en \" target=\"_blank\" title=\"https://www.instagram.com/boatersgrill/?hl=en \">Boater’s Grill</a></p><p>Boater’s Grill for fried whole fish, then walking over to The Cleat for a drink. It’s located in a national park in Key Biscayne. If you’re a local, then you know what I’m talking about.</p><p><a href=\"https://www.instagram.com/eliou__/?hl=en \" target=\"_blank\" title=\"https://www.instagram.com/eliou__/?hl=en \">Éliou </a></p><p>Of course, the Éliou store. I’m biased but it’s a little local secret as well. </p><p><em>Éliou is located at 160 NW 73rd St, Miami and is open Monday to Friday from 10am to 6pm. </em></p>",
+            "font_size": "",
+            "content_max_width": "100%",
+            "content_alignment": "flex-start",
+            "margin_bottom": 24
+          }
+        }
+      },
+      "block_order": [
+        "title_p3jWge",
+        "richtext_846MWL"
+      ],
+      "settings": {
+        "background_color": "transparent",
+        "text_color": "",
+        "text_alignment": "left",
+        "content_width": "container--sm",
+        "single_row_desktop": false,
+        "padding": "lg",
+        "list_style": "",
+        "bottom_margin_desktop": 0,
+        "bottom_margin_mobile": 0
       }
     },
     "featured_products_3zGbcJ": {
@@ -328,10 +538,10 @@
         "max_products": 4,
         "collection": "la-madrague",
         "product_list": [
-          "karys-mini-wrap-skirt-mandraki-floral",
-          "laia-maxi-dress-valentine",
-          "heidi-mini-dress-gingham-deep-red",
-          "aniela-maxi-dress-sifnos-stripe"
+          "citara-halter-top-butter-stripe",
+          "sable-polo-shirt-white",
+          "en-vau-shirt-navy-stripe",
+          "yeva-bikini-top-blue-multi"
         ],
         "bottom_margin_desktop": "0",
         "bottom_margin_mobile": "0"
@@ -355,7 +565,7 @@
         "article_n84pcB": {
           "type": "article",
           "settings": {
-            "article": "journal/a-morning-in-new-york-with-constanze-saemann"
+            "article": "journal/the-holiday-reading-guide"
           }
         }
       },
@@ -376,12 +586,17 @@
     "image_banner_Vh8WwK",
     "rich_text_bqnrRt",
     "editorial_layout_BNpN6Q",
-    "image_banner_K6yJE9",
+    "rich_text_UF39en",
+    "image_banner_NAH6Ur",
+    "rich_text_6UGKcF",
     "editorial_layout_rf38Db",
-    "image_banner_qLBEtB",
-    "editorial_layout_Wq9MmH",
-    "image_banner_Ly6BVX",
+    "rich_text_4YayT6",
+    "image_banner_kfXGch",
+    "rich_text_YkKtTT",
     "editorial_layout_h8wcy6",
+    "rich_text_cLifWG",
+    "image_banner_DhBAAz",
+    "rich_text_MKEXi3",
     "featured_products_3zGbcJ",
     "featured_articles_KVqFxb"
   ]

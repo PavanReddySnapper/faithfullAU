@@ -125,26 +125,16 @@
       {% endform %}
     </div>
 
-    <!-- {% if shop.checkout.guest_login %}
+    {% if shop.checkout.guest_login %}
       <h2>{{ 'customer.login.guest_title' | t }}</h2>
 
       {% form 'guest_login' %}
         <input type="submit" class="btn" value="{{ 'customer.login.guest_continue' | t }}">
       {% endform %}
-    {% endif %} -->
+    {% endif %}
   </div>
 </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const url = window.location.href;
-    if (url.includes('pages/rewards')) {
-      const heading = document.querySelector('#CustomerLoginForm .page-header p');
-      if (heading) {
-        heading.textContent = 'Discover the world of FAITHFULL where club members receive exclusive early access to preview and shop new collections and seasonal sales as well as experience personalised rewards and benefits.';
-      }
-    }
-  });
-</script>
+
 {% render 'vite-tag' with '@/scripts/sections/main-customers-login.js' %}
 
 {% schema %}

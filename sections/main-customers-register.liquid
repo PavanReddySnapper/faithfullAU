@@ -6,7 +6,7 @@
   <div class="container container--sm">
     <div class="page-header text-left">
       <h1 class="h2">{{ 'customer.register.title' | t }}</h1>
-      <p class="body-medium">Discover the world of FAITHFULL where club members receive exclusive early access to preview and shop new collections and seasonal sales as well as experience personalised rewards and benefits.</p>
+      <p class="body-medium">{{ 'customer.register.text' | t }}</p>
     </div>
 
     {% form 'create_customer' %}
@@ -114,14 +114,13 @@
 
       <div class="form__group form__group--marketing">
         <div class="form__inline-input">
-           <input
-            type="hidden"
+          <input
+            type="checkbox"
             name="customer[accepts_marketing]"
             value="true"
-          />
-          
-          <label for="Marketing" class="body-small">By creating an account and joining The FAITHFULL Club you agree to receive communications from FAITHFULL. You can opt out at any time.<a href="/policies/privacy-policy" style="font-weight:bold">Please see our Privacy Policy here for more information.</a></label>
-       
+            id="Marketing"
+          >
+          <label for="Marketing" class="body-small">{{ 'customer.register.marketing' | t }}</label>
         </div>
       </div>
 

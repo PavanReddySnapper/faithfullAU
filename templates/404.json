@@ -23,7 +23,7 @@
           "type": "collection",
           "settings": {
             "collection": "dresses-maxis",
-            "image": "shopify://shop_images/250424_1_HEROBANNER_1500x2000_D1W18_002.jpg",
+            "image": "shopify://shop_images/2_911ff5e9-a770-49c8-9204-799f1d23dae5.webp",
             "title": "Shop Dresses",
             "url": ""
           }
@@ -31,9 +31,9 @@
         "collection_aGFKUF": {
           "type": "collection",
           "settings": {
-            "collection": "swim",
-            "image": "shopify://shop_images/2_c652ed0e-0745-4b05-a9e5-8ef11d4289f2.jpg",
-            "title": "Shop Swim",
+            "collection": "linen",
+            "image": "shopify://shop_images/3_0cea7c3e-1b1b-45bc-888a-adb7d6a0d87c.webp",
+            "title": "Shop Linen",
             "url": ""
           }
         },
@@ -41,7 +41,7 @@
           "type": "collection",
           "settings": {
             "collection": "matching-sets",
-            "image": "shopify://shop_images/250424_2_TRIOFEATURE_1000x1500_D1W18_001.jpg",
+            "image": "shopify://shop_images/4_3bc19eec-ae7c-41cd-8037-4fa40261e1dc.webp",
             "title": "Shop Sets",
             "url": ""
           }

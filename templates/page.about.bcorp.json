@@ -26,7 +26,7 @@
         "richtext_PWDwQ8": {
           "type": "richtext",
           "settings": {
-            "text": "<p>FAITHFULL has been proudly B-Corp Certified since 2021 and was recertified at the end of 2024.</p><p>B-Corp Certification is a whole business assessment of a company’s social and environmental performance. It is based on five key impact areas of Governance, Workers, Community, Environment and Customers.</p><p>The movement has connected a global network of high performing and mission-driven businesses that are committed to forces of good. This includes over 8000 certified businesses in 90 countries, 160 industries represented and 150,000 businesses applying the B Impact Assessment.</p><p>Following FAITHFULL’s recertification at the end of 2024, we reached a new high score of 118.4, improving our original score of 96.3. </p>",
+            "text": "<p>Certified B Corporations are businesses that meet the highest standards of verified social and environmental performance, public transparency, and legal accountability to balance both profit and purpose.</p><p>FAITHFULL is extremely proud to be a certified B Corporation, based on our commitment to our community, our conscious business practices and our pledge to be a force for good.</p>",
             "font_size": "body-medium",
             "content_max_width": "100%",
             "content_alignment": "flex-start",
@@ -54,12 +54,8 @@
       "settings": {
         "image": "shopify://shop_images/1_dd27ca5f-bc8a-404d-926b-18fc63c7e44c.webp",
         "pre_title": "",
-        "pre_title_alignment": "center",
-        "pre_title_alignment_mobile": "center",
         "title": "What is a Certified B Corp & how did we become certified?",
         "title_style": "h1",
-        "title_alignment": "center",
-        "title_alignment_mobile": "center",
         "text": "Becoming certified as a B Corporation goes beyond product or service level certification. B Corp is the only accreditation that measures a company’s entire social and environmental performance. The B Impact Assessment evaluates how a company’s operations and business model impact its workers, community, environment, and customers. From supply chain and input materials, to charitable giving and employee benefits, B Corp demonstrates a business meets - and maintains - a substantiated level of social and environmental responsibility across their entire operation.",
         "text_style": "body-medium",
         "bottom_margin_desktop": "80",
@@ -73,35 +69,35 @@
           "type": "text",
           "settings": {
             "title": "Governance",
-            "description": "<p>FAITHFULL is an independent company with operations in both Bali, Indonesia and Sydney, Australia. We have revised our corporate governing documents for the inclusion of a stakeholder consideration clause, which we have integrated into formal decision-making processes. We have also established an internal Steering Committee to monitor environmental and social performance.</p>"
+            "description": "<p>Governance evaluates a company's overall mission, engagement around its social/environmental impact, ethics, and transparency. This section also evaluates the ability of a company to protect their mission and formally consider stakeholders in decision making through their corporate structure (e.g. benefit corporation) or corporate governing documents.</p>"
           }
         },
         "text_teCEkg": {
           "type": "text",
           "settings": {
             "title": "Workers",
-            "description": "<p>The highest scoring for FAITHFULL, we sit above-average and received a Best In World Award from B-Lab in 2022. Employees are valued at FAITHFULL with verified living wages, above-industry benefits, training opportunities and additional support programs.</p>"
+            "description": "<p>Workers evaluates a company’s contributions to its employees’ financial security, health & safety, wellness, career development, and engagement & satisfaction. In addition, this section recognizes business models designed to benefit workers, such as companies that are at least 40% owned by non-executive employees and those that have workforce development programs to support individuals with barriers to employment.</p>"
           }
         },
         "text_L99mEx": {
           "type": "text",
           "settings": {
             "title": "Community",
-            "description": "<p>Both female-owned and led, with over 75% of managerial roles provided to women, we prioritise local manufacturing partners when able and maintain a positive corporate citizenship program with donations to a number of organisations across Indonesia, Australia and the world. Learn more about our values and commitments <a href=\"/pages/about\" title=\"About Us\">here</a>. </p>"
+            "description": "<p>Community evaluates a company’s engagement with and impact on the communities in which it operates, hires from, and sources from. Topics include diversity, equity & inclusion, economic impact, civic engagement, charitable giving, and supply chain management. In addition, this section recognizes business models that are designed to address specific community-oriented problems, such as poverty alleviation through fair trade sourcing or distribution via microenterprises, producer cooperative models, locally focused economic development, and formal charitable giving commitments.</p>"
           }
         },
         "text_6EJN4J": {
           "type": "text",
           "settings": {
             "title": "Environment",
-            "description": "<p>While the fashion industry is known for its resource intensive practices, we consciously choose to produce products through the use of environmentally-preferred methods and materials, opting for certified fabrications and production processes including digital printing. We refuse to follow common industry practices like the burning of offcuts. Instead, we are always investigating new end-of-life strategies to account for the full lifecycle of each product. Learn more about our products and fabrications <a href=\"/pages/our-products\" title=\"Our Products\">here.</a></p>"
+            "description": "<p>Environment evaluates a company’s overall environmental management practices as well as its impact on the air, climate, water, land, and biodiversity. This includes the direct impact of a company’s operations and, when applicable its supply chain and distribution channels. This section also recognizes companies with environmentally innovative production processes and those that sell products or services that have a positive environmental impact. Some examples might include products and services that create renewable energy, reduce consumption or waste, conserve land or wildlife, provide less toxic alternatives to the market, or educate people about environmental problems.</p>"
           }
         },
         "text_a3D9fV": {
           "type": "text",
           "settings": {
             "title": "Customers",
-            "description": "<p>We have always and will continue to maintain a positive relationship with our community, offering above-average product warranty and quality assurance. Learn more about our customer protections <a href=\"/pages/our-products\" title=\"Our Products\">here. </a></p>"
+            "description": "<p>Customers evaluates a company’s stewardship of its customers through the quality of its products and services, ethical marketing, data privacy and security, and feedback channels. In addition, this section recognizes products or services that are designed to address a particular social problem for or through its customers, such as health or educational products, arts & media products, serving underserved customers/clients, and services that improve the social impact of other businesses or organizations.</p>"
           }
         }
       },
@@ -116,7 +112,7 @@
         "title": "Our Impact",
         "text": "",
         "button_text": "See Our B Impact Report",
-        "button_link": "https://www.bcorporation.net/en-us/find-a-b-corp/company/faithfull-the-brand/",
+        "button_link": "",
         "layout": "list",
         "bottom_margin_desktop": 80,
         "bottom_margin_mobile": 64
@@ -127,12 +123,8 @@
       "settings": {
         "image": "shopify://shop_images/1-Desktop.webp",
         "pre_title": "",
-        "pre_title_alignment": "center",
-        "pre_title_alignment_mobile": "center",
         "title": "",
         "title_style": "h1",
-        "title_alignment": "center",
-        "title_alignment_mobile": "center",
         "text": "",
         "text_style": "body-medium",
         "bottom_margin_desktop": "40",

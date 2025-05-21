@@ -26,7 +26,7 @@
         "richtext_PWDwQ8": {
           "type": "richtext",
           "settings": {
-            "text": "<p>We have always valued quality over quantity, opting for handmade over mass produced. We honour the importance of garment quality and continue to strive towards creating forever pieces. By following environmentally-preferred methods and materials and opting for certified fabrications and production processes, our pieces are designed to last a lifetime. </p><p>Learn more on our signature fabrications and how they differ from conventional materials. </p>",
+            "text": "<p>All FAITHFULL products are handmade locally in the country our brand was founded, which allows us to maintain integrity, monitor quality and ensure our long-standing partners are well cared for.</p>",
             "font_size": "body-medium",
             "content_max_width": "100%",
             "content_alignment": "flex-start",
@@ -54,12 +54,8 @@
       "settings": {
         "image": "shopify://shop_images/1_c9372f3c-121e-407f-bfea-5acdf318c76c.webp",
         "pre_title": "",
-        "pre_title_alignment": "center",
-        "pre_title_alignment_mobile": "center",
         "title": "",
         "title_style": "h1",
-        "title_alignment": "center",
-        "title_alignment_mobile": "center",
         "text": "",
         "text_style": "body-medium",
         "bottom_margin_desktop": "80",
@@ -72,43 +68,43 @@
         "text_peaeMf": {
           "type": "text",
           "settings": {
-            "title": "LINEN EUROPEAN FLAX® OEKO-TEX® STANDARD 100 CERTIFIED",
-            "description": "<p>Retted in the flax fields of Europe with its unique climate and mineral-rich soil, specifically Normandy, France, this form of linen is spun into yarn and woven into a high quality fabrication. Its certification assures the process is ethically produced and is one of our signature fabrications.</p>"
+            "title": "EUROPEAN FLAX® STANDARD",
+            "description": "<p>EUROPEAN FLAX YARN - certified European flax fibres, grown and cultivated in Normandy, France following the European Flax® Standard. This linen boasts complete traceability and great environmental credentials. All processes and dyes are OEKO-TEX certified.</p><p>100% Linen  /  Linen Rayon Crinkle</p>"
           }
         },
         "text_xfQRqH": {
           "type": "text",
           "settings": {
-            "title": "BCI CERTIFIED COTTON OEKO-TEX® STANDARD 100 CERTIFIED",
-            "description": "<p>Organic cotton forgoes conventional production methods and synthetic fertilisers for natural alternatives, allowing for reduced water wastage and greenhouse gas emissions and healthier working conditions. A signature fabrication for our brand.</p>"
+            "title": "LENZING™ ECOVERO™ FIBRES",
+            "description": "<p>LENZING™ ECOVERO™ fibres are produced using pulp, which is derived from certified renewable wood sources. Benefits include up to 50% lower emissions and water impact than generic viscose.</p><p>Rayon Fujet  /  Rayon Light  /  Rayon lining</p>"
           }
         },
         "text_jQg6Fr": {
           "type": "text",
           "settings": {
-            "title": "RAYON LENZINGTM ECOVEROTM OEKO-TEX® STANDARD 100 CERTIFIED",
-            "description": "<p>A viscose rayon fabrication repurposed from wood pulp, sourced from sustainably managed forests. A beloved fabrication for our dresses, its certification ensures it has been tested against harmful chemicals and is certified for biodegradability.</p>"
+            "title": "FSC CERTIFIED FIBRES",
+            "description": "<p>FSC forest management certification confirms that the forest is being managed in a way that preserves biological diversity and benefits the lives of local people and workers, while ensuring it sustains economic viability.</p><p>Rayon Fujet  /  Viscose</p>"
           }
         },
         "text_ttwj9T": {
           "type": "text",
           "settings": {
-            "title": "SILK CREPE OEKO-TEX® STANDARD 100 CERTIFIED",
-            "description": "<p>An occasionwear fabrication produced by weaving tightly twisted yarns, followed by a finishing process to set the crinkled feel. Certified through rigorous testing, it is free from chemicals, pesticides and allergens.</p>"
+            "title": "GOTS CERTIFIED FIBRES",
+            "description": "<p>GOTS certified organic cotton has proven a lower environmental impact, reducing water wastage, greenhouse gas chemicals used, whilst ensuring the wellbeing & safety of the workers.</p><p>Organic Cotton  /  Organic Cotton Poplin  /  Organic Cotton Voile</p>"
           }
         },
         "text_EXUgQ6": {
           "type": "text",
           "settings": {
-            "title": "ECONYL® REGENERATED NYLON",
-            "description": "<p>This recycled nylon fabrication repurposes abandoned fishing nets and nylon waste from landfill and oceans worldwide and is paired with elastane for our swimwear.</p>"
+            "title": "TENCEL™ FIBRES",
+            "description": "<p>TENCEL™ Lyocell fibres are extracted from sustainably grown and sourced wood, using a unique closed-loop system. The fibres are certified as compostable and biodegradable, and therefore can fully revert back to nature.</p><p>Lyocell Georgette  /  Lyocell Voile</p>"
           }
         },
         "text_yPGG6V": {
           "type": "text",
           "settings": {
-            "title": "GRS (GLOBAL RECYCLED STANDARD) POLYESTER",
-            "description": "<p>This polyester fabrication, certified by the GRS, is at least 50%</p><p>recycled with traceable materials and manufactured in a sustainable</p><p>and ethical environment. A fabrication we use for our linings.</p>"
+            "title": "COLD PAD BATCH (CPB) PROCESS",
+            "description": "<p>Fabrics are produced using a process called Cold Pad Batch, which significantly reduces water and energy usage - it produces approximately 87.5% less emissions and wastage than regular fabric production. The water waste well is processed in a closed-loop system, providing use for plantations and fishponds. All processes and dyes are OEKO-TEX 100 certified, indicating their lower environmental impact.</p><p> Cotton Terry Towelling</p>"
           }
         },
         "text_TghwGE": {
@@ -159,12 +155,8 @@
       "settings": {
         "image": "shopify://shop_images/1-Desktop_eb9a228b-877d-4024-9eed-805974f98eb8.webp",
         "pre_title": "",
-        "pre_title_alignment": "center",
-        "pre_title_alignment_mobile": "center",
         "title": "",
         "title_style": "h1",
-        "title_alignment": "center",
-        "title_alignment_mobile": "center",
         "text": "",
         "text_style": "body-medium",
         "bottom_margin_desktop": "80",

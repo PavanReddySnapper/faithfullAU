@@ -52,7 +52,7 @@
         "703c7b11-4fcb-457e-a18f-cd45bdc116ac": {
           "type": "newsletter-form",
           "settings": {
-            "title": "Sign up to get 10% off your first order"
+            "title": "Sign up to get 15% off your first order"
           }
         },
         "2e8c269a-ac9c-412f-91e2-c6cb4986e010": {
@@ -67,15 +67,8 @@
             "block_linklist": "explore-menu-2024"
           }
         },
-        "menu_7mfn94": {
-          "type": "menu",
-          "settings": {
-            "block_linklist": "policies"
-          }
-        },
         "2f1c5d0c-b717-496e-aba8-5612fe8f4014": {
           "type": "contact",
-          "disabled": true,
           "settings": {
             "title": "Contact Us",
             "content": "Feel free to contact us anytime to ask a question or share your feedback.",
@@ -94,7 +87,6 @@
         "703c7b11-4fcb-457e-a18f-cd45bdc116ac",
         "2e8c269a-ac9c-412f-91e2-c6cb4986e010",
         "d57dedbe-f180-4295-b665-dfef66cb2c7b",
-        "menu_7mfn94",
         "2f1c5d0c-b717-496e-aba8-5612fe8f4014",
         "d898edf2-0fe8-41c4-a2ca-8374b73dcc11"
       ],

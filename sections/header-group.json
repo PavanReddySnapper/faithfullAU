@@ -24,20 +24,20 @@
         "announcement_message_T8Nymk": {
           "type": "announcement_message",
           "settings": {
-            "title": "<a href=\"/collections/letters-from-hydra\" title=\"Letters From Hydra\">Discover Letters From Hydra | New Collection</a>"
+            "title": "<a href=\"/collections/la-madrague\" title=\"La Madrague\">Discover La Madrague | New Collection</a>"
           }
         },
         "announcement_message_MgYC83": {
           "type": "announcement_message",
           "disabled": true,
           "settings": {
-            "title": "<a href=\"/collections/sale\" title=\"Sale\">New & Further Markdowns Added</a>"
+            "title": "Please note there may be a 3-4 day order processing period."
           }
         },
         "cd620928-3fae-4bec-95c8-fbbf230a80ff": {
           "type": "announcement_message",
           "settings": {
-            "title": "Sign up to our newsletter for 10% off your first order"
+            "title": "Sign up to our newsletter for 15% off your first order"
           }
         },
         "announcement_message_wACkVh": {
@@ -77,10 +77,10 @@
           "type": "submenu_images",
           "settings": {
             "title": "Shop",
-            "image_1": "shopify://shop_images/1_ae720462-0658-45c2-9fb5-e91568a9c55c.jpg",
+            "image_1": "shopify://shop_images/1_6b6361a0-e4f2-44c3-a8fd-acbb00adc416.webp",
             "image_title_1": "New Arrivals",
             "image_url_1": "shopify://collections/new-arrivals",
-            "image_2": "shopify://shop_images/2_a5beb25d-ed69-4466-a142-d9989a6c9637.jpg",
+            "image_2": "shopify://shop_images/2_5ba08e49-7eab-423f-84e4-9ef63efc9c35.webp",
             "image_title_2": "Shop New Prints",
             "image_url_2": "shopify://collections/new-prints",
             "image_title_3": "",
@@ -93,12 +93,12 @@
           "type": "submenu_images",
           "settings": {
             "title": "Sale",
-            "image_1": "shopify://shop_images/250506_2_NAVIMAGE_1500x1000_VOSN_001.jpg",
-            "image_title_1": "New Sale",
-            "image_url_1": "shopify://collections/sale",
-            "image_2": "shopify://shop_images/250506_2_NAVIMAGE_1500x1000_VOSN_002.jpg",
-            "image_title_2": "Sale Sets",
-            "image_url_2": "shopify://collections/sale-sets",
+            "image_1": "shopify://shop_images/1_deae9919-eea8-4e31-8f67-ff99f6ba8972.webp",
+            "image_title_1": "Sale Dresses",
+            "image_url_1": "shopify://collections/sale-dresses",
+            "image_2": "shopify://shop_images/2_dc73d0e3-fad5-4558-a116-d3bfc731be1e.webp",
+            "image_title_2": "Sale Tops",
+            "image_url_2": "shopify://collections/sale-tops",
             "image_title_3": "",
             "image_url_3": "",
             "image_title_4": "",
@@ -125,12 +125,12 @@
           "type": "submenu_images",
           "settings": {
             "title": "Collections",
-            "image_1": "shopify://shop_images/1_ae720462-0658-45c2-9fb5-e91568a9c55c.jpg",
-            "image_title_1": "Letters From Hydra",
-            "image_url_1": "shopify://pages/letters-from-hydra",
-            "image_2": "shopify://shop_images/1_6b6361a0-e4f2-44c3-a8fd-acbb00adc416.webp",
-            "image_title_2": "La Madrague",
-            "image_url_2": "shopify://pages/la-madrague",
+            "image_1": "shopify://shop_images/1_576f97ee-768f-46f8-983a-69f4b30ef810.webp",
+            "image_title_1": "La Madrague",
+            "image_url_1": "shopify://pages/la-madrague",
+            "image_2": "shopify://shop_images/8_a343db33-8121-4cb3-8228-94e5a6d64e07.webp",
+            "image_title_2": "Jours D'or",
+            "image_url_2": "shopify://pages/jours-dor",
             "image_title_3": "",
             "image_url_3": "",
             "image_title_4": "",
@@ -148,7 +148,7 @@
         "menu": "main-menu",
         "header_is_sticky": true,
         "transparent_header_templates": "index",
-        "mobile_image": "shopify://shop_images/1_ae720462-0658-45c2-9fb5-e91568a9c55c.jpg",
+        "mobile_image": "shopify://shop_images/1_6b6361a0-e4f2-44c3-a8fd-acbb00adc416.webp",
         "mobile_image_title": "Shop New Arrivals",
         "mobile_image_url": "shopify://collections/new-arrivals"
       }
@@ -162,7 +162,6 @@
             "title": "Geolocation Button",
             "selector_type": "geolocation",
             "block_position": ".geo-location",
-            "display_position": "last",
             "button_content": "{country} ({currency_code}{currency_symbol})",
             "custom_icon_svg": "",
             "style_colors_text": "#000000",
@@ -171,7 +170,6 @@
             "margin_right": 0,
             "hide_desktop": false,
             "hide_mobile": false,
-            "custom_classes_css": "my-class another-class",
             "custom_css": "",
             "custom_js": ""
           }

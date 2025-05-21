@@ -23,37 +23,8 @@
     "faqs": {
       "type": "main-page-faqs",
       "blocks": {
-        "question_rqtPJF": {
-          "type": "question",
-          "settings": {
-            "title": "What payment methods do you accept?",
-            "content": "<p>We accept payment by over 250+ providers worldwide including Visa, Mastercard, American Express, Paypal, Afterpay, Klarna and Faithfull The Brand gift cards and store credit. Please see our checkout for more options.</p>"
-          }
-        },
-        "question_FUe4Nk": {
-          "type": "question",
-          "settings": {
-            "title": "How does Klarna work?",
-            "content": "<p>Klarna is an interest-free payment plan option allowing you to pay for your purchase in 4 equal payments. The first payment is charged when your order is confirmed (usually the shipping date) and the next 3 payments are automatically charged every 2 weeks after that.</p>"
-          }
-        },
-        "question_jpK4rH": {
-          "type": "question",
-          "settings": {
-            "title": "How does Afterpay work?",
-            "content": "<p>Afterpay is an interest-free payment plan option where you can buy now and pay for your purchase in 4 equal fortnightly instalments. The funds for the first payment will need to be available on your card at the time of purchase.</p>"
-          }
-        },
-        "question_cX9wQK": {
-          "type": "question",
-          "settings": {
-            "title": "What currency is used online?",
-            "content": "<p>You can shop FAITHFULL online in hundreds of different currencies. Select your local currency in the top right corner of our navigation. Please note, you must select the local currency of the shipping address before checking out. </p>"
-          }
-        },
         "question_0": {
           "type": "question",
-          "disabled": true,
           "settings": {
             "title": "I ordered an item on pre-order and another item not on pre-order. When can I except my order?",
             "content": "<p>Pre-orders that are purchased along with an in-stock style will be shipped separately so you receive your in-stock style/s straight away. Pre-order styles will be processed like a normal FAITHFULL order but will be shipped at a later date specified on the individual product page.</p>"
@@ -61,7 +32,6 @@
         },
         "question_1": {
           "type": "question",
-          "disabled": true,
           "settings": {
             "title": "Can I cancel a pre-order?",
             "content": "<p>Unfortunately, we are not able to change or cancel your order once it is placed. Please choose items carefully and ensure all shipping information is full and correct before placing your order. Please reach out to our customer support team <a href=\"mailto:shop@faithfullthebrand.com\" target=\"_blank\" title=\"mailto:shop@faithfullthebrand.com\">shop@faithfullthebrand.com</a> to assist with any further questions.</p>"
@@ -69,7 +39,6 @@
         },
         "question_2": {
           "type": "question",
-          "disabled": true,
           "settings": {
             "title": "Can I return an item purchased with pre-order?",
             "content": "<p>Yes, you may return an item you preordered with FAITHFULL. Please ensure your item/s are eligible to be returned and meet our conditions of return. Items must be returned in their original condition, with all original tags and hygiene stickers still attached and within 14 days from the delivery date.</p>"
@@ -77,10 +46,6 @@
         }
       },
       "block_order": [
-        "question_rqtPJF",
-        "question_FUe4Nk",
-        "question_jpK4rH",
-        "question_cX9wQK",
         "question_0",
         "question_1",
         "question_2"

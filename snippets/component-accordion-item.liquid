@@ -72,17 +72,6 @@
           {{ contents[list_index] }}
         {% endif %}
         {% if rte %}</div>{% endif %}
-        {% if labels[list_index] == 'Reviews' %}
-          <div class="custom" >
-            {% for block in section.blocks %}
-              {% case block.type %}
-                {% when '@app' %}
-                  {% render block %}
-              {% endcase %}
-            {% endfor %}
-          </div>
-          {% comment %} <div class="yotpo-widget-instance" data-yotpo-instance-id="1076132" data-yotpo-product-id="{{product.id}}"></div> {% endcomment %}
-        {% endif %}
       </div>
     </div>
 

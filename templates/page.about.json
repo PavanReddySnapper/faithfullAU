@@ -26,7 +26,7 @@
         "richtext_PWDwQ8": {
           "type": "richtext",
           "settings": {
-            "text": "<p>Established in 2014 by Australian, Sarah-Jane Abrahams, and Norwegian, Helle Them-Enger, FAITHFULL is based out of Bali, Indonesia and Sydney, Australia. <br/><br/>Intending to evoke a sense of summer in the everyday, FAITHFULL brings together thoughtful, considered designs with nostalgic nods to vintage patterns and fabrications. Never restrictive, each piece has been carefully designed and delicately handcrafted to transition seamlessly through the seasons and last a lifetime. <br/><br/>FAITHFULL has been proudly B-Corp Certified since 2021 and was recertified at the end of 2024.</p>",
+            "text": "<p>Established in 2014 by Australian, Sarah-Jane Abrahams, and Norwegian, Helle Them-Enger, FAITHFULL is based out of Bali, Indonesia and Sydney, Australia. <br/><br/>Intending to evoke a sense of summer in the everyday, FAITHFULL brings together thoughtful, considered designs with nostalgic nods to vintage patterns and fabrications. Never restrictive, each piece has been carefully designed and delicately handcrafted to transition seamlessly through the seasons and last a lifetime. <br/><br/>As of 2021, FAITHFULL is proud to be B-Corp Certified. Read our commitment to sustainability and conscious business practices here. </p>",
             "font_size": "body-medium",
             "content_max_width": "100%",
             "content_alignment": "flex-start",
@@ -54,12 +54,8 @@
       "settings": {
         "image": "shopify://shop_images/1_6da202c3-04b5-4534-92a2-73938484b6c3.webp",
         "pre_title": "WARDROBES OF SUMMERS PAST",
-        "pre_title_alignment": "center",
-        "pre_title_alignment_mobile": "center",
         "title": "\"We chose the name ‘FAITHFULL’ for its warm, feminine appeal. The essence of our label, apparent in each collection, is youthful and uncomplicated in design, with a nostalgic nod to vintage wardrobes of summers past.\"",
         "title_style": "h2",
-        "title_alignment": "center",
-        "title_alignment_mobile": "center",
         "text": "",
         "text_style": "h2",
         "bottom_margin_desktop": "40",
@@ -69,29 +65,8 @@
     "rich_text_RCin4F": {
       "type": "rich-text",
       "blocks": {
-        "title_PajXzG": {
-          "type": "title",
-          "settings": {
-            "title": "A Note From Our Founders",
-            "is_primary_heading": false,
-            "heading_style": "h2",
-            "pre_heading": "",
-            "margin_bottom": 24
-          }
-        },
-        "richtext_dPfjac": {
-          "type": "richtext",
-          "settings": {
-            "text": "<p><em>“We met on the island of Bali, Indonesia and forged a friendship that would provide us both with the opportunity to live out the dream of the road less travelled. We bonded over a mutual love of fashion, but also our desire to see the world. It wasn’t long until our conversations and musings came together as a business plan for FAITHFULL.</em></p><p><em>We wanted to create an experience where our customer could find effortless, wearable pieces that transition seamlessly from the everyday to vacation wear, always evoking a sense of summer.</em></p><p><em>We fused Scandinavian simplicity with the laid-back spirit of Australia and the Balinese island life in which we were now accustomed to and created a brand that embodies a sense of ease with throw-on throw-off appeal, embracing colour, texture and vintage travel references.”</em></p><p><em>– Sarah-Jane & Helle</em></p>",
-            "font_size": "body-medium",
-            "content_max_width": "100%",
-            "content_alignment": "flex-start",
-            "margin_bottom": 24
-          }
-        },
         "title_eUeXdE": {
           "type": "title",
-          "disabled": true,
           "settings": {
             "title": "Our Values",
             "is_primary_heading": false,
@@ -102,7 +77,6 @@
         },
         "richtext_V4WnXc": {
           "type": "richtext",
-          "disabled": true,
           "settings": {
             "text": "<p>FAITHFULL is committed to creating thoughtfully produced, socially responsible garments that you can feel great about wearing on the inside, and out.</p><p>From our manufacturing choices and commercial practices to our organisational culture and community investment, making better decisions across the business, which minimise our environmental footprint and maximise our positive social impact, is a continual work in progress.</p><p>We are putting in the time, the research and the resources to do greater good every day. As big believers in the importance of honesty and accountability, we want to share some of what we’ve done, what we’re doing, and why.</p><p>As of 2021, FAITHFULL is extremely proud to be a certified B Corporation, based on our commitment to our community, our conscious business practices and our pledge to be a force for good. Certified B Corporations are businesses that meet the highest standards of verified social and environmental performance, public transparency, and legal accountability to balance both profit and purpose.</p>",
             "font_size": "body-medium",
@@ -113,8 +87,6 @@
         }
       },
       "block_order": [
-        "title_PajXzG",
-        "richtext_dPfjac",
         "title_eUeXdE",
         "richtext_V4WnXc"
       ],
@@ -179,12 +151,8 @@
       "settings": {
         "image": "shopify://shop_images/2_c8b6bd46-0ed7-4407-b284-0c9e719188b4.webp",
         "pre_title": "",
-        "pre_title_alignment": "center",
-        "pre_title_alignment_mobile": "center",
         "title": "",
         "title_style": "h1",
-        "title_alignment": "center",
-        "title_alignment_mobile": "center",
         "text": "",
         "text_style": "body-medium",
         "bottom_margin_desktop": "40",

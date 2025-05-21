@@ -26,12 +26,6 @@
     assign accordion_content = accordion_content | append: product.metafields.custom_fields.garment_care_desc | append: '|||'
   endif
 
-  # Reviews
-  if display_size_fit_tab
-    assign accordion_labels = accordion_labels | append: 'Reviews|||'  
-  endif
-
-
   for block in section.blocks
     if block.type == 'accordion_item'
       assign accordion_labels = accordion_labels | append: block.settings.title
